@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[公告] 如何以 AOTP 手機驗證註冊本站帳號教學 - 看板 AppsForBBS - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+詳細資訊請見本站 #1W_WAHEG (SYSOP) 站務公告。
+https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html
+若要註冊本站帳號，請使用 WebScoket、SSH 等安全連線方式進行註冊，
+或直接使用瀏覽器開啟：https://term.ptt.cc
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[公告] 如何以 AOTP 手機驗證註冊本站帳號教學">
+<meta property="og:description" content="批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+詳細資訊請見本站 #1W_WAHEG (SYSOP) 站務公告。
+https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html
+若要註冊本站帳號，請使用 WebScoket、SSH 等安全連線方式進行註冊，
+或直接使用瀏覽器開啟：https://term.ptt.cc
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/AppsForBBS/index.html"><span class="board-label">看板 </span>AppsForBBS</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/AppsForBBS/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">s5048218 (Dawn)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">AppsForBBS</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[公告] 如何以 AOTP 手機驗證註冊本站帳號教學</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jul 26 13:21:12 2021</span></div>
+批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+
+詳細資訊請見本站 <a href="/bbs/SYSOP/M.1627259537.A.390.html" target="_blank" rel="noreferrer noopener nofollow">#1W_WAHEG (SYSOP)</a> 站務公告。
+
+<a href="https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html</a>
+
+
+
+若要註冊本站帳號，請使用 WebScoket、SSH 等安全連線方式進行註冊，
+
+或直接使用瀏覽器開啟：<a href="https://term.ptt.cc" target="_blank" rel="noreferrer noopener nofollow">https://term.ptt.cc</a>
+
+
+以下使用終端機畫面進行註冊流程解說，建議使用電腦進行註冊：
+（ 本文網頁好讀版：<a href="https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html</a> ）
+
+1. 連線至本站，並輸入 new 進行註冊
+<a href="https://i.imgur.com/FvSZm9E.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/FvSZm9E.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/FvSZm9El.png?e=1653591770&amp;s=qsb8LdvNJa64s3FF2rIyJQ" alt="" loading="lazy" /></div>
+2. 閱讀使用者條款，並輸入 y 來接受使用者條款（若不接受將無法註冊本站帳號）
+<a href="https://i.imgur.com/J4iMvAi.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/J4iMvAi.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/J4iMvAil.png?e=1653545456&amp;s=i7dHnplS-TtP4-fZZ8kZnQ" alt="" loading="lazy" /></div>
+3. 透過連結取得驗證碼，並回填至輸入框中
+<a href="https://i.imgur.com/NHZNQNo.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/NHZNQNo.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/NHZNQNol.png?e=1653550462&amp;s=4aSTCxT84X1WsP3uuvScOA" alt="" loading="lazy" /></div>
+4. 輸入您可收信並可持續使用的站外 Email 信箱
+<a href="https://i.imgur.com/EpPxO9U.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/EpPxO9U.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/EpPxO9Ul.png?e=1653547284&amp;s=whbDx9ZesUSIKZWdzqRlEA" alt="" loading="lazy" /></div>
+5. 前往您的 Email 收發認證電子郵件
+<a href="https://i.imgur.com/MXcCJOS.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/MXcCJOS.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/MXcCJOSl.png?e=1653547065&amp;s=j_if1z_5jUJQOaAPxMSMPw" alt="" loading="lazy" /></div>
+6. 輸入 Email 上的驗證碼
+<a href="https://i.imgur.com/FYwf9Q9.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/FYwf9Q9.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/FYwf9Q9l.png?e=1653561665&amp;s=Wm9S6u7_5nQeIZ-Gb587gg" alt="" loading="lazy" /></div>
+7. 依照流程輸入註冊資料
+<a href="https://i.imgur.com/lwsaeGU.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/lwsaeGU.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/lwsaeGUl.png?e=1653566820&amp;s=oX5aM4EhcaU9aTeL2e_Qlg" alt="" loading="lazy" /></div>
+8. 選擇是否限制安全連線登入（即 WebScoket、SSH 等）
+<a href="https://i.imgur.com/hCPW0MD.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/hCPW0MD.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/hCPW0MDl.png?e=1653579669&amp;s=yySzMAmhhzMHa5AWeYlBJQ" alt="" loading="lazy" /></div>
+9. 您已成功完成帳號註冊，但尚未通過帳號認證
+<a href="https://i.imgur.com/k0ZCguv.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/k0ZCguv.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/k0ZCguvl.png?e=1653547018&amp;s=TZixjbOspv8IXQmEqMlxEA" alt="" loading="lazy" /></div>
+10. 請至 (U)ser 個人設定區 &gt; (R)egister 認證帳號
+<a href="https://i.imgur.com/w4WfLr2.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/w4WfLr2.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/w4WfLr2l.png?e=1653542862&amp;s=wSYA3k1yLDs1xxJ3L6xS3w" alt="" loading="lazy" /></div><a href="https://i.imgur.com/8AB9YOX.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/8AB9YOX.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/8AB9YOXl.png?e=1653592510&amp;s=398tEZML0O6UvzH8jBLaaQ" alt="" loading="lazy" /></div>
+11. 選擇帳號認證方式（此處以手機認證為例）
+<a href="https://i.imgur.com/tj1ojZ2.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/tj1ojZ2.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/tj1ojZ2l.png?e=1653581068&amp;s=Yc3Pvc89JGN_WIUcbIjxIQ" alt="" loading="lazy" /></div>
+12. 閱讀本站 AOTP 服務條款，並輸入 y 來接受條款（若不接受將無法使用手機驗證）
+<a href="https://i.imgur.com/rUzlLsz.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/rUzlLsz.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/rUzlLszl.png?e=1653544168&amp;s=fGP6MPA2CWy1f9mbhthSpA" alt="" loading="lazy" /></div>
+13. 輸入您的手機號碼
+<a href="https://i.imgur.com/2Of0W0P.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/2Of0W0P.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/2Of0W0Pl.png?e=1653564570&amp;s=mDUVXhslUVmix9v6EwuM0Q" alt="" loading="lazy" /></div>
+14. 提示您需使用五大電信<span class="f3 hl">月租型</span>門號才能認證，且將收取 3 元費用，請點擊認證按鈕
+<a href="https://i.imgur.com/0PKntoX.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/0PKntoX.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/0PKntoXl.png?e=1653599296&amp;s=IlBMs1u_1y2VtpZjCg14eQ" alt="" loading="lazy" /></div>
+15. <span class="f3 hl">自行發送</span>簡訊驗證碼至 AOTP 驗證網頁上指定門號
+<a href="https://i.imgur.com/8Rl9ebQ.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/8Rl9ebQ.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/8Rl9ebQl.jpg?e=1653556445&amp;s=rKvN0EYFo-J70WRl1omj3A" alt="" loading="lazy" /></div><a href="https://i.imgur.com/MOVfkgA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/MOVfkgA.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/MOVfkgAl.jpg?e=1653542141&amp;s=J6wOYwBK_J-8xjMra4lJSg" alt="" loading="lazy" /></div>
+16. 請在大約 3 秒後返回 AOTP 驗證網頁點擊「確認驗證完成」，
+    您將取得 ptt********（後 8 位為數字）的驗證碼，同時您將收到成功驗證之簡訊
+<a href="https://i.imgur.com/y6AcooA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/y6AcooA.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/y6AcooAl.jpg?e=1653554296&amp;s=4Mvr6r7FO0oIQ9oKNRd4VQ" alt="" loading="lazy" /></div><a href="https://i.imgur.com/hIlC01G.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/hIlC01G.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/hIlC01Gl.jpg?e=1653600126&amp;s=AnpTi_k39K8IUs64LxEF9w" alt="" loading="lazy" /></div>
+17. 返回本站畫面，輸入上述驗證碼
+<a href="https://i.imgur.com/UQLaZTm.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/UQLaZTm.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/UQLaZTml.jpg?e=1653589782&amp;s=4Yot4lrXdX_sAoQ7vo8pjQ" alt="" loading="lazy" /></div>
+18. 成功完成驗證，請重新登入上站
+<a href="https://i.imgur.com/DEQZyWS.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/DEQZyWS.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/DEQZyWSl.jpg?e=1653559413&amp;s=3BHPFRF2F4HzIZ3KsTuvsQ" alt="" loading="lazy" /></div>
+
+<span class="f3 b4 hl">恭喜您完成本站認證！</span>
+
+--
+
+帳號認證有問題請洽本站 SYSOP 看板
+指令、操作問題請洽本站 PttNewhand 看板
+BBS 等軟體問題請洽本站 AppsForBBS 看板
+站內系統等問題請洽本站 PttBug 看板
+
+--
+       <span class="f2 hl">＊  </span><span class="f1">◢</span><span class="f1 b1">   </span><span class="f0 b1">●   </span><span class="f1 b1">φｆｌｙｗｉｎｇ５２０                      </span><span class="f0 b1">●</span><span class="f1">█◣ </span><span class="f2 hl">＊</span>
+<span class="f1">◢</span><span class="f0 b1">∥∥</span><span class="f1">◣   </span><span class="f1 b1">                                                            </span><span class="f1"> </span><span class="f0 b1">◤∥∥◥</span>
+<span class="b1">      </span><span class="f1">█   </span><span class="f1 b1">   </span><span class="f1 b7 hl">◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f1 b1 hl">        </span>
+<span class="f0 b1">◣   </span><span class="f1">█</span><span class="f1 b1"> </span><span class="f1">   </span><span class="f1 b1">   </span><span class="f1 b7 hl">█</span><span class="f6 b1 hl">有</span><span class="f3 b1 hl">PTT使用</span><span class="f6 b1 hl">上的問題嗎?</span><span class="f1 b7 hl">████████████████</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f0 b1">◣    ◢</span>
+    <span class="f1">◥</span><span class="f1 b1">   </span><span class="f1">◣</span><span class="f1 b1">   </span><span class="f1 b7 hl">██████████</span><span class="f6 b1 hl">按</span><span class="f3 b1 hl">鍵盤hh</span><span class="f6 b1 hl">會有</span><span class="f3 b1 hl">小天使</span><span class="f6 b1 hl">替你解惑唷!!</span><span class="f1 b7 hl">██</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f1">◢</span><span class="f1 b1">  </span><span class="f1">◤</span>
+<span class="f2 hl">＊    </span><span class="f0 b1">◣      </span><span class="f1 b7 hl">◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥</span><span class="f1 b1 hl">      </span><span class="f1">◤ </span><span class="f2 hl">＊</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 1.200.59.31 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html</a>
+</span><span class="f2">※ </span><span class="f2 hl">s5048218</span><span class="f2">:轉錄至看板 SYSOP</span>                                       07/26 14:10
+<span class="f2">※ </span><span class="f2 hl">s5048218</span><span class="f2">:轉錄至看板 PttNewhand</span>                                  07/26 14:10
+<span class="f2">※ </span><span class="f2 hl">CJhang</span><span class="f2">:轉錄至看板 NCHUS</span>                                         07/26 14:52
+<span class="f2">※ </span><span class="f2 hl">CJhang</span><span class="f2">:轉錄至看板 NTUST_Talk</span>                                    07/26 14:53
+<span class="f2">※ 編輯: s5048218 (219.91.112.149 臺灣), 07/28/2021 21:24:03
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/30 22:30
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/AppsForBBS/M.1627276910.A.F17.html?cacheKey=2148-1011642382&amp;offset=3882&amp;offset-sig=042fa391133a24fcdb658d4fc7f4f0e572b41229" data-longpollurl="/v1/longpoll?id=22afff066cf97c1d28b0ccd69934fe29d68d325f" data-offset="3882"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106c696ef8380ad',m:'vvHKPKoJQSK6K6GYofjNgNLYJ7HfiGFIQocTQ_A8l2M-1653403114-0-AT0hi4fLgWF+utACigg2VC0xQsIegdzYmad//6rSfDz9llAl2Al5rGluwf3uoelbA7QfN2VAM2rK60q2N5K4MC0RnTak0F4SESliHDWOUYHY2FQp6plYdXtD9gLovuPTYNeclTLQb/Oi0B3NHSCcVO5u4VjmapkAzHCrJuNKskz0',s:[0x8635c53083,0xea3a9940e5],}})();</script></body>
+</html>

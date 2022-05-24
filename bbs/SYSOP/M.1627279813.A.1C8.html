@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Fw: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學 - 看板 SYSOP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="作者: s5048218 (Dawn) 看板: AppsForBBS
+標題: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學
+時間: Mon Jul 26 13:21:12 2021
+批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+詳細資訊請見本站 #1W_WAHEG (SYSOP) 站務公告。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Fw: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學">
+<meta property="og:description" content="作者: s5048218 (Dawn) 看板: AppsForBBS
+標題: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學
+時間: Mon Jul 26 13:21:12 2021
+批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+詳細資訊請見本站 #1W_WAHEG (SYSOP) 站務公告。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/SYSOP/M.1627279813.A.1C8.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/SYSOP/index.html"><span class="board-label">看板 </span>SYSOP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/SYSOP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">s5048218 (Dawn)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">SYSOP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Fw: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jul 26 14:10:12 2021</span></div>
+<span class="f2">※ [本文轉錄自 <a href="/bbs/AppsForBBS/M.1627276910.A.F17.html" target="_blank" rel="noreferrer noopener nofollow">AppsForBBS 看板 #1W_aPkyN</a> ]
+</span>
+作者: s5048218 (Dawn) 看板: AppsForBBS
+標題: [公告] 如何以 AOTP 手機驗證註冊本站帳號教學
+時間: Mon Jul 26 13:21:12 2021
+
+批踢踢實業坊（下稱本站）目前已開放以 AOTP 手機驗證方式註冊，
+
+詳細資訊請見本站 <a href="/bbs/SYSOP/M.1627259537.A.390.html" target="_blank" rel="noreferrer noopener nofollow">#1W_WAHEG (SYSOP)</a> 站務公告。
+
+<a href="https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/SYSOP/M.1627259537.A.390.html</a>
+
+
+
+若要註冊本站帳號，請使用 WebScoket、SSH 等安全連線方式進行註冊，
+
+或直接使用瀏覽器開啟：<a href="https://term.ptt.cc" target="_blank" rel="noreferrer noopener nofollow">https://term.ptt.cc</a>
+
+
+以下使用終端機畫面進行註冊流程解說，建議使用電腦進行註冊：
+（ 本文網頁好讀版：<a href="https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html</a> ）
+
+1. 連線至本站，並輸入 new 進行註冊
+<a href="https://i.imgur.com/FvSZm9E.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/FvSZm9E.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/FvSZm9El.png?e=1653591770&amp;s=qsb8LdvNJa64s3FF2rIyJQ" alt="" loading="lazy" /></div>
+2. 閱讀使用者條款，並輸入 y 來接受使用者條款（若不接受將無法註冊本站帳號）
+<a href="https://i.imgur.com/J4iMvAi.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/J4iMvAi.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/J4iMvAil.png?e=1653545456&amp;s=i7dHnplS-TtP4-fZZ8kZnQ" alt="" loading="lazy" /></div>
+3. 透過連結取得驗證碼，並回填至輸入框中
+<a href="https://i.imgur.com/NHZNQNo.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/NHZNQNo.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/NHZNQNol.png?e=1653550462&amp;s=4aSTCxT84X1WsP3uuvScOA" alt="" loading="lazy" /></div>
+4. 輸入您可收信並可持續使用的站外 Email 信箱
+<a href="https://i.imgur.com/EpPxO9U.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/EpPxO9U.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/EpPxO9Ul.png?e=1653547284&amp;s=whbDx9ZesUSIKZWdzqRlEA" alt="" loading="lazy" /></div>
+5. 前往您的 Email 收發認證電子郵件
+<a href="https://i.imgur.com/MXcCJOS.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/MXcCJOS.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/MXcCJOSl.png?e=1653547065&amp;s=j_if1z_5jUJQOaAPxMSMPw" alt="" loading="lazy" /></div>
+6. 輸入 Email 上的驗證碼
+<a href="https://i.imgur.com/FYwf9Q9.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/FYwf9Q9.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/FYwf9Q9l.png?e=1653561665&amp;s=Wm9S6u7_5nQeIZ-Gb587gg" alt="" loading="lazy" /></div>
+7. 依照流程輸入註冊資料
+<a href="https://i.imgur.com/lwsaeGU.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/lwsaeGU.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/lwsaeGUl.png?e=1653566820&amp;s=oX5aM4EhcaU9aTeL2e_Qlg" alt="" loading="lazy" /></div>
+8. 選擇是否限制安全連線登入（即 WebScoket、SSH 等）
+<a href="https://i.imgur.com/hCPW0MD.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/hCPW0MD.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/hCPW0MDl.png?e=1653579669&amp;s=yySzMAmhhzMHa5AWeYlBJQ" alt="" loading="lazy" /></div>
+9. 您已成功完成帳號註冊，但尚未通過帳號認證
+<a href="https://i.imgur.com/k0ZCguv.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/k0ZCguv.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/k0ZCguvl.png?e=1653547018&amp;s=TZixjbOspv8IXQmEqMlxEA" alt="" loading="lazy" /></div>
+10. 請至 (U)ser 個人設定區 &gt; (R)egister 認證帳號
+<a href="https://i.imgur.com/w4WfLr2.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/w4WfLr2.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/w4WfLr2l.png?e=1653542862&amp;s=wSYA3k1yLDs1xxJ3L6xS3w" alt="" loading="lazy" /></div><a href="https://i.imgur.com/8AB9YOX.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/8AB9YOX.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/8AB9YOXl.png?e=1653592510&amp;s=398tEZML0O6UvzH8jBLaaQ" alt="" loading="lazy" /></div>
+11. 選擇帳號認證方式（此處以手機認證為例）
+<a href="https://i.imgur.com/tj1ojZ2.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/tj1ojZ2.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/tj1ojZ2l.png?e=1653581068&amp;s=Yc3Pvc89JGN_WIUcbIjxIQ" alt="" loading="lazy" /></div>
+12. 閱讀本站 AOTP 服務條款，並輸入 y 來接受條款（若不接受將無法使用手機驗證）
+<a href="https://i.imgur.com/rUzlLsz.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/rUzlLsz.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/rUzlLszl.png?e=1653544168&amp;s=fGP6MPA2CWy1f9mbhthSpA" alt="" loading="lazy" /></div>
+13. 輸入您的手機號碼
+<a href="https://i.imgur.com/2Of0W0P.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/2Of0W0P.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/2Of0W0Pl.png?e=1653564570&amp;s=mDUVXhslUVmix9v6EwuM0Q" alt="" loading="lazy" /></div>
+14. 提示您需使用五大電信<span class="f3 hl">月租型</span>門號才能認證，且將收取 3 元費用，請點擊認證按鈕
+<a href="https://i.imgur.com/0PKntoX.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/0PKntoX.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/0PKntoXl.png?e=1653599296&amp;s=IlBMs1u_1y2VtpZjCg14eQ" alt="" loading="lazy" /></div>
+15. <span class="f3 hl">自行發送</span>簡訊驗證碼至 AOTP 驗證網頁上指定門號
+<a href="https://i.imgur.com/8Rl9ebQ.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/8Rl9ebQ.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/8Rl9ebQl.jpg?e=1653556445&amp;s=rKvN0EYFo-J70WRl1omj3A" alt="" loading="lazy" /></div><a href="https://i.imgur.com/MOVfkgA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/MOVfkgA.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/MOVfkgAl.jpg?e=1653542141&amp;s=J6wOYwBK_J-8xjMra4lJSg" alt="" loading="lazy" /></div>
+16. 請在大約 3 秒後返回 AOTP 驗證網頁點擊「確認驗證完成」，
+    您將取得 ptt********（後 8 位為數字）的驗證碼，同時您將收到成功驗證之簡訊
+<a href="https://i.imgur.com/y6AcooA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/y6AcooA.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/y6AcooAl.jpg?e=1653554296&amp;s=4Mvr6r7FO0oIQ9oKNRd4VQ" alt="" loading="lazy" /></div><a href="https://i.imgur.com/hIlC01G.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/hIlC01G.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/hIlC01Gl.jpg?e=1653600126&amp;s=AnpTi_k39K8IUs64LxEF9w" alt="" loading="lazy" /></div>
+17. 返回本站畫面，輸入上述驗證碼
+<a href="https://i.imgur.com/UQLaZTm.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/UQLaZTm.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/UQLaZTml.jpg?e=1653589782&amp;s=4Yot4lrXdX_sAoQ7vo8pjQ" alt="" loading="lazy" /></div>
+18. 成功完成驗證，請重新登入上站
+<a href="https://i.imgur.com/DEQZyWS.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/DEQZyWS.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/DEQZyWSl.jpg?e=1653559413&amp;s=3BHPFRF2F4HzIZ3KsTuvsQ" alt="" loading="lazy" /></div>
+
+<span class="f3 b4 hl">恭喜您完成本站認證！</span>
+
+--
+
+帳號認證有問題請洽本站 SYSOP 看板
+指令、操作問題請洽本站 PttNewhand 看板
+BBS 等軟體問題請洽本站 AppsForBBS 看板
+站內系統等問題請洽本站 PttBug 看板
+
+--
+       <span class="f2 hl">＊  </span><span class="f1">◢</span><span class="f1 b1">   </span><span class="f0 b1">●   </span><span class="f1 b1">φｆｌｙｗｉｎｇ５２０                      </span><span class="f0 b1">●</span><span class="f1">█◣ </span><span class="f2 hl">＊</span>
+<span class="f1">◢</span><span class="f0 b1">∥∥</span><span class="f1">◣   </span><span class="f1 b1">                                                            </span><span class="f1"> </span><span class="f0 b1">◤∥∥◥</span>
+<span class="b1">      </span><span class="f1">█   </span><span class="f1 b1">   </span><span class="f1 b7 hl">◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢◣  ◢</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f1 b1 hl">        </span>
+<span class="f0 b1">◣   </span><span class="f1">█</span><span class="f1 b1"> </span><span class="f1">   </span><span class="f1 b1">   </span><span class="f1 b7 hl">█</span><span class="f6 b1 hl">有</span><span class="f3 b1 hl">PTT使用</span><span class="f6 b1 hl">上的問題嗎?</span><span class="f1 b7 hl">████████████████</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f0 b1">◣    ◢</span>
+    <span class="f1">◥</span><span class="f1 b1">   </span><span class="f1">◣</span><span class="f1 b1">   </span><span class="f1 b7 hl">██████████</span><span class="f6 b1 hl">按</span><span class="f3 b1 hl">鍵盤hh</span><span class="f6 b1 hl">會有</span><span class="f3 b1 hl">小天使</span><span class="f6 b1 hl">替你解惑唷!!</span><span class="f1 b7 hl">██</span><span class="f1 b1 hl">   </span><span class="f1 hl"> </span><span class="f1">◢</span><span class="f1 b1">  </span><span class="f1">◤</span>
+<span class="f2 hl">＊    </span><span class="f0 b1">◣      </span><span class="f1 b7 hl">◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥◤  ◥</span><span class="f1 b1 hl">      </span><span class="f1">◤ </span><span class="f2 hl">＊</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 1.200.59.31 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/AppsForBBS/M.1627276910.A.F17.html</a>
+</span>
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span><span class="f2">※ 轉錄者: s5048218 (1.200.59.31 臺灣), 07/26/2021 14:10:12
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aaqq0902</span><span class="f3 push-content">: 發送指定號碼到83811後一樣無法驗證成功</span><span class="push-ipdatetime">  42.75.227.251 07/26 14:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aaqq0902</span><span class="f3 push-content">: 只能再等3天了嗎...</span><span class="push-ipdatetime">  42.75.227.251 07/26 14:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CATALYST0001</span><span class="f3 push-content">: 感覺只能再等三天了 把認證碼發到83</span><span class="push-ipdatetime">  111.82.17.115 07/26 14:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CATALYST0001</span><span class="f3 push-content">: 811過去就沒回覆了 也不曉得是哪個</span><span class="push-ipdatetime">  111.82.17.115 07/26 14:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CATALYST0001</span><span class="f3 push-content">: 環節出問題QQ</span><span class="push-ipdatetime">  111.82.17.115 07/26 14:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 同樣問題+1  剛在手機認證消失前已經傳3</span><span class="push-ipdatetime"> 223.138.154.82 07/26 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 次簡訊  可是一直沒驗證碼</span><span class="push-ipdatetime"> 223.138.154.82 07/26 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 手機認證重新上架後再傳一次  有收到回</span><span class="push-ipdatetime"> 223.138.154.82 07/26 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 傳簡訊  可是說請確認手機或驗證碼輸入</span><span class="push-ipdatetime"> 223.138.154.82 07/26 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 無誤</span><span class="push-ipdatetime"> 223.138.154.82 07/26 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lactobacilli</span><span class="f3 push-content">: 2:21認證成功，是今天末班車？</span><span class="push-ipdatetime">   27.242.4.150 07/26 14:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sheng98</span><span class="f3 push-content">: 沒收到回覆的是不是有可能電信系統端那</span><span class="push-ipdatetime"> 220.143.243.16 07/26 14:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sheng98</span><span class="f3 push-content">: 邊有設定到不接收廣告簡訊之類?</span><span class="push-ipdatetime"> 220.143.243.16 07/26 14:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">gcobc12632</span><span class="f3 push-content">: 我的帳號已通過認證 但無法新增任何其</span><span class="push-ipdatetime">  61.222.191.78 07/26 14:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">gcobc12632</span><span class="f3 push-content">: 他認證 這樣可以不用管他嗎</span><span class="push-ipdatetime">  61.222.191.78 07/26 14:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">resana99</span><span class="f3 push-content">: 感謝大神～</span><span class="push-ipdatetime">   42.73.47.104 07/26 15:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Eric369</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 59.127.203.212 07/26 15:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">love60125</span><span class="f3 push-content">: 已用手機傳送兩次簡訊 但沒收到驗證碼</span><span class="push-ipdatetime">  117.56.22.197 07/26 15:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">piyo</span><span class="f3 push-content">: 沒收到回覆+1 只能等三天後重新認證了</span><span class="push-ipdatetime">   114.47.2.186 07/26 15:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gradient20</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">     45.8.68.64 07/26 15:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">corydoras09</span><span class="f3 push-content">: 我收到信了，說認證通過，但是拿不</span><span class="push-ipdatetime">111.248.204.129 07/26 15:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">corydoras09</span><span class="f3 push-content">: 到ptt開頭的認證碼，說illegal inp</span><span class="push-ipdatetime">111.248.204.129 07/26 15:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">corydoras09</span><span class="f3 push-content">: ut</span><span class="push-ipdatetime">111.248.204.129 07/26 15:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">corydoras09</span><span class="f3 push-content">: <a href="https://i.imgur.com/C0hcHww.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/C0hcHww.jpg</a></span><span class="push-ipdatetime">111.248.204.129 07/26 15:47
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/C0hcHwwl.jpg?e=1653599428&amp;s=zyWChci_B3WOdcfhnHrGRQ" alt="" loading="lazy" /></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">loli8763</span><span class="f3 push-content">: 註冊成功</span><span class="push-ipdatetime">   39.8.100.152 07/26 15:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">FlorentinoFL</span><span class="f3 push-content">: 同樣發送完畢無回覆+1  QQ</span><span class="push-ipdatetime">  220.142.23.33 07/26 16:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Atintin</span><span class="f3 push-content">: 推~</span><span class="push-ipdatetime">     27.52.6.18 07/26 16:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">KuanYuChen</span><span class="f3 push-content">: 手機沒拿到簡訊QQ</span><span class="push-ipdatetime">  60.250.33.118 07/26 16:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hururu113</span><span class="f3 push-content">: 11點發送簡訊到現在都沒收到驗證碼QQ只</span><span class="push-ipdatetime"> 111.82.235.131 07/26 16:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hururu113</span><span class="f3 push-content">: 好等三天後再來試試</span><span class="push-ipdatetime"> 111.82.235.131 07/26 16:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hojb</span><span class="f3 push-content">: 暈 想說重新用結果要再等三天QQ</span><span class="push-ipdatetime"> 223.136.148.98 07/26 16:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sheng98</span><span class="f3 push-content">: 樓上不是手機收認證碼喔, 要看認證網頁</span><span class="push-ipdatetime"> 220.143.243.16 07/26 16:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sheng98</span><span class="f3 push-content">: 那邊的說明去取得認證碼</span><span class="push-ipdatetime"> 220.143.243.16 07/26 16:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zxcv2468015</span><span class="f3 push-content">: 讚喔哈哈哈</span><span class="push-ipdatetime"> 49.217.238.222 07/26 16:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">narihira2000</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">114.136.189.108 07/26 16:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ninestixy</span><span class="f3 push-content">: 手機收到簡訊了，回網頁版按確認驗證</span><span class="push-ipdatetime">  61.224.197.24 07/26 16:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ninestixy</span><span class="f3 push-content">: 完成，結果沒拿到PTT開頭的認證碼..請</span><span class="push-ipdatetime">  61.224.197.24 07/26 16:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ninestixy</span><span class="f3 push-content">: 問要怎麼辦</span><span class="push-ipdatetime">  61.224.197.24 07/26 16:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Testudines</span><span class="f3 push-content">: 手機認證成功 終於成為有帳號的鄉民了</span><span class="push-ipdatetime">   114.37.50.17 07/26 16:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">grizzly717</span><span class="f3 push-content">: 推~</span><span class="push-ipdatetime">115.165.237.123 07/26 16:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">allen1145</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  27.52.227.137 07/26 16:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">leegogo</span><span class="f3 push-content">: 收到簡訊回覆了 但網頁按下去還是尚未通</span><span class="push-ipdatetime">114.137.203.233 07/26 17:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">leegogo</span><span class="f3 push-content">: 過啊</span><span class="push-ipdatetime">114.137.203.233 07/26 17:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wd1361253</span><span class="f3 push-content">: 我也是有收到簡訊但是拿不到驗證碼QQ</span><span class="push-ipdatetime"> 110.26.193.211 07/26 17:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wd1361253</span><span class="f3 push-content">:</span><span class="push-ipdatetime"> 110.26.193.211 07/26 17:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chaewon1590</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">    1.171.64.14 07/26 17:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">brianxxhe997</span><span class="f3 push-content">: 可以了感動</span><span class="push-ipdatetime">  110.26.98.179 07/26 17:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">firstlead</span><span class="f3 push-content">: 等三天囉</span><span class="push-ipdatetime">115.165.237.211 07/26 17:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">legendmtg</span><span class="f3 push-content">: 現在AOTP的link點下去似乎會出現404?</span><span class="push-ipdatetime">   58.0.172.217 07/26 17:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sheng98</span><span class="f3 push-content">: 看起來 aotp 專屬網頁被離線了?</span><span class="push-ipdatetime"> 220.143.243.16 07/26 17:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">richardyen03</span><span class="f3 push-content">: 我是先隨便寄一個錯誤的認證碼 然</span><span class="push-ipdatetime"> 223.140.172.67 07/26 17:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">richardyen03</span><span class="f3 push-content">: 後就收到認證失敗的訊息 然後再寄</span><span class="push-ipdatetime"> 223.140.172.67 07/26 17:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">richardyen03</span><span class="f3 push-content">: 正確的就成功了</span><span class="push-ipdatetime"> 223.140.172.67 07/26 17:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">porkonrice</span><span class="f3 push-content">: 在手機驗證的地方卡關，要等3天後：(</span><span class="push-ipdatetime"> 49.217.129.112 07/26 17:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Secret69</span><span class="f3 push-content">: 驗證碼拿不到</span><span class="push-ipdatetime">    114.37.21.3 07/26 18:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Secret69</span><span class="f3 push-content">: 輸入那串數字發到指定地點也沒收到==</span><span class="push-ipdatetime">    114.37.21.3 07/26 18:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WaNNGS</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">    27.52.94.18 07/26 18:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">twggyy</span><span class="f3 push-content">: 成功了 好爽</span><span class="push-ipdatetime"> 27.242.162.240 07/26 18:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pttnewcomer</span><span class="f3 push-content">: 請問沒認證會有功能不能用嗎</span><span class="push-ipdatetime"> 103.125.235.23 07/26 19:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k8530908</span><span class="f3 push-content">: 沒認證成功就只能瀏覽不能推文</span><span class="push-ipdatetime">  59.126.44.171 07/26 19:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jdjj</span><span class="f3 push-content">: 沒弄好 要等三天真的暈</span><span class="push-ipdatetime">  49.217.47.156 07/26 19:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">grachel0818</span><span class="f3 push-content">: 註冊成功啦！感謝</span><span class="push-ipdatetime"> 110.30.104.151 07/26 19:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">banananaba</span><span class="f3 push-content">: 推推 成功啦</span><span class="push-ipdatetime">    61.64.6.242 07/26 19:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jcc324</span><span class="f3 push-content">: 感謝！註冊成功！</span><span class="push-ipdatetime">  101.12.38.198 07/26 20:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">OGE945945</span><span class="f3 push-content">: 謝謝 終於有帳號了！</span><span class="push-ipdatetime"> 124.218.57.158 07/26 20:12
+</span></div><span class="f2">※ </span><span class="f2 hl">wen17</span><span class="f2">:轉錄至看板 Shadowverse</span>                                    07/26 20:44
+<span class="f2">※ </span><span class="f2 hl">aiweisen</span><span class="f2">:轉錄至看板 Kaohsiung</span>                                   07/26 21:22
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hash</span><span class="f3 push-content">: 剛剛認證成功</span><span class="push-ipdatetime">118.150.110.224 07/26 22:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickchen0983</span><span class="f3 push-content">: 只能三天後再測試了QQ</span><span class="push-ipdatetime">220.142.212.215 07/26 23:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Wilion</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  218.35.56.134 07/26 23:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">delete0000</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 111.249.250.68 07/26 23:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jordanalin</span><span class="f3 push-content">: 讚讚讚</span><span class="push-ipdatetime">   36.227.130.2 07/27 00:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kantank</span><span class="f3 push-content">: 註冊成功了</span><span class="push-ipdatetime">   42.77.233.49 07/27 01:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">w510048</span><span class="f3 push-content">: 失敗</span><span class="push-ipdatetime">140.123.214.177 07/27 01:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fantasySTL</span><span class="f3 push-content">: 認證成功</span><span class="push-ipdatetime"> 36.233.253.216 07/27 03:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lemna0010</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  223.138.71.50 07/27 05:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">organic3321</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 114.24.148.140 07/27 08:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">glormagic</span><span class="f3 push-content">: 發了數字但沒收到開通成功大學簡訊…</span><span class="push-ipdatetime"> 27.240.210.114 07/27 09:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">glormagic</span><span class="f3 push-content">: 成功的簡訊</span><span class="push-ipdatetime"> 27.240.210.114 07/27 09:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SiO4</span><span class="f3 push-content">: 我有照流程做但是都沒收到ptt開頭驗證碼?</span><span class="push-ipdatetime">150.117.165.198 07/27 10:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">philinappp</span><span class="f3 push-content">: 新手簽道</span><span class="push-ipdatetime">223.136.250.251 07/27 10:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">peterrrr8778</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">   101.9.17.157 07/27 11:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Undertaker07</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  223.137.1.207 07/27 12:25
+</span></div><span class="f2">※ </span><span class="f2 hl">ACgraduate</span><span class="f2">:轉錄至看板 NUK_AC100</span>                                 07/27 14:35
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">as9121126</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  114.35.95.160 07/27 17:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">j49222106</span><span class="f3 push-content">: 感謝，註冊成功了</span><span class="push-ipdatetime">   1.174.54.126 07/27 19:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Tommy870325</span><span class="f3 push-content">: 感謝教學～終於有帳號了</span><span class="push-ipdatetime">  223.137.20.80 07/27 21:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">OlDeStYoUnG</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">   49.217.70.67 07/27 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">akila0726</span><span class="f3 push-content">: 收不到驗證碼</span><span class="push-ipdatetime">   27.247.38.10 07/27 23:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ipipi304</span><span class="f3 push-content">: 請問怎樣才能留言</span><span class="push-ipdatetime">   1.200.243.32 07/28 05:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pattyhaha</span><span class="f3 push-content">: 有收到驗證成功的簡訊，可是點了網頁卻</span><span class="push-ipdatetime"> 122.121.21.232 07/28 15:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pattyhaha</span><span class="f3 push-content">: 證碼﴿</span><span class="push-ipdatetime"> 122.121.21.232 07/28 15:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pattyhaha</span><span class="f3 push-content">: 證碼﴿</span><span class="push-ipdatetime"> 122.121.21.232 07/28 15:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pattyhaha</span><span class="f3 push-content">: 證碼﴿</span><span class="push-ipdatetime"> 122.121.21.232 07/28 15:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pattyhaha</span><span class="f3 push-content">: *沒有驗證碼</span><span class="push-ipdatetime"> 122.121.21.232 07/28 15:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nasdaqbloom</span><span class="f3 push-content">: 推惹</span><span class="push-ipdatetime"> 111.243.147.95 07/28 16:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">casicielo</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">223.137.108.207 07/28 20:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">comezgirl</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">101.136.133.110 07/28 21:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">huang1023</span><span class="f3 push-content">: QQ要等三天</span><span class="push-ipdatetime"> 114.27.220.186 07/28 21:15
+</span></div><span class="f2">※ 編輯: s5048218 (219.91.112.149 臺灣), 07/28/2021 21:23:38
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lchcoding</span><span class="f3 push-content">: 新手練習簽到</span><span class="push-ipdatetime">  42.72.168.178 07/28 21:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wnlinle</span><span class="f3 push-content">: 三天後終於驗證成功</span><span class="push-ipdatetime"> 223.137.49.141 07/29 13:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hururu113</span><span class="f3 push-content">: 終於成功</span><span class="push-ipdatetime">223.138.190.138 07/29 13:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zing01</span><span class="f3 push-content">: 我也是等了三天以後第二次認證才成功。第</span><span class="push-ipdatetime">   27.53.103.44 07/29 14:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zing01</span><span class="f3 push-content">: 一次都沒收到簡訊</span><span class="push-ipdatetime">   27.53.103.44 07/29 14:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 我是收到簡訊說驗證成功, 但是按了設定成</span><span class="push-ipdatetime">   1.164.77.230 07/29 17:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 功的網頁没出現認證碼, 出現驗證没成功</span><span class="push-ipdatetime">   1.164.77.230 07/29 17:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 可是登入後没有再出現你的帳號未認證, 這</span><span class="push-ipdatetime">   1.164.77.230 07/29 17:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 這樣是算驗證成功了嗎?</span><span class="push-ipdatetime">   1.164.77.230 07/29 17:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">royman127</span><span class="f3 push-content">: 樓上，你驗證還沒過</span><span class="push-ipdatetime">   114.25.97.49 07/29 21:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">asd3123123</span><span class="f3 push-content">: 有單我就先推</span><span class="push-ipdatetime">  111.83.104.11 07/30 03:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Moris</span><span class="f3 push-content">: 感謝教學</span><span class="push-ipdatetime"> 27.246.100.198 07/30 10:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sgnoh4580</span><span class="f3 push-content">: 感恩</span><span class="push-ipdatetime">223.139.206.165 07/30 22:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">porkonrice</span><span class="f3 push-content">: 終於認證成功了～</span><span class="push-ipdatetime">   49.217.4.168 07/31 01:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">startmp87</span><span class="f3 push-content">: AOTP認證已通過，但帳號還是需驗證，再</span><span class="push-ipdatetime"> 59.102.160.199 07/31 13:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">startmp87</span><span class="f3 push-content">: 次驗證手機寫已被使用，已經三天後再試</span><span class="push-ipdatetime"> 59.102.160.199 07/31 13:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">startmp87</span><span class="f3 push-content">: 仍是如此怎麼辦</span><span class="push-ipdatetime"> 59.102.160.199 07/31 13:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanyan0217</span><span class="f3 push-content">: 請問隔了三天重新用，我還是收不到手</span><span class="push-ipdatetime">  61.228.191.87 07/31 22:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yanyan0217</span><span class="f3 push-content">: 機AOTP認證怎麼辦...</span><span class="push-ipdatetime">  61.228.191.87 07/31 22:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanyan0217</span><span class="f3 push-content">: 抱歉我成功了 謝謝</span><span class="push-ipdatetime">  61.228.191.87 07/31 22:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rexyang6606</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime">   101.12.45.80 08/01 00:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ckhscurry</span><span class="f3 push-content">: 成功了</span><span class="push-ipdatetime">123.194.221.248 08/01 01:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 又是收到簡訊驗證成功, 但是網頁没出現認</span><span class="push-ipdatetime">    1.164.76.63 08/01 16:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">swanbai</span><span class="f3 push-content">: 證碼, 請問出了什麼事</span><span class="push-ipdatetime">    1.164.76.63 08/01 16:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">li62306891</span><span class="f3 push-content">: 請問原是linemobile後轉為遠傳收不到</span><span class="push-ipdatetime"> 61.223.193.143 08/02 00:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">li62306891</span><span class="f3 push-content">: 有人碰到相同的問題嗎?</span><span class="push-ipdatetime"> 61.223.193.143 08/02 00:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ggyy123456</span><span class="f3 push-content">: 請問如果認證成功卻還不能推文是什麼</span><span class="push-ipdatetime">114.137.104.196 08/03 11:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ggyy123456</span><span class="f3 push-content">: 原因呢？謝謝</span><span class="push-ipdatetime">114.137.104.196 08/03 11:59
+</span></div><span class="f2">※ </span><span class="f2 hl">younghan</span><span class="f2">:轉錄至看板 Canada</span>                                      08/03 14:18
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Hsucp</span><span class="f3 push-content">: 菜鳥報道</span><span class="push-ipdatetime">    1.172.98.29 08/09 12:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kagrra0718</span><span class="f3 push-content">: 我收不到簡訊QQ</span><span class="push-ipdatetime">  110.26.71.119 08/10 12:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Hinatazaka</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 36.231.103.231 08/10 18:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">K1T2Z2</span><span class="f3 push-content">: 我今天註冊完帳號了，結果忘記帳號，有解</span><span class="push-ipdatetime"> 116.89.132.170 08/11 11:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">K1T2Z2</span><span class="f3 push-content">: 嗎？XD</span><span class="push-ipdatetime"> 116.89.132.170 08/11 11:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">K1T2Z2</span><span class="f3 push-content">: 帳號註冊完了，要登入時卻顯示帳號或者密</span><span class="push-ipdatetime"> 116.89.132.170 08/11 11:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">K1T2Z2</span><span class="f3 push-content">: 碼錯誤？！請問這樣要怎麼處理阿？</span><span class="push-ipdatetime"> 116.89.132.170 08/11 11:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ktx122</span><span class="f3 push-content">: 我剛剛終於登入了~~~</span><span class="push-ipdatetime"> 180.217.144.13 08/11 13:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Joanna0224</span><span class="f3 push-content">: 完成註冊 也收到信件註冊成功 為何登</span><span class="push-ipdatetime">  39.13.198.232 08/18 02:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Joanna0224</span><span class="f3 push-content">: 入App還跳通知說未完成註冊</span><span class="push-ipdatetime">  39.13.198.232 08/18 02:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Tan12</span><span class="f3 push-content">: 手機收不到簡訊QQ</span><span class="push-ipdatetime">114.136.227.195 08/18 13:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">renever</span><span class="f3 push-content">: 註冊後沒有辦法調整至認證區</span><span class="push-ipdatetime">  1.174.112.187 08/22 21:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Smark</span><span class="f3 push-content">: 成功了!!!站嘆~</span><span class="push-ipdatetime">124.218.157.182 08/25 10:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hkjeer</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 114.136.67.157 09/01 13:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ikuro</span><span class="f3 push-content">: 實用推！</span><span class="push-ipdatetime">  36.225.193.68 09/01 19:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Tan12</span><span class="f3 push-content">: 手機驗證的13步驟輸入完以後什麼反應都沒；</span><span class="push-ipdatetime">114.136.174.220 09/02 23:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Tan12</span><span class="f3 push-content">: email也收不到QQ</span><span class="push-ipdatetime">114.136.174.220 09/02 23:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dfgh756</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">223.138.104.176 09/09 18:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chilacken</span><span class="f3 push-content">: 註冊成功推～～</span><span class="push-ipdatetime">  49.216.175.78 09/13 13:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GGmom</span><span class="f3 push-content">: 已經試好幾次都收不到簡訊QQ</span><span class="push-ipdatetime"> 180.218.204.35 09/13 19:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">caan88888</span><span class="f3 push-content">: 成功了，沒注意看還不會用</span><span class="push-ipdatetime">220.130.134.252 09/14 15:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a78969</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime">    42.76.55.51 09/25 02:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GGmom</span><span class="f3 push-content">: 請問手機收不到驗證碼 又不給我人工審查要</span><span class="push-ipdatetime"> 180.218.204.35 09/27 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GGmom</span><span class="f3 push-content">: 怎麼辦QQ</span><span class="push-ipdatetime"> 180.218.204.35 09/27 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ricestone</span><span class="f3 push-content">: 手機只會收到通知驗證成功的簡訊</span><span class="push-ipdatetime">    219.91.5.58 09/29 16:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ricestone</span><span class="f3 push-content">: 一直說手機收不到驗證碼應該重看步驟</span><span class="push-ipdatetime">    219.91.5.58 09/29 16:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: 建議這個公告 s 一下</span><span class="push-ipdatetime"> 118.171.197.70 10/11 13:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: 置底那篇</span><span class="push-ipdatetime"> 118.171.197.70 10/11 13:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GYC8848</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">   84.17.34.104 10/14 07:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GYC8848</span><span class="f3 push-content">: 等</span><span class="push-ipdatetime">   84.17.34.104 10/14 07:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">exoplanet</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 114.27.242.186 10/16 21:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dreamnook2</span><span class="f3 push-content">: (躺)主帳被盜來留個推文記錄QQ</span><span class="push-ipdatetime"> 36.228.120.239 10/24 09:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Whisper5566</span><span class="f3 push-content">: 最近也被盜帳號 都2021了</span><span class="push-ipdatetime"> 220.129.95.153 10/27 22:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Whisper5566</span><span class="f3 push-content">: 為什麼搞得我們像盜帳號的人一樣QQ</span><span class="push-ipdatetime"> 220.129.95.153 10/27 22:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Whisper5566</span><span class="f3 push-content">: 希望能快點取回帳號</span><span class="push-ipdatetime"> 220.129.95.153 10/27 22:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">haha995</span><span class="f3 push-content">: 新手試推</span><span class="push-ipdatetime"> 117.56.186.175 11/04 00:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sugerccc</span><span class="f3 push-content">: 我的帳號無法認證</span><span class="push-ipdatetime">  39.11.160.246 11/26 08:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kikilala926</span><span class="f3 push-content">: 我是無框,無法手機認証,mail是mail20</span><span class="push-ipdatetime"> 180.177.109.59 12/05 22:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kikilala926</span><span class="f3 push-content">: 00也認証不過,請問還有什麼方法？謝</span><span class="push-ipdatetime"> 180.177.109.59 12/05 22:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">book783</span><span class="f3 push-content">: 阿勇ㄙ</span><span class="push-ipdatetime">   1.200.178.45 12/10 06:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">maya123</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">  59.115.85.250 12/18 11:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xxfhlt</span><span class="f3 push-content">: 你好</span><span class="push-ipdatetime">  203.69.53.127 12/19 19:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">heynui</span><span class="f3 push-content">: 沒收到回覆...</span><span class="push-ipdatetime">   27.242.32.55 12/20 20:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lalamomo</span><span class="f3 push-content">: 請問松鼠大組合二罐頭和保經照我大寶保</span><span class="push-ipdatetime">  61.223.66.171 12/21 19:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lalamomo</span><span class="f3 push-content">: 單，規劃宏泰+全球，遠雄病房升等差額無</span><span class="push-ipdatetime">  61.223.66.171 12/21 19:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lalamomo</span><span class="f3 push-content">: 法申請，宏泰可列入雜費，請問松鼠大看</span><span class="push-ipdatetime">  61.223.66.171 12/21 19:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lalamomo</span><span class="f3 push-content">: 法如何？這樣好像就沒失能險</span><span class="push-ipdatetime">  61.223.66.171 12/21 19:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lalamomo</span><span class="f3 push-content">:  去</span><span class="push-ipdatetime">  61.223.66.171 12/21 19:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">KayouLIN</span><span class="f3 push-content">: 感謝 認證成功了</span><span class="push-ipdatetime">    101.10.0.78 01/17 20:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">drtgrass</span><span class="f3 push-content">: 鵝</span><span class="push-ipdatetime"> 49.217.137.230 01/21 12:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">remark308</span><span class="f3 push-content">: 因為我到大陸工作改用預付卡無法用簡訊</span><span class="push-ipdatetime">  211.23.45.157 01/31 09:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">remark308</span><span class="f3 push-content">: 認證要如何解決?</span><span class="push-ipdatetime">  211.23.45.157 01/31 09:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">royman127</span><span class="f3 push-content">: 這篇是不是該s起來以免jptt回錯文？</span><span class="push-ipdatetime"> 218.172.92.148 02/18 16:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sha09876</span><span class="f3 push-content">: 向83811發送簡訊但收到手機號碼錯誤的</span><span class="push-ipdatetime">220.137.225.225 04/08 18:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sha09876</span><span class="f3 push-content">: 簡訊，我的手機門號是台灣之星。想問我</span><span class="push-ipdatetime">220.137.225.225 04/08 18:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sha09876</span><span class="f3 push-content">: 有可能是哪個步驟出錯了呢</span><span class="push-ipdatetime">220.137.225.225 04/08 18:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">piggycat</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 180.217.210.10 04/12 18:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tcc30</span><span class="f3 push-content">: 穩了</span><span class="push-ipdatetime">  180.177.8.139 04/19 01:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tcc30</span><span class="f3 push-content">: 已經輸入過email 的認證碼為什麼還要重新認</span><span class="push-ipdatetime">  180.177.8.139 04/19 01:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tcc30</span><span class="f3 push-content">: 證...？</span><span class="push-ipdatetime">  180.177.8.139 04/19 01:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">BigCat</span><span class="f3 push-content">: email 只是「取得」id而已，要「認證」id</span><span class="push-ipdatetime">   114.40.77.55 04/22 03:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">BigCat</span><span class="f3 push-content">: 就需要手機門號或者 ntu的 email。</span><span class="push-ipdatetime">   114.40.77.55 04/22 03:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">austin120313</span><span class="f3 push-content">: o</span><span class="push-ipdatetime">    42.73.33.37 04/27 13:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">satokubi</span><span class="f3 push-content">: 我是無框行動用戶，簡訊發不出去QQ有任</span><span class="push-ipdatetime">   114.25.43.63 05/02 14:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">satokubi</span><span class="f3 push-content">: 何替代方案嗎？</span><span class="push-ipdatetime">   114.25.43.63 05/02 14:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosboy12</span><span class="f3 push-content">: 同問無框行動+1 無法認證</span><span class="push-ipdatetime">  36.226.136.13 05/08 16:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tranceman35</span><span class="f3 push-content">: 中華電信收不到驗證碼</span><span class="push-ipdatetime">118.161.233.243 05/24 00:32
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/SYSOP/M.1627279813.A.1C8.html?cacheKey=2149-1025661454&amp;offset=23519&amp;offset-sig=015927e915a211cc1b91276a727ada9f5e2d1093" data-longpollurl="/v1/longpoll?id=35203c5160f726f5fe9dc15e4cc4420d5bc63b22" data-offset="23519"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106c6915eda80ad',m:'.Fr6PJuyyK.IrrDUE7.5bmCGW3v0ZrJdWDDVx35r5PQ-1653403113-0-AR7RRaS2w+UH8FnTLd/kxJjQ4aSTG2VWr3K4kfDGVDD2BDPCOu4BQh0t1HvgCTXkedgt3/SD4vAeLymoGeoE8ss6CEc/QiYQQs5wQfSXL2MZ6OdSc7oH3wk4vekdctXizAlVNjsKez6dY3aglwJG34BbAnxioYJi9Kir/DUQIPn8',s:[0x1e332cb0e4,0xefd3a3960d],}})();</script></body>
+</html>
