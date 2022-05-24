@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[閒聊] 測試 PCMan Websocket 連線 - 看板 PCman - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="目前嘗試將 PCMan 加了 Websocket 連線支援,
+不過想必會有些 bug, 先釋出這個測試版, 希望大家能幫忙測試.
+&lt; 系統需求 &gt;
+Windows XP SP3 以上 (再戰十年)
+&lt; 如何安裝 &gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[閒聊] 測試 PCMan Websocket 連線">
+<meta property="og:description" content="目前嘗試將 PCMan 加了 Websocket 連線支援,
+不過想必會有些 bug, 先釋出這個測試版, 希望大家能幫忙測試.
+&lt; 系統需求 &gt;
+Windows XP SP3 以上 (再戰十年)
+&lt; 如何安裝 &gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PCman/M.1497244087.A.23E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PCman/index.html"><span class="board-label">看板 </span>PCman</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PCman/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">robertabcd (robert)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PCman</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[閒聊] 測試 PCMan Websocket 連線</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jun 12 13:08:05 2017</span></div>
+目前嘗試將 PCMan 加了 Websocket 連線支援,
+不過想必會有些 bug, 先釋出這個測試版, 希望大家能幫忙測試.
+
+<span class="f3 b4 hl">&lt; 系統需求 &gt;</span>
+
+Windows XP SP3 以上 (再戰十年)
+
+<span class="f3 b4 hl">&lt; 如何安裝 &gt;</span>
+
+<span class="f2 hl">下載: </span><a href="https://goo.gl/DJy6EY" target="_blank" rel="noreferrer noopener nofollow"><span class="f2 hl">https://goo.gl/DJy6EY</span></a>
+解壓縮後選擇 PCMan 或 PCMan Combo 資料夾裡的 PCMan.exe 直接執行.
+
+兩個版本 PCMan 和 PCMan Combo 均為 Portable 版，
+有獨立的設定值，不會影響系統內已安裝的 PCMan。
+
+<span class="hl">如果打開顯示缺少 vcruntime140.dll 表示未安裝</span>
+<span class="hl">「Visual Studio 2017 的 Microsoft Visual C++ 可轉散發套件」</span>
+
+請至下列連結下載：
+32位元系統(x86) <a href="https://go.microsoft.com/fwlink/?LinkId=746571" target="_blank" rel="noreferrer noopener nofollow">https://go.microsoft.com/fwlink/?LinkId=746571</a>
+64位元系統(x64) <a href="https://go.microsoft.com/fwlink/?LinkId=746572" target="_blank" rel="noreferrer noopener nofollow">https://go.microsoft.com/fwlink/?LinkId=746572</a>
+
+<span class="f3 b4 hl">&lt; 如何連線 &gt;</span>
+
+使用我的最愛裡寫有安全連線的選項連線,
+抑或在位址列輸入以下:
+
+  wss://ws.ptt.cc/bbs
+
+即可連線至 PTT.
+
+<span class="f3 b4 hl">&lt; 常見問答 &gt;</span>
+
+<span class="f3 hl">Q: 為什麼圖示這麼大?</span>
+A: 這是由原始碼直接編譯的版本, 不包含一般版 PCMan 的圖示.
+   未來如果正式釋出或許會換成大家熟悉的圖示.
+
+<span class="f3 hl">Q: Windows 說我沒有 vcruntime140.dll</span>
+A: 請見上面安裝說明.
+
+<span class="f3 hl">Q: 我發現 bug 了!!1</span>
+A: 請記錄詳細的操作流程, 最好也能附上錯誤時的螢幕截圖,
+   將這些資訊寄站內信給 robertabcd,
+   或是 email 至 robertabcd [at] gmail.com
+
+<span class="f3 hl">Q: Code 在哪? 怎麼編譯?</span>
+A: <a href="https://github.com/pcman-bbs/pcman-windows/pull/5" target="_blank" rel="noreferrer noopener nofollow">https://github.com/pcman-bbs/pcman-windows/pull/5</a>
+   見 Dependencies.txt 檔案.
+
+<span class="f3 hl">Q: 這個版本的 PCMan 是官方版本嗎?</span>
+A: 不是.
+
+<span class="f3 hl">Q: 還有 PTT 之外的 BBS 站支援 Websocket 連線嗎?</span>
+A: 目前沒有.
+
+<span class="f3 hl">Q: 為什麼做這個? 不是已經有 SSH 了?</span>
+A: 目的是希望大家都有方便加密連線能夠使用.
+   一般手機 App 都已支援 SSH 加密連線,
+   唯獨 Windows 下無 BBS 瀏覽專用的 SSH 客戶端可用.
+   (PuTTY/PieTTY 很好但是並沒有 PCMan 這麼多功能)
+
+   不選擇 SSH 的原因是不太好做 key rotation, 也沒有 CA 可以使用.
+   選擇過 https 的 Websocket 可以直接使用現有的 CA 基礎建設.
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 140.112.30.38
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PCman/M.1497244087.A.23E.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PCman/M.1497244087.A.23E.html</a>
+</span><span class="f2">※ 編輯: robertabcd (140.112.30.38), 06/12/2017 13:35:25
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lynn1221</span><span class="f3 push-content">:</span><span class="push-ipdatetime"> 06/12 14:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">block</span><span class="f3 push-content">: 終於修正成新版啦，還在VC 6.0會影響發開者加入</span><span class="push-ipdatetime"> 06/12 16:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: Cool!</span><span class="push-ipdatetime"> 06/12 17:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eltonchung</span><span class="f3 push-content">: Mac上使用自然輸入法有問題，也無法複製貼上</span><span class="push-ipdatetime"> 06/13 16:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">name2name2</span><span class="f3 push-content">: !!轉成功了嗎 我之前vs自動轉失敗  vc6 裝在win8 10</span><span class="push-ipdatetime"> 06/13 20:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">name2name2</span><span class="f3 push-content">: 裝不起來 後來弄了個xp環境才裝成功</span><span class="push-ipdatetime"> 06/13 20:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">name2name2</span><span class="f3 push-content">: 也成功讓其中一個版本pcman能跑 不過vc6介面有點難用</span><span class="push-ipdatetime"> 06/13 20:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">name2name2</span><span class="f3 push-content">: 加上對c++沒很熟就沒再碰了</span><span class="push-ipdatetime"> 06/13 20:30
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PCman/M.1497244087.A.23E.html?cacheKey=2148-738863937&amp;offset=2883&amp;offset-sig=c771a183f99c80c22d2bc7db978f8e6386eb038a" data-longpollurl="/v1/longpoll?id=5662ae143e0499a327db016f19de3df8408caac6" data-offset="2883"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106d11c38edef9a',m:'LbrWLN3Ue54eGMWl0zoCOw1Md3SWmDFgcEy_8Sg4KmE-1653403545-0-AbJsuuQwlOJB5xcbAbyLi/SBajHRzheQdDkV5bczXhtJs1HL5a0Cz5GQN5ZDX86PGbPNOvoBtdn6SCD7spC8yES0sSMjEDb6VBqC1kau8xFkVrzNcytdvdaQIqfy9sSKjPswKioHhOn64JlrJVd0w1GrRlRpMaU/LoeoZ4bXBHWd',s:[0x3533dfe6a3,0x63797e1f13],}})();</script></body>
+</html>

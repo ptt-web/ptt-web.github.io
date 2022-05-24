@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[攻略] 自動晶片填入教學 - 精華區 GirlsFront - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="大家好 打給後 胎嘎後
+相信很多人都有用過晶片計算器
+也知道大部分的晶片計算器都要自己手動輸入自己擁有的晶片
+隨著晶片越多，每次輸入都要很久 又很怕弄錯之類的
+所以也有人提出用截圖辨識晶片數值的方法
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[攻略] 自動晶片填入教學">
+<meta property="og:description" content="大家好 打給後 胎嘎後
+相信很多人都有用過晶片計算器
+也知道大部分的晶片計算器都要自己手動輸入自己擁有的晶片
+隨著晶片越多，每次輸入都要很久 又很怕弄錯之類的
+所以也有人提出用截圖辨識晶片數值的方法
+">
+<link rel="canonical" href="https://www.ptt.cc/man/GirlsFront/D72B/M.1557035211.A.112.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/man/GirlsFront/index.html"><span class="board-label">精華區<sup>beta</sup> </span>GirlsFront</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/man/GirlsFront/D72B/index.html">返回上層</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">neil987 (R5大小姐-EX人品崩壞)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">GirlsFront</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[攻略] 自動晶片填入教學</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat May  4 23:16:51 2019</span></div>
+大家好 打給後 胎嘎後
+
+相信很多人都有用過晶片計算器
+
+也知道大部分的晶片計算器都要自己手動輸入自己擁有的晶片
+
+隨著晶片越多，每次輸入都要很久 又很怕弄錯之類的
+
+所以也有人提出用截圖辨識晶片數值的方法
+
+我自己也有做一個
+
+不過NGA後來有位大佬利用自己電腦作為中間人(容我稱為中間人攻擊的一種)
+
+截取你遊的封包並解析出其中的晶片資料
+
+<a href="https://bbs.nga.cn/read.php?tid=17016170" target="_blank" rel="noreferrer noopener nofollow">https://bbs.nga.cn/read.php?tid=17016170</a>
+
+再將這些資料轉換成由另一位對岸大佬(命運の樂章)所開發的晶片計算器的格式
+
+<a href="https://hycdes.com/pages/GFT_ChipCal.html" target="_blank" rel="noreferrer noopener nofollow">https://hycdes.com/pages/GFT_ChipCal.html</a>
+
+就可以直接匯入你的晶片資料
+
+但是由於陸/韓服在傳輸遊戲封包時
+
+採用的是HTTP協定 因此遊戲的封包是沒有經過加密的(明文)
+
+而台服則比較特別 採用HTTPS 因此沒有經過解密是看不懂封包資料的
+
+所以如果你玩的是陸/韓服 請直接參考上述NGA網址所提供的程式與教學
+
+如果你玩的是台服 也別擔心 也是有方法可以取得資料的 雖然麻煩了一點
+
+台服玩家請參考我以下的教學與使用我寫的程式
+
+(原本有問NGA大佬能不能幫我改他原本的程式，結果他說他在鹹魚有點懶(ry )
+
+<span class="f2 hl">另外聲明:NGA大佬的做法與我接下來的做法</span>
+
+<span class="f2 hl">都只是解析本地端對遊戲伺服器送出的資料 並取得需要的資訊而已</span>
+
+<span class="f2 hl">並無修改遊戲資料這種違反遊戲規範的行為 因此理論上是無封鎖風險</span>
+
+<span class="f2 hl">(任意修改封包資料是會被鎖的)</span>
+
+前言結束
+
+-------------------------------------
+正文開始
+
+本教學適用於模擬器/Android/IOS等任何可以設定proxy的裝置
+
+以下為本次教學需要用到的軟體:
+
+1.fiddler
+
+<a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noreferrer noopener nofollow">https://www.telerik.com/download/fiddler</a>
+
+fiddler是一個網路封包解析軟體
+
+且可以作為proxy server作為兩端的中間人 讀取封包資料
+
+2.你遊晶片解析轉錄器
+
+<a href="https://github.com/sky7st/GF_Chip_Json_Parse/releases/tag/0.1.1" target="_blank" rel="noreferrer noopener nofollow">https://github.com/sky7st/GF_Chip_Json_Parse/releases/tag/0.1.1</a>
+
+我參考對岸大佬寫的 輸出格式一樣是滿足命運の樂章的晶片模擬器格式
+
+使用C# .Net 4.0寫的  如果沒安裝過.Net 記得要安裝
+
+<a href="https://www.microsoft.com/zh-tw/download/details.aspx?id=17718" target="_blank" rel="noreferrer noopener nofollow">https://www.microsoft.com/zh-tw/download/details.aspx?id=17718</a>
+
+以下為教學步驟(以Android模擬器為例)
+
+0.1
+
+請先關閉防火牆及防毒軟體或是之後將軟體設定為通過名單
+
+0.2
+
+請讓你的裝置與電腦處於同一個網路環境底下
+
+手機請和電腦連上同一個WiFi 模擬器就沒差
+
+1.下載完上述軟體後
+
+請先放在相同資料夾以便日後刪除時方便
+
+並創立一個fiddler資料夾 並開啟FiddlerSetup.exe安裝fiddler
+
+可以選擇將fiddler安裝在剛剛創好的資料夾內
+
+接著進入fiddler資料夾內開啟 Fiddler.exe
+
+如果跳出這個提示 請選NO
+
+<a href="https://i.imgur.com/0h0tJoW.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/0h0tJoW.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/0h0tJoWl.jpg?e=1653553564&amp;s=PoeNjOIr9EMYoIMCBPokWg" alt="" loading="lazy" /></div>
+2.修改fiddler設定
+
+選擇Tools/Options
+
+<a href="https://i.imgur.com/bOS3M26.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/bOS3M26.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/bOS3M26l.jpg?e=1653592276&amp;s=Hb2pTQ_z-_hOdgDp2fNm2Q" alt="" loading="lazy" /></div>
+選擇HTTPS那頁 並如圖更改設定
+
+<a href="https://i.imgur.com/osDYZdf.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/osDYZdf.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/osDYZdfl.jpg?e=1653588343&amp;s=JPTSeJX6hr8ZrnK9HBSS9g" alt="" loading="lazy" /></div>
+選擇Connections那頁 並如圖更改設定
+
+<a href="https://i.imgur.com/NAK56b7.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/NAK56b7.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/NAK56b7l.jpg?e=1653550978&amp;s=2nUIERvR98sH2ahwJDVH9g" alt="" loading="lazy" /></div>
+然後重開一次fiddler
+
+3.找到電腦目前使用的ip(可用介面卡選項或是CMD/ipconfig看)
+
+開啟你的手機(這邊用模擬器)
+
+進入手機設定裡的WiFi選項 按住你使用的WiFi 選擇修改網路 勾選進階選項
+
+proxy選擇手動 然後主機名稱打上電腦的IP 通訊阜打上 8888 然後儲存
+
+<a href="https://i.imgur.com/bIhOwaU.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/bIhOwaU.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/bIhOwaUl.jpg?e=1653582339&amp;s=Gz-iGKAWtN9Jxw9C-sV70g" alt="" loading="lazy" /></div>
+4.開啟手機的瀏覽器
+
+在網址列打上 你的電腦IP:8888 (我的是 170.20.10.6:8888)
+
+如果你的設定正確應該會跳出如下的畫面
+
+<a href="https://i.imgur.com/iBCCqkg.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/iBCCqkg.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/iBCCqkgl.jpg?e=1653578086&amp;s=ndJ8h_NTyWZdb0u6lVrfWw" alt="" loading="lazy" /></div>
+接著點擊FiddlerRoot certificate 應該會跳出一個為憑證命名的畫面
+
+隨便打個名字然後按確定
+
+<a href="https://i.imgur.com/RbdXEjL.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/RbdXEjL.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/RbdXEjLl.jpg?e=1653544509&amp;s=k397_PWAiezbmfCciARopw" alt="" loading="lazy" /></div>
+另外 在做這件事情的時候 手機可能會要求你設定手機密碼之類的
+
+5.如果你背景有執行你遊 請把它關掉
+
+重新打開一次遊戲 登入完帳號就可以回到fiddler去看了
+
+如果你上面的設定都正確的話
+
+應該可以看到有大量的封包被截取
+
+我們只挑 URL是/index.php/1001/Index/index的部分
+
+<a href="https://i.imgur.com/3hKKhTA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/3hKKhTA.jpg</a> (螢光筆部分)
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/3hKKhTAl.jpg?e=1653584856&amp;s=zlkAiAMD2DVSLwLCPaarEA" alt="" loading="lazy" /></div>
+對他點兩下  可以看到右邊的資訊欄改變了
+
+<a href="https://i.imgur.com/HYpuIaC.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/HYpuIaC.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/HYpuIaCl.jpg?e=1653574799&amp;s=JmNL1wyejpH6lSB0VFQi0Q" alt="" loading="lazy" /></div>
+在右下角SyntaxView的選項可以看到被編碼過的封包
+
+以及fiddler提示 Response body is encode.Click to decode.
+
+點擊這個提示解碼 可以看到亂碼變成看的懂的文字了
+
+選擇TextView 然後再選擇右下角的View in NotePad
+
+<a href="https://i.imgur.com/Q9j59O8.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/Q9j59O8.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/Q9j59O8l.jpg?e=1653553917&amp;s=OLnkMOXxRD1bCYePmsvhQw" alt="" loading="lazy" /></div>
+他就會把你看到的那一大串文字丟到記事本上
+
+我們在記事本選擇另存新檔 副檔名請更改成json(如果不能改的請自己上網查)
+
+<a href="https://i.imgur.com/9deGlYs.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/9deGlYs.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/9deGlYsl.jpg?e=1653575291&amp;s=Y1qpE0ZdhN02YLDMWQj4kA" alt="" loading="lazy" /></div>
+6.開啟我提供的程式(GF_CHIP_JSON.exe)
+
+介面: <a href="https://i.imgur.com/aBnlNyJ.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/aBnlNyJ.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/aBnlNyJl.jpg?e=1653591962&amp;s=qiv0JYpVkDOUi2aL_2EbQQ" alt="" loading="lazy" /></div>
+這邊說明一下 程式是用獲得順序來排序的
+
+額外提供兩個選項可以過濾(升/降冪 以及不加入裝備中的晶片)
+
+需要的在選擇檔案前打勾
+
+按下選擇檔案 選擇剛剛存好的JSON檔案 開啟
+
+<a href="https://i.imgur.com/9YN7pz3.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/9YN7pz3.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/9YN7pz3l.jpg?e=1653580664&amp;s=sgMOBcFqR9dEdanSlYFqSw" alt="" loading="lazy" /></div>
+轉換完成會跳出提示 並且把數據複製到剪貼簿
+
+<a href="https://i.imgur.com/6FlGpkN.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/6FlGpkN.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/6FlGpkNl.jpg?e=1653572986&amp;s=tDNxw3I30XL8W5wlwY25nA" alt="" loading="lazy" /></div>
+進入命運の樂章大佬的晶片模擬器
+
+<a href="https://hycdes.com/pages/GFT_ChipCal.html" target="_blank" rel="noreferrer noopener nofollow">https://hycdes.com/pages/GFT_ChipCal.html</a>
+
+在讀取數據按鈕的旁邊的輸入框貼上後按下讀取數據
+
+<a href="https://i.imgur.com/6qYk2KA.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/6qYk2KA.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/6qYk2KAl.jpg?e=1653590749&amp;s=PqMMDJPOxGYcgWYPvlIynQ" alt="" loading="lazy" /></div>
+等待一陣子 完成所有晶片的匯入
+
+<a href="https://i.imgur.com/5bKwj4T.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/5bKwj4T.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/5bKwj4Tl.jpg?e=1653574081&amp;s=irPI_K8Hwh1oEzV1fNzwcA" alt="" loading="lazy" /></div>
+EX.
+
+之後請自行取消掉WiFi裡的proxy設定
+
+並刪除模擬器上的憑證資料(這樣模擬器才能讓你解除密碼鎖定)
+
+在設定-&gt;安全性-&gt;移除憑證
+
+EX2.
+
+如果開啟fiddler的時候出現
+
+Failed to register Fiddler as the system proxy的錯誤
+
+請依照此網址解決問題
+
+<a href="https://reurl.cc/LVbXx" target="_blank" rel="noreferrer noopener nofollow">https://reurl.cc/LVbXx</a>
+
+
+--
+
+以上 希望能對大家有點幫助
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 182.235.138.37
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/GirlsFront/M.1556983015.A.8BA.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/GirlsFront/M.1556983015.A.8BA.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aa881104</span><span class="f3 push-content">: 豆頁</span><span class="push-ipdatetime"> 05/04 23:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DirtyMoney</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/04 23:20
+</span></div>
+另外不負責任發言 這程式我自己試過能動 但是我不知道其他人會不會有問題
+有問題在想辦法解決唄
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">z7202172021</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/04 23:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">justsay</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/04 23:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">proter</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/04 23:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dk2ftrmrn</span><span class="f3 push-content">: 太神拉</span><span class="push-ipdatetime"> 05/04 23:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ritop</span><span class="f3 push-content">: 高科技大佬 推</span><span class="push-ipdatetime"> 05/04 23:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PRACEMAKER</span><span class="f3 push-content">: (′・ω・)σ 我代表烘培坊發987P獎金給你</span><span class="push-ipdatetime"> 05/04 23:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">saint01</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/04 23:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: 另外有什麼問題可以在這提問 我盡量解決</span><span class="push-ipdatetime"> 05/04 23:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">d970306</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/04 23:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pk1275</span><span class="f3 push-content">: 推  不過歐洲人還是要燒</span><span class="push-ipdatetime"> 05/04 23:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GSHARP</span><span class="f3 push-content">: 太...神...了...</span><span class="push-ipdatetime"> 05/04 23:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: 我相信這裡推文的大部分都是已經畢業不需要用這個的</span><span class="push-ipdatetime"> 05/04 23:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: (′・ω・)σ</span><span class="push-ipdatetime"> 05/04 23:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">AlisaRein</span><span class="f3 push-content">: 頭痛</span><span class="push-ipdatetime"> 05/04 23:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">AlisaRein</span><span class="f3 push-content">: 萌新如我還沒畢業</span><span class="push-ipdatetime"> 05/04 23:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">deepstriker</span><span class="f3 push-content">: 黑科技推個 不過我還是選截圖下來自己輸入excel</span><span class="push-ipdatetime"> 05/04 23:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: 雖然我也有寫截圖版的 不過目前被我放置中(′・ω・)σ</span><span class="push-ipdatetime"> 05/04 23:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BiBiWhite225</span><span class="f3 push-content">: (′・ω・)b</span><span class="push-ipdatetime"> 05/04 23:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bill10679</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/04 23:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ScottDoha</span><span class="f3 push-content">: 成功 給推 ==</span><span class="push-ipdatetime"> 05/04 23:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bnn</span><span class="f3 push-content">: 黑科技大老 不過我已經拚好了只要繼續強化</span><span class="push-ipdatetime"> 05/04 23:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chigle</span><span class="f3 push-content">: 尼爾太神啦o(￣▽￣)ｄ good</span><span class="push-ipdatetime"> 05/04 23:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pl33233</span><span class="f3 push-content">: 推尼爾</span><span class="push-ipdatetime"> 05/05 00:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Tiamat6716</span><span class="f3 push-content">: 科學玩遊戲</span><span class="push-ipdatetime"> 05/05 00:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">circlelump</span><span class="f3 push-content">: 感謝，辛苦了</span><span class="push-ipdatetime"> 05/05 01:07
+</span></div><span class="f2">※ 編輯: neil987 (101.9.212.59), 05/05/2019 01:33:49
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dx90c</span><span class="f3 push-content">: @deep 你還有M2和AT4不太能用excel解</span><span class="push-ipdatetime"> 05/05 02:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ladiscar</span><span class="f3 push-content">: 耶 成功</span><span class="push-ipdatetime"> 05/05 03:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: (′・ω・)b恭喜</span><span class="push-ipdatetime"> 05/05 03:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">deepstriker</span><span class="f3 push-content">: 還沒有5星 就還不想解 前兩個解完才發現一堆+20用不</span><span class="push-ipdatetime"> 05/05 06:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chigle</span><span class="f3 push-content">: 補推</span><span class="push-ipdatetime"> 05/05 07:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namelylike</span><span class="f3 push-content">: 看不太懂推(′・ω・`)…之後再來慢慢研究</span><span class="push-ipdatetime"> 05/05 07:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ga652206</span><span class="f3 push-content">: 這遊戲科技已經超過我預期了</span><span class="push-ipdatetime"> 05/05 10:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ga652206</span><span class="f3 push-content">: 不管是裡面還是外面</span><span class="push-ipdatetime"> 05/05 10:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">davidiid</span><span class="f3 push-content">: (′・ω・)σ妮兒你484天才啊</span><span class="push-ipdatetime"> 05/05 10:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">giancarlo82</span><span class="f3 push-content">: 有成功 推推!!</span><span class="push-ipdatetime"> 05/05 12:20
+</span></div></div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106d2585d992029',m:'6v9N4yTZbqDdNksWd_pTDRgnwQK..XnZX1UVqdi0gPU-1653403595-0-ATnsGYZU3yKb/OqLMR+XjzqnnP8K2e4VUZYvQW1JLyCxfZa8EbznwBH4UAlkzWnhOfm0vG1hExFL/4oJ+f6fQVFA6fh4LqIhJeYpm9Xo9PofKWppSUVEdj57KoE0Ve0ZyJbtjYPoxNFISkeV7J69RMZ3VjRUx5EKkOK1GBoSzhUu',s:[0xc1d2a7b0f9,0x2b653dfb8b],}})();</script></body>
+</html>

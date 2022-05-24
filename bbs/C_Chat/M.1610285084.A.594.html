@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[Vtub] YT聊天室顯示PTT推文 更新說明 - 看板 C_Chat - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="                             YT聊天室顯示PTT推文
+                                  現已支援
+                   1. Holotools: 使用holotools多窗使用套件
+                   2. 推文: 在套件內直接推文討論
+                              請按page down繼續
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[Vtub] YT聊天室顯示PTT推文 更新說明">
+<meta property="og:description" content="                             YT聊天室顯示PTT推文
+                                  現已支援
+                   1. Holotools: 使用holotools多窗使用套件
+                   2. 推文: 在套件內直接推文討論
+                              請按page down繼續
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/C_Chat/M.1610285084.A.594.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/C_Chat/index.html"><span class="board-label">看板 </span>C_Chat</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/C_Chat/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ZooseWu (動物園)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">C_Chat</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[Vtub] YT聊天室顯示PTT推文 更新說明</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jan 10 21:24:38 2021</span></div>
+
+
+
+                             <span class="f3 hl">YT聊天室顯示PTT推文
+</span><span class="f3 hl">
+</span><span class="f5 hl">                                  現已支援
+</span><span class="f5 hl">
+</span><span class="f5 hl">                   </span><span class="f6 hl">1. Holotools: 使用holotools多窗使用套件
+</span><span class="f6 hl">
+</span><span class="f6 hl">                   2. 推文: 在套件內直接推文討論
+</span><span class="f6 hl">
+</span><span class="f6 hl">                              </span><span class="f2">請按page down繼續
+</span><span class="f2">
+</span>
+
+
+
+
+
+<span class="f6 hl">套件介紹</span>
+
+ 我想還是有很多人不知道這是什麼
+
+ 所以還是照慣例先做套件介紹
+
+ 這是一個能夠在Youtube/Holotools看實況時能顯示討論串的套件
+
+ <a href="https://imgur.com/ZhtXdAJ" target="_blank" rel="noreferrer noopener nofollow">https://imgur.com/ZhtXdAJ</a> <a href="https://i.imgur.com/w9SMpeH.gifv" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/w9SMpeH.gifv</a>
+
+ 主要有以下兩個功能
+
+ 1. 實況:即時更新討論串推文，並且可以推文參與討論
+
+ 2. 實況紀錄:設定好影片開台時間後就能根據影片時間顯示當時的推文
+
+ 本套件無論Firefox、Chrome都可使用(Edge及Opera理論上也可以不過未測試)
+
+ 想要看更詳細的套件介紹可以點下面連結:
+
+ <a href="https://github.com/zoosewu/PTTChatOnYoutube/tree/master/homepage" target="_blank" rel="noreferrer noopener nofollow">https://github.com/zoosewu/PTTChatOnYoutube/tree/master/homepage</a>
+
+ 所有程式碼也都有完整上傳到github 有興趣的可以到套件介紹那邊
+
+<span class="f6 hl">如何安裝</span>
+
+<span class="f6"> 新使用者:
+</span>
+ 1.安裝暴力猴<a href="https://violentmonkey.github.io/" target="_blank" rel="noreferrer noopener nofollow">https://violentmonkey.github.io/</a>
+
+ 2.安裝腳本<a href="https://greasyfork.org/zh-TW/scripts/418469-pttchatonyt" target="_blank" rel="noreferrer noopener nofollow">https://greasyfork.org/zh-TW/scripts/418469-pttchatonyt</a>
+
+<span class="f6"> 舊使用者:
+</span>
+ 腳本安裝之後每天會自動更新一次
+
+ 強制檢查更新:點右上角的暴力猴-&gt;設定(齒輪圖示)-&gt;檢查更新(重新整理圖示)
+
+
+<span class="f6 hl">閒聊</span>
+
+<span class="f3 hl"> 這次的新版本</span>
+
+ 弄了三週 終於重寫完整個腳本啦~
+
+ 以後寫新功能或除錯會比以前簡單一點
+
+ 用蓋房子來說的話 就像隨便蓋的鐵皮屋改成挖地基插鋼筋
+
+ 然後holotools版本跟推文功能都一起弄好了
+
+<span class="f3 hl"> 推文功能</span>
+
+ 推文功能只有花昨天四小時就做好了
+
+ 快到我都嚇到了<span class="f1 hl">所以沒有做太多的測試</span>
+
+ 雖然我自己用起來沒太大的問題不過還是先暫時鎖起來
+
+ 如果想用推文功能的話請先在連線設定那邊打勾
+
+ 程式造成亂推文或是推錯地方等推文之後的後果<span class="f3 hl">都請自負</span>
+
+<span class="f3 hl"> 廣告</span>
+
+ 我跑去台籃板推廣的時候下面推文跟我說這完全值得放廣告
+
+ 雖然我在做的時候都沒想到我還能做放廣告這件事情
+
+ 說真的一開始我超心動的
+
+ 畢竟獨立開發者的我真的是非常缺錢= =
+
+ 不過後來想一想用這個功能的人其實不多
+
+ 擁有PTT帳號+使用PTT+看實況+會進討論串的人才會用到套件
+
+ 放了應該也賺不了多少錢
+
+ 而且插廣告了之後在C洽發文好像要先去BM板申請麻煩死了
+
+ 就決定還是先維持原樣
+
+ 如果使用人數超過一萬我再插廣告
+
+<span class="f3 hl"> 授權</span>
+
+ 第一次寫完真正有用的開源專案<span class="f0 hl">(以前一堆半途而廢的ww)
+</span>
+ 過程中也有參考或借鑒其他開源專案的程式碼
+
+ 不是很清楚使用其他專案的時候該怎麼附上開源授權
+
+ 目前是在github上面附上有用到的授權跟連結
+
+ 如果有開源大佬知道怎麼做比較好希望能指導我一下Orz
+
+
+<span class="f6 hl">近期更新</span>
+
+<span class="f6"> 1.0.33</span> 載入上次輸入的PTT帳號、文章AID及其他使用者設定
+
+<span class="f6"> 1.0.34</span> 自訂套件長度功能(180~800)
+
+<span class="f6"> 1.0.35</span> 修正PTT爬蟲問題 現在更不容易壞掉了
+
+<span class="f6"> 1.0.36 </span>修正信箱爆炸導致爬蟲壞掉的問題
+
+<span class="f6"> 1.0.39</span> 減少PTT操作步驟，減少操作太頻繁而斷線的問題
+
+<span class="f6"> 1.0.40</span> 修正Youtube右下角按鈕跑板問題
+
+<span class="f6"> 2.0</span>    全新的架構:
+
+  現在能支援Youtube/Holotools <span class="f3 hl">如果有想要支援其他網站請跟我說
+</span>
+  在網站內瀏覽會根據狀況重新生成腳本
+
+<span class="f0 hl">  (例如從Youtube首頁進入實況後偵測到就會新增腳本)
+</span>
+  實況讀取推文不再從頭開始，只會直接抓最近的200條推文
+
+  還沒到的推文會用灰色表示，新的推文會有漸變效果
+
+  推文內的連結可以直接點開新視窗檢視
+
+  支援套件內推文功能
+
+
+<span class="f6 hl">已知問題</span>
+
+ 有時候自動滾動不會運作
+
+ 加密功能有時候會壞掉
+
+ 實況紀錄時間調整太遠有時候會導致視窗凍結<span class="f0 hl">(可以先用舊版看實況紀錄)
+</span><span class="f0 hl">
+</span><span class="f0 hl"> 以下提供第一版的腳本
+</span><span class="f0 hl">
+</span><span class="f0 hl"><a href="https://raw.githubusercontent.com/zoosewu/PTTChatOnYoutube/ver1/Main.user.js" target="_blank" rel="noreferrer noopener nofollow">https://raw.githubusercontent.com/zoosewu/PTTChatOnYoutube/ver1/Main.user.js</a>
+</span>
+ 有時候PTT還是會找錯文章
+
+
+<span class="f6 hl">開發方向</span>
+
+ 目前主要的功能大部分都已經完善了
+
+ 把已知問題修一修
+
+ 然後能優化的優化一下
+
+ 之後應該就放著了
+
+ 有任何建議都歡迎提出來討論或發PR
+
+ 然後因為我本身是學UI/UX的
+
+ 所以如果這方面有問題
+
+ 例如你覺得介面排版不佳 怎樣會更好
+
+ 或是每次都要XXX你覺得很麻煩 怎樣可以改善
+
+ 這方面關於介面跟使用者體驗的問題都可以跟我回報
+
+
+<span class="f6 hl">如果你想更了解這個套件......</span>
+
+ 完整套件介紹:
+
+ <a href="https://github.com/zoosewu/PTTChatOnYoutube/tree/master/homepage" target="_blank" rel="noreferrer noopener nofollow">https://github.com/zoosewu/PTTChatOnYoutube/tree/master/homepage</a>
+
+ 套件下載網址:
+
+ <a href="https://greasyfork.org/zh-TW/scripts/418469-pttchatonyt" target="_blank" rel="noreferrer noopener nofollow">https://greasyfork.org/zh-TW/scripts/418469-pttchatonyt</a>
+
+ Github連結:
+
+ <a href="https://github.com/zoosewu/PTTChatOnYoutube/tree/master" target="_blank" rel="noreferrer noopener nofollow">https://github.com/zoosewu/PTTChatOnYoutube/tree/master</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 1.162.82.106 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/C_Chat/M.1610285084.A.594.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/C_Chat/M.1610285084.A.594.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">forsakesheep</span><span class="f3 push-content">: 推，辛苦了</span><span class="push-ipdatetime"> 01/10 21:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aa9012</span><span class="f3 push-content">: 猛</span><span class="push-ipdatetime"> 01/10 21:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gcobc12632</span><span class="f3 push-content">: 太強了</span><span class="push-ipdatetime"> 01/10 21:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iopbnm014</span><span class="f3 push-content">: 先推一個</span><span class="push-ipdatetime"> 01/10 21:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HiNiHow</span><span class="f3 push-content">: 強</span><span class="push-ipdatetime"> 01/10 21:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ridecule</span><span class="f3 push-content">: 樓下噓插件</span><span class="push-ipdatetime"> 01/10 21:26
+</span></div>我也是很討厭品質變質量 重播變回放ww
+
+但是插件在台灣的用法外掛程式已經有另外的意思了(遊戲作弊程式)
+
+優化跟最佳化在語意上我也是覺得優化比較好
+
+這部分我就選擇傾向用語義較佳或不易誤會的用法
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyle87222</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/10 21:27
+</span></div>謝謝大家的支持
+
+如果大家覺得這東西不錯給個推我就很開心了
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">frankfipgd</span><span class="f3 push-content">: 推…辛苦了！</span><span class="push-ipdatetime"> 01/10 21:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">NowakiKai</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/10 21:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ttei</span><span class="f3 push-content">: 辛苦了</span><span class="push-ipdatetime"> 01/10 21:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Xpwa563704ju</span><span class="f3 push-content">: 強歐</span><span class="push-ipdatetime"> 01/10 21:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">showwhat2</span><span class="f3 push-content">: 推、推，辛苦了！</span><span class="push-ipdatetime"> 01/10 21:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wxtab019</span><span class="f3 push-content">: 更新了不過holotool的聊天室好像沒看到有?</span><span class="push-ipdatetime"> 01/10 21:28
+</span></div>可以問一下你用的瀏覽器嗎
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jared16458</span><span class="f3 push-content">: 辛苦了</span><span class="push-ipdatetime"> 01/10 21:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Reshiram</span><span class="f3 push-content">: 豪猛 推</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HeterCompute</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Allen0835690</span><span class="f3 push-content">: 推 辛苦了</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a47135</span><span class="f3 push-content">: 不把這篇轉vtub版嗎？</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div>上次有轉 這次忘了xD 感謝提醒
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">e23731208</span><span class="f3 push-content">: 大推</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">q0500</span><span class="f3 push-content">: 厲害</span><span class="push-ipdatetime"> 01/10 21:29
+</span></div><span class="f2">※ </span><span class="f2 hl">ZooseWu</span><span class="f2">:轉錄至看板 Vtuber</span>                                       01/10 21:30
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CactusFlower</span><span class="f3 push-content">: 這個太強了....</span><span class="push-ipdatetime"> 01/10 21:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wxtab019</span><span class="f3 push-content">: firefox的</span><span class="push-ipdatetime"> 01/10 21:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">because1909</span><span class="f3 push-content">: 推 造福</span><span class="push-ipdatetime"> 01/10 21:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crazy6341556</span><span class="f3 push-content">: 好酷ㄛ</span><span class="push-ipdatetime"> 01/10 21:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 666</span><span class="push-ipdatetime"> 01/10 21:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pat415son</span><span class="f3 push-content">: 剛測試 holotool可以運作</span><span class="push-ipdatetime"> 01/10 21:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pat415son</span><span class="f3 push-content">: 我用chrome</span><span class="push-ipdatetime"> 01/10 21:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wxtab019</span><span class="f3 push-content">: 沒事 好像有了 瀏覽器整個關掉重開就有</span><span class="push-ipdatetime"> 01/10 21:33
+</span></div>可以用就好 有問題再回報
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dWoWb</span><span class="f3 push-content">: DD到改版再改版 容我叫你一聲大DD</span><span class="push-ipdatetime"> 01/10 21:34
+</span></div>DD之力
+
+做這個套件大家想要holotools版之後我才去了解holotools
+
+我原本以為的套件的多窗是那種開很多小視窗
+
+結果根本跟原本一樣在網頁內 太方便了吧
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">inhumanq</span><span class="f3 push-content">: 推個</span><span class="push-ipdatetime"> 01/10 21:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tym7482</span><span class="f3 push-content">: 真愛只能推了</span><span class="push-ipdatetime"> 01/10 21:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WLR</span><span class="f3 push-content">: 推技術、實作</span><span class="push-ipdatetime"> 01/10 21:36
+</span></div><span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 21:38:52
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ShibaTatsuya</span><span class="f3 push-content">: 推 太神啦</span><span class="push-ipdatetime"> 01/10 21:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dWoWb</span><span class="f3 push-content">: 使用上超簡單 感謝感謝</span><span class="push-ipdatetime"> 01/10 21:38
+</span></div>喔對了
+
+holotools的全螢幕模式套件也可以正常使用
+
+holotools的介面太屌了
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qwe19272375</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/10 21:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ericz7000</span><span class="f3 push-content">: 太猛了</span><span class="push-ipdatetime"> 01/10 21:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LastAttack</span><span class="f3 push-content">: 哇不錯 可是ㄅ歉我選擇win版MOPTT 大缺點是要手動刷新</span><span class="push-ipdatetime"> 01/10 21:40
+</span></div>那優點呢?
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jhshen15</span><span class="f3 push-content">: 這篇應該置底精華</span><span class="push-ipdatetime"> 01/10 21:40
+</span></div>要怎麼申請置底阿 可以的話我也想讓更多有需要人的看到
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">paul31788</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 01/10 21:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">akira00150</span><span class="f3 push-content">: 猛耶</span><span class="push-ipdatetime"> 01/10 21:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rayccccc</span><span class="f3 push-content">: 推 完全支持插廣告</span><span class="push-ipdatetime"> 01/10 21:46
+</span></div>好 一萬人下載就插廣告
+
+不過插了也是放置底之類不會影響套件使用
+
+我超討厭全版跟內容插廣告那種= =
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 21:48:30
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joker8881</span><span class="f3 push-content">: 厲害推</span><span class="push-ipdatetime"> 01/10 21:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 01/10 21:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">weebeer626</span><span class="f3 push-content">: 推爆</span><span class="push-ipdatetime"> 01/10 21:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">acdess</span><span class="f3 push-content">: 推 太神拉</span><span class="push-ipdatetime"> 01/10 21:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SiaSi</span><span class="f3 push-content">: 插件也可以叫外掛套件</span><span class="push-ipdatetime"> 01/10 21:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Cassious</span><span class="f3 push-content">: 這很有用耶，看球賽也好用</span><span class="push-ipdatetime"> 01/10 21:51
+</span></div>我之前有趣台籃板推廣 還有其他地方也會用到歡迎去推廣或跟我說
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 為什麼我用chrome不能登入QQ</span><span class="push-ipdatetime"> 01/10 21:53
+</span></div>他顯示密碼錯誤嗎? 密碼錯誤重新整理試試看
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 21:54:16
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lee70404</span><span class="f3 push-content">: 他</span><span class="push-ipdatetime"> 01/10 21:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lee70404</span><span class="f3 push-content">: 推....冷到打錯字</span><span class="push-ipdatetime"> 01/10 21:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mitkuchen</span><span class="f3 push-content">: 原來那段碼要加到termPTT自動登入那邊 搞錯好久XD</span><span class="push-ipdatetime"> 01/10 21:55
+</span></div>對 因為腳本開的PTT會被自動登入影響
+
+所以要去那邊新增程式碼
+
+讓自動登入在背景開的PTT不會跑來亂
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Cassious</span><span class="f3 push-content">: 如果有支援麥卡貝或Twitch聊天室的話就可以發去棒球版</span><span class="push-ipdatetime"> 01/10 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Cassious</span><span class="f3 push-content">: ，因為在YT直播的棒球賽不多</span><span class="push-ipdatetime"> 01/10 22:00
+</span></div>好我之後看看能不能簡單的插進去
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 可以登入了 不過剛剛用起來 推文好像推不出去 而且</span><span class="push-ipdatetime"> 01/10 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 開啟推文功能之後就沒有自動載入新推文了</span><span class="push-ipdatetime"> 01/10 22:00
+</span></div>可以登入 但是無法推文
+可以問一下
+1.你推文之後你輸入欄的文字有消失嗎
+2.你自己的推文有顯示嗎
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 問一下，畫面按左上角的P收不起來是已知問題嗎？</span><span class="push-ipdatetime"> 01/10 22:01
+</span></div>欸靠 這是bug
+
+我每次都打開來就查裡面的內容 沒注意到這邊還要可以關回去
+
+我目前測試下來好像是內容太多要關的時候會卡卡的
+
+你是完全無法關起來嗎?
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 22:04:07
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 1.2都沒有 然後我按p也收不起來w</span><span class="push-ipdatetime"> 01/10 22:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 先感謝原po寫出這麼強大的東西還提供完善售後服務w</span><span class="push-ipdatetime"> 01/10 22:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 完全關不起來，多按幾次可以看到YT聊天室閃現但是還是</span><span class="push-ipdatetime"> 01/10 22:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 關不起來</span><span class="push-ipdatetime"> 01/10 22:05
+</span></div>如果是在yt使用的話可以先用舊版 舊版對YT的支援很完整
+
+<a href="https://raw.githubusercontent.com/zoosewu/PTTChatOnYoutube/ver1/Main.user.js" target="_blank" rel="noreferrer noopener nofollow">https://raw.githubusercontent.com/zoosewu/PTTChatOnYoutube/ver1/Main.user.js</a>
+
+因為我在holotools用都蠻正常的 所以沒注意到新版在yt可能會出問題
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">maplefff</span><span class="f3 push-content">: 希望未來能做safari的，收錢也可以</span><span class="push-ipdatetime"> 01/10 22:07
+</span></div>只要是暴力猴支援的都可以
+
+不過暴力猴目前不支援safari
+
+這方面我愛莫能助QQ
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 還有，我拿舊版1.0.26測試也關不起來</span><span class="push-ipdatetime"> 01/10 22:07
+</span></div>可以問一下你的瀏覽器/作業系統/開的網址嗎
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon8709</span><span class="f3 push-content">: 是說現在holotools不能多開的問題有辦法解決嗎</span><span class="push-ipdatetime"> 01/10 22:09
+</span></div>我holotools沒關掉過能正常多開 討論串那邊說tools壞掉新開的可能會怪怪的
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 22:11:34
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: Chrome 87.0.4280.88/Windows 7/</span><span class="push-ipdatetime"> 01/10 22:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: <a href="https://www.youtube.com/watch?v=V2v7aTOASOs" target="_blank" rel="noreferrer noopener nofollow">https://www.youtube.com/watch?v=V2v7aTOASOs</a></span><span class="push-ipdatetime"> 01/10 22:13
+</span></div><div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/V2v7aTOASOs" frameborder="0" allowfullscreen></iframe></div></div></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nh60211as</span><span class="f3 push-content">: 要不要我直接開個issue</span><span class="push-ipdatetime"> 01/10 22:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 好 你開個issue好了</span><span class="push-ipdatetime"> 01/10 22:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 不知道能不能提供選項把聊天室顯示行數增加 @@</span><span class="push-ipdatetime"> 01/10 22:15
+</span></div>不太懂
+
+現在可以增加套件長度
+
+還是你想要讓顯示的推文擠一點?
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 22:16:45
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: <a href="https://i.imgur.com/Dv3c9ZW.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/Dv3c9ZW.jpg</a> 類似這樣</span><span class="push-ipdatetime"> 01/10 22:15
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/Dv3c9ZWl.jpg?e=1653550284&amp;s=WeNkVNRFzSs6D82pa9DlkA" alt="" loading="lazy" /></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: lol板賽季開始後應該不少是yt轉播的應該可以去推</span><span class="push-ipdatetime"> 01/10 22:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: 三金板要看典禮yt轉播時有沒有鎖台灣ip，而且三金轉播</span><span class="push-ipdatetime"> 01/10 22:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: 是分段live文不知道會不會有使用上的麻煩</span><span class="push-ipdatetime"> 01/10 22:16
+</span></div>這好像特定季節才有?還是這是最近的活動?
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dWoWb</span><span class="f3 push-content">: 連線設定 長度800</span><span class="push-ipdatetime"> 01/10 22:16
+</span></div><span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/10/2021 22:18:04
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">medama</span><span class="f3 push-content">: 太強啦</span><span class="push-ipdatetime"> 01/10 22:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: 看原po好像徵求一些突破次元壁的地方推廣，幫忙想一些</span><span class="push-ipdatetime"> 01/10 22:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: 用得到的地方</span><span class="push-ipdatetime"> 01/10 22:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">addict615</span><span class="f3 push-content">: 三金每年6月 10月 11月 三次，算季節限定沒錯</span><span class="push-ipdatetime"> 01/10 22:27
+</span></div>好像還很久
+
+如果有需要你們可以推廣
+
+如果到時候我有記得也會想要去推廣一下
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">uohZemllac</span><span class="f3 push-content">: 好用推</span><span class="push-ipdatetime"> 01/10 22:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LastAttack</span><span class="f3 push-content">: 還有LOL的世界賽也能用，沒意外的話PCS往後應該都會鎖</span><span class="push-ipdatetime"> 01/10 22:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LastAttack</span><span class="f3 push-content">: 聊天室，太容易跟中國網友吵架</span><span class="push-ipdatetime"> 01/10 22:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LastAttack</span><span class="f3 push-content">: MO優點就鍵盤操縱便利吧 有個外掛當然是更便利</span><span class="push-ipdatetime"> 01/10 22:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LastAttack</span><span class="f3 push-content">:                                        整體而言</span><span class="push-ipdatetime"> 01/10 22:30
+</span></div>如果有覺得很方便的功能無法割捨
+
+我可以在套件上面盡可能的實現類似的
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 看可不可以像推文圖那樣，把那塊吃滿，顯示推文行數</span><span class="push-ipdatetime"> 01/10 22:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 能多一點</span><span class="push-ipdatetime"> 01/10 22:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: PCMAN來說一頁顯示2X個推文，但用這個插件只能顯示6</span><span class="push-ipdatetime"> 01/10 22:35
+</span></div>連線設定那邊可以設定套件長度 最高可以到800
+
+我做個設定可以設定每個推文之間的寬度好了
+
+然後左邊寬度是網站本身會留空一點防止擠在一起
+
+不知道為什麼你的留空特別多
+
+我跟他借的空間在寬度上是塞滿的
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 到八個推文，希望增加能看到推文的量</span><span class="push-ipdatetime"> 01/10 22:35
+</span></div>依推文者要求刪除推文
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dWoWb</span><span class="f3 push-content">: 對耶QQ 幫我刪惹 謝謝</span><span class="push-ipdatetime"> 01/10 22:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 阿 原來是這樣用，我改了現在有吃滿 大概1X行推文</span><span class="push-ipdatetime"> 01/10 22:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 感恩感恩 這樣舒服多了</span><span class="push-ipdatetime"> 01/10 22:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 你的塞滿應該是有開YT聊天室的狀況?</span><span class="push-ipdatetime"> 01/10 22:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 打開YT聊天是這樣 <a href="https://i.imgur.com/p9KyYEl.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/p9KyYEl.png</a></span><span class="push-ipdatetime"> 01/10 22:48
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/p9KyYEll.png?e=1653560603&amp;s=d_pKhNTmqQXgqQfNBb_Lxw" alt="" loading="lazy" /></div>對 因為這也可以在Youtube使用
+
+有些人會想要同時看推文跟聊天室
+
+所以就增加一個選項讓使用者可以調整長度
+
+不過在讓使用者設定推文間距的好像也不錯
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 不過開PTT畫面的話會變成這樣</span><span class="push-ipdatetime"> 01/10 22:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: <a href="https://i.imgur.com/zTIxrKc.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/zTIxrKc.png</a> 要提供你啥參考嗎</span><span class="push-ipdatetime"> 01/10 22:50
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/zTIxrKcl.png?e=1653547985&amp;s=PyOF0eKFxzAU6p4Qv8QhWA" alt="" loading="lazy" /></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: chrome 版本 87.0.4280.141 (正式版本) (64 位元)</span><span class="push-ipdatetime"> 01/10 22:50
+</span></div>這個PTT畫面跟後面的LOG只是拿來回報問題用的
+
+本來我是想直接隱藏起來
+
+不過不太影響我就想說放著好了
+
+而且新版的LOG還沒串 完全不會顯示任何資訊ww
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 我不開聊天室是因為 人數多時開聊天室容易LAG</span><span class="push-ipdatetime"> 01/10 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 如果沒有PTT畫面的話其實可以改一個DARK MODE出來</span><span class="push-ipdatetime"> 01/10 22:54
+</span></div>喔 yt會根據背景顯示深色模式
+
+holotools忘記弄了xD
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 我是只要有提供dark mode一定開~</span><span class="push-ipdatetime"> 01/10 22:55
+</span></div>這個弄好了
+
+現在更新好應該能顯示深色模式了
+
+不過holotools底下的深色模式目前有點黑
+
+未來我再改成跟背景相同的顏色
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">abcd9597938</span><span class="f3 push-content">: 神神神</span><span class="push-ipdatetime"> 01/10 23:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Derriclc</span><span class="f3 push-content">: 太神啦 已實裝</span><span class="push-ipdatetime"> 01/10 23:35
+</span></div>謝謝你的紅包xD
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">extremevs</span><span class="f3 push-content">: 好用推</span><span class="push-ipdatetime"> 01/10 23:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nothink0</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/10 23:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joewang85</span><span class="f3 push-content">: 你是鬼吧</span><span class="push-ipdatetime"> 01/10 23:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pinqooo</span><span class="f3 push-content">: 雖然看不懂那些功能 不過感覺很猛先推一個</span><span class="push-ipdatetime"> 01/11 00:01
+</span></div>看不懂沒關係
+
+看得懂代表你要花更多時間來DD了
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 感謝深色模式 已經在用了!!</span><span class="push-ipdatetime"> 01/11 00:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">enderboy7652</span><span class="f3 push-content">: 強</span><span class="push-ipdatetime"> 01/11 00:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rochiou28</span><span class="f3 push-content">: 幹這個屌喔</span><span class="push-ipdatetime"> 01/11 00:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Koyomiiii</span><span class="f3 push-content">: 屌 爆 了 （跪下</span><span class="push-ipdatetime"> 01/11 00:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qazwsx51</span><span class="f3 push-content">: 謝謝村長！！</span><span class="push-ipdatetime"> 01/11 00:53
+</span></div>怎麼每次都被村民發現ww
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">UnaBaby</span><span class="f3 push-content">: 好----棒-----！！！</span><span class="push-ipdatetime"> 01/11 01:15
+</span></div>梟婆串也可用 可以推薦讓觀眾間彼此要閒聊就可以用這個在討論串聊天
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">inte629l</span><span class="f3 push-content">: 推 這實踐力好猛 等等來看看code XD</span><span class="push-ipdatetime"> 01/11 01:19
+</span></div>我希望輸出的userscript盡可能保持原始程式碼的狀態
+
+所以找了很多方法盡量避免輸出之後會變成亂碼
+
+然後webpack就只能棄用 連帶的很多模組都變得很麻煩
+
+怎樣開專案我有寫在readme
+
+有不清楚或是開失敗的話再把環境跟我說
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ian31722</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/11 01:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fr75</span><span class="f3 push-content">: 讚</span><span class="push-ipdatetime"> 01/11 02:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a498ss321</span><span class="f3 push-content">: 怎麼也把node_modules 也git 上來了XDD</span><span class="push-ipdatetime"> 01/11 02:34
+</span></div>因為我有改裡面的地方
+
+我覺得好像應該要fork之後在package連結到我的fork版會比較好
+
+但是我不知道怎麼弄
+
+所以就直接把有改的地方丟上來了Orz
+
+然後有一些我沒改到的也不小心丟上來不知道怎麼砍掉www
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cattac222</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/11 03:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ab37695543xs</span><span class="f3 push-content">: 猛猛的</span><span class="push-ipdatetime"> 01/11 04:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">az7061780617</span><span class="f3 push-content">: 感謝!沒想到有人把這個功能實作出來了</span><span class="push-ipdatetime"> 01/11 04:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">viewer1946</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/11 05:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">greed3819</span><span class="f3 push-content">: 推爆 話說我的holotools還是只能一次看一台QQ</span><span class="push-ipdatetime"> 01/11 06:08
+</span></div>這個問題是Holotools受限於Youtube的政策只能一次播一台
+
+解決方案是安裝Holotools的Chrome擴充套件TubeGrid
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">berice152233</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 01/11 08:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aegis91086</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/11 10:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aegis91086</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 01/11 10:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 有提到 觀看實況紀錄前請先設定開台時間 這個設定</span><span class="push-ipdatetime"> 01/11 11:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 應該要在哪裡設定呢？ 我只看到說要設定但不知去哪</span><span class="push-ipdatetime"> 01/11 11:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 好我知道了，holotools沒有看到這行但直接從YT開有</span><span class="push-ipdatetime"> 01/11 11:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">applemonster</span><span class="f3 push-content">: 連線設定那邊 有可以設定實況開台時間，YT有tools沒</span><span class="push-ipdatetime"> 01/11 11:06
+</span></div>因為Holotools的網站跟顯示的影片是分開來的
+
+所以他們才可以動態增加/移除影片
+
+也因此我抓不到他們的影片 Holotools就只能用實況模式
+
+如果要用實況紀錄模式還請用Youtube觀賞
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jackjack674</span><span class="f3 push-content">: 之後可以考慮支援twitch嗎 一般遊戲實況會之後棒球開</span><span class="push-ipdatetime"> 01/11 11:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jackjack674</span><span class="f3 push-content">: 打都能用</span><span class="push-ipdatetime"> 01/11 11:29
+</span></div>晚上我試看看
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john412132</span><span class="f3 push-content">: 666666</span><span class="push-ipdatetime"> 01/11 13:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shentotto</span><span class="f3 push-content">: 7777777</span><span class="push-ipdatetime"> 01/11 14:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">meltnight</span><span class="f3 push-content">: 推 辛苦了</span><span class="push-ipdatetime"> 01/11 14:27
+</span></div><span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/11/2021 14:30:08
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jeff666</span><span class="f3 push-content">: 太神啦</span><span class="push-ipdatetime"> 01/11 16:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dkfs789</span><span class="f3 push-content">: 太神啦</span><span class="push-ipdatetime"> 01/11 16:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickphyman42</span><span class="f3 push-content">: 推大師</span><span class="push-ipdatetime"> 01/11 16:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">NicoNeco</span><span class="f3 push-content">: 太油了吧peko推</span><span class="push-ipdatetime"> 01/11 16:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">neil987</span><span class="f3 push-content">: 等我案子忙完再看看能不能弄成chrome擴充好了</span><span class="push-ipdatetime"> 01/11 17:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Yosi777</span><span class="f3 push-content">: 請問Youtube是正常的，但Holotools無法登入，有解嗎?</span><span class="push-ipdatetime"> 01/11 18:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 重新整理有用嗎?它顯示什麼訊息 PTT畫面是什麼狀態</span><span class="push-ipdatetime"> 01/11 18:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: 請問我暴力猴裝好了 可是安裝腳本時沒有反應欸 我用firef</span><span class="push-ipdatetime"> 01/11 18:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: ox</span><span class="push-ipdatetime"> 01/11 18:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 你點連結之後跳出的視窗長怎麼樣</span><span class="push-ipdatetime"> 01/11 19:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 是不是一個上面紅色的網站 中間有一個綠色的安裝腳本按鈕</span><span class="push-ipdatetime"> 01/11 19:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: 會變成greasy fork 同一篇的日誌頁面</span><span class="push-ipdatetime"> 01/11 19:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: 就說的那個</span><span class="push-ipdatetime"> 01/11 19:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: greasyfork就是安裝頁面 裡面有安裝按鈕嗎</span><span class="push-ipdatetime"> 01/11 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: <a href="https://imgur.com/t9PM0Na" target="_blank" rel="noreferrer noopener nofollow">https://imgur.com/t9PM0Na</a> 這個</span><span class="push-ipdatetime"> 01/11 19:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: 有的</span><span class="push-ipdatetime"> 01/11 19:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 點了之後會跳一個視窗 右上角有按鈕可以確認安裝</span><span class="push-ipdatetime"> 01/11 19:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k719781</span><span class="f3 push-content">: 我裝好了 剛腦筋沒轉過來 感謝幫忙</span><span class="push-ipdatetime"> 01/11 19:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZooseWu</span><span class="f3 push-content">: 有裝好就好:)</span><span class="push-ipdatetime"> 01/11 19:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">didhg</span><span class="f3 push-content">: 好</span><span class="push-ipdatetime"> 01/11 19:41
+</span></div>插件-&gt;套件
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Yosi777</span><span class="f3 push-content">: 我找到原因了，不能登入3個視窗以上，會顯示已斷線</span><span class="push-ipdatetime"> 01/11 21:01
+</span></div>我想你遇到的問題是它會停在要不要刪除其他連線
+
+你選擇N之後就跳出去回到登入畫面
+
+這是PTT的問題 我也不清楚發生的原因
+
+我去PTT回報他們說這不是bug 也沒有設定同時間登入的上限
+<span class="f2">※ 編輯: ZooseWu (1.162.82.106 臺灣), 01/11/2021 22:04:44
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Evil317</span><span class="f3 push-content">: 實用推</span><span class="push-ipdatetime"> 01/13 18:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">QAQKUKU5566</span><span class="f3 push-content">: 殭屍又要重打圓周率 笑死</span><span class="push-ipdatetime"> 06/14 19:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">QAQKUKU5566</span><span class="f3 push-content">: <a href="/bbs/C_Chat/M.1630316016.A.15B.html" target="_blank" rel="noreferrer noopener nofollow">#1XBANm5R (C_Chat)</a></span><span class="push-ipdatetime"> 08/30 19:12
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/C_Chat/M.1610285084.A.594.html?cacheKey=2151-165027866&amp;offset=24006&amp;offset-sig=b14c17f2944ec1c03b9ffe15a42fd585fe86f5a9" data-longpollurl="/v1/longpoll?id=e2627e39f05a998d4b81fb5d8179ef5bae06a10a" data-offset="24006"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106d1ad4873f8f7',m:'gJGdkIDX7jpB255S8RxCyfuL60YYy7KYYgKsh_w8zNc-1653403568-0-AaHJKFArSFz8EAk0f8IPE6a/DOlNoejZ+HgbG1DyfWDVG1lsDEQcDdHSwMDdji2ssUgR1i1S0XR8i/4RQ8J2SL5xhCDfFnD185ByXMjH+Tmkb+Fpgk960QL8t8PleM7h9PKB0QawQcQrWTdFKSlboJUcnXV7YrLGFalRXZNvZ6WB',s:[0xb94e197a9f,0xe232b7d0e1],}})();</script></body>
+</html>

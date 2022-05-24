@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[閒聊] 改版後重裝部隊 - 精華區 GirlsFront - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這次改版後重裝部隊在戰鬥部分公式及芯片數值有變化,故彙整一些情報:
+優化與調整部分:
+優化：重裝部隊索敵範圍增加。
+優化：重裝部隊增加1格夜戰視野。
+優化：重裝部隊可在普通機場和臨時補給點進行補給。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[閒聊] 改版後重裝部隊">
+<meta property="og:description" content="這次改版後重裝部隊在戰鬥部分公式及芯片數值有變化,故彙整一些情報:
+優化與調整部分:
+優化：重裝部隊索敵範圍增加。
+優化：重裝部隊增加1格夜戰視野。
+優化：重裝部隊可在普通機場和臨時補給點進行補給。
+">
+<link rel="canonical" href="https://www.ptt.cc/man/GirlsFront/D72B/M.1549194794.A.550.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/man/GirlsFront/index.html"><span class="board-label">精華區<sup>beta</sup> </span>GirlsFront</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/man/GirlsFront/D72B/index.html">返回上層</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">holyvoice (霽)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">GirlsFront</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[閒聊] 改版後重裝部隊</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jan 26 20:21:23 2019</span></div>
+這次改版後重裝部隊在戰鬥部分公式及芯片數值有變化,故彙整一些情報:
+
+
+
+優化與調整部分:
+
+優化：重裝部隊索敵範圍增加。
+
+優化：重裝部隊增加1格夜戰視野。
+
+優化：重裝部隊可在普通機場和臨時補給點進行補給。
+
+優化：力場效果改為降低傷害（原為造成偏轉後無法命中），
+      重裝部隊的殺傷不受力場減傷影響。
+
+      與非重裝單位相比:
+
+      改版前:偏轉判定 &gt; 傷害判定 (發生偏轉則無傷害)
+
+      改版後:
+      給予傷害 = max(0, ceiling{(理論傷害 + 破防溢出傷害) * 力場傷害補正})
+
+      破防溢出傷害 = ceiling{max(0, 攻擊方破防值 - 防禦方初始力場值)/10}
+
+      力場傷害補正 = 1 - 防禦方力場% * (1 - 力場無視係數/100)
+      (如攻擊能無視力場, 力場無視係數=100, 反之=0)
+
+
+
+優化：重裝部隊的破防效果不再判定命中，每次攻擊都會削減敵方力場值。
+
+優化：重裝部隊攻擊時，破防值溢出的部分會按特定比例轉化為殺傷。
+
+優化：提高了重裝部隊的整體精度（數值不變，實際命中率提升）。
+
+      改版前:命中率 = max(30%, 精度 / (精度 + 防禦方回避 * 10))
+             最低命中率30%
+
+      改版後:命中率 = max(40%, 精度 / (精度 + 防禦方回避 * 8))
+             最低命中率40%
+
+
+
+優化：調整了重裝部隊「裝填」數值對發射間隔的影響，同時在面板中增加
+     「發射間隔」的顯示。
+
+      射速公式:
+
+      改版前:射速 = ceiling{(75 + 裝填值)/18}
+
+      改版後:射速 = ceiling{(300 + 裝填值)/30}
+
+      <a href="https://i.imgur.com/DJzNxHi.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/DJzNxHi.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/DJzNxHil.jpg?e=1653558413&amp;s=X171huiOQKYZrI5xyz1ufA" alt="" loading="lazy" /></div>      圖上重裝的三項數字分别對應最低值，滿級滿晶片無迭代，上限值。
+
+
+優化：重裝部隊在裝備4格和10格同色晶片時增加了兩條同色諧振。
+
+優化：BGM-71傷害方式改為單體傷害+範圍濺射。
+
+優化：AGS-30支援範圍提升至3，攻擊生效範圍擴大。
+
+調整：「重裝小隊」晶片強化後的數值演算法優化調整，
+       部分晶片會較調整前數值有小幅提升。
+
+      改版後重裝部隊晶片格數對應數值:
+      <a href="https://i.imgur.com/aj0frEy.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/aj0frEy.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/aj0frEyl.jpg?e=1653567407&amp;s=TzMt7dPF8lwxHmSA7xx-hQ" alt="" loading="lazy" /></div>      圖上下半部為改版後拚晶片可能較佳解。
+
+      <a href="https://goo.gl/Do8grj" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/Do8grj</a>
+      (附上最新版晶片計算機v0.4.1下載點,感謝dk2ftrmrn)
+
+
+P.S.1.
+使用晶片計算機run，記得先設定方案跟溢出上限，不然會跑到當掉。
+
+P.S.2.
+run完後如果出現不少符合「晶片格數」的結果，記得輸入拚圖顯示看其全晶片+20的四項數值結果與實際四項上限值各差多少。
+
+
+參考資料:
+
+重裝晶片:
+<a href="https://bbs.nga.cn/read.php?tid=16196230" target="_blank" rel="noreferrer noopener nofollow">https://bbs.nga.cn/read.php?tid=16196230</a>
+
+公式:
+<a href="https://bbs.nga.cn/read.php?tid=16173517" target="_blank" rel="noreferrer noopener nofollow">https://bbs.nga.cn/read.php?tid=16173517</a>
+
+
+僅供參考, 感謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 36.237.155.110
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/GirlsFront/M.1548505288.A.FB2.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/GirlsFront/M.1548505288.A.FB2.html</a>
+</span><span class="f2">※ 編輯: holyvoice (36.237.155.110), 01/26/2019 20:26:42
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lettim28</span><span class="f3 push-content">: 方案1 2是都可以的意思嗎？</span><span class="push-ipdatetime">01/26 20:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dffrew</span><span class="f3 push-content">: 現在提升破防的效益是否比提升精度的效益高？</span><span class="push-ipdatetime">01/26 20:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holyvoice</span><span class="f3 push-content">: 方案中的紅色數字代表能逼近上限值</span><span class="push-ipdatetime">01/26 20:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holyvoice</span><span class="f3 push-content">: 如果你想重裝幫忙清掃敵人，還是需要精度</span><span class="push-ipdatetime">01/26 20:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holyvoice</span><span class="f3 push-content">: 而且有四項各有上限值，超過沒意義</span><span class="push-ipdatetime">01/26 20:29
+</span></div><span class="f2">※ 編輯: holyvoice (223.139.133.113), 01/26/2019 20:38:21
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mtucnaruka54</span><span class="f3 push-content">: (′_・ω・)_ 趕快先推，免得人家發現糕點師看不懂</span><span class="push-ipdatetime">01/26 20:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doraemon3838</span><span class="f3 push-content">: 嗯，跟我想得一樣(x</span><span class="push-ipdatetime">01/26 20:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bnn</span><span class="f3 push-content">: Thanks</span><span class="push-ipdatetime">01/26 20:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dyolf</span><span class="f3 push-content">: 改版後打了11章 現在重裝是真的強 一直搶傷害MVP</span><span class="push-ipdatetime">01/26 20:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ameNekoLin</span><span class="f3 push-content">: (′・ω・)a破防傷害看不是很懂 雖然重裝傷害本來就</span><span class="push-ipdatetime">01/26 20:53
+</span></div>
+假設攻擊方破防值=543、防禦方力場值=300
+
+則破防溢出傷害=取整{（543-300）/10}=54
+
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">snowcloud</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime">01/26 21:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boblu</span><span class="f3 push-content">: 請問 三隊重裝都 lv60 以後 建議優先練哪一隊啊？</span><span class="push-ipdatetime">01/26 21:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ayasesayuki</span><span class="f3 push-content">: 冬活困難要用火力600的2b12炸對面的火箭炮都要炸三次</span><span class="push-ipdatetime">01/26 21:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ayasesayuki</span><span class="f3 push-content">: 才會爆</span><span class="push-ipdatetime">01/26 21:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ayasesayuki</span><span class="f3 push-content">: 2b14</span><span class="push-ipdatetime">01/26 21:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ameNekoLin</span><span class="f3 push-content">: 炸建築是看破防不是火力</span><span class="push-ipdatetime">01/26 21:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">proter</span><span class="f3 push-content">: 看起來這次比較需要BGM 破防比較高</span><span class="push-ipdatetime">01/26 22:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">raider01</span><span class="f3 push-content">: 所以AGS的破防值夠嗎?</span><span class="push-ipdatetime">01/26 22:29
+</span></div>要打困難的話看NGA說不夠，除非完全體可能有機會……
+
+另外在NGA有看到，2B14對清（紅）鐵血蠻暴力的（？
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">raider01</span><span class="f3 push-content">: 2B原本上一次就炸的很勉強這次炸不掉正常啦</span><span class="push-ipdatetime">01/26 22:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">raider01</span><span class="f3 push-content">: 如果AGS夠的話就能拿來頂AGS的長距離炸建築的位置了</span><span class="push-ipdatetime">01/26 22:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chigle</span><span class="f3 push-content">: 所以技能要怎麼練(ﾟ∀。)</span><span class="push-ipdatetime">01/26 22:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">e4789215</span><span class="f3 push-content">: 通通給我練滿升滿</span><span class="push-ipdatetime">01/26 22:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WinRARdotrar</span><span class="f3 push-content">: 當然是10/10/10 (ﾟ∀。)</span><span class="push-ipdatetime">01/26 23:06
+</span></div><span class="f2">※ 編輯: holyvoice (223.139.133.113), 01/26/2019 23:30:26
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boblu</span><span class="f3 push-content">: 所以BGM優先嗎？y</span><span class="push-ipdatetime"> 01/27 00:35
+</span></div><div class="push"><span class="f1 hl push-tag">噓 </span><span class="f3 hl push-userid">ruserking</span><span class="f3 push-content">: 太複雜了</span><span class="push-ipdatetime"> 01/27 00:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rundk</span><span class="f3 push-content">: 感謝整理 推</span><span class="push-ipdatetime"> 01/27 01:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">s33003030</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 01/27 17:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GAOTT</span><span class="f3 push-content">: 請問一下 我現在重裝全部都5星 報告書要優先投資給誰?</span><span class="push-ipdatetime"> 01/27 17:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Mosin</span><span class="f3 push-content">: AGS吧，輸出穩定，射程又長</span><span class="push-ipdatetime"> 01/27 17:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">raider01</span><span class="f3 push-content">: 應該AGS，我看了一下涅托力場值有6000......</span><span class="push-ipdatetime"> 01/27 18:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">raider01</span><span class="f3 push-content">: BGM在沒辦法短時間內破盾的狀況下不會比AGS好</span><span class="push-ipdatetime"> 01/27 18:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">deluxe</span><span class="f3 push-content">: 真的覺得這種計算機應該遊戲內建才對...</span><span class="push-ipdatetime"> 01/27 18:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">frank123ya</span><span class="f3 push-content">: 涅託不是都用門對付他嗎 (ﾟ∀。)</span><span class="push-ipdatetime"> 01/27 20:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">r85270607</span><span class="f3 push-content">: 硬核前線  完全看不懂 但好像很厲害</span><span class="push-ipdatetime"> 01/28 07:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rupg4vupskin</span><span class="f3 push-content">: 而且現在不同格數的平均效果都不一樣 強迫症要完美</span><span class="push-ipdatetime"> 01/28 09:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rupg4vupskin</span><span class="f3 push-content">: 畢業會痛苦萬分</span><span class="push-ipdatetime"> 01/28 09:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">steelgate</span><span class="f3 push-content">: AGS之前的頂上限組法應該還是頂得上去吧? (都改下去了.</span><span class="push-ipdatetime"> 01/28 17:13
+</span></div></div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'7106d2598834f8f7',m:'fxEHYQyQvYITjNFpbdPdBU_sghXUTbQgNyf2v_nUVc4-1653403595-0-Aek/PGEK2d/TimMAJBzmi/cTVWt/GMmFdVXIQG94HFqf0/Mq/Qm5BPi0bQWmD3odeNbL12YNj9GCs8sPuKeiW2OrxBbxU9hPZez/TFZHNclQorpYfHlecIOo9vFVfLgGQdlqDntAibum/DKwYpVtA+wRcRYb5q83NWMksPiBPsnI',s:[0x1e0f5b6c08,0xc9cd5a04da],}})();</script></body>
+</html>
