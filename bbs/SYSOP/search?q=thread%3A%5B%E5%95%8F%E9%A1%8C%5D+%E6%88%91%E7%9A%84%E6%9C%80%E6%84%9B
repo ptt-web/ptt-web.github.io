@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>thread:[問題] 我的最愛 - SYSOP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653454800'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/SYSOP/index.html"><span class="board-label">看板 </span>SYSOP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/SYSOP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/SYSOP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/SYSOP/search?page=2&amp;q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">最舊</a>
+				<a class="btn wide" href="/bbs/SYSOP/search?page=2&amp;q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/SYSOP/search?page=1&amp;q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="thread:[問題] 我的最愛" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1294197987.A.EC1.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">rs2</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ars2">搜尋看板內 rs2 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1258425832.A.96D.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">odelia</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Aodelia">搜尋看板內 odelia 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/17</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1190110573.A.226.html">Re: [問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">awei</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Aawei">搜尋看板內 awei 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1190092075.A.823.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">manjusaka</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Amanjusaka">搜尋看板內 manjusaka 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1189495887.A.480.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">c1imaxxx</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ac1imaxxx">搜尋看板內 c1imaxxx 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1189411027.A.7BD.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">hippo3</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ahippo3">搜尋看板內 hippo3 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1189363416.A.A7F.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">dale41527</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Adale41527">搜尋看板內 dale41527 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1189341237.A.AB9.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ecgklf</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Aecgklf">搜尋看板內 ecgklf 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/09</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1187874087.A.ED7.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bleeza</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ableeza">搜尋看板內 bleeza 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1174752027.A.94E.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Ubermensch27</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3AUbermensch27">搜尋看板內 Ubermensch27 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1172258219.A.87B.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">slcgboy</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Aslcgboy">搜尋看板內 slcgboy 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1165146637.A.C83.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crazyplayer</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Acrazyplayer">搜尋看板內 crazyplayer 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1163776994.A.007.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jhjhs33504</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ajhjhs33504">搜尋看板內 jhjhs33504 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1156331212.A.BED.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gobbylin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Agobbylin">搜尋看板內 gobbylin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1154059777.A.9D9.html">Re: [問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Junchoon</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3AJunchoon">搜尋看板內 Junchoon 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1154058897.A.ACB.html">Re: [問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Yashiva</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3AYashiva">搜尋看板內 Yashiva 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1153899836.A.FC7.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ARCXU</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3AARCXU">搜尋看板內 ARCXU 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1149503007.A.560.html">[問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">huaia</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Ahuaia">搜尋看板內 huaia 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1146333229.A.F38.html">Re: [問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ujj</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Aujj">搜尋看板內 ujj 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/SYSOP/M.1146332923.A.3FF.html">Re: [問題] 我的最愛</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">poohsan777</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/SYSOP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/SYSOP/search?q=author%3Apoohsan777">搜尋看板內 poohsan777 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710bf49159ee80f3',m:'VhefGadTBBZM9.UJqac.pTD57YllbQ9JZzLThA.9v4k-1653457426-0-AXJvIM1AtzDgE7gMgAxb+9AHC51FxmNBkE2LqQFVa1TH4Vjrunx57L26fL2dzqNOA62qI0QYqBxxZDvR635/kWUAY9vUzhciz1M50cPxxlymhSAv7WoDI8doJLp3de+dZPQdwXEtCyjxnF41aRp8y/rQg4iLmmuhgtLm20A0vwt3k8XR4MZnb+mHmZhW4zDre7+OxrLjqJypIfbNCvix0XiiwEDU+6jFvLMJhNz2CwMw',s:[0x88ba9a3ce5,0x7ae9f90145],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

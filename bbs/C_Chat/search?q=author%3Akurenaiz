@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:kurenaiz - C_Chat - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653454800'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/C_Chat/index.html"><span class="board-label">看板 </span>C_Chat</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/C_Chat/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/C_Chat/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/C_Chat/search?page=7&amp;q=author%3Akurenaiz">最舊</a>
+				<a class="btn wide" href="/bbs/C_Chat/search?page=2&amp;q=author%3Akurenaiz">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/C_Chat/search?page=1&amp;q=author%3Akurenaiz">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:kurenaiz" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1653398307.A.320.html">[繪圖] 調教咖啡廳 櫻之宮莓香</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E7%B9%AA%E5%9C%96%5D&#43;%E8%AA%BF%E6%95%99%E5%92%96%E5%95%A1%E5%BB%B3&#43;%E6%AB%BB%E4%B9%8B%E5%AE%AE%E8%8E%93%E9%A6%99">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1650545200.A.1F9.html">[法環] 蒙格的囚具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E8%92%99%E6%A0%BC%E7%9A%84%E5%9B%9A%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">10</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1650246692.A.42A.html">[法環] 她看著你笑 笑得你心裡發寒</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E5%A5%B9%E7%9C%8B%E8%91%97%E4%BD%A0%E7%AC%91&#43;%E7%AC%91%E5%BE%97%E4%BD%A0%E5%BF%83%E8%A3%A1%E7%99%BC%E5%AF%92">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1650113162.A.10E.html">[閒聊] 法環人氣投票(2)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E6%B3%95%E7%92%B0%E4%BA%BA%E6%B0%A3%E6%8A%95%E7%A5%A8%282%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">15</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1650111499.A.0A9.html">Re: [法環]鮮血君王鬧鐘！</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D%E9%AE%AE%E8%A1%80%E5%90%9B%E7%8E%8B%E9%AC%A7%E9%90%98%EF%BC%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1650032172.A.B09.html">Re: [佐賀] (圖) 阿妙的巨乳被動畫組遺忘了嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E4%BD%90%E8%B3%80%5D&#43;%28%E5%9C%96%29&#43;%E9%98%BF%E5%A6%99%E7%9A%84%E5%B7%A8%E4%B9%B3%E8%A2%AB%E5%8B%95%E7%95%AB%E7%B5%84%E9%81%BA%E5%BF%98%E4%BA%86%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1649585448.A.CCE.html">[閒聊] 目白麥昆在復健</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E7%9B%AE%E7%99%BD%E9%BA%A5%E6%98%86%E5%9C%A8%E5%BE%A9%E5%81%A5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">18</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1649147733.A.797.html">Re: [法環] 拉塔恩 的強度 (有劇情討論)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E6%8B%89%E5%A1%94%E6%81%A9&#43;%E7%9A%84%E5%BC%B7%E5%BA%A6&#43;%28%E6%9C%89%E5%8A%87%E6%83%85%E8%A8%8E%E8%AB%96%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">57</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1648738221.A.A63.html">[法環] 地獄繪圖，請問你要先殺哪一隻</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E5%9C%B0%E7%8D%84%E7%B9%AA%E5%9C%96%EF%BC%8C%E8%AB%8B%E5%95%8F%E4%BD%A0%E8%A6%81%E5%85%88%E6%AE%BA%E5%93%AA%E4%B8%80%E9%9A%BB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">16</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1648291319.A.6F2.html">Re: [閒聊] 女武神零距離跳起來怎解</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E5%A5%B3%E6%AD%A6%E7%A5%9E%E9%9B%B6%E8%B7%9D%E9%9B%A2%E8%B7%B3%E8%B5%B7%E4%BE%86%E6%80%8E%E8%A7%A3">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">45</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1648127317.A.773.html">[法環] 冒著生命危險換來的截圖</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E5%86%92%E8%91%97%E7%94%9F%E5%91%BD%E5%8D%B1%E9%9A%AA%E6%8F%9B%E4%BE%86%E7%9A%84%E6%88%AA%E5%9C%96">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647954949.A.478.html">Re: [法環] 所以為啥在那場合會給菈妮戴戒指</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E6%89%80%E4%BB%A5%E7%82%BA%E5%95%A5%E5%9C%A8%E9%82%A3%E5%A0%B4%E5%90%88%E6%9C%83%E7%B5%A6%E8%8F%88%E5%A6%AE%E6%88%B4%E6%88%92%E6%8C%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">23</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647599104.A.373.html">[法環] 早上的拉尼</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E6%97%A9%E4%B8%8A%E7%9A%84%E6%8B%89%E5%B0%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">29</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647572570.A.FA9.html">Re: [法環] 為什麼沒有人婆小紅帽 羅德莉卡= =?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E7%82%BA%E4%BB%80%E9%BA%BC%E6%B2%92%E6%9C%89%E4%BA%BA%E5%A9%86%E5%B0%8F%E7%B4%85%E5%B8%BD&#43;%E7%BE%85%E5%BE%B7%E8%8E%89%E5%8D%A1%3D&#43;%3D%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647337839.A.1D3.html">[法環] LV1一無所有雞腿棒 雙熔爐騎士 無傷</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;LV1%E4%B8%80%E7%84%A1%E6%89%80%E6%9C%89%E9%9B%9E%E8%85%BF%E6%A3%92&#43;%E9%9B%99%E7%86%94%E7%88%90%E9%A8%8E%E5%A3%AB&#43;%E7%84%A1%E5%82%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">49</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647315335.A.9B9.html">Re: [法環] 其實接肢強到一個爆炸吧?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E5%85%B6%E5%AF%A6%E6%8E%A5%E8%82%A2%E5%BC%B7%E5%88%B0%E4%B8%80%E5%80%8B%E7%88%86%E7%82%B8%E5%90%A7%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">20</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647311729.A.46D.html">[閒聊] 上低音號 人井學繪 /演奏會</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E4%B8%8A%E4%BD%8E%E9%9F%B3%E8%99%9F&#43;%E4%BA%BA%E4%BA%95%E5%AD%B8%E7%B9%AA&#43;%2F%E6%BC%94%E5%A5%8F%E6%9C%83">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">19</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1647176940.A.EE1.html">Re: [法環] 瑟濂老師 即使智力7你也願意教我嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E7%91%9F%E6%BF%82%E8%80%81%E5%B8%AB&#43;%E5%8D%B3%E4%BD%BF%E6%99%BA%E5%8A%9B7%E4%BD%A0%E4%B9%9F%E9%A1%98%E6%84%8F%E6%95%99%E6%88%91%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">34</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1646991726.A.953.html">[法環]諸多npc面具之下的樣子及配音演員 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D%E8%AB%B8%E5%A4%9Anpc%E9%9D%A2%E5%85%B7%E4%B9%8B%E4%B8%8B%E7%9A%84%E6%A8%A3%E5%AD%90%E5%8F%8A%E9%85%8D%E9%9F%B3%E6%BC%94%E5%93%A1&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">26</span></div>
+			<div class="title">
+			
+				<a href="/bbs/C_Chat/M.1646819971.A.71C.html">[法環] 艾爾登環的夏日</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kurenaiz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/C_Chat/search?q=thread%3A%5B%E6%B3%95%E7%92%B0%5D&#43;%E8%89%BE%E7%88%BE%E7%99%BB%E7%92%B0%E7%9A%84%E5%A4%8F%E6%97%A5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/C_Chat/search?q=author%3Akurenaiz">搜尋看板內 kurenaiz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710bf9a81b6d0ad4',m:'jUPK4l7IuHni4FfHqpX99YXvLV1HbFUrlAms5izrnqw-1653457634-0-AdptpoqlvXd8Z3mxyr5BOzBrSSyRv5/Iyz5x/XXzaDAvcbr5gu/NwkQZHXCdot1y0YyjzCxSpImFPo4smGj1f6q0ouPdDJEL04JXV9F+qqDp/M30ILYL5KoZVX3wVPWEGKm0Ek1O1W1FiEANah9zsj33VFb/aL5Hf688T5i5R6Pk',s:[0x9b4c8dfe61,0x97f96a6e28],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
