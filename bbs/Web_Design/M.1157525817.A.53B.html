@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] css firefox,ie顯示不同 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="  之前po了文,不過沒附上實際網址,
+  這一篇補上,先感謝指教,
+  css firefox不正常,ie沒問題,
+====
+  網址:http://www.ee.ntu.edu.tw/eeoffice/tmp.php
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] css firefox,ie顯示不同">
+<meta property="og:description" content="  之前po了文,不過沒附上實際網址,
+  這一篇補上,先感謝指教,
+  css firefox不正常,ie沒問題,
+====
+  網址:http://www.ee.ntu.edu.tw/eeoffice/tmp.php
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1157525817.A.53B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Tonnny (^~^)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] css firefox,ie顯示不同</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Sep  6 14:59:54 2006</span></div>
+  之前po了文,不過沒附上實際網址,
+  這一篇補上,先感謝指教,
+  css firefox不正常,ie沒問題,
+====
+
+  網址:<a href="http://www.ee.ntu.edu.tw/eeoffice/tmp.php" target="_blank" rel="noreferrer noopener nofollow">http://www.ee.ntu.edu.tw/eeoffice/tmp.php</a>
+  IE: <a href="http://www2.ee.ntu.edu.tw/~b9901117/tmp1.jpg" target="_blank" rel="noreferrer noopener nofollow">http://www2.ee.ntu.edu.tw/~b9901117/tmp1.jpg</a>
+<div class="richcontent"><img src="http://www2.ee.ntu.edu.tw/~b9901117/tmp1.jpg" alt="" loading="lazy" /></div>  firefox: <a href="http://www2.ee.ntu.edu.tw/~b9901117/tmp2.jpg" target="_blank" rel="noreferrer noopener nofollow">http://www2.ee.ntu.edu.tw/~b9901117/tmp2.jpg</a>
+<div class="richcontent"><img src="http://www2.ee.ntu.edu.tw/~b9901117/tmp2.jpg" alt="" loading="lazy" /></div>
+  css如下:
+  .iBtn a:link{
+  color: #001EFF; font-size:9pt; letter-spacing: 1px; text-decoration:none;
+  padding: 0px !important; padding-top: 8px; width: 160px; height: 28px;
+  background-image: url(../../image/stu_image/iBtn.gif);
+  background-repeat: no-repeat; margin: 0 auto;}
+
+  .Btn a:visited{除了顏色以外同上}
+  .Btn a:hovor{除了顏色以外同上}
+
+html:
+  &lt;td valign=&#34;top&#34; align=&#34;center&#34; width=&#34;160&#34; height=&#34;28&#34; class=&#34;iBtn&#34;&gt;
+  &lt;a href=&#34;index_stu.php?cat=news_stu&#34;&gt; 最新消息 &lt;/a&gt;&lt;/td&gt;
+
+====
+  測試結果,css內的 width: 160px; height: 28px在firefox內沒有作用,
+  button的背景圖只貼在有連結字後面,沒辦法攤開成160*28
+
+====
+  感謝高手幫忙指教,Thanks~
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.112.42.22
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">adahsu</span><span class="f3 push-content">:請問一下, 您的背景圖多大啊？</span><span class="push-ipdatetime"> 09/06 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Tonnny</span><span class="f3 push-content">:就是160*28,</span><span class="push-ipdatetime"> 09/06 09:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">santin</span><span class="f3 push-content">:能不能給網頁看...</span><span class="push-ipdatetime"> 09/06 10:12
+</span></div>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.112.42.22
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bcse</span><span class="f3 push-content">:你的連結我用IE看也沒背景，應該是要加display:block;吧</span><span class="push-ipdatetime"> 09/06 15:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yukang</span><span class="f3 push-content">:圖檔的位置對嘛？ 是不是設錯圖檔的位置</span><span class="push-ipdatetime"> 09/06 17:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Tonnny</span><span class="f3 push-content">:先感謝樓上...右邊我都拿掉了,重點是左邊的按鈕,</span><span class="push-ipdatetime"> 09/06 18:41
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1157525817.A.53B.html?cacheKey=2149-475749934&amp;offset=1738&amp;offset-sig=f99fb05d6ac048b9aba97acf4bbaebc48db47a2d" data-longpollurl="/v1/longpoll?id=12f9ea3849400647855834ef9fbd2ac8a465c7d0" data-offset="1738"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9bbcc66807e',m:'u5CFkJFXtYnYTuJyHphyqWfA8cmRIINvQ_UTzLIWB0Q-1653467468-0-AViaEAG3939TjsUpVjChMHr2X1PDQ7mo0zFpwpSj4Htj9wmUPDLDa5JGAAGukkm6dWy3PItYdTW4ewxDZcr7gn5Ogbxo9ktsQgF45UfWfUuuLYKWKFAtcMEd5YDdFa2mG/dxb+RSC7ufn6GqviRsRiJPk9lv5ei+aZGONgFPhJjp',s:[0x5f417c3699,0x832fdf66e6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

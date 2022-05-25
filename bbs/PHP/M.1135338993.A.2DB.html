@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="Title：    運算符號簡例以及簡單介紹迴圈-loop
+討論串Url：http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144724&amp;page=1
+※ 引述《ztw ( )》之銘言：
+:   5、運算符號：
+:   數學運算： 符號 意義
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教">
+<meta property="og:description" content="Title：    運算符號簡例以及簡單介紹迴圈-loop
+討論串Url：http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144724&amp;page=1
+※ 引述《ztw ( )》之銘言：
+:   5、運算符號：
+:   數學運算： 符號 意義
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1135338993.A.2DB.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ztw ( )</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Dec 23 19:58:59 2005</span></div>
+Title：    運算符號簡例以及簡單介紹迴圈-loop
+討論串Url：<a href="http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144724&amp;page=1" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144724&amp;page=1</a>
+
+<span class="f2">※ 引述《ztw ( )》之銘言：
+</span><span class="f6">:   5、運算符號：
+</span><span class="f6">:   數學運算： 符號 意義
+</span><span class="f6">:   +  加法運算
+</span><span class="f6">:   -  減法運算
+</span><span class="f6">:   *  乘法運算
+</span><span class="f6">:   /  除法運算
+</span><span class="f6">:   %  取餘數
+</span><span class="f6">:   ++  累加
+</span><span class="f6">:   --  遞減
+</span>
+若是你的系統裡面已經架設好 Apache+ PHP 利用編輯器即可撰寫 PHP
+以下為各位簡單舉出符號小例：
+
+&lt;?php
+// 以變數來舉出運用 + 號的例子
+// 1+3=?
+
+$a=1;
+$b=3;
+$result=$a+$b;
+echo $result.&#34;&lt;br&gt;&#34;;
+echo &#34;1+3=$result&lt;br&gt;&#34;;
+echo &#34;這例子是讓大家知道 $a+$b=$result&lt;br&gt;&#34;;
+
+## 以上三個 echo 是讓大家知道變數的運用，以及有關加號的運用
+## 第一個echo 會顯示 4
+## 第二個echo 會顯示 1+3=4
+## 第三個echo 會顯示 這例子是讓大家知道 1+3=4
+?&gt;
+
+------------------------------------------------------------------------------------------------------
+&lt;?php
+// 以變數來舉出運用 - 號的例子
+// 5-3=?
+
+$a=5;
+$b=3;
+$result=$a-$b;
+echo $result.&#34;&lt;br&gt;&#34;;
+echo &#34;&lt;font color=red&gt;5-3=$result&lt;/font&gt;&lt;br&gt;&#34;;
+echo &#34;這例子是讓大家知道 $a-$b=$result&lt;br&gt;&#34;;
+
+## 以上三個 echo 是讓大家知道變數的運用，以及有關加號的運用
+## 第一個echo 會顯示 2
+## 第二個echo 會顯示 5-3=2 (此行會是顯示紅字，因為在&#34;&#34;內有崁入 html 碼)
+## 第三個echo 會顯示 這例子是讓大家知道 5-3=2
+?&gt;
+
+------------------------------------------------------------------------------------------------------
+&lt;?php
+// 以變數來舉出運用 +-*/ 四個符號的例子
+// 10*20/2+30-7=?
+
+$a=10;
+$b=20;
+$c=2;
+$d=30;
+$e=7;
+$result=$a*$b/$c+$d-$e;
+echo $result.&#34;&lt;br&gt;&#34;;
+echo &#34;&lt;font size=5&gt;10*20/2+30-7=$result&lt;/font&gt;&lt;br&gt;&#34;;
+echo &#34;這例子是讓大家知道 $a*$b/$c+$d-$e=$result&lt;br&gt;&#34;;
+
+## 以上三個 echo 是讓大家知道變數的運用，以及有關加號的運用
+## 第一個echo 會顯示123
+## 第二個echo 會顯示10*20/2+30-7=123 (此行會是顯示size為5 的字，因為在&#34;&#34;內有
+## 崁入 html 碼)
+## 第三個echo 會顯示 這例子是讓大家知道 10*20/2+30-7=123
+?&gt;
+
+------------------------------------------------------------------------------------------------------
+  %  取餘數
+  簡單解釋為 若是
+  $a=10;
+  $b=4;
+  $result=$a%$b;
+  echo $result;
+  //  顯示為 2 ，因為 10除以4，商數2，餘數為2
+
+------------------------------------------------------------------------------------------------------
+  ++  累加     --   遞減
+  這二者則是通常運用在迴圈，簡單以 for 下迴圈讓大家了解
+
+  先簡單介紹迴圈 Loop (for,while)，後面會為大家簡單介紹 while
+
+&lt;?php
+# for 在()分別需要三個條件 (a1;a2;a3)
+# a1 為 變數($i) 的開始條件 (以$i 為例)
+# a2 為 變數($i) 的終點條件
+# a3 為 變數($i) 的附加條件
+# 附加條件如 $i++ or $i--
+# $i++ = $i+1
+# $i-- = $i-1
+// 輸出結果如下：
+// Num0
+// Num1
+// Num2
+// Num3
+// Num4
+
+for($i=0;$i&lt;5;$i++){
+        echo &#34;Num&#34;.$i.&#34;&lt;br&gt;&#34;;
+}
+## 簡單解釋上面迴圈
+## $i=0     則是將0 作為開始條件
+## $i&lt;5     則是數字不得跑超過5，也就是最大結果為4
+## $i++     則是他的附加條件，為每跑一個迴圈，數字加一，也就是由 0 開始跑會
+##          跑到 4 為止
+?&gt;
+
+小練習題：
+利用 for 寫出下方所示的圖形
+
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+--
+討論是你我教學相長的機會
+UO-小築  <a href="http://uniorg.net/" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/</a>  讓我們一同喜愛這討論空間
+喜歡他的話  別忘了推薦給大家...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.73.23.169
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1135338993.A.2DB.html?cacheKey=2148-469791148&amp;offset=3177&amp;offset-sig=d74300d1b3ea711584ad72d97ebe386787b25561" data-longpollurl="/v1/longpoll?id=f4b2e745df5f1ca43680068bef6578ac041d4480" data-offset="3177"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab41ca5af5e',m:'JoN28L2R0Qaw3q6pd1aD_.m9kJFtTpkKVLlnEIADJQs-1653467507-0-ATLPdFPRhrHVyp7ZH9nn0gR9p2xpBhApbZhoQZSzkShlDpZLC0SV9CF2Vr6aq0KjLQYKEMzW2h/0ZYaCyWj2/R9Nth654J0aqzS6X/0CRB0DoI1JQjHyEmq6vdTajpbnoawbBTV4iLErS1D5Ag9p1+sVu5Qr1CIE7BnVZEGlghxk',s:[0x82acd244b6,0x2827d0c3a9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

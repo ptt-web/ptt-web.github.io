@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 用css設定物件的位置 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="沒有 float: center; 這種東西...
+HTML部份:
+&lt;body&gt;
+    &lt;div id=&#34;wrapper&#34;&gt;
+        (內容)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 用css設定物件的位置">
+<meta property="og:description" content="沒有 float: center; 這種東西...
+HTML部份:
+&lt;body&gt;
+    &lt;div id=&#34;wrapper&#34;&gt;
+        (內容)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1206288714.A.89F.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">bcse (Lvx ex Caelis)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 用css設定物件的位置</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Mar 24 00:11:53 2008</span></div>
+<span class="f2">※ 引述《adamp3 (Boston&#39;s 10th Man.)》之銘言：
+</span><span class="f6">: ※ 引述《gop66 (gop)》之銘言：
+</span><span class="f6">: : 請問一下  下面這樣的效果要怎麼設定呢？
+</span><span class="f6">: : <a href="http://subweb.health.gov.tw/Nosmoking/04_1.asp" target="_blank" rel="noreferrer noopener nofollow">http://subweb.health.gov.tw/Nosmoking/04_1.asp</a>
+</span><span class="f6">: : 就是讓整個頁面上下沒有空隙　　水平的話是置中對齊
+</span><span class="f6">: : 這要怎麼做呢？　　用ｃｓｓ做嗎？
+</span><span class="f6">: : 我看書上類似的東西是寫
+</span><span class="f6">: : position: absolute;
+</span><span class="f6">: : top: 0px;
+</span><span class="f6">: : bottom: 0px;
+</span><span class="f6">: : 雖然上下有達到我想要的效果
+</span><span class="f6">: : 可是左右我想要設成置中對齊　　用這個方法好像都只能設絕對位置...
+</span><span class="f6">: : 我是初學者   書上沒寫我就不會了.....=   =
+</span><span class="f6">: : 還請板友們多多指教 &gt;&#34;&lt;
+</span><span class="f6">: : 謝謝~
+</span><span class="f6">: body
+</span><span class="f6">: {margin: 0px;} /*上下都會貼齊*/
+</span><span class="f6">: #wrapper{float: center;}  /*用一個大的div包住 讓其置中*/
+</span>
+沒有 float: center; 這種東西...
+
+HTML部份:
+&lt;body&gt;
+    &lt;div id=&#34;wrapper&#34;&gt;
+        (內容)
+    &lt;/div&gt;
+&lt;/body&gt;
+
+CSS部份：
+body {
+    text-align: center; /* 用 text-align 是為了相容某些老舊瀏覽器 */
+}
+#wrapper {
+    margin: 0 auto;
+    text-align: left; /* 因為前面用了 text-align，所以這邊要設定回來 */
+}
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 134.208.33.185
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">adamp3</span><span class="f3 push-content">:打太快了orz text-align才對 sorry</span><span class="push-ipdatetime"> 03/24 00:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gop66</span><span class="f3 push-content">:原來如此~~謝謝 ^^</span><span class="push-ipdatetime"> 03/24 00:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ikaridon</span><span class="f3 push-content">:多嘴附註一下 margin: 0 auto;兩數值分別對應 上下 左右</span><span class="push-ipdatetime"> 03/24 12:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gop66</span><span class="f3 push-content">:好開心喔~　&gt;__&lt;   馬上又多學會一招~</span><span class="push-ipdatetime"> 03/24 23:50
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1206288714.A.89F.html?cacheKey=2149-475796017&amp;offset=1512&amp;offset-sig=c2eb147245fef7160d2028bee0b49f7b9b2a4f88" data-longpollurl="/v1/longpoll?id=2951a1ded2a471de7442693e652d8c93096bdb2f" data-offset="1512"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9b6f80e14d0',m:'jbFXUHpzJGQ7FSkoKOUrUDQio6sYi6zOT6hpgr1uTXU-1653467467-0-Ac4y+8H8PZ92wdkIPUbFXvYK23zxDfb9LFwQcUQEnSKeVX3S/+BIywUUQok1DXx4/43nXSZ0bDPa+NSqwW8JDD1sZMD3JCMi0+VZ756QRq9AkTG/I/qz5otFprGuRPqa3OHMkH7zyRLoE0enU+LNjC2qbL2nZltHJajRg2cF9qno',s:[0xc5b961bb0c,0xed140aaa0c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

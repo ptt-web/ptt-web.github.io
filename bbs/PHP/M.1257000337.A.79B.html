@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 關於無名小站中英切換如何寫 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你想問的東西，其實是幾個混在一起。
+先澄清一件事情，網頁幾乎可以用你想得到的程式語言寫出來。
+所以實際上並沒有「非 PHP 不然作不出來」的功能。
+無名是不是 PHP 作的，老實說我沒在用、沒研究，所以不知道。
+但可以說，這效果其它語言，常見的 ASP, ASP.NET, JSP, Ruby...都作得到。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 關於無名小站中英切換如何寫">
+<meta property="og:description" content="你想問的東西，其實是幾個混在一起。
+先澄清一件事情，網頁幾乎可以用你想得到的程式語言寫出來。
+所以實際上並沒有「非 PHP 不然作不出來」的功能。
+無名是不是 PHP 作的，老實說我沒在用、沒研究，所以不知道。
+但可以說，這效果其它語言，常見的 ASP, ASP.NET, JSP, Ruby...都作得到。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1257000337.A.79B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ddtet (納格髓)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 關於無名小站中英切換如何寫</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Oct 31 22:45:34 2009</span></div>
+<span class="f2">※ 引述《xingxingS (vicky)》之銘言：
+</span><span class="f6">: 各位大大前輩
+</span><span class="f6">: 無名小站 ( <a href="http://www.wretch.cc/" target="_blank" rel="noreferrer noopener nofollow">http://www.wretch.cc/</a> ) 的右上角有國旗還有一個地球
+</span><span class="f6">: 按一下之後 部分的內容會變成 簡體 和 英文
+</span><span class="f6">: 請問這是用PHP寫的嗎?
+</span><span class="f6">: 煩請先進陳述一下怎麼寫
+</span><span class="f6">: 感謝!
+</span>你想問的東西，其實是幾個混在一起。
+先澄清一件事情，網頁幾乎可以用你想得到的程式語言寫出來。
+所以實際上並沒有「非 PHP 不然作不出來」的功能。
+
+無名是不是 PHP 作的，老實說我沒在用、沒研究，所以不知道。
+但可以說，這效果其它語言，常見的 ASP, ASP.NET, JSP, Ruby...都作得到。
+
+把過程分開描述...
+按鈕的部分，是&lt;a&gt;加上CSS作出來的效果，本身沒有連結
+猜想是以 JavaScript 的方式改變 cookie 的內容，重讀網頁
+
+cookie 的內容，則是記錄現在要顯示哪個語系的選單。
+
+而開網頁的時候，程式會讀取，找到應該顯示在選單的字串。
+印出，結束。
+如果你對這段內容不熟悉，個人建議你去找「套版」相關的資料，
+也許會有一些新的認識，說穿了就是「印出不同的字(HTML)」罷了。
+
+為什麼猜是 cookie，因為它是記錄在 client端的， javascript 就可以改變。
+如果是 session 或是其它的，修改起來就會麻煩許多。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.168.115.153
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1257000337.A.79B.html?cacheKey=2148-469793912&amp;offset=1140&amp;offset-sig=de8924b8eb990272d9b5c68b44b58d85f535aa96" data-longpollurl="/v1/longpoll?id=a3273bc30ed10f5cc0f01333941c67582166cf86" data-offset="1140"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5958f21ec4',m:'qluelyGeTXGIvkJNPm.ZCDC_UokJIpdFhpuoA.uE4ow-1653467493-0-AaddqReOcgYOGVLNdfhQ2iB60Hh4NGz5M20gXT2UDjBegYo1pAMi/4z952YhK+VpU0THY/6PoQrW1sXOx00PPZKOKOnIjcsrfri/WroCHxt2TgXUyBUYBHxjcAmYddwHa8O3J4LEBDAH8kUhrwGsKI1FcpDiwK36nkcFazrrPQ7m',s:[0x6292842f5c,0x92c17d05ec],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:AlanLive - EZsoft - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/EZsoft/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/EZsoft/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/EZsoft/search?page=2&amp;q=author%3AAlanLive">最舊</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=2&amp;q=author%3AAlanLive">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3AAlanLive">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:AlanLive" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1345297406.A.E6A.html">[請問] 銷售管理軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E9%8A%B7%E5%94%AE%E7%AE%A1%E7%90%86%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1321673690.A.81E.html">[請問] Notepad++ 高亮關鍵字的問題？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;Notepad%2B%2B&#43;%E9%AB%98%E4%BA%AE%E9%97%9C%E9%8D%B5%E5%AD%97%E7%9A%84%E5%95%8F%E9%A1%8C%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1320895579.A.998.html">[請問] 錄下編輯圖片時的操作的小軟體？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E9%8C%84%E4%B8%8B%E7%B7%A8%E8%BC%AF%E5%9C%96%E7%89%87%E6%99%82%E7%9A%84%E6%93%8D%E4%BD%9C%E7%9A%84%E5%B0%8F%E8%BB%9F%E9%AB%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1316673914.A.6A2.html">[請問] 將二個以上的影音播放器自動排列於視窗上的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%B0%87%E4%BA%8C%E5%80%8B%E4%BB%A5%E4%B8%8A%E7%9A%84%E5%BD%B1%E9%9F%B3%E6%92%AD%E6%94%BE%E5%99%A8%E8%87%AA%E5%8B%95%E6%8E%92%E5%88%97%E6%96%BC%E8%A6%96%E7%AA%97%E4%B8%8A%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1314952686.A.581.html">[請問] 能自動提示/補完語法的編輯器</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%83%BD%E8%87%AA%E5%8B%95%E6%8F%90%E7%A4%BA%2F%E8%A3%9C%E5%AE%8C%E8%AA%9E%E6%B3%95%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1307786974.A.B41.html">Re: [情報] cFosSpeed - 新版本 6.60</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;cFosSpeed&#43;-&#43;%E6%96%B0%E7%89%88%E6%9C%AC&#43;6.60">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1303536663.A.E42.html">[請問] 圖片自動合併的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%9C%96%E7%89%87%E8%87%AA%E5%8B%95%E5%90%88%E4%BD%B5%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1303392763.A.868.html">[請問] 搜尋指定尺寸圖片的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%90%9C%E5%B0%8B%E6%8C%87%E5%AE%9A%E5%B0%BA%E5%AF%B8%E5%9C%96%E7%89%87%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1303017776.A.169.html">[請問] 掛載(mount)遠端磁碟的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%8E%9B%E8%BC%89%28mount%29%E9%81%A0%E7%AB%AF%E7%A3%81%E7%A2%9F%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1299153996.A.74A.html">[請問] 自動複製對角座標及寬度的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%87%AA%E5%8B%95%E8%A4%87%E8%A3%BD%E5%B0%8D%E8%A7%92%E5%BA%A7%E6%A8%99%E5%8F%8A%E5%AF%AC%E5%BA%A6%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1286878848.A.4AF.html">[請問] 程式當機後自動重新啟動的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E7%A8%8B%E5%BC%8F%E7%95%B6%E6%A9%9F%E5%BE%8C%E8%87%AA%E5%8B%95%E9%87%8D%E6%96%B0%E5%95%9F%E5%8B%95%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1284290858.A.002.html">Re: [推薦] 小巧的 YouTube 播放器 StreamingPlayer</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;%E5%B0%8F%E5%B7%A7%E7%9A%84&#43;YouTube&#43;%E6%92%AD%E6%94%BE%E5%99%A8&#43;StreamingPlayer">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1283745233.A.7A9.html">[請問] Total Commander 內建的解壓縮程式</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;Total&#43;Commander&#43;%E5%85%A7%E5%BB%BA%E7%9A%84%E8%A7%A3%E5%A3%93%E7%B8%AE%E7%A8%8B%E5%BC%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1277767541.A.4B1.html">[請問] 如何準確又快速的切換輸入法?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%A6%82%E4%BD%95%E6%BA%96%E7%A2%BA%E5%8F%88%E5%BF%AB%E9%80%9F%E7%9A%84%E5%88%87%E6%8F%9B%E8%BC%B8%E5%85%A5%E6%B3%95%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1276198262.A.1CE.html">[推薦] 小巧的 YouTube 播放器 StreamingPlayer</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;%E5%B0%8F%E5%B7%A7%E7%9A%84&#43;YouTube&#43;%E6%92%AD%E6%94%BE%E5%99%A8&#43;StreamingPlayer">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/11</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1275248544.A.BAF.html">[請問] 尋找顯示 VRAM 使用量的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%B0%8B%E6%89%BE%E9%A1%AF%E7%A4%BA&#43;VRAM&#43;%E4%BD%BF%E7%94%A8%E9%87%8F%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1274743908.A.C8C.html">[打屁] 目前支援 GPU 的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%89%93%E5%B1%81%5D&#43;%E7%9B%AE%E5%89%8D%E6%94%AF%E6%8F%B4&#43;GPU&#43;%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1273098406.A.F54.html">[請問] 如何讓 IrfanView 多開圖片視窗?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%A6%82%E4%BD%95%E8%AE%93&#43;IrfanView&#43;%E5%A4%9A%E9%96%8B%E5%9C%96%E7%89%87%E8%A6%96%E7%AA%97%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1270281343.A.77A.html">[請問] 容錯率高的播放軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%AE%B9%E9%8C%AF%E7%8E%87%E9%AB%98%E7%9A%84%E6%92%AD%E6%94%BE%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1265188185.A.061.html">Re: [推薦] Everything_當今最快桌面搜尋軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">AlanLive</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;Everything_%E7%95%B6%E4%BB%8A%E6%9C%80%E5%BF%AB%E6%A1%8C%E9%9D%A2%E6%90%9C%E5%B0%8B%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3AAlanLive">搜尋看板內 AlanLive 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb93eb9220a7',m:'Un1t_U0uYzOrHu_Dzp3hKo13Zr3ubSQkPfq_5e1Uup0-1653466888-0-AfCs4yKYKEsP5A79S5NlgsVpiw2QSmuaAmhN9cKkmJsAdXAaBcwlJVKFhYHavdYqz2uIareC5qmNjgl2Eo+DNuO0gLTC9GOUd4juv7kkyhD9PytpXZ/FktoaYwlzySa715gKPe3vwdW7jngUd4+vJqVaplq1kDMjETHF3CyUp8T/',s:[0x557ddbe1bc,0x36f4a6da83],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

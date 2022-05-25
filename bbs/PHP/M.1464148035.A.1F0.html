@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] PHP驗證帳號的方式 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="因公司接觸到aspx，而我也發現這東西只要有最高權限的GUID(固定)
+即使在無痕模式下也能直接登入
+PHP有沒有辦法可以防範這種GUID攻擊方法(我想寫的，與公司aspx無關)
+例如在我的網站下以 index.php 為登入頁面 (以 www.example.com 為例)
+網站之下的分支都得登入後才能觀看/操作的
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] PHP驗證帳號的方式">
+<meta property="og:description" content="因公司接觸到aspx，而我也發現這東西只要有最高權限的GUID(固定)
+即使在無痕模式下也能直接登入
+PHP有沒有辦法可以防範這種GUID攻擊方法(我想寫的，與公司aspx無關)
+例如在我的網站下以 index.php 為登入頁面 (以 www.example.com 為例)
+網站之下的分支都得登入後才能觀看/操作的
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1464148035.A.1F0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">HwangTW (谷歌翻譯王)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] PHP驗證帳號的方式</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed May 25 11:47:12 2016</span></div>
+因公司接觸到aspx，而我也發現這東西只要有最高權限的GUID(固定)
+即使在無痕模式下也能直接登入
+PHP有沒有辦法可以防範這種GUID攻擊方法(我想寫的，與公司aspx無關)
+例如在我的網站下以 index.php 為登入頁面 (以 www.example.com 為例)
+網站之下的分支都得登入後才能觀看/操作的
+即使直接輸入 www.example.com/test/test.php
+1. 未經授權存取
+        直接轉到 www.example.com 待使用者輸入帳號後
+        在某個 iframe 顯示 www.example.com/test/test.php 的內容
+2. 有授權存取
+        直接轉到 www.example.com 並在某個 iframe 顯示該內容
+
+
+最後一個問題 cookie 該怎麼寫QQ
+在此請教了
+
+--
+當你年輕的時候 你會覺得真愛無敵 麵包以後就會有
+當你中年之後 你會發現真愛很重要 所以他需要麵包來保護
+
+　　--文章代碼(AID): <a href="/bbs/Gossiping/M.1432602287.A.107.html" target="_blank" rel="noreferrer noopener nofollow">#1LOyQl47 (Gossiping)</a> 作者：<span class="hl">yasaq</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 220.133.80.67
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1464148035.A.1F0.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1464148035.A.1F0.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 不要把登入/帳號資訊放在 cookie 裡面，只存session id</span><span class="push-ipdatetime"> 05/25 12:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 登入後的權限放在session裡面不讓client碰</span><span class="push-ipdatetime"> 05/25 12:14
+</span></div>session id該怎麼寫QQ 有教學嗎?
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 不是session id是session 你有聽過google嗎</span><span class="push-ipdatetime"> 05/25 13:36
+</span></div>SORRY 那時候才剛碰(?
+剛剛嚼了好多文章(滾滾
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wilson200106</span><span class="f3 push-content">: 做session，然後做個function判斷登入，塞在header</span><span class="push-ipdatetime"> 05/25 14:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wilson200106</span><span class="f3 push-content">: if(!is_login()) {  }  類似這樣</span><span class="push-ipdatetime"> 05/25 14:46
+</span></div>function判斷登入...我好像還沒那麼高等orz
+<span class="f2">※ 編輯: HwangTW (220.133.80.67), 05/25/2016 16:59:24
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: cookie 保持登入還蠻普遍的說 0.0 只是要存含IP編碼過</span><span class="push-ipdatetime"> 05/26 12:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 的</span><span class="push-ipdatetime"> 05/26 12:43
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1464148035.A.1F0.html?cacheKey=2148-469798719&amp;offset=1824&amp;offset-sig=b5f6fe2861c4f79602b141f07e6014affee17153" data-longpollurl="/v1/longpoll?id=56a62c4a099a53855fee7a0b0aad17b070afa193" data-offset="1824"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac5698014d0',m:'L0YyfVUWL7GtMGSz.w0Jikz5lm7V7vLt3xURkbRsFZU-1653467510-0-ARVSo6OLTnNMZPJuDTbn0XpXJuHjJhzPSfWRjU3CzyRA3qC/Svlp1BhxnY8UpqMVYmN49eF1bpXzwjK05aeZOXVPwa9SRws3Rj2ZntXStGGs6rukNwDFnAWdYq15JU50mJzLxfpJkKywIPG8uPq/0Qf+r5M0QvGpyiETQSv4lxTg',s:[0xdcc84c7f25,0x7304cdc6ff],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

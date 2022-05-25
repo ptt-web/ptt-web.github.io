@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 不好意思，又是FB API的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="小弟是用JS的FB API來用
+我發現如果我用A帳號來創應用程式，在網站內容也用A帳號應用程式的ID
+如果我用A帳號登入並取得授權的話，可以取得生日
+但是如果我用B帳號去登入的話，就只會取得公開的個人檔案，以及EMAIL而已
+相反的
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 不好意思，又是FB API的問題">
+<meta property="og:description" content="小弟是用JS的FB API來用
+我發現如果我用A帳號來創應用程式，在網站內容也用A帳號應用程式的ID
+如果我用A帳號登入並取得授權的話，可以取得生日
+但是如果我用B帳號去登入的話，就只會取得公開的個人檔案，以及EMAIL而已
+相反的
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1402544694.A.640.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">crossdunk (魯來又魯去)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 不好意思，又是FB API的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun 12 11:44:50 2014</span></div>
+小弟是用JS的FB API來用
+
+我發現如果我用A帳號來創應用程式，在網站內容也用A帳號應用程式的ID
+
+如果我用A帳號登入並取得授權的話，可以取得生日
+
+但是如果我用B帳號去登入的話，就只會取得公開的個人檔案，以及EMAIL而已
+
+
+
+相反的
+
+我用B帳號創應用程式，網站內容也改B帳號應用程式的ID
+
+如果用B帳號登入，可以取得生日
+
+而用A帳號，又不行了
+
+
+
+簡單來說，就是要取得生日只能登入辦該應用程式的帳號
+
+
+
+我想請問這是什麼原因呢？
+
+以下為我的程式碼片段
+
+FB.login(function(response)
+              {
+              if(response.status==&#34;not_authorized&#34;) {
+                  appGetPermission = false;
+              } else if(response.status==&#34;connected&#34;) {
+                  appGetPermission = true;
+                            FB.api(
+                            &#34;/me&#34;,
+                            function (response) {
+                            if (response &amp;&amp; !response.error) {
+                            console.log(response);
+                            var birthday = response.birthday;
+                            }
+                            alert(birthday);
+                            }
+                            );
+             }
+
+},{&#34;scope&#34;:&#34;public_profile,email,publish_actions,email,user_birthday,user_hometown,,user_location&#34;})
+
+我看網路上的是說scope是取得權限，我都有打了，但還是拿不到
+
+只有email以及public_profile可以取得而已
+
+先感謝各位先進了！!
+
+--
+Sent from my 3cm
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 59.120.19.218
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1402544694.A.640.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1402544694.A.640.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:在fb授權的視窗中有沒有說會取得生日的權限?</span><span class="push-ipdatetime"> 06/12 13:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:<a href="http://fbapi-demo.kerash.tw/" target="_blank" rel="noreferrer noopener nofollow">http://fbapi-demo.kerash.tw/</a>  我使用上是可以的</span><span class="push-ipdatetime"> 06/12 13:04
+</span></div>
+沒有說會取得生日..
+
+如果用創該應用程式的帳號當入的話，就會有取得生日的權限
+
+另外有站內信請問您了，感謝!
+<span class="f2">※ 編輯: crossdunk (59.120.19.218), 06/12/2014 14:07:10
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">scars</span><span class="f3 push-content">:你的app還在sandbox mode吧, 在 status &amp; review 裡面</span><span class="push-ipdatetime"> 06/12 14:11
+</span></div>
+
+不太懂什麼意思@@
+我在STATUS&amp;REVIRE裡面沒找到sandbox呢 QQ
+<span class="f2">※ 編輯: crossdunk (59.120.19.218), 06/12/2014 14:21:58
+</span>
+
+對了
+
+我的Approved Items只有email、public_profile、user_friends
+
+這三個
+
+並沒有user_birthday，會是這個問題嗎@@?
+
+如果是的話，請問要如何新增呢?
+<span class="f2">※ 編輯: crossdunk (59.120.19.218), 06/12/2014 14:23:51
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:現在放在status&amp;review應用程式名那格的開關</span><span class="push-ipdatetime"> 06/12 17:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:開了是近production 也就是關掉sandbox mode</span><span class="push-ipdatetime"> 06/12 17:34
+</span></div>
+
+<a href="http://ppt.cc/htZa" target="_blank" rel="noreferrer noopener nofollow">http://ppt.cc/htZa</a>
+
+請問是這嗎@@
+
+這個已經開了可是還是不能讀到birthday呢QQ
+<span class="f2">※ 編輯: crossdunk (59.120.19.218), 06/12/2014 17:47:24
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:沒開的話我印象中其他人連取得授權都是會失敗的</span><span class="push-ipdatetime"> 06/12 21:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:除非是有開測試賬戶才有辦法使用在 sandbox 中的專案</span><span class="push-ipdatetime"> 06/12 21:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cleanwind</span><span class="f3 push-content">:這種現在要送審。</span><span class="push-ipdatetime"> 06/13 00:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">blue3</span><span class="f3 push-content">:會是這個設定的問題嗎 <a href="https://imgur.com/QnrHwki" target="_blank" rel="noreferrer noopener nofollow">http://imgur.com/QnrHwki</a></span><span class="push-ipdatetime"> 06/13 00:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blue3</span><span class="f3 push-content">:在settings-&gt;Apps</span><span class="push-ipdatetime"> 06/13 00:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">blue3</span><span class="f3 push-content">:好像不是,剛剛試過關掉後我自己還是可以拿到</span><span class="push-ipdatetime"> 06/13 00:42
+</span></div>
+
+看起來是現在都要送審才能開啟 ...
+
+昨天送審，他今天回覆說沒有過，叫我要詳細的說
+
+為什麼需要開啟這個生日的權限，是要運用生日幹麻
+
+還要一步一步的交待流程 ...
+
+請問有方法可以用舊的版本跳過送審嗎@@？
+<span class="f2">※ 編輯: crossdunk (220.130.116.41), 06/13/2014 10:47:04
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bliece</span><span class="f3 push-content">:線在也卡在送審  真的是太麻煩了  QQ  一直不讓人過...</span><span class="push-ipdatetime"> 06/14 17:41
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1402544694.A.640.html?cacheKey=2148-469801002&amp;offset=3677&amp;offset-sig=2bbaf3fca92426166cd2dfd4351bceb304438d0b" data-longpollurl="/v1/longpoll?id=eff10b53dcde47aa5ab2c37b0214c7ecd99a63fa" data-offset="3677"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea087805b00c',m:'ifwbv_etB8HnCpDBpUuuJcrJeY.5775S8YETCT0eK8U-1653467480-0-AY+fgQJgNvIXW+t/+knX5Rqj2lfp0bpnRPWeW8AzDUCbq4qwPayjtdzpaAmSsXzVPK6zPE9DsdxA8yER3VrKPoWcpGlq4WQKG0U6jg8PBcdfJzQZPl6J5j6xv2tmnbWSkkWSzpk4j6+f3hWqr0UP/Pd8+tN2lRJ6gQROJ7/j0O62',s:[0x6012ece3de,0x4e795f8266],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

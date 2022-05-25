@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請問] UltraVNC 怎麼用? &gt; &lt; - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="無聊小回一下..
+推文要你多找網路、多看說明書是對的 ... 只是我很閒 ..( ￣ c￣)y▂ξ
+→ searchptt:感謝樓上n大　　有一個問題忘了問，註文沒被察覺我再回   06/26 20:32
+→ searchptt:  po好了，Q：請問如果被控端的使用者帳號處於切換使用   06/26 20:34
+→ searchptt:  者那裡(有登入而只是切換出來而已)，UtralVNC連得上？  06/26 20:35
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請問] UltraVNC 怎麼用? &gt; &lt;">
+<meta property="og:description" content="無聊小回一下..
+推文要你多找網路、多看說明書是對的 ... 只是我很閒 ..( ￣ c￣)y▂ξ
+→ searchptt:感謝樓上n大　　有一個問題忘了問，註文沒被察覺我再回   06/26 20:32
+→ searchptt:  po好了，Q：請問如果被控端的使用者帳號處於切換使用   06/26 20:34
+→ searchptt:  者那裡(有登入而只是切換出來而已)，UtralVNC連得上？  06/26 20:35
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1214539296.A.692.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">aeolus0829 (archer)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請問] UltraVNC 怎麼用? &gt; &lt;</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jun 27 12:01:31 2008</span></div>
+無聊小回一下..
+推文要你多找網路、多看說明書是對的 ... 只是我很閒 ..( ￣ c￣)y▂ξ
+
+→ searchptt:感謝樓上n大　　有一個問題忘了問，註文沒被察覺我再回   06/26 20:32
+→ searchptt:  po好了，Q：請問如果被控端的使用者帳號處於切換使用   06/26 20:34
+→ searchptt:  者那裡(有登入而只是切換出來而已)，UtralVNC連得上？  06/26 20:35
+→ searchptt:  我在外面試了一下，是連不上的，不知大家情況如何?_?   06/26 20:36
+
+意思是，只作切換使用者，a使用者有啟動 vnc ，但切換成 b使用者時沒有啟動
+vnc 是吧？
+
+  a - 啟動 - vnc 可以連
+  b - 關閉 - vnc 不能連
+
+這樣很合理吧？b 的工作階段中並沒有 vnc 在工作，你要連到哪裡去？
+
+a 雖有啟動，但個人猜測可能 a 的工作階段整個被 suspend 了，所以不能連
+( 以上純屬推測，若有不對請多指正）
+
+如果你要 &#34;無論有沒有登入、哪一個使用者登入&#34; 都能使用 vnc
+請找一下 程式集 中 ultravnc 的子資料匣，會有一個 install winvnc service
+將 winvnc 註冊成服務，只要 windows 開機完，vnc 就會啟動
+不管有沒有登入、哪一個使用者登入，都一樣可以照連喔
+
+
+<span class="f2">※ 引述《searchptt (╮(﹀_﹀&#34;)╭)》之銘言：
+</span><span class="f6">: 我安裝好UltraVNC後...
+</span><span class="f6">: 才想到我不知道要怎麼從別臺pc連到我的pc？
+</span><span class="f6">: 爬文後好像沒談這個的樣子
+</span><span class="f6">: 它會比winxp內建的遠端困難嗎？
+</span><span class="f6">: （我是因為↖不能用，有版友建議UltraVNC）
+</span><span class="f6">: 還請大大們不吝相告
+</span><span class="f6">: 感激感謝..
+</span>遠端桌面我覺的還滿簡單的啊 .. 速度上也比 vnc 快（據說是因為 rdp 協定的關係）
+只要把防火牆的 3389 port 打開就好了
+另外就是 系統內容／遠端／遠端桌面 要打勾，設一個遠端連進來的使用者就好了
+這個使用者可以另外設（比較好），然後給他 users 權限就好
+
+好吧...vnc 的設定是比較簡單點 XD
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.130.203.236
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tamato9519</span><span class="f3 push-content">:  ( ′▽`)-o因囡囝囚</span><span class="push-ipdatetime"> 06/27 12:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aeolus0829</span><span class="f3 push-content">:\⊙▽⊙/</span><span class="push-ipdatetime"> 06/27 12:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:如果VNC安裝的時候有註冊成服務，那即使切換使用者，也</span><span class="push-ipdatetime"> 06/27 13:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:還是可以使用的。</span><span class="push-ipdatetime"> 06/27 13:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">: 1.3Q原po先^^。 ..and當然是要連有開vnc的使用者啦^^||</span><span class="push-ipdatetime"> 06/27 16:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">: 2.被控端的pc是沒有在工作的，而使用者a有開vnc喔^o^</span><span class="push-ipdatetime"> 06/27 16:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">: 3.我的vnc是預設為開機即啟動的唷^_&lt;</span><span class="push-ipdatetime"> 06/27 16:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">: 4.我以前的被控端pc可用內建遠端，是現在發現不能連才</span><span class="push-ipdatetime"> 06/27 16:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">:   會試用UltraVNC的。近來我也找了很多方法嘗試解決唷</span><span class="push-ipdatetime"> 06/27 16:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">: 5.不知道d、m有沒看到我po文裡有「爬文後」三字  = =||</span><span class="push-ipdatetime"> 06/27 16:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">searchptt</span><span class="f3 push-content">:   再謝一次原po的好人唷^^ (雖然沒幫到，但很謝謝喔^^)</span><span class="push-ipdatetime"> 06/27 16:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Luciferspear</span><span class="f3 push-content">:照二樓的作法做 到資料夾裡面找Install system</span><span class="push-ipdatetime"> 06/27 17:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Luciferspear</span><span class="f3 push-content">:service之類的選項應該就可以在切換使用者的時候連了</span><span class="push-ipdatetime"> 06/27 17:18
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1214539296.A.692.html?cacheKey=2148-739015724&amp;offset=2960&amp;offset-sig=e47b9732a29209a577be5ddcd2c04aa75eb78d88" data-longpollurl="/v1/longpoll?id=2cba3f7e80c902efeabd4bca51e6559a9149bf07" data-offset="2960"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb99fcd30acc',m:'EuB_1uA0kft6CH0s_o7r98_weC62du6_aUubu6Jftks-1653466889-0-AZe/g+35/wyUKEJYJIcRvKus8T/aUR1xkaUr3eNhNFO7AtyJ88ZulLs1BS/L1HuL4upm8CnFZ2vz5baxKSJ2I9riYHPk3P/LnE1aIu4rqQprxQV6FAGyh3saWXVVHg/+MvFdqLdTBdJIeqHpdb8rEXctMl67Cao8jyNfpS1kfu1d',s:[0x79a919c6ea,0xd0117d6d9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

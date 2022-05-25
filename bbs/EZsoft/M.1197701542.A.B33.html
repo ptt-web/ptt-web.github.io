@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[IDEA] Vista底下的RAMDISK設定 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我最近看到版上討論Ramdisk的文章，所以也來試玩一下。
+在Vista底下的Ramdisk設定其實並沒有什麼不同，我用的版本也是Gavotte，
+只不過在安裝Ramdisk Driver的時候需要允許安裝而已。
+灌好之後才開始想，我的實體Ram有2G，那要設多少才行呢?
+我的設定是這樣做的：
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[IDEA] Vista底下的RAMDISK設定">
+<meta property="og:description" content="我最近看到版上討論Ramdisk的文章，所以也來試玩一下。
+在Vista底下的Ramdisk設定其實並沒有什麼不同，我用的版本也是Gavotte，
+只不過在安裝Ramdisk Driver的時候需要允許安裝而已。
+灌好之後才開始想，我的實體Ram有2G，那要設多少才行呢?
+我的設定是這樣做的：
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1197701542.A.B33.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cdb471bc43505'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">nemesis0 (Rei)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[IDEA] Vista底下的RAMDISK設定</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Dec 15 14:52:19 2007</span></div>
+我最近看到版上討論Ramdisk的文章，所以也來試玩一下。
+
+在Vista底下的Ramdisk設定其實並沒有什麼不同，我用的版本也是Gavotte，
+
+只不過在安裝Ramdisk Driver的時候需要允許安裝而已。
+
+灌好之後才開始想，我的實體Ram有2G，那要設多少才行呢?
+
+我的設定是這樣做的：
+
+Ramdisk設512MB----1.虛擬記憶體 128MB
+
+                  2.IE暫存 256MB
+
+                  3.剩下的給燒錄軟體使用
+
+本來我有把Temp資料夾也設在Ramdisk裡，但就像先前提到在安裝大型軟體時會出現的
+
+「磁碟空間不足」，我也碰到了，所以我把Temp設在硬碟裡才能正常灌軟體。
+
+另外我有試著把AVG灌到Ramdisk裡，但我發現它開機的時候不會自動啟動，灌到硬碟
+
+之後才正常運作。
+
+接下來是我覺得提升最明顯的部份並不在開機，是上網的流暢度，真的順了很多。秘訣
+
+在於加大IE暫存之後放在Ramdisk裡面，除了先前提到開網路相簿(真的是瞬間出現圖片)
+
+之外，看線上串流影片像NICONICO、Youtube，都不會有延遲過長的現象，要快轉影片也
+
+是按一下指標，畫面就跳過去了。所以我懷疑我自已先前看串流影片很不順，除了是對方
+
+伺服器滿載的問題之外，也有可能是自已的IE暫存空間不夠，所以影片無法進行快取吧。
+
+
+如果Ram真的很多的話可以再切大一點，有裝4G的話就切個1G來開Ramdisk，把Temp也放進
+
+去。至於虛擬記憶體的設定，我有試過設成32MB，結果被警告記憶體不足，要強制關閉其
+
+他已開啟的程式，所以我後來才設成128MB放在Ramdisk裡面。這樣設定開程式有沒有比較
+
+快，我是還沒有明顯的感覺，只是程式如果開太多的話還是會警告記憶體不足。由此可見
+
+大部份的程式還是需要分頁檔來維持正常運作才行，還是設定得大一些會比較好。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.224.243.96
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yinjing</span><span class="f3 push-content">:純推心得文 ( ￣ c￣)y▂ξ</span><span class="push-ipdatetime"> 12/18 11:35
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1197701542.A.B33.html?cacheKey=2148-738978495&amp;offset=1659&amp;offset-sig=8977dce1d1f85c2eaa08ac830b70fbec4e36a50a" data-longpollurl="/v1/longpoll?id=fcf6f8f9cb050740aeaadf4008582e99e95f1d4a" data-offset="1659"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb471bc43505',m:'NR17oXmoJxykEvF2znYPEhByWPbrkjjAXkk4BqHPdK0-1653466876-0-AXChDNNz4GKfE2SMxNs9Rs4VcqQi2/MrFPqgkA+EIK2JI7N5/Wru85G3YLf9T6H97JpFuEfkUBy2PHUx8ZaryCgSzb5Do3FiiWv/X6dzFUwNCxmUKuiJoiiIDT67/Syx+DoBXLzJfbO+Ivk/0A9qNb2da/lnxPxoBP9zY9QBsAqL',s:[0x43e8cdcf55,0x1687844778],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

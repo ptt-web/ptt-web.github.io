@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] PHP7之後不支援函數的方案 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="- ereg_* 系列，請改用 preg_*
+  - 這算是好處理
+- mysql_* 系列，請改用 mysqli_* 或 pdo
+  - 這邊改寫會需要花一定的成本下去
+- mssql_* 系列，請改用 odbc_* 或 pdo
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] PHP7之後不支援函數的方案">
+<meta property="og:description" content="- ereg_* 系列，請改用 preg_*
+  - 這算是好處理
+- mysql_* 系列，請改用 mysqli_* 或 pdo
+  - 這邊改寫會需要花一定的成本下去
+- mssql_* 系列，請改用 odbc_* 或 pdo
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1463382044.A.8A4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710ceace598d1fae'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">GALINE (天真可愛CQD)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] PHP7之後不支援函數的方案</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon May 16 15:00:41 2016</span></div>
+<span class="f2">※ 引述《HwangTW (谷歌翻譯王)》之銘言：
+</span><span class="f6">: 之前有爬文到PHP7之後將不支援部分函數
+</span>- ereg_* 系列，請改用 preg_*
+  - 這算是好處理
+- mysql_* 系列，請改用 mysqli_* 或 pdo
+  - 這邊改寫會需要花一定的成本下去
+- mssql_* 系列，請改用 odbc_* 或 pdo
+  - 這邊改寫還是會需要花一些時間下去照顧
+
+這幾個都是幾年前就建議不要再繼續用的 function
+而且都有替代方案，只是要花時間改寫
+
+不過改不改的過去就難說了，要看貴司的 code 原本是寫成怎樣....
+古代多的是在應用端自組 sql 的程式，那改起來很痛苦
+如果沒有的話就會輕鬆很多
+<span class="f6">: 有網友說他已經開始學別的程式了
+</span><span class="f6">: 可是那程式名我忘惹
+</span><span class="f6">: 那個替代程式叫啥啊?OAO
+</span><span class="f6">: 有沒有教學?
+</span>well...這世界上能做到 php 要做的事情的東西很多
+不知道你看到的是哪個
+
+個人推薦的：
+- python（某間正在統治世界的G公司大力支持
+- javascript（正在邁向統治世界的路上，背後還是有G公司大力支持
+
+個人不推薦但有很多人用的：
+- ruby（我預期會被 js 吃掉，連 rpg maker 都改用 js 了...
+- java（java 有它好的地方，不過以 web 方面的語言來說寫起來實在太囉唆
+- go（我不推薦的原因只是因為我不熟，但有認識的人在用
+
+
+--
+不可以！那是黑鷹族的精神象徵！
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 60.248.122.206
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1463382044.A.8A4.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1463382044.A.8A4.html</a>
+</span><span class="f2">※ 編輯: GALINE (60.248.122.206), 05/16/2016 15:05:01
+</span><span class="f2">※ 編輯: GALINE (60.248.122.206), 05/16/2016 15:05:23
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: node.js好像也很夯@@?</span><span class="push-ipdatetime"> 05/16 17:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 樓上，那算是js啦！</span><span class="push-ipdatetime"> 05/16 17:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: 好像也是 QQ</span><span class="push-ipdatetime"> 05/16 18:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chan15</span><span class="f3 push-content">: 預測Ruby被js吃掉也太狂了 XD</span><span class="push-ipdatetime"> 05/16 21:22
+</span></div>好吧，不一定是被 JS 吃掉，也許是 JS 跟 Python
+Ruby 的決定性弱勢是，後面沒有大公司在幫忙抬轎
+
+
+
+Google 對 JS 的投資是有目共睹，有了 v8 才有 node，才有後面這一堆
+
+他們對 python 的熱情也很高。雖然「似乎」沒有對 python 投資那麼多
+但一堆 lib 都是用 python 寫的，例如最近大熱門的 TensorFlow...
+
+Go 也是 Google 生出來的東西，據用過的人說似乎不錯用
+但私心覺得真的成氣候還要個幾年
+
+PHP 也有 Facebook 在後面吹氣，PHP 的第一份規格書是 Facebook 弄出來的
+Hippop 跟 HHVM 或多或少也引發了 PHP 官方的競爭心態，而引出了 PHP7
+
+Java 更不用說，雖然寫起來囉唆，但是有 Oracle 跟 Google 兩家，什麼商業模式都有
+（雖然有江湖消息說 Google 受不了 Oracle 想改用 Swift...）
+
+
+
+相比之下，Ruby 沒有看到同樣等級的龐大商業力量在挺，難免勢單力薄
+不過這或許也證明了 Ruby （或 RoR？）優秀之處，在這種狀況下還能有一席之地..
+
+
+然後看到到處都是「Google 力挺的語言」
+有種不管怎麼翻都翻不出如來佛祖的手掌心的感覺...
+<span class="f2">※ 編輯: GALINE (60.248.122.206), 05/16/2016 21:44:12
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bibo9901</span><span class="f3 push-content">: 語言跟本就不是什麼重點..</span><span class="push-ipdatetime"> 05/16 22:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ottokang</span><span class="f3 push-content">: Go現在已經算熱門了，Docker就是Go寫的</span><span class="push-ipdatetime"> 05/17 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 我的感覺是寫的人還不夠多...用 docker 的人搞不好比較多</span><span class="push-ipdatetime"> 05/17 12:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 不過這只是感覺，可能我是錯的也不一定 XD</span><span class="push-ipdatetime"> 05/17 12:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Neisseria</span><span class="f3 push-content">: 可參考 <a href="https://github.com/golang/go/wiki/GoUsers" target="_blank" rel="noreferrer noopener nofollow">https://github.com/golang/go/wiki/GoUsers</a></span><span class="push-ipdatetime"> 05/17 14:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Neisseria</span><span class="f3 push-content">: 不過，Go 近年在 TIOBE 的排名的確不高，不到 20 名</span><span class="push-ipdatetime"> 05/17 15:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Neisseria</span><span class="f3 push-content">: 在 RedMonk 排名約在 15 名左右</span><span class="push-ipdatetime"> 05/17 15:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 已經比怎麼都翻不出微＆軟的手心好了。</span><span class="push-ipdatetime"> 05/17 15:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HwangTW</span><span class="f3 push-content">: 感謝解惑</span><span class="push-ipdatetime"> 05/17 15:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hung0724</span><span class="f3 push-content">: 公司現在還有&lt;script language=&#34;php&#34;&gt;</span><span class="push-ipdatetime"> 05/18 17:41
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1463382044.A.8A4.html?cacheKey=2148-469784870&amp;offset=3716&amp;offset-sig=fd9992482f19102558b699eeda860b22b3c27590" data-longpollurl="/v1/longpoll?id=0cec2a13b68ebd2974017b391b6cdeda035377de" data-offset="3716"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceace598d1fae',m:'fqo9QxHkKG.sAztlaa9hvMWjpIUnAnzzVhGp0mtBYas-1653467512-0-ASbK8gjJfOSPdl/HcQCgdPxkshKBvEw4sOlNMdyaEz8bN9vzPY8gnDlUCE7gKGNyhUZRJ59i2/XVNuqp+WDelplYmKRSn7pWEFvbbpJ9B2oa2Zm86k/eDlGDzMw8YPih3ulnFzMFGbeM1SWq3VuexAeSaluwSb35zUJj+RO0gP/f',s:[0x67c18df665,0x4112a1b7c5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

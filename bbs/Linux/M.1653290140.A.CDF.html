@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] read輸入中文字(全形字)，刪除只能刪一半 - 看板 Linux - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="此問題困擾已久。例如：
+read var &lt;Enter&gt;
+此時輸入中文，例如「加由」，欲修改為「油」時，按backspace鍵，
+螢幕卻顯示「由」只刪除一半。請問此問題如何解決？
+在bash、zsh下都是如此。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] read輸入中文字(全形字)，刪除只能刪一半">
+<meta property="og:description" content="此問題困擾已久。例如：
+read var &lt;Enter&gt;
+此時輸入中文，例如「加由」，欲修改為「油」時，按backspace鍵，
+螢幕卻顯示「由」只刪除一半。請問此問題如何解決？
+在bash、zsh下都是如此。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Linux/M.1653290140.A.CDF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Linux/index.html"><span class="board-label">看板 </span>Linux</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Linux/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">franzhuang (dave)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Linux</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] read輸入中文字(全形字)，刪除只能刪一半</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon May 23 15:15:38 2022</span></div>
+此問題困擾已久。例如：
+
+read var &lt;Enter&gt;
+
+此時輸入中文，例如「加由」，欲修改為「油」時，按backspace鍵，
+
+螢幕卻顯示「由」只刪除一半。請問此問題如何解決？
+
+在bash、zsh下都是如此。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 1.175.107.43 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/Linux/M.1653290140.A.CDF.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/Linux/M.1653290140.A.CDF.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kenduest</span><span class="f3 push-content">: 哪種 linux 系統版本? 本機還是遠端操作環境？有無在 x</span><span class="push-ipdatetime"> 05/23 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kenduest</span><span class="f3 push-content">:  window 內?</span><span class="push-ipdatetime"> 05/23 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: Fedora和pop都測試過了，都是如此，是在本機的x windo</span><span class="push-ipdatetime"> 05/23 21:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">OrzOGC</span><span class="f3 push-content">: 我用fedora很正常啊?</span><span class="push-ipdatetime"> 05/23 22:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">: 測了一下ubuntu 20.04 bash也有這現象,應該是backspace刪</span><span class="push-ipdatetime"> 05/23 22:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">: 掉1個中文字但游標卻只回移1個半形英數寬度,按backspace</span><span class="push-ipdatetime"> 05/23 22:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">: 2次[加由]兩字應該已經刪除,但螢幕卻還留了一個字,再按bs</span><span class="push-ipdatetime"> 05/23 22:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">: 游標也不會再回移</span><span class="push-ipdatetime"> 05/23 22:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">asas1asas200</span><span class="f3 push-content">: 換 terminal 呢？ 例如 kitty 或 alacritty</span><span class="push-ipdatetime"> 05/24 01:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 測試過tilix  gnome-terminal ，也安裝alacritty測試</span><span class="push-ipdatetime"> 05/24 06:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: ，問題一樣。改字體也是。回去用Fedora確認，也是如此</span><span class="push-ipdatetime"> 05/24 06:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: bash, zsh都有這問題，fish正常，導致script中必須呼</span><span class="push-ipdatetime"> 05/24 06:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 叫fish來read中文輸入。蠻困擾的，另外，在terminal下</span><span class="push-ipdatetime"> 05/24 06:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: ，python的input()有同樣問題</span><span class="push-ipdatetime"> 05/24 06:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: python input()有此問題，是指在terminal執行python</span><span class="push-ipdatetime"> 05/24 07:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">:  script，不是python shell</span><span class="push-ipdatetime"> 05/24 07:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 用 bash 的話可以加 -e 讓它用 Readline 函式庫處理輸入</span><span class="push-ipdatetime"> 05/24 07:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 在沒有輸入函式庫輔助的環境下，按一次 backspace 就是退</span><span class="push-ipdatetime"> 05/24 07:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 1 格和刪除 1 byte 的資料，但你的「由」分別佔了 2 格和</span><span class="push-ipdatetime"> 05/24 07:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 3 byte 的空間，所以螢幕顯示會和實際送進程式的內容不同</span><span class="push-ipdatetime"> 05/24 07:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 實際上你應該要按 3 次 backspace，把畫面上的「加」也吃</span><span class="push-ipdatetime"> 05/24 07:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 掉一半，再輸入「油」，程式看到的才會是「加油」。</span><span class="push-ipdatetime"> 05/24 07:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 測試read e var，以及read -e var，呈現的情形相同。</span><span class="push-ipdatetime"> 05/24 11:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: 使用真正 multilingual 的 mlterm。</span><span class="push-ipdatetime"> 05/24 11:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: <a href="http://mlterm.sourceforge.net/" target="_blank" rel="noreferrer noopener nofollow">http://mlterm.sourceforge.net/</a></span><span class="push-ipdatetime"> 05/24 11:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: <a href="https://tinyurl.com/4jn457dj" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/4jn457dj</a>   參考設定檔</span><span class="push-ipdatetime"> 05/24 11:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 安裝mlterm，使用您的設定檔，情形大致如同先前。</span><span class="push-ipdatetime"> 05/24 13:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 如果 read -e 沒效，那可能要檢查你使用的 locale 是不是</span><span class="push-ipdatetime"> 05/24 21:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 用 UTF-8 編碼了。照理說你的環境應該要是 UTF-8，不然連</span><span class="push-ipdatetime"> 05/24 21:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: gnome-terminal 都開不起來。</span><span class="push-ipdatetime"> 05/24 21:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 先說 read -e 只在 bash 有用，我不知道 zsh 要怎麼用。</span><span class="push-ipdatetime"> 05/24 21:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 非常感謝，確實我用的是zsh，bash下read -e完美解決</span><span class="push-ipdatetime"> 05/24 22:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 我平常用zsh，但是script是用bash寫的，所以此法適用</span><span class="push-ipdatetime"> 05/24 22:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 這個問題很困擾的原因，除了read以外，C++的cin也有同</span><span class="push-ipdatetime"> 05/24 22:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 同樣情形，python input()在bash下執行也是</span><span class="push-ipdatetime"> 05/24 22:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 因為系統預設的輸入界面就是那個樣子，kernel 並沒有內建</span><span class="push-ipdatetime"> 05/24 23:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: Unicode 資料庫，無法處理現今複雜的文字和編碼系統。因</span><span class="push-ipdatetime"> 05/24 23:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 此如果需要提供使用者比較好的輸入界面，就要靠外部函式</span><span class="push-ipdatetime"> 05/24 23:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 庫，像是 bash 和 python 的互動式界面都是用 readline。</span><span class="push-ipdatetime"> 05/24 23:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 好像不應該說沒有內建 Unicode 資料庫，應該是說不是拿來</span><span class="push-ipdatetime"> 05/24 23:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 用在這個地方，畢竟處理大小寫還是會用到 Unicode 資料。</span><span class="push-ipdatetime"> 05/24 23:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 總之如果是你自己的程式要提供好用的介面，那你的程式本</span><span class="push-ipdatetime"> 05/24 23:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 身應該要去呼叫外部函式庫，同時也要注意授權。如果是別</span><span class="push-ipdatetime"> 05/24 23:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lantw44</span><span class="f3 push-content">: 人的程式沒用相關函式庫造成很難操作，可以試試 rlwrap。</span><span class="push-ipdatetime"> 05/24 23:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">franzhuang</span><span class="f3 push-content">: 謝謝，原來如此。也謝謝以上大家協助測試。</span><span class="push-ipdatetime"> 05/25 09:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: 這個問題曾有人提出過，也是用 Fedora 的，是用</span><span class="push-ipdatetime"> 05/25 12:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: read -e 解決。比較奇怪的是，我在 FreeBSD 測試過多</span><span class="push-ipdatetime"> 05/25 12:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: 種 terminal，不會有這個問題。顯然可能和較底層的</span><span class="push-ipdatetime"> 05/25 12:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: lib 甚至 kernel 有關。</span><span class="push-ipdatetime"> 05/25 12:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: BTW，我所謂不會有問題是指中文感長度不會誤判，但一</span><span class="push-ipdatetime"> 05/25 13:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: 個中文字還是要 bs 二次才會刪除。</span><span class="push-ipdatetime"> 05/25 13:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EdwardGJLee</span><span class="f3 push-content">: s/感長度/總長度/g</span><span class="push-ipdatetime"> 05/25 13:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kenduest</span><span class="f3 push-content">: zsh 可以用 vared 就好, ex: vared -c varname</span><span class="push-ipdatetime"> 05/25 16:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kenduest</span><span class="f3 push-content">: varname 若是已經存在會帶入，要空值就先 unset 一次</span><span class="push-ipdatetime"> 05/25 16:10
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Linux/M.1653290140.A.CDF.html?cacheKey=2147-1036870463&amp;offset=5936&amp;offset-sig=282e728bd67b66c47e7c5b6443d6e2eac5cd8974" data-longpollurl="/v1/longpoll?id=fff73c24bc637a15f5cd78d34f7c0f7402fc8de9" data-offset="5936"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea6eccf0afe5',m:'l_dwyj9Rq2msWUuFsZjXw5fukCS5rMJBkzwTaS4pOVc-1653467496-0-AerTVo1FC17Qs5gIPmPpLeN976UKMoMTqSCkZVeiJw0u3g4gqCjI/8/2vLjL1hTV+WrbzKW0gu8A2neZJFTZ6EqpGYMatgWY/a8gC/1mR/j7O0qpBMtefVfgJIi/yDySpcl3mSws3qIn6GYaaPVP5G7/rd+sAmtckXiT89pE/MM0',s:[0xc5b961bb0c,0x1e933d1121],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

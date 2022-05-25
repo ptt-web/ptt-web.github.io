@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 不好意思有高手可以幫我看看嗎?? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content=" 除了連線的問題之外，我另外發現好像還有其他問題：
+※ 引述《kf110800 (LEO)》之銘言：
+: &lt;?php
+: // 是否是表單送回
+: if (isset($_POST[&#34;Insert&#34;])) {
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 不好意思有高手可以幫我看看嗎??">
+<meta property="og:description" content=" 除了連線的問題之外，我另外發現好像還有其他問題：
+※ 引述《kf110800 (LEO)》之銘言：
+: &lt;?php
+: // 是否是表單送回
+: if (isset($_POST[&#34;Insert&#34;])) {
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1224354999.A.107.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">foxzgerald (O⊥M)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 不好意思有高手可以幫我看看嗎??</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Oct 19 02:36:36 2008</span></div>
+ 除了連線的問題之外，我另外發現好像還有其他問題：
+
+<span class="f2">※ 引述《kf110800 (LEO)》之銘言：
+</span><span class="f6">: &lt;?php
+</span><span class="f6">: // 是否是表單送回
+</span><span class="f6">: if (isset($_POST[&#34;Insert&#34;])) {
+</span><span class="f6">:    // 開啟MySQL的資料庫連結
+</span><span class="f6">:            $link = mysql_connect(&#34;********&#34;,&#34;****&#34;,&#34;*****&#34;)
+</span><span class="f6">:          or die(&#34;無法開啟MySQL資料庫連結!&lt;br&gt;&#34;);
+</span><span class="f6">:    mysql_select_db(&#34;store songs&#34;);  // 選擇資料庫
+</span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     據我的猜測。你應該是有個資料庫叫 store，然後其中有個 songs 的資料表？
+     如果是這樣的話, 那應該是：
+     mysql_select_db(&#39;store&#39;); // 這樣才對
+<span class="f6">:    // 建立新增記錄的SQL指令字串
+</span><span class="f6">:    $sql =&#34;INSERT INTO store songs (name, cellphone, month, race &#34;;
+</span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     至於這段，如果是照我的猜測那樣，那邊應該是：
+     $sql = &#34;INSERT INTO songs ....&#34;;
+
+     此外，關於 $sql的寫法，我提供一個可讀性較高的建立查詢字串的方式
+     請你參考看看：
+
+     $sql = &#34;<span class="f3 hl"> INSERT INTO songs</span>&#34;
+          . &#34;<span class="f3 hl"> (name, cellphone, month, race, date, hour, mint, people)</span>&#34;
+          . &#34;<span class="f3 hl"> VALUES ( &#39;{$_POST[&#39;name&#39;]}&#39;, &#39;{$_POST[&#39;cellphone&#39;]}&#39;,</span>&#34;
+          . &#34; <span class="f3 hl">～～</span>&#34; // 連結其他字串
+          . &#34;<span class="f3 hl"> &#39;{$_POST[&#39;people&#39;]}&#39;)</span>&#34;;
+
+     以上僅就字串處理的方式提供建議，至於資料庫處理則不建議直接將
+     $_POST[]用於查詢字串，因為容易被 SQL injection攻擊。不過如果是
+     剛開始學、只是寫寫作業，那先擱著這個議題別管以免搞的太複雜，等
+     更熟悉PHP的時候再回過頭來學（但請謹記在心這安全性上的問題）
+
+<span class="f6">:    $sql.=$_POST[&#34;date&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;people&#34;].&#34;)&#34;;
+</span><span class="f6">:    echo &#34;&lt;b&gt;SQL指令: $sql&lt;/b&gt;&lt;br&gt;&#34;;
+</span><span class="f6">:    // 送出Big5編碼的MySQL指令
+</span><span class="f6">:    mysqli_query($link, &#34;SET CHARACTER SET big5&#34;);
+</span><span class="f6">:    mysqli_query($link,
+</span><span class="f6">:        &#34;SET collation_connection = &#39;big5_chinese_ci&#39;&#34;);
+</span><span class="f6">:    if ( mysqli_query($link, $sql) ) // 執行SQL指令
+</span><span class="f6">:       echo &#34;訂位成功 &#34;.
+</span><span class="f6">:            mysqli_affected_rows($link) . &#34;&lt;br&gt;&#34;;
+</span><span class="f6">:    else
+</span><span class="f6">:       die(&#34;訂位失敗&lt;br&gt;&#34;);
+</span><span class="f6">:    mysqli_close($link);      // 關閉資料庫連結
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.223.230.165
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kf110800    </span><span class="f3 push-content">:嗯嗯謝謝  我試著改看看</span><span class="push-ipdatetime"> 10/19 02:38
+</span></div><span class="f2">※ 編輯: foxzgerald      來自: 61.223.230.165       (10/19 02:43)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kf110800    </span><span class="f3 push-content">:請問一下&#34;~~&#34;的意思是什麼???</span><span class="push-ipdatetime"> 10/19 02:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">foxzgerald  </span><span class="f3 push-content">:我懶得全部打..省略用符號XD</span><span class="push-ipdatetime"> 10/19 02:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">foxzgerald  </span><span class="f3 push-content">:大意是中間如法炮製..將字串變數建立起來</span><span class="push-ipdatetime"> 10/19 02:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kf110800    </span><span class="f3 push-content">:懂了謝謝</span><span class="push-ipdatetime"> 10/19 02:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">foxzgerald  </span><span class="f3 push-content">:可以參考 <a href="/bbs/PHP/M.1224346948.A.800.html" target="_blank" rel="noreferrer noopener nofollow">#18-Wr4W0</a> <a href="/bbs/PHP/M.1224346190.A.105.html" target="_blank" rel="noreferrer noopener nofollow">#18-WfE45</a> 這兩篇的字串處理</span><span class="push-ipdatetime"> 10/19 02:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kf110800    </span><span class="f3 push-content">:恩...我去爬爬文...</span><span class="push-ipdatetime"> 10/19 02:52
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1224354999.A.107.html?cacheKey=2148-469798229&amp;offset=2876&amp;offset-sig=bb92ef328b206df99f592bb0e76accd6b884a830" data-longpollurl="/v1/longpoll?id=7fee05d1a31d469c7908df5e9d37f20ec615b4d5" data-offset="2876"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea830e1dafcd',m:'FgbvYGRWRNCHS33eujNryAb_gy1SJ.DzZWyp4HkQu9A-1653467500-0-AaOyALLkuHtfM3A67ZffQdW6zQg/GYtBoKr9poK3EoyNip1VA4NNEi4pQXHwr1D6ASJo001P4IabJnxfnIsXTcgJU5tHv8SA04Ecfkfk07XtxjEOUx8T7Q0RAmKhQsnpQ3WZSoq5n37a27Zs7qOi+HHL6ahP/gMIIJOFPk/Q6jdt',s:[0x1c8b339954,0x1b5b67cf8f],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

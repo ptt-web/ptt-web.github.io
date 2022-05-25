@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] php網頁會員登入問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="因老師要求必須寫出一個登入網頁並搭配Apache和mysql
+而該登入網頁必須可以使用&#39;or 1=1--的sql injection方法入侵!!
+我自己寫了一個登入網頁  但是在輸入帳號密碼之後(不論輸入的是否正確)
+都會跳回登入的頁面,但是會多了一行:
+mysql_fetch_row():supplied argument is not a valid mysql result resource on
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] php網頁會員登入問題">
+<meta property="og:description" content="因老師要求必須寫出一個登入網頁並搭配Apache和mysql
+而該登入網頁必須可以使用&#39;or 1=1--的sql injection方法入侵!!
+我自己寫了一個登入網頁  但是在輸入帳號密碼之後(不論輸入的是否正確)
+都會跳回登入的頁面,但是會多了一行:
+mysql_fetch_row():supplied argument is not a valid mysql result resource on
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1218302472.A.467.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">sosokill (隨便殺)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] php網頁會員登入問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Aug 10 01:21:11 2008</span></div>
+因老師要求必須寫出一個登入網頁並搭配Apache和mysql
+而該登入網頁必須可以使用&#39;or 1=1--的sql injection方法入侵!!
+
+我自己寫了一個登入網頁  但是在輸入帳號密碼之後(不論輸入的是否正確)
+都會跳回登入的頁面,但是會多了一行:
+
+mysql_fetch_row():supplied argument is not a valid mysql result resource on
+line 24
+
+可以請問一下   問題是出在哪邊?該如何解決呢?如果要達到老師的要求
+那除了這個問題  我所寫的這個網頁可以達到目標嗎?  感謝回答~&#34;~
+
+以下為我的網頁程式碼:(PS:我的mysql資料庫名稱為member,而資料表為membertest
+其中有四個欄位,分別是ID(←主鍵),password,name,mail)
+
+
+&lt;!-- login.php --&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;登入網站&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;h2&gt;輸入使用者名稱和密碼登入網站&lt;/h2&gt;
+&lt;hr&gt;&lt;small&gt;&lt;font color=&#34;red&#34;&gt;
+&lt;?
+session_start();
+session_register(&#34;login_session&#34;);
+$ID = &#34;&#34;;
+$password = &#34;&#34;;
+if (isset($_POST[&#34;ID&#34;]))
+$username = $_POST[&#34;ID&#34;];
+if (isset($_POST[&#34;Password&#34;]))
+$password = $_POST[&#34;Password&#34;];
+if ($ID != &#34;&#34; &amp;&amp; $password != &#34;&#34;) {
+$link = mysql_connect(&#34;localhost&#34;,“root&#34;,“123456&#34;);
+mysql_select_db(&#34;membertest&#34;);
+$sql = &#34;SELECT * FROM users WHERE ID=&#39;.$ID&#39; AND password=&#39;.$password&#39;&#34;;
+$result = mysql_query($sql);
+if (mysql_fetch_row($result) != false) {
+$_SESSION[&#34;login_session&#34;] = true;
+header(&#34;Location: hellow.php&#34;);
+} else
+echo &#34;名稱或密碼錯誤!&lt;br&gt;&#34;;
+mysql_close($link);
+}
+?&gt;
+&lt;/font&gt;&lt;/small&gt;&lt;/center&gt;
+&lt;form action=&#34;check.php&#34; method=&#34;post&#34;&gt;
+&lt;table align=&#34;center&#34; bgcolor=&#34;#FFCC99&#34;&gt;
+&lt;tr&gt;&lt;td&gt;使用者名稱 : &lt;/td&gt;
+&lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;Username&#34; size=&#34;15&#34; maxlength=&#34;10&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;使用者密碼 : &lt;/td&gt;
+&lt;td&gt;&lt;input type=&#34;password&#34; name=&#34;Password&#34;size=&#34;15&#34; maxlength=&#34;10&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&#34;2&#34; align=&#34;center&#34;&gt;
+&lt;input type=&#34;submit&#34; value=&#34;登入網站&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.129.39.100
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star508     </span><span class="f3 push-content">:WHERE ID=&#39;&#34;.$ID.&#34;&#39; AND password=&#39;&#34;.$password.&#34;&#39;&#34;</span><span class="push-ipdatetime"> 08/10 01:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosokill    </span><span class="f3 push-content">:一樣耶= =沒辦法登入  出現一樣的waring....</span><span class="push-ipdatetime"> 08/10 01:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosokill    </span><span class="f3 push-content">:warning</span><span class="push-ipdatetime"> 08/10 01:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JohnRoyer   </span><span class="f3 push-content">:印象中 password 好像是關鍵字要加上引號 `password`</span><span class="push-ipdatetime"> 08/10 01:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosokill    </span><span class="f3 push-content">:是改成`ID`=&#39;.$ID.&#39; AND `password`=&#39;.$password&#39;&#34; ?</span><span class="push-ipdatetime"> 08/10 02:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star508     </span><span class="f3 push-content">:在$sql=&#34;SELECT ....&#34;;下一行 echo $sql;看看是什麼</span><span class="push-ipdatetime"> 08/10 12:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star508     </span><span class="f3 push-content">:還有header函式要在&lt;html&gt;前</span><span class="push-ipdatetime"> 08/10 12:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosokill    </span><span class="f3 push-content">:echo $sql;出來的結果是我輸入的帳號密碼!!</span><span class="push-ipdatetime"> 08/10 19:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sosokill    </span><span class="f3 push-content">:現在似乎是mysql_fetch_row()的問題= =</span><span class="push-ipdatetime"> 08/10 19:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ursm</span><span class="f3 push-content">:$sql=select * from (table)  為什麼table是user?</span><span class="push-ipdatetime"> 09/20 04:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ursm</span><span class="f3 push-content">:不是應該是membertest?</span><span class="push-ipdatetime"> 09/20 04:13
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1218302472.A.467.html?cacheKey=2148-469798454&amp;offset=2997&amp;offset-sig=ff531bfd32c6310db3ff57041967171b7c7d74e5" data-longpollurl="/v1/longpoll?id=a4d60a7948d6e8dda1499e6ff1d47ab36136eec6" data-offset="2997"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea70287d8a27',m:'I06YHwIFhRPvdfaWhldzjH6FjPivQeVUduPv0_zrGMI-1653467497-0-AeSETRK9+AzsUwo708y/m3g7ju7haitTo1gWCLBqjxO7fB0orxrLxOOD5iwHoWkgDIKvWMVUmXgzEcwUM0CT4xzrV0fAz1HHos8KclZP5MoQaFHuRmFz1VqQgakbt4dm9Am/mMU1ayp0jGuj4bHCeYaqDH0C3tOTyW/tqO3QQMdC',s:[0xf1b675f3b5,0x791c9ee13e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

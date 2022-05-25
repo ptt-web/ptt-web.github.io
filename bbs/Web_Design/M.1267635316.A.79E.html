@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 為什麼排出來的資料會有空洞 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問為什麼用php去撈出來的資料，去排他會有空洞?
+情況如下，商品圖應該3個為一排，但有些是1個有些是2個
+http://www.8985-0922.com/html/index.php
+這是什麼原因?要怎麼排除呢?
+有去php版發問，他們說是css的問題，所以來這邊發問，謝謝
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 為什麼排出來的資料會有空洞">
+<meta property="og:description" content="請問為什麼用php去撈出來的資料，去排他會有空洞?
+情況如下，商品圖應該3個為一排，但有些是1個有些是2個
+http://www.8985-0922.com/html/index.php
+這是什麼原因?要怎麼排除呢?
+有去php版發問，他們說是css的問題，所以來這邊發問，謝謝
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1267635316.A.79E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">flare321 (flare)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 為什麼排出來的資料會有空洞</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar  4 00:55:13 2010</span></div>
+請問為什麼用php去撈出來的資料，去排他會有空洞?
+
+情況如下，商品圖應該3個為一排，但有些是1個有些是2個
+
+<a href="http://www.8985-0922.com/html/index.php" target="_blank" rel="noreferrer noopener nofollow">http://www.8985-0922.com/html/index.php</a>
+
+這是什麼原因?要怎麼排除呢?
+
+有去php版發問，他們說是css的問題，所以來這邊發問，謝謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 123.192.64.34
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">robert38</span><span class="f3 push-content">:看起來是<a href="/bbs/Web_Design/G.4075465906.A.9F6.html" target="_blank" rel="noreferrer noopener nofollow">#showgoods</a>的float問題</span><span class="push-ipdatetime"> 03/04 10:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">robert38</span><span class="f3 push-content">:我個人的做法是每一列加一個clear:both;</span><span class="push-ipdatetime"> 03/04 10:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">robert38</span><span class="f3 push-content">:不過缺點是每一列的數量是固定的，調整要再改一下PHP</span><span class="push-ipdatetime"> 03/04 10:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">robert38</span><span class="f3 push-content">:基本上IE8和Firefox看起來是沒問題，主要還是IE6和IE7</span><span class="push-ipdatetime"> 03/04 10:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">winsummer</span><span class="f3 push-content">:<a href="/bbs/Web_Design/G.4075465906.A.9F6.html" target="_blank" rel="noreferrer noopener nofollow">#showgoods</a>{height:200px;......} 問題出在高度</span><span class="push-ipdatetime"> 03/04 22:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">winsummer</span><span class="f3 push-content">:不用200px也可以, 但是一定要給固定高度</span><span class="push-ipdatetime"> 03/04 23:01
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1267635316.A.79E.html?cacheKey=2149-475863070&amp;offset=1009&amp;offset-sig=94a07a7c19f306664385ecd877ea8ad3c6a97afa" data-longpollurl="/v1/longpoll?id=5dbdfc367f1159776be7ad06103c49c548e258e0" data-offset="1009"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea127c95af60',m:'ap6iODLl2cRmUU0DI7SzpLczcCiNo8u78dqZbZ3lBHA-1653467482-0-AWN+7gSwgvT0CQrMdR4s74fLgbNnFr/sJvqc1mBUMXozrc8t+7hh5y8ohD8o28pNBYNGqZj0G7ajCzXVbd0CMU62GOHsYUUEr21H91pVAaZeKVlJrzlW4KqmnPHL73DXO1jME/xhmTIPqRcdFPGtD1gDw2GXXVBy4TZwfGgvv3ND',s:[0x3548b1aa2c,0xb68cc82fe2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

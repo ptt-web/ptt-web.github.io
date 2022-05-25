@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] sql的join,相同欄位名稱,不同值. - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="各位大大,狀況是這樣的.
+目前有table_A 和 table_B
+Table A 裡有三個欄位
+名字假設為
+ID   Name  dp_id
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] sql的join,相同欄位名稱,不同值.">
+<meta property="og:description" content="各位大大,狀況是這樣的.
+目前有table_A 和 table_B
+Table A 裡有三個欄位
+名字假設為
+ID   Name  dp_id
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1357639612.A.8BA.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">kingoface (Vincent)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] sql的join,相同欄位名稱,不同值.</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jan  8 18:06:48 2013</span></div>
+各位大大,狀況是這樣的.
+
+目前有table_A 和 table_B
+
+Table A 裡有三個欄位
+
+名字假設為
+
+ID   Name  dp_id
+
+001  小黃  AAA
+
+Table B 也有欄位
+
+ID   Name
+AAA  IT
+
+請問我要怎麼樣關連起來呢?
+
+因為之前我兩張資料表基本上不會有同欄位名稱,所以不太了解藥怎麼解決.
+
+
+我的sql語法是
+
+$sql=&#34;SELECT * FROM table_A as A INNER JOIN table_B AS B ON A.dp_id=B.ID&#34;;
+
+但是把資料撈出來的時候,卻會是空值.
+
+請問大概要怎麼修改呢?
+
+另外我是用Adodb把資料叫出來
+
+大概是
+
+$rs= &amp;$db-&gt;Execute($sql);
+
+echo $rs-&gt;fields[&#39;ID&#39;];
+
+麻煩各位大大給個方向或是解答了,萬分感恩!
+
+===========================解答=====================
+
+剛剛自己用出來了QQ
+
+$sql=&#34;SELECT A.Name AS AName FROM table_A as A INNER JOIN table_B AS B ON A.dp_id=B.ID&#34;;
+
+類似這樣
+
+然後echo $rs-&gt;fields[&#39;AName&#39;];
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.31.200.209
+<span class="f2">※ 編輯: kingoface       來自: 61.31.200.209        (01/08 18:17)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sing10407</span><span class="f3 push-content">:left join、right join 、inner join 情況要多注意~</span><span class="push-ipdatetime"> 01/08 19:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">anest</span><span class="f3 push-content">:硬是不取別名的話，也可以用索引值(01234...)試試看</span><span class="push-ipdatetime"> 01/08 20:12
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1357639612.A.8BA.html?cacheKey=2148-469798701&amp;offset=1178&amp;offset-sig=b2797afd8d526fa68a15f8f113ad2e33bb4aaa4b" data-longpollurl="/v1/longpoll?id=494ed17762c43e0c1623709a7db89f9375cb79e4" data-offset="1178"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea32ac388a27',m:'85wmoC4HBk6WnaNAutnJNz9mf1fjiRhsevh0gnQyAv8-1653467487-0-AamCJIUaaapQTPckTd4p2BwNAgMmYUN/bLW9BcA1m55VTYT7+uas2VWPYJfvIetgLv/Rgv0BUIJMBJ2dFCeYW8Lah09n7210K5wedyQI4hrMUr+xEJjcOcBy0EmPe7zeP+BN4rVUV1sXdoI0BprmGi0RGDpenakUZCbkIbJWzuOj',s:[0x483c6c50a9,0xc63d9b3cd1],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

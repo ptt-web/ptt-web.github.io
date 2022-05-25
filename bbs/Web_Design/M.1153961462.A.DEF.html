@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 請教一下java script算數學有誤差的問題? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="function cal(){
+sum.value=&#39;$ &#39;+(t11+t22+t33+t44+t55);
+}
+function callbylist1(){
+t11=i1.value*q1.value;// i1.value是物品價錢，q1.value是client輸入的數量
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 請教一下java script算數學有誤差的問題?">
+<meta property="og:description" content="function cal(){
+sum.value=&#39;$ &#39;+(t11+t22+t33+t44+t55);
+}
+function callbylist1(){
+t11=i1.value*q1.value;// i1.value是物品價錢，q1.value是client輸入的數量
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1153961462.A.DEF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">kicksmile (aa)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 請教一下java script算數學有誤差的問題?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jul 27 08:55:02 2006</span></div>
+function cal(){
+sum.value=&#39;$ &#39;+(t11+t22+t33+t44+t55);
+}
+
+function callbylist1(){
+t11=i1.value*q1.value;// i1.value是物品價錢，q1.value是client輸入的數量
+cal();  //call cal()去算總total
+}
+.
+.
+.
+function callbylist5(){
+t55=i5.value*q5.value;
+cal();
+}
+
+可是算出來有時候會出現誤差
+有時候又會正常
+正常是沒有小數點的，因為都是整數相乘
+但有時會出現這種情形59.849999999999994
+請問有人有相同情形嗎要怎麼解決呢
+謝謝
+
+
+從網路查了一下，有篇文章是說javascript計算都會有此問題，浮點數運算問題
+所以要display的話，可以用Math.round()解決這個問題
+如要精確到小數第二位，就乘100, round,在除以100
+x=Math.round( x* 100 ) /100
+詳細內容轉自<a href="http://www.takka.com.hk/jstutor/ch18/ch18.htm" target="_blank" rel="noreferrer noopener nofollow">http://www.takka.com.hk/jstutor/ch18/ch18.htm</a>
+不過這個方法頗呆，不知道有沒有更聰明的方法哈
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 128.125.118.32
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kaochangchih</span><span class="f3 push-content">:t11:int 轉整數 不知這樣可否?!</span><span class="push-ipdatetime"> 07/27 10:18
+</span></div><span class="f2">※ 編輯: kicksmile       來自: 68.181.239.162       (07/28 08:00)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1153961462.A.DEF.html?cacheKey=2149-475744824&amp;offset=1058&amp;offset-sig=47f3c79ef393b9898daf45cd12d9a6d60b691de2" data-longpollurl="/v1/longpoll?id=5a4b25335229f00319ddf38dd63f8709e7376718" data-offset="1058"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c58e24afe5',m:'h3XSh_laR9kq.bCZDjUCxxbbiiZnuGq24GsyiJnfUZc-1653467469-0-AUUXDPhfXBPHHePscJk5ksZ7COtlExXXTf5mqAEZzBZsJblkxZcWKtVQ3pwo9ipYBpONvkTy29pRicMb1qp25e1mN7RlhXQeM+5Y0mZy5U0ezq7lfz3eg/jiAyn7HJgV3embo88yb8/2OKLS/iwT9aG/p3Prz2s/SldTaCtzijnp',s:[0x24f99d877a,0x9d130747e9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

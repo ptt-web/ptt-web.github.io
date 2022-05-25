@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] mysql資料庫的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="是這樣的
+我在MYSQL資料庫中宣告一個欄位是 CHAR(20)
+                         校對是 utf8_unicode_ci
+如果我有一個值是15
+我用UPDATE指令改成 15~16 的話就會出問題
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] mysql資料庫的問題">
+<meta property="og:description" content="是這樣的
+我在MYSQL資料庫中宣告一個欄位是 CHAR(20)
+                         校對是 utf8_unicode_ci
+如果我有一個值是15
+我用UPDATE指令改成 15~16 的話就會出問題
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1247024627.A.0DF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">alair99 (是妳決定我的傷心)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] mysql資料庫的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Jul  8 11:43:46 2009</span></div>
+是這樣的
+我在MYSQL資料庫中宣告一個欄位是 CHAR(20)
+                         校對是 utf8_unicode_ci
+如果我有一個值是15
+我用UPDATE指令改成 15~16 的話就會出問題
+但是改成其他的數字 例如20就OK
+如果原本是 15~16 那改成數字或是M~N也都OK
+
+請問要怎麼解決@@
+目前我是很白痴的使用DELETE再接上INSERT來取代UPDATE的功能
+謝謝
+
+$query_update = &#34;UPDATE  `db` SET &#34;;
+$query_update .= &#34;`d1`=$d1,`d2`=$d2,`d3`=$d3,`d4`=$d4,`d5`=$d5,`d6`=$d6,
+                  `d7`=$d7,`d8`=$d8,`d9`=$d9&#34;;
+$query_update .= &#34; WHERE `man`=$man AND `task`=$task AND `year`=$year AND
+                  `month`=$month AND `day`=$day&#34;;
+句子很長  因為是一個有14個欄位的table  XD
+
+$query_delete = &#34;DELETE FROM `db` WHERE &#34;;
+$query_delete .= &#34;`man`=$man AND `task`=$task AND `year`=$year AND
+                 `month`=$month AND `day`=$day&#34;;
+
+$query_insert = &#34;INSERT INTO `db` (`man`,`task`,`year`,`month`,`day`,`d1`,
+                 `d2`,`d3`,`d4`,`d5`,`d6`,`d7`,`d8`,`d9`) VALUES &#34;;
+$query_insert .= &#34;(&#39;$man&#39;,&#39;$task&#39;,&#39;$year&#39;,&#39;$month&#39;,&#39;$day&#39;,&#39;$d1&#39;,&#39;$d2&#39;,&#39;$d3&#39;,
+                 &#39;$d4&#39;,&#39;$d5&#39;,&#39;$d6&#39;,&#39;$d7&#39;,&#39;$d8&#39;,&#39;$d9&#39;)&#34;;
+
+有出問題的是最上面的UPDATE 所以我用底下兩個SQL指令來取代它 XD
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 163.29.35.157
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">macroka     </span><span class="f3 push-content">:用VARCHER 會不會解決?</span><span class="push-ipdatetime"> 07/08 14:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ     </span><span class="f3 push-content">:列一下你的 sql 指令？</span><span class="push-ipdatetime"> 07/08 15:00
+</span></div><span class="f2">※ 編輯: alair99         來自: 163.29.35.157        (07/08 16:38)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alair99     </span><span class="f3 push-content">:VARCHAR也是一樣耶 @@</span><span class="push-ipdatetime"> 07/08 16:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chrisQQ     </span><span class="f3 push-content">:update 的地方加上 &#39;&#39; -&gt; `d1`=&#39;$d1&#39; 所有的</span><span class="push-ipdatetime"> 07/08 16:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ     </span><span class="f3 push-content">:`d2`=&#39;$d2&#39; `d2`=&#39;$d3&#39; etc...</span><span class="push-ipdatetime"> 07/08 16:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alair99     </span><span class="f3 push-content">:成功了耶  真是太感謝了  這個是字串的問題嗎@@&#34;</span><span class="push-ipdatetime"> 07/08 17:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chrisQQ     </span><span class="f3 push-content">:是的，字串請加上 &#39;&#39; 包起來～ 不然他會當成數字</span><span class="push-ipdatetime"> 07/08 17:43
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1247024627.A.0DF.html?cacheKey=2148-469791826&amp;offset=2076&amp;offset-sig=eaad65195a71a84a96799fd9d661cf0a60400f21" data-longpollurl="/v1/longpoll?id=99235e9a42ee867d9fca737998331d8b3357ad20" data-offset="2076"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cead55e22af54',m:'ezFaRXIMlvWwoSYr84j5ypFB7jMgZeTisG7Yin.NZJY-1653467513-0-Ab6pJLPBL92E2sPu8TWVi0cHGEYS2m4tEJvnflpywSKvJci/UUEiieK3FEBwyTnWtW9em+Qtc2603gfk/YyyIpDKxL/0URXfEbjWWvET131thsgyvLBW9EBqsn4wqsLJB6H/eCp69P7Ciqvw3tGV4OkA7DEo4R0EEcG9tCLV04+b',s:[0x84836863ef,0x09fc489eb8],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

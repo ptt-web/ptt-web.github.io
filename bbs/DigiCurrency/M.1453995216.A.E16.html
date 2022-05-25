@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [求助] 所以Bitcoin Classic到底是？ - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="先講一下block size是啥，在概念篇提到區塊練就是一本一本的帳本。
+而帳本的容量就是block size。目前的限制是1MB
+https://www.ptt.cc/bbs/DigiCurrency/M.1451231706.A.D66.html
+其實在中本聰最初的版本裡並沒有硬性限制bitcoin的區塊大小，只有限制訊息大小不能
+超過32MB，因而限制了區塊不能超過32MB。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [求助] 所以Bitcoin Classic到底是？">
+<meta property="og:description" content="先講一下block size是啥，在概念篇提到區塊練就是一本一本的帳本。
+而帳本的容量就是block size。目前的限制是1MB
+https://www.ptt.cc/bbs/DigiCurrency/M.1451231706.A.D66.html
+其實在中本聰最初的版本裡並沒有硬性限制bitcoin的區塊大小，只有限制訊息大小不能
+超過32MB，因而限制了區塊不能超過32MB。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1453995216.A.E16.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">DarkerDuck (達克鴨)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [求助] 所以Bitcoin Classic到底是？</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jan 28 23:33:33 2016</span></div>
+<span class="f2">※ 引述《a07051226 (葡萄糖)》之銘言：
+</span><span class="f6">: 我大概翻查一下Google得出結論
+</span><span class="f6">: Bitcoin Classic（簡稱BTCC）是2mb的BTC，因為是由BTC原代碼修改的
+</span><span class="f6">: 所以可以被稱為補釘原因是在版本差異還不大前可以merge起來讓BTC延續成2MB版本
+</span><span class="f6">: 不過好像現在是有兩派人馬，一個堅持不擴，另一要擴
+</span><span class="f6">: 假設兩邊沒有共識，那麼BTCC就會被視為是BTC的山寨幣
+</span>先講一下block size是啥，在概念篇提到區塊練就是一本一本的帳本。
+而帳本的容量就是block size。目前的限制是1MB
+<a href="https://www.ptt.cc/bbs/DigiCurrency/M.1451231706.A.D66.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1451231706.A.D66.html</a>
+其實在中本聰最初的版本裡並沒有硬性限制bitcoin的區塊大小，只有限制訊息大小不能
+超過32MB，因而限制了區塊不能超過32MB。
+後來bitcoin上的應用越來越多了，區塊鍊膨脹的問題被重視。
+為了避免區塊鍊過度膨脹導致完整節點無法在一般PC上運行，
+所以中本聰加了一個MAX_BLOCK_SIZE的參數限制了區塊的最大大小：
+<a href="https://goo.gl/ml13sq" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/ml13sq</a>
+
+但隨著Bitcoin越來越流行，交易量越來越大，1MB的區塊越來越不夠用了。
+現在十個區塊產出大概八個都是滿的，接近1MB。
+這會導致一般交易確認要等很久，甚至是無法被確認
+
+這個時候中本聰欽點的繼承人，Gavin Anderson開始來遊說要大幅增加比特幣的區塊限制
+，直接調到8MB。
+很不幸的是Bitcoin完整節點的唯一版本Bitcoin-core的核心開發人員不接受這個提案。
+因為Bitcoin-core的開發人員早就被Blockstream入侵了。擴容他們就沒戲唱了。
+Gavin只能出走搞了一個Bitcoin XT，但因為太過激進，所以礦池都不支持。
+因為更大的區塊代表更大的頻寬需求。要曉得中國礦池都是在防火長城內的。
+他們的網路頻寬通常不高。
+
+直到現在Gavin妥協搞了一個Bitcoin Classic，這個版本獲得超過75%的礦池支持：
+
+<span class="f6">: 試問：
+</span><span class="f6">: 第一種情況：BTCC變成山寨幣
+</span><span class="f6">: 那麼BTC與BTCC到底哪個比較有機會成功？
+</span><span class="f6">: 其中是不是又有轉換機制？
+</span><span class="f6">: （抱歉沒有接觸過相關山寨幣不太清楚）
+</span>
+基本上只要BTCC擁有75%的礦工算力，鬥爭就結束了，因為只擁有25%算力的Bitcoin-core
+出塊將會慢到一個小時出一塊，根本不會有人用這麼緩慢的加密貨幣。
+且交易也將難以被確認，更恐怖是將可以輕易地被被BTCC的礦工做51%攻擊。
+跟死亡沒兩樣。
+
+但Bitcoin-core死到臨頭還是不願意妥協，他們想出來既然要Hard-ford，原來的
+Bitcoin-core就乾脆Hard-fork成SHA3的mining演算法，這樣就不怕了。
+當然礦工要不要鳥他們又是另外一回事了。
+
+至於轉換機制就是從Hardfork那一個時間點起算，你原來的比特幣將會有分裂複製成
+兩種加密貨幣，Bitcoin-core幣和Bitcoin Classic幣，這兩種幣將從此不相干。
+兩種幣各有自己的帳本。就像是平行世界，無法直接轉換(當然透過交易所還是可以)。
+假如兩種幣都存活的話，就必須看清楚到底是要交易Bitcoin-core幣還是BTCC幣。
+
+<span class="f6">: 第二種情況：BTCC被patch進BTC成為2MB的BTC
+</span><span class="f6">: 那麼應該是不關錢包軟體的事（亦或是透過更新等等解決問題）？
+</span><span class="f6">: 就使用者來說基本上是沒有什麼影響的？
+</span><span class="f6">: 其實還是不太懂到底是怎麼回事
+</span>
+因為是Hardfork，所以所有完整的錢包都必須做升級，
+否則你的錢包只能交易Bitcoin-core幣，升級後才能交易Bitcoin classic幣。
+至於一般手機錢包則可能不用升級，端看該錢包是如何實作的。
+而網站錢包則都給該網站去煩惱吧。
+不過最後還是建議在hardfork發生的時候把私鑰保存在手中，資產才能得到最佳的保護。
+
+Reference:
+<a href="https://en.bitcoin.it/wiki/Scalability_FAQ" target="_blank" rel="noreferrer noopener nofollow">https://en.bitcoin.it/wiki/Scalability_FAQ</a>
+<a href="https://bitcoin.stackexchange.com/questions/30817/what-is-a-soft-fork" target="_blank" rel="noreferrer noopener nofollow">http://bitcoin.stackexchange.com/questions/30817/what-is-a-soft-fork</a>
+<a href="https://goo.gl/8hTS5q" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/8hTS5q</a>  Gavin&#39;s BIP
+
+--
+Bitcoin:   1GjHNjS3yAmyCsRp8i8yj956NZBSAcLvYe
+<a href="https://blockchain.info/address/1GjHNjS3yAmyCsRp8i8yj956NZBSAcLvYe" target="_blank" rel="noreferrer noopener nofollow">https://blockchain.info/address/1GjHNjS3yAmyCsRp8i8yj956NZBSAcLvYe</a>
+Litecoin:  LNpJUtNFcmhHAoohdH3aEenURFjXAzfKXc
+<a href="https://ltc.blockr.io/address/info/LNpJUtNFcmhHAoohdH3aEenURFjXAzfKXc" target="_blank" rel="noreferrer noopener nofollow">http://ltc.blockr.io/address/info/LNpJUtNFcmhHAoohdH3aEenURFjXAzfKXc</a>
+Dogecoin:  DBQAZU4x7hCYEjzsQyXLpnjyrTmnPBGWd9
+<a href="https://dogechain.info/address/DBQAZU4x7hCYEjzsQyXLpnjyrTmnPBGWd9" target="_blank" rel="noreferrer noopener nofollow">https://dogechain.info/address/DBQAZU4x7hCYEjzsQyXLpnjyrTmnPBGWd9</a>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 118.171.105.235
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1453995216.A.E16.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1453995216.A.E16.html</a>
+</span><span class="f2">※ 編輯: DarkerDuck (36.237.230.143), 01/29/2016 03:17:14
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a07051226</span><span class="f3 push-content">: 所以說如果我用比太或是multi bit這種錢包軟體</span><span class="push-ipdatetime"> 01/30 14:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a07051226</span><span class="f3 push-content">: 基本上就是伺服器那邊要處理而不是使用者？</span><span class="push-ipdatetime"> 01/30 14:36
+</span></div>MultiBit和比太皆為SPV錢包，它們皆不儲存完整的區塊鍊。
+SPV錢包會直接詢問可信任的完整錢包節點，取得自己地址有相關的交易。
+藉此計算自己的錢包餘額，取得交易的input才能發出交易。
+所以區塊大小並不是這種錢包所關心的。
+理論上假如只改區塊大小限制，SPV錢包應不用更動實作設計。
+但有個問題就是假如真的分裂成兩個幣，
+連到Bitcoin Classic的完整節點，就會變成Bitcoin Classic幣。
+連到Bitcoin Core的完整節點，就會變成Bitcoin-core幣
+不過實際上應該會多個完整節點比對，所以可能就會發生錯誤
+<span class="f2">※ 編輯: DarkerDuck (36.237.83.250), 01/30/2016 18:30:25
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1453995216.A.E16.html?cacheKey=2148-146034205&amp;offset=4286&amp;offset-sig=e61ca2ade458fbe8cbfbe6e2a2803d9846c8978e" data-longpollurl="/v1/longpoll?id=5a947250a91608836314c83e9319a378c15da154" data-offset="4286"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce2a4ca320ab4',m:'74GGlA_bdysU6eJJ5fg2F2l9I3UCSJau7zCG24NYdoA-1653467177-0-AQot55bbgRsElory7XQncg548w87pSB0NCyLPG63nnUB1VATvrN4WO9W3P3FkA129+OQyoIuZ1c9rBrbdMSc+Hi10lUgu0D+UBUOE/JSJNlp72olUTQVHBTSlDBblsb1qG1r7/NqcFS+vjE9fSTYMRQiMLdkl2xNlGCnYxzVorkn',s:[0x6e4c35b486,0xef3ff67fe6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

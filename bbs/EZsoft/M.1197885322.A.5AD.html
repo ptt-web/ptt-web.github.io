@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[教學] 以SoftEther虛擬Hub連接其它電腦的區域網路 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="網誌板：http://chcooboo.blogspot.com/2007/12/softetherhub.html
+    SoftEther是一個日本人在大學時期寫出來的一套虛擬Hub軟體。
+用途還滿多的，可以解決很多網域不同的連線問題。比方說一些舊的
+遊戲像星海爭霸 (StarCraft)萬一在沒有伺服器可以連線的時候(連
+到國外有些又很慢)，或者是你們所在的網路環境很複雜，又想跟幾
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[教學] 以SoftEther虛擬Hub連接其它電腦的區域網路">
+<meta property="og:description" content="網誌板：http://chcooboo.blogspot.com/2007/12/softetherhub.html
+    SoftEther是一個日本人在大學時期寫出來的一套虛擬Hub軟體。
+用途還滿多的，可以解決很多網域不同的連線問題。比方說一些舊的
+遊戲像星海爭霸 (StarCraft)萬一在沒有伺服器可以連線的時候(連
+到國外有些又很慢)，或者是你們所在的網路環境很複雜，又想跟幾
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1197885322.A.5AD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">CHCOOBOO (天滿命)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[教學] 以SoftEther虛擬Hub連接其它電腦的區域網路</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Dec 17 17:55:20 2007</span></div>
+網誌板：<a href="https://chcooboo.blogspot.com/2007/12/softetherhub.html" target="_blank" rel="noreferrer noopener nofollow">http://chcooboo.blogspot.com/2007/12/softetherhub.html</a>
+
+    SoftEther是一個日本人在大學時期寫出來的一套虛擬Hub軟體。
+用途還滿多的，可以解決很多網域不同的連線問題。比方說一些舊的
+遊戲像星海爭霸 (StarCraft)萬一在沒有伺服器可以連線的時候(連
+到國外有些又很慢)，或者是你們所在的網路環境很複雜，又想跟幾
+個朋友連線時，除了跑去網咖外，還有一個很不錯的選擇，就是使用
+虛擬Hub。不過我自己的主要用途是用來開網芳使用，因為網芳可以
+連接其它電腦的硬碟當作自己的虛擬磁碟，也可以方便的直接執行、
+縮圖預覽等等的。最早我是利用FTP、遠端桌面連線在連接回房間的
+電腦，只是FTP無法預覽(如果我有說錯還請指教)，遠端桌面雖然方
+便，但如果是直接執行一些影片之類的就無法勝任了，所以才會想用
+網路芳鄰的功能來解決上述的問題。
+
+    回到正題，SoftEther似乎沒有原始官網，只有看起來像後來成
+立公司的官網(我也不太確定@@)，但最原始的那個版本仍然可以在這
+裡抓到。
+
+    抓下來後解壓縮，有兩個setup，如果一個不能裝的話那就點另
+一個setup，記得要選英文，要當作虛擬Hub的那台電腦要安裝
+Virtual HUB，其它的電腦只要裝Virtual LAN Card就好了。然後安
+裝設定方法可以參照下面。
+
+   1. SoftEther Virtual HUB Administration的設定
+
+1、設定虛擬Hub的管理者密碼
+
+從開始→所有程式→SoftEther→SoftEther Virtual HUB
+Administration
+來啟動SoftEther Virtual HUB Administration
+啟動後會跳出一個視窗要你輸入虛擬hub的ip， 這時直接勾選左下角
+的This Computer，然後繼續下去會跳出DOS的視窗。
+
+DOS視窗出現後會要你設定密碼，這個密碼是以後啟動Virtual
+HUB Administration時要用的，要記起來，輸入後會要你再確認一次
+密碼(Confirmation)。
+
+2、USER作成
+
+在DOS的選單下選擇 1 - User Administration
+接著會出現[USER ADMINISTRATION]的選單，
+在這邊我們要作的是建立能連進來這個Virtual HUB的使用者帳號，
+先來作一個給自己連接到自己HUB的帳號：
+選擇2 - Create User
+
+
+Username : 設名稱
+Password : 設密碼
+Confirmation : 密碼再確認
+Virtual HUB ID : 使用第幾個Hub(也可以不設，預設為0)
+
+接下來會問你這個帳號安全性設定，就照著下面設吧
+1就是on、0就是off
+Deny Connect (Off) : 暫時關閉這個帳號連線
+Disable Session Reconnect (Off) : 禁止重連
+Force to use IP Addess allocated by DHCP Server (Off) : 強制
+使用DHCP連線
+Limit to 1 IP Address to use. (Off) : 限制此帳號同時只能用1
+個IP進入
+Limit to 1 MAC Address to use. (Off) : 限制此帳號同時只能用
+一張網卡進入
+Do not use existing IP Address (on) :1 這個我看不太懂意思，
+但網路教學推薦要開著
+Do not use existing MAC Address (on) :1 同上
+Do not send Broadcast Packet (Off) : 不送出封包
+Do not send DHCP ACK Packet (On) :1
+Filter ALL DHCP Packets (On) :1
+
+
+設完後會回到[USER ADMINISTRATION]的選單，
+接著再作幾個要給別人使用，連過來你電腦的帳號，
+方法跟上面的一樣，要特別注意一些地方：
+Virtual HUB ID這個一定要相同（空白為0），不然會連到不同的
+Virtual HUB就無法在同一個虛擬區網底下了，網坊自然也就看不到
+設完後會回到[USER ADMINISTRATION]的選單，
+此時輸入 9 - Back回到[MAIN MENU]
+
+全部定定完的話就可以輸入9 - Logout (Disconnect) 關掉設定視窗
+。
+
+設定完將SoftEther Virtual HUB Services重新啟動
+[開始]→[所有程式]→[SoftEther]→[SoftEther Control]
+跳出視窗後選擇在SoftEther Virtual HUB Services欄下面的
+[restart]
+然後Exit SoftEther Setup
+
+    * SoftEther Connection Manager的設定
+
+[開始]→[所有程式]→[SoftEther]→[SoftEther Connection
+Manager]
+
+開啟上面的[Account]→[New Account] 先來做一個連接到自己虛擬
+Hub，名稱自己取，勾選右邊Use authentication to connect to
+the Virtual HUB， 就可以在下面輸入帳號和密碼。
+
+然後點選左下角的Direct TCP/IP Connection，再點Configure，IP
+設127.0.0.1(別人的電腦就要設定這台電腦連上網路的IP或網址)，
+PORT預值為7777，然後選右下角的OK來完成設定。
+
+當你要別人連到你HUB時就需要用它先連進去你架的HUB，跟別人說IP
+前要注意每次連線IP位置有可能會變動，最好每次用之前都去確認，
+或者是用no-ip之類的網站轉換成網址（教學在此）。
+
+經過上面的連線後，之後再比照一般區網的設定方式，設定些虛擬IP
+，就能互相在網芳中看見了，一些支援區域連線的遊戲也可以運作，
+是不是很方便呢~~
+
+參考網站：
+<a href="http://se.jptm.net/ac/" target="_blank" rel="noreferrer noopener nofollow">http://se.jptm.net/ac/</a>
+<a href="http://acnx.zive.net/arena/" target="_blank" rel="noreferrer noopener nofollow">http://acnx.zive.net/arena/</a>
+
+    由於去年中華電信推出了10M/2M的FTTB，我當下就為了達成很久
+以前的計畫(好像沒什麼了不起的計畫XD)，就去申請了。目前勉強可
+以用來直接播放一些流量不超過2000kbps的動畫，在看照片縮圖上也
+嫌慢，勉強還能用啦XD。唉唉，什麼時候才會有平價的100M/100M網
+路呢...(雖然我開始有點覺得100M的區域連線有點不夠快了...)
+
+後記：XP好像有內建VPN的功能...但我之前試了半天都無法成功，反
+而弄到無法上網Orz，不知是那裡弄錯了...
+
+--
+
+僕は....天満ちゃんのこと大好きです!!
+
+          \(⊙▽⊙)/<span class="b1">     </span>              <span class="b1">     </span>
+<span class="b1">   　</span><span class="f0 b1">◢</span><span class="f1">          ◥</span><span class="b1"> 　  </span><span class="b1">   </span><span class="f1">◤</span>　            <span class="b1"> 　  </span><span class="b1">    </span>   <span class="f0 b3">◥◥◥◥◥</span><span class="f0">   </span><span class="f0 b1">    </span>
+<span class="f0 b1">  ︽</span><span class="f1 hl">/ </span><span class="f0 b3"> ／＼　／＼ </span><span class="f1 hl"> \</span><span class="f0 b1">︽  </span><span class="b1">    </span><span class="f0 hl"> |</span><span class="f1 b3 hl">///　　　///</span><span class="f0 hl">| </span><span class="f0 b1 hl">    </span><span class="b1">    </span><span class="f3">  ◥</span><span class="f0 b3"> 　︶　 ◢</span><span class="f0">  </span><span class="b1">　  </span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.127.27.191
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wacca</span><span class="f3 push-content">:如果沒有堅持一定要自己架的話 hamachi方便很多 也不用記ip</span><span class="push-ipdatetime"> 12/17 20:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zop</span><span class="f3 push-content">:hamachi得連到不知道哪裡的server上去，感覺不保險..</span><span class="push-ipdatetime"> 12/17 21:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yinjing</span><span class="f3 push-content">:純推 (好複雜+暫時不需要 Ｏrz)</span><span class="push-ipdatetime"> 12/18 12:52
+</span></div><span class="f2">※ 編輯: CHCOOBOO        來自: 218.169.9.195        (12/18 14:21)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1197885322.A.5AD.html?cacheKey=2148-738943674&amp;offset=5299&amp;offset-sig=cbd4cf1cf7c34502282be4e6d7c0febe7fa7fc3d" data-longpollurl="/v1/longpoll?id=f52e6f9d82fc2945f7e54442293474129fd71003" data-offset="5299"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb5fe92620a7',m:'WYL_rzWYLky8ss_zza9V03ELHnfA2sE1Q9Lq0CwbhnM-1653466880-0-AaPD7Y3HQL+7/lgfjKWjmPtvvWAfU0f1qyg+tU5l4JXoUNIqwzHzfN6l/yRI70zEEeeQl2JkJmkrar5RK1QSmVcxQe0VTNQaGkVJvRIRHDWKddwhpM9X7YlkCmXnrhOuH2a1VQkERVUudsVntSPyrpelIYfgdDFp//0sn88Jr/OC',s:[0x9b4c8dfe61,0x0e5bf01dee],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

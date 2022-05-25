@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] php 在array裡找值 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問我想用in_array在一個array($ret)裡判斷其中某一個element的值是否存在. 不過結果一直找不到. 是因為有boolean
+值存在array嗎?還是我要怎麼找才好? 謝謝
+array如下
+$ret =
+object(stdClass)#2 (2) {
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] php 在array裡找值">
+<meta property="og:description" content="請問我想用in_array在一個array($ret)裡判斷其中某一個element的值是否存在. 不過結果一直找不到. 是因為有boolean
+值存在array嗎?還是我要怎麼找才好? 謝謝
+array如下
+$ret =
+object(stdClass)#2 (2) {
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1401767225.A.4E0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jacobcan118 (jacobcan118)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] php 在array裡找值</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jun  3 11:47:02 2014</span></div>
+請問我想用in_array在一個array($ret)裡判斷其中某一個element的值是否存在. 不過結果一直找不到. 是因為有boolean
+值存在array嗎?還是我要怎麼找才好? 謝謝
+array如下
+$ret =
+object(stdClass)#2 (2) {
+  [&#34;responsecode&#34;]=&gt;
+  int(0)
+  [&#34;elementcol&#34;]=&gt;
+  array(1) {
+    [0]=&gt;
+    object(stdClass)#3 (7) {
+      [&#34;name&#34;]=&gt;
+      string(13) &#34;namevalue&#34;
+      [&#34;sku&#34;]=&gt;
+      string(5) &#34;00000&#34;
+      [&#34;id&#34;]=&gt;
+      int(10)
+      [&#34;color&#34;]=&gt;
+      string(4) &#34;blue&#34;
+      [&#34;size&#34;]=&gt;
+      int(1)
+      [&#34;stock&#34;]=&gt;
+      bool(false)
+      [&#34;order&#34;]=&gt;
+      bool(false)
+    }
+  }
+}
+=====
+if(in_array(&#34;namevalue&#34;, array($ret-&gt;elementcol)))
+echo &#34;y&#34;;
+else
+echo &#34;n&#34;;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 71.183.242.84
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1401767225.A.4E0.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1401767225.A.4E0.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:你陣列裡面沒有namevalue這個簡單字串成員，怎麼找得到</span><span class="push-ipdatetime"> 06/03 12:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">scars</span><span class="f3 push-content">:in_array(&#34;namevalue&#34;, (array)$ret-&gt;elementcol[0])</span><span class="push-ipdatetime"> 06/04 10:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">scars</span><span class="f3 push-content">:如果 $ret 的結構你已經很確定長這樣的話</span><span class="push-ipdatetime"> 06/04 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">scars</span><span class="f3 push-content">:忘了 要用strict checking, 不然結果會亂七八糟</span><span class="push-ipdatetime"> 06/04 10:54
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1401767225.A.4E0.html?cacheKey=2148-469801286&amp;offset=1275&amp;offset-sig=e113c6ca475d27de379611f66ba09c5f1c581316" data-longpollurl="/v1/longpoll?id=40541c89f349ac27635fd1bc15de6445e1e19066" data-offset="1275"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea44287014d0',m:'pOIXdqxd4lDTAVDPYiTwwz36bGdFQGSH1OXtA9rvYAg-1653467489-0-AS6WKgFsBzqQ6yIxN/pVzPALlpK5onjoV81HrzBdcCDz9EahR8uLC98bjVyGVD1uirdbzWgUbwQxz1wTfEJW0KIN6B6yhXoZRSaj0JuKPQMzaTQBFY7sK3nA+bSHokwKQfYHm5UooCVRhvKZ8j1RnjiEX41aLdGZzJZjiQRE0fNH',s:[0xd4d99a211e,0x6268e4c373],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

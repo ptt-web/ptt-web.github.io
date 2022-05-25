@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 不知道版面能夠做成樣板嗎? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="假設目前我要做一個網站，裡面每一頁都像下面的版面，只有主內容會變動
+不知道大家都是怎樣設計這個版面的呢?
+不會是要每一頁都放上版面以及下版面的圖片及文字吧
+這樣將來只要裡面連結或字體要改變不就都要每一頁手動去變更嗎?
+我在想是不是把上下版面那些圖片定位以及文字資料寫在*.js每一頁再include進來呢?
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 不知道版面能夠做成樣板嗎?">
+<meta property="og:description" content="假設目前我要做一個網站，裡面每一頁都像下面的版面，只有主內容會變動
+不知道大家都是怎樣設計這個版面的呢?
+不會是要每一頁都放上版面以及下版面的圖片及文字吧
+這樣將來只要裡面連結或字體要改變不就都要每一頁手動去變更嗎?
+我在想是不是把上下版面那些圖片定位以及文字資料寫在*.js每一頁再include進來呢?
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1228261471.A.EF7.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jami520 (我的生命因你而發光)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 不知道版面能夠做成樣板嗎?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Dec  3 07:44:30 2008</span></div>
+假設目前我要做一個網站，裡面每一頁都像下面的版面，只有主內容會變動
+不知道大家都是怎樣設計這個版面的呢?
+不會是要每一頁都放上版面以及下版面的圖片及文字吧
+這樣將來只要裡面連結或字體要改變不就都要每一頁手動去變更嗎?
+我在想是不是把上下版面那些圖片定位以及文字資料寫在*.js每一頁再include進來呢?
+還是是用怎樣的作法? 因為以前就是遇到這個問題，導致小小更動就要每頁更改頗麻煩的
+
+┌─────────┐
+│                  │
+│   選單以及LOGO   │
+╞═════════╡
+│                  │
+│    主內容        │
+│                  │
+│                  │
+│                  │
+╞═════════╡
+│      下版面      │
+───────────
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 123.193.226.242
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fotofolio</span><span class="f3 push-content">:用php include吧</span><span class="push-ipdatetime"> 12/03 08:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ageis</span><span class="f3 push-content">:smarty是好東西...</span><span class="push-ipdatetime"> 12/03 13:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ageis</span><span class="f3 push-content">:靠腰 我好像又眼殘 smarty只適用於php</span><span class="push-ipdatetime"> 12/03 13:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ageis</span><span class="f3 push-content">:如果是asp的話請google asp template 有open source可解決</span><span class="push-ipdatetime"> 12/03 13:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ageis</span><span class="f3 push-content">:asp.net則有master page  JSP不熟:P</span><span class="push-ipdatetime"> 12/03 13:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:jsp有更好用的decorator形式的 sitemesh. :p</span><span class="push-ipdatetime"> 12/03 13:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:而且支援符合特定url pattern的自動套用 , 不用自己宣告.</span><span class="push-ipdatetime"> 12/03 13:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:說到smarty，我實在不知道為什麼要用到這個東西...= =</span><span class="push-ipdatetime"> 12/03 13:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:PHP本身就可以達到程式與版面分離的效果了，為什麼要再</span><span class="push-ipdatetime"> 12/03 13:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:template 是一個很有趣的演進 , 有些人喜歡 有些人則否. :p</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:加一個smarty來減緩執行的效率呢？</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:我看過的幾款template engine 都有 把template本身就獨立成</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:被斷了 @@y</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:互斷 XDD</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:檔案形式來切割的趨勢 , 變成 樣板-頁面-後端 三者串連</span><span class="push-ipdatetime"> 12/03 13:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:至於執行效率 , 這就別談了...要講效率fw輸很大 XD</span><span class="push-ipdatetime"> 12/03 13:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:不過如果有好的硬體/環境 , fw算是大有可為...</span><span class="push-ipdatetime"> 12/03 13:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:會用fw 通常是有一個「既有的」、「整體性」的問題需要解決.</span><span class="push-ipdatetime"> 12/03 13:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:fw=framework</span><span class="push-ipdatetime"> 12/03 13:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:的確framework確實能在開發上帶來不少便利性，但也確實</span><span class="push-ipdatetime"> 12/03 13:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:是要拿效能來換，不過在系統資源不吃緊的情況下倒是沒這</span><span class="push-ipdatetime"> 12/03 13:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:個問題</span><span class="push-ipdatetime"> 12/03 13:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fotofolio</span><span class="f3 push-content">:推文程度遠超過原po問題...XD</span><span class="push-ipdatetime"> 12/03 13:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">crazybad</span><span class="f3 push-content">:XML+XSL(逃...</span><span class="push-ipdatetime"> 12/03 13:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">takumi412</span><span class="f3 push-content">:原PO要用Server端處理? 還是要Local端維護再上傳?</span><span class="push-ipdatetime"> 12/03 15:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">takumi412</span><span class="f3 push-content">:如果是前者, 上面一堆推文都可以用; 後者的話, DW的範本</span><span class="push-ipdatetime"> 12/03 15:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">takumi412</span><span class="f3 push-content">:功能應該可以幫你很大的忙~</span><span class="push-ipdatetime"> 12/03 15:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">takumi412</span><span class="f3 push-content">:再不然，利用文字編輯器的Find &amp; Replace也可以唷~ XDD</span><span class="push-ipdatetime"> 12/03 15:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fotofolio</span><span class="f3 push-content">:我也想過local端用js的可能性..ww</span><span class="push-ipdatetime"> 12/03 16:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chph</span><span class="f3 push-content">:javascript include是最糟的</span><span class="push-ipdatetime"> 12/03 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ageis</span><span class="f3 push-content">:同意樓上 include js實在不是好辦法</span><span class="push-ipdatetime"> 12/03 21:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:要不要轉CodeJob?</span><span class="push-ipdatetime"> 09/15 00:48
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1228261471.A.EF7.html?cacheKey=2149-475823636&amp;offset=4094&amp;offset-sig=f38b3c7e064a9a21b95956fe365e8c308ae48dca" data-longpollurl="/v1/longpoll?id=38cefddbb1ad2c8c6d52733cc0c37697b9e5196c" data-offset="4094"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce94a8a05f8eb',m:'YH7oeCfeLzxNsPhqjxdLHnmE.Hh.CjzdVAuwv0b24VU-1653467450-0-AQXePi17g3DVWHG3Htmm6C3WbhgF9hz9p8cUQZTBo6Tk3wBWTm35oh4G3Qo/QEpNr7sZLjQXDLXRdjDUCw9lv3UO+ajQRCHHMq3H70dDM3+dOoyLz4GI8W8q7sqT/gnqkOzaxGDUsZlYD3pOQaqnoXMNsvl/jEoPJp3SZiUCPe9h',s:[0x2ed8fafbe5,0xb10b5529d3],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

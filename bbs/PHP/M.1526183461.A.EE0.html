@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] file函數來讀網頁的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="寫了一個小程式讀網頁的原始碼並分析時，遇到一個問題，
+就是用瀏覽器開某網址，是正常的。
+但用php程式去讀那個網址，程式讀出來的網頁，和我看的不同。
+例如：https://goo.gl/T6BcEx
+(我在程式是沒縮網址的 只是在ptt網址超過一行才縮)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] file函數來讀網頁的問題">
+<meta property="og:description" content="寫了一個小程式讀網頁的原始碼並分析時，遇到一個問題，
+就是用瀏覽器開某網址，是正常的。
+但用php程式去讀那個網址，程式讀出來的網頁，和我看的不同。
+例如：https://goo.gl/T6BcEx
+(我在程式是沒縮網址的 只是在ptt網址超過一行才縮)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1526183461.A.EE0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">poeta (鍵盤詩人)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] file函數來讀網頁的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun May 13 11:50:59 2018</span></div>
+寫了一個小程式讀網頁的原始碼並分析時，遇到一個問題，
+
+就是用瀏覽器開某網址，是正常的。
+
+但用php程式去讀那個網址，程式讀出來的網頁，和我看的不同。
+
+
+例如：<a href="https://goo.gl/T6BcEx" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/T6BcEx</a>
+(我在程式是沒縮網址的 只是在ptt網址超過一行才縮)
+
+我想要讀出這本書的「責任者」、「版本」。
+
+但是用file()函數去讀網址，卻讀不到這些東西，該顯示的地方，變成
+
+元数据展现，元数据展现 暂时无法取用。
+
+
+可能是網址裡的函數沒有讀進去吧！該怎麼解決？
+
+
+01 $http=&#34;<a href="https://goo.gl/T6BcEx&#34;;" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/T6BcEx&#34;;</a>
+02 $buffer = file($http);
+03 for($i=0;$i&lt;sizeof($buffer);$i++)
+04        echo $buffer[$i].&#34;&lt;BR&gt;&#34;;
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 36.232.154.236
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1526183461.A.EE0.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1526183461.A.EE0.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dalconan</span><span class="f3 push-content">: 改用curl的方式試試看</span><span class="push-ipdatetime"> 05/13 16:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">l3161316</span><span class="f3 push-content">: 就是有做反爬蟲 你先用postman測到跟網頁一樣正常顯示吧</span><span class="push-ipdatetime"> 05/13 22:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: 我也有用curl試過，也是一樣。</span><span class="push-ipdatetime"> 05/13 23:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: 不過現在問題解決了，我看到很多人爬網頁都有加這一行：</span><span class="push-ipdatetime"> 05/13 23:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: curl_setopt($ch, CURLOPT_USERAGENT, &#34;Google Bot&#34;);</span><span class="push-ipdatetime"> 05/13 23:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: 我加上去，網頁就爬到了....好神奇</span><span class="push-ipdatetime"> 05/13 23:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">my1938</span><span class="f3 push-content">: 應該是對方的網站有檢查user agent，像我的伺服器只要requ</span><span class="push-ipdatetime"> 05/14 12:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">my1938</span><span class="f3 push-content">: est檔頭沒有user agent就會擋</span><span class="push-ipdatetime"> 05/14 12:13
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1526183461.A.EE0.html?cacheKey=2148-469967878&amp;offset=1591&amp;offset-sig=406abcff84fd85059faec21125855c79b41f83ff" data-longpollurl="/v1/longpoll?id=a1ef23cfc915f25ff9b7782bdb6990015b6e3a81" data-offset="1591"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea28dc3b807e',m:'YlSrer35CitsGpNAyoPjg5ztTlyj2PCbfw32QKlWebw-1653467485-0-AUzK43YiJTu0zNE2WHA8mh1ECUFz3LL5veVdKCcZn7ixCTdVpfXxjAw6LvfHW1dPh1VjPL7E1FtBjwkrTcuDIqR3CeYknS1dCobAAy2mbsfkrCBaRzInTxj7/m51MDHQSK80AFM/laGGcJe9FnnA9LQa+lAe8kaKs5npx3mNcoIY',s:[0x6181569b35,0x4e224ab341],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

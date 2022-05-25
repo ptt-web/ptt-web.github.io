@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 關於Apache設定 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="http://linux.vbird.org/linux_server/0360apache.php#server_basic_setup
+Indexes：如果在該目錄底下找不到 index.html 時，就顯示整個目錄下的檔案名稱！
+我用的是 Apache1.3.31
+把以下兩處的 Indexes 字串刪除即可
+--------------------------------------------------------------
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 關於Apache設定">
+<meta property="og:description" content="http://linux.vbird.org/linux_server/0360apache.php#server_basic_setup
+Indexes：如果在該目錄底下找不到 index.html 時，就顯示整個目錄下的檔案名稱！
+我用的是 Apache1.3.31
+把以下兩處的 Indexes 字串刪除即可
+--------------------------------------------------------------
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1105936266.A.571.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">accordingto (Knoppix)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 關於Apache設定</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan 17 12:38:34 2005</span></div>
+<span class="f2">※ 引述《chenhank (..)》之銘言：
+</span><span class="f6">: 請問一下，要如何設定，才能讓使用者無法以&#34;目錄&#34;的方式瀏覽網站?
+</span><span class="f6">: 使用的是Apache for win32.
+</span><span class="f6">:                                         謝謝
+</span>
+<a href="http://linux.vbird.org/linux_server/0360apache.php#server_basic_setup" target="_blank" rel="noreferrer noopener nofollow">http://linux.vbird.org/linux_server/0360apache.php#server_basic_setup</a>
+
+Indexes：如果在該目錄底下找不到 index.html 時，就顯示整個目錄下的檔案名稱！
+
+我用的是 Apache1.3.31
+把以下兩處的 Indexes 字串刪除即可
+--------------------------------------------------------------
+&lt;Directory /&gt;
+    Options FollowSymLinks ExecCGI <span class="f3 hl">Indexes</span>
+    AllowOverride None
+&lt;/Directory&gt;
+--------------------------------------------------------------
+    Options <span class="f3 hl">Indexes</span> FollowSymLinks MultiViews ExecCGI
+--------------------------------------------------------------
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.218.51.174
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1105936266.A.571.html?cacheKey=2149-475710005&amp;offset=903&amp;offset-sig=71dc4ec0e4fd0cefe4d2629cd6aa048b23dd3f99" data-longpollurl="/v1/longpoll?id=4480298a5228f4d4f82046cf5a6a91199a849ba7" data-offset="903"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9a62884b00c',m:'7Vm3Rltrfa314oGERSnQw._17h3d0737jPqtbE3exrU-1653467464-0-AeVcw1PSQRMwBpoXhKjTgopvNwlpg6NVGKii/ZOxY/GlMviKCgaxomJuV7/sYIqf3R8siReH6DN+B+eFE3KnZW8bEAE/E7N1pjWhXkrEoc591gHvGnWyrN21FsuH88RqvawI3eXf4lffetsbJY2cro03EQA+1CXAiiF/CaoT+u0Y',s:[0x974ae97098,0x4f8f8b5245],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

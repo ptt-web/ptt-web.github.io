@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] DIV&amp;CLASS命名規則 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="DEAR ALL:
+不知道大家在寫程式碼的時候
+都是怎麼樣命名的
+有一定的規則嗎?
+還有一個問題是~
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] DIV&amp;CLASS命名規則">
+<meta property="og:description" content="DEAR ALL:
+不知道大家在寫程式碼的時候
+都是怎麼樣命名的
+有一定的規則嗎?
+還有一個問題是~
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1338814846.A.78A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">WWWVVV (好吧～我認了)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] DIV&amp;CLASS命名規則</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jun  4 21:00:43 2012</span></div>
+DEAR ALL:
+不知道大家在寫程式碼的時候
+都是怎麼樣命名的
+有一定的規則嗎?
+
+還有一個問題是~
+我看同事寫的程式碼
+好多DIV層層包裹且她寫的li每個都會多寫一個&lt;span&gt;
+這樣是為了seo嗎?
+
+我發現每個人都有習慣的寫法
+我不太清楚怎樣較正確
+
+但公司曾有人提議過是不是可以把css命名規則制定一下
+雖然最後不了了之
+但想問大家公司真的都寫出來是一樣的命名規則嗎?
+還是哪裡有這種範本??
+我只有找到網路上比較大方向的命名~但假設
+&lt;ul&gt;
+ &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;.................&lt;/li&gt;
+ &lt;li&gt;.........&lt;/li&gt;
+&lt;/ul&gt;
+
+這種無限多層時要怎麼下class或div的名稱呢?
+命名規則會關係到優化嗎?
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.73.69.78
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:我認為一般以標籤為主，內容為輔，class應該沒影響</span><span class="push-ipdatetime"> 06/04 21:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:類別樣式這種東西是給網頁設計師方便識別的，不是網路爬蟲</span><span class="push-ipdatetime"> 06/04 21:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:ex: 重點粗體字，用strong , 不重要的粗體改用 font-weight</span><span class="push-ipdatetime"> 06/04 21:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:這樣對SEO的幫助會好一點(這只是舉例)</span><span class="push-ipdatetime"> 06/04 21:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WWWVVV</span><span class="f3 push-content">:但如果一個專案經手很多設計師的話...怎麼訂定共同命名規則</span><span class="push-ipdatetime"> 06/04 21:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WWWVVV</span><span class="f3 push-content">:因為之前主管有提到希望命名可以前後端統一...</span><span class="push-ipdatetime"> 06/04 21:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WWWVVV</span><span class="f3 push-content">:可以提高專案進度~方便管理這樣</span><span class="push-ipdatetime"> 06/04 21:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:個人習慣沒辦法改，如果要訂定也只能由一人當標準</span><span class="push-ipdatetime"> 06/04 21:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:兩三個人同時討論標準最後一定會亂掉</span><span class="push-ipdatetime"> 06/04 21:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kurtisgod</span><span class="f3 push-content">:我覺得個人習慣要改才對 如果是一個team co-work的話</span><span class="push-ipdatetime"> 06/04 21:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kurtisgod</span><span class="f3 push-content">:有時候根本不需要另外命class 有時候則是同樣的style</span><span class="push-ipdatetime"> 06/04 21:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kurtisgod</span><span class="f3 push-content">:寫了一堆 都是不同名 觀念清楚才是重點</span><span class="push-ipdatetime"> 06/04 21:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tyf99</span><span class="f3 push-content">:我不知別人是怎樣分工，但我自己絕對不會把排版拆成兩人以上</span><span class="push-ipdatetime"> 06/04 21:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tyf99</span><span class="f3 push-content">:維持整個網頁的風格一致性，遠比什麼命名規則重要</span><span class="push-ipdatetime"> 06/04 21:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:大的專案本來就可能轉手或協力吧，制定一個規定對維護</span><span class="push-ipdatetime"> 06/04 22:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:是好事，之前不知道看哪裡的文章有提到入口網站的維護</span><span class="push-ipdatetime"> 06/04 22:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:不然至少要寫註解吧。</span><span class="push-ipdatetime"> 06/04 22:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WWWVVV</span><span class="f3 push-content">:恩~所以大家都是一人從頭寫到尾...</span><span class="push-ipdatetime"> 06/05 06:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">superpai</span><span class="f3 push-content">:你把兩個問題混在一起了 一個是class/id命名風格</span><span class="push-ipdatetime"> 06/05 07:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">superpai</span><span class="f3 push-content">:這有兩個流派 semetic / oocss</span><span class="push-ipdatetime"> 06/05 07:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">superpai</span><span class="f3 push-content">:至於多人合作又是另外一個問題 製定doc才是重點</span><span class="push-ipdatetime"> 06/05 07:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EROS4</span><span class="f3 push-content">:我認為多人維護的話semantic可能會好點，但要配合framework</span><span class="push-ipdatetime"> 06/05 15:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xiphoid</span><span class="f3 push-content">:<a href="http://smacss.com/book/" target="_blank" rel="noreferrer noopener nofollow">http://smacss.com/book/</a></span><span class="push-ipdatetime"> 06/07 13:45
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1338814846.A.78A.html?cacheKey=2149-475915269&amp;offset=3105&amp;offset-sig=f77815b605e036a11ac642fd0d4286f52041863e" data-longpollurl="/v1/longpoll?id=bdb60190e569b1e61bd7edb29a4183d95fa89165" data-offset="3105"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9f64c641ec4',m:'qK35kFepUHHuSaZW3NvY95V0K2H0i1mSKLAOh8.IsHk-1653467477-0-AQRxSB/B3+429l1s83kXV/NxJazTxFum1CV2IQMBZjQY4RFpnwKzrOHXMXXMSv8QoX0y/gvxCwlXwa1diWDmwbfj85m2kEsYAFjdfGX7EXPyrDC1yUGHYTXyI0QEtI2a5k5gp1nvfJXypNYVxQf9XSzZJaTJZ0mvF1UQPwDmbkmD',s:[0xa14bcb414e,0xace8be1b78],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

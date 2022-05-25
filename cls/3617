@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/B_supporters/index.html">
+                <div class="board-name">B_supporters</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">足tw</div>
+                <div class="board-title">&#9678;台灣足球加油團</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/7752">
+                <div class="board-name">FIFAWorldCup</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">足球</div>
+                <div class="board-title">&#931;FIFA World Cup  2022卡達世界盃</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Football/index.html">
+                <div class="board-name">Football</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">足球</div>
+                <div class="board-title">&#9678;足球版</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/11957">
+                <div class="board-name">FootballClub</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">足球</div>
+                <div class="board-title">&#931;足球名門 西甲/英超/德甲/義甲</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/15152">
+                <div class="board-name">FootballLand</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">足球</div>
+                <div class="board-title">&#931;足球國度 亞洲/美洲/歐洲/聯賽/球星</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/cleats/index.html">
+                <div class="board-name">cleats</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">資訊</div>
+                <div class="board-title">&#9678;足球裝備版</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/jersey/index.html">
+                <div class="board-name">jersey</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">資訊</div>
+                <div class="board-title">&#9678;球衣板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PTT_KickOff/index.html">
+                <div class="board-name">PTT_KickOff</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">資訊</div>
+                <div class="board-title">&#9678;goal!! PTT 踢球板 !!</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cf20a1a558a74',m:'BKiEUqWyXEa3bBALMlNFyhomtZ.wi5b68qEJUFFBQMk-1653467808-0-AXvtCkz1RTvA85y2ATJ/CtPeVXqyh1T21QqPwVeqlE6YQLX1Xn4bhh+0E4eyIW+gMEvYIGVgaVHFVnmo49p6BUeV0S4sRU+Pl0q3Wr3+JW7+fMIUupJnotkJQhWs89WqWA==',s:[0x7550e223ed,0xbcc77fc267],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

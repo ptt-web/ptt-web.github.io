@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] php語法 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="難得碰到一個小學生程度的 回饋一下
+基本上你FOR迴圈的第一行 $id=.....
+只是把一個字串set給$id 因為是字串 所以你怎麼寫都沒差
+問題是這個字串是要給mysql_query函式跑的
+簡單的說 就是他會把剛剛你SET的那個字串完全當成SQL來跑
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] php語法">
+<meta property="og:description" content="難得碰到一個小學生程度的 回饋一下
+基本上你FOR迴圈的第一行 $id=.....
+只是把一個字串set給$id 因為是字串 所以你怎麼寫都沒差
+問題是這個字串是要給mysql_query函式跑的
+簡單的說 就是他會把剛剛你SET的那個字串完全當成SQL來跑
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1253801847.A.9D4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">coldollsheep (加油加油^^)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] php語法</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Sep 24 22:17:26 2009</span></div>
+<span class="f2">※ 引述《windofsea (海風)》之銘言：
+</span><span class="f6">: 以下有一小段程式碼
+</span><span class="f6">: 想請問大大這樣用是否有錯誤
+</span><span class="f6">: &lt;?php
+</span><span class="f6">:         $key=$_GET[&#39;key&#39;];
+</span><span class="f6">:                 for($i=0;$i&lt;7;$i++)
+</span><span class="f6">:                 {
+</span><span class="f6">:                         $id=&#34;select * from $type[$i] where NUMBER=&#39;$key&#39;&#34;;
+</span><span class="f6">:                         $result=mysql_query($id);
+</span><span class="f6">:                         $rows=mysql_num_rows($result);
+</span><span class="f6">:                         if($rows=1)
+</span><span class="f6">:                         {
+</span><span class="f6">:                         break;
+</span><span class="f6">:                         }
+</span><span class="f6">:                 }
+</span><span class="f6">: ?&gt;
+</span><span class="f6">: 有請指教
+</span>
+
+難得碰到一個小學生程度的 回饋一下
+
+基本上你FOR迴圈的第一行 $id=.....
+只是把一個字串set給$id 因為是字串 所以你怎麼寫都沒差
+問題是這個字串是要給mysql_query函式跑的
+簡單的說 就是他會把剛剛你SET的那個字串完全當成SQL來跑
+
+//你可以先把mysql_query那行註解掉
+//然後echo 你的$id 看看其實是什麼
+
+順便一提 你的i 當然有帶到值 由以上可以解釋你錯的行數都是
+執行的那行在出錯 設字串那邊什麼責任都沒有
+是執行時才出錯~
+
+所以重點就變成一個 (=.=)
+$id = &#34;select * from {$type[i]} where NUMBER = &#39;{$key}&#39;&#34;;
+
+你的問題有兩個 單引跟雙引號要了解有什麼差別
+還有一個問題就是 不知道大括號很好用 哈 希望是正確的
+有錯高手幫個忙 謝謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.161.123.157
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">windofsea   </span><span class="f3 push-content">:受教了 小弟剛接觸php 有很多不懂 還望各位指教</span><span class="push-ipdatetime"> 09/25 09:36
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1253801847.A.9D4.html?cacheKey=2148-469788270&amp;offset=1397&amp;offset-sig=184ae999b834d72a0417a4d2319d6f243c7c7f3e" data-longpollurl="/v1/longpoll?id=89a3aa2265ad6eb893b64ae425d6a27b47557c0a" data-offset="1397"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4f6c7eaf54',m:'sD19GVW9hTXVnFzW7g0e63PWUHCYaf7xi_tHCZAbInI-1653467491-0-ARpzxRpwz5JmjdTrwk8wyOT8+/ZqmI4BLlxSxYr6eqF33xhuegDKl3sVq6Jo1r0FfElYwEXV+8eG+aztQAUq0DLj1ow1ZwxM53cOgsuBWOONADRFnooCIkiXyUTcdusSvd8DCJvYCfOXKy4I12y4mPaL2XR0GzKCdqlGPVtupc6k',s:[0x6181569b35,0xe9a5fb281e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

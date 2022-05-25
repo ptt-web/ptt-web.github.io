@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/DENNIS/index.html">
+                <div class="board-name">DENNIS</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">Hit.</div>
+                <div class="board-title">&#9678;夜貓DJ Dennis</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/HitFM/index.html">
+                <div class="board-name">HitFM</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">Hit.</div>
+                <div class="board-title">&#9678;北107.7中91.5南90.1宜97.1</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ICRT/index.html">
+                <div class="board-name">ICRT</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">ICR.</div>
+                <div class="board-title">&#9678;[ICRT] 臺北國際社區廣播電台</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/BCC_Midnight/index.html">
+                <div class="board-name">BCC_Midnight</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">中廣</div>
+                <div class="board-title">&#9678;[咪奈] 咪奈一開口就嚇死你！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/BCC_PCC/index.html">
+                <div class="board-name">BCC_PCC</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">中廣</div>
+                <div class="board-title">&#9678;[人來瘋] 大家一起瘋</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/DJ_Ken/index.html">
+                <div class="board-name">DJ_Ken</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">中廣</div>
+                <div class="board-title">&#9678;[DJ_Ken] Pray for Taiwan</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/VNCCU/index.html">
+                <div class="board-name">VNCCU</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">政大</div>
+                <div class="board-title">&#9678;政大之聲FM88.7/10月1日(一)開播!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/midnight/index.html">
+                <div class="board-name">midnight</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">飛碟</div>
+                <div class="board-title">&#9678;感恩.爆笑.疼惜.成長-夜光家族</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Seven_up/index.html">
+                <div class="board-name">Seven_up</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">飛碟</div>
+                <div class="board-title">&#9678;七  喜  7  U  P</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/UFO-Radio/index.html">
+                <div class="board-name">UFO-Radio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">飛碟</div>
+                <div class="board-title">&#9678;[飛碟電臺] 空中的夢想家</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/YoungDotx3/index.html">
+                <div class="board-name">YoungDotx3</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">飛碟</div>
+                <div class="board-title">&#9678;[青春點點點] 3月20日 我們TICC見</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PoliceRadio/index.html">
+                <div class="board-name">PoliceRadio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">警廣</div>
+                <div class="board-title">&#9678;警察廣播電臺 聽著也要關心服貿</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cd9d1692e80ad',m:'2L4rieVjUfewIJq9f8V0vcU_.4Jqw8fiqnL2nuK_N8g-1653466816-0-AQQt8Z9M1QKDlR1Y/SSOFV8bsWh578i7FoAW1DfE2I9a+JDIqJBjVlzfUMOBlRs5SU5JSe0BPB3D9LzIHjLCilOLRuj+Z2fXkdESWWQxHNy2H7b0vrWKoOSx4E7OaqU+ug==',s:[0x2254e6932b,0xfea3cd7c6d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

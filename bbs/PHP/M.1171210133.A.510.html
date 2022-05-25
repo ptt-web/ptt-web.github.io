@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] include(),echo()有改寫的必要嗎？ - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="像我的作法是：
+從資料庫抓取的時候。就設成一個陣列
+然後，利用迴圈的方式讓他去印。
+&lt;div class=&#39;guest_box&#39;&gt;
+        for($i=0;$i&lt;mysql_num_rows($array);$i++)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] include(),echo()有改寫的必要嗎？">
+<meta property="og:description" content="像我的作法是：
+從資料庫抓取的時候。就設成一個陣列
+然後，利用迴圈的方式讓他去印。
+&lt;div class=&#39;guest_box&#39;&gt;
+        for($i=0;$i&lt;mysql_num_rows($array);$i++)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1171210133.A.510.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">j87b0003 (路見不平拉屎填平)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] include(),echo()有改寫的必要嗎？</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Feb 12 00:08:51 2007</span></div>
+像我的作法是：
+從資料庫抓取的時候。就設成一個陣列
+然後，利用迴圈的方式讓他去印。
+&lt;div class=&#39;guest_box&#39;&gt;
+        for($i=0;$i&lt;mysql_num_rows($array);$i++)
+            echo &#34;&lt;div class=\&#39;&#34;.XXXXX.&#34;\&#39;&gt;&#34;.XXXXXX.&#34;&lt;/div&gt;&#34;;
+ &lt;/div&gt;
+好像不是樓主的要求Orz.....
+(有點久沒寫了，請多見諒)
+<span class="f2">※ 引述《grassboy2 (天才小胖子-活力花俏草兒)》之銘言：
+</span><span class="f6">: 嗯嗯…事情是這樣子的…
+</span><span class="f6">: 通常我們在寫留言板之類的程式，
+</span><span class="f6">: 都會從資料庫裡面抓出類似作者、日期、留言內容、ip………
+</span><span class="f6">: 很可能一次就是十幾個屬性…
+</span><span class="f6">: 然後日前又有類似
+</span><span class="f6">: 「php echo和printf儘量別太頻繁的使用，以節省IO的處理」的說法
+</span><span class="f6">: 那…請問有必要將下列的程式碼：
+</span><span class="f6">: &lt;div class=&#39;guest_box&#39;&gt;
+</span><span class="f6">:         &lt;div class=&#39;id&#39;&gt;&lt;?=$row[&#34;id&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;nickname&#39;&gt;&lt;?=$row[&#34;nickname&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;title&#39;&gt;&lt;?=$row[&#34;title&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;content&#39;&gt;&lt;?=$row[&#34;content&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;date&#39;&gt;&lt;?=$row[&#34;date&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;ip&#39;&gt;&lt;?=$row[&#34;ip&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">:         &lt;div class=&#39;reply&#39;&gt;&lt;?=$row[&#34;reply&#34;]?&gt;&lt;/div&gt;
+</span><span class="f6">: &lt;/div&gt;
+</span><span class="f6">: 改寫成
+</span><span class="f6">: &lt;?
+</span><span class="f6">: printf(
+</span><span class="f6">:         &#34;&lt;div class=&#39;guest_box&#39;&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;id&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;nickname&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;title&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;content&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;date&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;ip&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:           &#34;&lt;div class=&#39;reply&#39;&gt;%s&lt;/div&gt;\r\n&#34;.
+</span><span class="f6">:         &#34;&lt;/div&gt;&#34;,
+</span><span class="f6">:         $row[&#34;id&#34;], $row[&#34;nickname&#34;], $row[&#34;title&#34;], $row[&#34;content&#34;],
+</span><span class="f6">:         $row[&#34;date&#34;], $row[&#34;ip&#34;], $row[&#34;reply&#34;]);
+</span><span class="f6">: ?&gt;
+</span><span class="f6">: 類似這樣只有一個printf嗎？
+</span><span class="f6">: 感覺前者比較值觀…但後者print的數量是前者的七分之一…看起來比較快@@~
+</span><span class="f6">: 還是說這兩種寫法效率實際上都是一樣的？
+</span><span class="f6">: -------------------------------------------------
+</span><span class="f6">: 另一個問題…就是我們在開發php的網站時，
+</span><span class="f6">: 常常為了修改方便…同個功能的php function只寫一份
+</span><span class="f6">: 然後讓所有使用到的php include進來…
+</span><span class="f6">: 有時候每一個php都要include進來4, 5份另外的php檔…
+</span><span class="f6">: 這樣不是每次我進去某個php後…
+</span><span class="f6">: server要再抓另外的4, 5份php…
+</span><span class="f6">: 那…如果我寫一支程式…去處理我的php檔…
+</span><span class="f6">: 裡面遇到include的指令，就把指定的檔案include進來…
+</span><span class="f6">: 不要等到別人連上來再去抓include的資料
+</span><span class="f6">: 這樣可能會讓所有php檔都變大…而且要修改的時候很不方便…
+</span><span class="f6">: 不過如果我把開發時的原始碼保留，
+</span><span class="f6">: 等到網站完成的時候，用程式產生所有已include的php版本
+</span><span class="f6">: 那…這樣是不是可以節省整個效率呢？
+</span><span class="f6">: 還是說…這樣作沒什麼意義啊^^&#34;
+</span><span class="f6">: 先謝謝板上的高手們花時間看完這篇囉m(_ _)m
+</span>
+--
+<span class="f4">╬═════════◥</span><span class="f0">           </span>  <span class="f0 hl"> 風 沒有方向   雨 沒有落點</span>
+<span class="f4">║</span> <span class="f2 hl">        </span><span class="f0 hl">══</span><span class="f2 hl">  </span><span class="f3 b4 hl">●</span><span class="f3 hl"> </span><span class="f4">║</span>       <span class="hl"> 既不入塵世            何處惹塵埃</span>
+<span class="f4 hl">╬ </span><span class="f0 hl">╦╩╦═══╬</span><span class="f2 hl">   </span><span class="f4">║        </span><span class="f0 hl"> 龍吟海嘯皆自得  騰風起雲而無拘</span>
+   ║  ║   ║ ║<span class="f6 hl"> </span><span class="f2 hl">  </span><span class="f4">║</span><span class="f2 hl">     </span><span class="hl">翔</span><span class="f0 hl">於</span>天際<span class="f0 hl">而</span><span class="hl">悠遊大地</span>  <span class="hl">風</span><span class="f0 hl">過</span>眾生<span class="f0 hl">而</span><span class="hl">無拘紅塵</span>
+<span class="f2 hl">   </span>║  ║<span class="f2 hl"> </span>║╠ ║<span class="f2 hl">   </span><span class="f4 hl">║            </span><span class="hl">雲</span>浮天際於飄蕩  <span class="hl">龍</span>游海中至無拘
+<span class="f2 hl">   </span>╚═╬ ╩╩ ╚ <span class="f4 hl">╬╝                 </span><span class="hl">翔</span>飛無處而悠遊  <span class="hl">風</span>吹大地之自在 
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.62.35.67
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">grassboy2</span><span class="f3 push-content">:喔喔!!!這也是一個方式耶~謝謝囉~~</span><span class="push-ipdatetime"> 02/12 02:07
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1171210133.A.510.html?cacheKey=2148-469794836&amp;offset=3352&amp;offset-sig=cc0e02071e06b5b934fdfea703506c677380c4f2" data-longpollurl="/v1/longpoll?id=4084c2b9807975f3037c8b9e9100c0de98bb3c94" data-offset="3352"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4b2cc2afcd',m:'scZ4xrGveiIkqi1SIU5tlJwLwTCJtnzEa0Lk9muyIWs-1653467491-0-ATXYx19IpBP1410eAqFs52iZBbGRf3HumNG/ZhsgSJ9ZYQSlXiDQMzeuvUjp4ZuRRp9YiiGy7iSul+Ar9AUHJOI/NXB9TxulVlRrimBYKutZapflh4PM+0BRaytYEFqht/Y1mHkyImR03CC7ffnJ2+u7uFpPOFeMmPEc6kmKesad',s:[0xd5a84225a9,0x57d6fc4dcf],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

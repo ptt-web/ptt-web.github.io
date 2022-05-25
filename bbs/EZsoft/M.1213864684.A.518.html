@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 虛擬記憶體該怎麼設定? - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="其實在98的時代，記憶體很缺，我在爬文尋找到的最佳化是：
+實體記憶體的1.5~2.5倍，而超過512之後就不要再更大了，
+因為暈倒死記憶體釋放的問題。
+然而，你會發現，在XP安裝完畢後，「有時候」系統也會這樣設定喔。
+但是現在我們面臨的是高記憶體，例如隨便一台電腦就實體1~2G，
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 虛擬記憶體該怎麼設定?">
+<meta property="og:description" content="其實在98的時代，記憶體很缺，我在爬文尋找到的最佳化是：
+實體記憶體的1.5~2.5倍，而超過512之後就不要再更大了，
+因為暈倒死記憶體釋放的問題。
+然而，你會發現，在XP安裝完畢後，「有時候」系統也會這樣設定喔。
+但是現在我們面臨的是高記憶體，例如隨便一台電腦就實體1~2G，
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1213864684.A.518.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ddx (滴滴叉)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 虛擬記憶體該怎麼設定?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun 19 16:38:02 2008</span></div>
+<span class="f2">※ 引述《luke90512 (我不是好人)》之銘言：
+</span>
+其實在98的時代，記憶體很缺，我在爬文尋找到的最佳化是：
+實體記憶體的1.5~2.5倍，而超過512之後就不要再更大了，
+因為暈倒死記憶體釋放的問題。
+
+然而，你會發現，在XP安裝完畢後，「有時候」系統也會這樣設定喔。
+
+但是現在我們面臨的是高記憶體，例如隨便一台電腦就實體1~2G，
+或者碰到Vista開機就花去將近900mb的實體記憶體，
+這個新的Range該怎麼抓，其實我還是抓1.5~2.5倍（因為我要玩魔獸XD），
+XP就不用了，可以關掉Swap跑很順。
+
+有種說法是全掛實體跑比較快，我非常同意，但在遊戲的感覺就有所差別，
+例如魔獸吃550mb實體，Vista吃900+記憶體，雖然我總數有2000，依然會
+出現記憶體不足的情況，所以我把虛擬掛回來了(1.5~2.5)。
+的確順一些，但偶然發現，記憶體釋放依然很差。
+
+雖然有種說法是，Swap是用來堆放非經常性使用的程序，設個16mb讓這些
+程序自動踢跑，但就我的經驗，Vista還是會出線記憶體不足的現象。
+
+綜合以上，我推薦：
+XP.1G以內用1.5~2.5公式
+XP.1G以上掛1G
+XP.2G以上掛0(無Swap)
+Vista2G以下掛1G~2G
+
+當然，我並沒有把雙通道以及雙核心考慮進去。
+
+懇請高手繼續討論...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 59.126.54.85
+<span class="f2">※ 編輯: ddx             來自: 59.126.54.85         (06/19 16:39)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zop</span><span class="f3 push-content">:最好不要設無swap....</span><span class="push-ipdatetime"> 06/19 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yukitowu</span><span class="f3 push-content">:推樓上 這個是有測試過的=3=</span><span class="push-ipdatetime"> 06/19 16:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ddx</span><span class="f3 push-content">:如果是XP，我在2G的情況運作相當良好。</span><span class="push-ipdatetime"> 06/19 17:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ddx</span><span class="f3 push-content">:其實還有一點，關於硬碟做虛擬記憶體的效率...所以我想不用多.</span><span class="push-ipdatetime"> 06/19 17:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JFCC</span><span class="f3 push-content">:我比較想問的是 都跑哪些程式?</span><span class="push-ipdatetime"> 06/19 17:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JFCC</span><span class="f3 push-content">:應該沒有跑道大程式吧....</span><span class="push-ipdatetime"> 06/19 17:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JFCC</span><span class="f3 push-content">:還有常駐程式的量 也應該要考慮在裡面</span><span class="push-ipdatetime"> 06/19 17:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JFCC</span><span class="f3 push-content">:虛擬記憶體的出發點不是效率阿 是有些大型的程式 需要用來</span><span class="push-ipdatetime"> 06/19 17:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JFCC</span><span class="f3 push-content">:置換 有些遊戲也是 當沒有的話很容易出錯 有些甚至不給執行</span><span class="push-ipdatetime"> 06/19 17:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xvid</span><span class="f3 push-content">:如果virtual memory可以在這一篇道盡 微軟可以關了</span><span class="push-ipdatetime"> 06/19 17:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xvid</span><span class="f3 push-content">:用到vm來不及swap in 也表示實體記憶體不足 該升級電腦了</span><span class="push-ipdatetime"> 06/19 17:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chiwa</span><span class="f3 push-content">:當記憶體很多的時候到底要不要設swap，我覺得就看使用者吧</span><span class="push-ipdatetime"> 06/19 18:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chiwa</span><span class="f3 push-content">:沒有絕對要或不要，像我的使用狀況，沒設也不會有事</span><span class="push-ipdatetime"> 06/19 18:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lordmi</span><span class="f3 push-content">:這種by user-case的設問，最保險的答案當然是什麼都不要調</span><span class="push-ipdatetime"> 06/19 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">egguitar</span><span class="f3 push-content">:有些程式不設不能跑阿!!!</span><span class="push-ipdatetime"> 06/19 20:50
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1213864684.A.518.html?cacheKey=2148-738951331&amp;offset=2730&amp;offset-sig=928a163931547bb5a673d1c70c517f28d08c1d70" data-longpollurl="/v1/longpoll?id=fbdbe55ed703c2c78fa7ee712b0451265c8a3f28" data-offset="2730"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb944ee8204a',m:'Hbe6GkCsQHD5XA.JLa9fUKUGEY_Hr0LPKw6F2kpgvZM-1653466888-0-ASnmMzcO/bbxOpYJMvKh6J0yo9rgyf8nlYX3adiPhF/IQJPTwsw3+4lGTdYz+fA1tRM/3iiOUNnqb1233RfIL8AicXPTSfJdsb48d6/B3s4zPU34LdCeqXFyEUh/BpdMKBykrqyom/5kUGrJxxtzHrN/6Uh7Iass+pOIU6It4f4e',s:[0xbdd8237b40,0x86555a9510],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

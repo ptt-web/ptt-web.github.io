@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 討論區如何判定已看過/未看過的文章 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="因應老闆要求，寫一個公司內部討論用簡單的討論區
+沒考慮PHPBB是因為還要結合現在原有的員工資料=.=
+目前卡在有新文章(新回應)如何在標題就提醒使用者有更新
+如果在資料庫開一個table去紀錄哪些文章有看過
+有更新的話就把該篇之前的流覽紀錄刪掉，這個方法感覺好像很瞎
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 討論區如何判定已看過/未看過的文章">
+<meta property="og:description" content="因應老闆要求，寫一個公司內部討論用簡單的討論區
+沒考慮PHPBB是因為還要結合現在原有的員工資料=.=
+目前卡在有新文章(新回應)如何在標題就提醒使用者有更新
+如果在資料庫開一個table去紀錄哪些文章有看過
+有更新的話就把該篇之前的流覽紀錄刪掉，這個方法感覺好像很瞎
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1263434464.A.E12.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">keisuke08 (車市回溫了嗎?回溫在哪裡)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 討論區如何判定已看過/未看過的文章</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jan 14 10:01:00 2010</span></div>
+
+因應老闆要求，寫一個公司內部討論用簡單的討論區
+
+沒考慮PHPBB是因為還要結合現在原有的員工資料=.=
+
+目前卡在有新文章(新回應)如何在標題就提醒使用者有更新
+如果在資料庫開一個table去紀錄哪些文章有看過
+有更新的話就把該篇之前的流覽紀錄刪掉，這個方法感覺好像很瞎
+
+希望各位先進給個方向:)
+
+--
+<span class="b7">    ◣</span>◥<span class="f0"> </span><span class="f3 hl">◤◢</span><span class="f0 b7 hl">   </span><span class="b7">◣</span><span class="f3 b7">▁◢</span><span class="f0 b7">      </span><span class="b7">                      </span><span class="f3 b2 hl"> 請‧尊‧重‧生‧命</span><span class="f6 b2"> </span><span class="b7">          </span>
+<span class="b7">   </span>◤    <span class="f3 hl">◢◤</span><span class="f0 b7 hl">   </span><span class="b7"> </span><span class="f0 b3">‧</span><span class="f0 b7">‧</span><span class="f3 b7">▏</span><span class="b7">     ◥</span><span class="b7">  </span>◤<span class="b7">    </span>     <span class="f3 hl">       </span><span class="f1 hl">以 認 養 代 替 購 買 </span>       <span class="b7"> </span>
+<span class="b7">  </span>       <span class="f3 hl">◤◢</span><span class="f0 b7 hl"> </span><span class="b6"> </span><span class="f2 b7">▄</span><span class="f2 b3">▄</span><span class="f2">▄</span><span class="f2 b7">▄</span><span class="b6"> </span><span class="b7">     </span><span class="f0 hl">‧</span><span class="f3 hl">‧</span><span class="b7">     </span>                                         <span class="b7"> </span>
+<span class="b7"> </span>        <span class="f3 hl">◢◤</span><span class="f0 b7 hl"> </span><span class="b6"> </span><span class="b1 hl">請領養我</span><span class="b6"> </span><span class="b7">  </span><span class="b6"> </span><span class="f0 b2 hl"> </span><span class="f2">▄</span><span class="f2 b2">   </span><span class="f2">▄</span><span class="b6"> </span><span class="b7">  </span>      <span class="f3 hl">  </span><span class="f1 hl"> </span>   <span class="f1 hl">以 絕 育 代 替 撲 殺</span>        <span class="b7"> </span>
+<span class="b7"> </span>        <span class="f3 hl">◤◢</span><span class="b7"> </span><span class="b6"> </span><span class="b2 hl">        </span><span class="b6"> </span><span class="b7">  </span><span class="b6"> </span><span class="b1 hl">請領養我</span><span class="f6 b6">▄</span><span class="b7"> </span>▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+<span class="b3">                           ψQSWEET                                             </span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 211.21.113.189
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iloveelva</span><span class="f3 push-content">:感覺在資料表裏面見一個欄位 是否更新 0/1 有更新文章</span><span class="push-ipdatetime"> 01/14 11:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">iloveelva</span><span class="f3 push-content">:再把 資料表裡面欄位由0-&gt;1</span><span class="push-ipdatetime"> 01/14 11:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">reflynet</span><span class="f3 push-content">:紀錄使用者上次登入timestamp,跟最新文章timestamp比對</span><span class="push-ipdatetime"> 01/14 14:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:樓上的方法不好，會有問題</span><span class="push-ipdatetime"> 01/14 14:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:如果是針對每個USER，你的方式差不多了</span><span class="push-ipdatetime"> 01/14 14:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">keisuke08</span><span class="f3 push-content">:喔喔，紀錄login時間看起來挺OK的，先用看看，感恩</span><span class="push-ipdatetime"> 01/14 14:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:他LOGIN之前的文章 不代表已經看過了</span><span class="push-ipdatetime"> 01/14 16:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:亂想:一個使用者給他一個特定的目錄,然後把讀過文章的id用檔</span><span class="push-ipdatetime"> 01/14 16:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:名放到那個目錄,一個使用者三天看的文章頂多1000篇..</span><span class="push-ipdatetime"> 01/14 18:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:再用 find 把太舊的檔案刪掉就好了..</span><span class="push-ipdatetime"> 01/14 18:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:不過這樣可能會讓 inode 很快就用完了..</span><span class="push-ipdatetime"> 01/14 18:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kylekai</span><span class="f3 push-content">:Whynot phpbb3 ?... phpbb3 你可以自己寫auth模組...</span><span class="push-ipdatetime"> 01/15 15:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">appleboy46</span><span class="f3 push-content">:我覺得你整合 PHPBB3 跟你自己花時間寫，前者時間短</span><span class="push-ipdatetime"> 01/16 14:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">appleboy46</span><span class="f3 push-content">:如果你功力夠，我想前者比較適合喔</span><span class="push-ipdatetime"> 01/16 14:59
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1263434464.A.E12.html?cacheKey=2148-469798210&amp;offset=2924&amp;offset-sig=0821aed72f659790232bfba35a35a4fcedfc5e4e" data-longpollurl="/v1/longpoll?id=30c31619e694e5d2a91d1ab8796f2c5d003ea44e" data-offset="2924"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea514dbdafd0',m:'Wo51DvbW4JHbkhP3pvzy3L0kueH.yVz23_fupqPiJlg-1653467492-0-AWZuTf5rIkn5JjPyQOMv4BeSS2N4p6KUz+bibd3NTeUOZhKK1S4wLGmOA/pDKT5CO4I+llzyOfDYSFROE3hUkrgFIN3kbyXUYCx/wwD80GGkSOP8FE4XmnyrB3y0FRyo8W1ElgFzZZJOrABMcgMeTO/pXecfuV+3J8lDypPtRFj9',s:[0xe5132da733,0x8caf9eaee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

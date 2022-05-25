@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:coldollsheep - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=3&amp;q=author%3Acoldollsheep">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Acoldollsheep">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Acoldollsheep">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:coldollsheep" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1547511328.A.436.html">[請益] PHP 中SQL寫法?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP&#43;%E4%B8%ADSQL%E5%AF%AB%E6%B3%95%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1421997312.A.0B9.html">[請益] PHP 使用cache</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP&#43;%E4%BD%BF%E7%94%A8cache">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1405417690.A.8C3.html">[請益] html5的websocket</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;html5%E7%9A%84websocket">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1403864722.A.AFE.html">[分享] 自製快速建立CRUD的小工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%88%86%E4%BA%AB%5D&#43;%E8%87%AA%E8%A3%BD%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8BCRUD%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1383726946.A.12A.html">[請益] function OR class</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;function&#43;OR&#43;class">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1380078078.A.5F9.html">[請益] 明明不是static卻如此使用!?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%98%8E%E6%98%8E%E4%B8%8D%E6%98%AFstatic%E5%8D%BB%E5%A6%82%E6%AD%A4%E4%BD%BF%E7%94%A8%21%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1366354988.A.642.html">[請益] ob_get_level的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;ob_get_level%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1354244109.A.DC9.html">[請益] MYSQL 單引號 小數點</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;MYSQL&#43;%E5%96%AE%E5%BC%95%E8%99%9F&#43;%E5%B0%8F%E6%95%B8%E9%BB%9E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1342487710.A.840.html">[請益] 沒有key的陣列是如何去利用?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%B2%92%E6%9C%89key%E7%9A%84%E9%99%A3%E5%88%97%E6%98%AF%E5%A6%82%E4%BD%95%E5%8E%BB%E5%88%A9%E7%94%A8%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1338177567.A.B5F.html">Re: [請益] Internal Server Error cakephp htaccess</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Internal&#43;Server&#43;Error&#43;cakephp&#43;htaccess">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1337938378.A.DEF.html">[請益] Internal Server Error cakephp htaccess</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Internal&#43;Server&#43;Error&#43;cakephp&#43;htaccess">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1336365423.A.164.html">[請益] PHP5.3 連mssql</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP5.3&#43;%E9%80%A3mssql">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1334208830.A.BB8.html">[請益] GET 變數  設定的問題嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;GET&#43;%E8%AE%8A%E6%95%B8&#43;&#43;%E8%A8%AD%E5%AE%9A%E7%9A%84%E5%95%8F%E9%A1%8C%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1332572955.A.EAE.html">Re: [請益] 報名系統，有關衝堂的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A0%B1%E5%90%8D%E7%B3%BB%E7%B5%B1%EF%BC%8C%E6%9C%89%E9%97%9C%E8%A1%9D%E5%A0%82%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1332569650.A.4A9.html">[請益] 遞迴 array_map array_walk</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%81%9E%E8%BF%B4&#43;array_map&#43;array_walk">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1332256691.A.237.html">[請益] 台灣自製!!!CMS~~~(有這種東西嗎?)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%8F%B0%E7%81%A3%E8%87%AA%E8%A3%BD%21%21%21CMS~~~%28%E6%9C%89%E9%80%99%E7%A8%AE%E6%9D%B1%E8%A5%BF%E5%97%8E%3F%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1314541646.A.41D.html">[請益] include_once的相關問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;include_once%E7%9A%84%E7%9B%B8%E9%97%9C%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1306656446.A.C20.html">facebook按讚推圖</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3Afacebook%E6%8C%89%E8%AE%9A%E6%8E%A8%E5%9C%96">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1303176975.A.ACD.html">[請益] 推薦縮圖的方式</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%8E%A8%E8%96%A6%E7%B8%AE%E5%9C%96%E7%9A%84%E6%96%B9%E5%BC%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1291717828.A.19E.html">[請益] 不確定是不是UTF8造成亂碼問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">coldollsheep</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%98%AF%E4%B8%8D%E6%98%AFUTF8%E9%80%A0%E6%88%90%E4%BA%82%E7%A2%BC%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acoldollsheep">搜尋看板內 coldollsheep 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4f6de4f8eb',m:'a5pkoJnR9EcmjG9PHsB5BPT4DhnBjlH4tNBTeHdDNUc-1653467491-0-AWtet5ri5JcKS3pMXscQyaRZpYcemPi6Nl+vHi413bS19OqKU/oR4SxayTGv87Lc6pvfrPMGJQSqXxe7p+A2eLUQzos7JZEGpdmDinzYnIe0RLMjGdn1ahDNWwxd0WAQvKeIk12WRaYS8psHNo2CgU4Ki8kb9lRsX0DNiN72onFR',s:[0xd5f3bb6cfa,0x0ff170b590],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

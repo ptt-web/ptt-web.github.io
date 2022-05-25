@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] CodeIgniter + ion_auth登入插件問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這問題，你觀察到的結果是正確的。
+我們來看一下CI處理session的原始碼，其中每n分鐘更新session的部份：
+// We only update the session every five minutes by default
+if (($this-&gt;userdata[&#39;last_activity&#39;] + $this-&gt;sess_time_to_update)
+    &gt;= $this-&gt;now)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] CodeIgniter + ion_auth登入插件問題">
+<meta property="og:description" content="這問題，你觀察到的結果是正確的。
+我們來看一下CI處理session的原始碼，其中每n分鐘更新session的部份：
+// We only update the session every five minutes by default
+if (($this-&gt;userdata[&#39;last_activity&#39;] + $this-&gt;sess_time_to_update)
+    &gt;= $this-&gt;now)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1345746482.A.640.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">StringR (MoO～)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] CodeIgniter + ion_auth登入插件問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Aug 24 02:27:59 2012</span></div>
+<span class="f2">※ 引述《rockmanalpha (KIN)》之銘言：
+</span><span class="f6">: 正常來說SESSION每 5分鐘(300) 會更新SESSION的上次活動時間
+</span><span class="f6">: 然後當這個時間與現在時間作比較 超過 SESSION有效時間 2小時(7200)
+</span><span class="f6">: 就視作SESSION無效 但很奇怪的是 現在我用ion_auth 無論系統閒置與否
+</span><span class="f6">: 在5分鐘後 即 sess_time_to_update =300 CI會幫我產生一個新的SESSIONID
+</span><span class="f6">: 然後我原本的SESSION就無效了 但是舊的活動時間有更新到 = = 可是我明明設定了
+</span><span class="f6">: SESSION有效時間是7200呀 請問各位板友有用過這個framework跟插件嗎 感謝
+</span>
+這問題，你觀察到的結果是正確的。
+
+我們來看一下CI處理session的原始碼，其中每n分鐘更新session的部份：
+
+// We only update the session every five minutes by default
+if (($this-&gt;userdata[&#39;last_activity&#39;] + $this-&gt;sess_time_to_update)
+    &gt;= $this-&gt;now)
+{
+  return;
+}
+
+// Save the old session id so we know which record to
+// update in the database if we need it
+$old_sessid = $this-&gt;userdata[&#39;session_id&#39;];
+$new_sessid = &#39;&#39;;
+while (strlen($new_sessid) &lt; 32)
+{
+  $new_sessid .= mt_rand(0, mt_getrandmax());
+}
+
+我只節錄前面一點點，第一個IF檢查了這個session的最後活動時間(last_activity)，
+格式是unix timestamp，他會紀錄你上次產生這個session的時間。
+
+如果last_activity + session更新時間，大於現在的話，表示這個session產生到現在
+還沒超過5分鐘，直接返回，啥事都不做。
+
+但是如果超過5分鐘的話，你看他的註解，是保存舊資料，換一個新的session_id。
+
+所以你觀察到每5分鐘，就會重新產生一個session id，這沒問題，符合設計！
+
+=========================================================================
+
+再來我們來看過期的部份：
+
+// Is the session current?
+if (($session[&#39;last_activity&#39;] + $this-&gt;sess_expiration) &lt; $this-&gt;now)
+{
+  $this-&gt;sess_destroy();
+  return FALSE;
+}
+
+這個IF很明瞭了，last_activity + 過期時間，如果小於現在時間，表示已經超過
+7200秒了，那麼就砍掉這個session。
+
+所以，如果你每5分鐘就重新整理一次，兩小時的過期時間，也往後推遲5分鐘！XD
+
+單看字面上，你可能會以為是說，從本session產生後的兩小時後過期，但是其實不是，
+CI的session expire是指距離上次活動之後，閒置超過兩小時，這才算過期。
+
+所以你的觀察的結果正確，你一直重新整理，就是不會過期的啦！XD
+
+CI的session是server端產生一個session id，然後經過編碼後，在client端寫入一個
+對應目前session id的cookies。
+
+當client連進來的時候，先讀取client端的cookies，查找對應的session_id，如果你
+觀察過client端的cookies，你只會得到一長串編碼過的資訊。
+
+CI的session過期跟更新這部份，單看字面說明，有時候會有錯誤的理解，翻原始碼來
+看最準，至於ion_auth的話，小弟沒用過，我用內建的session就很很好用了，這部份
+就幫不上忙了。
+
+希望這篇可以幫助你瞭解CI是怎麼處理session的。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 36.234.10.218
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1345746482.A.640.html?cacheKey=2148-469793739&amp;offset=2619&amp;offset-sig=3763ba27736b7c8f6e93db22b19b9da106f6d9d9" data-longpollurl="/v1/longpoll?id=70e390a9c71907d750f598d0e92a5fb10a6d7875" data-offset="2619"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea15ba84af54',m:'0.50wCZ_GyPNl5Ge43K5B6xJliOdmXtbTnGppv3ceY4-1653467482-0-AcHuGJ7SzDvfnkwQhVFwnAMxvTFP3R0TbCQ8iUKJ4b3k0J3Mkx7ts1HCakr7l6AqMVR1rVQneWHvTymojGpx4mtjNT05kw+b3VEm9egqA0WYhBR/oZpwwCZShKT3GEYIaMdkc0b6cBr644e/M9ku7NLbX6TAf671yhMR9KOV7GcP',s:[0xc947fc2196,0x9be8f57c6d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題]迴圈產生表格的疑問 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="不見得要一堆判斷唷
+&lt;?php
+$colsOfRow=3;
+/***
+假設 $item 的元素索引是由 0 遞增
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題]迴圈產生表格的疑問">
+<meta property="og:description" content="不見得要一堆判斷唷
+&lt;?php
+$colsOfRow=3;
+/***
+假設 $item 的元素索引是由 0 遞增
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1190549723.A.AA4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710ce96459df8a56'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">dinos (守護神)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題]迴圈產生表格的疑問</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Sep 23 20:15:20 2007</span></div>
+<span class="f2">※ 引述《roga (凝視)》之銘言：
+</span><span class="f6">: ※ 引述《hotricky (陽光網球)》之銘言：
+</span><span class="f6">: : 最近寫php如相本的程式發現
+</span><span class="f6">: : 當我想將資料一筆筆以表格方式秀出來時
+</span><span class="f6">: : 都是由上往下一直生表格，請問有什麼辦法
+</span><span class="f6">: : 可以控制表格廻圈產生時，是可依照由左而右
+</span><span class="f6">: : 的順序產生呢?
+</span><span class="f6">: : 例如：
+</span><span class="f6">: :          ★   ★   ★
+</span><span class="f6">: :          ★   ★   ★
+</span><span class="f6">: :          .....
+</span><span class="f6">: : 一行生出三格後自動換行產生這樣的順序
+</span><span class="f6">: : = = 或是簡單的問 無名相本 那樣的相本選單怎麼
+</span><span class="f6">: : 弄的也行…
+</span><span class="f6">: : 希望各位高手提供意見 謝謝喔^^
+</span><span class="f6">:         當然是用 CSS 去排比較快啊 XD
+</span><span class="f6">:         如果是用 table 排，要多很多次判斷和運算，還有多很多字元。
+</span><span class="f6">:         for($i = 1 ; $i&lt;= 1000 ; $i++) {   //假設有 1000 個 item
+</span><span class="f6">:         if($i % 4 == 1)                    // 多第一次運算&amp;判斷，4個col換行
+</span><span class="f6">:             echo &#39;&lt;tr&gt;&#39;;
+</span><span class="f6">:             echo &#39;&lt;td&gt;item&lt;/td&gt;&#39;;
+</span><span class="f6">:         if($i %4 == 0)                     // 多第二次運算 &amp; 判斷
+</span><span class="f6">:             echo &#39;&lt;/tr&gt;&#39;;
+</span><span class="f6">:         }
+</span><span class="f6">:         迴圈跑一千次，就多兩千次判斷+兩千次餘數運算，浪費啊...
+</span><span class="f6">:         而且還有一種問題要處理，就是當總數不等於欄位的倍數的時候，
+</span><span class="f6">:         你的頭會痛死 XD
+</span><span class="f6">:         不過現在大家 CPU 都很快，所以其實也沒差..多些一些 if else 就是了 XD
+</span>不見得要一堆判斷唷
+
+&lt;?php
+$colsOfRow=3;
+/***
+假設 $item 的元素索引是由 0 遞增
+***/
+$total=count($item);
+if(($n=$total%$colsOfRow)!=0){
+  for($i=0;$i&lt;$n;$i++){array_push($item,&#39;&#39;);
+}
+for($i=0;$i&lt;$total;$i+=$colsOfRow){
+?&gt;
+&lt;tr&gt;
+&lt;?php
+  for($j=0;$j&lt;$colsOfRow;$j++){
+?&gt;
+   &lt;td&gt;&lt;?php echo $item[$i*$colsOfRow+$j]; ?&gt;&lt;/td&gt;
+&lt;?php
+  }
+?&gt;
+&lt;/tr&gt;
+&lt;?php
+}
+?&gt;
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.113.158.15
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1190549723.A.AA4.html?cacheKey=2149-475783680&amp;offset=1647&amp;offset-sig=1299fe70f39b0d0f94e3e2f6f478f5fe55a90074" data-longpollurl="/v1/longpoll?id=addf8aeb413ffae0b25cb7e5b111b64c137d43a6" data-offset="1647"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce96459df8a56',m:'NTg8dwrCVVWFBX37d_5mf3DO5jHgUjxFEdO0Lvpxxbo-1653467454-0-ATRHNpFdPKTZEc5vpdq04xKlG+xjPpBW+WyIK/kvroqX2RbwLsqOwoSUJV7li0FNXUikkVkBFuU4JO3typKo2JchyaV92LoQ6hZjM+dfYJTKo+6DdP3x+58f75N0aB92XhL+ZWT+5FbEKUHO9zPDOHdDJExmQ09uRuLPm5fNrTg6',s:[0x6b9e4efe26,0x0e5bf01dee],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

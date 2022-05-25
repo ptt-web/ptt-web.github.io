@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 請問如何排序？很困難… - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="    你的資料應該很難純以排序來處理，
+    因為元素彼此之間不是只有次序，還有從屬關係，
+    所謂一般性的排序指的是「拿起兩個元素依某個規則判斷次序，然後調整其位置」
+    如果你的資料無法在兩個元素之間有絕對性的次序判斷，
+    就不太有辦法純以排序來解。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 請問如何排序？很困難…">
+<meta property="og:description" content="    你的資料應該很難純以排序來處理，
+    因為元素彼此之間不是只有次序，還有從屬關係，
+    所謂一般性的排序指的是「拿起兩個元素依某個規則判斷次序，然後調整其位置」
+    如果你的資料無法在兩個元素之間有絕對性的次序判斷，
+    就不太有辦法純以排序來解。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1325355295.A.76A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">gpmm (銀色)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 請問如何排序？很困難…</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jan  1 02:14:52 2012</span></div>
+<span class="f2">※ 引述《dowbatw (Dowbatw)》之銘言：
+</span><span class="f6">: 如蒙解惑，不勝感激！
+</span>
+
+    你的資料應該很難純以排序來處理，
+    因為元素彼此之間不是只有次序，還有從屬關係，
+
+    所謂一般性的排序指的是「拿起兩個元素依某個規則判斷次序，然後調整其位置」
+
+    如果你的資料無法在兩個元素之間有絕對性的次序判斷，
+    就不太有辦法純以排序來解。
+
+    回歸正題，我寫了一個相鄰排序的解，可以解你給的資料
+    （因為你的資料正好是相鄰可排序的特例）
+
+    比較函式：
+
+    function cmpare ($a, $b) {
+
+      $ab = isset ($a[&#39;belong&#39;]);
+      $bb = isset ($b[&#39;belong&#39;]);
+
+      // (! $ab &amp;&amp; $bb) || (! $ab &amp;&amp; ! $bb)
+      if (! $ab)
+        return 0;
+
+      else if ($ab &amp;&amp; ! $bb)
+        return 1;
+
+      // $ab &amp;&amp; $bb
+      else {
+
+        if ($a[&#39;belong&#39;] == $b[&#39;belong&#39;])
+          return $a[&#39;order&#39;] &lt; $b[&#39;order&#39;] ? 0 : 1;
+
+        else if ($b[&#39;label&#39;] == $a[&#39;belong&#39;])
+          return 1;
+
+        return 0;
+      }
+    }
+
+
+    假設你給的資料陣列變數是 $set，以 compare 做排序：
+
+    $set  = array_values ($set);
+    $size = count ($set);
+
+    $new = Array ();
+
+    for ($i=0; $i&lt;$size; $i++) {
+
+      if (isset ($set[$i + 1]) &amp;&amp; cmpare ($set[$i], $set[$i + 1])) {
+        $tmp = $set[$i];
+        $set[$i] = $set[$i + 1];
+        $set[$i + 1] = $tmp;
+      }
+
+      $new[$set[$i][&#39;label&#39;]] = $set[$i];
+    }
+
+
+    輸出：
+
+    var_dump ($new);
+
+
+    如我一開始所說，這是特例解，
+    假設你的資料不在此「相鄰可排序」的特例範圍內就要另外再做處理了…
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 114.45.249.65
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">gpmm</span><span class="f3 push-content">:補充一下，這也是為什麼不能直接 uasort ($set, &#39;compare&#39;)</span><span class="push-ipdatetime"> 01/01 02:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:謝謝前輩辛勞，經過我shuffle試驗，似乎沒辦法一開始就把</span><span class="push-ipdatetime"> 01/01 13:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:「最高層級」者移到最左邊，可能是因為用bubblesort結果？</span><span class="push-ipdatetime"> 01/01 13:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:我再試試看</span><span class="push-ipdatetime"> 01/01 13:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:  　　　　　更正：左半部</span><span class="push-ipdatetime"> 01/01 14:33
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1325355295.A.76A.html?cacheKey=2148-469786235&amp;offset=2083&amp;offset-sig=de343e1b9ca508d196a090c3d638823c1a3ed96d" data-longpollurl="/v1/longpoll?id=405a6b135b88edd0b6b04a0f5aebfbd320c0e9ca" data-offset="2083"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea65987faf60',m:'Yx8xYmzBh_4vLyK4oxOGJAFez9_9DiPqm_NUrCwaKaY-1653467495-0-AaZpRRcvhh2gKn0bE5BxtWbEJ+nNdfu64jY57R4cECVUq71LFQx/JMsPCA98Cu45MAEzcK/aUBAHO4h2cpi4eJJiyTKoiVSohyqNtuB2A8bMsvF8dAAH+Qr5n6c0cxWO5Akykc2DURvjd7uz5x8PbMh+mbaO7jPE6acNg/Ow4VPK',s:[0x374efe210b,0xccc6f3cd84],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

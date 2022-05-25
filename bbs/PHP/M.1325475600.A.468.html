@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 請問如何排序？很困難… - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="個人不太喜歡用遞迴，所以只用迴圈實現XD
+function custom_sort($source) {
+    $depth = 0;
+    $count = count($source);
+    $parent = $child = $root = $output = array();
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 請問如何排序？很困難…">
+<meta property="og:description" content="個人不太喜歡用遞迴，所以只用迴圈實現XD
+function custom_sort($source) {
+    $depth = 0;
+    $count = count($source);
+    $parent = $child = $root = $output = array();
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1325475600.A.468.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ljkl8mklmo (桜町寧至)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 請問如何排序？很困難…</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan  2 11:39:52 2012</span></div>
+個人不太喜歡用遞迴，所以只用迴圈實現XD
+
+function custom_sort($source) {
+    $depth = 0;
+    $count = count($source);
+    $parent = $child = $root = $output = array();
+
+    foreach($source as $key =&gt; $value) {
+        if(isset($value[&#39;belong&#39;][0])) {
+            //我不知道在有母元素的時候order是否一定有，所以這樣寫
+            $child[$value[&#39;belong&#39;]][$key] =
+                isset($value[&#39;order&#39;]) ? (int)$value[&#39;order&#39;] : 0;
+        }
+        else {
+            $root[] = $key;
+        }
+    }
+
+    for($i=0; $i&lt;$count; $i++) {
+        if($depth != 0) {
+            $output_key = array_shift($parent[$depth-1]);
+            $output[$output_key] = $source[$output_key];
+            if(isset($child[$output_key])) {
+                asort($child[$output_key]);
+                $parent[$depth] = array_keys($child[$output_key]);
+                $depth++;
+            }
+            else {
+                for($j=$depth; $j&gt;=1; $j--) {
+                    if(isset($parent[$j-1][0])) {
+                        break;
+                    }
+                    else {
+                        $depth--;
+                    }
+                }
+            }
+        }
+        else {
+            if(!isset($root[0])) {
+                break;
+            }
+            $output_key = array_shift($root);
+            $output[$output_key] = $source[$output_key];
+            if(isset($child[$output_key])) {
+                asort($child[$output_key]);
+                $parent[0] = array_keys($child[$output_key]);
+                $depth = 1;
+            }
+        }
+    }
+    return $output;
+}
+
+
+這個function回傳的是排序完成的陣列
+我有試著用比原po還複雜一些的陣列來測試，沒有什麼大問題
+請原po測試看看囉~
+
+--
+ <span class="f1">◢███◣       </span><span class="f3 hl">秋符『秋の空と乙女の心』</span>
+<span class="f3 hl"> </span><span class="f5 b1 hl">╤</span><span class="f3 b1 hl">======= </span>
+<span class="f5 b1 hl">●●</span><span class="f3 b1">ˍ▁ˍ＿</span><span class="f0">           </span>                          <span class="f5 hl">豊作『穀物神の約束』</span>
+<span class="f5 hl"> </span><span class="f5 b3 hl">◆</span><span class="f1 b7 hl">●</span><span class="b7">◤</span><span class="f1 b7 hl">●</span><span class="f1 b3 hl">  </span>
+<span class="f0">◥</span><span class="b3">◥</span><span class="b7"> </span><span class="f0 b7">﹀ </span><span class="b3">◤</span><span class="f3">◤</span><span class="f0"> </span><span class="f1 hl">豊かさと稔りの象徴    秋 穣子  </span><span class="f0">◣</span><span class="f1">Aki Minoriko               </span><span class="f4">月 鍵</span>
+<span class="f4">   </span><span class="f3 hl">▲</span>▼<span class="f3 hl">▲      </span><span class="f1 hl">豊穣を司る程度の能力    BGM-稲田姫様に叱られるから    </span><span class="f4">ψ Celatic</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 175.181.164.84
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:謝謝！來研究看看！</span><span class="push-ipdatetime"> 01/03 16:26
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1325475600.A.468.html?cacheKey=2148-469796425&amp;offset=2514&amp;offset-sig=35304388de5811b5158971b8cfdfc90d15549064" data-longpollurl="/v1/longpoll?id=8bf1a9fe526ace3f9b03aa5d6ba11e08d5d647a8" data-offset="2514"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea630f1f807e',m:'ASWYXhgi4OmGBc6cQm8x8ZpxDUcfndQgJw5lVtdhHO8-1653467494-0-ASx0cSUL96N2PTu5Lv5qPOYgmAtCmJDJ1r0fr4CPlyxtv/+b01uJyCXnvpMME6QK5OvKGEyzwrSC1iijJ3zYpZwGGdu4pFZaaOF/2MkSDHaW8/SD1dG1sfe8yuGMXOeH9Bs2UyAhH6plKDSOYKtsi+ZXjPfOVB+wrP7SnPws1EJi',s:[0x0a429e8421,0x89912fbabe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

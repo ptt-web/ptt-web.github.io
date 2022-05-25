@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="以下是我的方法,不是很高明方法,但你可以參考一下
+我是使用bartender排版(舊版7.X),因為紙張尺寸小張容易對不準
+而且用網頁的話,應該容易因為不同瀏覽器,不同版本,不同設定,而造成排版差異
+首先就是將要列印的參數資料塞進伺服器的TXT暫存檔,再將區網共享此檔(塞進Client端
+我不知道怎麼寫)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎?">
+<meta property="og:description" content="以下是我的方法,不是很高明方法,但你可以參考一下
+我是使用bartender排版(舊版7.X),因為紙張尺寸小張容易對不準
+而且用網頁的話,應該容易因為不同瀏覽器,不同版本,不同設定,而造成排版差異
+首先就是將要列印的參數資料塞進伺服器的TXT暫存檔,再將區網共享此檔(塞進Client端
+我不知道怎麼寫)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1421140122.A.2B8.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">duolala (哆啦啦)</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jan 13 17:08:40 2015</span></div>
+<span class="f2">※ 引述《kingoface (Vince)》之銘言：
+</span><span class="f6">: 嗨,大家好
+</span><span class="f6">: 請問PHP可以用條碼機來輸出貼紙嗎?
+</span><span class="f6">: 比如我建立了一個 料號
+</span><span class="f6">: 然後系統產生了一個barcode
+</span><span class="f6">: 接下來想把他利用條碼機印出來.
+</span><span class="f6">: 假設我去買了一台條碼機,驅動都灌好的情況下.
+</span><span class="f6">: 是直接右鍵點列印,就會出來嗎?
+</span><span class="f6">: 還是我要去弄個API接條碼機之類的?
+</span>以下是我的方法,不是很高明方法,但你可以參考一下
+
+我是使用bartender排版(舊版7.X),因為紙張尺寸小張容易對不準
+而且用網頁的話,應該容易因為不同瀏覽器,不同版本,不同設定,而造成排版差異
+
+首先就是將要列印的參數資料塞進伺服器的TXT暫存檔,再將區網共享此檔(塞進Client端
+我不知道怎麼寫)
+Client端將共享的資料夾設成網路磁碟機
+再來你會遇到一個問題就是網頁如何啟動應用程式?
+將以下登錄檔匯入就能辦到了(在網路上找到的,忘記在哪個網頁了)
+
+===========================
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\GT]
+@=&#34;URL:GT Protocol&#34;     # 註冊 protocol &#34;GT&#34;
+&#34;URL Protocol&#34;=&#34;&#34;
+
+
+[HKEY_CLASSES_ROOT\GT\DefaultIcon]
+@=&#34;C:\\bartender\\bartender.exe C:\\bartender\\11DRIVE.btw /p /x&#34;
+# 是 GT.exe 的路徑
+
+[HKEY_CLASSES_ROOT\GT\shell]
+@=&#34;&#34;
+
+[HKEY_CLASSES_ROOT\GT\shell\open]
+@=&#34;&#34;
+
+[HKEY_CLASSES_ROOT\GT\shell\open\command]
+@=&#34;C:\\bartender\\bartender.exe C:\\bartender\\11DRIVE.btw /p /x&#34;
+# 這裡會打開 shell 執行命令，&#34;%1&#34; 可以將URL本身傳為 GT.exe 的外部參數
+
+
+===========================
+C:\\bartender是bartender路徑位子
+11DRIVE.btw是bartender排版樣版
+可設定紙張大小,印表機,將資料來源指定網路磁碟那個檔案
+
+塞資料的那個PHP檔最後請加上轉址
+echo &#34;&lt;script&gt;location.href=&#39;GT://WhateverYouWriteThisContent&#39;&lt;/script&gt;&#34;;
+WhateverYouWriteThisContent記得隨便打就行了,主要是gt字眼
+
+當然如果大家有更高明方法
+希望大家互相切磋一下
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 118.163.203.130
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1421140122.A.2B8.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1421140122.A.2B8.html</a>
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1421140122.A.2B8.html?cacheKey=2148-469801670&amp;offset=1808&amp;offset-sig=13f8d8d6d7ad498188141d36ec41c8b2b15f69a7" data-longpollurl="/v1/longpoll?id=cca141508b7f3866995fad9e7ce307a5fa9be353" data-offset="1808"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea2ade14afcd',m:'UvaTN2Z.SFVJh0_RKGoAL9yCb3k4pORkkVdJQO_XVkw-1653467486-0-ATcdYOwh+hYNscqQq9HQyxdllRT0E+wKyfiNc/2mggxShTWTIrXXJJN/4ilOEv83jGCF9kjdwTTt2G07O9/a4+3FBOMA3EqdbXmaEMHt7Rif9qpt1kA/h/aekGO3vnTacicJwQ9P3OsTNj8SzZjOsAvxf1xRjHVY9uzExzWljq5F',s:[0x0cc78a43ee,0x9d130747e9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

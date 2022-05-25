@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] php彈跳視窗 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這是一個簡單的登入系統，
+然後要過濾特殊字元避免資料隱碼攻擊
+我是用mysql_real_escape_string函數
+想請問大家如果要寫
+如果帳號密碼欄有特殊字元就跳出警告視窗該怎麼寫呢
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] php彈跳視窗">
+<meta property="og:description" content="這是一個簡單的登入系統，
+然後要過濾特殊字元避免資料隱碼攻擊
+我是用mysql_real_escape_string函數
+想請問大家如果要寫
+如果帳號密碼欄有特殊字元就跳出警告視窗該怎麼寫呢
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1427539249.A.2DA.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cea1a6f52af60'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">KENNY0609 (肯尼)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] php彈跳視窗</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Mar 28 18:40:46 2015</span></div>
+這是一個簡單的登入系統，
+然後要過濾特殊字元避免資料隱碼攻擊
+我是用mysql_real_escape_string函數
+想請問大家如果要寫
+如果帳號密碼欄有特殊字元就跳出警告視窗該怎麼寫呢
+
+
+
+&lt;?php
+// *** Validate request to login to this site.
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$loginFormAction = $_SERVER[&#39;PHP_SELF&#39;];
+if (isset($_GET[&#39;accesscheck&#39;])) {
+  $_SESSION[&#39;PrevUrl&#39;] = $_GET[&#39;accesscheck&#39;];
+}
+
+if (isset($_POST[&#39;textfield2&#39;])) {
+  $loginUsername=mysql_real_escape_string($_POST[&#39;textfield2&#39;]);
+  $password=mysql_real_escape_string($_POST[&#39;textfield&#39;]);
+
+
+  $MM_fldUserAuthorization = &#34;&#34;;
+  $MM_redirectLoginSuccess = &#34;loginOK.php&#34;;
+  $MM_redirectLoginFailed = &#34;login.php&#34;;
+  $MM_redirecttoReferrer = false;
+  mysql_select_db($database_kenny, $kenny);
+  $LoginRS__query=sprintf(&#34;SELECT ID, password FROM users WHERE ID=&#39;&#34;.$loginUs
+ername.&#34;&#39; AND password=&#39;&#34;.$password.&#34;&#39;&#34;,
+
+
+  GetSQLValueString($loginUsername, &#34;text&#34;), GetSQLValueString($password, &#34;tex
+t&#34;));
+  $LoginRS = mysql_query($LoginRS__query, $kenny) or die(mysql_error());
+  $loginFoundUser = mysql_num_rows($LoginRS);
+  if ($loginFoundUser) {
+     $loginStrGroup = &#34;&#34;;
+
+    //declare two session variables and assign them
+    $_SESSION[&#39;MM_Username&#39;] = $loginUsername;
+    $_SESSION[&#39;MM_UserGroup&#39;] = $loginStrGroup;
+
+    if (isset($_SESSION[&#39;PrevUrl&#39;]) &amp;&amp; false) {
+      $MM_redirectLoginSuccess = $_SESSION[&#39;PrevUrl&#39;];
+    }
+    header(&#34;Location: &#34; . $MM_redirectLoginSuccess );
+  }
+  else {
+    header(&#34;Location: &#34;. $MM_redirectLoginFailed );
+  }
+}
+?&gt;
+
+--
+Sent from my Android
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 49.216.248.69
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1427539249.A.2DA.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1427539249.A.2DA.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 可以先砍了你的dreamweaver嗎？</span><span class="push-ipdatetime"> 03/28 23:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KawasumiMai</span><span class="f3 push-content">: DW不用砍...但請養成習慣從頭刻</span><span class="push-ipdatetime"> 03/29 01:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ProfessUX</span><span class="f3 push-content">: 左轉ajax 非常基本的問題 自己查書</span><span class="push-ipdatetime"> 03/29 03:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ProfessUX</span><span class="f3 push-content">: 最簡單的就是reg檢查到特殊字元跳窗</span><span class="push-ipdatetime"> 03/29 03:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: reg 不太算基本，會的就會，不會的作5年還是不會</span><span class="push-ipdatetime"> 03/29 08:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: regex是外星人語言 但還比不上MSDN的那美克星語</span><span class="push-ipdatetime"> 03/29 17:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KENNY0609</span><span class="f3 push-content">: 抱歉..謝謝大家解惑 我已經解決了 對了 Dr不能砍 這是</span><span class="push-ipdatetime"> 03/29 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KENNY0609</span><span class="f3 push-content">: 作業xd</span><span class="push-ipdatetime"> 03/29 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 砍了dw對你的作業不會有任何影響滴。</span><span class="push-ipdatetime"> 03/29 18:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 這讓我想到前陣子的某個笑話。</span><span class="push-ipdatetime"> 03/29 18:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 面試官：請問你有用過framewok嗎？</span><span class="push-ipdatetime"> 03/29 18:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 求職者：dreamweaver算不算？</span><span class="push-ipdatetime"> 03/29 18:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">b12031106</span><span class="f3 push-content">: 怎麼解決的分享一下如何？</span><span class="push-ipdatetime"> 03/30 09:32
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1427539249.A.2DA.html?cacheKey=2148-469801859&amp;offset=3074&amp;offset-sig=a57d29a11bdfca6221e69c14d7467bf1d13c3d57" data-longpollurl="/v1/longpoll?id=89dbecc01ab493fddbc91cd3eaa52b66d336597c" data-offset="3074"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea1a6f52af60',m:'HY8BQreT76iMRbZRrPq6uaDJ72KcfGKqy5ockv5yABI-1653467483-0-Aas9/SX+GKaIr89xKP4L7wUlOLpf5wIfrD5FmwlzwpSV26K/dlloCsa4m6ufQ3O8T6076/DO2A+v3PVVXY0Io5p05MV4jMCjl5/j0vxs9PrgyFIzy7ZULq7915xS7k232IeyH7bJ2dZNvsLKyTEsbagscobiaPx2CgdEGuUThYu7',s:[0x64fed2ea9b,0xdc78be5803],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

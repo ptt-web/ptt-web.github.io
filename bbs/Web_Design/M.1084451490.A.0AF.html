@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] F5 vs 寫入資料庫 ..快被搞瘋了.. - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你應該要在寫入 db 後，用 header(&#34;Location: $page&#34;); 直接轉向到別的網頁顯
+示執行結果，這樣子使用者 reload 時，就會 reload 到顯示執行結果的網頁，而
+不是存取資料庫的那一個網頁。
+另外，用 &lt;meta http-equiv=&#34;Refresh&#34; ...&gt; 的方式轉頁是不行的，這樣子使用
+者有機會用「上一頁」回到存取資料庫的那一樣，同樣造成問題。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] F5 vs 寫入資料庫 ..快被搞瘋了..">
+<meta property="og:description" content="你應該要在寫入 db 後，用 header(&#34;Location: $page&#34;); 直接轉向到別的網頁顯
+示執行結果，這樣子使用者 reload 時，就會 reload 到顯示執行結果的網頁，而
+不是存取資料庫的那一個網頁。
+另外，用 &lt;meta http-equiv=&#34;Refresh&#34; ...&gt; 的方式轉頁是不行的，這樣子使用
+者有機會用「上一頁」回到存取資料庫的那一樣，同樣造成問題。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1084451490.A.0AF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">JeffHung (御風只配做笨木頭)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] F5 vs 寫入資料庫 ..快被搞瘋了..</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu May 13 12:33:47 2004</span></div>
+<span class="f2">※ 引述《ponder5 (ponder)》之銘言：
+</span><span class="f6">: 最近在寫個小程式
+</span><span class="f6">: 用的是php + mysql (javascript)
+</span><span class="f6">: 主要是要讓客人訂購東西~
+</span><span class="f6">: 但問題是若在輸入訂購物品資料時
+</span><span class="f6">: 如果按了F5，畫面重新整理
+</span><span class="f6">: 則剛剛存入資料庫的該筆資料又會重新存一次
+</span><span class="f6">: 雖說一般很少人會在這個時機重新整理頁面
+</span><span class="f6">: 但..為了訂購流程的順暢，還是想把這問題解決
+</span><span class="f6">: 想請問各位高手，究竟該怎麼樣才能讓F5(重新整理)時
+</span><span class="f6">: 不會再度寫入資料庫呢？
+</span><span class="f6">: 謝謝~~
+</span>
+你應該要在寫入 db 後，用 header(&#34;Location: $page&#34;); 直接轉向到別的網頁顯
+示執行結果，這樣子使用者 reload 時，就會 reload 到顯示執行結果的網頁，而
+不是存取資料庫的那一個網頁。
+
+另外，用 &lt;meta http-equiv=&#34;Refresh&#34; ...&gt; 的方式轉頁是不行的，這樣子使用
+者有機會用「上一頁」回到存取資料庫的那一樣，同樣造成問題。
+
+--
+我的微笑，堅持要有鼻子。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.222.246.250
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1084451490.A.0AF.html?cacheKey=2149-475705904&amp;offset=918&amp;offset-sig=b7ca07c26d5127fe16e01c7e1c6c7b6df42322d5" data-longpollurl="/v1/longpoll?id=bcfa04209137802e2ebb331e6f0b9a0104dac675" data-offset="918"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9438a65b00c',m:'FUAj_wDb8WDsKbJ5XKpO_WKuO2D0oXaVn.WSlutVdVc-1653467448-0-AcUboZ+1jEdsdfFbhUf+4/L2R0Fd6hsMFQkSahT8FQsQANtnP4QxOOGMeAN+OCrCc1ZCalPPa4mCgPE6wPXvO382yvDzk9ArTPDW13I86nO+G6fbN1ZD9wiwiqlC06VrEdELnBmrOg0BJItA27VdjOROQPN03QC187AHKx7/Q3H2',s:[0xe5132da733,0x50a818a00b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

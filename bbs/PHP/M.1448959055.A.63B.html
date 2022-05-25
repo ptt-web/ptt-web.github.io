@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] phpexcel 無法讀取xlsx問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="小弟先貼上程式
+include(&#34;./phpexcel/Classes/PHPExcel/IOFactory.php&#34;);
+include(&#34;./phpexcel/Classes/PHPExcel/Writer/Excel2007.php&#34;);
+include(&#39;./phpexcel/Classes/PHPExcel.php&#39;);
+##讀取上傳EXCEL檔
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] phpexcel 無法讀取xlsx問題">
+<meta property="og:description" content="小弟先貼上程式
+include(&#34;./phpexcel/Classes/PHPExcel/IOFactory.php&#34;);
+include(&#34;./phpexcel/Classes/PHPExcel/Writer/Excel2007.php&#34;);
+include(&#39;./phpexcel/Classes/PHPExcel.php&#39;);
+##讀取上傳EXCEL檔
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1448959055.A.63B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">b95170088 (夏戀秋分)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] phpexcel 無法讀取xlsx問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Dec  1 16:37:29 2015</span></div>
+小弟先貼上程式
+
+
+include(&#34;./phpexcel/Classes/PHPExcel/IOFactory.php&#34;);
+include(&#34;./phpexcel/Classes/PHPExcel/Writer/Excel2007.php&#34;);
+include(&#39;./phpexcel/Classes/PHPExcel.php&#39;);
+##讀取上傳EXCEL檔
+ $reader = PHPExcel_IOFactory::createReader(&#39;Excel2007&#39;);
+$PHPExcel = $reader-&gt;load($_FILES[&#39;strFile&#39;][&#39;tmp_name&#39;]);
+
+我上傳的檔案是excel 2010的檔案
+php版本是5.6
+php.ini 也有設 extension=php_zip.dll
+
+網路上實在找不到有人不行讀取的文章，想問有人有遇到同樣的問題嗎
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 203.70.208.14
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1448959055.A.63B.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1448959055.A.63B.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hwChang</span><span class="f3 push-content">: 不知道 League/Csv Library 是否能讀 xlsx</span><span class="push-ipdatetime"> 12/05 23:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">b95170088</span><span class="f3 push-content">: 已解決!原來我上傳的時候存的是xls不是xlsx所以失敗</span><span class="push-ipdatetime"> 12/17 13:29
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1448959055.A.63B.html?cacheKey=2148-469802101&amp;offset=890&amp;offset-sig=05ac3f9733d1c02c929ad3101478197a7d070d08" data-longpollurl="/v1/longpoll?id=da4d7952f510bf4d950b4043f9029d993343fe84" data-offset="890"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea341f378a56',m:'526iKSgv7N15FVLlZ12Vbb5G3R6gx1I1Hvd0YzBojK0-1653467487-0-AQTesSsGHcfKA3exkgzkrgfsVLggiZYZAhJDE91G60TiZdpUr6mAFQX8LYeKn7s0Y1q0fQ4uHCkrah6XimwLRp4EUn56TU/qP/mbAS+WE9Bo9HIB2Zj8cHgepohYTqTDs3M0lz3ONC4R32TIulBBvsICjlQe9ZxaAGgvla8OTK2o',s:[0x21f7db009c,0xc53897560c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

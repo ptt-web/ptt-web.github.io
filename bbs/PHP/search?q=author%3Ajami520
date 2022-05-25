@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:jami520 - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=7&amp;q=author%3Ajami520">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Ajami520">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ajami520">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:jami520" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1613784725.A.DBC.html">[請益] 手機cookie紀錄?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%89%8B%E6%A9%9Fcookie%E7%B4%80%E9%8C%84%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1604831608.A.A57.html">[請益] 有辦法針對單次query設定timeout嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E8%BE%A6%E6%B3%95%E9%87%9D%E5%B0%8D%E5%96%AE%E6%AC%A1query%E8%A8%AD%E5%AE%9Atimeout%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1507087308.A.08E.html">[請益] 這網站的curl請教</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%80%99%E7%B6%B2%E7%AB%99%E7%9A%84curl%E8%AB%8B%E6%95%99">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1449359289.A.252.html">[請益] 分別找出學生成績為幾天新高</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%88%86%E5%88%A5%E6%89%BE%E5%87%BA%E5%AD%B8%E7%94%9F%E6%88%90%E7%B8%BE%E7%82%BA%E5%B9%BE%E5%A4%A9%E6%96%B0%E9%AB%98">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1444135139.A.AA5.html">[請益] 如何curl這網站資訊呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95curl%E9%80%99%E7%B6%B2%E7%AB%99%E8%B3%87%E8%A8%8A%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437958058.A.866.html">[請益] curl網頁怎樣防止被擋?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E7%B6%B2%E9%A0%81%E6%80%8E%E6%A8%A3%E9%98%B2%E6%AD%A2%E8%A2%AB%E6%93%8B%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1435399279.A.3B2.html">[請益] float與double的數值大小比較</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;float%E8%88%87double%E7%9A%84%E6%95%B8%E5%80%BC%E5%A4%A7%E5%B0%8F%E6%AF%94%E8%BC%83">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1432590661.A.D1A.html">[請益] 請問是否能備份Cron Job的排程呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E6%98%AF%E5%90%A6%E8%83%BD%E5%82%99%E4%BB%BDCron&#43;Job%E7%9A%84%E6%8E%92%E7%A8%8B%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1415134678.A.B8C.html">[請益] 設定set_time_limit超過時間會中止嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A8%AD%E5%AE%9Aset_time_limit%E8%B6%85%E9%81%8E%E6%99%82%E9%96%93%E6%9C%83%E4%B8%AD%E6%AD%A2%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1407722828.A.91C.html">[請益] 怎樣取得每日成績的前三名名單</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%80%8E%E6%A8%A3%E5%8F%96%E5%BE%97%E6%AF%8F%E6%97%A5%E6%88%90%E7%B8%BE%E7%9A%84%E5%89%8D%E4%B8%89%E5%90%8D%E5%90%8D%E5%96%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1401617272.A.434.html">[請益] 如何輸出這樣的表格?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E8%BC%B8%E5%87%BA%E9%80%99%E6%A8%A3%E7%9A%84%E8%A1%A8%E6%A0%BC%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1396493164.A.22A.html">[請益] PHP如何匯入30幾萬筆的xlsx檔案呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%E5%A6%82%E4%BD%95%E5%8C%AF%E5%85%A530%E5%B9%BE%E8%90%AC%E7%AD%86%E7%9A%84xlsx%E6%AA%94%E6%A1%88%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1395535759.A.CC3.html">[請益] 多資料表條件篩選的建立技巧</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A4%9A%E8%B3%87%E6%96%99%E8%A1%A8%E6%A2%9D%E4%BB%B6%E7%AF%A9%E9%81%B8%E7%9A%84%E5%BB%BA%E7%AB%8B%E6%8A%80%E5%B7%A7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1394835698.A.223.html">[請益] curl這網站的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E9%80%99%E7%B6%B2%E7%AB%99%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1394777746.A.C70.html">[請益] 主機排程的控制介面除了cpanel還有其他?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%BB%E6%A9%9F%E6%8E%92%E7%A8%8B%E7%9A%84%E6%8E%A7%E5%88%B6%E4%BB%8B%E9%9D%A2%E9%99%A4%E4%BA%86cpanel%E9%82%84%E6%9C%89%E5%85%B6%E4%BB%96%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1388025758.A.450.html">[請益] 能否輸出檔案到一些免費主機上?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%83%BD%E5%90%A6%E8%BC%B8%E5%87%BA%E6%AA%94%E6%A1%88%E5%88%B0%E4%B8%80%E4%BA%9B%E5%85%8D%E8%B2%BB%E4%B8%BB%E6%A9%9F%E4%B8%8A%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1386559705.A.90A.html">[請益] curl問題，跟大家請益一下</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E5%95%8F%E9%A1%8C%EF%BC%8C%E8%B7%9F%E5%A4%A7%E5%AE%B6%E8%AB%8B%E7%9B%8A%E4%B8%80%E4%B8%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1385969426.A.476.html">[請益] curl這網站要怎樣丟呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E9%80%99%E7%B6%B2%E7%AB%99%E8%A6%81%E6%80%8E%E6%A8%A3%E4%B8%9F%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1379152097.A.FDA.html">[請益] 登入網頁後常常會被登出</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%99%BB%E5%85%A5%E7%B6%B2%E9%A0%81%E5%BE%8C%E5%B8%B8%E5%B8%B8%E6%9C%83%E8%A2%AB%E7%99%BB%E5%87%BA">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1378374426.A.FA9.html">[請益] curl網站的這參數怎樣丟呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E7%B6%B2%E7%AB%99%E7%9A%84%E9%80%99%E5%8F%83%E6%95%B8%E6%80%8E%E6%A8%A3%E4%B8%9F%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea37df6daf60',m:'AZWh8stGLuhGh95iXdlu7OXmcIi9LLmCPgpcWpVryqI-1653467488-0-ATrZyCR91K5EuVA9+1ZHuFgeXdpL6UTADhRrl3maAwsFwoZH8TesY2V2lzb1rntmVqNqg1gqhWIA8zVIYzM8jyiDsJMw0oAO36EsDJ3Dvg3805C0nooMtRkC2TSgzrdMEaBtVaumJeOsISHLdeBbT/oHM0CJluKOZCuhMC4hiOIt',s:[0x91b9b977d6,0x3ad6d5cd67],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:Kyoto - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3AKyoto">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3AKyoto">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:Kyoto" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1180967909.A.5B8.html">[問題] 使用Visual Studio 2005附加SQL</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Kyoto</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%BD%BF%E7%94%A8Visual&#43;Studio&#43;2005%E9%99%84%E5%8A%A0SQL">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKyoto">搜尋看板內 Kyoto 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179927577.A.6E3.html">[問題] domain name套用在不同ip</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Kyoto</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;domain&#43;name%E5%A5%97%E7%94%A8%E5%9C%A8%E4%B8%8D%E5%90%8Cip">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKyoto">搜尋看板內 Kyoto 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179376371.A.CE1.html">Re: [問題] FF對於aspx的panel支援度??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Kyoto</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;FF%E5%B0%8D%E6%96%BCaspx%E7%9A%84panel%E6%94%AF%E6%8F%B4%E5%BA%A6%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKyoto">搜尋看板內 Kyoto 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179340330.A.E70.html">[問題] FF對於aspx的panel支援度??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Kyoto</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;FF%E5%B0%8D%E6%96%BCaspx%E7%9A%84panel%E6%94%AF%E6%8F%B4%E5%BA%A6%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKyoto">搜尋看板內 Kyoto 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce96a3cb81fae',m:'HYGb_7CgNQZjaF_Jp5deJbW6QgOowyCRsrAG02G8em4-1653467455-0-ARaSmexIIlxPrawyYnxAj0+Q6S0Mtp2mpKzA+bAt7UMWmq4D9NltLV7Tnmwau7Yj+k7v80MZ58UhB2DA7SIaHfTFz5Vj+FqlJ4wnU2j0i0wak260XaYNSoP7EnYeXZe3fjhgq2DSsyXmiOtLWwr1Fsymo88DzdAFV/o80f55z4sR',s:[0xd5a84225a9,0x4e795f8266],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:ckmarkhsu - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Ackmarkhsu">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Ackmarkhsu">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:ckmarkhsu" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1244816872.A.6CE.html">Re: [問題] 有關無障礙網頁認證</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E9%97%9C%E7%84%A1%E9%9A%9C%E7%A4%99%E7%B6%B2%E9%A0%81%E8%AA%8D%E8%AD%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1234022942.A.8EB.html">[問題] 取得元件在螢幕上的絕對位置</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%8F%96%E5%BE%97%E5%85%83%E4%BB%B6%E5%9C%A8%E8%9E%A2%E5%B9%95%E4%B8%8A%E7%9A%84%E7%B5%95%E5%B0%8D%E4%BD%8D%E7%BD%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1226636615.A.89F.html">Re: [問題] Youtube縮圖怎麼製作的呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Youtube%E7%B8%AE%E5%9C%96%E6%80%8E%E9%BA%BC%E8%A3%BD%E4%BD%9C%E7%9A%84%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1226441257.A.94F.html">Re: [請益] vBulletin 論壇的「英文」和「中文」版 …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;vBulletin&#43;%E8%AB%96%E5%A3%87%E7%9A%84%E3%80%8C%E8%8B%B1%E6%96%87%E3%80%8D%E5%92%8C%E3%80%8C%E4%B8%AD%E6%96%87%E3%80%8D%E7%89%88&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1168446698.A.222.html">Re: [問題] 有人在用24cc.cc的轉址嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E4%BA%BA%E5%9C%A8%E7%94%A824cc.cc%E7%9A%84%E8%BD%89%E5%9D%80%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1153837085.A.581.html">[問題] 請問是否有辦法強制限制區塊大小</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E6%98%AF%E5%90%A6%E6%9C%89%E8%BE%A6%E6%B3%95%E5%BC%B7%E5%88%B6%E9%99%90%E5%88%B6%E5%8D%80%E5%A1%8A%E5%A4%A7%E5%B0%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1147103351.A.743.html">Re: [問題] 各家瀏覽器使用的比率</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%90%84%E5%AE%B6%E7%80%8F%E8%A6%BD%E5%99%A8%E4%BD%BF%E7%94%A8%E7%9A%84%E6%AF%94%E7%8E%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1146756034.A.72D.html">Re: [問題] 怎麼決定網頁的大小??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%80%8E%E9%BA%BC%E6%B1%BA%E5%AE%9A%E7%B6%B2%E9%A0%81%E7%9A%84%E5%A4%A7%E5%B0%8F%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1144884045.A.B89.html">[測試] DeepBlue WebHD 1.0 alpha 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E6%B8%AC%E8%A9%A6%5D&#43;DeepBlue&#43;WebHD&#43;1.0&#43;alpha&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1144505448.A.183.html">[問題] 請問是否有可能用CSS將Text模擬成密碼方塊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E6%98%AF%E5%90%A6%E6%9C%89%E5%8F%AF%E8%83%BD%E7%94%A8CSS%E5%B0%87Text%E6%A8%A1%E6%93%AC%E6%88%90%E5%AF%86%E7%A2%BC%E6%96%B9%E5%A1%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143989398.A.0BC.html">Re: [問題] 如何抓網頁上的資料???</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E6%8A%93%E7%B6%B2%E9%A0%81%E4%B8%8A%E7%9A%84%E8%B3%87%E6%96%99%3F%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143808315.A.FB0.html">Re: [問題] 有關瀏覽照片功能的網站怎做?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E9%97%9C%E7%80%8F%E8%A6%BD%E7%85%A7%E7%89%87%E5%8A%9F%E8%83%BD%E7%9A%84%E7%B6%B2%E7%AB%99%E6%80%8E%E5%81%9A%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/31</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143725254.A.B60.html">Re: [問題] 請教 Big5 和 UTF-8 的編碼差異...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E6%95%99&#43;Big5&#43;%E5%92%8C&#43;UTF-8&#43;%E7%9A%84%E7%B7%A8%E7%A2%BC%E5%B7%AE%E7%95%B0...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/30</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143607018.A.B9B.html">Re: [問題] 請教 Big5 和 UTF-8 的編碼差異...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E6%95%99&#43;Big5&#43;%E5%92%8C&#43;UTF-8&#43;%E7%9A%84%E7%B7%A8%E7%A2%BC%E5%B7%AE%E7%95%B0...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/29</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143376191.A.E27.html">Re: [問題] input file 的值如何改變</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;input&#43;file&#43;%E7%9A%84%E5%80%BC%E5%A6%82%E4%BD%95%E6%94%B9%E8%AE%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1132648002.A.386.html">Re: [問題] win XP 底下 架站的人數上限的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">ckmarkhsu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;win&#43;XP&#43;%E5%BA%95%E4%B8%8B&#43;%E6%9E%B6%E7%AB%99%E7%9A%84%E4%BA%BA%E6%95%B8%E4%B8%8A%E9%99%90%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ackmarkhsu">搜尋看板內 ckmarkhsu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9982aedb00c',m:'AgVyxG0E5SsmhjI_ngzuBv28xd8tz5UwekuQVbqUvh8-1653467462-0-AS/G0BYeKLyE8LN0OyaqjIBZWVTJjt+je10MrYAfsm0FuX42angP0iFtxvTD36O3kSCDE1r0v8+//+SiMBQAmlB7kYxmFxvGIklzX8gOaS8B1AzV+cgDXHBMSjScf0Ymyoav1z8iDJdAHZVcm2cvFJzDRG1XjyCc+zptL1H952Bx',s:[0xbd289f01dc,0x76b010c132],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

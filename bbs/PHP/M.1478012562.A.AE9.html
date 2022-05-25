@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] PHP抓json後使用foreach問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="最近用PHP玩json的時候發現
+要使用foreach的時候居然無法迴圈列出
+以下是code
+&lt;?php
+1    $json=&#39;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] PHP抓json後使用foreach問題">
+<meta property="og:description" content="最近用PHP玩json的時候發現
+要使用foreach的時候居然無法迴圈列出
+以下是code
+&lt;?php
+1    $json=&#39;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1478012562.A.AE9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cea06083aafe5'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">yongb (火系見習魔法師 )</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] PHP抓json後使用foreach問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Nov  1 23:02:38 2016</span></div>
+最近用PHP玩json的時候發現
+
+要使用foreach的時候居然無法迴圈列出
+
+
+以下是code
+
+&lt;?php
+1    <span class="f1 hl">$</span><span class="f2 hl">json</span>=&#39;
+2   {
+3           &#34;test&#34;:[
+4                   {
+5                    &#34;pid&#34;:34,
+6                    &#34;name&#34;:cat
+7                   },
+8                   {
+9                    &#34;pid&#34;:35,
+10                    &#34;name&#34;:dog
+11                  }
+12                 ]
+13  }&#39;;
+14
+15  <span class="f1 hl">$</span><span class="f2 hl">testjson</span>=json_decode($json);
+16  echo <span class="f1 hl">$</span><span class="f2 hl">testjson</span>-&gt;test[0]-&gt;pid.&#34;&lt;br/&gt;&#34;;
+17  foreach(<span class="f1 hl">$</span><span class="f2 hl">testjson</span> as <span class="f1 hl">$</span><span class="f2 hl">key</span> =&gt;<span class="f1 hl">$</span><span class="f2 hl">value</span>){
+18      $value[0]-&gt;pid;
+19         }
+?&gt;
+
+一開始15行傳到testjson是物件
+可是當使用foreach後傳到$value的時候就變成一種奇怪的狀態
+用var_dump看了一下
+似乎是物件在陣列裏面？
+更讓我驚訝的是$key裏面居然是test冏
+然後pid只跑出一筆，可是不$value[0]又會錯誤，被那個test卡著
+
+我查了一下有兩個解決方式
+1.改15行的json_decode($json,true)直接變成陣列
+可是我又很不想用陣列
+
+2.使用for迴圈但看起來好丑，也不太想用
+
+各位大大有別的思路嗎？ 小弟在此先謝過
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 114.46.94.61
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1478012562.A.AE9.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1478012562.A.AE9.html</a>
+</span><span class="f2">※ 編輯: yongb (114.46.94.61), 11/01/2016 23:07:30
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 當然是物件在陣列裡面，你json寫得明明白白</span><span class="push-ipdatetime"> 11/01 23:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 到底是有什麼奇怪什麼囧的</span><span class="push-ipdatetime"> 11/01 23:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 老實說，在學習階段，隨便你用什麼都無所謂</span><span class="push-ipdatetime"> 11/01 23:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 反正沒有犯錯是學不到東西的，等你寫大一點的程式再來</span><span class="push-ipdatetime"> 11/01 23:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 檢討，那之前你怎麼「很不想」「不太想」都悉聽尊便</span><span class="push-ipdatetime"> 11/01 23:42
+</span></div>
+
+可是我var_dump($testjson)  //有加true
+跟 var_dump($value)印出不一樣的東西耶
+我在研究一下吧
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 剛好跟你相反，我是必加 ,true</span><span class="push-ipdatetime"> 11/01 23:46
+</span></div><span class="f2">※ 編輯: yongb (114.46.94.61), 11/02/2016 00:28:57
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zoko741235</span><span class="f3 push-content">: foreach($testjson-&gt;test as ... )</span><span class="push-ipdatetime"> 11/02 01:35
+</span></div>!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+這 ！！！！
+
+我怎麼就沒想到....我馬上試試
+謝謝大大
+<span class="f2">※ 編輯: yongb (114.46.90.135), 11/02/2016 17:27:27
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1478012562.A.AE9.html?cacheKey=2148-469801043&amp;offset=2315&amp;offset-sig=99c9a7f530b9fdf15d5acba357d641acdb62d769" data-longpollurl="/v1/longpoll?id=a97bc1f9457209e9087b0335aed140b6ca5482b4" data-offset="2315"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea06083aafe5',m:'jTUZ44VaZZZWBfIB3jmKfRImG8Bwv7kTwky2f0BjCJ0-1653467480-0-AY9/B3KLnWRO1ck9zDYyjkMFzE/3c54s4aXtFvpb7e9DiI3EWgDcEb07yrTo8t8UGS1Ax4XpyI6tA6QmvnG1doxQM0Irvf0InUyYS4x2lS0hkex7RdAZyU0NVUCe9UMHotSovKPV5pg6BYXpKViWetoUEmpVMBSJ4TvDZaBIKUIF',s:[0x0f0cddc5a7,0xe73c19df7a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

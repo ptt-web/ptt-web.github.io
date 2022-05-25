@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] CSS問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="各位大大好!我想詢問一下CSS float的觀念
+在網上看到教學說三個框(A，B，C)中的第一個框A向左浮動的話
+因為浮動脫離了原本的框架，因此他會覆蓋在B上
+像這樣 =&gt;  B
+           C
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] CSS問題">
+<meta property="og:description" content="各位大大好!我想詢問一下CSS float的觀念
+在網上看到教學說三個框(A，B，C)中的第一個框A向左浮動的話
+因為浮動脫離了原本的框架，因此他會覆蓋在B上
+像這樣 =&gt;  B
+           C
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1337307938.A.1CD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">luo74128 (小貓)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] CSS問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri May 18 10:25:23 2012</span></div>
+各位大大好!我想詢問一下CSS float的觀念
+
+在網上看到教學說三個框(A，B，C)中的第一個框A向左浮動的話
+
+因為浮動脫離了原本的框架，因此他會覆蓋在B上
+
+像這樣 =&gt;  B
+           C
+
+但我實驗卻變這樣 =&gt;  AB
+                     C
+
+網上內容網址:<a href="http://www.w3school.com.cn/css/css_positioning_floating.asp" target="_blank" rel="noreferrer noopener nofollow">http://www.w3school.com.cn/css/css_positioning_floating.asp</a>  (第3張圖片)
+
+
+我測試的程式 :
+
+&lt;style&gt;
+#test{
+width:300px;
+border:double 10px black;
+}
+#A {float:left;}
+#B {/*float:left;*/}
+#C {/*float:left;*/}
+#clear {clear: both; }
+&lt;/style&gt;
+
+&lt;div id=&#34;test&#34;&gt;
+
+&lt;img id=&#34;A&#34; src=&#34;<a href="https://upload.wikimedia.org/wikipedia/commons/8/80/A-Caracas.png&#34;" target="_blank" rel="noreferrer noopener nofollow">http://upload.wikimedia.org/wikipedia/commons/8/80/A-Caracas.png&#34;</a> width=&#34;100px&#34; height=&#34;100px&#34; /&gt;
+
+&lt;img id=&#34;B&#34; src=&#34;<a href="https://upload.wikimedia.org/wikipedia/commons/a/ab/B-Autonorte.png&#34;" target="_blank" rel="noreferrer noopener nofollow">http://upload.wikimedia.org/wikipedia/commons/a/ab/B-Autonorte.png&#34;</a> width=&#34;100px&#34; height=&#34;100px&#34; /&gt;
+
+&lt;img id=&#34;C&#34; src=&#34;<a href="http://www.mommybknowsbest.com/wp-content/uploads/2010/01/thumb_c.jpg&#34;" target="_blank" rel="noreferrer noopener nofollow">http://www.mommybknowsbest.com/wp-content/uploads/2010/01/thumb_c.jpg&#34;</a>  width=&#34;100px&#34; height=&#34;100px&#34; /&gt;
+
+&lt;/div&gt;
+
+
+
+
+--
+Aman ia vida 地下飛行
+blog: <a href="https://luo74128.blogspot.com/2010/07/blog-post.html" target="_blank" rel="noreferrer noopener nofollow">http://luo74128.blogspot.com/2010/07/blog-post.html</a>
+我：  <a href="http://www.wretch.cc/album/luo74128" target="_blank" rel="noreferrer noopener nofollow">http://www.wretch.cc/album/luo74128</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 222.126.156.188
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xiphoid</span><span class="f3 push-content">:就...寫錯了。position: absolute;才會疊上去</span><span class="push-ipdatetime"> 05/18 10:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">luo74128</span><span class="f3 push-content">:請問一下你的意思是該網站寫錯了?</span><span class="push-ipdatetime"> 05/18 10:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xiphoid</span><span class="f3 push-content">:嗯 網站寫錯</span><span class="push-ipdatetime"> 05/18 10:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">luo74128</span><span class="f3 push-content">:阿~謝謝啦!~我搞了半天了!!太感謝妳了</span><span class="push-ipdatetime"> 05/18 10:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sycc</span><span class="f3 push-content">:XD</span><span class="push-ipdatetime"> 05/18 14:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EROS4</span><span class="f3 push-content">:它想講的可能是浮動在親元素上吧 因為沒有clear-fix的話 長</span><span class="push-ipdatetime"> 05/18 14:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EROS4</span><span class="f3 push-content">:高度失效就像浮在他上面一樣XD</span><span class="push-ipdatetime"> 05/18 14:38
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1337307938.A.1CD.html?cacheKey=2149-475914257&amp;offset=1850&amp;offset-sig=1690b8108aabebd4e93ac383073876790461604b" data-longpollurl="/v1/longpoll?id=88df2e9695034d5b2395a33e0bf760979432769d" data-offset="1850"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce97f4aff8a56',m:'JItKqueDjO0wwmwsgdAMeZPOWx19i6Fs.LXfIfTPEcg-1653467458-0-ASubuKA+T8zyIgnMEfuKQZORExCe+59hClVBhgUcPOMIniDjhMRVZvQLI+ubQ9dXi3w91Ebo9u/CIbtStXUjKU6wa/rZiu1umLr3e9bGbmDN2JsMkYPPc30ENOd0kNnBy4XkWCRAP/7npANjCjg9zqPe7KMDQ4vZoZPTUbpopeUT',s:[0x5a773f54d7,0xd0117d6d9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

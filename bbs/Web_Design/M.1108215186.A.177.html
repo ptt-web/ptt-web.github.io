@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: 卷軸變色的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="現今的新式網頁和以往舊式的很不一樣, 瀏覽器為了要能正常顯示這兩種網頁,
+就設計了兩種顯示模式, 一種為 Standard Mode 給新式用, 一種為 Quirk Mode 給舊式,
+那瀏覽器怎麼判斷網頁是新是舊呢? 就是以 &lt;!DOCTYPE... 這一行判斷,
+如果第一行是 &lt;!DOCTYPE... 為新式, 否則為舊式....
+問題就在於, IE6 中也是有這兩種顯示模式, 而它的兩種模式對捲軸的定義不一樣,
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: 卷軸變色的問題">
+<meta property="og:description" content="現今的新式網頁和以往舊式的很不一樣, 瀏覽器為了要能正常顯示這兩種網頁,
+就設計了兩種顯示模式, 一種為 Standard Mode 給新式用, 一種為 Quirk Mode 給舊式,
+那瀏覽器怎麼判斷網頁是新是舊呢? 就是以 &lt;!DOCTYPE... 這一行判斷,
+如果第一行是 &lt;!DOCTYPE... 為新式, 否則為舊式....
+問題就在於, IE6 中也是有這兩種顯示模式, 而它的兩種模式對捲軸的定義不一樣,
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1108215186.A.177.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">eliang ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: 卷軸變色的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Feb 12 21:51:56 2005</span></div>
+<span class="f2">※ 引述《finkel (....)》之銘言：
+</span><span class="f6">: 我用dreamweaver做網頁
+</span><span class="f6">: 我發現加入語法後，還是沒變色
+</span><span class="f6">: 但我如果把一開始的這一行
+</span><span class="f6">: &lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34;
+</span><span class="f6">: &#34;<a href="https://www.w3.org/TR/html4/loose.dtd&#34;&gt;" target="_blank" rel="noreferrer noopener nofollow">http://www.w3.org/TR/html4/loose.dtd&#34;&gt;</a>
+</span><span class="f6">: 刪掉就可以了
+</span><span class="f6">: 我想知道為什麼..還有理想的寫法該如何？
+</span><span class="f6">: 感謝
+</span>
+現今的新式網頁和以往舊式的很不一樣, 瀏覽器為了要能正常顯示這兩種網頁,
+就設計了兩種顯示模式, 一種為 Standard Mode 給新式用, 一種為 Quirk Mode 給舊式,
+那瀏覽器怎麼判斷網頁是新是舊呢? 就是以 &lt;!DOCTYPE... 這一行判斷,
+如果第一行是 &lt;!DOCTYPE... 為新式, 否則為舊式....
+問題就在於, IE6 中也是有這兩種顯示模式, 而它的兩種模式對捲軸的定義不一樣,
+Standard Mode 的捲軸是置於 &lt;html&gt; 中, 而 Qurik Mode 的捲軸是置於 &lt;body&gt;
+
+因此, 把 selector 從 body 換成 html 就可以了, 像這樣:
+
+<span class="f3 hl">html</span> {
+  scrollbar-3d-light-color: #D6EEFC;
+  scrollbar-arrow-color: #699EC7;
+  scrollbar-base-color: #ffffff;
+  scrollbar-dark-shadow-color: #FFFFFF;
+  scrollbar-face-color: #D6EEFC;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-shadow-color: #69EC7;
+}
+
+因為捲軸變色的屬性並不是標準的東西, 所以理想的寫法就是 &#34;不要用它&#34;....
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 210.58.168.200
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fannys23</span><span class="f3 push-content">:好精闢的講解，真是受教了 :)</span><span class="push-ipdatetime">   61.62.242.47 02/15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">esabear</span><span class="f3 push-content">:推</span><span class="push-ipdatetime">  218.172.87.50 02/16
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1108215186.A.177.html?cacheKey=2149-475710980&amp;offset=1447&amp;offset-sig=709e4388210e2c4496e77a3a1cb33117a01a053a" data-longpollurl="/v1/longpoll?id=d7cb548e32950377a0d2d7d4fe39fdaa2c40447d" data-offset="1447"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9790950af54',m:'ppZUyn2JD2m_SJICSGUXvNy3c2Haq5en2DV75crjd4I-1653467457-0-AQZ16iZDF7i0c8kQO4Hmhscf/MP3Ho3ei0R8WnfRNhYx4P1bO32kPVtPsTL/RLejpmr7BY8Y3Pqtmmf+/6m3O5Bivx1oMPBKR9q6S5+xikJW4Z+3hmFcQ6QTm57JkYfaVUl220rshSQ25ETGHDyMu8ccVzNJS2Ig6/wWnVo/wBim',s:[0xc24eab3247,0xbcc77fc267],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

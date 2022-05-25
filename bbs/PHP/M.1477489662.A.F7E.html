@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 如何判斷表單提交來源是從本站傳送的？ - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="    如果你追求的是「完全的要求表單由本站發送」，這種東西本質上是不可能的。
+    因為 HTTP 本身是 stateless，資訊是在「主機」和「瀏覽器端」互相來回傳遞，
+    每一個 request / response 都只是「包含了資訊的單向傳遞」。
+    你什麼時後有了「表單是從本站發送」的幻覺？ XD
+    表單永遠都是從你的 borwser 送出的，那是你的電腦 / 瀏覽器，
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 如何判斷表單提交來源是從本站傳送的？">
+<meta property="og:description" content="    如果你追求的是「完全的要求表單由本站發送」，這種東西本質上是不可能的。
+    因為 HTTP 本身是 stateless，資訊是在「主機」和「瀏覽器端」互相來回傳遞，
+    每一個 request / response 都只是「包含了資訊的單向傳遞」。
+    你什麼時後有了「表單是從本站發送」的幻覺？ XD
+    表單永遠都是從你的 borwser 送出的，那是你的電腦 / 瀏覽器，
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1477489662.A.F7E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">gpmm (銀色)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 如何判斷表單提交來源是從本站傳送的？</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Oct 26 21:47:40 2016</span></div>
+<span class="f2">※ 引述《red0whale (red whale)》之銘言：
+</span><span class="f6">: 如題，
+</span><span class="f6">: 我知道能用HTTP_REFERER來判斷上一頁表單是否為從本站發送的
+</span><span class="f6">: 但其實這樣並不是最好的
+</span><span class="f6">: 因為使用者一樣能用cURL來提交一個假的HTTP_REFERER來騙過PHP
+</span><span class="f6">: 所以有沒有一個最好的方法來判斷表單是否為從本站發送的？
+</span>
+
+    如果你追求的是「完全的要求表單由本站發送」，這種東西本質上是不可能的。
+
+    因為 HTTP 本身是 stateless，資訊是在「主機」和「瀏覽器端」互相來回傳遞，
+
+    每一個 request / response 都只是「包含了資訊的單向傳遞」。
+
+    你什麼時後有了「表單是從本站發送」的幻覺？ XD
+
+    表單永遠都是從你的 borwser 送出的，那是你的電腦 / 瀏覽器，
+
+    和哪個網站一點關係都沒有。
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 36.226.146.72
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1477489662.A.F7E.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1477489662.A.F7E.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanli2</span><span class="f3 push-content">: 原文刪掉了 應該是原原PO找到了解決方案</span><span class="push-ipdatetime"> 10/28 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 也有可能是惱羞成怒所以刪了。</span><span class="push-ipdatetime"> 10/28 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">imhaha</span><span class="f3 push-content">: 因為這篇也沒解決到問題 他生氣了XD</span><span class="push-ipdatetime"> 10/28 16:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rockmanalpha</span><span class="f3 push-content">: 比較簡單的做法就是產生一個token放在session內</span><span class="push-ipdatetime"> 10/28 18:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rockmanalpha</span><span class="f3 push-content">: 頁面塞一個input field塞那個token一起提交 到後端</span><span class="push-ipdatetime"> 10/28 18:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rockmanalpha</span><span class="f3 push-content">: 跟session比對 不過這也無法完全防止偽裝</span><span class="push-ipdatetime"> 10/28 18:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 我覺得大家都不用再提了……反正都被說成答非所問了。</span><span class="push-ipdatetime"> 10/28 18:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 我是覺得也不用說成這種程度...畢竟這是個滿大的需要</span><span class="push-ipdatetime"> 10/28 18:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GALINE</span><span class="f3 push-content">: 只是它真的沒有銀子彈可以解...</span><span class="push-ipdatetime"> 10/28 18:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xxxzzz</span><span class="f3 push-content">: 看到HTTP_REFERER了,還能回這篇內容,也真令人匪夷所思</span><span class="push-ipdatetime"> 10/29 00:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">spfy</span><span class="f3 push-content">: 其實原原PO自我風格很強烈阿...不是他要的都不是解答</span><span class="push-ipdatetime"> 10/29 11:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 為何有 HTTP_REFERER 就不能回這篇?</span><span class="push-ipdatetime"> 10/29 12:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Peruheru</span><span class="f3 push-content">: 因為那就表示已經知道請求跟伺服器無關了</span><span class="push-ipdatetime"> 10/29 13:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Peruheru</span><span class="f3 push-content">: 或是反過來說，就是不知道HTTP_REFERER的意義才會提問</span><span class="push-ipdatetime"> 10/29 13:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Peruheru</span><span class="f3 push-content">: 知道那東西能用，卻不知道那東西代表得意義</span><span class="push-ipdatetime"> 10/29 13:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Peruheru</span><span class="f3 push-content">: 我猜啦</span><span class="push-ipdatetime"> 10/29 13:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 我只能說，沒看過最原始po文的人的內容，就別瞎猜了。</span><span class="push-ipdatetime"> 10/29 13:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 總之他那句不要「答非所問」，才是最讓人感冒的。</span><span class="push-ipdatetime"> 10/29 13:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 其他你們想過的方法，那篇的推文都有提到過。</span><span class="push-ipdatetime"> 10/29 13:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 而且我最不爽的，就是問題解就刪問題的人。(不管有沒解)</span><span class="push-ipdatetime"> 10/29 13:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 如果最後要刪問題，不如一開始就別問。</span><span class="push-ipdatetime"> 10/29 13:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 刪問題這一點，我倒希望版主納入考慮一下。</span><span class="push-ipdatetime"> 10/29 13:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Peruheru</span><span class="f3 push-content">: 我看過阿，我還有推到文，應該可以猜一下XD</span><span class="push-ipdatetime"> 10/29 21:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyleJ</span><span class="f3 push-content">: 原原PO知道HTTP_REFERER 卻不知道HTTP怎麼運作的…</span><span class="push-ipdatetime"> 10/30 11:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fashionjack</span><span class="f3 push-content">: 他們沒經過網頁就直接丟進MySQL，網頁要如何防?</span><span class="push-ipdatetime"> 10/31 08:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">fashionjack</span><span class="f3 push-content">: input filed加隱藏參數我用過，識別碼用過，皆無效。</span><span class="push-ipdatetime"> 10/31 08:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 這些問題得透過各種不同的方式來處理</span><span class="push-ipdatetime"> 11/01 09:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 單純避免被Cross Site透過Referer以及Origin就可以阻擋</span><span class="push-ipdatetime"> 11/01 09:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 如果要阻擋使用Curl直接送出請求，那就得透過 CSRF token</span><span class="push-ipdatetime"> 11/01 09:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 或是 Captcha</span><span class="push-ipdatetime"> 11/01 09:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 如果想要避免對方短時間送出大量請求，除了 Captcha</span><span class="push-ipdatetime"> 11/01 09:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 還可以使用工作量證明，藉由讓Client耗費大量資源，避免</span><span class="push-ipdatetime"> 11/01 09:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 被灌爆，讓對方知道他要攻擊你得付出比你更多的代價。</span><span class="push-ipdatetime"> 11/01 09:09
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1477489662.A.F7E.html?cacheKey=2148-469801741&amp;offset=4219&amp;offset-sig=0289a3a37ae702f3cff585aac8a1dcf2e1eb6048" data-longpollurl="/v1/longpoll?id=f42d71904d8382e07e52f758fd59a8ebd9269535" data-offset="4219"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea03b933b00c',m:'wZjYn3geYLhR5xZH6e03NiN7xUhYt3H_Hl87FnBKx.g-1653467479-0-Ab84wLduH1gzTalCg4OBUOvCYHI6A+/hGMxlWtTwJXFfFqNsUt90R8wi+sCPLivwt3LkeZg0WYATyJIC7uORLGOsETKKussck29Iyc5AWu0atNygyUIvHdXeWxkE/hKS+P+ILT4ah9ho/wbI0mBv2UItHBRteolWn8sJj99n+8ap',s:[0x88ba9a3ce5,0xcac7b67be9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

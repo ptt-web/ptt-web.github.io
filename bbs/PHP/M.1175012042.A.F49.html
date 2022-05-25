@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 無法處裡1970年以前的日期! - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="date()這個函式有一些限制
+在windows系統中接受的年限從1970年～2038年
+換句話說1970年以前，2038年以後的時間都無法判斷
+解決方式可以查adodb裡面有支援時間的函式
+adodb_date()
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 無法處裡1970年以前的日期!">
+<meta property="og:description" content="date()這個函式有一些限制
+在windows系統中接受的年限從1970年～2038年
+換句話說1970年以前，2038年以後的時間都無法判斷
+解決方式可以查adodb裡面有支援時間的函式
+adodb_date()
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1175012042.A.F49.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">blackbing (blackbing)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 無法處裡1970年以前的日期!</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Mar 28 00:14:01 2007</span></div>
+<span class="f2">※ 引述《ranehwa (rane)》之銘言：
+</span><span class="f6">: 請問要如何才能正確轉換1970以前的日期?
+</span><span class="f6">: 我從資料庫撈出YYYY-mm-dd
+</span><span class="f6">: 然後希望轉成 M n Y 的格式
+</span><span class="f6">: 用 date(&#34;M n y&#34;,$date) ps:$date=YYY-mm-dd
+</span><span class="f6">: 或是先轉成UNIX_TIMESTAMP()也是不行,1970以前的會變成0
+</span><span class="f6">: 然後通通變成 Jen 1 1970  囧~~~
+</span><span class="f6">: 有別的方式嗎?
+</span><span class="f6">: 感謝!!
+</span>
+date()這個函式有一些限制
+在windows系統中接受的年限從1970年～2038年
+換句話說1970年以前，2038年以後的時間都無法判斷
+
+解決方式可以查adodb裡面有支援時間的函式
+adodb_date()
+完全都跟date使用方式一樣
+
+只是要引入adodb的函式庫就是了
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.127.22.18
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1175012042.A.F49.html?cacheKey=2148-469796835&amp;offset=684&amp;offset-sig=a6f78d1e8fa52f0e9623ab81b5485e56d32d36f9" data-longpollurl="/v1/longpoll?id=1b49881bcebc354a7c500a515db914d462542115" data-offset="684"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea99dcda14d0',m:'f48gOTjaNN7s5JiX8mpxlMc5uSWXjM_6.zTx5f795hk-1653467503-0-AezErrWqF9LGm7hNRv5GNiehRrYzAQe2M9GLdkrkPA0+36vpa9mUEl8mBhp3rXwcXGU4uZqcQqCCr/wzSxBqJBwecMBKvQ0FJwDbc1U5uMpa/275VvKoCRq7Uqj3+xvp4Gucup9EuCP4Ua7HS5ZJ+fJhqPDoiPjOl0u+vJ6yhfEG',s:[0x3c6b5749f7,0x2ffd38481d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

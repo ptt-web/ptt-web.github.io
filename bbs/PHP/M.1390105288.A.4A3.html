@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 取物件裡的值 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問各位我有一個object如下 如果我想要找在info裡 &#34;只&#34; 取得UGG XL的資料再把資料後有含空白或特殊字元刪掉
+除了我自己用foreach外要怎麼寫會比較好? 謝謝
+code:
+foreach ($obj-&gt;info as $key) {
+    if ($key-&gt;name === &#34;shoes&#34;)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 取物件裡的值">
+<meta property="og:description" content="請問各位我有一個object如下 如果我想要找在info裡 &#34;只&#34; 取得UGG XL的資料再把資料後有含空白或特殊字元刪掉
+除了我自己用foreach外要怎麼寫會比較好? 謝謝
+code:
+foreach ($obj-&gt;info as $key) {
+    if ($key-&gt;name === &#34;shoes&#34;)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1390105288.A.4A3.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jacobcan118 (jacobcan118)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 取物件裡的值</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jan 19 12:21:26 2014</span></div>
+請問各位我有一個object如下 如果我想要找在info裡 &#34;只&#34; 取得UGG XL的資料再把資料後有含空白或特殊字元刪掉
+除了我自己用foreach外要怎麼寫會比較好? 謝謝
+code:
+foreach ($obj-&gt;info as $key) {
+    if ($key-&gt;name === &#34;shoes&#34;)
+        echo substr( $key-&gt;value, strpos($key-&gt;value, UGG));
+}
+
+
+$obj
+========
+object(stdClass)#258 (2) {
+  [&#34;store&#34;]=&gt;
+  string(1) &#34;0&#34;
+  [&#34;info&#34;]=&gt;
+  array(4) {
+    [0]=&gt;
+    object(stdClass)#259 (2) {
+      [&#34;name&#34;]=&gt;
+      string(11) &#34;shirt&#34;
+      [&#34;value&#34;]=&gt;
+      string(16) &#34;XL&#34;
+    }
+    [1]=&gt;
+    object(stdClass)#260 (2) {
+      [&#34;name&#34;]=&gt;
+      string(15) &#34;pant&#34;
+      [&#34;value&#34;]=&gt;
+      string(10) &#34;L&#34;
+    }
+    [2]=&gt;
+    object(stdClass)#261 (2) {
+      [&#34;name&#34;]=&gt;
+      string(15) &#34;glove&#34;
+      [&#34;value&#34;]=&gt;
+      string(4) &#34;brand&#34;
+    }
+    [3]=&gt;
+    object(stdClass)#262 (2) {
+      [&#34;name&#34;]=&gt;
+      string(14) &#34;shoes&#34;
+      [&#34;value&#34;]=&gt;
+      string(57) &#34;female UGG XL&#34;
+    }
+  }
+}
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 71.183.242.84
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jhunkyoiori</span><span class="f3 push-content">:UGG XL 都固定在尾巴六個字元嗎？</span><span class="push-ipdatetime"> 01/19 16:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:不是不一定會在最後面</span><span class="push-ipdatetime"> 01/20 06:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:這樣寫沒什麼不好，不然就用array_walk()。</span><span class="push-ipdatetime"> 01/20 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:感謝</span><span class="push-ipdatetime"> 01/22 13:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:如只要XL值 除substr(..,strpos($key-&gt;value) + 4, 2)</span><span class="push-ipdatetime"> 01/23 11:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:還有其他方法不需要去算字元嗎?</span><span class="push-ipdatetime"> 01/23 11:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:就preg_match嘍。</span><span class="push-ipdatetime"> 01/23 16:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:pre_match要怎麼從字串中取值?他不是只能找是否含字串</span><span class="push-ipdatetime"> 01/25 12:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:regex可以用()去框出要挑出來的結果...</span><span class="push-ipdatetime"> 01/25 13:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:如果只有判斷的功能的話 你覺得REGEX倒底好用在哪?</span><span class="push-ipdatetime"> 01/25 13:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:其實，只有判斷功能也還是很好用的 XD</span><span class="push-ipdatetime"> 01/26 09:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:感謝小弟新手只是想知道怎樣可以將判斷和取值一次搞定</span><span class="push-ipdatetime"> 01/26 14:45
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1390105288.A.4A3.html?cacheKey=2148-469798760&amp;offset=2294&amp;offset-sig=a58c57806fa9e851c6bb6014bed4b3add5b50b67" data-longpollurl="/v1/longpoll?id=03ccb59dd839694b285a869de21702f9eafcaff1" data-offset="2294"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea47986c1ec4',m:'dZxLDITgYPzWoeuwzuNGQVyCrijnkXi5DMqRmxCMFHo-1653467490-0-Aesl9IIgk8PMPXZCS7zvpjNrDtMcOkBWZmWRQHdTgVY73ZJ2+8cN8fMsqT32cBKjzh58Sp9bjdxR6a5LCMrlSPdQqpYkznR2qzbdJDcT0VPCI411betLaq6sqksDJ8DCVo1uqAUL8BfuOBflAtFpdLoB9aR/0qJ6t68ZPJvvH8ey',s:[0x2fba96ce87,0x0f1a7fcb11],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

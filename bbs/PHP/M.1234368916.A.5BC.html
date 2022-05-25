@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 錯誤訊息 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我開啟我要的檔案卻顯示
+Warning: mysql_connect() [function.mysql-connect]:
+Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+in C:\AppServ\www\mysql.inc on line 21
+mysql_pconnect() failed.
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 錯誤訊息">
+<meta property="og:description" content="我開啟我要的檔案卻顯示
+Warning: mysql_connect() [function.mysql-connect]:
+Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+in C:\AppServ\www\mysql.inc on line 21
+mysql_pconnect() failed.
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1234368916.A.5BC.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">star2000 (昨夜風)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 錯誤訊息</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Feb 12 00:15:15 2009</span></div>
+我開啟我要的檔案卻顯示
+Warning: mysql_connect() [function.mysql-connect]:
+Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+in C:\AppServ\www\mysql.inc on line 21
+mysql_pconnect() failed.
+
+我按照精華區的說明將config.inc.php中其中ㄧ行改成
+$cfg[&#39;PmaAbsoluteUri&#39;] = &#39;<a href="http://localhost/&#39;" target="_blank" rel="noreferrer noopener nofollow">http://localhost/&#39;</a>
+
+但是還是顯示warning
+請問該如何解決呢?X
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 128.211.180.169
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini    </span><span class="f3 push-content">:control user密碼咧? &#34;你要的檔案&#34;是指phpmyadmin?</span><span class="push-ipdatetime"> 02/12 00:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star2000    </span><span class="f3 push-content">:我開啟一個朋友寫給我的程式 不是phpmyadmin</span><span class="push-ipdatetime"> 02/12 00:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star2000    </span><span class="f3 push-content">:user和密碼我都設成root</span><span class="push-ipdatetime"> 02/12 00:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">buganini    </span><span class="f3 push-content">:阿資料庫密碼咧 錯誤訊息就說密碼錯了啊</span><span class="push-ipdatetime"> 02/12 00:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini    </span><span class="f3 push-content">:你朋友寫的程式跟pma的config.inc.php有什麼關係!?</span><span class="push-ipdatetime"> 02/12 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">thitbbeb    </span><span class="f3 push-content">:應該是mysql.inc的資料庫密碼錯誤吧？</span><span class="push-ipdatetime"> 02/12 09:21
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1234368916.A.5BC.html?cacheKey=2148-469788244&amp;offset=1099&amp;offset-sig=db770ebf27f5e62b36612f660e696d102c75f06a" data-longpollurl="/v1/longpoll?id=828f9a6c0e8f1e071c1dceb72fb9d8823a51c35b" data-offset="1099"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaaa38db8a56',m:'McPU2NSUwfOhYuz7lMulKxI4XHtAxzUgnZF3Ff4OAyM-1653467506-0-AdTTS/lUMDulXh60P+HnET3jeTOroTWuAiOSPmlpaO5XI7kJjNgq29di3Fb/cTxvAV8gOq0oJq8T6wbeWwHnuSMsfmQBxDkf2aupvbNNdeRF28UuDwmRgU1VxBspTeEO7zovjhABtMlw509wnB//x6AxTVUmxa2M8nVdWG21gr/r',s:[0x82c9196415,0x3a53778857],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

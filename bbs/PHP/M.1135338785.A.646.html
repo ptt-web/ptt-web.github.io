@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="Title：    變量類型不得以數字開頭
+討論串Url：http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144723&amp;page=1
+※ 引述《ztw ( )》之銘言：
+:   4、變量類型：
+:   $mystring = &#34;我是字串&#34; ;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教">
+<meta property="og:description" content="Title：    變量類型不得以數字開頭
+討論串Url：http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144723&amp;page=1
+※ 引述《ztw ( )》之銘言：
+:   4、變量類型：
+:   $mystring = &#34;我是字串&#34; ;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1135338785.A.646.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ztw ( )</span></div><div class="article-metaline-right"><span class="article-meta-tag">站內</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [心得] 針對初學者的一些觀念建立...有錯誤請指教</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Dec 23 19:54:54 2005</span></div>
+Title：    變量類型不得以數字開頭
+
+討論串Url：<a href="http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144723&amp;page=1" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144723&amp;page=1</a>
+
+<span class="f2">※ 引述《ztw ( )》之銘言：
+</span><span class="f6">:   4、變量類型：
+</span><span class="f6">:   $mystring = &#34;我是字串&#34; ;
+</span><span class="f6">:   $NewLine = &#34;換行了\n&#34; ;
+</span><span class="f6">:   $int1 = 38 ;
+</span><span class="f6">:   $float1 = 1.732 ;
+</span><span class="f6">:   $float2 = 1.4E+2 ;
+</span><span class="f6">:   $MyArray1 = array( &#34;子&#34; , &#34;丑&#34; , &#34;寅&#34; , &#34;卯&#34; );
+</span><span class="f6">:   這裡引出兩個問題，首先PHP變量以$開頭，第二PHP語句以;結尾，可能ASP程式員會
+</span><span class="f6">:   不適應。這兩個遺漏也是程式上大多錯誤所在。
+</span>
+除了上方所提到的 所有變數 (variable) 前面須以 $ 開頭外，另外仍有一限制為不得
+以數字開頭
+如：
+$12346 = 123 ;
+$ 4abcd = 456 ;
+$ 00__ = 789 ;
+以上都是錯誤的變數類型。
+
+基本上 variable 是以 [0-9] [a-z] 或是 __ (底線) 作為開頭
+如：
+// 想要讓程式運算1+3 答案，以變數方式闡述
+$i=1;
+$j=3;
+$c=$i+$j;
+echo $c;  // 可知 echo 會出現 4
+
+
+
+--
+討論是你我教學相長的機會
+UO-小築  <a href="http://uniorg.net/" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/</a>  讓我們一同喜愛這討論空間
+喜歡他的話  別忘了推薦給大家...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.73.23.169
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1135338785.A.646.html?cacheKey=2148-469785164&amp;offset=1065&amp;offset-sig=8fabd0ecf392c30d6b834b2f66e6b29c77600ecc" data-longpollurl="/v1/longpoll?id=90b23daf3c16a8967abc00198b42ed28eda3dada" data-offset="1065"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab3feebafcd',m:'xsf63kl49dTw0PtgMPSvLun.O8UBh5ApJ8G4eYNENm4-1653467507-0-AXfHwx9usU13nB6DpN+jvGqxBFaYEdFGyhKyI/0p0VGpNu42UGVag78l4g0GfyxZyjqFWoMrj2TdP1hbooNPB6/nM38bDaTGz8h3xQYdK3/vH+THmbuSNDMHp2/LmTW6X/qeQdOMeKU49b/5faD+K/vjehOP/DgmRfqXogBlq+L+',s:[0x7b3f558535,0x1b5b67cf8f],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

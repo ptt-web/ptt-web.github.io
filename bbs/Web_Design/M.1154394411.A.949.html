@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] CSS的外部檔案匯入.... - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="哈哈 我看漏了一件事 原po的網頁並沒有DOCTYPE宣告
+他的網頁在任何modern的瀏覽器都會以舊規格的HTML來render(Quirks-mode)
+而舊規格的HTML(指XHTML/HTML4之前的規格)
+&lt;link&gt;是沒有charset這個屬性的
+--
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] CSS的外部檔案匯入....">
+<meta property="og:description" content="哈哈 我看漏了一件事 原po的網頁並沒有DOCTYPE宣告
+他的網頁在任何modern的瀏覽器都會以舊規格的HTML來render(Quirks-mode)
+而舊規格的HTML(指XHTML/HTML4之前的規格)
+&lt;link&gt;是沒有charset這個屬性的
+--
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1154394411.A.949.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">elan (IE是最棒的瀏覽器)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] CSS的外部檔案匯入....</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Aug  1 09:11:46 2006</span></div>
+<span class="f2">※ 引述《ileadu (用過的都說「棒」！)》之銘言：
+</span><span class="f6">: ※ 引述《mdfh (您真內行)》之銘言：
+</span><span class="f6">: 推 elan:你是用IE看的吧?                                            08/01 08:14
+</span><span class="f6">: → elan:在你的style.css第一行加入 @charset &#34;Big5&#34;;                 08/01 08:15
+</span><span class="f6">: → ileadu:樓上也是高手.. 太厲害了（我完全不知道有這種寫法）        08/01 08:18
+</span><span class="f6">: → elan:&lt;script&gt;元素有一個charset屬性 指定外部的JS encoding        08/01 08:27
+</span><span class="f6">: → elan:&lt;link&gt;也有 從link指定也可以                                08/01 08:30
+</span><span class="f6">: 關於這個
+</span><span class="f6">: <a href="https://www.w3.org/TR/html4/struct/links.html#edef-LINK" target="_blank" rel="noreferrer noopener nofollow">http://www.w3.org/TR/html4/struct/links.html#edef-LINK</a>
+</span><span class="f6">: 可是我直接加在Link 的地方，
+</span><span class="f6">: &lt;LINK href=&#34;學習與評量研究室-劉子鍵副教授 著作.files/style.css&#34;
+</span><span class="f6">: type=&#34;text/css&#34; rel=&#34;stylesheet&#34; charset=&#34;Big5&#34; /&gt;
+</span><span class="f6">: 還是沒變耶，就是原po的問題一樣還是在
+</span><span class="f6">: 而用 @charset &#34;Big5&#34; 卻可以用，可解決原po問題
+</span><span class="f6">: 兩個不是應該要有一樣的效能嗎？ 怎麼一個有用處，另一個沒作用？
+</span>
+哈哈 我看漏了一件事 原po的網頁並沒有DOCTYPE宣告
+他的網頁在任何modern的瀏覽器都會以舊規格的HTML來render(Quirks-mode)
+而舊規格的HTML(指XHTML/HTML4之前的規格)
+&lt;link&gt;是沒有charset這個屬性的
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.131.10.144
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ileadu</span><span class="f3 push-content">:？ 我手動幫他加入doctype 一樣沒有效果說...</span><span class="push-ipdatetime"> 08/01 12:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">elan</span><span class="f3 push-content">:你加入那一種doctype?</span><span class="push-ipdatetime"> 08/01 12:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ileadu</span><span class="f3 push-content">:HTML 4.01 Strict 跟 XHTML 1.1 Strict ^^</span><span class="push-ipdatetime"> 08/01 12:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ileadu</span><span class="f3 push-content">:兩個都不行.</span><span class="push-ipdatetime"> 08/01 12:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mdfh</span><span class="f3 push-content">:我試過用 transitional 也一樣</span><span class="push-ipdatetime"> 08/01 14:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mdfh</span><span class="f3 push-content">:又另外如果我把style.css改成 utf-8就OK了？</span><span class="push-ipdatetime"> 08/01 14:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ileadu</span><span class="f3 push-content">:樓上 對啊～這篇是更深入的探討 link 如何加charset才有效</span><span class="push-ipdatetime"> 08/01 16:39
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1154394411.A.949.html?cacheKey=2149-475745815&amp;offset=1937&amp;offset-sig=b5ae0c00b1d3fb6767e6fcac6aae91c56b08cb5e" data-longpollurl="/v1/longpoll?id=a5aaa2e33220709daea79c358b83645dda3f0595" data-offset="1937"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c30991af60',m:'MJIq_gTbuVxHEMy1jprzRR3NdC0rUFbLehaDAFJz4Gc-1653467469-0-AWXJSZYyhz6K76eCPlRVfb4xV4ofTLSS/1jKT7VxlTBI0NUcXSP2Eb+rvnDGzunHVbroYTLIFbFYfI+q45lALR4za6ZP1tMiXDtD+J2xBqpAN5KbQjw21gn0bIEnwhBN4Q6onsC7UOxB8cyHGdBQgRBJUmNx0Fvo3r3Elort1oQ/',s:[0x82c9196415,0x8c8fa73441],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

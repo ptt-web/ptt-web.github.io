@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 新視窗最大化 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我發現全螢幕模式配上frame就會有無法關閉的問題。
+全螢幕模式下會無法按到所有的工具列，所以也無法關閉視窗，這個
+問題在普通的單一視窗很容易解決，就加一個
+&lt;input onclick=&#34;window.close()&#34; type=&#34;button&#34; value=&#34;關閉視窗&#34; name=&#34;close&#34;&gt;
+或是
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 新視窗最大化">
+<meta property="og:description" content="我發現全螢幕模式配上frame就會有無法關閉的問題。
+全螢幕模式下會無法按到所有的工具列，所以也無法關閉視窗，這個
+問題在普通的單一視窗很容易解決，就加一個
+&lt;input onclick=&#34;window.close()&#34; type=&#34;button&#34; value=&#34;關閉視窗&#34; name=&#34;close&#34;&gt;
+或是
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1133706793.A.FDA.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">physmd (smd)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 新視窗最大化</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Dec  4 22:39:49 2005</span></div>
+<span class="f2">※ 引述《hwakeye (hwakeye)》之銘言：
+</span><span class="f6">: 用我剛剛打的範例開新視窗之後會有點小問題
+</span><span class="f6">: 建議改成用下列的方式
+</span><span class="f6">: 在&lt;head&gt;&lt;/head&gt;裡加入
+</span><span class="f6">: &lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;
+</span><span class="f6">: &lt;!--
+</span><span class="f6">: function openwin(url)
+</span><span class="f6">: {
+</span><span class="f6">: window.open(url,&#34;openWindow&#34;,&#34;fullscreen=yes,scrollbars=yes&#34;)
+</span><span class="f6">: }
+</span><span class="f6">: //--&gt;
+</span><span class="f6">: &lt;/script&gt;
+</span><span class="f6">: 然後連結改用&lt;a href=&#34;javascript: openwin(&#39;連結位址&#39;)&#34;&gt;顯示文字&lt;/a&gt;
+</span><span class="f6">: PS:
+</span><span class="f6">: 後來又發現一個問題...
+</span><span class="f6">: IE會用</span><span class="f3 hl">全螢幕模式</span><span class="f6">開啟新視窗...
+</span><span class="f6">: 建議還是改用設定視窗大小的方式比較好...Orz
+</span><span class="f6">我發現全螢幕模式配上frame就會有無法關閉的問題。
+</span><span class="f6">全螢幕模式下會無法按到所有的工具列，所以也無法關閉視窗，這個
+</span><span class="f6">問題在普通的單一視窗很容易解決，就加一個
+</span><span class="f6">&lt;input onclick=&#34;window.close()&#34; type=&#34;button&#34; value=&#34;關閉視窗&#34; name=&#34;close&#34;&gt;
+</span><span class="f6">
+</span><span class="f6">或是
+</span><span class="f6">
+</span><span class="f6">&lt;a href=&#34;javascript window.close();&#34;&gt;關閉視窗&lt;/a&gt;
+</span><span class="f6">
+</span><span class="f6">即可（我是遜腳，在文章列表中按&#34;/&#34;來搜尋&#34;關閉&#34;得知的）
+</span><span class="f6">
+</span><span class="f6">問題出在於有frame set 結構的網頁就沒法這樣做了，
+</span><span class="f6">因為作為被引用的網頁本身無法關掉母視窗。
+</span><span class="f6">
+</span><span class="f6">我目前測試的結果是這樣，不知有無搞錯
+</span><span class="f6">
+</span><span class="f6">--
+</span><span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span><span class="f6">◆ From: 140.112.25.171
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">physmd</span><span class="f3 push-content">:無論如何，還是多謝hwakeye</span><span class="push-ipdatetime"> 12/04 22:40
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1133706793.A.FDA.html?cacheKey=2149-475716147&amp;offset=1225&amp;offset-sig=d5e67bc9e4db9d64a65703f777551b912174502c" data-longpollurl="/v1/longpoll?id=4511b1cd68177b34ea7e7907945cb9f72e9f8ca9" data-offset="1225"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce99cecaeaf60',m:'.UQhsRSk3ETHT65qNxlBmXLkvia7lzPTsgr7ZhrBGlA-1653467463-0-AWMGOvz48S81+GI0IHuDw6YCjV6oCnsmW4YIFGvauG9Vo5X4OJRoTkMclG1D5ln4PqOlIlr/bZbs53tPoLJ75LfxulJr1m68bPhGn2lO/2TAh7GT11yDpxPySJfywHmSplqwo6aaADzJweAhkoJNTmoBlEJx38FQENbvK+KeCQCx',s:[0xbdd8237b40,0x0674d4299f],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

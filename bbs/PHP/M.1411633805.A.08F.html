@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] parser 文字 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="不好意思，小弟剛接觸php不久
+有關於parser的問題想要詢問一下
+比方說，我有一個網頁想要parser
+http://house.ilantravel.com.tw/
+而這個網頁最下方有一堆民宿的文字超鏈結
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] parser 文字">
+<meta property="og:description" content="不好意思，小弟剛接觸php不久
+有關於parser的問題想要詢問一下
+比方說，我有一個網頁想要parser
+http://house.ilantravel.com.tw/
+而這個網頁最下方有一堆民宿的文字超鏈結
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1411633805.A.08F.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">woominin (沒事就好)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] parser 文字</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Sep 25 16:30:03 2014</span></div>
+不好意思，小弟剛接觸php不久
+
+有關於parser的問題想要詢問一下
+
+比方說，我有一個網頁想要parser
+<a href="http://house.ilantravel.com.tw/" target="_blank" rel="noreferrer noopener nofollow">http://house.ilantravel.com.tw/</a>
+
+而這個網頁最下方有一堆民宿的文字超鏈結
+
+請問我要怎麼parser這些超鏈結的文字部份呢
+
+檢查了原始碼，比方說
+&lt;td&gt;&lt;span class=&#34;s1&#34;&gt;．&lt;/span&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;font size=&#34;2&#34;&gt;
+&lt;a href=&#34;bnb/kite.htm&#34; target=&#34;_blank&#34;&gt;風箏小木屋民宿&lt;/a&gt;&lt;/font&gt;&lt;/td&gt;
+這是其中一個
+
+我要怎麼parser出來 風箏小木屋民宿  這串文字呢 ??
+
+我有用 simple_html_dom.php
+
+$dom = file_get_html(&#39;<a href="http://house.ilantravel.com.tw/&#39;);" target="_blank" rel="noreferrer noopener nofollow">http://house.ilantravel.com.tw/&#39;);</a>
+$result = $dom-&gt;find(&#39;a&#39;);
+foreach($result as $v) {echo $v-&gt;href . &#39;&lt;br&gt;&#39;;}
+這樣只能parser出超鏈結，但無法辨認，哪個鏈結是誰
+
+麻煩前輩解惑，謝謝
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 140.112.125.77
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1411633805.A.08F.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1411633805.A.08F.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">powyo</span><span class="f3 push-content">: preg_match</span><span class="push-ipdatetime"> 09/25 16:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KawasumiMai</span><span class="f3 push-content">: 同一樓，然後去看一下正規表示式吧</span><span class="push-ipdatetime"> 09/25 16:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rasca0027</span><span class="f3 push-content">: -&gt;innertext</span><span class="push-ipdatetime"> 10/01 12:20
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1411633805.A.08F.html?cacheKey=2148-469801507&amp;offset=1171&amp;offset-sig=e57194f5770115a28c027ac954bcec902ebc35e7" data-longpollurl="/v1/longpoll?id=77d9c5f8b1dafdf13793d3dee9f78a98859f83d7" data-offset="1171"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea3beb0c807e',m:'Zan.wLZJ6iCg2_O.LVfktfPYClkSgMcFj.TTsnTOV0o-1653467488-0-AV4sO5wp2NrKJ7ytLcwNVA2duJYnxmdegRbhfNQlOb6NtP2722NPrInfPfRdApC2z9XogwymDr8dQuqyWBB9EfkFv2Szof4BEVxNc1LZmH78yxxgWFkXpsvKhws59LEgBHrsKnt6EecJaDnJD31gpodxcsXfz5ZV4edZKyKkTP3d',s:[0x9b4c8dfe61,0x8caf9eaee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

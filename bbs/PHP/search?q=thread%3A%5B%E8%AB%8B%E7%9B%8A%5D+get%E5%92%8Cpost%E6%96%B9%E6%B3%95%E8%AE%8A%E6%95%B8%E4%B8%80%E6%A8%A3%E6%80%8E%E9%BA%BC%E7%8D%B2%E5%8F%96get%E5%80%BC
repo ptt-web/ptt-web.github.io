@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>thread:[請益] get和post方法變數一樣怎麼獲取get值 - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="thread:[請益] get和post方法變數一樣怎麼獲取get值" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169432637.A.C6E.html">Re: [請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">fillano</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afillano">搜尋看板內 fillano 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/22</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169396229.A.F22.html">Re: [請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wellwind</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Awellwind">搜尋看板內 wellwind 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169135173.A.A7A.html">Re: [請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wellwind</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Awellwind">搜尋看板內 wellwind 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169132804.A.457.html">Re: [請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">eric77712</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aeric77712">搜尋看板內 eric77712 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169132627.A.014.html">Re: [請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">eric77712</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aeric77712">搜尋看板內 eric77712 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1169128355.A.784.html">[請益] get和post方法變數一樣怎麼獲取get值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;get%E5%92%8Cpost%E6%96%B9%E6%B3%95%E8%AE%8A%E6%95%B8%E4%B8%80%E6%A8%A3%E6%80%8E%E9%BA%BC%E7%8D%B2%E5%8F%96get%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac08fce8a56',m:'1IbUWFEES3_YrPFQ06r0Mn8S5yC5nj6T4SKUtSAqaIA-1653467509-0-AZcw1N/P+fX9wbOfSBSlKd4ZbxlErqKoxiGeqcCsvRe/xsxzsX7ZClxoJZAJrY2j93lVIsg7xVFaE8R1lJZk6P6QwS7MnM2O2HpAIsjO2Qyw+2IFgd461fac5c0k05IARyo2Xga93saLrYfS7XuQeU/NEd9OE/OCCkMLMyR4t8XNnX8SysbkmaZPfRlZ5NVry9c09LzsJjQDlZtIFlZI5rMgMLMGxzj1VCCKJK/vdsDrA3sb9hdPVjBVHee3y89+uR8BRdcflb+0j3GEoWv89y2FYTtY2TXgR2hr4ZZC1m71U0lHQPOHGVybvBrmN47wDKTHejLAEY6CSQMLmXs2Nwg=',s:[0xac0fe7ab92,0xb10b5529d3],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

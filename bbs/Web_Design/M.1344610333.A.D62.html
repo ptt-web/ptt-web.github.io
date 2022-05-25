@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 規劃一個網頁多個表單,送出而不換頁方法 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我想要的目的大致上就是，
+從database 撈出很多筆訂單 -&gt; 每個訂單都包成一個 form (擁有uniq id)
+submit之後, 經過jQuery validate plugin , 成功之後 remove那筆訂單,
+並且將資料送到後端PHP,將結果 output  在原本網頁。
+整個過程不換頁，但是目前的作法並不能達到我目的。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 規劃一個網頁多個表單,送出而不換頁方法">
+<meta property="og:description" content="我想要的目的大致上就是，
+從database 撈出很多筆訂單 -&gt; 每個訂單都包成一個 form (擁有uniq id)
+submit之後, 經過jQuery validate plugin , 成功之後 remove那筆訂單,
+並且將資料送到後端PHP,將結果 output  在原本網頁。
+整個過程不換頁，但是目前的作法並不能達到我目的。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1344610333.A.D62.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tao2tw (smile_ting)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 規劃一個網頁多個表單,送出而不換頁方法</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Aug 10 22:52:11 2012</span></div>
+我想要的目的大致上就是，
+從database 撈出很多筆訂單 -&gt; 每個訂單都包成一個 form (擁有uniq id)
+submit之後, 經過jQuery validate plugin , 成功之後 remove那筆訂單,
+並且將資料送到後端PHP,將結果 output  在原本網頁。
+
+整個過程不換頁，但是目前的作法並不能達到我目的。
+下面兩張圖分別是我的架構，以及想要達到的目的。
+
+
+煩請給一些建議  或者可以討論一下怎麼樣的作法比較好 感謝！！
+
+
+<a href="https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223724.jpg" target="_blank" rel="noreferrer noopener nofollow">https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223724.jpg</a>
+<div class="richcontent"><img src="https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223724.jpg" alt="" loading="lazy" /></div>
+
+<a href="https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223946.jpg" target="_blank" rel="noreferrer noopener nofollow">https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223946.jpg</a>
+<div class="richcontent"><img src="https://dl.dropbox.com/u/23461380/QQ%E6%88%AA%E5%9B%BE20120810223946.jpg" alt="" loading="lazy" /></div>
+
+
+
+[前端.php] =&gt; [jQuery validate] =&gt; [後端網頁] (整個過程不換頁 始終停留在前端)
+
+[前端php] : 裡面資料會隨著資料庫動態改變 每一列tr 都包著一個form
+&lt;table width=&#34;800&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;form class=myform id=form_13 action=&#34;後端.php&#34;&gt;&lt;tr id=&#34;13&#34;&gt;&lt;/from&gt;
+&lt;form ...&gt;&lt;tr id=&#34;21&#34;&gt;&lt;/form&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+[validate js]
+
+ $(&#39;.myform&#39;).each(function(){
+
+submitHandler: function(form) {
+$.post(&#39;admin_order_validate.php&#39;, $form_obj.serialize(), function(data) {
+    $(&#34;#results&#34;).html(data);
+    $(&#34;#div_&#34;+sn).remove();
+})
+.error(function() { alert(&#34;error&#34;); });
+return false;
+}
+}
+
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 119.77.136.156
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">akiratw</span><span class="f3 push-content">:Ajax</span><span class="push-ipdatetime"> 08/10 22:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tao2tw</span><span class="f3 push-content">:我目前是透過 jqeury .post方法送出去 但是會直接跳頁</span><span class="push-ipdatetime"> 08/10 23:02
+</span></div><span class="f2">※ 編輯: tao2tw          來自: 119.77.136.156       (08/10 23:05)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">UniFish</span><span class="f3 push-content">:$.ajax + jQuery template可以輕鬆達到你要的目的</span><span class="push-ipdatetime"> 08/10 23:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">UniFish</span><span class="f3 push-content">:用submit一定會換頁</span><span class="push-ipdatetime"> 08/10 23:05
+</span></div><span class="f2">※ 編輯: tao2tw          來自: 119.77.136.156       (08/10 23:24)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tao2tw</span><span class="f3 push-content">:解決囉，感謝樓上！！</span><span class="push-ipdatetime"> 08/10 23:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LaPass</span><span class="f3 push-content">:看過用iframe包的....</span><span class="push-ipdatetime"> 08/10 23:43
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1344610333.A.D62.html?cacheKey=2149-475918377&amp;offset=2021&amp;offset-sig=4b7e874ea81b8d076e190a61c7e1f7151075c834" data-longpollurl="/v1/longpoll?id=197e3958708389fd44b18ecc5955d6250386f4d6" data-offset="2021"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9f58b75807e',m:'laK0MalPhOhG.y7VsjU95LbnUdiw9iQzd7IZqqYtg5I-1653467477-0-AZl7qExJLWT558hBGNLPm+U27HdupewU6u1TQQF7n62nU9haME+sPkJBw+3dmmu/oCNdMFEJrftICyW48nkIEbdS6lPtpAf8ewBMncljOgpT3+5cZFSQLZ8noHXdLl4mv7CXsTYbNjvFWlLCSx8swfMACmrF05uswwkWzxXKkbbV',s:[0xd4d99a211e,0xb8af5efeac],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

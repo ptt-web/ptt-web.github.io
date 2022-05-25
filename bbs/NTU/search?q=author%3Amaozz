@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:maozz - NTU - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/NTU/index.html"><span class="board-label">看板 </span>NTU</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/NTU/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/NTU/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/NTU/search?page=4&amp;q=author%3Amaozz">最舊</a>
+				<a class="btn wide" href="/bbs/NTU/search?page=2&amp;q=author%3Amaozz">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/NTU/search?page=1&amp;q=author%3Amaozz">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:maozz" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">18</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1652715327.A.F28.html">[心情] 台大板板主咧</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%BF%83%E6%83%85%5D&#43;%E5%8F%B0%E5%A4%A7%E6%9D%BF%E6%9D%BF%E4%B8%BB%E5%92%A7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f0">X1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1647186657.A.F04.html">[心情] 被 Dcard 台大板討論了 &gt;&lt;</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%BF%83%E6%83%85%5D&#43;%E8%A2%AB&#43;Dcard&#43;%E5%8F%B0%E5%A4%A7%E6%9D%BF%E8%A8%8E%E8%AB%96%E4%BA%86&#43;%3E%3C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">47</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1645712134.A.F4B.html">[失物] NTU 板主</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%A4%B1%E7%89%A9%5D&#43;NTU&#43;%E6%9D%BF%E4%B8%BB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1643692923.A.1A6.html">[公告] 2022二月置底閒聊區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;2022%E4%BA%8C%E6%9C%88%E7%BD%AE%E5%BA%95%E9%96%92%E8%81%8A%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">10</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1643285570.A.C0F.html">[公告] 2022寒假板主選舉</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;2022%E5%AF%92%E5%81%87%E6%9D%BF%E4%B8%BB%E9%81%B8%E8%88%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/27</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">46</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1642397468.A.831.html">[問題] poké生魚飯大家都吃哪一家</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;pok%C3%A9%E7%94%9F%E9%AD%9A%E9%A3%AF%E5%A4%A7%E5%AE%B6%E9%83%BD%E5%90%83%E5%93%AA%E4%B8%80%E5%AE%B6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1641830246.A.41D.html">[公告] 110-1期末廢文週結算</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;110-1%E6%9C%9F%E6%9C%AB%E5%BB%A2%E6%96%87%E9%80%B1%E7%B5%90%E7%AE%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1641308482.A.0DC.html">[公告] 2022宿舍置底交換</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;2022%E5%AE%BF%E8%88%8D%E7%BD%AE%E5%BA%95%E4%BA%A4%E6%8F%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1641129493.A.2B7.html">[公告] 110-1 期末廢文週活動+置底怒灌區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;110-1&#43;%E6%9C%9F%E6%9C%AB%E5%BB%A2%E6%96%87%E9%80%B1%E6%B4%BB%E5%8B%95%2B%E7%BD%AE%E5%BA%95%E6%80%92%E7%81%8C%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/02</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1641015153.A.399.html">[公告] 一月置底閒聊區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E4%B8%80%E6%9C%88%E7%BD%AE%E5%BA%95%E9%96%92%E8%81%8A%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1638421863.A.BF1.html">[公告] 十二月置底閒聊區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E5%8D%81%E4%BA%8C%E6%9C%88%E7%BD%AE%E5%BA%95%E9%96%92%E8%81%8A%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/02</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">13</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1637248403.A.E95.html">[公告] 110-1 期中廢文週結算</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;110-1&#43;%E6%9C%9F%E4%B8%AD%E5%BB%A2%E6%96%87%E9%80%B1%E7%B5%90%E7%AE%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1636715307.A.947.html">[廢文] 洗腦</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%BB%A2%E6%96%87%5D&#43;%E6%B4%97%E8%85%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f0">X1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1636555311.A.53B.html">[公告] 遲來的110-1期中廢文週活動</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E9%81%B2%E4%BE%86%E7%9A%84110-1%E6%9C%9F%E4%B8%AD%E5%BB%A2%E6%96%87%E9%80%B1%E6%B4%BB%E5%8B%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/10</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1635833550.A.727.html">[公告] 十一月置底閒聊區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E5%8D%81%E4%B8%80%E6%9C%88%E7%BD%AE%E5%BA%95%E9%96%92%E8%81%8A%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/02</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">10</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1635421570.A.70B.html">[公告] 刪文桶桶 (更改判決)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E5%88%AA%E6%96%87%E6%A1%B6%E6%A1%B6&#43;%28%E6%9B%B4%E6%94%B9%E5%88%A4%E6%B1%BA%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1633517042.A.9E1.html">[公告] 十月置底閒聊區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E5%8D%81%E6%9C%88%E7%BD%AE%E5%BA%95%E9%96%92%E8%81%8A%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/06</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">11</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1633220665.A.BE7.html">[公告] 水桶</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%B0%B4%E6%A1%B6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">25</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1631987037.A.280.html">[板規] 臺大板板規 ver. 2021 v2</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E6%9D%BF%E8%A6%8F%5D&#43;%E8%87%BA%E5%A4%A7%E6%9D%BF%E6%9D%BF%E8%A6%8F&#43;ver.&#43;2021&#43;v2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/19</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/NTU/M.1631255836.A.6CB.html">[公告] 有話大聲說！板標活動開跑</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">maozz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/NTU/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%9C%89%E8%A9%B1%E5%A4%A7%E8%81%B2%E8%AA%AA%EF%BC%81%E6%9D%BF%E6%A8%99%E6%B4%BB%E5%8B%95%E9%96%8B%E8%B7%91">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/NTU/search?q=author%3Amaozz">搜尋看板內 maozz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cda80bf2b204a',m:'ubo4KP71syw8sXFuWsugSlPIwAFndf71B5V.Au3FsxU-1653466844-0-AQl0b4qKdyRnUOhQnPZP3sdwBNOQplj56bFjTBBBu6rI04o9cSujZl55nZDeGxa70fW2AzKQ6MhT9jLRagJt6rErISuwk/y5SlVEcNoqaDYFPfHm4IaXhICN2ZyfDRz6t7zjeSM65lwJMrbFjcntwp3BGiiwdFejhOFPMRThBZ1Y',s:[0xc0fb8dfb57,0x9486f7f604],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

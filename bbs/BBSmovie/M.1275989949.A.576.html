@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 關於進版 - 看板 BBSmovie - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="就是只是大張一點的圖@@
+: : 二、若有數個(非動畫)進版，而有一個動畫型的進版時，
+: :     那個動畫型的進版應該是不能用^L:name:E 來下指令，
+: :     這時指令又該怎麼寫呢？
+:  這個..我猜你需要的是 再設定一個結束頁, 分別在每一個進版的最後都加上^LG,
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 關於進版">
+<meta property="og:description" content="就是只是大張一點的圖@@
+: : 二、若有數個(非動畫)進版，而有一個動畫型的進版時，
+: :     那個動畫型的進版應該是不能用^L:name:E 來下指令，
+: :     這時指令又該怎麼寫呢？
+:  這個..我猜你需要的是 再設定一個結束頁, 分別在每一個進版的最後都加上^LG,
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/BBSmovie/M.1275989949.A.576.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/BBSmovie/index.html"><span class="board-label">看板 </span>BBSmovie</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/BBSmovie/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">IamNotyet (非也)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">BBSmovie</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 關於進版</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jun  8 17:39:06 2010</span></div>
+<span class="f2">※ 引述《star123 (Angel Beats!)》之銘言：
+</span><span class="f6">: : 一、若有數個(非動畫)進版的長度不止一頁，
+</span><span class="f6">: :     想要讓它能完整跑完再停止，而且不會跳到其他頁的話，
+</span><span class="f6">: :     在^L:name:的後面應該如何下指令呢？
+</span><span class="f6">:  非動畫進版, 完整跑完?
+</span><span class="f6">:  麻煩解釋清楚一點 XD&#34;
+</span>
+就是只是大張一點的圖@@
+
+
+<span class="f6">: : 二、若有數個(非動畫)進版，而有一個動畫型的進版時，
+</span><span class="f6">: :     那個動畫型的進版應該是不能用^L:name:E 來下指令，
+</span><span class="f6">: :     這時指令又該怎麼寫呢？
+</span><span class="f6">:  這個..我猜你需要的是 再設定一個結束頁, 分別在每一個進版的最後都加上^LG,
+</span><span class="f6">:  跳到這一頁?
+</span>
+所以是，假使做了一個空白的結束頁，就變成這樣：
+
+^LG:name1:,:name2:,:name3:
+^L:name1:
+
+[第一個進版的內容]
+
+^LG:end:
+^L:name2:
+
+[第二個進版的內容]
+
+^LG:end:
+^L:name3:
+
+[第三個進版的內容]
+
+^LG:end:
+
+
+這樣嗎？
+
+--
+<span class="hl">
+</span><span class="hl">╔═╦╮            ╔╦╮╮                                </span><span class="f0 b7 hl">ＳＥＴ</span><span class="f0 hl">　　　　 ψ</span>
+<span class="hl">    ║  ╭═╮╮╮╮╠╣║║╭═╮╬═╮╮  ╭╭═╮╬═╮  </span><span class="f3 b3 hl">視聽劇場      </span>
+<span class="f6 b6 hl">  ╔╝  ╭═╣║║║╠╣║║║  ║║    ║  ║╠═╯║    </span>  <span class="f3 b3 hl">批踢踢電視公司</span><span class="f0 hl"> 非</span>
+<span class="f6 b6 hl">╰╩═╝╰═╰╰╰╰╰╩╰╝╰═╯╰═╯╰═╣╰═╯╰═╯</span>  <span class="f3 b3 hl">電視頻道專版  </span><span class="f0 hl"> 也</span>
+                                        ╰═╯
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.233.67.65
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">star123</span><span class="f3 push-content">:最後還要一個 ^L:end:E</span><span class="push-ipdatetime"> 06/08 17:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star123</span><span class="f3 push-content">:第一段, 就用一般動畫的方式, 讓它一行一行跑.</span><span class="push-ipdatetime"> 06/08 17:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star123</span><span class="f3 push-content">:例如,分為P1&amp;P2 , P2就把P1的最上面那一行刪除掉, 再添上</span><span class="push-ipdatetime"> 06/08 17:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star123</span><span class="f3 push-content">:該圖的下一行就好了.</span><span class="push-ipdatetime"> 06/08 17:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">star123</span><span class="f3 push-content">:再利用^LG跳到結束頁就好囉~</span><span class="push-ipdatetime"> 06/08 17:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">IamNotyet</span><span class="f3 push-content">:嗯，謝謝解答:)</span><span class="push-ipdatetime"> 06/08 17:55
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/BBSmovie/M.1275989949.A.576.html?cacheKey=2148-828171322&amp;offset=1962&amp;offset-sig=861fd1c2377c6a2f4061dcef92cacb8914998ff4" data-longpollurl="/v1/longpoll?id=99c42e940cb02d37a9b55ad98e8d6f6450cbc247" data-offset="1962"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdc770ac580e1',m:'EJCAnvzc31fz5sOrpJMv0T35XvlhzQX25w7av1PwXew-1653466924-0-AbVjVQJksKfKuwit5Rd1q7RxXRRPU1IG7Khc27H9bw+KhIXVh6oYG7HcMFYOLhPOpglNdmwPm2XYOOa+OmhRTfztId2ecjatbkTe78z1m+bNu7Yga5jK6EQwCMq0irNonT5HbHiqo+c6b3JqBsBGYpfNldlJ7vfiSjvrkrn2kZ1b',s:[0x14f081c8e7,0x86040f9697],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

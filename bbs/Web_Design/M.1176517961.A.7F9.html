@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] IIS跑asp的一個問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="轉一篇舊聞，希望對你有幫助
+※ 引述《xioak (蠢)》之銘言：
+: 請問各位
+: 我安裝完iis後起動網站
+: 結果可以連的到我的default.htm
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] IIS跑asp的一個問題">
+<meta property="og:description" content="轉一篇舊聞，希望對你有幫助
+※ 引述《xioak (蠢)》之銘言：
+: 請問各位
+: 我安裝完iis後起動網站
+: 結果可以連的到我的default.htm
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1176517961.A.7F9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Numino (神聖光芒)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] IIS跑asp的一個問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Apr 14 10:32:37 2007</span></div>
+轉一篇舊聞，希望對你有幫助
+<span class="f2">※ 引述《xioak (蠢)》之銘言：
+</span><span class="f6">: 請問各位
+</span><span class="f6">: 我安裝完iis後起動網站
+</span><span class="f6">: 結果可以連的到我的default.htm
+</span><span class="f6">: 但是要跑asp檔就出現Server Application Error外加一串英文
+</span><span class="f6">: 我有試著去網路上找解決方法
+</span><span class="f6">: 一個是說把應用程式保護改成低  我改了 可是沒用
+</span><span class="f6">: 另外一個是說執行C:\InetPub\AdminScripts\synciwam.vbs
+</span><span class="f6">: 執行了  可是出現Error ~&#34;~
+</span><span class="f6">: 我現在已經不知道該怎麼改才好
+</span><span class="f6">: 因此前來請教各位
+</span>
+發信人: fdlpw (流星 * 蝴蝶 * 劍), 信區: Homepage
+標題: http 500錯誤z
+發信站: 日月光華 (2003年06月22日17:31:06 星期天), 站內信件
+
+這個錯誤太常見了，學習asp+IIS必知:))
+
+
+一.錯誤表現
+
+
+IIS5的HTTP 500內部服務器錯誤是我們經常碰到的錯誤之一，它的主要錯誤表現就是ASP
+程序不能瀏覽但HTM靜態網頁不受影響。另外當錯誤發生時，系統事件日志和安全事件日
+志都會有相應的記錄。
+
+具體如下：
+
+
+(一)IE中的表現
+
+
+當瀏覽以前能夠正常運行的asp頁面時會出現如下的錯誤:
+
+
+網頁無法顯示
+
+您要訪問的網頁存在問題，因此無法顯示。
+
+請嘗試下列操作：
+
+
+打開 <a href="http://127.0.0.1" target="_blank" rel="noreferrer noopener nofollow">http://127.0.0.1</a> 主頁，尋找指向所需信息的鏈接。
+
+單擊刷新按鈕，或者以後重試。
+
+
+HTTP 500 - 內部服務器錯誤
+
+Internet 信息服務
+
+
+技術信息（支持個人）
+
+
+詳細信息：
+
+Microsoft 支持
+
+
+或者是:
+
+Server Application Error
+
+The server has encountered an error while loading an application during the
+processing of your request. Please refer to the event log for more detail
+information. Please contact the server administrator for assistance.
+
+
+(二)安全日志記錄(2條)
+
+事件類型: 失敗審核
+
+事件來源: Security
+
+事件種類: 登錄/注銷
+
+事件 ID: 529
+
+日期: 2001-9-9
+
+事件: 11:17:07
+
+用戶: NT AUTHORITY\SYSTEM
+
+計算機: MYSERVER
+
+描述:
+
+登錄失敗:
+
+原因: 用戶名未知或密碼錯誤
+
+用戶名: IWAM_MYSERVER
+
+域: MYDOM
+
+登錄類型: 4
+
+登錄過{: Advapi
+
+身份驗証程序包: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+
+工作站名: MYSERVER
+
+
+
+事件類型: 失敗審核
+
+事件來源: Security
+
+事件種類: 帳戶登錄
+
+事件 ID: 681
+
+日期: 2001-9-9
+
+事件: 11:17:07
+
+用戶: NT AUTHORITY\SYSTEM
+
+計算機: MYSERVER
+
+描述:
+
+登錄到b戶: IWAM_MYSERVER
+
+登錄的用戶: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+
+從工作站: MYSERVER
+
+未成功。錯誤代碼是: 3221225578
+
+
+
+(三)系統日志中的記錄(2條)
+
+事件類型: 錯誤
+
+事件來源: DCOM
+
+事件種類: 無
+
+事件 ID: 10004
+
+日期: 2001-9-9
+
+事件: 11:20:26
+
+用戶: N/A
+
+計算機: MYSERVER
+
+描述:
+
+DCOM 遇到錯誤“無法更新密碼。提供給新密碼的值包含密碼中不允許的值。 ”並且無
+法登錄到 .\IWAM_MYSERVER 上以運行服務器:
+
+{3D14228D-FBE1-11D0-995D-00C04FD919C1}
+
+
+事件類型: 警告
+
+事件來源: W3SVC
+
+事件種類: 無
+
+事件 ID: 36
+
+日期: 2001-9-9
+
+事件: 11:20:26
+
+用戶: N/A
+
+計算機: MYSERVER
+
+描述:
+
+服務器未能轉入應用程序 &#39;/LM/W3SVC/4/Root&#39;。錯誤是 &#39;RunAs 的格式必須是
+&lt;域名&gt;\&lt;用戶名&gt;或只是&lt;用戶名&gt;&#39;。
+
+若要獲取關于此消息的更多的信息，請訪問 Microsoft 聯機支持站點:
+<a href="https://www.microsoft.com/contentredirect.asp" target="_blank" rel="noreferrer noopener nofollow">http://www.microsoft.com/contentredirect.asp</a> 。
+
+二.原因分析
+
+綜合分析上面的錯誤表現我們可以看出，主要是由于IWAM賬號（在我的計算機即是IWAM_
+MYSERVER賬號）的密碼錯誤造成了HTTP 500內部錯誤。
+
+
+在詳細分析HTTP500內部錯誤產生的原因之前，先對IWAM賬號進行一下簡要的介紹：IWAM
+賬號是安裝IIS5時系統自動建立的一個內置賬號，主要用于啟動進程之外的應用程序的I
+nternet信息服務。IWAM賬號的名字會根據每台計算機NETBIOS名字的不同而有所不同，
+通用的格式是IWAM_MACHINE，即由“IWAM”前綴、連接線“_”加上計算機的NETBIOS名
+字組成。我的計算機的NETBIOS名字是MYSERVER，因此我的計算機上IWAM賬號的名字就是
+IWAM_MYSERVER，這一點與IIS匿名賬號ISUR_MACHINE的命名方式非常相似。
+
+
+IWAM賬號建立後被Active Directory、IIS metabase數據庫和COM+應用程序三方共同使
+用，賬號密碼被三方分別保存，並由操作系統負責這三方保存的IWAM密碼的同步工作。
+按常理說，由操作系統負責的工作我們大可放心，不必擔心出錯，但不知是BUG還是其它
+什麼原因，系統的對IWAM賬號的密碼同步工作有時會失敗，使三方IWAM賬號所用密碼不
+統一。當IIS或COM+應用程序使用錯誤IWAM的密碼登錄系統，啟動IIS Out-Of-Process
+Pooled Applications時，系統會因密碼錯誤而拒絕這一請求，導致IIS
+Out-Of-Process Pooled Applications啟動失敗，也就是我們在ID10004錯誤事件中看到
+的“不能運行服務器{3D14228D-FBE1-11D0-995D-00C04FD919C1} ”（這裡{3D14228D-FB
+E1-11D0-995D-00C04FD919C1} 是IIS Out-Of-Process Pooled Applications的KEY），
+不能轉入IIS5應用程序，HTTP 500內部錯誤就這樣產生了。
+
+三.解決辦法
+
+
+知道了導致HTTP 500內部錯誤的原因，解決起來就比較簡單了，那就是人工同步IWAM賬
+號在Active Directory、IIS metabase數據庫和COM+應用程序中的密碼。
+
+具體操作分三步,均需要以管理員身份登錄計算機以提供足夠的操作權限（IWAM賬號以IW
+AM_MYSERVER為例）。
+
+
+（一）更改Active Directory中IWAM_MYSERVER賬號的密碼
+
+因IWAM賬號的密碼由系統控制，隨機產生，我們並不知道是什麼，為完成下面兩步的密
+碼同步工作，我們必須將IWAM賬號的密碼設置為一個我們知道的值。
+
+1、選擇“開始”-&gt;“程序”-&gt;“管理工具”-&gt;&#34;Active Directory用戶和計算機&#34;，啟動
+“Active Directory用戶和計算機”管理單元。
+
+2、單擊“user”，選中右面的“IWAM_MYSERVER”，右擊選擇“重設密碼(T)...”，在
+跳出的重設密碼對方框中給IWAM_MYSERVER設置新的密碼，這兒我們設置成“Aboutnt200
+1”（沒有引號的），確定，等待密碼修改成功。
+
+
+（二）同步IIS metabase中IWAM_MYSERVER賬號的密碼
+
+可能因為這項改動太敏感和重要，微軟並沒有為我們修改IIS metabase中IWAM_MYSERVER
+賬號密碼提供一個顯式的用戶接口，只隨IIS5提供了一個管理腳本adsutil.vbs，這個腳
+本位于C:\inetpub\adminscripts子目錄下（位置可能會因你安裝IIS5時設置的不同而有
+所變動）。
+
+adsutil.vbs腳本功能強大，參數非常多且用法復雜，這裡只提供使用這個腳本修改IWAM
+_MYSERVER賬號密碼的方法:
+
+adsutil SET w3svc/WAMUserPass Password
+
+&#34;Password&#34;參數就是要設置的IWAM賬號的新的密碼。因此我們將IIS metabase中IWAM_MY
+SERVER賬號的密碼修改為“Aboutnt2001”的命令就是：
+
+c:\Inetpub\AdminScripts&gt;adsutil SET w3svc/WAMUserPass &#34;Aboutnt2001&#34;
+
+修改成功後，系統會有如下提示：
+
+WAMUserPass: (String) &#34;Aboutnt2001&#34;
+
+
+（三）同步COM+應用程序所用的IWAM_MYSERVER的密碼
+
+同步COM+應用程序所用的IWAM_MYSERVER的密碼，我們有兩種方式可以選擇:一種是使用
+組件服務MMC管理單元，另一種是使用IWAM賬號同步腳本synciwam.vbs。
+
+
+1、使用組件服務MMC管理單元
+
+（1）啟動組件服務管理單元：選擇“開始”-&gt;“運行”-&gt;“MMC”，啟動管理控制台,打
+開“添加/刪除管理單元”對話框,將“組件服務”管理單元添加上。
+
+（2）找到“組件服務”-&gt;“計算機”-&gt;“我的電腦”-&gt;“COM+應用程序”-&gt;“Out-Of-P
+rocess Pooled Applications”，右擊“Out-Of-Process Pooled Applications”-&gt;“
+屬性”。
+
+（3）切換到“Out-Of-Process Pooled Applications”屬性對話框的“標志”選項卡。
+“此應用程序在下列賬戶下運行”選擇中“此用戶”會被選中，用戶名是“IWAM_MYSERV
+ER”。這些都是缺省的，不必改動。在下面的“密碼”和“確認密碼”文本框內輸入正
+確的密碼“Aboutnt2001”，確定退出。
+
+（4）系統如果提示“應用程序被一個以上的外部產品創建。你確定要被這些產品支持嗎
+？”時確定即可。
+
+（5）如果我們在IIS中將其它一些Web的“應用{序保護”設置為“高（獨立的）”,那
+麼這個WEB所使用的COM+應用程序的IWAM賬號密碼也需要同步。重復（1）-（4）步，同
+步其它相應Out of process application的IWAM賬號密碼。
+
+
+2、使用IWAM賬號同步腳本synciwam.vbs
+
+實際上微軟已經發現IWAM賬號在密碼同步方面存在問題， 因此在IIS5的管理腳本中單獨
+為IWAM賬號密碼同步編寫了一個腳本synciwam.vbs，這個腳本位于C:\inetpub\adminscr
+ipts子目錄下（位置可能會因你安裝IIS5時設置的不同而有所變動）。
+
+synciwam.vbs腳本用法比較簡單：
+
+cscript synciwam.vbs [-v|-h]
+
+“-v”參數表示詳細顯示腳本執行的整個過程(建議使用)，“-h”參數用于顯示簡單的
+幫助信息。
+
+
+我們要同步IWAM_MYSERVER賬號在COM+應用程序中的密碼，只需要執行“cscript
+synciwam.vbs -v”即可，如下：
+
+cscript c:\inetpub\adminscripts\synciwam.vbs -v
+
+Microsoft (R) Windows Script Host Version 5.6
+
+版權所有(C) Microsoft Corporation 1996-2000。保留所有權利。
+
+
+WamUserName:IWAM_MYSERVER
+
+WamUserPass:Aboutnt2001
+
+IIS Applications Defined:
+
+Name, AppIsolated, Package ID
+
+w3svc, 0, {3D14228C-FBE1-11d0-995D-00C04FD919C1}
+
+Root, 2,
+
+IISHelp, 2,
+
+IISAdmin, 2,
+
+IISSamples, 2,
+
+MSADC, 2,
+
+ROOT, 2,
+
+IISAdmin, 2,
+
+IISHelp, 2,
+
+Root, 2,
+
+Root, 2,
+
+
+Out of process applications defined:
+
+Count: 1
+
+{3D14228D-FBE1-11d0-995D-00C04FD919C1}
+
+
+Updating Applications:
+
+Name: IIS Out-Of-Process Pooled Applications Key:
+{3D14228D-FBE1-11D0-995D-00C04FD919C1}
+
+
+從上面腳本的執行情況可以看出，使用synciwam.vbs腳本要比使用組件服務的方法更全
+面和快捷。它首先從IIS的metabase數據庫找到IWAM賬號&#34;IWAM_MYSERVER&#34;並取出對應的
+密碼“Aboutnt2001”，然後查找所有已定義的IIS Applications和Out of process
+applications，並逐一同步每一個Out of process applications應用程序的IWAM賬號密
+碼。
+
+使用synciwam.vbs腳本時，要注意一個問題，那就是在你運行synciwam.vbs之前，必須
+保証IIS metabase數據庫與Active Directory中的IWAM密碼已經一致。因為synciwam.vb
+s腳本是從IIS metabase數據庫而不是從Active Directory取得IWAM賬號的密碼，如果II
+S metabase中的密碼不正確，那synciwam.vbs取得的密碼也會不正確，同步操作執行到
+“Updating Applications”系統就會報80110414錯誤，即“找不到應用程序{3D14228D-
+FBE1-11D0-995D-00C04FD919C1}”。
+
+
+序三處的密碼已經同步成功，你的ASP程序又可以運行了！
+
+
+--
+不讓你的眼睛再看見人世的傷心
+投入風裡雨裡相依為命
+用我的痛吻你的心
+<span class="f2">※ 來源:﹒日月光華 bbs.fudan.edu.cn﹒[FROM: 10.100.111.54]
+</span>
+--
+那永恆的,終將毀滅
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 211.99.222.55
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1176517961.A.7F9.html?cacheKey=2149-475771423&amp;offset=8837&amp;offset-sig=48a96b3c6be2698a511e1b4a1331e3b2c8185e01" data-longpollurl="/v1/longpoll?id=503c112c835e6c78502e9aaf54cc902dc56cc3ec" data-offset="8837"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce940bb418a27',m:'HClfJnH6_XOQ_07KlTEIakxX4npky2bRbnjarBCFlzA-1653467448-0-AXuoohagbGCz2/q8AooOe0te/RRPK32o4av3A5HnB4gUapLKO4FzbiRQbCehnUqgiPs17XiDTiGsCNB4FbJJc/P0nz9YdMW2q+G41WlvDLPlUh1bLJuUtODCdiFW+mJUJAWlTZvmaOYnGthT74I7zF+zPXFUF9CnMvs/Dk9DLFox',s:[0x42141b6123,0xe0a5613d8b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

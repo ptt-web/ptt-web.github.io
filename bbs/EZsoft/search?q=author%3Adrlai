@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:drlai - EZsoft - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/EZsoft/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/EZsoft/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/EZsoft/search?page=3&amp;q=author%3Adrlai">最舊</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=2&amp;q=author%3Adrlai">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3Adrlai">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:drlai" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1407067378.A.CE0.html">[請問] 有辦法重設整個新酷音詞庫嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E8%BE%A6%E6%B3%95%E9%87%8D%E8%A8%AD%E6%95%B4%E5%80%8B%E6%96%B0%E9%85%B7%E9%9F%B3%E8%A9%9E%E5%BA%AB%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1389618806.A.D8D.html">Re: [請問] IObit 系列軟體好不好?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;IObit&#43;%E7%B3%BB%E5%88%97%E8%BB%9F%E9%AB%94%E5%A5%BD%E4%B8%8D%E5%A5%BD%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1353950120.A.9EC.html">[請問] mp3 --&gt; audio disc iso?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;mp3&#43;--%3E&#43;audio&#43;disc&#43;iso%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1353812977.A.CF8.html">[請問] 解析圖片中各物件的大小</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%A7%A3%E6%9E%90%E5%9C%96%E7%89%87%E4%B8%AD%E5%90%84%E7%89%A9%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1348756650.A.CB2.html">[請問] 快速切換/停用網路卡的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%2F%E5%81%9C%E7%94%A8%E7%B6%B2%E8%B7%AF%E5%8D%A1%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1333634864.A.348.html">[請問] 有沒有好用的DLNA軟體for windows</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E5%A5%BD%E7%94%A8%E7%9A%84DLNA%E8%BB%9F%E9%AB%94for&#43;windows">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1280982797.A.15C.html">[請問] 重複&#34;資料夾&#34;的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E9%87%8D%E8%A4%87%22%E8%B3%87%E6%96%99%E5%A4%BE%22%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1279796953.A.4D4.html">Re: [請問] 一次開啟多個檔案的捷徑</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E4%B8%80%E6%AC%A1%E9%96%8B%E5%95%9F%E5%A4%9A%E5%80%8B%E6%AA%94%E6%A1%88%E7%9A%84%E6%8D%B7%E5%BE%91">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1269236438.A.509.html">[請問] 自動調整每行字數的軟體？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%87%AA%E5%8B%95%E8%AA%BF%E6%95%B4%E6%AF%8F%E8%A1%8C%E5%AD%97%E6%95%B8%E7%9A%84%E8%BB%9F%E9%AB%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1265974963.A.00A.html">[請問] 有辦法建立USB flash的read-only區域嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E8%BE%A6%E6%B3%95%E5%BB%BA%E7%AB%8BUSB&#43;flash%E7%9A%84read-only%E5%8D%80%E5%9F%9F%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1263658590.A.8D1.html">[請問] 移除ramdisk一問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E7%A7%BB%E9%99%A4ramdisk%E4%B8%80%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1259237792.A.AB1.html">[請問] 類似gmail notifier的軟體？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E9%A1%9E%E4%BC%BCgmail&#43;notifier%E7%9A%84%E8%BB%9F%E9%AB%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1249656242.A.E6F.html">[請問] 7-z有辦法指定預設的解壓縮目錄嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;7-z%E6%9C%89%E8%BE%A6%E6%B3%95%E6%8C%87%E5%AE%9A%E9%A0%90%E8%A8%AD%E7%9A%84%E8%A7%A3%E5%A3%93%E7%B8%AE%E7%9B%AE%E9%8C%84%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1246165884.A.3F7.html">[請問] kmplayer突然無法快轉了？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;kmplayer%E7%AA%81%E7%84%B6%E7%84%A1%E6%B3%95%E5%BF%AB%E8%BD%89%E4%BA%86%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1244645062.A.D6B.html">[請問] 是否有人安裝AppServ後有相同問題呢？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%98%AF%E5%90%A6%E6%9C%89%E4%BA%BA%E5%AE%89%E8%A3%9DAppServ%E5%BE%8C%E6%9C%89%E7%9B%B8%E5%90%8C%E5%95%8F%E9%A1%8C%E5%91%A2%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1244168444.A.859.html">[請問] Notepad++有辦法批次修改編碼嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;Notepad%2B%2B%E6%9C%89%E8%BE%A6%E6%B3%95%E6%89%B9%E6%AC%A1%E4%BF%AE%E6%94%B9%E7%B7%A8%E7%A2%BC%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1240143633.A.7BF.html">[請問] GNUPlot繪圖一問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;GNUPlot%E7%B9%AA%E5%9C%96%E4%B8%80%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1229655932.A.CD2.html">[請問] FolderShare更新後一問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;FolderShare%E6%9B%B4%E6%96%B0%E5%BE%8C%E4%B8%80%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1229482946.A.C4F.html">[請問] Virtual Box使用光碟機一問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;Virtual&#43;Box%E4%BD%BF%E7%94%A8%E5%85%89%E7%A2%9F%E6%A9%9F%E4%B8%80%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1228449789.A.433.html">[請問] 有沒有簡單的音樂放慢軟體呢？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">DRLai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E7%B0%A1%E5%96%AE%E7%9A%84%E9%9F%B3%E6%A8%82%E6%94%BE%E6%85%A2%E8%BB%9F%E9%AB%94%E5%91%A2%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ADRLai">搜尋看板內 DRLai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdbaa4c1a204a',m:'MSfJIhe9RrAbHY6LqSm2l3gIHQhbNJf6iYsEayFZDng-1653466891-0-AYmHV4JomC/xtHGUVZqOWmxk0FG4VXdQkKRWzKoPNbw+KX5FP5Q5VTN2KCtARPc1GJHHZPkfbY3fcW7+R9wYt2Tj+so4YR6SZF4lIivw4ggWBJ28xo7e8lQnTQz2itT2jvSPFssdsLBGrgHQG1O49gApyqx+gOHmWMdd3JqbAYhp',s:[0x77a0503081,0xb37391484c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

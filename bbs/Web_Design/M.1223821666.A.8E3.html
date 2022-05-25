@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 圖片被點到會變色如何做 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="        display:block; //因為你的childNode是block，而a本是inline屬性
+        至少我改了這個以後IE跟FF是相同結果
+        其餘的細節你可以再微調! :)
+:       background:url(&#34;button-left.gif&#34;) no-repeat left top;
+:       margin:0;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 圖片被點到會變色如何做">
+<meta property="og:description" content="        display:block; //因為你的childNode是block，而a本是inline屬性
+        至少我改了這個以後IE跟FF是相同結果
+        其餘的細節你可以再微調! :)
+:       background:url(&#34;button-left.gif&#34;) no-repeat left top;
+:       margin:0;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1223821666.A.8E3.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">adamp3 (Boston&#39;s 10th Man.)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 圖片被點到會變色如何做</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Oct 12 22:27:43 2008</span></div>
+<span class="f6">: &lt;style type=&#34;text/css&#34;&gt;
+</span><span class="f6">:     body {
+</span><span class="f6">:         margin:0;
+</span><span class="f6">:         padding:0;
+</span><span class="f6">:         font: 12px Verdana;
+</span><span class="f6">: }
+</span><span class="f6">:     #tabsF {
+</span><span class="f6">:       width:100%;
+</span><span class="f6">:       background:#FFFFFF;
+</span><span class="f6">:       font-size:93%;
+</span><span class="f6">:       line-height:normal;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF ul {
+</span><span class="f6">:       float:none;
+</span><span class="f6">:       margin:0;
+</span><span class="f6">:       padding:10px 10px 0 5px;
+</span><span class="f6">:       list-style:none;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF li {
+</span><span class="f6">:       display:inline;
+</span><span class="f6">:       margin:0;
+</span><span class="f6">:       padding:0px;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF a {
+</span>        <span class="f3 hl">display:block; </span>//因為你的childNode是block，而a本是inline屬性
+        至少我改了這個以後IE跟FF是相同結果
+
+        其餘的細節你可以再微調! :)
+<span class="f6">:       background:url(&#34;button-left.gif&#34;) no-repeat left top;
+</span><span class="f6">:       margin:0;
+</span><span class="f6">:       padding:0 0 0 4px;
+</span><span class="f6">:       text-decoration:none;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF a span {
+</span><span class="f6">:      display:block;
+</span><span class="f6">:       background:url(\&#34;button-right.gif&#34;) no-repeat right top;
+</span><span class="f6">:       padding:5px 15px 4px 6px;
+</span><span class="f6">:       color:#666;
+</span><span class="f6">:       }
+</span><span class="f6">:     /* Commented Backslash Hack hides rule from IE5-Mac \*/
+</span><span class="f6">:     #tabsF a span {float:none;}
+</span><span class="f6">:     /* End IE5-Mac hack */
+</span><span class="f6">:     #tabsF a:hover span {
+</span><span class="f6">:       color:#FFF;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF a:hover {
+</span><span class="f6">:       background-position:0% -42px;
+</span><span class="f6">:       }
+</span><span class="f6">:     #tabsF a:hover span {
+</span><span class="f6">:       background-position:100% -42px;
+</span><span class="f6">:       }
+</span><span class="f6">: &lt;/style&gt;
+</span><span class="f6">: &lt;div id=tabsF&gt;
+</span><span class="f6">:   &lt;ul&gt;
+</span><span class="f6">:     &lt;li&gt;&lt;a href=&#34;#&#34; title=&#34;Link 1&#34;&gt;&lt;span&gt;Link 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span class="f6">:     &lt;li&gt;&lt;a href=&#34;#&#34; title=&#34;Link 1&#34;&gt;&lt;span&gt;Link 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span class="f6">:     &lt;li&gt;&lt;a href=&#34;#&#34; title=&#34;Link 1&#34;&gt;&lt;span&gt;Link 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span class="f6">:     &lt;li&gt;&lt;a href=&#34;#&#34; title=&#34;Link 1&#34;&gt;&lt;span&gt;Link 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span class="f6">:     &lt;li&gt;&lt;a href=&#34;#&#34; title=&#34;Link 1&#34;&gt;&lt;span&gt;Link 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span class="f6">:     &lt;/li&gt;
+</span><span class="f6">:   &lt;/ul&gt;
+</span><span class="f6">: &lt;/div&gt;
+</span>
+--
+        ○-<span class="f1 hl">.</span><span class="f0 hl">∫</span>
+   <span class="f3 hl">  ︻</span>〔   我的二十歲/四十天美國自助旅行全記錄+球場觀察
+   <span class="f3 b3 hl">  ║  </span>》               <span class="f0 hl">睡過車站 機場 還有旅舍交誼廳</span>
+   <span class="f3 b3 hl">  ║  </span><span class="f0 hl">                        八座城市 七場大聯盟球賽</span>
+                                        <a href="http://adamp3.myweb.hinet.net/" target="_blank" rel="noreferrer noopener nofollow">http://adamp3.myweb.hinet.net/</a> 
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.168.28.98
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">peter1</span><span class="f3 push-content">:超感謝你! 正常了~~:)</span><span class="push-ipdatetime"> 10/12 22:41
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1223821666.A.8E3.html?cacheKey=2149-475817528&amp;offset=2297&amp;offset-sig=495e277c3b71c31be649f96abc024603f5b4acf8" data-longpollurl="/v1/longpoll?id=6f59290f419c97e5b54393670e9e986c4eed5c7e" data-offset="2297"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9544cc214d0',m:'jCnN5aqIF7whJ1XG3OekK95SQMHPHPKMV9K7kHz252E-1653467451-0-ASrXNK0nEUDw31IRbr0x2xKhdJQ+JyMUJfVjdV5JEmu+y0hzP8Oc5a99FwlY6ymVqEXacfs4RREMTImZuGhtk1/f5J3fZcUBuaGB5KOFhY7l5kL4kvaAa1gs+n1NRnCDJu6a/+3EMB2HMqxSiJQqhgn0y+vtVtPx2cfRTijiJGfp',s:[0x1e2de4b491,0xc9cd5a04da],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

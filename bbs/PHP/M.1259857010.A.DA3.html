@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 使用Eclipse 開發網站以及讓Remote及Lo … - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我之前也用過 Aptana Studio，現在改用 Eclipse。
+Eclipse 開發遠端伺服器的 PHP 專案有兩種方法：
+ 1. 用版本控制系統
+    在開發端，開啟 PHP Projects，把專案送上 SVN/CVS server；
+    在伺服器端： 把 project checkout 出來。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 使用Eclipse 開發網站以及讓Remote及Lo …">
+<meta property="og:description" content="我之前也用過 Aptana Studio，現在改用 Eclipse。
+Eclipse 開發遠端伺服器的 PHP 專案有兩種方法：
+ 1. 用版本控制系統
+    在開發端，開啟 PHP Projects，把專案送上 SVN/CVS server；
+    在伺服器端： 把 project checkout 出來。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1259857010.A.DA3.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">JoeHorn (每天都在公司玩OLG)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 使用Eclipse 開發網站以及讓Remote及Lo …</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Dec  4 00:16:47 2009</span></div>
+<span class="f2">※ 引述《huge (huge)》之銘言：
+</span><span class="f6">:         小弟對這套開發工具並不熟悉
+</span><span class="f6">:         最近想說在 mac 上不再使用試用版的TextMate跟BBEdit
+</span><span class="f6">:         所以決定安裝一下 Eclipse PDT 來做為主要開發工具
+</span><span class="f6">:         但是遇到一個問題就是
+</span><span class="f6">:         我現在開發好的網站是放在另一台電腦，而本機(Mac)也會有一份
+</span><span class="f6">:         不曉得大家都是怎麼在Eclipse這套工具上做自動化同步的呢？
+</span>我之前也用過 Aptana Studio，現在改用 Eclipse。
+
+Eclipse 開發遠端伺服器的 PHP 專案有兩種方法：
+
+ 1. 用版本控制系統
+
+    在開發端，開啟 PHP Projects，把專案送上 SVN/CVS server；
+    在伺服器端： 把 project checkout 出來。
+
+    優點是 IDE 可以支援 function manual，提示應該傳入的參數；
+    缺點是要額外準備一套版本控制系統。
+
+
+ 2. 用 RSE（Remote System Explorer）
+
+    直接透過 FTP 修改遠端伺服器的 code。
+
+    缺點是無法支援 function manual；
+    優點是改了馬上生效，不須版本控制系統，不用 checkout、update。
+
+---
+題外話，我放棄使用 Aptana Studio 是因為 1.5 換裝 2.0 之後，
+workspace 搞了很久搞不定（跟 plug-ins 有關係）.... orz
+
+--
+<span class="f0">   </span><span class="f1 hl"> </span><span class="f0">  </span> ▄▆▇▍<span class="f0"> </span>              <span class="f0">▄</span>▆     ▇ <span class="f1 hl"> </span> <span class="f3">▏▎▍▌▋▊▉</span><span class="f3 b3"> φkaishin   </span>
+<span class="f1 hl">     </span><span class="f0">▌</span><span class="b7">▄</span> <span class="f0 b7">▋</span>▊ <span class="f1 hl">   </span><span class="f1">       </span>     <span class="b7">▄</span><span class="f0 b7">▏</span>▎<span class="f4">  </span><span class="f0 b7">▎</span>▏                           <span class="f1 hl">│</span>
+<span class="f1 hl">┼── </span><span class="f0 b7">▄</span><span class="f1 hl">–</span>█▏<span class="f1 hl">─</span>▂<span class="f1 hl">──</span><span class="f0"> </span>▁▁<span class="f1 hl">─</span><span class="f0">▇</span><span class="f0 b7">▍</span>▍▁<span class="f0 b7">▏</span> <span class="f1 hl">──</span>▂<span class="f1 hl">───</span>◢<span class="f1 hl">──</span><span class="f1"> JoeHorn</span><span class="f1 hl">┬┼</span>
+<span class="f1 b1 hl">□   </span><span class="f4 b1"> </span><span class="f1 b1">▄</span><span class="b1">▄</span><span class="b7">▄ꈠ</span><span class="b1"> ▇</span><span class="b7"> </span><span class="f1 b7">▄</span><span class="f4 b1"> </span><span class="b1">▂▄</span>█<span class="b1">▎   ▄</span><span class="b7">▄</span><span class="f1 b7">▃</span>▉<span class="b1">   ▇</span><span class="b7"> </span><span class="f1 b7">▄</span><span class="f4 b1"> </span><span class="b1">◢</span><span class="b1">▆</span><span class="f1 b7">◢</span><span class="b1">  ▄</span><span class="b1">▎▄▅</span><span class="b1"> </span><span class="f1 b1 hl"> └┼</span>
+<span class="f1 b1 hl">┼┐</span><span class="f1 b1">▄</span><span class="b7">▄</span><span class="b1">▄</span><span class="b7">▄</span><span class="f0 b1">  </span><span class="b7">▂</span><span class="f1 b1"> </span><span class="f1 b7">▅</span><span class="b7">▃</span><span class="f1 b1">◤</span><span class="b7">▃</span><span class="f1 b7">▆</span><span class="b1">◢▂</span><span class="b1">◤</span><span class="b7">▄</span><span class="f4 b1">  </span><span class="b1"> </span><span class="f1 b7">▏</span><span class="f1 b1">▃</span><span class="b7">▂</span><span class="f1 b1"> </span><span class="f1 b7">▅</span><span class="b7">▃</span><span class="f1 b7">▆</span><span class="b1">◢</span><span class="b1">  ▄</span>█<span class="f1 b7">▄▆</span><span class="b1">▋</span><span class="f1 b1">▄</span><span class="f1 b1 hl">  □</span>
+<span class="f1 hl">┼┴ </span><span class="f0 b7">▄</span><span class="f0 b7"> </span><span class="b7">▄</span><span class="f0 b7">▆</span><span class="f1 hl">─</span><span class="f0 b7">▄</span>▂<span class="f0 b7">▂</span><span class="f1 hl">-</span><span class="f0">◣</span>▄<span class="f0 b7">▂▄</span><span class="f1 hl">-</span><span class="f0 b7">▄</span><span class="b7">▃</span><span class="f1 hl">──</span><span class="f0 b7">▄</span>▌<span class="f0 b7">▄</span>▂<span class="f0 b7">▂</span><span class="f1 hl">─ </span><span class="f0 b7">▃</span>◤<span class="f1 hl">-</span><span class="b7">▄</span><span class="f1 hl"> ─</span><span class="f0">▊</span><span class="b7">▅</span>◤<span class="f1 hl">─┼</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 114.37.133.35
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1259857010.A.DA3.html?cacheKey=2148-469792947&amp;offset=2667&amp;offset-sig=888b1905f43b80a0af34f6210e02e071f330d83c" data-longpollurl="/v1/longpoll?id=3a4f53c5f494040fc7862ba410c49cd5773f871f" data-offset="2667"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea612dcd8a56',m:'_5z1KmtH98nnbYE6doId1__nKI4U3cxnKJa34HujNGU-1653467494-0-AQoQsx4e9yDLFIS/JOllXSGcpA8xb3u6+sQY3vxpqDgdWX8CMzWfB5xcnmjQGAaqBWCs3LLqXwMQmxPCoXUftNHsE6RRaIxrsEDzaeA9ndFVxHxoAyMKfKegLtNx1736Lu95Aai1TE3qBupPoL8uPK6dcdYM3EQy/eHwdZvcnmIZ',s:[0x43e8cdcf55,0xb050ab885e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

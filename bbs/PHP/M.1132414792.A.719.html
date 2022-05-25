@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 放上網路空間就不能跑  - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="有看到網頁說
+要把目錄的存取權限打開
+請問要怎麼打開呢
+謝謝
+※ 引述《finalwave (小龍)》之銘言：
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 放上網路空間就不能跑 ">
+<meta property="og:description" content="有看到網頁說
+要把目錄的存取權限打開
+請問要怎麼打開呢
+謝謝
+※ 引述《finalwave (小龍)》之銘言：
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1132414792.A.719.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">finalwave (小龍)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 放上網路空間就不能跑 </span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Nov 19 23:40:45 2005</span></div>
+有看到網頁說
+要把目錄的存取權限打開
+請問要怎麼打開呢
+謝謝
+
+<span class="f2">※ 引述《finalwave (小龍)》之銘言：
+</span><span class="f6">: ※ 引述《finalwave (小龍)》之銘言：
+</span><span class="f6">: : 我寫了一個上傳檔案的程式
+</span><span class="f6">: : 自己電腦用APPSERV沒問題(兩台都試過)
+</span><span class="f6">: : 但是一放到網路上(有支援php) 按上傳就是無法成功
+</span><span class="f6">: : 請問問題可能出在哪呢
+</span><span class="f6">: : 謝謝
+</span><span class="f6">: 附上原程式
+</span><span class="f6">: 請幫我看看哪裡有問題
+</span><span class="f6">: &lt;html&gt;
+</span><span class="f6">: &lt;head&gt;
+</span><span class="f6">: &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=big5&#34;&gt;
+</span><span class="f6">: &lt;title&gt;新增網頁1&lt;/title&gt;
+</span><span class="f6">: &lt;/head&gt;
+</span><span class="f6">: &lt;body&gt;
+</span><span class="f6">: &lt;form method=&#34;POST&#34; enctype=&#34;multipart/form-data&#34; action=&#34;netart1.php&#34;&gt;
+</span><span class="f6">:         &lt;p&gt;&lt;input type=&#34;file&#34; name=&#34;userfile&#34; size=&#34;20&#34;&gt;&lt;input type=&#34;submit&#34;
+</span><span class="f6">: value=&#34;upload&#34; name=&#34;B1&#34;&gt;&lt;/p&gt;
+</span><span class="f6">: &lt;/form&gt;
+</span><span class="f6">: &lt;?php
+</span><span class="f6">: echo &#34;Filename: &#34;.$_FILES[&#39;userfile&#39;][&#39;name&#39;].&#34;&lt;br&gt;&#34;;
+</span><span class="f6">: echo &#34;Filename: &#34;.$_FILES[&#39;userfile&#39;][&#39;tmp_name&#39;].&#34;&lt;br&gt;&#34;;
+</span><span class="f6">: echo &#34;Size: &#34;.$_FILES[&#39;userfile&#39;][&#39;size&#39;].&#34;&lt;br&gt;&#34;;
+</span><span class="f6">: echo &#34;Type: &#34;.$_FILES[&#39;userfile&#39;][&#39;type&#39;].&#34;&lt;br&gt;&#34;;
+</span><span class="f6">: echo &#34;Error: &#34;.$_FILES[&#39;userfile&#39;][&#39;error&#39;].&#34;&lt;br&gt;&#34;;
+</span><span class="f6">: if($_FILES[&#39;userfile&#39;][&#39;type&#39;]==&#34;image/bmp&#34;||$_FILES[&#39;userfile&#39;][&#39;type&#39;]==&#34;image/pjpeg&#34;||$_FILES[&#39;userfile&#39;][&#39;type&#39;]==&#34;image/x-png&#34;||$_FILES[&#39;userfile&#39;][&#39;type&#39;]==&#34;image/gif&#34;)
+</span><span class="f6">: {if(copy($_FILES[&#39;userfile&#39;][&#39;tmp_name&#39;],$_FILES[&#39;userfile&#39;][&#39;name&#39;]))
+</span><span class="f6">:     echo &#34;uploads successfully&lt;br&gt;&#34;;
+</span><span class="f6">: else
+</span><span class="f6">:     echo &#34;error in uploading&lt;br&gt;&#34;;
+</span><span class="f6">: }
+</span><span class="f6">: else echo error1;
+</span><span class="f6">: ?&gt;
+</span><span class="f6">: &lt;p&gt;&lt;img border=&#34;0&#34; src=&#34;&lt;?php echo $_FILES[&#39;userfile&#39;][&#39;name&#39;]; ?&gt;&#34;
+</span><span class="f6">: width=&#34;600&#34; height=&#34;480&#34;&gt;&lt;/p
+</span><span class="f6">: &lt;/body&gt;
+</span><span class="f6">: &lt;/html&gt;
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.166.152.205
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">appleboy46</span><span class="f3 push-content">:看你用哪套FTP軟體 資料夾 右鍵 會有權限修改  改 777</span><span class="push-ipdatetime"> 11/19 23:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">finalwave</span><span class="f3 push-content">:打開權限還是上傳失敗　ORZ到底哪裡出問題啊</span><span class="push-ipdatetime"> 11/20 02:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kuoyu</span><span class="f3 push-content">:那上傳的檔案大小限制呢?</span><span class="push-ipdatetime"> 11/20 22:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KCTONY</span><span class="f3 push-content">:大小限制在php.ini裡</span><span class="push-ipdatetime"> 11/21 14:14
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1132414792.A.719.html?cacheKey=2148-469786149&amp;offset=1990&amp;offset-sig=c48ddbe519cc7f113f157ea54fb92fb0588eaf90" data-longpollurl="/v1/longpoll?id=aa140d7f6c321c5718cc416d0203a55ef07880d2" data-offset="1990"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa7583814d0',m:'JwNMYa__f.Yv0gkafuOM3foGucGoNCQd7r4zxAHIoAE-1653467505-0-AShhImVNI6G6qN2KuzUefKlowUacx1uic+AERQXFklOccoAuT2/ZFTSGF7jeZx42PtgwAMBGGttzrRFCCg3fJTmirYYpoJcVEcbdCn2ZfBeu4yIyG+a5EIFeHmh+aLHbl0mBEyTEERdxH2zFFDYe/VGrWKlbxdPhd3sH46kRNVAP',s:[0x8feb1ca785,0xeaec4941e6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

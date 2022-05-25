@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 關於劃位系統的概念 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="公司內部福委活動有招待看電影
+福委會希望我們能寫一個簡單的劃位系統
+大概的架構我已經想好
+可是在處理同時劃位的部分沒有什麼想法
+當A/B同時開啟訂位畫面，畫了重複的位子，又幾乎同時按下送出時
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 關於劃位系統的概念">
+<meta property="og:description" content="公司內部福委活動有招待看電影
+福委會希望我們能寫一個簡單的劃位系統
+大概的架構我已經想好
+可是在處理同時劃位的部分沒有什麼想法
+當A/B同時開啟訂位畫面，畫了重複的位子，又幾乎同時按下送出時
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1403748494.A.211.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">chang0206 (Eric Chang)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 關於劃位系統的概念</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun 26 10:08:11 2014</span></div>
+公司內部福委活動有招待看電影
+福委會希望我們能寫一個簡單的劃位系統
+大概的架構我已經想好
+可是在處理同時劃位的部分沒有什麼想法
+
+當A/B同時開啟訂位畫面，畫了重複的位子，又幾乎同時按下送出時
+後面按下送出的 update指令會蓋掉前面一位的紀錄
+可是兩位都會看到自己劃位成功
+
+請問大概需要怎樣去避免這樣的情況？
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 60.251.177.1
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1403748494.A.211.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1403748494.A.211.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">:SQL 有個東西叫做 transaction，請自行 google 吧</span><span class="push-ipdatetime"> 06/26 11:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hSATAC</span><span class="f3 push-content">:開一個 google docs 畫座位表讓大家自己填</span><span class="push-ipdatetime"> 06/26 11:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:所有劃位不要立刻執行 放進一個資料表queue</span><span class="push-ipdatetime"> 06/26 11:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:用另一支cron在背景每秒鐘從queue取出來執行 成功或失敗</span><span class="push-ipdatetime"> 06/26 11:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:寫回queue裡面 前端程式過5秒回來讀取queue看劃位成功沒</span><span class="push-ipdatetime"> 06/26 11:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:好對不起真是個爛設計 :P</span><span class="push-ipdatetime"> 06/26 11:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kenqr</span><span class="f3 push-content">:在update的where條件裡指定位子必須是空的</span><span class="push-ipdatetime"> 06/26 12:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">:先搶先贏吧 @@ 用insert設位子主鍵或是update位子要空的</span><span class="push-ipdatetime"> 06/26 12:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vi000246</span><span class="f3 push-content">:送出前判斷有空位才給update</span><span class="push-ipdatetime"> 06/26 13:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:transaction or table lock; row lock</span><span class="push-ipdatetime"> 06/26 13:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:基本上lock table就夠用了</span><span class="push-ipdatetime"> 06/26 13:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:不要弄到dead lock即可</span><span class="push-ipdatetime"> 06/26 13:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fowei</span><span class="f3 push-content">:嗯. 建議用transation</span><span class="push-ipdatetime"> 06/26 16:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:我也是朝transaction的方向在STUDY 現在的設計在update</span><span class="push-ipdatetime"> 06/26 17:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:時，已經會去檢查一個flag，但是還是會發生強碰的情況</span><span class="push-ipdatetime"> 06/26 17:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:但是現在碰到的狀況是A/B兩人按下送出，都會滿足條件</span><span class="push-ipdatetime"> 06/26 17:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:接著進行後續的update 就算把update這邊改用transcation</span><span class="push-ipdatetime"> 06/26 17:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:那是不是說還要在transaction中去檢查？要檢查啥判斷</span><span class="push-ipdatetime"> 06/26 17:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:強碰了？ 這些都還在想看要怎麼弄 ..</span><span class="push-ipdatetime"> 06/26 17:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:不可能強碰 除非你寫錯</span><span class="push-ipdatetime"> 06/28 00:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:你可以用兩個以上的 mysql client 測試</span><span class="push-ipdatetime"> 06/28 00:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:不同的 connection 應該是錯開的</span><span class="push-ipdatetime"> 06/28 00:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:不然你用 LOCK TABLE 來處理</span><span class="push-ipdatetime"> 06/28 00:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chang0206</span><span class="f3 push-content">:那可以建議一下應該怎麼檢查嗎？</span><span class="push-ipdatetime"> 06/29 20:55
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1403748494.A.211.html?cacheKey=2148-469801099&amp;offset=2966&amp;offset-sig=f252160831048130f8b8290f19aa0966340f8650" data-longpollurl="/v1/longpoll?id=3fdc4f5e4c77c118af2687d1156b801c272a42c0" data-offset="2966"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea0f8a1c8a27',m:'1oFpuVriu4tMkb.7xuqSTMzfnPjJUIoxFNi7zqFtR1k-1653467481-0-Ab7pxLo0NaywKLGG7DoqLjcOwGgVZ5MXZQxJaHlc0+AdWLqN92dDvVIPaNMdTHtTYoJzElvzbfrU5dVu1ao1VRDxWcU3rtaeySc5rDgW7lVQiQqj6mnZqiNC3/PVjhynvZJjTc0k45rCvP0bU2UUa0Vq/xaBUYhJmnOq6O53t9/h',s:[0x84836863ef,0xe73c19df7a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

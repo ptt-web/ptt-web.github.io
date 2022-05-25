@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題]迴圈產生表格的疑問 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="最近寫php如相本的程式發現
+當我想將資料一筆筆以表格方式秀出來時
+都是由上往下一直生表格，請問有什麼辦法
+可以控制表格廻圈產生時，是可依照由左而右
+的順序產生呢?
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題]迴圈產生表格的疑問">
+<meta property="og:description" content="最近寫php如相本的程式發現
+當我想將資料一筆筆以表格方式秀出來時
+都是由上往下一直生表格，請問有什麼辦法
+可以控制表格廻圈產生時，是可依照由左而右
+的順序產生呢?
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1190450055.A.CCD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">hotricky (陽光網球)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題]迴圈產生表格的疑問</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Sep 22 16:34:13 2007</span></div>
+
+最近寫php如相本的程式發現
+
+當我想將資料一筆筆以表格方式秀出來時
+
+都是由上往下一直生表格，請問有什麼辦法
+
+可以控制表格廻圈產生時，是可依照由左而右
+
+的順序產生呢?
+
+例如：
+
+         ★   ★   ★
+
+         ★   ★   ★
+
+         .....
+
+
+一行生出三格後自動換行產生這樣的順序
+
+= = 或是簡單的問 無名相本 那樣的相本選單怎麼
+
+弄的也行…
+
+希望各位高手提供意見 謝謝喔^^
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.31.167.162
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">passers</span><span class="f3 push-content">:用 for 吧</span><span class="push-ipdatetime"> 09/22 16:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">suckerlove</span><span class="f3 push-content">:別用table.用div + float:left</span><span class="push-ipdatetime"> 09/22 16:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hotricky</span><span class="f3 push-content">:s大大 我沒用過div的寫法 請問有範本可參考一下嗎?&gt;&lt;</span><span class="push-ipdatetime"> 09/22 16:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">suckerlove</span><span class="f3 push-content">:各大相簿應該都是使用div+float排版,你可以參考原始檔</span><span class="push-ipdatetime"> 09/22 17:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">suckerlove</span><span class="f3 push-content">:你可以研究一下CSS..</span><span class="push-ipdatetime"> 09/22 17:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:原po的問題跟用table或div沒關係 ˊ_ˋ</span><span class="push-ipdatetime"> 09/22 21:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:純粹就是web排版的因素 , 當然我也比較推薦div排版 , :P</span><span class="push-ipdatetime"> 09/22 21:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hotricky</span><span class="f3 push-content">:最好的結果就是各位有誰能提供檔案來看看呢?^__^</span><span class="push-ipdatetime"> 09/23 22:17
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1190450055.A.CCD.html?cacheKey=2149-475782711&amp;offset=1344&amp;offset-sig=7f956de368f3ad83c53969230371b303fae31aae" data-longpollurl="/v1/longpoll?id=19c8831d8a4381da650ec61f3250842029f8e66a" data-offset="1344"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9634c30807e',m:'UcIUBxcCIOCdGQPe1y3OnjHdLlJ1mlI7lamR4EZlIVg-1653467453-0-AeLBOB/1AQmovF0blAo6Xf6wqGSvkgwFTmK8cMvHjuc+RgsB3MrUViMNlZHbnK47mwJbW2LkKFHtH3SERCUlPdX4aE5DjBuMfDZlbYQjSR3q+92OAVZ/oSPNedzdxVdYJqiUwa7TKQV6IgqcycTeECAbswr3AlX71c97vR4MqA+y',s:[0x2fba96ce87,0x2ffd38481d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

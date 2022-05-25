@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 關於使用dreamweaver將影片置入網頁中 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="問題不出 cross-browser，
+例如 IE 只有在適合的播放器有安裝時，才會支援 embed。
+因為 embed tag 不是標準，而解決這個的辦法就是不要用 embed。
+你可以選擇使用 HTML5 或是 Flash Player，只是前者也未必每個瀏覽器都支援，
+這時建議你可以找一些有 Flash fallback 功能的 HTML5 播放器，餵狗一下，不難找。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 關於使用dreamweaver將影片置入網頁中">
+<meta property="og:description" content="問題不出 cross-browser，
+例如 IE 只有在適合的播放器有安裝時，才會支援 embed。
+因為 embed tag 不是標準，而解決這個的辦法就是不要用 embed。
+你可以選擇使用 HTML5 或是 Flash Player，只是前者也未必每個瀏覽器都支援，
+這時建議你可以找一些有 Flash fallback 功能的 HTML5 播放器，餵狗一下，不難找。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1344686772.A.456.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tonytonyjan (南洋大兜蟲)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 關於使用dreamweaver將影片置入網頁中</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Aug 11 20:06:08 2012</span></div>
+問題不出 cross-browser，
+例如 IE 只有在適合的播放器有安裝時，才會支援 embed。
+因為 embed tag 不是標準，而解決這個的辦法就是不要用 embed。
+
+你可以選擇使用 HTML5 或是 Flash Player，只是前者也未必每個瀏覽器都支援，
+這時建議你可以找一些有 Flash fallback 功能的 HTML5 播放器，餵狗一下，不難找。
+
+一般播放器有許多事件可綁，你裝上去之後，
+寫一點 javascript 去控制，我想必可以解決你第一個問題
+
+-- 更新
+
+想到更簡單的 HTML5 解法：
+
+把你的 video 轉成以下格式：
+
+mp4, webm, ogg
+
+audio 檔案轉成以 下格式：
+
+mp3, wav, ogg
+
+寫法像這樣：
+
+&lt;video controls=&#34;controls&#34;&gt;
+  &lt;source src=&#34;movie.mp4&#34; type=&#34;video/mp4&#34; /&gt;
+  &lt;source src=&#34;movie.ogg&#34; type=&#34;video/ogg&#34; /&gt;
+  ...
+&lt;/video&gt;
+
+如此市面上五大瀏覽器都可播放
+
+<span class="f2">※ 引述《anniekinki (我是安絲琪!)》之銘言：
+</span><span class="f6">: 大家好~
+</span><span class="f6">: 終於找到這裡了~
+</span><span class="f6">: 想請問各位高手
+</span><span class="f6">: 我使用dreamweaver製作了一個網站如下
+</span><span class="f6">: <a href="http://www.music-rm.com/rco/index.html" target="_blank" rel="noreferrer noopener nofollow">http://www.music-rm.com/rco/index.html</a>
+</span><span class="f6">: (這是用網路抓的版型去套的,所以我其實並不是真的會做網頁)
+</span><span class="f6">: 在網頁的左下角我置入了影片及音樂
+</span><span class="f6">: 想問各位高手
+</span><span class="f6">: 1.有辦法可以讓影片播放時音樂自動停止,影片播放結束後又自動撥放音樂嗎
+</span><span class="f6">: 2.有人告訴我他的電腦無法看影片,連播放鍵都沒有就是一個黑黑的方型在那邊
+</span><span class="f6">:   這有可能是什麼問題呢?因為我的電腦看都是沒問題的~
+</span><span class="f6">: 以上~~
+</span><span class="f6">: 有請大家幫幫忙了
+</span><span class="f6">: 估狗好久都沒答案
+</span><span class="f6">: 我快被老闆煩死了(哭哭)
+</span><span class="f6">: 謝謝~~~
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.227.147.207
+<span class="f2">※ 編輯: tonytonyjan     來自: 61.227.147.207       (08/11 20:25)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ec75413</span><span class="f3 push-content">:先推w3c標準解法</span><span class="push-ipdatetime"> 08/11 20:38
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1344686772.A.456.html?cacheKey=2149-475918379&amp;offset=1603&amp;offset-sig=b824a4a074c20fdef786a0889ac22773beb7815f" data-longpollurl="/v1/longpoll?id=abc42119587f2ad78a4bda95a9dfe00d5cfd7de2" data-offset="1603"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9fc5c83af54',m:'_WuC5k7Et2Z.Glz7g0OE_hA8G.0Cu065ytLt4ZWIshU-1653467478-0-AWIRz3qTWwTSVyzciKQvqqe1fKREXjA0ddP39gZq+/uDHpBDSCud2ux31Rq0KSwCe41HbbFuceXdIMJhUR6w9chwOrRq+jQF75qxVUQEhY17HqARXriHftBZHn1ZdBFkNZp51k+CYEp32KJv8CxCm5iUXOltAu/9d73luIlQVVHg',s:[0x5799b976e9,0xa385d65e57],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

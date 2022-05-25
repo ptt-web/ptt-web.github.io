@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:SophiaH - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3ASophiaH">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3ASophiaH">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:SophiaH" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">10</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1438168928.A.971.html">[請益] 請問這段 SQL 如何解譯 ?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E6%AE%B5&#43;SQL&#43;%E5%A6%82%E4%BD%95%E8%A7%A3%E8%AD%AF&#43;%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437565199.A.5EB.html">[請益] 在 IIS 環境學習 PHP</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8&#43;IIS&#43;%E7%92%B0%E5%A2%83%E5%AD%B8%E7%BF%92&#43;PHP">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1419428984.A.D3D.html">[請益] 想弄懂表單傳送與接收與後端資料庫觀念</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%83%B3%E5%BC%84%E6%87%82%E8%A1%A8%E5%96%AE%E5%82%B3%E9%80%81%E8%88%87%E6%8E%A5%E6%94%B6%E8%88%87%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E8%A7%80%E5%BF%B5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1418900564.A.12A.html">[請益] 增設root 的密碼後進不去 phpmyadmin畫面</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A2%9E%E8%A8%ADroot&#43;%E7%9A%84%E5%AF%86%E7%A2%BC%E5%BE%8C%E9%80%B2%E4%B8%8D%E5%8E%BB&#43;phpmyadmin%E7%95%AB%E9%9D%A2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1408965778.A.48C.html">[請益] 如何使用 EasyPHP ?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8&#43;EasyPHP&#43;%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1390814529.A.59D.html">[請益] AppServ 安裝好但後續設定畫面不一樣</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;AppServ&#43;%E5%AE%89%E8%A3%9D%E5%A5%BD%E4%BD%86%E5%BE%8C%E7%BA%8C%E8%A8%AD%E5%AE%9A%E7%95%AB%E9%9D%A2%E4%B8%8D%E4%B8%80%E6%A8%A3">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceacc8dd28a27',m:'NcKd.PCloTH_YoXAAtPNLUBfpj7.JbnHnI_1WVq9qOc-1653467511-0-AQUU4UZ0DI4bqLPgt2VrYvx80ehOUi+LhXbs/I0CR5coFRyJSMxtrzkklfvbDW5fDs6wtS1B38H1v49ygvMm/0LZPdbgBbMfmA49GfsoVvAvBVKBrX3ATKouCyRJiXGDYcOfIL3z72y7bh3Fu5Pd/TJdtWvZqHRT9w/ZMfRN25Bc',s:[0xd4d99a211e,0xeaa49ced2d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

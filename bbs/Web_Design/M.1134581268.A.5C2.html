@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 如何讓php在後端背景執行 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="        假設我有一隻PHP a.php 會執行很久時間
+        現在我不想讓client那邊因為枯等而關掉瀏覽器造成程式中斷
+        而想要做成類似這樣..
+        a.php -&gt; b.php(顯示完成訊息)
+        |
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 如何讓php在後端背景執行">
+<meta property="og:description" content="        假設我有一隻PHP a.php 會執行很久時間
+        現在我不想讓client那邊因為枯等而關掉瀏覽器造成程式中斷
+        而想要做成類似這樣..
+        a.php -&gt; b.php(顯示完成訊息)
+        |
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1134581268.A.5C2.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">bigair (廣大的天空)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 如何讓php在後端背景執行</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Dec 15 01:31:18 2005</span></div>
+        假設我有一隻PHP a.php 會執行很久時間
+        現在我不想讓client那邊因為枯等而關掉瀏覽器造成程式中斷
+        而想要做成類似這樣..
+
+        a.php -&gt; b.php(顯示完成訊息)
+        |
+        |-&gt; 部分程式仍然在server那邊執行
+
+        請問這樣有辦法做到嗎?
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.167.78.66
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">andreli</span><span class="f3 push-content">:偷偷用的0%的frame</span><span class="push-ipdatetime"> 12/15 10:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">idicivik</span><span class="f3 push-content">:難道你是要用php &#39;&#39;網頁來畫 碎形嗎 要不然怎麼會執行很ꐠ</span><span class="push-ipdatetime"> 12/15 12:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">idicivik</span><span class="f3 push-content">:久</span><span class="push-ipdatetime"> 12/15 12:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ojinjin</span><span class="f3 push-content">:有很多種可能吧，利如大量寄信，總不能等寄完信畫面才動</span><span class="push-ipdatetime"> 12/15 19:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bigair</span><span class="f3 push-content">:是大量寄信 除了我問的還有建議的方法嗎?</span><span class="push-ipdatetime"> 12/15 19:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">idicivik</span><span class="f3 push-content">:做出類似排程效果 不管寄出去了沒 都說成功了 讓server端</span><span class="push-ipdatetime"> 12/15 21:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">idicivik</span><span class="f3 push-content">:存好你的寄信對象和內容 讓server 端不忙的時候 再去消化</span><span class="push-ipdatetime"> 12/15 21:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">idicivik</span><span class="f3 push-content">:該做的部份不過這應該不止php 了還要熟悉工作站和其指令</span><span class="push-ipdatetime"> 12/15 21:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bigair</span><span class="f3 push-content">:用crontab的效果不符合我要的, 最後還是採用exec的方式</span><span class="push-ipdatetime"> 12/16 02:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bigair</span><span class="f3 push-content">:來解決了, 謝謝大家  ^^;</span><span class="push-ipdatetime"> 12/16 02:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hambking</span><span class="f3 push-content">:ajax</span><span class="push-ipdatetime"> 12/16 18:02
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1134581268.A.5C2.html?cacheKey=2149-475717165&amp;offset=1551&amp;offset-sig=3ce33e0b25a48590b7a9c28260443ced8c7b6543" data-longpollurl="/v1/longpoll?id=ab29e1ba6abf727fa255ec3b79b4ba29e069ef66" data-offset="1551"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9ef89c1f8eb',m:'NMOEtOR4m.jfxGz2JpT0JLA_sm3ogTZj3OOXoukPY78-1653467476-0-AaMuhBK826S67eJO44cHtbyBAmgn4/obOrb8jSfovBIuwGXhlts/903J5VcWdksJxo2asVi/gRSTuJuN3E3P2FLYUeWBXSpHtHCSIvAv6ceVuRjMsKTVbUR23lv8eyWWguoEZp8MqX5H6X7Z2ymvq/crmx+AGzxFO++6+dzNrMv/',s:[0x5175b2da52,0x8bb007f9a1],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

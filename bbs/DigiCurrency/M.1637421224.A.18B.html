@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [Coin] 關於幣價拉高手續費即拉高的解法 - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="過去幾乎每一年我都會發文講中本聰設計的比特幣是無敵的，
+中本聰 + Gavin Andreson 時代的Bitcoin是非常好用的。
+不過因為現在已經幾乎沒有人信仰原本的Bitcoin，所以我也就懶得講了。
+但現在看起來板上人氣可能又快要變冷清了。還是趁年尾用這篇假回文講一下。
+首先關於手續費這個問題，對於中本聰來講根本不是個issue。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [Coin] 關於幣價拉高手續費即拉高的解法">
+<meta property="og:description" content="過去幾乎每一年我都會發文講中本聰設計的比特幣是無敵的，
+中本聰 + Gavin Andreson 時代的Bitcoin是非常好用的。
+不過因為現在已經幾乎沒有人信仰原本的Bitcoin，所以我也就懶得講了。
+但現在看起來板上人氣可能又快要變冷清了。還是趁年尾用這篇假回文講一下。
+首先關於手續費這個問題，對於中本聰來講根本不是個issue。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1637421224.A.18B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">DarkerDuck (達克鴨)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [Coin] 關於幣價拉高手續費即拉高的解法</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Nov 20 23:13:42 2021</span></div>
+過去幾乎每一年我都會發文講中本聰設計的比特幣是無敵的，
+
+中本聰 + Gavin Andreson 時代的Bitcoin是非常好用的。
+
+不過因為現在已經幾乎沒有人信仰原本的Bitcoin，所以我也就懶得講了。
+
+但現在看起來板上人氣可能又快要變冷清了。還是趁年尾用這篇假回文講一下。
+
+
+
+首先關於手續費這個問題，對於中本聰來講根本不是個issue。
+
+可以看到中本聰的白皮書只在激勵章節的一個小節提到這件事情
+<a href="https://tinyurl.com/vpyusmdm" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/vpyusmdm</a>
+
+因為中本聰時代的Bitcoin手續費可以低到為零，可以看一下這2011年4月的BTC區塊
+<a href="https://tinyurl.com/sw4r5rhk" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/sw4r5rhk</a>
+
+<span class="f3 hl">大部分的交易的礦工手續費都是</span><span class="f5 hl">0</span>，這時候也是中本聰還在活動的最後時期。
+
+就算有所謂的fee market，也絕不是往上競標的fee market，而是往下競標的。
+<a href="/bbs/DigiCurrency/M.1559071898.A.CFD.html" target="_blank" rel="noreferrer noopener nofollow">#1SxOoQpz (DigiCurrency)</a>
+
+甚至認為可以永久<span class="f2 hl">保留一部分的區塊鏈空間給零手續費的交易使用</span>。
+
+因為靠coin-age(幣齡)與dust limit就已經足夠防止SPAM了。
+
+不要說中本聰，就連Vitalike當初也說過了網路現金的手續費不應該超過0.05美元
+<a href="https://youtu.be/unMnAVAGIp0" target="_blank" rel="noreferrer noopener nofollow">https://youtu.be/unMnAVAGIp0</a>
+<div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/unMnAVAGIp0" frameborder="0" allowfullscreen></iframe></div></div></div>
+
+那就很奇怪了，到底為什麼BTC現在變成幾乎無法使用的數位黃金，ETH則是變成貴族鏈。
+
+不要說0.05美元，ETH轉token的成本甚至可能高達50美元？
+
+
+以Bitcoin來說，中本聰早就算好了，他的區塊鏈設計是一種共識同步系統。
+
+被設計用來給<span class="f2 hl">電子現金這種單一用途使用，不需要再乘載其他複雜功能了</span>。
+
+UTXO系統則可以方便設計出平行化的硬體驗證系統，直接從L1進行大區塊的同步處理。
+<a href="https://twitter.com/PeterRizun/status/1247554984968777729" target="_blank" rel="noreferrer noopener nofollow">https://twitter.com/PeterRizun/status/1247554984968777729</a>
+
+整個區塊鏈系統只須要維護唯一的UTXO set這一個state就足夠驗證了。
+
+而且還能兼顧交易的隱私性與錢包的多工性。
+
+就算退一萬步來講，不靠專用硬體，只要摩爾定律繼續維持，直接改軟體擴容就好了。
+<a href="https://i.imgur.com/VIGwE80.gif" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/VIGwE80.gif</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/VIGwE80l.gif?e=1653608941&amp;s=ltr0cvOwsdjddcKQHicn3A" alt="" loading="lazy" /></div>
+因為最終目標很簡單，頂多到 1000TPS 的VISA處理速度就差不多了，全球人金流使用。
+
+並不像是智能合約平台，永遠會有應用把區塊鏈塞爆。
+
+這也是中本聰早就說過的，他施加的blocksize limit只是個暫時性防spam的措施罷了。
+<a href="https://tinyurl.com/3v8ba7kb" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/3v8ba7kb</a>
+
+時機到了就該擴容。
+
+那既然手續費不是個問題，但是幣價總是會增減，那這樣手續費也會上去吧。
+
+這就更不是一個issue，開發者改個參數就解決的問題，無論是Doge, SmartBCH
+
+都有改過base fee，調低就好了，甚至連BCH的Unlimited版本都可以發出更低的手續費
+<a href="/bbs/DigiCurrency/M.1562013825.A.AC2.html" target="_blank" rel="noreferrer noopener nofollow">#1T6d21h2 (DigiCurrency)</a>
+
+講得這麼簡單，那為什麼Bitcoin Core不擴容就好了？
+
+施主，這個問題你要問Bitcoin Maximalist啊，不過大部分都顧左右而言它罷了。
+
+基本上就純粹是conflict of interest罷了，懶得罵了。
+
+
+
+那當初宣稱手續費0.05鎂才正常的的ETH創世神怎麼變成貴族鏈的統領呢？
+
+<span class="f2 hl">因為區塊鏈本身並不是一個&#34;雲端計算&#34;系統，區塊鏈是一個&#34;共識同步&#34;系統。</span>
+
+很多人以為區塊鏈上的礦工越多驗證效率越好，其實正好相反，
+
+礦工越多反而因為同步的overhead，越有可能造成區塊鏈的效率變差。
+
+像是BSC等其他EVM相容鏈說穿了都是用更少的高效能節點來達成更好的效率的。
+
+
+<span class="f3 hl">一百個礦工在鏈上的效能 &lt; 一個礦工獨自運作的效能</span>
+
+這就是目前區塊鏈系統血淋淋的事實。
+
+
+但Vitalike當初宣傳ETH的口號可是World Computer，
+
+我就是要在區塊鏈上用Solidity寫程式運作在區塊鏈上的EVM，啥都能跑啥都不奇怪。
+
+假如一個人操作一台電腦當然沒有效能問題，
+
+但上面已經說了這個區塊鏈系統的效能甚至低於單一礦工獨自運作，
+
+然後還要服務全世界的運算需求，救人啊~~~
+
+這就是為什麼ETH的gas市場會演變成往上競標的gas fee市場。
+
+ETH的gas在第一個NFT game CryptoKitties就已經用光了，之後手續費就只能不斷往上飆。
+
+
+
+這也就是為什麼BTC早期幾乎無敵到制霸整個加密貨幣市值90%以上。
+<a href="https://i.imgur.com/HeGnnJb.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/HeGnnJb.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/HeGnnJbl.png?e=1653658956&amp;s=3rVXLKDAoVmiFeqsMQOmpA" alt="" loading="lazy" /></div>
+因為中本聰的設計就是<span class="f3 hl">全世界只需要一個金流網路: Bitcoin</span>
+<a href="https://tinyurl.com/2p8pmcc6" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/2p8pmcc6</a>
+
+沒有其他金流幣的生存空間了，沒有人需要第二個Internet。
+
+只要繼續朝著中本聰的規劃前進，根本不會變成現在這種鳥樣，絕對是萬幣歸Bitcoin
+
+
+而ETH當初設計就是把低效能的共識同步系統當成World Computer使用。
+
+在幾乎無止盡的運算需求下當然一下子就塞車了，才趕緊再推出L2和sharding安撫社群。
+
+不要說ETH塞車啦，就連其他EVM相容的側鏈也都是常常塞車，譬如BSC, FTM都有塞車過。
+
+而一些號稱不會塞車的區塊鏈是否真的去中心化也常常要打個大問號。
+
+
+
+而中本聰的設計則是已經算好只服務金流的話，可以保證不塞車。
+
+假如有人認為怎麼可能的話，我這邊提出一個賞金挑戰。
+
+只要有人能夠做出一個BCH上的服務，經由真實使用者發起的交易導致BCH塞車。
+(自己用bot洗的不算)
+
+出塊的區塊需滿到上限
+<a href="https://blockchair.com/bitcoin-cash/blocks" target="_blank" rel="noreferrer noopener nofollow">https://blockchair.com/bitcoin-cash/blocks</a>
+
+而使得BCH的手續費中位數超過0.00005 BCH
+<a href="https://bitinfocharts.com/bitcoin%20cash/" target="_blank" rel="noreferrer noopener nofollow">https://bitinfocharts.com/bitcoin%20cash/</a>
+
+持續時間達到72小時以上。
+
+那我就直接奉送等值一萬美元的BCH，期限到明年底為止。
+
+前面的挑戰者有noise.cash，洗到大家錢包都快壞了還是塞不住啊。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 36.237.119.188 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1637421224.A.18B.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1637421224.A.18B.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rand</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/20 23:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lnonai</span><span class="f3 push-content">: Game-Fi搞不出真正好玩的遊戲大概也和這有關</span><span class="push-ipdatetime"> 11/20 23:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 先推再看</span><span class="push-ipdatetime"> 11/20 23:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">:</span><span class="push-ipdatetime"> 11/20 23:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shaomi</span><span class="f3 push-content">: 一萬鎂太香了，交給樓下，我相信BCH</span><span class="push-ipdatetime"> 11/20 23:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">frrr</span><span class="f3 push-content">: BTC的礦工不願意把路拓寬 是因為當幣挖完時 會連過路費都收</span><span class="push-ipdatetime"> 11/20 23:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">frrr</span><span class="f3 push-content">: 不到 進而沒人去打包交易維護系統</span><span class="push-ipdatetime"> 11/20 23:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">frrr</span><span class="f3 push-content">: 其實BTC那群人 不想降手續費 是很合理的，因為他們自己也知</span><span class="push-ipdatetime"> 11/20 23:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">frrr</span><span class="f3 push-content">: 道當幣挖完時 會有災難</span><span class="push-ipdatetime"> 11/20 23:48
+</span></div><span class="f0 hl">(DarkerDuck 刪除 DarkerDuck 的推文:  )</span>
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 那他們算錯了啊，這次牛市的手續費並沒有突破上次牛市</span><span class="push-ipdatetime"> 11/21 00:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: <a href="https://tinyurl.com/26kmwnvn" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/26kmwnvn</a></span><span class="push-ipdatetime"> 11/21 00:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 甚至在薩國宣布BTC當成法幣後還再起不能了</span><span class="push-ipdatetime"> 11/21 00:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 推 真的是技術派</span><span class="push-ipdatetime"> 11/21 00:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 我敢大膽預測，BTC的安全性就是每四年下降一半了</span><span class="push-ipdatetime"> 11/21 00:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: BTC的miner fee的歷史高峰已經過了</span><span class="push-ipdatetime"> 11/21 00:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">leechiungyi</span><span class="f3 push-content">: 板主祭出一萬美金等值BCH，有種來挑戰，你有本事你</span><span class="push-ipdatetime"> 11/21 00:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">leechiungyi</span><span class="f3 push-content">: 上，（我沒本事）</span><span class="push-ipdatetime"> 11/21 00:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 結論還是這張圖</span><span class="push-ipdatetime"> 11/21 00:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">:  <a href="https://i.imgur.com/739F2hG.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/739F2hG.jpg</a></span><span class="push-ipdatetime"> 11/21 00:12
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/739F2hGl.jpg?e=1653662736&amp;s=6diFD-HN8mCJ-KU-6i6tPA" alt="" loading="lazy" /></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 就比特幣昂貴市值高難拉人們都會往便宜市值低容易拉盤</span><span class="push-ipdatetime"> 11/21 00:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 山寨幣主流幣投機賭博而已在牛市市占低正常</span><span class="push-ipdatetime"> 11/21 00:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kme6833291</span><span class="f3 push-content">: 說真的今天操作BSC上的MARS，手續費一筆要100多台幣</span><span class="push-ipdatetime"> 11/21 00:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yys310</span><span class="f3 push-content">: 仙逝</span><span class="push-ipdatetime"> 11/21 00:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kme6833291</span><span class="f3 push-content">: 讓人很難想像這是平民鍊BSC</span><span class="push-ipdatetime"> 11/21 00:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 在漫長的熊市考驗人性最後比特幣市佔變回90%</span><span class="push-ipdatetime"> 11/21 00:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yys310</span><span class="f3 push-content">: 想問安全性每四年下降一半是什麼原因? 獎勵減少礦工死去?</span><span class="push-ipdatetime"> 11/21 00:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 好奇某n大到底是不是反串啊</span><span class="push-ipdatetime"> 11/21 00:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 就一個週期循環而宜</span><span class="push-ipdatetime"> 11/21 00:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 我並沒有反串只是講合理邏輯</span><span class="push-ipdatetime"> 11/21 00:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: BTC挖礦獎勵四年減半一次啊，交易手續費也到頂了</span><span class="push-ipdatetime"> 11/21 00:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 請教黑鴨大 你認為BTC安全性之後會下降是因為miner fee上</span><span class="push-ipdatetime"> 11/21 00:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 不去 導致未來礦工數量會下降嗎？但如果四年後BTC幣價到</span><span class="push-ipdatetime"> 11/21 00:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 56萬（木頭姐給的數字） 有沒有可能吸引更多礦工進場挖礦</span><span class="push-ipdatetime"> 11/21 00:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: ？</span><span class="push-ipdatetime"> 11/21 00:30
+</span></div>幣價上漲當然可以帶來更多以美元計算的算力。
+但同樣的是51%攻擊的可能得利也更多 (因為幣價漲了)。
+要真正的高安全性要計算：51%攻擊的成本相對於攻擊成功後的利益。
+幣價上漲只會讓兩者都上升，但比值不會變。
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shuo19971203</span><span class="f3 push-content">: 推技術文</span><span class="push-ipdatetime"> 11/21 00:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 你講的重點就是想要比特幣硬分叉把它變成32MB區塊</span><span class="push-ipdatetime"> 11/21 00:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 目前從安全性考量 應該還是BTC勝BCH吧？ 不論是分散節點</span><span class="push-ipdatetime"> 11/21 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 數量或是hash算力</span><span class="push-ipdatetime"> 11/21 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 所以機構敢直接幾千萬、幾億美金買幣放冷錢包的選擇 還是</span><span class="push-ipdatetime"> 11/21 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: BTC</span><span class="push-ipdatetime"> 11/21 00:32
+</span></div>以數字衡量當然是這樣囉，在其他條件相同下，算力直接等比於幣價。
+不過BCH算力這麼少也沒垮就是因為礦工知道BCH大概是PoW幣唯一未來了。
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 但人類社會基本利益衝突沒有共識當然不會通過硬分叉</span><span class="push-ipdatetime"> 11/21 00:34
+</span></div><a href="https://i.imgur.com/81tb3Ue.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/81tb3Ue.png</a>  共識 共識 共識
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/81tb3Uel.png?e=1653613636&amp;s=JnrjQwy9xvhSgWmmztRxPQ" alt="" loading="lazy" /></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shuo19971203</span><span class="f3 push-content">: 可以問一下 BCH現在是朝著中本聰的方向嗎</span><span class="push-ipdatetime"> 11/21 00:34
+</span></div>基本上自己研究啦，不過中本聰欽點的繼承者Gavin是這樣想的沒錯。
+<a href="https://twitter.com/gavinandresen/status/929377620000681984" target="_blank" rel="noreferrer noopener nofollow">https://twitter.com/gavinandresen/status/929377620000681984</a>
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 2018經過快3年熊市也沒再看過btc.d被洗到90</span><span class="push-ipdatetime"> 11/21 00:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 萬幣歸一真的不要想了</span><span class="push-ipdatetime"> 11/21 00:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 他的思考邏輯BCH就是中本聰,比特幣就像Core團隊</span><span class="push-ipdatetime"> 11/21 00:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 以目前週期比特幣極有可能2023年回到90%</span><span class="push-ipdatetime"> 11/21 00:48
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 00:49:53
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">unendless314</span><span class="f3 push-content">: 好奇新韭想請教一下版主對於 xec 有什麼見解？</span><span class="push-ipdatetime"> 11/21 00:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 因為這次熊市肯定會很長人們受不了會拋售手中的幣離場</span><span class="push-ipdatetime"> 11/21 00:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rand</span><span class="f3 push-content">: 共識就是當年礦工要擴容但是 core 還是硬幹阿 哈哈</span><span class="push-ipdatetime"> 11/21 00:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">unendless314</span><span class="f3 push-content">: bch 是比較有名的分叉，但 xec 也是在做 btc 改良</span><span class="push-ipdatetime"> 11/21 00:50
+</span></div>不得不說Amaury也是蠻厲害的，rebrand後配上雪崩協議後讓BCHA起死回生
+不過大部分規劃的東西除了雪崩協議之外，在BCH上也是都有
+<a href="https://cash.coin.dance/development" target="_blank" rel="noreferrer noopener nofollow">https://cash.coin.dance/development</a>
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 一年連續兩次牛市不可能熊市很短</span><span class="push-ipdatetime"> 11/21 00:51
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 00:55:08
+</span><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 00:57:24
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 感謝黑鴨大的回答 那如此一來 在安全性考量上 機構（進場</span><span class="push-ipdatetime"> 11/21 00:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 資金龐大者）是否只會選擇安全性第一的幣或前面幾名？ 才</span><span class="push-ipdatetime"> 11/21 00:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 能有相對的安全性 我們知道BCH交易速度跟手續費都遠比BT</span><span class="push-ipdatetime"> 11/21 00:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: C好很多 但對於要投入幾千萬美金的機構相對於功能或報酬</span><span class="push-ipdatetime"> 11/21 00:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 率，應該是優先考量 ‘那個區塊鏈最安全’</span><span class="push-ipdatetime"> 11/21 00:57
+</span></div>絕大部分金融機構做的事情還是把BTC金融商品化，買進BTC後打包成基金賣給客戶。
+客戶需求什麼，他們就買什麼，實用性甚至安全性都不會是他們的考量。
+就算機構要買入的話也是短期對沖用途，目的是為了達成累積更多的美元計價資產。
+就算BTC未來十幾年安全性會下降也不是他們關心的。
+哪個加密資產在浪頭上，未來會增值他們就買哪個罷了。
+<span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 01:04:54
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rich55720</span><span class="f3 push-content">: 我這個韭菜看了，心想到時候先跑再說，誰是最後一棒呢</span><span class="push-ipdatetime"> 11/21 01:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 我也同意 51%攻擊的成本跟成功的收益 比值是固定的 但成</span><span class="push-ipdatetime"> 11/21 01:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 本的絕對值也是安全性之一 例如目前也許股神巴菲特拿得出</span><span class="push-ipdatetime"> 11/21 01:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 51%攻擊成功所需的成本 但未來如果BTC漲到50萬 能拿得出</span><span class="push-ipdatetime"> 11/21 01:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 相對的攻擊成本的人 說不定都不存在了 要讓比特幣安全性</span><span class="push-ipdatetime"> 11/21 01:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 神話崩裂 只能越早越有可能 但現在已經養肥了</span><span class="push-ipdatetime"> 11/21 01:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yys310</span><span class="f3 push-content">: 就是未來出塊減少 礦工減少變集中 越集中越有機會</span><span class="push-ipdatetime"> 11/21 01:04
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 01:05:39
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 所以從安全性上思考 有種BTC會大者恆大的感覺 同樣是投資</span><span class="push-ipdatetime"> 11/21 01:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 一千萬美金 機構為何要選擇安全性低的幣？一定是選安全性</span><span class="push-ipdatetime"> 11/21 01:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 第一名阿（當然選幣還有很多考量因素）</span><span class="push-ipdatetime"> 11/21 01:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iiiiiiii171</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 01:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 疑 我以為蠻多機構 買幣 是放到冷錢包裏 那種</span><span class="push-ipdatetime"> 11/21 01:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 包裝過的商品 他們不怕被跑路嗎？</span><span class="push-ipdatetime"> 11/21 01:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 很多機構相信法律保障甚於自己搞定錢包的技術細節</span><span class="push-ipdatetime"> 11/21 01:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 而且只有透過這種包裝過後買進方式才能完全合規</span><span class="push-ipdatetime"> 11/21 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 很多基金都有法律一大堆限制，不是啥都能買得</span><span class="push-ipdatetime"> 11/21 01:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: <a href="https://cnb.cx/30QGsaJ" target="_blank" rel="noreferrer noopener nofollow">https://cnb.cx/30QGsaJ</a></span><span class="push-ipdatetime"> 11/21 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 我其實是試著在思考這文章的內容</span><span class="push-ipdatetime"> 11/21 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: <a href="https://tinyurl.com/2c6rknj5" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/2c6rknj5</a></span><span class="push-ipdatetime"> 11/21 01:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 當然這文章不一定是對的 只是真的看到很多事實 就是只買</span><span class="push-ipdatetime"> 11/21 01:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 比特幣</span><span class="push-ipdatetime"> 11/21 01:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 這就是我覺得恐怖的地方，細思極恐啊</span><span class="push-ipdatetime"> 11/21 01:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 對散戶來說 有太多理由 不必買比特幣 但為何機構做完功課</span><span class="push-ipdatetime"> 11/21 01:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">:  只選比特幣？ 我自己是認為因為安全性第一</span><span class="push-ipdatetime"> 11/21 01:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 本來的比特黑都宣稱變成忠誠的信徒了</span><span class="push-ipdatetime"> 11/21 01:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 假如真的相信極度安全，那還買包裝過後的金融商品做啥</span><span class="push-ipdatetime"> 11/21 01:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 機構會跳進來玩的hedge fund居多吧</span><span class="push-ipdatetime"> 11/21 01:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jdstabc</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 01:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 反正也是短進短出割割韭菜</span><span class="push-ipdatetime"> 11/21 01:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 不是不少機構 那x%資產 打算長期持有比特幣嗎？ 應該不會</span><span class="push-ipdatetime"> 11/21 01:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 大資金 玩短期吧？</span><span class="push-ipdatetime"> 11/21 01:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 機構選擇btc更多的考慮是深度，機構不像散戶是靈活小青蛙</span><span class="push-ipdatetime"> 11/21 01:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: ，可以不管流動性風險。另外比起比特幣現貨，經過包裝的</span><span class="push-ipdatetime"> 11/21 01:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 比特幣商品，如GBTC、比特幣etf，對金融機構更有吸引力是</span><span class="push-ipdatetime"> 11/21 01:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 因為合規且有發行商品的機構可以咎責</span><span class="push-ipdatetime"> 11/21 01:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 認同樓上講的,幣圈就淺碟市場,賣一下就砸自己腳會笑死</span><span class="push-ipdatetime"> 11/21 01:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 越淺越好割韭菜 嘻嘻</span><span class="push-ipdatetime"> 11/21 02:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SamuelLuo</span><span class="f3 push-content">: 唯一信仰SmartBCH，重返BTC的正統地位</span><span class="push-ipdatetime"> 11/21 02:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SamuelLuo</span><span class="f3 push-content">: （因為我自己也在上面創BWB鉍勝幣，私心支持）</span><span class="push-ipdatetime"> 11/21 02:56
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 03:04:20
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: 想請教兩個問題 1. core不選擇擴容應該還是有安全性考</span><span class="push-ipdatetime"> 11/21 03:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: 量吧？但不了解的是為何block size越大會降低安全性？</span><span class="push-ipdatetime"> 11/21 03:15
+</span></div>我也不了解Core的邏輯，硬要扯就只有大區塊會增加orphan rate，
+就像是ETH的block gas limit也不能一直增加，
+uncle rate增高到一定的比率就無法維持共識。
+
+但是礦工又不是傻子，自己也不會願意產出太大的區塊導致區塊被丟棄好嗎。
+所以那根本是假議題，礦工覺得blocksize limit太大可以自己產小區塊就好。
+只是通常還是會有一個protocol的上限值避免程式出錯。
+以前還要顧慮礦工都在中國，在牆內，區塊不能傳太大出牆。
+但現在完全沒這個顧慮了。
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">:  2. 像BCH手續費那麼低，那是靠什麼吸引礦工願意打包t</span><span class="push-ipdatetime"> 11/21 03:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: ransaction的？</span><span class="push-ipdatetime"> 11/21 03:15
+</span></div>生產一個區塊的成本是固定的，所以當然只要有手續費就是打包越多的交易越好。
+唯一要顧慮的只有區塊太大會增加orphan rate而已。
+<span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 03:23:12
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Aukillexz</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 03:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: 好奇版大提的core不擴容的利益衝突是什麼？Core(Block</span><span class="push-ipdatetime"> 11/21 04:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: stream?)是有藉由開發Bitcoin得到什麼利益嗎？或者說</span><span class="push-ipdatetime"> 11/21 04:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: 高昂手續費跟開發者的利益之間是有什麼關聯呢？畢竟手</span><span class="push-ipdatetime"> 11/21 04:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">professorK</span><span class="f3 push-content">: 續費是礦工拿的不是嗎</span><span class="push-ipdatetime"> 11/21 04:07
+</span></div>Blockstream沒有藉由贊助開發Bitcoin得到利益你才要細思極恐。
+Blockstream是一間由眾多金融集團集資設立的&#34;營利&#34;公司。
+<a href="https://www.crunchbase.com/organization/blockstream/company_financials" target="_blank" rel="noreferrer noopener nofollow">https://www.crunchbase.com/organization/blockstream/company_financials</a>
+這和以太坊基金會這種非營利組織本質可是完全不同的。
+關鍵字就是Liquid network，而且還申請專利咧。
+<a href="https://blockstream.com/liquid/" target="_blank" rel="noreferrer noopener nofollow">https://blockstream.com/liquid/</a>
+另外在Lightening Network上也是投資開發運行payment hub。
+<a href="https://blockstream.com/lightning/" target="_blank" rel="noreferrer noopener nofollow">https://blockstream.com/lightning/</a>
+只有BTC的主鏈越殘廢，這兩種Blockstream的&#34;產品&#34;才能獲得收益。
+不然依照本來Bitcoin勇猛的程度，哪需要啥LN和Liquid。
+<a href="https://youtu.be/ZWcezOH06Ds?t=105" target="_blank" rel="noreferrer noopener nofollow">https://youtu.be/ZWcezOH06Ds?t=105</a>
+<div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/ZWcezOH06Ds" frameborder="0" allowfullscreen></iframe></div></div></div>而Bitcoin當初的手續費設計本來就是長尾的P2P支付市場。而不是高昂的頭部結算市場。
+因為結算市場早就被銀行業佔據光了。哪個大額交易不是靠銀行去結算的？
+連礦工都知道把BTC導向這個市場不可行，才會跳出來說要擴容。
+現在的結果就是這次牛市的平均手續費並沒有超越上次牛市，而且以後只會越來越難看。
+也就是會走向下面這張圖的Failure路徑
+<a href="https://i.imgur.com/VIGwE80.gif" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/VIGwE80.gif</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/VIGwE80l.gif?e=1653608941&amp;s=ltr0cvOwsdjddcKQHicn3A" alt="" loading="lazy" /></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 好奇上圖2020也說交易費壓力導致也追求鏈外方案例如</span><span class="push-ipdatetime"> 11/21 04:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 閃電網路。板主對此怎麼看？</span><span class="push-ipdatetime"> 11/21 04:28
+</span></div>做為一個old-school Bitcoiner其實並不反對閃電網路，
+反對的是把閃電網路當作唯一擴容方案。
+那張圖表達是在交易需求增加已經超過摩爾定律硬體發展的狀態下，
+那就可以多追尋其他的方案。但主要方案仍然是L1的區塊擴容。
+我甚至還很支持之前有啥BT出了一個BTT的獎勵token在閃電網路上發展。
+那東西根本不需要另外做一個token出來。
+像這種和應用綁在一起的，最適合做成閃電網路，綁在Bitcoin上就好了。
+像我以前就介紹過JoyStream，甚至也不需要閃電網路，用最基礎的支付通道就解了。
+<a href="/bbs/DigiCurrency/M.1521530250.A.BAF.html" target="_blank" rel="noreferrer noopener nofollow">#1QiBMAkl (DigiCurrency)</a>
+<span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 04:37:43
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Vanced</span><span class="f3 push-content">: 技術文就是讚 反觀某個妖言惑眾的 真的有夠不舒服</span><span class="push-ipdatetime"> 11/21 04:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Akitsukineko</span><span class="f3 push-content">: 單純好奇 fee上升是指對美金而言的話</span><span class="push-ipdatetime"> 11/21 05:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Akitsukineko</span><span class="f3 push-content">: 以該幣視點來看不是沒有差嗎</span><span class="push-ipdatetime"> 11/21 05:55
+</span></div>對幣沒差，對人有差，原原PO說的就是對人有差怎麼辦。
+這東西其實就是開發者沒死，甚至是礦工沒死，改個參數就解決的事情。
+當然另外增加oracle也是個解法，但就增加系統複雜度與attack vector。
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yang666</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 08:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dodobaho</span><span class="f3 push-content">: 請教版主 是怎麼判斷熊市要來了？謝謝</span><span class="push-ipdatetime"> 11/21 09:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 機構資金大 幣的深度 也很重要沒錯 但BCH深度也不差 現在</span><span class="push-ipdatetime"> 11/21 09:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 每天交易量也有2B USD 怕滑價的話 BTC BCH也都是要慢慢建</span><span class="push-ipdatetime"> 11/21 09:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 倉 一次市價出場都是會插針的 而且目前很多機構都是打算</span><span class="push-ipdatetime"> 11/21 09:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 長期持有幣 不是短期trader 理由大多都是為了抗通膨</span><span class="push-ipdatetime"> 11/21 09:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 所以考量深度 BTC是比較好 但BCH也不差 但為何機構做完功</span><span class="push-ipdatetime"> 11/21 09:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 課不選 慢慢建倉BCH？</span><span class="push-ipdatetime"> 11/21 09:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Bluecold</span><span class="f3 push-content">: 看不懂但是先推</span><span class="push-ipdatetime"> 11/21 09:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 散戶說不定還會認為 BCH未來能爆擊 比BTC更多的</span><span class="push-ipdatetime"> 11/21 09:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 收益 那到底為何只選BTC?</span><span class="push-ipdatetime"> 11/21 09:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">trleee</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 10:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CityRanger</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 10:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 機構不會做功課啊</span><span class="push-ipdatetime"> 11/21 10:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 11/21 10:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 現在就算中本聰在也會有可能改變當初他的原則</span><span class="push-ipdatetime"> 11/21 11:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 2011年時空背景極客環境交易量小但現在市場大交易量大</span><span class="push-ipdatetime"> 11/21 11:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 中本聰也有可能利益關係選擇CORE方案</span><span class="push-ipdatetime"> 11/21 11:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">namyoung</span><span class="f3 push-content">: 選擇放手讓大家共識決定也是正確</span><span class="push-ipdatetime"> 11/21 11:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yys310</span><span class="f3 push-content">: 妖言惑眾的只能被打臉然後就不見了</span><span class="push-ipdatetime"> 11/21 11:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a29654776</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 11:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">worldfallsin</span><span class="f3 push-content">: 只能說中本聰將項目交還給社區後，未來的方向已不</span><span class="push-ipdatetime"> 11/21 12:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">worldfallsin</span><span class="f3 push-content">: 會按照他的原意了。更多是主導的社區來定義</span><span class="push-ipdatetime"> 11/21 12:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lrm549</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 11/21 15:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DNNDNNDNN</span><span class="f3 push-content">: 太狂了  1萬美 推</span><span class="push-ipdatetime"> 11/21 15:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 機構哪可能不做功課…都出資幾千萬美元了…又不是散戶…</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 機構大老闆當然不用做功課，他負責出錢，當然只出一張嘴</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: ”那個誰誰誰 去研究一下如何靠crypto抗通膨” 下面拿薪</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 水的員工敢不做功課 隨便塘塞老闆嗎？還有說木頭姐是韭菜</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 的鄉民…人家CEO 都是花錢養一堆產業分析師 都是看這些專</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 業研究人員的報告…還韭菜勒</span><span class="push-ipdatetime"> 11/21 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">shamanlin</span><span class="f3 push-content">: 雖然無關但我突然想到中環跟皇翔這兩個超大型韭菜</span><span class="push-ipdatetime"> 11/21 15:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 說實在的那些產業分析師大部分都人云亦云罷了</span><span class="push-ipdatetime"> 11/21 15:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: ARK倒是很佛心 都直接把這些專業報告放網上給人看（不</span><span class="push-ipdatetime"> 11/21 15:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 是所有基金公司都這麼佛的）但鄉民當笑話看…</span><span class="push-ipdatetime"> 11/21 15:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 元宇宙炒成那樣難不成是個突然間冒出來的偉大技術??</span><span class="push-ipdatetime"> 11/21 15:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 隔行如隔山，更不用說是產業分析屍了</span><span class="push-ipdatetime"> 11/21 15:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 就說區塊鏈好了，很多科技業的老闆還真的以為</span><span class="push-ipdatetime"> 11/21 16:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 區塊鏈是種&#34;雲端計算&#34;技術，東西丟上去卍解</span><span class="push-ipdatetime"> 11/21 16:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 假如投資機構都那麼強，根本不會有任何科技泡沫</span><span class="push-ipdatetime"> 11/21 16:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 因為根本不會高估任何科技，錢都只會丟在對的地方</span><span class="push-ipdatetime"> 11/21 16:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 也不會有那個寫在教科書裡的Pets.com，堪比動物幣</span><span class="push-ipdatetime"> 11/21 16:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 每個都說自己信仰充滿，結果一開口就笑死：</span><span class="push-ipdatetime"> 11/21 16:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 數位&#34;黃金&#34;&#34;虛擬&#34;貨幣，我看過白皮書了喔喔喔</span><span class="push-ipdatetime"> 11/21 16:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: <a href="https://tinyurl.com/vpyusmdm" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/vpyusmdm</a></span><span class="push-ipdatetime"> 11/21 16:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 中本聰還真的幾乎不稱Bitcoin是黃金ㄝ</span><span class="push-ipdatetime"> 11/21 16:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 而且一點也不虛擬，第一章就說要用在日常生活了</span><span class="push-ipdatetime"> 11/21 16:05
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 16:05:52
+</span><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 16:06:07
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 產業分析師 能拿ARK 薪水 做人云亦云的報告 還能讓自家C</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: EO信服 那也是工作能力（虎爛能力）蠻厲害</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 不過跟CEO 腦子也有關係啦 同一份研究報告 巴菲特應該也</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 是當垃圾看 木頭姐卻當未來發展前景看 木頭姐也特立獨行</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 阿 完全沒人云亦云吧 大家都說要開始大通膨 她還在說會通</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 縮 還能講出一堆數據證明 這些都來自旗下分析師</span><span class="push-ipdatetime"> 11/21 16:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 中本聰的目標 跟現在把 BTC當數位黃金 我覺得不衝突耶 我</span><span class="push-ipdatetime"> 11/21 16:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 認為這是人類發展 crypto的過渡期 等到N年後 中本聰的目</span><span class="push-ipdatetime"> 11/21 16:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 標實現了 所有人都能用 完全去中心化的 貨幣來交易 但在</span><span class="push-ipdatetime"> 11/21 16:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 發展到那個目標前 就會發生現在的事情</span><span class="push-ipdatetime"> 11/21 16:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 那個N年 也不知道是多久 可能我們這世代也等不到</span><span class="push-ipdatetime"> 11/21 16:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 分析師終究不是投資標的的業內人士，他們不會去分析技術</span><span class="push-ipdatetime"> 11/21 16:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 層面的細節，他們評估的是風險跟收益，不是技術上的優劣</span><span class="push-ipdatetime"> 11/21 16:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: ，技術上的優劣業內大佬都沒有定論，何況圈子外的分析師</span><span class="push-ipdatetime"> 11/21 16:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 。另外真的別太神分析師的風險控管，不然也不會出現雷曼</span><span class="push-ipdatetime"> 11/21 16:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 破產跟Archegos爆倉後拉一串機構一起死</span><span class="push-ipdatetime"> 11/21 16:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 為何會覺得一定大資金不會賠錢</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 中本聰的目標很遠大 很好 但人類真的不是那麽聰明…要一</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 堆人開著電腦 幫忙當個節點 實現完全去中心化 這有多難？</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">:  超級無敵難…比特幣12年了 現在的安全性 好像也還沒到</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: “全世界無人可破” 的地步 目前世界前幾名富人也許還能</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 用錢來做51%攻擊  那中本聰的目標就無法達成  假設啦 可</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 能N年後 真的有個區塊鏈 全世界節點數量多到 世界首富或</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 美國政府也無可奈何 那才有 完全去中心化  而那時 人們可</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 能也不會理會 這個幣可以換多少美元 因為已經實現中本聰</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 目標 都是幣本位了</span><span class="push-ipdatetime"> 11/21 16:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">seal46825</span><span class="f3 push-content">: 幹嘛那麼在乎中本聰的理想是什麼 這種東西發明出來後</span><span class="push-ipdatetime"> 11/21 16:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">seal46825</span><span class="f3 push-content">: 掌控權本來就不在他手上了 他怎麼想根本也不重要了 重</span><span class="push-ipdatetime"> 11/21 16:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">seal46825</span><span class="f3 push-content">: 點是大眾們怎麼想 認為比特幣有沒有價值</span><span class="push-ipdatetime"> 11/21 16:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 我沒說大資金一定不會賠錢阿 我只說大資金 不會是”沒做</span><span class="push-ipdatetime"> 11/21 16:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 功課 “</span><span class="push-ipdatetime"> 11/21 16:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 那你覺得MSTR買了這麼多，是有專業分析</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 還是Saylor說得算</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 你不用理這個目標是不是中本聰提出的</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 但這個目標可能是人類未來交易的趨勢 就是使用 完全去中</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 心化的貨幣進行交易 這也是很多人 ㄧ看到區塊鏈 所想像的</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 未來</span><span class="push-ipdatetime"> 11/21 16:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 蠢錢哪裡都有，別太神話所謂機構投資</span><span class="push-ipdatetime"> 11/21 16:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: MSTR只是其中一個機構 雖然它應該是目前最多持</span><span class="push-ipdatetime"> 11/21 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 有比特幣的機構 但我在思考的是 未來 會不會有</span><span class="push-ipdatetime"> 11/21 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 更多機構投資crypto? 為何木頭姐會說”如果所有</span><span class="push-ipdatetime"> 11/21 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 機構都拿5%買比特幣 它會漲到56萬”</span><span class="push-ipdatetime"> 11/21 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 你可以當她是個笑話 你也可以去想她後面可能的原因</span><span class="push-ipdatetime"> 11/21 16:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">:  DYOR</span><span class="push-ipdatetime"> 11/21 16:43
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 17:53:23
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 中本聰的遺產 老大哥的地位 名氣最大 這些理由就足夠讓多數</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 人選擇BTC了</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 但你也可以想另一個問題</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 2020/2021看好BTC的人在2008-2016年都在幹啥</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 答案是這些人多數都還不知道BTC是啥</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 在BTC還沒炒這麼高之前就在為BTC付出的開發者和投資者才是</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 真正有眼光的人</span><span class="push-ipdatetime"> 11/21 18:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 我沒有神話機構投資阿…我只是表達 機構不會不</span><span class="push-ipdatetime"> 11/21 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 做功課就無腦投資 我沒說 機構投資一定超厲害</span><span class="push-ipdatetime"> 11/21 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">:  一定不會賠錢 我是強調 他們投資都是有做功課</span><span class="push-ipdatetime"> 11/21 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">:  會有背後的原因而已</span><span class="push-ipdatetime"> 11/21 19:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 未來如果真的所有機構都拿x%投資crypto 我們當然是希望猜</span><span class="push-ipdatetime"> 11/21 19:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 到他們投資邏輯 先搶先買阿</span><span class="push-ipdatetime"> 11/21 19:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 每個人都會有自己的投資邏輯 黑鴨大是因為認為BCH最符合</span><span class="push-ipdatetime"> 11/21 19:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 中本聰的想法而投資 我則是認為BTC最符合機構進場的標的</span><span class="push-ipdatetime"> 11/21 19:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 而投資</span><span class="push-ipdatetime"> 11/21 19:10
+</span></div>先聲明一下我的確沒有hold BTC了，但是也不是單hold BCH，
+我只hold我認為還有成長性的幣。譬如BCH、ETH與其他EVM宇宙的幣。
+DeFi幣有時候會投機玩玩，BTC則是投機與投資都沒有，反而放空留著收資金費。
+反正BTC的資金費率長期為正，拿來對沖我滿手現貨剛剛好。
+投機的話就是要股本小好炒會爆發的幣，BTC顯然沒有。
+這次牛市也不過比上次牛市兩萬鎂高點漲了原來的三倍。
+一點都不比特幣，比特幣牛市低標不是十倍嗎？
+論實質成長性的話，鏈上數據看起來就是慘，幣價和鏈上交易數與手續費已經開始背離。
+這波牛市就是純粹的資金潮帶起來的，各國股市都飆翻天了，BTC反而沒那麼BTC了。
+在我看起來BTC現在的生命週期差不多就是來到了2011年的宏達電了。
+外部資金瘋狂炒作，但是內部實際狀況慘到不行。
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 一票做決策的老屁股比你想的更蠢</span><span class="push-ipdatetime"> 11/21 19:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">VONeternal</span><span class="f3 push-content">: 不是只有投行或hedge fund會買</span><span class="push-ipdatetime"> 11/21 19:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 中本聰的目標是全球點對點電子現金 用這個硬需求建立共識進</span><span class="push-ipdatetime"> 11/21 19:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 而變成價值儲存 這也比較能自圓其說</span><span class="push-ipdatetime"> 11/21 19:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 同意啊 但這些老屁股有錢啊 能影響市場啊 夠資</span><span class="push-ipdatetime"> 11/21 19:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 格進場抬轎啊 我就想預判他們想法 搶先佈局</span><span class="push-ipdatetime"> 11/21 19:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 而不是把他搞成很難用之後 他就會自動變成有共識的黃金</span><span class="push-ipdatetime"> 11/21 19:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 人類群體沒那麽聰明 BCH明明功能上就好上BTC不</span><span class="push-ipdatetime"> 11/21 19:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 少 為何市場不是這樣？這原因也是說不完的</span><span class="push-ipdatetime"> 11/21 19:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 未來能不能實現中本聰想法、機構是賺錢還是賠錢，我一點</span><span class="push-ipdatetime"> 11/21 19:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 也不在乎，我只在乎 能不能在crypto長期發展下 我持有的</span><span class="push-ipdatetime"> 11/21 19:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 幣越來越有價值 且市場也認同</span><span class="push-ipdatetime"> 11/21 19:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 但凡有鄉民能預判機構大頭的想法，也不會在這裡跟你抬摃</span><span class="push-ipdatetime"> 11/21 19:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: ，而且你怎麼只採信ark跟木頭姨的講法，怎麼不睬信波克夏</span><span class="push-ipdatetime"> 11/21 19:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 跟巴菲特的講法？猜機構想法根本沒意義。散戶沒信仰就牛</span><span class="push-ipdatetime"> 11/21 19:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 市跟風玩玩，有信仰就熊市dca當HODLer</span><span class="push-ipdatetime"> 11/21 19:53
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 20:04:29
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 沒有剛性需卻能瞬間成為電子黃金的論點 並不能自圓其說</span><span class="push-ipdatetime"> 11/21 19:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 那位什麼資金還是往BTC去 就只剩下炒作的解釋惹</span><span class="push-ipdatetime"> 11/21 19:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kugwa</span><span class="f3 push-content">: 而炒作資金往哪跑 確實就是有人感興趣 有人不感興趣</span><span class="push-ipdatetime"> 11/21 19:58
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.119.188 臺灣), 11/21/2021 20:06:04
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 會去猜機構想法是因為 認為後面能把幣圈市值從2T USD 再</span><span class="push-ipdatetime"> 11/21 20:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 往上拉 機構的資金會很關鍵 這的確也是現在進行式</span><span class="push-ipdatetime"> 11/21 20:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 我也沒完全採信ark 跟木頭姐 我只是認為 她的說法背後必</span><span class="push-ipdatetime"> 11/21 20:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 定有他們的原因 如果我能理解 我會對我的投資更有信心 所</span><span class="push-ipdatetime"> 11/21 20:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 以我才問 為何機構做完功課都會買BTC? 黑鴨大也不清楚為</span><span class="push-ipdatetime"> 11/21 20:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 何原本的比特黑最近都轉成比特信仰者</span><span class="push-ipdatetime"> 11/21 20:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 感謝黑鴨大給的技術內容 跟投資邏輯 還有對BTC的判斷 都</span><span class="push-ipdatetime"> 11/21 20:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okpk3k</span><span class="f3 push-content">: 讓我收穫滿滿</span><span class="push-ipdatetime"> 11/21 20:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 問題在於木頭姨不會私信你她為什麼買比特幣，巴菲特也不</span><span class="push-ipdatetime"> 11/21 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 會po文告訴鄉民他覺得比特幣哪裡噁心，沒有答案的問題去</span><span class="push-ipdatetime"> 11/21 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 猜它沒用，猜了半天最終得出的結論也只是自己想出來說服</span><span class="push-ipdatetime"> 11/21 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 自己，增強信仰而已，跟現實情況沒關。更不用說還有像摩</span><span class="push-ipdatetime"> 11/21 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">v74451</span><span class="f3 push-content">: 根這種ceo跟分析師講的方向相反的，敢情要怎麼猜？</span><span class="push-ipdatetime"> 11/21 20:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">infinity46</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 21:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cherryiami</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 11/21 22:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ehentai</span><span class="f3 push-content">: 推~</span><span class="push-ipdatetime"> 11/21 23:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Epimenides</span><span class="f3 push-content">: 真心希望中本聰還在人世</span><span class="push-ipdatetime"> 11/22 16:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Freckle319</span><span class="f3 push-content">: 要不要順便探討下07年為何一堆機構搞次貸，00年一堆</span><span class="push-ipdatetime"> 11/25 17:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Freckle319</span><span class="f3 push-content">: 機構在弄.com ? 他們沒做功課嗎 ?</span><span class="push-ipdatetime"> 11/25 17:34
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.109.197 臺灣), 12/05/2021 19:10:56
+</span><span class="f2">※ 編輯: DarkerDuck (36.237.130.45 臺灣), 03/06/2022 23:08:17
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1637421224.A.18B.html?cacheKey=2148-143287864&amp;offset=35078&amp;offset-sig=3c44d3041a1bfb11ea6a86be82123911369e149d" data-longpollurl="/v1/longpoll?id=5e8866b85f89f7e4310ece95b477a6942cf50715" data-offset="35078"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce23e8a31afd9',m:'YY_PnilVR2YA04g_5DY6gHPoh9OnJa8eaFcjZyRb2y0-1653467161-0-AfRKz1F5mzr4qqMlmP68CJMr0+JjterE5ueN08QzrKKfnU0v7pRQWCt4PskE9l0WQR6rCer347lZ7oOvlpAAY7MgdzD+00ssNqTI3EP1rhWEYyR2bzh1g4GtvfTbjGmV+cBGLVlvH7md9k0dH3FR0E/Uuqg99uqEFToSPDfhNK7B',s:[0x890578d0c1,0x04b7474658],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

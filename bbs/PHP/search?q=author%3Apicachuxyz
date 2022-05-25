@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:picachuxyz - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Apicachuxyz">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Apicachuxyz">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Apicachuxyz">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:picachuxyz" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1140512647.A.9A0.html">[請益] 二維陣列排序的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%BA%8C%E7%B6%AD%E9%99%A3%E5%88%97%E6%8E%92%E5%BA%8F%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1137746847.A.735.html">Re: [請益] heredoc synex 在php5裡有支援嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;heredoc&#43;synex&#43;%E5%9C%A8php5%E8%A3%A1%E6%9C%89%E6%94%AF%E6%8F%B4%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1137691983.A.850.html">[請益] heredoc synex 在php5裡有支援嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;heredoc&#43;synex&#43;%E5%9C%A8php5%E8%A3%A1%E6%9C%89%E6%94%AF%E6%8F%B4%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1137533235.A.138.html">[請益] 上傳檔案是中文檔名會發生錯誤?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%8A%E5%82%B3%E6%AA%94%E6%A1%88%E6%98%AF%E4%B8%AD%E6%96%87%E6%AA%94%E5%90%8D%E6%9C%83%E7%99%BC%E7%94%9F%E9%8C%AF%E8%AA%A4%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1137517306.A.67D.html">[請益] cookie100%安全嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;cookie100%25%E5%AE%89%E5%85%A8%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1137499127.A.FE6.html">[請益] 帳號登入錯誤，傳回錯誤訊息怎麼寫?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%B8%B3%E8%99%9F%E7%99%BB%E5%85%A5%E9%8C%AF%E8%AA%A4%EF%BC%8C%E5%82%B3%E5%9B%9E%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF%E6%80%8E%E9%BA%BC%E5%AF%AB%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136724549.A.B43.html">Re: [請益] php mail 的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php&#43;mail&#43;%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136714429.A.5CD.html">Re: [請益] &lt;textarea&gt;的資料存到資料庫..怎麼防止 …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%3Ctextarea%3E%E7%9A%84%E8%B3%87%E6%96%99%E5%AD%98%E5%88%B0%E8%B3%87%E6%96%99%E5%BA%AB..%E6%80%8E%E9%BA%BC%E9%98%B2%E6%AD%A2&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136649873.A.322.html">[請益] &lt;textarea&gt;的資料存到資料庫..怎麼防止使用html?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%3Ctextarea%3E%E7%9A%84%E8%B3%87%E6%96%99%E5%AD%98%E5%88%B0%E8%B3%87%E6%96%99%E5%BA%AB..%E6%80%8E%E9%BA%BC%E9%98%B2%E6%AD%A2%E4%BD%BF%E7%94%A8html%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136624058.A.D86.html">Re: [請益] SQL INSERT</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;SQL&#43;INSERT">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136488418.A.22E.html">Re: [請益] &lt;form&gt;的xhtml1.0 strict 檢測 不能用n …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%3Cform%3E%E7%9A%84xhtml1.0&#43;strict&#43;%E6%AA%A2%E6%B8%AC&#43;%E4%B8%8D%E8%83%BD%E7%94%A8n&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136448722.A.0D2.html">Re: [請益] php在iis5上的執行</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php%E5%9C%A8iis5%E4%B8%8A%E7%9A%84%E5%9F%B7%E8%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136417213.A.3DB.html">[請益] sql指令錯誤 INSERT INTO</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;sql%E6%8C%87%E4%BB%A4%E9%8C%AF%E8%AA%A4&#43;INSERT&#43;INTO">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136386588.A.C85.html">[請益] &lt;form&gt;的xhtml1.0 strict 檢測 不能用name屬性?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%3Cform%3E%E7%9A%84xhtml1.0&#43;strict&#43;%E6%AA%A2%E6%B8%AC&#43;%E4%B8%8D%E8%83%BD%E7%94%A8name%E5%B1%AC%E6%80%A7%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136382647.A.78E.html">Re: [請益] unexpected T_VARIABLE 的問題?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;unexpected&#43;T_VARIABLE&#43;%E7%9A%84%E5%95%8F%E9%A1%8C%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136360628.A.47B.html">Re: [請益] unexpected T_VARIABLE 的問題?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;unexpected&#43;T_VARIABLE&#43;%E7%9A%84%E5%95%8F%E9%A1%8C%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136315035.A.24C.html">[請益] unexpected T_VARIABLE 的問題?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;unexpected&#43;T_VARIABLE&#43;%E7%9A%84%E5%95%8F%E9%A1%8C%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136303634.A.A96.html">[請益] php mail() 寄出去後 中文字顯示亂碼?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php&#43;mail%28%29&#43;%E5%AF%84%E5%87%BA%E5%8E%BB%E5%BE%8C&#43;%E4%B8%AD%E6%96%87%E5%AD%97%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1135884448.A.928.html">Re: [請益] apache可以在同一台電腦架兩個同時在線 …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;apache%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%90%8C%E4%B8%80%E5%8F%B0%E9%9B%BB%E8%85%A6%E6%9E%B6%E5%85%A9%E5%80%8B%E5%90%8C%E6%99%82%E5%9C%A8%E7%B7%9A&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1135866009.A.637.html">[請益] apache可以在同一台電腦架兩個同時在線上站嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">picachuxyz</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;apache%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%90%8C%E4%B8%80%E5%8F%B0%E9%9B%BB%E8%85%A6%E6%9E%B6%E5%85%A9%E5%80%8B%E5%90%8C%E6%99%82%E5%9C%A8%E7%B7%9A%E4%B8%8A%E7%AB%99%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Apicachuxyz">搜尋看板內 picachuxyz 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa46dc614d0',m:'KpIPNj.ykikKNbX8N8ZUV9HF2S6jual.F6RG6rNenNk-1653467505-0-AS3QHSwOBDWb5rCDJ+QGvDgubLDRqbAvuYPbXw7sd6isDkt0qh/LuVToFPQ7dGiyG8HIwfCvAhKfgU5akBY3YvIPxEO2Cqe8KbkX943BKv0XIwEAHH4OW/vQ0vlRT5JlY8FoYH5Eyk6sEQzkrlWQb3m7NLgJv6t/c5DyV3jCl+Ev',s:[0x23c77488e5,0xbf884574ac],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

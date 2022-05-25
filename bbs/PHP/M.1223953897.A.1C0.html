@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 關於PHP圓餅圖... - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="小女子我不才阿&gt;&lt;
+我想請問神人 PHP的圓餅圖怎樣寫
+我已經有程式碼囉
+也改過很多...
+我主要是想要讓它直接從陣列裡面抓資料
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 關於PHP圓餅圖...">
+<meta property="og:description" content="小女子我不才阿&gt;&lt;
+我想請問神人 PHP的圓餅圖怎樣寫
+我已經有程式碼囉
+也改過很多...
+我主要是想要讓它直接從陣列裡面抓資料
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1223953897.A.1C0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">claire0810 (Claire)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 關於PHP圓餅圖...</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Oct 14 11:11:36 2008</span></div>
+小女子我不才阿&gt;&lt;
+
+我想請問神人 PHP的圓餅圖怎樣寫
+
+我已經有程式碼囉
+
+也改過很多...
+
+我主要是想要讓它直接從陣列裡面抓資料
+
+不要再連結到資料庫囉!!
+
+以下是書上COPY下來的程式碼 當然我已經有修改過一點
+
+但是也不知道為什麼只能抓的到查詢到的那一筆資料而已
+
+拜託各位囉&gt;&lt;
+
+我只要讓它從陣列裡抓資料 而且可以畫出 多資料的圓餅圖...
+
+
+陣列內容大概就是
+
+
+桃園縣  10
+台北縣  15
+台北市  5
+
+
+
+//*********************以下是程式碼*************************
+&lt;?php
+
+  include(&#34;db_func.php&#34;);
+
+  $link = mysql_connect(&#34;127.0.0.1&#34;, &#34;root&#34;, &#34;密碼&#34;);//資料庫連結
+
+  $db= mysql_select_db(&#34;live&#34;,$link);
+  mysql_query(&#34;SET NAMES &#39;big5&#39;&#34;);
+
+  if(!$db){
+     echo &#34;db die&#34;;
+  }
+
+  function Deg2Arc($degrees)
+        {
+          return($degrees * (pi()/180.0));
+        }
+        // 定義一把角度轉換為弳度的函式 END
+
+        // 定義一取得圓弧上之 x,y 點的函式 BEGIN
+        function Center2Pie($deg,$length)
+        {
+          $x= cos(Deg2Arc($deg)) * $length;
+          $y= sin(Deg2Arc($deg)) * $length;
+          return (array($x, $y));
+        }
+        // 定義一取得圓弧上之 x,y 點的函式 END
+
+        class pikelet // 宣告一個 pikelet 的類別
+        {
+//****************書上使用變數 我尚未更改************
+          var $radius;    // 圓半徑
+          var $DataArray; // 每個扇形所代表的資料
+          var $sellData;  // 銷售量陣列
+          var $place;     // 產品序號
+          var $number;    // 銷售總額
+          var $num;       // 銷售標的個數
+//****************************************************
+
+
+         function pikelet($res, $length = 100) // 扇形建構子
+          {
+            $this-&gt;radius = $length; // 設定圓半徑
+            $this-&gt;num = db_num_rows($res);
+
+            for($i=0;$i&lt;$this-&gt;num;$i++)
+            {
+              $row = db_fetch_array($res);
+              $this-&gt;sellData[$i] = $row[&#39;number&#39;];  // 產品銷售量
+              $this-&gt;productID[$i] = $row[&#39;place&#39;];  // 產品序號
+              $this-&gt;DataTotal += $row[&#39;number&#39;];    // 總銷售量
+            }
+        //******************************圓餅圖控制項開始**********************
+          }
+          function DrawPie() // 畫圓餅圖
+          {
+            $im = ImageCreate($this-&gt;radius*2+40,$this-&gt;radius*2+40);
+            $PieCenterX=$this-&gt;radius+10; // 圓心 X座標
+            $PieCenterY=$this-&gt;radius+10; // 圓心 Y座標
+            $radius=$this-&gt;radius*2;      // 圓半徑
+
+            // 定義所使欲使用的顏色 BEGIN
+            $colorBorder = ImageColorAllocate($im, 0, 0, 0);     // 黑
+            $colorback = ImageColorAllocate($im, 255, 255, 255); // 白
+            $colors[0] = ImageColorAllocate($im, 255, 128, 128); // 粉紅
+            $colors[1] = ImageColorAllocate($im, 100, 149, 237); // 粉藍
+            $colors[2] = ImageColorAllocate($im, 50, 205, 50);   // 亮綠
+            $colors[3] = ImageColorAllocate($im, 244, 20, 190);  // 紫
+            $colors[4] = ImageColorAllocate($im, 255, 215, 0);   // 米黃
+            $colors[5] = ImageColorAllocate($im, 144, 238, 144); // 淺綠
+            $colors[6] = ImageColorAllocate($im, 70, 130, 180);  // 海軍藍
+            $colors[7] = ImageColorAllocate($im, 244, 164, 96);  // 棕
+            $colors[8] = ImageColorAllocate($im, 139, 121, 94);  // 土
+            $colors[9] = ImageColorAllocate($im, 190, 190, 190); // 灰
+            // 定義所使欲使用的顏色 END
+
+            ImageFill($im, 0, 0, $colorback); // 填充背景
+            // 開始畫每一個扇形
+            for($i=0;$i&lt;$this-&gt;num;$i++)
+            {
+              // 四捨五入畫弧的起始角度
+              $StartDegrees = round($Degrees);
+              // 累積角度
+              $Degrees += (($this-&gt;sellData[$i] / $this-&gt;DataTotal)*360);
+              // 四捨五入畫弧的結束角度
+              $EndDegrees = round($Degrees);
+              // 算出每一產品所佔的百分比
+              $percent = number_format(($this-&gt;sellData[$i] / $this-&gt;DataTotal)*100,
+1);
+
+              // 分配顏色 BEGIN
+              $tmp_color = $i%10; // 取10的餘數
+              $CurrentColor = $colors[$tmp_color]; // 指定顏色
+              // 分配顏色 END
+
+              // 畫扇形的弧
+              ImageArc($im, $PieCenterX, $PieCenterY, $radius, $radius,
+$StartDegrees, $EndDegrees, $CurrentColor);
+
+              // 畫扇形的一邊直線 BEGIN
+              list($ArcX, $ArcY) = Center2Pie($StartDegrees, $this-&gt;radius,
+$this-&gt;radius);
+              ImageLine($im, $PieCenterX, $PieCenterY, floor($PieCenterX + $ArcX),
+floor($PieCenterY + $ArcY), $CurrentColor);
+              // 畫扇形的一邊直線 END
+
+              // 畫畫扇形的另一邊直線 BEGIN
+              list($ArcX, $ArcY) = Center2Pie($EndDegrees, $this-&gt;radius,
+$this-&gt;radius);
+              ImageLine($im, $PieCenterX, $PieCenterY, ceil($PieCenterX + $ArcX),
+ceil($PieCenterY + $ArcY), $CurrentColor);
+              // 畫畫扇形的另一邊直線 END
+
+              // 填充扇形 BEGIN
+              $MidPoint = round((($EndDegrees - $StartDegrees)/2) + $StartDegrees);
+              list($ArcX, $ArcY) = Center2Pie($MidPoint, $this-&gt;radius*3/4,
+$this-&gt;radius*3/4);
+              ImageFilltoBorder($im, floor($PieCenterX + $ArcX), floor($PieCenterY +
+$ArcY), $CurrentColor, $CurrentColor);
+              // 填充扇形 END
+
+              // 寫上字串
+              ImageString($im, 2, floor($PieCenterX + $ArcX-20), floor($PieCenterY +
+$ArcY-2),$this-&gt;productID[$i] . &#34; - &#34; . $this-&gt;sellData[$i], $colorBorder);
+              ImageString($im, 2, floor($PieCenterX + $ArcX-10), floor($PieCenterY +
+$ArcY-20), $percent . &#34;%&#34; , $colorback);
+              // 寫上字串 END
+            }
+            Imagepng($im);     // 做出png檔
+            ImageDestroy($im); // 移除圖形所佔的記憶體
+          }
+        }
+  //******************************圓餅圖控制項結束**********************
+
+
+$SQLStr = &#34;SELECT * FROM living WHERE place=&#39;3&#39;&#34;;
+  $res = mysql_query($SQLStr,$link);
+
+  if(!$res){
+     echo &#34;db die&#34;;
+  }
+
+
+        if (db_num_rows($res)&gt;0)
+        {
+                header(&#34;Content-type: image/png&#34;);
+
+                $pie = new pikelet($res); // 宣告 pie 為一個 pikelet 物件
+                $pie-&gt;DrawPie();
+        }
+?&gt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 124.8.85.90
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yukang      </span><span class="f3 push-content">:如果沒有機秘資料的話，可以丟到  google chart api</span><span class="push-ipdatetime"> 10/14 11:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">claire0810  </span><span class="f3 push-content">:現場沒有網路 可能沒辦法這樣匯耶...</span><span class="push-ipdatetime"> 10/14 11:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">claire0810  </span><span class="f3 push-content">:而且陣列資料會改成變數因為每次的數據可能會不同</span><span class="push-ipdatetime"> 10/14 11:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tka         </span><span class="f3 push-content">:再推 <a href="http://teethgrinder.co.uk/open-flash-chart/" target="_blank" rel="noreferrer noopener nofollow">http://teethgrinder.co.uk/open-flash-chart/</a></span><span class="push-ipdatetime"> 10/14 12:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tka         </span><span class="f3 push-content">:自己用GD畫實在太累了 我是懶人 :p</span><span class="push-ipdatetime"> 10/14 12:54
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1223953897.A.1C0.html?cacheKey=2148-469789194&amp;offset=6681&amp;offset-sig=15232dcb928e499a34a2c088a7f556e3438cad42" data-longpollurl="/v1/longpoll?id=33807f122f20dbee92e26c5e28288d16328e3183" data-offset="6681"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5d7b698aa4',m:'cBV1b.fATs5tF2vT4XgF6rLBzvzdWFLJo9pTb4CbK.k-1653467494-0-AbJ+KnRQ9mU+GqHB4UjY3pUHNBppvtc2y2PySjOCxFX10avAE/NvQyZAkg2mTf4NXIXp0lyF7/uxOVz9d1h/97eSo9H3/wbfMHoRw12w7w1yawSquU1QPgZ1faYBjR0Vhpmsp5NBH9eLS+57GGUPuC7NxpaPhu7EDTzIX/W1VLEA',s:[0x6012ece3de,0x9486f7f604],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

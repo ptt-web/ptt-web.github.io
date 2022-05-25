@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:liaosankai - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Aliaosankai">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Aliaosankai">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Aliaosankai">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:liaosankai" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1287150485.A.375.html">Re: [問題] 一個簡單的 title 語法一問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%B8%80%E5%80%8B%E7%B0%A1%E5%96%AE%E7%9A%84&#43;title&#43;%E8%AA%9E%E6%B3%95%E4%B8%80%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1252937577.A.240.html">Re: [問題] form下的label是做什麼的?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;form%E4%B8%8B%E7%9A%84label%E6%98%AF%E5%81%9A%E4%BB%80%E9%BA%BC%E7%9A%84%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1252148720.A.41E.html">Re: [問題] jquery如何存取html陣列</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;jquery%E5%A6%82%E4%BD%95%E5%AD%98%E5%8F%96html%E9%99%A3%E5%88%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1250552433.A.2C7.html">Re: [問題] 不同瀏覽器的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%B8%8D%E5%90%8C%E7%80%8F%E8%A6%BD%E5%99%A8%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1240666496.A.66E.html">[心得] 哪一種程式語言比較好？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;%E5%93%AA%E4%B8%80%E7%A8%AE%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80%E6%AF%94%E8%BC%83%E5%A5%BD%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/25</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1240474280.A.177.html">[問題] 關於取得css背景的路徑的方法？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BC%E5%8F%96%E5%BE%97css%E8%83%8C%E6%99%AF%E7%9A%84%E8%B7%AF%E5%BE%91%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1239066820.A.C5A.html">Re: [問題] 各種瀏覽器的模擬器?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%90%84%E7%A8%AE%E7%80%8F%E8%A6%BD%E5%99%A8%E7%9A%84%E6%A8%A1%E6%93%AC%E5%99%A8%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1226764012.A.3CA.html">Re: [問題] 請問javascript是否有像PHP中的urlenco …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8Fjavascript%E6%98%AF%E5%90%A6%E6%9C%89%E5%83%8FPHP%E4%B8%AD%E7%9A%84urlenco&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1224009370.A.4D8.html">Re: [問題] 請問javascript的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8Fjavascript%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1224008067.A.01A.html">Re: 請問大家寫網頁用的工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%E8%AB%8B%E5%95%8F%E5%A4%A7%E5%AE%B6%E5%AF%AB%E7%B6%B2%E9%A0%81%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1224007736.A.EB7.html">Re: [問題] 關於自動顯示scrollbar</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BC%E8%87%AA%E5%8B%95%E9%A1%AF%E7%A4%BAscrollbar">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1223872824.A.2E6.html">[情報] 開發時盡量不要使用到iframe</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E9%96%8B%E7%99%BC%E6%99%82%E7%9B%A1%E9%87%8F%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E5%88%B0iframe">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1223210000.A.3E9.html">[情報] IE8將導入除錯工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;IE8%E5%B0%87%E5%B0%8E%E5%85%A5%E9%99%A4%E9%8C%AF%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1222535573.A.144.html">Re: [問題] fixed的延伸問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;fixed%E7%9A%84%E5%BB%B6%E4%BC%B8%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1221782862.A.5DD.html">Re: [問題] 請問這框架中的圖片怎樣縮圖當背景圖的呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E6%A1%86%E6%9E%B6%E4%B8%AD%E7%9A%84%E5%9C%96%E7%89%87%E6%80%8E%E6%A8%A3%E7%B8%AE%E5%9C%96%E7%95%B6%E8%83%8C%E6%99%AF%E5%9C%96%E7%9A%84%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1221760268.A.FE0.html">Re: [問題] 付費網路空間...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%BB%98%E8%B2%BB%E7%B6%B2%E8%B7%AF%E7%A9%BA%E9%96%93...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1221406946.A.4B6.html">Re: [問題] 想學習網站資料庫</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%83%B3%E5%AD%B8%E7%BF%92%E7%B6%B2%E7%AB%99%E8%B3%87%E6%96%99%E5%BA%AB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1219106025.A.AB1.html">Re: [問題] 有關form傳遞變數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E9%97%9Cform%E5%82%B3%E9%81%9E%E8%AE%8A%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1218555107.A.EC4.html">Re: 圓角框@IE</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%E5%9C%93%E8%A7%92%E6%A1%86%40IE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/12</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1218554888.A.CEF.html">Re: [問題] 滑鼠拖曳範圍內選取checkbox</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">liaosankai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%BB%91%E9%BC%A0%E6%8B%96%E6%9B%B3%E7%AF%84%E5%9C%8D%E5%85%A7%E9%81%B8%E5%8F%96checkbox">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aliaosankai">搜尋看板內 liaosankai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9247ee7afd0',m:'AwNKW_ybiR2fP_y8w9J0TkqCVTmuSRzTzdBqs.1HLPU-1653467443-0-AS7Jqu/Rj2SSvqTNORfayx770UyEr+vvJqo02F5zNlG5P9yO4ByB1QWCUm2OrV/uMxkdcN4m4PLcIdfumyqdU+ePYqh7o1C5NHfEYWrRXaB5NYohafhgAYI/y7V6OTO9OggrbLx/udzsYJqTJkhTdqGHnHMQ8/U4jUls3OEkgd5j',s:[0x59c8a0c72b,0xe03fe50a60],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

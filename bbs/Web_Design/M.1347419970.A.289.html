@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] table寬度 ,橫向排列 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你好
+表格裡面塞表格 但寬度是由內部表格的td控制 td數為動態
+當表格內為空時(內部表格td有指定width,有塞空白鍵)
+當整體欄寬 &gt; 螢幕時, 該直列欄位皆為空的時  欄寬會被壓縮
+但硬塞一個無圖的img 並定width時 就會正常
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] table寬度 ,橫向排列">
+<meta property="og:description" content="你好
+表格裡面塞表格 但寬度是由內部表格的td控制 td數為動態
+當表格內為空時(內部表格td有指定width,有塞空白鍵)
+當整體欄寬 &gt; 螢幕時, 該直列欄位皆為空的時  欄寬會被壓縮
+但硬塞一個無圖的img 並定width時 就會正常
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1347419970.A.289.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">InitialShuk (Shuk)</span></div><div class="article-metaline-right"><span class="article-meta-tag">站內</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] table寬度 ,橫向排列</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Sep 12 11:19:27 2012</span></div>
+你好
+
+表格裡面塞表格 但寬度是由內部表格的td控制 td數為動態
+當表格內為空時(內部表格td有指定width,有塞空白鍵)
+當整體欄寬 &gt; 螢幕時, 該直列欄位皆為空的時  欄寬會被壓縮
+但硬塞一個無圖的img 並定width時 就會正常
+
+我想問有沒有不塞img (因為很醜 雖然可以用hidden隱藏) 又能確保整體欄寬的方式
+width=&#34;100%&#34;   當大於螢幕時 似乎沒法針對內部的寬度100%
+
+&lt;table&gt;*1
+        &lt;tr&gt;
+                &lt;td&gt;
+                        &lt;table&gt; *2
+                                &lt;tr&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                &lt;/tr&gt;&lt;tr&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                &lt;/tr&gt;&lt;tr&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                        &lt;td&gt;
+                                &lt;/tr&gt;
+                &lt;td&gt;
+        &lt;/tr&gt;
+&lt;/table&gt;
+
+--
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 211.79.136.202
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Canboo</span><span class="f3 push-content">:有什麼狀況下要用到表格內表格?</span><span class="push-ipdatetime"> 09/12 14:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">InitialShuk</span><span class="f3 push-content">:分區書櫃</span><span class="push-ipdatetime"> 09/12 14:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">InitialShuk</span><span class="f3 push-content">:長直的狠奇怪 因為書櫃不會疊在一起</span><span class="push-ipdatetime"> 09/12 14:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">InitialShuk</span><span class="f3 push-content">:      很</span><span class="push-ipdatetime"> 09/12 14:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EROS4</span><span class="f3 push-content">:table-layout: fixed; 然後去設定每個td或th width就可以</span><span class="push-ipdatetime"> 09/13 13:33
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1347419970.A.289.html?cacheKey=2149-475920386&amp;offset=1976&amp;offset-sig=2bf69542c1cbedda37fda575df44b7063757aade" data-longpollurl="/v1/longpoll?id=b98c219fea45ffbf5c4ef37e31837da15c5696e4" data-offset="1976"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9f2d9171ec4',m:'hJYSdezHJKbDDuWD0BUy3PlcKlim3FYPj3W3hwVt74A-1653467476-0-AU2nF4v9RVD88ncROl3YvsvEc0xA/YxWreTwYegFf021j92YjwOJlTMD4oq+q/jdSTzZ/pQKBCW2tPzUnyQu+JpSHlBc8x4OKIMVYBVOHg+7GOzaBhTC7N9rz7sj9qFaSnf1p7vPfmH8HWsdNlUDb52ei1bJ+iNCfNUlnNBSNqQo',s:[0x82acd244b6,0x7eb89e7dfc],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

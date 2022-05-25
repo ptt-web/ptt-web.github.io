@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Fw: [問題] 判斷HTTP_REFERER的來源形式 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="作者: LaPass (LaPass) 看板: Web_Design
+標題: [問題] 判斷HTTP_REFERER的來源形式
+時間: Sat Sep 14 23:19:45 2013
+就是....
+如果用戶端從別人連到我的網站
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Fw: [問題] 判斷HTTP_REFERER的來源形式">
+<meta property="og:description" content="作者: LaPass (LaPass) 看板: Web_Design
+標題: [問題] 判斷HTTP_REFERER的來源形式
+時間: Sat Sep 14 23:19:45 2013
+就是....
+如果用戶端從別人連到我的網站
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1379172130.A.166.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">LaPass (LaPass)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Fw: [問題] 判斷HTTP_REFERER的來源形式</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Sep 14 23:22:09 2013</span></div>
+<span class="f2">※ [本文轉錄自 <a href="/bbs/Web_Design/M.1379171987.A.B66.html" target="_blank" rel="noreferrer noopener nofollow">Web_Design 看板 #1ID7wJjc</a> ]
+</span>
+作者: LaPass (LaPass) 看板: Web_Design
+標題: [問題] 判斷HTTP_REFERER的來源形式
+時間: Sat Sep 14 23:19:45 2013
+
+就是....
+如果用戶端從別人連到我的網站
+下面兩種形式
+都會讓HTTP_REFERER中，出現對方的網站名稱
+
+
+
+1.超連結
+&lt;a href=&#39;http://我的連結.jpg&#39; &gt;點我&lt;/a&gt;
+&lt;a href=&#39;http://我的連結.doc&#39; &gt;點我&lt;/a&gt;
+
+
+2.內鑲的播放軟體等
+&lt;img src=&#39;http://我的連結.jpg&#39; &gt;
+&lt;embed src=&#34;http://我的連結.mp3&#34; /&gt;
+
+
+
+我想只針對 &lt;img&gt;、&lt;mp3&gt;做處理
+因為，如果是1那種狀況，我可以先吐個html檔
+放些javascript進去做一些事
+再把連結用location.replace()轉去該檔案的網址
+使用者在使用上不會受到影響
+
+
+
+但如果是2的狀況
+如果我先吐html檔的話，圖片會當場掛掉，出現叉燒包
+這不是我期望的結果
+
+
+
+請問有沒有辦法區分這次點我的網站的連結是哪一種形式？
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 111.252.123.105
+
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span><span class="f2">※ 轉錄者: LaPass (111.252.123.105), 時間: 09/14/2013 23:22:09
+</span><span class="f2">※ 編輯: LaPass          來自: 111.252.123.105      (09/14 23:22)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:個人Server端是自己的 然後用的是nginx</span><span class="push-ipdatetime"> 09/14 23:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:都直接寫conf去判斷referer 不和直接return 403 XDD</span><span class="push-ipdatetime"> 09/14 23:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:要用PHP判定也可以 沒記錯你是用apache的server</span><span class="push-ipdatetime"> 09/14 23:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:可以先把這些要防外連的網址全部用rewrite導到一個</span><span class="push-ipdatetime"> 09/14 23:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:檢查的PHP頁面 在裡面檢查referer 不通過就丟403之類的</span><span class="push-ipdatetime"> 09/14 23:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:檢查通過就發出sendfile的header 讓apache輸出檔案</span><span class="push-ipdatetime"> 09/14 23:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:不過這得要apache有裝sendfile 沒有的話只能在PHP裡</span><span class="push-ipdatetime"> 09/14 23:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:把檔案讀出來echo了 (也可以直接用readfile函式輸出)</span><span class="push-ipdatetime"> 09/15 00:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:但能的話還是建議用sendfile 效率絕對遠比PHP直接輸出</span><span class="push-ipdatetime"> 09/15 00:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:還要來得好的多</span><span class="push-ipdatetime"> 09/15 00:02
+</span></div>
+
+抱歉，我沒把問題說明清楚....
+
+
+
+舉個例子
+<a href="http://f23ko.org/test.html" target="_blank" rel="noreferrer noopener nofollow">http://f23ko.org/test.html</a>
+請檢視網頁原始碼，還有點那兩個連結看看
+
+上面那個頁面裡面的兩張圖，看起來都是自己的網站下的沒錯
+但那兩張圖其實都放在 imgur
+
+
+
+然後這是 .htaccess
+RewriteEngine on
+RewriteRule ^img1\.jpg$ redirecti.html
+RewriteRule ^img2\.jpg$ <a href="https://i.imgur.com/ryfT3c5.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/ryfT3c5.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/ryfT3c5l.jpg?e=1653615232&amp;s=LiQq_pAzsrRlU0nyqLZ6AA" alt="" loading="lazy" /></div>
+
+
+這是 redirecti.html
+(頭尾略)
+  &lt;script&gt;
+   /*做一些有的沒的事情*/
+   window.location.replace(&#34;<a href="https://i.imgur.com/vRhaRdA.jpg&#34;)" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/vRhaRdA.jpg&#34;)</a>
+  &lt;/script&gt;
+
+
+
+一般轉址是都用下面的
+RewriteRule ^img2\.jpg$ <a href="https://i.imgur.com/ryfT3c5.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/ryfT3c5.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/ryfT3c5l.jpg?e=1653615232&amp;s=LiQq_pAzsrRlU0nyqLZ6AA" alt="" loading="lazy" /></div>這樣的形式
+這樣不論是超連結或圖片，都能顯示的很正常
+
+
+
+但如果是img1.jpg那樣，用javascript重新定向
+可以在別人點超連結的時候
+讓client端去執行一些有的沒的javascript
+
+不過，這種狀況下用&lt;img src=&#39;...&#39;&gt; 去讀圖片
+圖片會讀不出來
+
+
+
+所以，我在想能不能判斷這兩種不同的連結方式
+
+如果是超連結，就用javascript去轉址
+
+如果是圖片，就用PHP的header轉址過去
+
+
+
+至於目的.....
+其實我沒什麼特別的目的
+只是覺得，趁著別人點網址的時候不知不覺的讓對方執行一些javascript
+好像可以做一些有趣的事情，這樣
+
+
+<span class="f2">※ 編輯: LaPass          來自: 111.252.123.105      (09/15 01:28)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:頂多對連結下手 而外加點參數 因為瀏覽器的</span><span class="push-ipdatetime"> 09/15 01:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:request都是一樣的OwO</span><span class="push-ipdatetime"> 09/15 01:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LaPass</span><span class="f3 push-content">:orz....</span><span class="push-ipdatetime"> 09/15 11:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gpmm</span><span class="f3 push-content">:是我沒看懂嗎？ @@ 怎麼覺得針對檔案類型去做處理就好了？</span><span class="push-ipdatetime"> 09/15 20:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:他的意思是如果點連結進去就用script轉向,但是用html tag讀</span><span class="push-ipdatetime"> 09/15 21:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:如果出現其他非圖片header的輸出就會造成死圖,因此只能直</span><span class="push-ipdatetime"> 09/15 21:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kerash</span><span class="f3 push-content">:接讀取圖片資源後輸出</span><span class="push-ipdatetime"> 09/15 21:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:不過說request都一樣這點... 其實實際上會有個小差異</span><span class="push-ipdatetime"> 09/16 01:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:有時間先來確認一下不同瀏覽器的狀況</span><span class="push-ipdatetime"> 09/16 01:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:我也以為都一樣耶 XD 原來其實有小差嗎</span><span class="push-ipdatetime"> 09/16 02:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:是啊 不過這差異頗因瀏覽器而異啦</span><span class="push-ipdatetime"> 09/16 04:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wotupset</span><span class="f3 push-content">:要的話就直接埋原始碼到jpg裡頭 img貼圖不會處理js</span><span class="push-ipdatetime"> 09/16 07:07
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1379172130.A.166.html?cacheKey=2148-469799349&amp;offset=4413&amp;offset-sig=0ccada4b2c52e007badb3c9f542e49a73325b0af" data-longpollurl="/v1/longpoll?id=5d7f55974bb8d0cd53a1053c8fb43c79d7eeaddf" data-offset="4413"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea432a40af54',m:'AmOGhdK9QIbX4vHpiudyH739Vlg.vzHCahsEqv1tCTE-1653467489-0-Ab3Un9rxvYoK5K8eHSDJQ3+9WZQORv3OO2FC9sVy04z07/YxId1ibuwvnnKZeLVeAH2cvXOKwxwQ6twRFl3+LwTVnwO9KxAbE0AUoLXXwjijpI3SVtgyqcgiOkOihAEGnbARJdRTfZ7d9S8dIBh9+23bnyWxPTaa/UnKkMXQ60nF',s:[0x46b8637ff5,0x3a53778857],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

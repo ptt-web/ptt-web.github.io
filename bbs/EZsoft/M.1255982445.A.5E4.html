@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請問] 根目錄下所有檔案(含子目錄)依副檔名自動分類? - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="爬過版上曾經有文解決同一目錄下
+將所有檔案依副檔名分類為&#34;[副檔名]文件&#34;的資料夾的一個好用vbs
+由於小弟不諳程式編寫 今天我的狀況是：
+要將多個不同歷史版本的、散落各處的工作、備份檔案
+做一次結案封存 這會需要保留每個不同檔案屬性的類似檔案
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請問] 根目錄下所有檔案(含子目錄)依副檔名自動分類?">
+<meta property="og:description" content="爬過版上曾經有文解決同一目錄下
+將所有檔案依副檔名分類為&#34;[副檔名]文件&#34;的資料夾的一個好用vbs
+由於小弟不諳程式編寫 今天我的狀況是：
+要將多個不同歷史版本的、散落各處的工作、備份檔案
+做一次結案封存 這會需要保留每個不同檔案屬性的類似檔案
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1255982445.A.5E4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cdbb6aeb780e7'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Carvel (每一秒都要有衝勁!!)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請問] 根目錄下所有檔案(含子目錄)依副檔名自動分類?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Oct 20 04:00:42 2009</span></div>
+爬過版上曾經有文解決同一目錄下
+將所有檔案依副檔名分類為&#34;[副檔名]文件&#34;的資料夾的一個好用vbs
+由於小弟不諳程式編寫 今天我的狀況是：
+要將多個不同歷史版本的、散落各處的工作、備份檔案
+做一次結案封存 這會需要保留每個不同檔案屬性的類似檔案
+例如說 有些備份裡面的版本和同檔名的原始檔一個較大，一個較新
+
+ex:
+Source A=  D:\Project\a\a.ezp(newer)
+       A&#39;= D:\Project\a\object\a0001.obj
+
+
+Source B=  E:\Backup\Project\a01\a.ezp(larger)
+       B&#39;= E:\Backup\Project\a\a01\a0001.obj
+
+Target Folder for A&amp;B  = F:\Closed Project A\a\ezp\
+              for A&#39;&amp;B&#39;= F:\Closed Project A\a\object\
+Moved files
+A=a.ezp, B=a(1).ezp
+A&#39;= B&#39;=a0001.obj
+
+這兩個不同來源資料夾的同名檔案都要複製到一個指定的資料夾
+這種情況就得自動重新命名使這兩個檔案屬性不同的檔案都進到目地資料夾的分類目錄下
+而其他完全相同的檔案則自動略過 以保留最完整的版本多樣性 同檔又不重複
+最好還能夠根據檔案屬性的不同之處來重新命名
+
+ex:
+A=a(newer).ezp, B=a(larger).ezp
+或某個同時較新又較大的檔案 可以自動複製為a(newer, larger).ezp
+
+也許可以拆成兩個步驟來實踐：
+1. 在來源根目錄下執行一個腳本使原始的子目錄結構被打破
+   重新依照副檔名重新分類
+2. 將重新分類好的內容複製到已有特定結構之目地資料夾
+   依照條件篩選檔案使忽略或重新命名
+
+或是乾脆一點，一開始就可以自訂要將當前資料夾的內容整理到哪個新目的地！
+
+這樣的話 該怎麼寫腳本來讓這樣的工作能夠自動化呢?
+我是試過幾個檔案自動同步或是檔案管理的工具軟體
+如Free Commander, FreeFileSync, Rich Copy
+更甭提我原本用得很爽 但是最多只有覆寫Older only
+卻沒能Auto Rename if file size different or bla bla bla的TeraCopy
+似乎都不能滿足我的需求 或是其實有這樣的功能卻沒有被我試出來...
+還有請各位神人幫忙解惑...
+希望你們看得懂我問題描述中想表達的意思 :P
+
+感謝！
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.230.15.222
+<span class="f2">※ </span><span class="f2 hl">Carvel</span><span class="f2">:轉錄至看板 EzHotKey</span>                                      10/20 17:26
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tonyhome</span><span class="f3 push-content">:看起來好複雜啊@@</span><span class="push-ipdatetime"> 10/21 12:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Carvel</span><span class="f3 push-content">:&gt;&#34;&lt; 救我... 其實只是依附檔名把檔案分類複製到新目的地 醬</span><span class="push-ipdatetime"> 10/22 11:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ddd321</span><span class="f3 push-content">:批次檔 <a href="http://www.badongo.com/file/17977071" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/file/17977071</a></span><span class="push-ipdatetime"> 10/23 07:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ddd321</span><span class="f3 push-content">:新版 <a href="http://www.badongo.com/file/17984947" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/file/17984947</a></span><span class="push-ipdatetime"> 10/23 18:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Carvel</span><span class="f3 push-content">:哇!! ddd321大大你真是我的救星!! 還附說明 太感激了!! &gt;&#34;&lt;</span><span class="push-ipdatetime"> 10/24 18:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Carvel</span><span class="f3 push-content">:版主!! 這個一定要M起來放精華啊!! &gt;&#34;&lt;</span><span class="push-ipdatetime"> 10/24 18:05
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1255982445.A.5E4.html?cacheKey=2148-738971375&amp;offset=2540&amp;offset-sig=ea3755842b2edfee18f022ca3ffbd3528302e190" data-longpollurl="/v1/longpoll?id=1b7d0fcd01200c26b88ef2a7b4bd22dfcf345163" data-offset="2540"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdbb6aeb780e7',m:'Vd4h65x8weUjhoTqF.4hMG4pDm.dXYfPvG2YrMlAk.o-1653466893-0-ARqypuxLSgJTU+edRALR76bbWgeKOSYipjVZbG6TJLMnX6SwwUAvBQbhGX8fln0F9XlfIv8mnKe5dRk/MyA3eib3Qki/aknvSaFVoM+h3YW2Fe1FBp0IzKrrd9ZVOOP0X2fPaVK1o4rXa9jLcT3z5BuYg4mW1mwjHlvzStJKiNSO',s:[0xc045318970,0xe7ff81877b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

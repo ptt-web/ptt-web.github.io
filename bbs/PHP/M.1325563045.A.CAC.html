@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 比大小的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="[前略]
+: 我的想法是可不可以先忽略&gt;符號，把這些有&gt;符號的做記號，
+: 然後把型態變成int來比大小，
+: 在輸出的時候在這些有&gt;符號的值上值上做記號，然後在標註有做記號的是有&gt;符號的。
+雖然mysql沒有原生支援regex replace
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 比大小的問題">
+<meta property="og:description" content="[前略]
+: 我的想法是可不可以先忽略&gt;符號，把這些有&gt;符號的做記號，
+: 然後把型態變成int來比大小，
+: 在輸出的時候在這些有&gt;符號的值上值上做記號，然後在標註有做記號的是有&gt;符號的。
+雖然mysql沒有原生支援regex replace
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1325563045.A.CAC.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">MOONRAKER (㊣科學秘招！雷電閃光！)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 比大小的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jan  3 11:57:21 2012</span></div>
+<span class="f2">※ 引述《rm031023 (土撥鼠)》之銘言：
+</span>[前略]
+<span class="f6">: 我的想法是可不可以先忽略&gt;符號，把這些有&gt;符號的做記號，
+</span><span class="f6">: 然後把型態變成int來比大小，
+</span><span class="f6">: 在輸出的時候在這些有&gt;符號的值上值上做記號，然後在標註有做記號的是有&gt;符號的。
+</span>
+雖然mysql沒有原生支援regex replace
+不過你的問題用一個if()和一個轉型就可以處理。
+
+mysql&gt; SELECT * FROM exp0 ORDER BY id;
++----+--------+
+| id | stmt   |
++----+--------+
+|  1 | 100    |
+|  3 | 1138   |
+|  4 | 2520   |
+|  5 | &gt;8000  |
+|  6 | &gt;1024  |
+|  7 | &gt;32767 |
+|  9 | 10575  |
+| 10 | 65535  |
+| 11 | &gt;3072  |
++----+--------+
+9 rows in set (0.00 sec)
+
+mysql&gt; SELECT
+    -&gt;     CAST(
+    -&gt;         IF(SUBSTRING(stmt, 1, 1) BETWEEN &#39;0&#39; AND &#39;9&#39;,
+    -&gt;             stmt,
+    -&gt;             SUBSTRING(stmt, 2)
+    -&gt;         )
+    -&gt;     AS SIGNED) AS stmtclean
+    -&gt;     , stmt
+    -&gt; FROM exp0
+    -&gt; ORDER BY stmtclean;
++-----------+--------+
+| stmtclean | stmt   |
++-----------+--------+
+|       100 | 100    |
+|      1024 | &gt;1024  |
+|      1138 | 1138   |
+|      2520 | 2520   |
+|      3072 | &gt;3072  |
+|      8000 | &gt;8000  |
+|     10575 | 10575  |
+|     32767 | &gt;32767 |
+|     65535 | 65535  |
++-----------+--------+
+9 rows in set (0.00 sec)
+
+這樣你就同時得到不含符號的數字和含符號的原始資料，並且按大小排列。
+
+if和substring的用法可以自己看文件。cast as signed的原因是如果不這樣做
+會照字串規則排列大小，8000會跑到最後。
+
+不過你實在應該去db版才對…
+
+--
+從前有個馬鈴薯王國 有個高貴偉大的國王
+有的人尊敬他 有的人畏懼他 但有個人敢看不起他不只是一條龍
+嘿呵 快出動 去征服 去擺平  嘿呵 快出征 去征服那條龍
+嘿呵 快出動<span class="f2 hl">(宰了它!轟了它!)</span>嘿呵 快出征 去征服那條龍
+
+                    <span class="b6 hl"> :■  Potatoes and Dragons </span><span class="b6">(C)Alphanim France 2004-05 </span><span class="b6 hl">:. </span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.120.49.163
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kusoayan</span><span class="f3 push-content">:這招好帥！</span><span class="push-ipdatetime"> 01/03 21:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rm031023</span><span class="f3 push-content">:謝謝~可是如果是要用WHERE來做篩選的話，是要怎麼寫呢?</span><span class="push-ipdatetime"> 01/03 21:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rm031023</span><span class="f3 push-content">:WHERE stmt &lt;5000 ???  好像不是這樣，試了一下怪怪的..</span><span class="push-ipdatetime"> 01/03 21:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rm031023</span><span class="f3 push-content">:&gt;1024會被輸出</span><span class="push-ipdatetime"> 01/03 21:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:阿不是有select出來stmtclean給你</span><span class="push-ipdatetime"> 01/04 01:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:那就可以用在where條件裡面啦 這點MySQL比MS的方便</span><span class="push-ipdatetime"> 01/04 01:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">qwertmn</span><span class="f3 push-content">:可以試試看having ...</span><span class="push-ipdatetime"> 01/04 07:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rm031023</span><span class="f3 push-content">:謝謝二位，問題解決了，感恩</span><span class="push-ipdatetime"> 01/04 09:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">leecoco</span><span class="f3 push-content">:推~~</span><span class="push-ipdatetime"> 01/04 20:45
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1325563045.A.CAC.html?cacheKey=2148-469790724&amp;offset=2786&amp;offset-sig=d29c0ed10b227c481707de5f453a83825c331041" data-longpollurl="/v1/longpoll?id=be78cbc4d641aaf7deb268b4e6250e032841e2bd" data-offset="2786"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4a7dd2af54',m:'qzG3tSu5g.GbRqLOnn.Z8Qpze0ZlUlcV6Gfn_48GTZw-1653467491-0-AQQCGawI+OBiFIbTcKM1nIvXkauIPlI8c7z72OBHPnfLcGjUvNJSjRFE3wWG7rxn0FvmGaL6ZxN4c5+3zoyVcK9MLt6Id3EFAQFPS0D+xbY6T5es1mCWJLHUCp85msSKsvUcXKj4Mb770xsWqkvclKrRubNxkvUeD+D1sfQ8W/GQ',s:[0x84cb5bd2bd,0xff24cf4f82],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

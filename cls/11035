@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/BuRuRadio/index.html">
+                <div class="board-name">BuRuRadio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;Brooks&#39; Music Bar</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/DJ_fightman/index.html">
+                <div class="board-name">DJ_fightman</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;我的阿公活跳跳！我們下次節目見</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Excalibur/index.html">
+                <div class="board-name">Excalibur</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;Castle of Round Table</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/FarRadio/index.html">
+                <div class="board-name">FarRadio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;FarRadio：台長一直翹班中！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/iKTRtw/index.html">
+                <div class="board-name">iKTRtw</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678; 韓樂電台 iktrtw</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/LifeRadio/index.html">
+                <div class="board-name">LifeRadio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;LifeRadio 生活網路電台</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MiYaMay/index.html">
+                <div class="board-name">MiYaMay</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;原住民美雅麥網路廣播電台</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/OnlyMayDay/index.html">
+                <div class="board-name">OnlyMayDay</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;OnlyMayDay‧記得戴口罩喔</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ShineRadio/index.html">
+                <div class="board-name">ShineRadio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;ShineRadio&#39;s 音樂世界分享你我她</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/TRXradio/index.html">
+                <div class="board-name">TRXradio</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">網電</div>
+                <div class="board-title">&#9678;TRXRadio&gt;&gt;  風雲人物請投Z9一票!</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cd9d17bba80a5',m:'c20dZUCMoHDEePglSTcELFhKY_3NyAy5tE.ra.gN7uY-1653466816-0-ASusRgAp2fEv3XcuSpT+beviYDaHABlj5Wj1DavR2d0MnKM/5uBy4lqiJI38UHflnv2h8a1HS3z6S8logHh3Lt5ccNvWzY8JADew6Om9ZRhvAgaG6sURTW8F51vjjTKWDg==',s:[0x9ace021a83,0x52282545e7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

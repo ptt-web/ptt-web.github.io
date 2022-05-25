@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: Php亂數問題 急急急! - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="既然原po有po程式碼應該就不是只是來要答案了。
+事實上第七題有一點很重要，也是我們在分析程式碼前，要先明白「除去不必要因素」。
+簡單來說，題目都告訴你，有100個資料，那就沒有除100的必要性了。
+因為你產生的結果必定為100，你只要計算出個數加上「%」就行了。
+不過……當然我待會po的程式碼不能用我的角度和態度來看。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: Php亂數問題 急急急!">
+<meta property="og:description" content="既然原po有po程式碼應該就不是只是來要答案了。
+事實上第七題有一點很重要，也是我們在分析程式碼前，要先明白「除去不必要因素」。
+簡單來說，題目都告訴你，有100個資料，那就沒有除100的必要性了。
+因為你產生的結果必定為100，你只要計算出個數加上「%」就行了。
+不過……當然我待會po的程式碼不能用我的角度和態度來看。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1446983006.A.0E4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tkdmaf (皮皮快跑)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: Php亂數問題 急急急!</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Nov  8 19:43:23 2015</span></div>
+<span class="f2">※ 引述《poeta (鍵盤詩人)》之銘言：
+</span><span class="f6">: ※ 引述《HarryWen (Harry)》之銘言：
+</span><span class="f6">: : <a href="https://i.imgur.com/t1fyTrC.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/t1fyTrC.jpg</a>
+</span><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/t1fyTrCl.jpg?e=1653625133&amp;s=1OJiQ_Lly9QZbDxqUiyhQQ" alt="" loading="lazy" /></div><span class="f6">: : <a href="https://i.imgur.com/NdFwdI6.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/NdFwdI6.jpg</a>
+</span><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/NdFwdI6l.jpg?e=1653634676&amp;s=Ul2-JfTKmwK-AB4PsTGzaw" alt="" loading="lazy" /></div><span class="f6">: : <a href="https://i.imgur.com/P77pKq2.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/P77pKq2.jpg</a>
+</span><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/P77pKq2l.jpg?e=1653611460&amp;s=Qg1U6KcB0-l4lz79kCj35w" alt="" loading="lazy" /></div><span class="f6">: : 請各位幫幫忙
+</span><span class="f6">: 剛剛有發文，然後有詳細註解，結果系統斷線，文章就不見了，QQ。
+</span><span class="f6">: 重新打一遍，就懶著寫註解了，不懂再來信，以下都是最簡單的寫法：
+</span><span class="f6">: &lt;?php
+</span><span class="f6">: //練習6，這題難在怎麼找到陣列中亂數最大值
+</span><span class="f6">: for($i=0;$i&lt;10;$i++){
+</span><span class="f6">:         $a[$i]=rand(1,50);
+</span><span class="f6">:         echo $a[$i].&#34;&lt;BR&gt;&#34;;
+</span><span class="f6">: }
+</span><span class="f6">: for($i=50;$i&gt;0;$i--){
+</span><span class="f6">:         for($j=0;$j&lt;10;$j++){
+</span><span class="f6">:                 if($a[$j]==$i){
+</span><span class="f6">:                         echo &#34;最大值是&#34;.$i.&#34;&lt;BR&gt;&#34;;
+</span><span class="f6">:                         $j=10;
+</span><span class="f6">:                         $i=0;
+</span><span class="f6">:                 }
+</span><span class="f6">:         }
+</span><span class="f6">: }
+</span><span class="f6">: //練習6 偽泡沫排序
+</span><span class="f6">: for($i=0;$i&lt;10;$i++){
+</span><span class="f6">:         $a[$i]=rand(1,50);
+</span><span class="f6">:         echo $a[$i].&#34;&lt;BR&gt;&#34;;
+</span><span class="f6">:         if($i&gt;0){
+</span><span class="f6">:                 if($a[$i]&lt;$a[$i-1]){
+</span><span class="f6">:                      $temp=$a[$i-1];
+</span><span class="f6">:                      $a[$i-1]=$a[$i];
+</span><span class="f6">:                      $a[$i]=$temp;
+</span><span class="f6">:                 }
+</span><span class="f6">:         }
+</span><span class="f6">: }
+</span><span class="f6">: echo $a[9].&#34;是最大值&lt;BR&gt;&#34;;
+</span><span class="f6">: //練習7，如果你不會switch的話
+</span><span class="f6">: $a1=0;
+</span><span class="f6">: $a2=0;
+</span><span class="f6">: $a3=0;
+</span><span class="f6">: $a4=0;
+</span><span class="f6">: $a5=0;
+</span><span class="f6">: $a6=0;
+</span><span class="f6">: for($i=0;$i&lt;100;$i++){
+</span><span class="f6">:         $a[$i]=rand(1,6);
+</span><span class="f6">:         if ($a[$i]==1)
+</span><span class="f6">:                 $a1++;
+</span><span class="f6">:         elseif ($a[$i]==2)
+</span><span class="f6">:                 $a2++;
+</span><span class="f6">:         elseif ($a[$i]==3)
+</span><span class="f6">:                 $a3++;
+</span><span class="f6">:         elseif ($a[$i]==4)
+</span><span class="f6">:                 $a4++;
+</span><span class="f6">:         elseif ($a[$i]==5)
+</span><span class="f6">:                 $a5++;
+</span><span class="f6">:         else
+</span><span class="f6">:                 $a6++;
+</span><span class="f6">: }
+</span><span class="f6">: echo ($a1/100).&#34;是甩到1的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: echo ($a2/100).&#34;是甩到2的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: echo ($a3/100).&#34;是甩到3的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: echo ($a4/100).&#34;是甩到4的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: echo ($a5/100).&#34;是甩到5的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: echo ($a6/100).&#34;是甩到6的機率&lt;BR&gt;&#34;;
+</span><span class="f6">: ?&gt;
+</span>既然原po有po程式碼應該就不是只是來要答案了。
+事實上第七題有一點很重要，也是我們在分析程式碼前，要先明白「除去不必要因素」。
+簡單來說，題目都告訴你，有100個資料，那就沒有除100的必要性了。
+因為你產生的結果必定為100，你只要計算出個數加上「%」就行了。
+不過……當然我待會po的程式碼不能用我的角度和態度來看。
+也就是原po你如果照抄反而可能會被當。
+因為你老師大概不會相信那是你寫的………
+你可以參考，仔細好好想想自己如果知道有這樣的函式會怎麼處理。
+程式碼很短，只有8行。
+&lt;?php
+$num = [];  //php 5.3以下請改用$num = array();
+for($i = 0;$i&lt; 100;$i++){
+    $num[] = rand(1,6);
+}
+sort($num);
+foreach(array_count_values($num) as $key =&gt; $value){
+     echo &#39;[&#39;.$key.&#39;] =&gt;&#39;.$value.&#39;%&lt;br&gt;&#39;;
+}
+如果有要求要列出產生陣列的內容，那要寫在sort($num)的前面。
+否則會變成印出排序後的結果………
+
+這個範例用了幾個陣列函式……如果老師不准就別用了。
+然後其實我覺得是我的話才不會出這種題目。
+我寧願請原po去寫留言板。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 123.204.108.111
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1446983006.A.0E4.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1446983006.A.0E4.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dudeboy</span><span class="f3 push-content">: 他連ECHO輸出都不會</span><span class="push-ipdatetime"> 11/08 19:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dudeboy</span><span class="f3 push-content">: 而且你沒有賦予新鍵名 根本就不用sort($num)吧</span><span class="push-ipdatetime"> 11/08 20:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dudeboy</span><span class="f3 push-content">: 直接$num=(array_count_values($num));for 1to6.&#34;%&lt;BR&gt;&#34;;</span><span class="push-ipdatetime"> 11/08 20:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 樓上，你有確實跑過sort($num)所顯示的差異性嗎？</span><span class="push-ipdatetime"> 11/08 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 我會建議你實際run過，應該就很清楚明白理由了。</span><span class="push-ipdatetime"> 11/08 20:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bibo9901</span><span class="f3 push-content">: 你要的只是array_count_value的回傳陣列，是1~6依序列出</span><span class="push-ipdatetime"> 11/08 21:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bibo9901</span><span class="f3 push-content">: 吧? 但這跟本不必sort啊, 如同三樓說的 -- 用個for就行</span><span class="push-ipdatetime"> 11/08 21:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bibo9901</span><span class="f3 push-content">: 了. 即使要sort也應該是用ksort把該陣列依鍵名排序</span><span class="push-ipdatetime"> 11/08 21:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dudeboy</span><span class="f3 push-content">: 我跑過了,我知道差異性,我說的是必要性</span><span class="push-ipdatetime"> 11/08 21:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bibo9901</span><span class="f3 push-content">: 看來&#34;這種題目&#34;還是需要的, 是吧?</span><span class="push-ipdatetime"> 11/08 21:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 因為我並沒有打算多用一個變數去接結果的打算。</span><span class="push-ipdatetime"> 11/08 21:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 我也沒說三樓的東西是有什麼問題。</span><span class="push-ipdatetime"> 11/08 21:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: ksort也得在 array_count_values之後才能下不是嗎？</span><span class="push-ipdatetime"> 11/08 21:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 不是沒想過，只是我懶得多打幾行字而已。</span><span class="push-ipdatetime"> 11/08 21:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 然後我還是那句話，寧願去實際寫留言版，也不會出這種問題</span><span class="push-ipdatetime"> 11/08 21:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 如果是真的要出題，我寧願直接叫他們寫驗證碼……</span><span class="push-ipdatetime"> 11/08 21:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 喔！我倒是看到3樓的寫法會有一個低機率bug了。</span><span class="push-ipdatetime"> 11/08 22:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 就是當100次輪循中只要至少有1次有1個數字沒出現………</span><span class="push-ipdatetime"> 11/08 22:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 剛剛故意把他當大樂透的49個號碼來跑，發現的。</span><span class="push-ipdatetime"> 11/08 22:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: sort vs 存變數 只差在校能吧，程式長度沒啥差</span><span class="push-ipdatetime"> 11/09 08:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 校能到底有啥差也不好確定也不需要確定@@</span><span class="push-ipdatetime"> 11/09 08:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 這種題目就是符合學校會出的吧，如果是業界可以改成投</span><span class="push-ipdatetime"> 11/09 08:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 票跟抽獎，比較實際的東西</span><span class="push-ipdatetime"> 11/09 08:31
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1446983006.A.0E4.html?cacheKey=2148-469800898&amp;offset=5184&amp;offset-sig=364a1fe525d97e5c97bb731d61671df973016091" data-longpollurl="/v1/longpoll?id=7d268194b37cdfb890220da8ef590578c9b2acab" data-offset="5184"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea2e2f1214d0',m:'QxdCTPmGXrNFNVi1JKEm8l9u6sKBz.mnwUFNuey1Dl8-1653467486-0-Afx5OnjAbi/MchXR4gFJQv/pIo1AOv4mSelc6OcxAXaEo8dS58ZqgeaspioSZZIXq/9+5jGUDPctKV7PBK1dnkgsTO4oiLcWUDJrnpBnpsnta8uaFwtdyQLrJrdPKcOp/SepFVfwG52u74GoUkbjvTFb4Cei433sy6XzDxlDvQz+',s:[0x6e4c35b486,0x637a19d888],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

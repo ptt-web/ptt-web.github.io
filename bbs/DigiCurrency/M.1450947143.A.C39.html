@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Fw: [技術] Bitcoin運作基本原理 - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="作者: StubbornLin (鍵盤創業家) 看板: Soft_Job
+標題: [技術] Bitcoin運作基本原理
+時間: Wed Nov 27 21:09:36 2013
+Bitcoin講了這麼多，很多人認為不安全什麼的
+但其實可能不太瞭解它是怎麼運作的
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Fw: [技術] Bitcoin運作基本原理">
+<meta property="og:description" content="作者: StubbornLin (鍵盤創業家) 看板: Soft_Job
+標題: [技術] Bitcoin運作基本原理
+時間: Wed Nov 27 21:09:36 2013
+Bitcoin講了這麼多，很多人認為不安全什麼的
+但其實可能不太瞭解它是怎麼運作的
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1450947143.A.C39.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">a07051226 (葡萄糖)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Fw: [技術] Bitcoin運作基本原理</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Dec 24 16:52:22 2015</span></div>
+<span class="f2">※ [本文轉錄自 <a href="/bbs/Soft_Job/M.1385557793.A.5E6.html" target="_blank" rel="noreferrer noopener nofollow">Soft_Job 看板 #1IbUyXNc</a> ]
+</span>
+作者: StubbornLin (鍵盤創業家) 看板: Soft_Job
+標題: [技術] Bitcoin運作基本原理
+時間: Wed Nov 27 21:09:36 2013
+
+Bitcoin講了這麼多，很多人認為不安全什麼的
+但其實可能不太瞭解它是怎麼運作的
+正好我有研究一點點過，就嘴砲寫一篇解釋一下部份的運作原理
+
+首先可以參考這篇
+
+<a href="http://yowureport.com/?p=5358" target="_blank" rel="noreferrer noopener nofollow">http://yowureport.com/?p=5358</a>
+
+他大略的方式解釋得蠻清楚的，只是技術細節沒寫清楚
+細節呢，Bitcoin有一種最基本的資料結構單位叫做Block
+
+<a href="https://en.bitcoin.it/wiki/Blocks" target="_blank" rel="noreferrer noopener nofollow">https://en.bitcoin.it/wiki/Blocks</a>
+
+它大略含了這些資訊，例如像這樣
+
+ - 隨機值 (Random nonce)
+ - 難度值
+ - 上一個Block的hash值
+ - 礦工獎勵:
+    - 簽屬 10 BTC 給 Marry
+    - 簽屬 15 BTC 給 Julia
+ - 合法的交易資料:
+    - 交易1 John 簽屬 5 BTC 給 Tom
+    - 交易2 Tom 簽屬 0.5 BTC 給 Jimmy
+    ...
+
+實際的Block都是透過P2P交換 所以是完全公開的 可以到這個網站看看
+
+<a href="https://blockexplorer.com/" target="_blank" rel="noreferrer noopener nofollow">http://blockexplorer.com/</a>
+
+每隔不多久就會又有新的Block被產生 我們隨便挑一個出來看
+
+<a href="https://goo.gl/RF9yrD" target="_blank" rel="noreferrer noopener nofollow">http://goo.gl/RF9yrD</a>
+
+Transactions 那裡就是收錄合法的交易資料，可以看見第一行
+
+    Generation: 25 + 0.59209676 total fees
+
+這個就是礦工獎勵，剩下的就是合法的交易資料
+所以簡單來說這就是一本帳冊，礦工就是造出這本帳冊的人
+他可以簽屬25BTC + 所有交易費用的總合 給他指定的人
+
+進入重點，所以帳冊要怎樣造，好像這樣聽起來隨便都可以造
+但其實不是，一個合法的Block，要在P2P網路上被所有的節點認可
+必需符合一條件，簡單的來說，就是整個Block產生出來的Sha256值
+要小於難度值
+
+    SHA256(Block data + Random nonce) &lt; 難度值
+
+SHA256算出來的長度就是256bits，也就是32Bytes長
+這是一個很長的數字範圍，難度值並不是一個很長的數字
+而雜湊函數算出來的數值一般都視為亂數且無法預測的數值
+
+因此，產生合法的一個Block唯一的方法，就是大量代入不一樣的Rnadom nonce
+暴力一直去試，直到產生一個Block的SHA256 Hash值小於難度值
+這樣的一個block才會被P2P上的所有節點認可
+當你產生這樣一個block其實我們就叫做挖到礦了
+
+那個難度值會自動 每週依照上週的平均產出速率
+去調出一個當初就設計好的速度，因此當越多人挖
+這個值會自動調整出一個更難挖的 更小的難度值來
+
+這裡講到的獎勵金25BTC其實也會隨著時間變動
+它設計隨著時間 越到後面挖礦的BTC獎金越少
+最初其實是 50BTC的 只是時間到了現在變25了
+它來控制發行總量 當然到最後會沒有獎勵
+但透過收集交易費用 最後還是有人願意挖
+
+而每個block都有一個往上一個block的hash值
+所以整個形成一個往前audit的hash chain
+有時會出現短時間內出現兩個合法的block來自同一個parent的情況
+就是產生分支 (branch) 這時會看哪個chain花的運算資源最多
+那個才會被承認 這樣一來要惡搞就很困難
+
+而交易是透過非對稱加密，每個戶頭都是一把公鑰
+透過每個人私鑰去數位簽章 就可以把你有的BTC簽給收款人的公鑰
+接著把簽章的資料廣播到P2P網路 最終被某個礦工收錄在block裡
+如此一來整個P2P網路就認可你有那筆錢
+
+嗯? 你說 那好 我身為礦工 挖到礦的獎勵規訂是25而已
+但我偏要把它設成999999 不行嗎? 當然可以
+只是那個block因為不符規則會被視為無效的
+
+嗯? 你說 那當我挖到礦時造假的交易收錄在block裡 我明明一毛錢都沒有
+卻轉帳給我另一個戶頭 9999999 BTC
+沒用 你沒足夠的餘額去簽那轉帳 一樣被視為無效的block丟掉
+
+嗯? 你說 那我如果當個惡搞礦工 專門產生不收錄交易的block讓交易無法進行呢?
+沒用 你得和全世界貪婪的礦工們競爭 他們用的可都是ASIC等級的設備在挖的
+
+嗯? 你說那我如果挖到礦了 把難度值惡搞一下 變超簡單呢?
+沒用 難度值如果不照原先設計好的規則變動 你這個block一樣被視為無效
+
+嗯? 你說你造一個惡搞的block廣播出去呢? 沒有用
+見到你這不合格的block的節點就會直接忽視 當垃圾丟掉
+
+嗯? 那你說 好 假設我有100BTC 我在短時間內簽兩筆100BTC分別給不同人呢?
+喔... 這就有可能有效了 如果收到的人只驗數位簽章 不等一下子
+讓有礦工收錄的話 他可能就真的以為收到這筆錢了 但等過一陣子之後
+第一筆交易被收錄 第二筆就會被視為無效的丟掉
+因為有這種可能 所以其實只要等五到十分鐘 確認有被收錄
+這攻擊就無效了
+
+挖礦這整個遊戲就像是在丟骰子一樣 全球一起參賽
+看誰先骰出小於指定數值的骰 大約每五分鐘開出一輪
+開出一個hash值就是丟一次骰子 看誰丟骰子的速度快
+現在職業礦工都是靠 ASIC特制硬體在挖的
+你CPU、丟一次、十次 他可能已經丟一千次一萬次了
+所以現在難度已經非常高 在有利可圖的情況下
+經過三年的時間全球的礦工瘋狂挖的情況下
+還能正常運轉 其實就表示要攻破或惡搞是非常有難度的
+至少就理論和三年實戰看來 至今是非常可靠的
+
+寫得有點亂 有空的話再聊其它細節 有想到什麼可能的攻擊手法可以討論看看
+或許我可以回答得上 那至於信不信有沒有那個價值 是不是騙局就免了
+談技術就好 反正我認為信的人信 不信的人還是不信囉 科科
+
+--
+台灣軟體產業的失落十年 - <a href="http://lost-ten-years.victorlin.me" target="_blank" rel="noreferrer noopener nofollow">http://lost-ten-years.victorlin.me</a>
+一本講述台灣軟體產業落後國外十年的各種弊病與解決方法的電子書
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 220.142.115.161
+<span class="f2">※ 編輯: StubbornLin     來自: 220.142.115.161      (11/27 21:10)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">idleidle</span><span class="f3 push-content">:現在進去只是抬轎而已...</span><span class="push-ipdatetime"> 11/27 21:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:這種東西其實很難講 在100美元時也有人認為太高</span><span class="push-ipdatetime"> 11/27 21:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:但現在快接近1000了 以前荷蘭也有鬱金香被炒作到瘋掉</span><span class="push-ipdatetime"> 11/27 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:的狀況 但後來崩盤了 我是認為Bitcoin也有很大機會</span><span class="push-ipdatetime"> 11/27 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:會崩盤 但是不像花 崩了就沒了 它的可交易特性還在</span><span class="push-ipdatetime"> 11/27 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:還是多少有人會用 只要有服務商 像Mega Wordpress</span><span class="push-ipdatetime"> 11/27 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:這些肯收Bitcoin來賣服務 或商品 它還是有一定的</span><span class="push-ipdatetime"> 11/27 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">StubbornLin</span><span class="f3 push-content">:夠買力</span><span class="push-ipdatetime"> 11/27 22:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ldkrsi</span><span class="f3 push-content">:節點是怎麼確認帳戶餘額的? 用歷史交易算出來的嗎?</span><span class="push-ipdatetime"> 11/27 22:06
+</span></div>對 client要知道一個帳戶餘額剩多少
+它會去確認以前所有的交易記錄 看加加減減之後剩多少
+
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">proach</span><span class="f3 push-content">:我記得上次看到有人用FPGA作了電路來挖...</span><span class="push-ipdatetime"> 11/27 22:19
+</span></div>外面有很多在做專門的晶片和礦機在賣了
+
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sayya2311</span><span class="f3 push-content">:何必要假造? 直接再弄個Xcoin來炒作就行了...</span><span class="push-ipdatetime"> 11/27 22:27
+</span></div>可以阿
+
+只是做一個新coin 就好像你自己宣佈獨立一個國家 印自己的鈔票一樣
+可以這樣做 也有很多人這樣做 但難處在於要拉到夠多人玩你的國王遊戲
+不然會變成自己一個人爽而已
+
+Bitcoin的coin之所以最有價值是因為它最多人玩 流通性最好
+<span class="f2">※ 編輯: StubbornLin     來自: 220.142.115.161      (11/27 22:35)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">windlll</span><span class="f3 push-content">:bitcoin發明者說這玩意只是構想，火成這樣他也嚇到</span><span class="push-ipdatetime"> 11/27 22:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">olctw</span><span class="f3 push-content">:要看懂這個生態體系還真是不太容易 :)</span><span class="push-ipdatetime"> 11/27 23:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:非對稱加密? 公鑰 私鑰 由誰發行? 誰來保證不重覆?</span><span class="push-ipdatetime"> 11/28 00:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:Bitcoin用哪套CRYPT LIB, OPENSSL.</span><span class="push-ipdatetime"> 11/28 00:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:因為它最多人玩 流通性最好 --&gt;rats company</span><span class="push-ipdatetime"> 11/28 00:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vvind</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/28 00:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bruce3557</span><span class="f3 push-content">:推~</span><span class="push-ipdatetime"> 11/28 03:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ntddt</span><span class="f3 push-content">:推V大~~</span><span class="push-ipdatetime"> 11/28 08:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">livefish</span><span class="f3 push-content">:消耗電力的遊戲 :)</span><span class="push-ipdatetime"> 11/28 09:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Assyla</span><span class="f3 push-content">:這種機制比銀行還要有公信力，看看台灣的銀行一堆超貸</span><span class="push-ipdatetime"> 11/28 10:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CRPKT</span><span class="f3 push-content">:如果因為多人玩就算老鼠會的話不如說 GPL 也是老鼠會算了 XD</span><span class="push-ipdatetime"> 11/28 10:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ldkrsi</span><span class="f3 push-content">:再問個問題 交易要經過六次確認才能成立 要花一個小時確認</span><span class="push-ipdatetime"> 11/28 10:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ldkrsi</span><span class="f3 push-content">:所以bitcoin沒辦法現在買進100後立刻賣出這筆100囉?</span><span class="push-ipdatetime"> 11/28 10:57
+</span></div>對 其實主要是因為時間太短的話怕有風險 例如分支 (branch) 或重覆花費
+你的 transaction 資料要廣播到整個p2p網路上需要一點時間
+因此一般還是等一陣子 他好像是推薦6個block以後算是非常安全了
+一個block被收錄之後 有越多個block產生就越安全
+
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SlimeEditor</span><span class="f3 push-content">:回Assyla, 你可以去問問現在各法人和機構相信哪套</span><span class="push-ipdatetime"> 11/28 12:18
+</span></div><span class="f2">※ 編輯: StubbornLin     來自: 42.70.198.64         (11/28 12:31)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:私鑰在你自己的電腦上產生 你的地址其實就是</span><span class="push-ipdatetime"> 11/28 15:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:由私鑰產生的公鑰的hash</span><span class="push-ipdatetime"> 11/28 15:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:當你要收到比特幣要花錢時 需要用你的私鑰來透過ECDSA簽名</span><span class="push-ipdatetime"> 11/28 16:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:比特幣的鑰匙有256位元 要能破解不太可能</span><span class="push-ipdatetime"> 11/28 16:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:要盜用也不是hash collision而是second image attack</span><span class="push-ipdatetime"> 11/28 16:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:ECDSA目前的電腦不可能逆向 除非等量子電腦出來</span><span class="push-ipdatetime"> 11/28 16:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:用秀爾演算法的變種可以把key space減半</span><span class="push-ipdatetime"> 11/28 16:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:不過到那時現有的加密都會被破解 大家一起死XD</span><span class="push-ipdatetime"> 11/28 16:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:當然也有不怕量子電腦的加密法 不過太耗資源了</span><span class="push-ipdatetime"> 11/28 16:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:preimage attack*</span><span class="push-ipdatetime"> 11/28 16:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">oaz</span><span class="f3 push-content">:可以問一下，交易紀錄是存在誰那裡？持有人沒辦法作假嗎？</span><span class="push-ipdatetime"> 11/28 17:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:存在每個人的電腦裡他叫做blockchain</span><span class="push-ipdatetime"> 11/28 17:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:可以作假阿 但是沒人會理你的block</span><span class="push-ipdatetime"> 11/28 17:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vaio5566</span><span class="f3 push-content">:當你掌握全世界51%算力  就可以作假了</span><span class="push-ipdatetime"> 11/28 21:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:私鑰在你自己的電腦上產生? 誰來保證不重覆?</span><span class="push-ipdatetime"> 11/28 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:更見鬼的SHA256要能破解不太可能? 哪&#34;呆灣&#34; 的</span><span class="push-ipdatetime"> 11/28 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:自然人憑證, 你知為何要提升到2048?</span><span class="push-ipdatetime"> 11/28 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">windlll</span><span class="f3 push-content">:電腦重灌....?</span><span class="push-ipdatetime"> 11/28 23:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xvid</span><span class="f3 push-content">:商業型量子電腦不是早就問世了嗎？</span><span class="push-ipdatetime"> 11/28 23:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xvid</span><span class="f3 push-content">:用時間當加密保護的加密方式都不算多安全</span><span class="push-ipdatetime"> 11/28 23:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:lordaeron你估狗一下好嗎？<a href="https://tinyurl.com/nfqnuhu" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/nfqnuhu</a></span><span class="push-ipdatetime"> 11/28 23:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:掌握51%算力也無法做假交易，因為一個交易是否有效看</span><span class="push-ipdatetime"> 11/28 23:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:這筆交易的簽章就知道了，51%攻擊可以做的是撤銷交易</span><span class="push-ipdatetime"> 11/28 23:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:商業型量子電腦目前可以做的是量子退火演算法</span><span class="push-ipdatetime"> 11/28 23:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:量子電腦目前可以做的運算幾乎都還是非常局限</span><span class="push-ipdatetime"> 11/28 23:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:DarkerDuck 哪麼麻煩你估狗一下, 為何哪麼多加密法</span><span class="push-ipdatetime"> 11/28 23:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:都死了!!</span><span class="push-ipdatetime"> 11/28 23:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:至少也給個網址吧，SHA256你破解了應該會被NSA抓走喔</span><span class="push-ipdatetime"> 11/28 23:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:所有現行的加密法都可以靠暴力計算破解，還是你已經</span><span class="push-ipdatetime"> 11/28 23:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:發明可以防止被暴力破解的加密演算法？</span><span class="push-ipdatetime"> 11/28 23:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:所有有資工常識的人都知道所謂的加密演算法被破解是</span><span class="push-ipdatetime"> 11/28 23:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:找到一個時間複雜度可能只有多項式時間的計算演算法</span><span class="push-ipdatetime"> 11/28 23:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:對了，SHA256和RSA2048是不一樣的東西喔，請估狗 ^ ^</span><span class="push-ipdatetime"> 11/28 23:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:哈哈~Lordaeron又來了喔?SHA256是HASH,RSA2048是非對稱加密</span><span class="push-ipdatetime"> 11/29 00:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:這個不用Google就可以知道了啊...上次也是砲一砲就溜了~科科</span><span class="push-ipdatetime"> 11/29 00:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:可能反串的吧，Soft_Job版眾應該素質挺高的</span><span class="push-ipdatetime"> 11/29 00:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:PDCMG 你還是省省吧.你還是直接回, 台灣為何要提高到</span><span class="push-ipdatetime"> 11/29 00:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:SHA2048, 另外, 如何保證KEY PAIR 不碰撞</span><span class="push-ipdatetime"> 11/29 00:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:另外, 你給出的LINK 是說用的是橢圓曲線算法, 怎麼</span><span class="push-ipdatetime"> 11/29 00:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:變成RSA 了? 你估狗的呢?</span><span class="push-ipdatetime"> 11/29 00:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:就這一點程度?</span><span class="push-ipdatetime"> 11/29 00:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:自然人憑證要由SHA1-1024 變成SHA2-2048 隨便估都有.</span><span class="push-ipdatetime"> 11/29 00:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:可能反串的吧，Soft_Job版眾應該素質挺低的.</span><span class="push-ipdatetime"> 11/29 00:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:還有我哪一次砲一砲就溜了?</span><span class="push-ipdatetime"> 11/29 00:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:兩位高人, 快來解答哦, 別砲一砲就溜了~科科!!!!</span><span class="push-ipdatetime"> 11/29 00:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:還有哪位中文不好的PDCMG, 我哪一段說了 SHA256</span><span class="push-ipdatetime"> 11/29 00:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:是加密法? 請指出來.</span><span class="push-ipdatetime"> 11/29 00:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:哈哈~~~~SHA2048~~~BJ4</span><span class="push-ipdatetime"> 11/29 00:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:哦? 哈哈~~~~?</span><span class="push-ipdatetime"> 11/29 00:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:真的頗哈~你如果只提SHA不提RSA...那你又何必提Key pair?</span><span class="push-ipdatetime"> 11/29 03:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:就跟你說SHA只是HASH跟Key pair有啥關係?如果你要提Key pair</span><span class="push-ipdatetime"> 11/29 03:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:那又跟SHA有啥關係?還是你根本不知道HASH是啥或是幹嘛用的!?</span><span class="push-ipdatetime"> 11/29 03:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:看來您出問題的應該不只是中文~XD</span><span class="push-ipdatetime"> 11/29 03:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:其實Lordaeron問的都是好問題 不過自己找解答不是比較好嗎</span><span class="push-ipdatetime"> 11/29 04:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:這些問題幾年前就討論過了</span><span class="push-ipdatetime"> 11/29 04:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:他說的key-pair指的是ECDSA private key不是SHA</span><span class="push-ipdatetime"> 11/29 04:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:SHA是用來proof-of-work</span><span class="push-ipdatetime"> 11/29 04:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:嚴格說起來比特幣裡面沒有東西是加密的</span><span class="push-ipdatetime"> 11/29 04:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:<a href="http://moica.nat.gov.tw/html/faq6-024-037.htm" target="_blank" rel="noreferrer noopener nofollow">http://moica.nat.gov.tw/html/faq6-024-037.htm</a></span><span class="push-ipdatetime"> 11/29 08:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:A:憑證管理中心使用2048位元RSA金鑰及SHA-1雜湊函數演算</span><span class="push-ipdatetime"> 11/29 08:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:SHA-1比SHA-256弱，而且SHA是拿來挖礦的..你所謂的破解</span><span class="push-ipdatetime"> 11/29 08:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:就是去挖礦... 所以那個難度只是用來增加挖礦難度而已</span><span class="push-ipdatetime"> 11/29 08:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:還有Public/Private本來就不需要第三方來簽章發行</span><span class="push-ipdatetime"> 11/29 08:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:因為就是要匿名性了啊，基本上private key就是你的錢包</span><span class="push-ipdatetime"> 11/29 08:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:PDCMG 別拗我沒講過的話了. 你省省吧. 我也沒提過RSA</span><span class="push-ipdatetime"> 11/29 12:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:全都是你提的而已, 你自已的想像然後套到我頭上來</span><span class="push-ipdatetime"> 11/29 12:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:看來你是腦子有問題了.</span><span class="push-ipdatetime"> 11/29 12:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:popcorny沒第三方管理, 所以才要問, 如何確定不碰撞.</span><span class="push-ipdatetime"> 11/29 12:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:PriusC 不是說了是ELIPTIC CURVE 了, 你重覆一次是?</span><span class="push-ipdatetime"> 11/29 12:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:key是2048bit耶 要破撞的機率太低了吧..</span><span class="push-ipdatetime"> 11/29 12:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:碰撞機會不高啦 與其擔心這個不如擔心entropy不夠</span><span class="push-ipdatetime"> 11/29 12:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:crypto lib 有漏洞 例如說之前android的java亂數產生有問題</span><span class="push-ipdatetime"> 11/29 12:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:同樣一組私鑰簽兩次名 亂數不變 導致私鑰被反推算出來</span><span class="push-ipdatetime"> 11/29 12:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:好像有一些BTC被盜吧 有一些是發現漏洞的人主動先盜走BTC</span><span class="push-ipdatetime"> 11/29 12:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:後來也全數歸還擁有者</span><span class="push-ipdatetime"> 11/29 12:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:BTC用的privkey是256bit喔</span><span class="push-ipdatetime"> 11/29 12:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">popcorny</span><span class="f3 push-content">:Yes.256bit. 感謝指正</span><span class="push-ipdatetime"> 11/29 12:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:碰撞機會不高啦? 請問源出何處?</span><span class="push-ipdatetime"> 11/29 12:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:密碼學的東西, 一個是理論問題, 一個是實作問題.</span><span class="push-ipdatetime"> 11/29 12:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:這些LIB 還有一直在PATCH.</span><span class="push-ipdatetime"> 11/29 12:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:你可以去google也可以自己算一下啊 囧</span><span class="push-ipdatetime"> 11/29 13:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:你在鬼打架? 自已打自理, 理論上夠成立, 實作就保證?</span><span class="push-ipdatetime"> 11/29 14:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:<a href="https://tinyurl.com/kk3ljo9" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/kk3ljo9</a></span><span class="push-ipdatetime"> 11/29 14:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:<a href="https://tinyurl.com/k4sx529" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/k4sx529</a></span><span class="push-ipdatetime"> 11/29 14:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:哪會出現你講的故事是? 你在作夢?</span><span class="push-ipdatetime"> 11/29 14:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:不知道你在不爽什麼 你問的問題網路上都有</span><span class="push-ipdatetime"> 11/29 14:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:一直在那邊質疑質疑 是那麼不爽比特幣?</span><span class="push-ipdatetime"> 11/29 14:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:我講的什麼故事@@</span><span class="push-ipdatetime"> 11/29 14:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:不知你在爽什麼, 你講的東西, 書上都有, 但跟實作無關</span><span class="push-ipdatetime"> 11/29 14:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:crypto lib的故事.</span><span class="push-ipdatetime"> 11/29 14:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:這我同意阿比特幣客戶端那麼多 lib當然也不是只有一個</span><span class="push-ipdatetime"> 11/29 14:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:所以lib有漏洞被盜幣也是有可能的阿</span><span class="push-ipdatetime"> 11/29 14:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:我非常同意 實作的問題</span><span class="push-ipdatetime"> 11/29 14:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:<a href="https://tinyurl.com/mxfxnox" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/mxfxnox</a>  android bitcoin hack的故事</span><span class="push-ipdatetime"> 11/29 14:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:甚至可以說如果亂數產生用的晶片被動手腳有後門</span><span class="push-ipdatetime"> 11/29 14:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:那光是靠軟體lib也沒辦法</span><span class="push-ipdatetime"> 11/29 14:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:<a href="https://tinyurl.com/kl4drn8" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/kl4drn8</a></span><span class="push-ipdatetime"> 11/29 14:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:現在離線錢包有人還去買16面骰子來製造亂數咧</span><span class="push-ipdatetime"> 11/29 14:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:那你說假如骰子被灌鉛怎麼辦?</span><span class="push-ipdatetime"> 11/29 14:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:我想說的是你要的東西網路上都有 可以自己去找答案 @@</span><span class="push-ipdatetime"> 11/29 14:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:哪所以, 你在DEFENSE 什麼呢?</span><span class="push-ipdatetime"> 11/29 14:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:沒什麼 我覺得你說的都是聰明人會有的疑問</span><span class="push-ipdatetime"> 11/29 14:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:您還是沒說自然人那來的SHA2048呢?</span><span class="push-ipdatetime"> 11/29 16:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:他搞錯了吧 2048位元的是RSA Key</span><span class="push-ipdatetime"> 11/29 16:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PriusC</span><span class="f3 push-content">:SHA 則是升級成跟比特幣一樣的SHA-2家族</span><span class="push-ipdatetime"> 11/29 16:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:PriusC 講對, 我搞錯了, 但你還是回我哪來講RSA 了呢?</span><span class="push-ipdatetime"> 11/29 16:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:快找出來吧.</span><span class="push-ipdatetime"> 11/29 16:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:另外, ECC 在2013 年, 就出事出了兩次了, 也沒多神而已</span><span class="push-ipdatetime"> 11/29 16:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:科~從一開始我們就一直在說你把RSA和SHA搞錯了啊...你提2048</span><span class="push-ipdatetime"> 11/30 11:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:不就是在提RSA嗎?科科~連SHA和RSA都搞不清楚會多聰明?!</span><span class="push-ipdatetime"> 11/30 11:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:一早承認自己搞錯道個歉不就沒事了嗎?搞錯還能態度那麼嗆的</span><span class="push-ipdatetime"> 11/30 11:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PDCMG</span><span class="f3 push-content">:真是頗少見啊...哈哈哈哈</span><span class="push-ipdatetime"> 11/30 11:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:還想將這兩件事連在一起, 如果你找不出來我提過RSA</span><span class="push-ipdatetime"> 11/30 13:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:你要道個歉? 哈哈哈.....呢</span><span class="push-ipdatetime"> 11/30 13:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:我搞錯的是升級的是RSA, 不是SHA, 但你鬼扯的, 是我將</span><span class="push-ipdatetime"> 11/30 13:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:HASH 和CRYPT 的用途搞混, 現在還想在扯這件事.</span><span class="push-ipdatetime"> 11/30 13:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:聰明的人, 一直扯呢.</span><span class="push-ipdatetime"> 11/30 13:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:還有哪一次砲完就溜的, 你還未回呢.</span><span class="push-ipdatetime"> 11/30 13:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lordaeron</span><span class="f3 push-content">:你再繼續轉吧.</span><span class="push-ipdatetime"> 11/30 13:57
+</span></div>
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span><span class="f2">※ 轉錄者: a07051226 (120.105.85.99), 12/24/2015 16:52:22
+</span>舊文章,不過覺得能幫助了解Bitcoin就轉過來了
+不合規定再通知我刪除
+<span class="f2">※ 編輯: a07051226 (120.105.85.99), 12/24/2015 16:53:43
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 推一個，我會自己在寫一份</span><span class="push-ipdatetime"> 12/24 16:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 我會一份比較沒那麼學術，讓不是資工專業也能大致了解</span><span class="push-ipdatetime"> 12/24 16:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">:    ^寫</span><span class="push-ipdatetime"> 12/24 16:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">secretmouse</span><span class="f3 push-content">: 達克鴨大一個戰神XDD</span><span class="push-ipdatetime"> 12/24 18:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SunRoy</span><span class="f3 push-content">: 一早起來就驚見9字頭 先買一點壓壓驚</span><span class="push-ipdatetime"> 07/17 07:28
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1450947143.A.C39.html?cacheKey=2148-146034176&amp;offset=20535&amp;offset-sig=3e584c0b6baed55fe6d556c00b21f613a3bbf476" data-longpollurl="/v1/longpoll?id=341be94aad3183b8af590862bef79f5217380369" data-offset="20535"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce2a0afc120c1',m:'_uZkrx2Wtf4hEpdqR6nsUTKXktjhdn9HuPbun2VnxWg-1653467177-0-ATFCQwFAAAc1ktLrW0+YiNhawHzLg1Z2gkV9HHcWxG3U7geD6AQofkbCDlH0NSLf7e4YXWuIsS/N2HDIAvkaO4HE0l8XbPafI0HUin+fxFWGsUc1LJCu2jgUtqsOdpvDCmpbrvpvfBd5s7H7V7+slXywryWYV8IN+sUtlfjOCv7W',s:[0x46b8637ff5,0xec73702f53],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 如何將資料表根據另一資料表的資料作排序 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="使用的語言是C#，資料庫是MSSQL
+想請問如何將資料表根據另一資料表的資料作排序
+例如有10個題目5個學生
+Score資料表有[scoreID][studentID][questionID][score]
+用來存放每個學生每一題的分數，有50筆資料
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 如何將資料表根據另一資料表的資料作排序">
+<meta property="og:description" content="使用的語言是C#，資料庫是MSSQL
+想請問如何將資料表根據另一資料表的資料作排序
+例如有10個題目5個學生
+Score資料表有[scoreID][studentID][questionID][score]
+用來存放每個學生每一題的分數，有50筆資料
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1264339593.A.6B4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">harryjoker (我很幸福)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 如何將資料表根據另一資料表的資料作排序</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jan 24 21:26:29 2010</span></div>
+使用的語言是C#，資料庫是MSSQL
+想請問如何將資料表根據另一資料表的資料作排序
+例如有10個題目5個學生
+Score資料表有[scoreID][studentID][questionID][score]
+用來存放每個學生每一題的分數，有50筆資料
+Totalscore資料表有[totalscoreID][studentID][score]
+用來存放每個學生的總成績，有5筆資料
+
+如果我想將學生第一題的得分根據他們的總分(不是這一題的分數喔，是總分)作排序
+用sqldatasource取出丟到gridview裡
+我該怎麼才能做到
+
+另外，能夠同時將10個題目根據這種方式做排序嗎?
+
+煩請各位指教
+謝謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.113.83.12
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:MSDN說是order by....</span><span class="push-ipdatetime"> 01/24 21:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:十題的話你要不要自己作資料結構來排序啊，不然看其他人</span><span class="push-ipdatetime"> 01/24 21:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:一件好了，我是想說你自己用資料結構把題型讀進來</span><span class="push-ipdatetime"> 01/24 21:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:再用linq或其他的東西排序就好了XD</span><span class="push-ipdatetime"> 01/24 21:49
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1264339593.A.6B4.html?cacheKey=2149-475860531&amp;offset=1068&amp;offset-sig=533c276fcd4e8715ad63cf37926f26614e96672a" data-longpollurl="/v1/longpoll?id=f9f645aa35ecb5d3c7e8cf603921b54af0da89b9" data-offset="1068"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9e62f66b00c',m:'hADQpmf3GKEw49It5w20UjH42uD2xjafyl8LeXXyCTE-1653467474-0-AWHKWR8Fi6P6FPYKclU3pSinTZO6puX+/OubkZSXvuQK9na0Bu1zx3UShB+Szhy3M2yDA4sHycdhZZEpAlXn38Jyk5fsZSc/yLmXH3z2RMLOaGYHi31mODMhBqWYeo5eVD++nubTrFXihLvscEiGIQyHYjyGUBZA+RQ/pFSWtMKe',s:[0x21f7db009c,0x8d39905de2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

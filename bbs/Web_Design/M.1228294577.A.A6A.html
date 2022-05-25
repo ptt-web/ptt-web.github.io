@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 不知道版面能夠做成樣板嗎? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="sorry.. 借這個標題回一下關於 smarty..
+我 smarty 用得很兇, 因為~
+例如
+$smarty-&gt;assign(&#34;profile&#34;, $profile
+$smarty-&gt;display(&#34;profile.html&#34;,$cacheID);
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 不知道版面能夠做成樣板嗎?">
+<meta property="og:description" content="sorry.. 借這個標題回一下關於 smarty..
+我 smarty 用得很兇, 因為~
+例如
+$smarty-&gt;assign(&#34;profile&#34;, $profile
+$smarty-&gt;display(&#34;profile.html&#34;,$cacheID);
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1228294577.A.A6A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">KC73 (肯先生)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 不知道版面能夠做成樣板嗎?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Dec  3 16:56:16 2008</span></div>
+sorry.. 借這個標題回一下關於 smarty..
+
+我 smarty 用得很兇, 因為~
+
+例如
+
+$smarty-&gt;assign(&#34;profile&#34;, $profile
+$smarty-&gt;display(&#34;profile.html&#34;,$cacheID);
+
+然後我會放好一個 profile.html, 內容很簡單:
+
+{debug}
+{* 修改畫面前, 記得改
+        $smarty-&gt;compile_check = true;
+        $smarty-&gt;caching = false;
+*}
+
+過了幾個小時, 負責作畫面的同事, 就會把 profile.html 生成一個美美的畫面,
+偶爾會跟我多要幾個變數。
+
+但是 template 一多, 我也要幫他規劃好, 他就很專注的把畫面作美就好。
+
+當然, 他做好畫面之後, 可能還會跟我講要作些 javascript 的效果, 我再接回
+來繼續作。
+
+至於效能問題? web 端的效能向來比較好解決, 快一點的 CPU, 或者多一台 server,
+很快就可以有顯著的提昇。
+
+
+以上和各位分享囉~
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 122.116.151.252
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:第一行 &#34; 沒成對喔 -.-a</span><span class="push-ipdatetime"> 12/03 17:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:smarty我是沒有很深的去研究啦，因為個人覺得沒必要 = =</span><span class="push-ipdatetime"> 12/03 18:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:照您說的，PHP直接在頁裡用&lt;?=$profile?&gt;不就跟{profile</span><span class="push-ipdatetime"> 12/03 18:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:}一樣的意思了嗎？</span><span class="push-ipdatetime"> 12/03 18:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:現在都習慣用&#34;您&#34;了 = = 一時改不過來，看不慣還請見諒.</span><span class="push-ipdatetime"> 12/03 18:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:你要從負責美編的人, 他的角度去思考, 而非寫程式的.</span><span class="push-ipdatetime"> 12/03 18:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:簡單說,因為framework可以幫程式設計師很大的忙,所以大多數</span><span class="push-ipdatetime"> 12/03 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:寫程式的人,都願意忽略framework對效能的傷害.</span><span class="push-ipdatetime"> 12/03 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:當然要考慮到負責美編的人，但{}這種方式在一般設計上也</span><span class="push-ipdatetime"> 12/03 18:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:是沒有的，單用PHP只是把{ }改成&lt;?= ?&gt;而已</span><span class="push-ipdatetime"> 12/03 18:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:例如 &lt;?php foreach ($rows as $row): ?&gt;</span><span class="push-ipdatetime"> 12/03 18:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:&lt;?php endforeach; ?&gt;</span><span class="push-ipdatetime"> 12/03 18:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:和 {foreach from=$rows item=row}</span><span class="push-ipdatetime"> 12/03 18:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:{/foreach}</span><span class="push-ipdatetime"> 12/03 18:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:在設計師閱讀上應該是沒有問題，反而&lt;?php ?&gt;一看就知道</span><span class="push-ipdatetime"> 12/03 18:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:是程式部份的東西不是嗎？</span><span class="push-ipdatetime"> 12/03 18:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:再者，若設計師真的是看不懂，沒關係，甚至可以把所有要</span><span class="push-ipdatetime"> 12/03 18:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:在頁面上顯示的訊息直接濃縮到一個變數裡，在頁面裡僅要</span><span class="push-ipdatetime"> 12/03 18:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:使用&lt;?=$data?&gt;即可，雖說smarty也可以這樣做，但何必再</span><span class="push-ipdatetime"> 12/03 18:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:加一個smarty在程序上執行呢？個人淺見，沒有惡意，還請</span><span class="push-ipdatetime"> 12/03 18:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:指教，沒想到一推就推了好幾行，早知道用回的了 @@a</span><span class="push-ipdatetime"> 12/03 18:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:smarty不全然是這樣.例如show討論區的每一篇留言標題,美編</span><span class="push-ipdatetime"> 12/03 18:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:希望可以一行淺灰、一行白的視覺效果,如果有用smarty,他自己</span><span class="push-ipdatetime"> 12/03 18:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:作就可以了,否則,你就必須修改你的程式..if (單數) 淺灰;</span><span class="push-ipdatetime"> 12/03 18:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:再者,當畫面完全從程式抽離之後,程式會變得很簡單,很好維護.</span><span class="push-ipdatetime"> 12/03 18:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:然後畫面跟程式各走各的路,不會互相耽誤進度.</span><span class="push-ipdatetime"> 12/03 18:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">KC73</span><span class="f3 push-content">:接下來,smarty的cache功能,其實也蠻好用的.</span><span class="push-ipdatetime"> 12/03 18:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:其實除非機器很差,現在的主機隨便一台有最佳化過都可以同時在</span><span class="push-ipdatetime"> 12/03 18:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:線個幾千人,效能在現在其實是越來越不是問題了,除非有特別的</span><span class="push-ipdatetime"> 12/03 18:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:程式執行或轉檔之類的才會真的很重效能,不過那種時候都會用另</span><span class="push-ipdatetime"> 12/03 18:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:一台主機作處理...也正因為效能越來越不是問題,現在Framework</span><span class="push-ipdatetime"> 12/03 18:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:也越來越夯了...</span><span class="push-ipdatetime"> 12/03 18:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:連PHP自己引擎本家的Zend也出了Framework,表示時代也是往這走</span><span class="push-ipdatetime"> 12/03 18:45
+</span></div><span class="f2">※ 編輯: KC73            來自: 122.116.151.252      (12/03 18:51)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:其實用include就可以達到程式與模板分離了，另外其實sma</span><span class="push-ipdatetime"> 12/03 22:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:rty的cache，當瀏覽器在讀取時，程式不也是要運作嗎？它</span><span class="push-ipdatetime"> 12/03 22:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:只是不用每次都重新生成一次頁面檔，跟直接include好像</span><span class="push-ipdatetime"> 12/03 22:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">blinkstar</span><span class="f3 push-content">:也沒有很大的分別？</span><span class="push-ipdatetime"> 12/03 22:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:一般在講 template cache 都是直接cache產完的結果吧?</span><span class="push-ipdatetime"> 12/03 23:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:把一些動態的結果cache下來變靜態頁面 , 那個差距是非常大的</span><span class="push-ipdatetime"> 12/03 23:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chph</span><span class="f3 push-content">:PHP 本身就是樣板引擎, 用Smarty很多餘, 無謂的浪費效能</span><span class="push-ipdatetime"> 12/03 23:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chph</span><span class="f3 push-content">:&lt;?php echo $x;?&gt; vs {$x}, 不管是相容性還是效率都是大勝</span><span class="push-ipdatetime"> 12/04 00:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chph</span><span class="f3 push-content">:也不用再花時間學smarty的語法, 現在IDE都很強, 按個熱鍵</span><span class="push-ipdatetime"> 12/04 00:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chph</span><span class="f3 push-content">:&lt;php echo ?&gt; 就幫你生出來了</span><span class="push-ipdatetime"> 12/04 00:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">: {} 這種語法不是只有smarty有 , 各家語言都有類似結構.</span><span class="push-ipdatetime"> 12/04 00:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:另外 整個頁面充斥 &lt;?php ?&gt; 的狀況下,實在沒有 {} 直覺..:p</span><span class="push-ipdatetime"> 12/04 00:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:所以在某些狀況下 , {} 其實是比較理想的,還是要因時因地.</span><span class="push-ipdatetime"> 12/04 00:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:像 jsp 體系有freemarker 也是一樣的工.</span><span class="push-ipdatetime"> 12/04 00:53
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1228294577.A.A6A.html?cacheKey=2149-475823639&amp;offset=5705&amp;offset-sig=7e8423b0ddaec3a1203f8635be161739ec66ebe3" data-longpollurl="/v1/longpoll?id=e3367bcf2206bbd18efe883aba2dff6b135dd1cf" data-offset="5705"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce94ab8121ee0',m:'mlhp1YtZHI40qpe0Ws2nmNQUgeOLOqJ2qySlIqeyY6U-1653467450-0-Aeuc0Jw7dRCguOSfGSKPW2Y7WeB3HXJbM3pHTj5toh6GeRMbq/VxlAO0bAWyUjmMdWi88VQc42cWpv/omrm26o3oE/Wi+XZ0npdBjkRnw5yMAELzsfhGtPJpDUA0dDYFWqQfylC+pXlZWXprc8g8FwBmpBGL1+nwarvdz159gmPq',s:[0x6012ece3de,0x1fa5debce8],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

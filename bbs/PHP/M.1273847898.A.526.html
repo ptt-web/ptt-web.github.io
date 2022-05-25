@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] phpmyadmin的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="各位大大好，我遇到一個問題，就是要把win2003server上面開IIS6，
+再灌PHP和MYSQL加phpmyadmin來進入資料庫，現在我已經灌好php5.2.13
+在wwwroot底下放入index.php，也可以順利顯示出來（這應該表示php裝
+好了齁！）
+然後資料褲安裝完之後也沒問題（我資料褲的版本是mysql-5.1.46-win32.msi）
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] phpmyadmin的問題">
+<meta property="og:description" content="各位大大好，我遇到一個問題，就是要把win2003server上面開IIS6，
+再灌PHP和MYSQL加phpmyadmin來進入資料庫，現在我已經灌好php5.2.13
+在wwwroot底下放入index.php，也可以順利顯示出來（這應該表示php裝
+好了齁！）
+然後資料褲安裝完之後也沒問題（我資料褲的版本是mysql-5.1.46-win32.msi）
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1273847898.A.526.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">richmind (李小喵)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] phpmyadmin的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri May 14 22:38:16 2010</span></div>
+各位大大好，我遇到一個問題，就是要把win2003server上面開IIS6，
+再灌PHP和MYSQL加phpmyadmin來進入資料庫，現在我已經灌好php5.2.13
+在wwwroot底下放入index.php，也可以順利顯示出來（這應該表示php裝
+好了齁！）
+
+然後資料褲安裝完之後也沒問題（我資料褲的版本是mysql-5.1.46-win32.msi）
+但是後來卻出問題了，我的資料褲密碼設完之後，在wwwroot底下放入
+phpmyadmin，並在phpmyadmin裡改了config.inc.php和裡面的libraries資料夾
+config.default.php，將密碼設成與資料褲密碼一樣，然後用cookie(就是用預設
+的沒改它)再進去<a href="http://localhost/phpmyadmin" target="_blank" rel="noreferrer noopener nofollow">http://localhost/phpmyadmin</a>的時候，出現幾個東西
+如圖所示：<a href="http://mail.jjes.tp.edu.tw/~richway/123.jpg" target="_blank" rel="noreferrer noopener nofollow">http://mail.jjes.tp.edu.tw/~richway/123.jpg</a>
+<div class="richcontent"><img src="http://mail.jjes.tp.edu.tw/~richway/123.jpg" alt="" loading="lazy" /></div>無法讀取 mcrypt 模組,&lt;br /&gt;請檢查 PHP 設定
+這個我有去網路上爬文，可能是少了一個mcrypt的元件，它是說去php.ini將那個
+;extension=php_mcrypt.dll ，分號去掉，然後再copy一個libmcrypt.dll到
+windows裡面去就可以，可是我在我的php.ini就是看不到這個extension=php_mcrypt.dll
+，後來想說算了，放棄了，就用http試試看，可是更慘，出現這個對話框
+<a href="http://mail.jjes.tp.edu.tw/~richway/456.jpg" target="_blank" rel="noreferrer noopener nofollow">http://mail.jjes.tp.edu.tw/~richway/456.jpg</a>
+<div class="richcontent"><img src="http://mail.jjes.tp.edu.tw/~richway/456.jpg" alt="" loading="lazy" /></div>一樣的東西，帳密都沒變，怎麼會進不去呢?它說我沒有檢視此頁面的授權
+我再把phpmyadmin的權限加一個administrator(原本就有一個administrators，不
+曉得差在哪兒?)還是不行；再將pmaAbsoluteUri加上<a href="http://localhost/phpmyadmin" target="_blank" rel="noreferrer noopener nofollow">http://localhost/phpmyadmin</a>
+，還是不行，不曉得是什麼問題，還請各位大大幫幫忙，謝謝！
+
+p.s.不過這應該是安全性的問題吧！如果我一直用cookie應該也可以對嗎?而且
+mysql和mssql都能啟動，iis也可以正常運作了。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.131.15.210
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">clifflu</span><span class="f3 push-content">:改 php.ini 要重跑 iis 才會反應喔</span><span class="push-ipdatetime"> 05/14 22:56
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1273847898.A.526.html?cacheKey=2148-469788978&amp;offset=1609&amp;offset-sig=7310714909ddfb81f5d1fc9e7baa9f45c73d44b7" data-longpollurl="/v1/longpoll?id=2bed5b4550b2be55b57f406db5984b986fef31c8" data-offset="1609"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea9b6a0e807e',m:'X4hgv2rNTDZhwSKHUe5qHCS2osb16uQIfs7Kp8Ciz2w-1653467503-0-AYPv8BOnNEd9dlWlHHQl1k3I98RxvYYoPll0YZ3Jp8kSy1HVcCVZvN9Pcy5Pukdp22j0kJJgIenGDBBkUtvbTGq4VYl09HaLtS8B2Uu5Ro5u9dXjse1ixGMGUrkbBKVFJaxtcUEBdy0dx0STbjFb3hdjnR5m9Cr0mNRxI6a8Fg5v',s:[0x1e2de4b491,0x3f7f6c3df4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

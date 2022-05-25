@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 下拉式選單傳值 用$變數失敗? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="有點不太懂你想要傳的是什麼 @@ ~
+以上面的例子來說，表單裡有這三個欄位：
+&lt;select name=&#34;A1&#34;&gt;&lt;/select&gt;
+&lt;input name=&#34;name1&#34;/&gt;
+&lt;input name=&#34;name2&#34;/&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 下拉式選單傳值 用$變數失敗?">
+<meta property="og:description" content="有點不太懂你想要傳的是什麼 @@ ~
+以上面的例子來說，表單裡有這三個欄位：
+&lt;select name=&#34;A1&#34;&gt;&lt;/select&gt;
+&lt;input name=&#34;name1&#34;/&gt;
+&lt;input name=&#34;name2&#34;/&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1406406744.A.AC1.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cea1deb53afcd'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">hit1205 (幫你把勇氣裝滿)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 下拉式選單傳值 用$變數失敗?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jul 27 04:32:20 2014</span></div>
+<span class="f2">※ 引述《Notte (why so serious ?)》之銘言：
+</span><span class="f6">: 後來發現 如果我 select name=&#34;A1&#34;
+</span><span class="f6">: 然後
+</span><span class="f6">: &lt;input type=&#34;hidden&#34; name=&#34;name1&#34; value=&#34;&lt;?php echo $row[&#39;A1&#39;]; ?&gt;&#34;/&gt;
+</span><span class="f6">: &lt;input type=&#34;hidden&#34; name=&#34;name2&#34; value=&#34;&lt;?php echo $row[&#39;B2&#39;]; ?&gt;&#34;/&gt;
+</span><span class="f6">: 會傳遞的只有A1
+</span><span class="f6">: select name=&#34;B2&#34; 也只會傳遞B2
+</span><span class="f6">: select name=&#34;select&#34;  卻什麼都不會傳遞
+</span><span class="f6">: 請問這是什麼問題???
+</span><span class="f6">: 還是我觀念錯誤@<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3ecf39d9d">[email&#160;protected]</a>
+</span>
+有點不太懂你想要傳的是什麼 @@ ~
+
+以上面的例子來說，表單裡有這三個欄位：
+&lt;select <span class="f6 hl">name=&#34;A1&#34;</span>&gt;&lt;/select&gt;
+&lt;input <span class="f3 hl">name=&#34;name1&#34;</span>/&gt;
+&lt;input <span class="f1 hl">name=&#34;name2&#34;</span>/&gt;
+
+所以表單送出去的東西就會是：
+<span class="f6 hl">A1=下拉選單中被選的option的value值</span>&amp;<span class="f3 hl">name1=value裡的值</span>&amp;<span class="f1 hl">name2=value裡的值</span>
+(與 HTML 內順序相同)
+
+因為送出去的參數名稱是跟著欄位的 name，所以上篇的推文裡
+大家才會要你拿掉 hidden 欄，因為那個欄位的 name 跟下拉選單的 name 重複了，
+會把下拉選單選取的值蓋掉 @@
+
+而你後面這篇的例子裡，兩個 hidden 欄位的 value 分別是
+$row[&#39;A1&#39;] 與 $row[&#39;B2&#39;]，但 $row 在前面是從資料庫中把記錄一筆筆取出來用的，
+所以不是很懂你用兩個 hidden 欄位去傳送他的用意 @@
+(當然在上一篇裡也有一樣的疑惑)
+
+而且因為你的迴圈已經在上面跑完了，這邊的 $row 只會等於 false 而已，
+所以這兩個欄位應該只會有空字串，不會有你要帶的東西被送出去...
+
+<span class="f6">: 未來 我想新增C分類 然後自己輸入C產品 一直增加DEFG分類
+</span><span class="f6">: 這樣的情況 我應該用現在的方式寫 還是可以改用別的方式呢?
+</span><span class="f6">: 麻煩各位指點指點迷津
+</span><span class="f6">: 我有參考
+</span><span class="f6">: <a href="http://ppt.cc/W9Qw" target="_blank" rel="noreferrer noopener nofollow">http://ppt.cc/W9Qw</a>
+</span><span class="f6">: 但是我想把值丟到下一頁 前面大大有提到把hidden拿掉 請問還有別的方式嗎??
+</span>
+能不能請原po更清楚地說明一下要做的是什麼樣的功能呢 O uO？
+
+因為在你的例子裡，只有 &#34;下拉選單&#34; 是給人選的，
+所以不太清楚還有什麼樣的值需要用那兩個 hidden 丟到下一頁 @@
+還是說原po的設計裡其實還有上一頁把值送到這頁來？
+
+--
+  <span class="f0 hl">═ </span>風痕影<span class="f0 hl"> ════════════════════════════</span>
+
+<span class="f0 hl">       </span><span class="hl">「藤井樹，這主意雖好，但是，我喜歡統一，而不是光泉耶！」</span>
+
+  <span class="f0 hl">══════════════════════ </span><a href="http://hit1205.org" target="_blank" rel="noreferrer noopener nofollow">http://hit1205.org</a><span class="f0 hl"> ═</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 61.63.96.39
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1406406744.A.AC1.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1406406744.A.AC1.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:啊，如果你的 name1 和 name2 沒有被送出的話，那上面那篇</span><span class="push-ipdatetime"> 07/27 04:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:LPH66 的推文可能是你的解答 ~</span><span class="push-ipdatetime"> 07/27 04:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:不過即使有被送出也會是只有空字串 @@</span><span class="push-ipdatetime"> 07/27 04:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:謝謝各位提點 我再爬文測試一下!不成功再PO清楚說明我的功能</span><span class="push-ipdatetime"> 07/27 14:39
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1406406744.A.AC1.html?cacheKey=2148-469784580&amp;offset=2564&amp;offset-sig=0e290e38c85c0dc9dc2be4d17a66ca9609773613" data-longpollurl="/v1/longpoll?id=8ffb79736f32c8390f2b5293f3cdd95fbb81cf81" data-offset="2564"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea1deb53afcd',m:'qWajUSwGvse4QLjKmD76gpsAyjEDYEFY7W8ttlrfuaE-1653467484-0-AcPZBKeAQc6T/zp9W98B5RU24uwyeHWVgEoyKdz8EvyXq944qTzMzNCr+krayFOOt5Z/YP2KgZn+mafDIxib3wlWJ6M/wSx3ry/gJyZue2oZ/A/FAwmF5S7/VGQuRow7DMHeGfY2RhFA/7UqKhOF2Z2+ef+/EstZzbMV7dcOAIgq',s:[0xd35194d0ea,0x8395ed385a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

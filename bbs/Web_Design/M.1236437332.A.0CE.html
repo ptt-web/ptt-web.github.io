@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 在ASP.NET網頁使用TinyMCE? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我的做法是先在設計模式下，
+直接在頁面上拉好一個 TextBox，
+這個 TextBox 的 ID=&#34;TextBox1&#34;，
+然後再切到原始碼模式，在 JavaScript 這樣設定：
+        &lt;script type=&#34;text/javascript&#34;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 在ASP.NET網頁使用TinyMCE?">
+<meta property="og:description" content="我的做法是先在設計模式下，
+直接在頁面上拉好一個 TextBox，
+這個 TextBox 的 ID=&#34;TextBox1&#34;，
+然後再切到原始碼模式，在 JavaScript 這樣設定：
+        &lt;script type=&#34;text/javascript&#34;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1236437332.A.0CE.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">fannys23 (天氣終於回暖了！)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 在ASP.NET網頁使用TinyMCE?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Mar  7 22:48:51 2009</span></div>
+<span class="f2">※ 引述《harryjoker (我很幸福)》之銘言：
+</span><span class="f6">: 我想架設一個留言板
+</span><span class="f6">: 使用的軟體是VS2008
+</span><span class="f6">: 下載了tinymce3.2.2的版本用來作為文章編寫的介面
+</span><span class="f6">: 我嘗試將範例html的原始碼複製到aspx網頁來執行
+</span><span class="f6">: 這部分沒問題
+</span><span class="f6">: 但是當我想在網頁中放入asp的控制項(按鈕)時
+</span><span class="f6">: 會出現一個訊息
+</span><span class="f6">: &#34;插入asp.net控制項會將網頁中的html表單轉換為asp.net表單，
+</span><span class="f6">:  並移除他目前的內容。是否要插入asp.net控制項(y/n)&#34;
+</span><span class="f6">: 選擇&#34;是&#34;後一樣會讓我放置asp控制項
+</span><span class="f6">: 但在執行的網頁裡按下我設置的asp按鈕後會出現錯誤訊息
+</span><span class="f6">: <a href="http://0rz.tw/Y3IBW" target="_blank" rel="noreferrer noopener nofollow">http://0rz.tw/Y3IBW</a>
+</span><span class="f6">: 請問我該怎麼作才能正確的將tinymce放入asp網頁裡與資料庫作存取呢?
+</span><span class="f6">: 謝謝
+</span>
+我的做法是先在設計模式下，
+直接在頁面上拉好一個 TextBox，
+這個 TextBox 的 ID=&#34;<span class="f1 hl">TextBox1</span>&#34;，
+然後再切到原始碼模式，在 JavaScript 這樣設定：
+
+        &lt;script type=&#34;text/javascript&#34;&gt;
+                tinyMCE.init(
+                    {
+                        mode : &#34;exact&#34;,
+                        elements: &#34;&lt;%=<span class="f1 hl">TextBox1</span>.ClientID%&gt;&#34;
+                    }
+                );
+        &lt;/script&gt;
+
+存取資料庫的內容的時候，
+就直接把從資料庫撈出來的東西指給 TextBox1.Text。
+
+請注意 &lt;%<span class="f1 hl">=</span>TextBox1.ClientID%&gt;，第一個百分號之後一定要加上等號，
+因為這句是要取得 TextBox1.ClientID 轉換後的結果的。
+
+如果執行後出現 &#34;tinyMCE 未定義&#34; 的錯誤，
+則可能是引入主檔案時路徑寫錯了，請檢查路徑。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.62.185.27
+<span class="f2">※ 編輯: fannys23        來自: 60.249.135.214       (03/09 13:14)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1236437332.A.0CE.html?cacheKey=2149-475832833&amp;offset=1501&amp;offset-sig=68dd0798722f648ce9c1e99d5111859e6c15cb5a" data-longpollurl="/v1/longpoll?id=0e7236b7d3f6b7add9365007d6a4914bb91608f8" data-offset="1501"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9dd4b30afe5',m:'geJM5qA313Ihdu7X9G2ESMJzXy6YqmictHepO670Yqc-1653467473-0-AQmL9Vm3orMM42xnUE6Tsl3+JADOil7qEkym6ARtXfyjixXHjOAgCVgM58rIXyyYbqo1rdvAw304jPNymv8aFEURwFSBM+GYamPKP1U6b1o1hrSqat8wEPs7qJh2vZCNO799nCfklwd/rRk76fENGNpGnkEqvyjrkN76onptjU7G',s:[0xc12911ce8f,0x0f1a7fcb11],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

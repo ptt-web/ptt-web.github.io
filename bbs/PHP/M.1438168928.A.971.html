@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 請問這段 SQL 如何解譯 ? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="// 建立新增記錄的SQL指令字串
+$sql =&#34;INSERT INTO students (sno, name, address, &#34;;
+$sql.=&#34;birthday) VALUES (&#39;&#34;;
+$sql.=$_POST[&#34;Sno&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Name&#34;].&#34;&#39;,&#39;&#34;;
+$sql.=$_POST[&#34;Address&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Birthday&#34;].&#34;&#39;)&#34;;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 請問這段 SQL 如何解譯 ?">
+<meta property="og:description" content="// 建立新增記錄的SQL指令字串
+$sql =&#34;INSERT INTO students (sno, name, address, &#34;;
+$sql.=&#34;birthday) VALUES (&#39;&#34;;
+$sql.=$_POST[&#34;Sno&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Name&#34;].&#34;&#39;,&#39;&#34;;
+$sql.=$_POST[&#34;Address&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Birthday&#34;].&#34;&#39;)&#34;;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1438168928.A.971.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">SophiaH (Sophia)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 請問這段 SQL 如何解譯 ?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Jul 29 19:22:06 2015</span></div>
+// 建立新增記錄的SQL指令字串
+$sql =&#34;INSERT INTO students (sno, name, address, &#34;;
+$sql.=&#34;birthday) VALUES (&#39;&#34;;
+$sql.=$_POST[&#34;Sno&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Name&#34;].&#34;&#39;,&#39;&#34;;
+$sql.=$_POST[&#34;Address&#34;].&#34;&#39;,&#39;&#34;.$_POST[&#34;Birthday&#34;].&#34;&#39;)&#34;;
+
+echo &#34;&lt;b&gt;SQL指令: $sql&lt;/b&gt;&lt;br/&gt;&#34;;
+
+想請問以上 $sql 變數設定該如何解譯.. ?
+
+一句 INSERT INTO..要拆成四行設定 $sql 是因為
+每 POST 一個欄位值要設定成一變數嗎 ? 可第二行裡沒有 POST..
+連接運算子. 要連接後面三行該如何思考..?
+
+謝謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 140.137.212.87
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1438168928.A.971.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1438168928.A.971.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kenqr</span><span class="f3 push-content">: 沒這回事 他根本拆得亂七八糟</span><span class="push-ipdatetime"> 07/29 19:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kenqr</span><span class="f3 push-content">: 而且post變數沒過濾直接放進sql指令裡很危險</span><span class="push-ipdatetime"> 07/29 19:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LPH66</span><span class="f3 push-content">: 1.這就只是一行太長隨意切成很多行而已</span><span class="push-ipdatetime"> 07/29 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66</span><span class="f3 push-content">:   四行接起來才是完整的一句 SQL</span><span class="push-ipdatetime"> 07/29 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66</span><span class="f3 push-content">: 2.二樓講的很重要, 除非這是教學用程式碼不然千萬別這樣寫</span><span class="push-ipdatetime"> 07/29 20:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">clerkhsiao</span><span class="f3 push-content">: 如果是用pdo就沒差</span><span class="push-ipdatetime"> 07/29 20:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MangoTW</span><span class="f3 push-content">: 還在拼接SQL…去學PDO吧！</span><span class="push-ipdatetime"> 07/29 20:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MangoTW</span><span class="f3 push-content">: 直接拼接連PDO都防不了，要用bind的</span><span class="push-ipdatetime"> 07/29 20:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 就老式很無聊的接法一枚</span><span class="push-ipdatetime"> 07/29 20:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">terrybob</span><span class="f3 push-content">: 會這樣拼寫是因為有條件要判斷才會這樣接</span><span class="push-ipdatetime"> 07/29 21:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">terrybob</span><span class="f3 push-content">: 不然通常是一行到底拼完</span><span class="push-ipdatetime"> 07/29 21:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: 這好幾年前的了吧 可以找找看pdo方便很多</span><span class="push-ipdatetime"> 07/29 23:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: 另外二樓說的很危險可以查查看SQL INJECTION</span><span class="push-ipdatetime"> 07/29 23:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 是的, 這是教學書的範例, 可是沒有拆寫成這樣的解說..原</span><span class="push-ipdatetime"> 07/30 05:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 也想是接起來才完整, 如 t大說的 &#34;有條件要判斷才會這樣</span><span class="push-ipdatetime"> 07/30 05:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 接, 所以我想知道拆成這樣四行該如何解讀..會去搜 PDO</span><span class="push-ipdatetime"> 07/30 05:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cokellen</span><span class="f3 push-content">: 你看的書應該很舊了,建議找比較新的書來學</span><span class="push-ipdatetime"> 07/30 10:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 這本是旗標的新觀念PHP.MySQL.AJAX 網頁設計範例教本 V4</span><span class="push-ipdatetime"> 07/30 19:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 2014.02 出版, 請問會舊嗎 ? 可否推薦..謝謝</span><span class="push-ipdatetime"> 07/30 19:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 這本看起來就是從ASP時代到現在萬年不變 改個標題就出</span><span class="push-ipdatetime"> 07/31 01:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 來騙錢。你記得以下幾個關鍵字: 上面提到的PDO, escape</span><span class="push-ipdatetime"> 07/31 01:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: prepared statement, ORM。基礎學一學就趕快打聽打聽</span><span class="push-ipdatetime"> 07/31 01:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 書是有誤，但仍有黃金屋~一本不夠，多看幾本吧~</span><span class="push-ipdatetime"> 07/31 01:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 沒錯多看幾本 還有不要亂看野blog 看英文的php.net或</span><span class="push-ipdatetime"> 07/31 01:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: stackoverflow卡實在</span><span class="push-ipdatetime"> 07/31 01:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cokellen</span><span class="f3 push-content">: 不好意思, 我錯了, 想不到2014/02居然還有這種教學@@</span><span class="push-ipdatetime"> 07/31 09:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 這本很爛+1，丟了它吧(不要送人捐圖書館</span><span class="push-ipdatetime"> 07/31 09:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: sql 指令在 php 裡作的就是「組字串」這件事，「.=」是</span><span class="push-ipdatetime"> 07/31 09:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 變數後連接下個字串，POST是接受前一頁傳來的值，只要</span><span class="push-ipdatetime"> 07/31 09:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 你php字串跟sql指令分的清，隨便你怎麼組，但這教學拆</span><span class="push-ipdatetime"> 07/31 09:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 的零零落落的不是個好範例</span><span class="push-ipdatetime"> 07/31 09:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 謝謝各位指教, 我這本就是借圖書館的書, 因為不知到底哪</span><span class="push-ipdatetime"> 08/01 00:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 本真的有幫助, 已陸續從圖書館看了幾本..請問可否實際推</span><span class="push-ipdatetime"> 08/01 00:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 薦哪一本大家覺得較實在內容的 PHP教學書, 我好依此參考</span><span class="push-ipdatetime"> 08/01 00:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 相關方向去找..來站內信也可以.. 謝謝各方幫忙, 當然也會</span><span class="push-ipdatetime"> 08/01 00:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">SophiaH</span><span class="f3 push-content">: 搜尋看看以上提到的關鍵字</span><span class="push-ipdatetime"> 08/01 00:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jscorpio1</span><span class="f3 push-content">: 新手嗎?  isbn:9789866840401 php+mysql深入淺出</span><span class="push-ipdatetime"> 08/04 11:47
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1438168928.A.971.html?cacheKey=2148-469802026&amp;offset=4437&amp;offset-sig=d26bd21b37b5fd5ca534ecfeeb37d95c11d188c2" data-longpollurl="/v1/longpoll?id=edadcfddabda8273b18ad493bf27c8f49456e5bd" data-offset="4437"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cead0c997f8eb',m:'Hbq12NWZ8viwoIeIdJ_RUVUo3s2bDjG24Lmr.PAUoR0-1653467512-0-AT9DBh/4Y6/o8X4tmVzUPx/r3LtDowbiCkxASVFFZGfc/3yWlUq0HH0tRfuovc9vhQF45MS6AeFFaDf+X8UczBgVXIPPmnL4g7FctYAq3lb6AocYwI874Qctsn7fAzAnklLEtBPnC1lIz+Z6LNDTHMOqvkoiKtVBhx6vqvbNOWjZ',s:[0x735b8580cc,0x3f7f6c3df4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 無法處裡1970年以前的日期! - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問要如何才能正確轉換1970以前的日期?
+我從資料庫撈出YYYY-mm-dd
+然後希望轉成 M n Y 的格式
+用 date(&#34;M n y&#34;,$date) ps:$date=YYY-mm-dd
+或是先轉成UNIX_TIMESTAMP()也是不行,1970以前的會變成0
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 無法處裡1970年以前的日期!">
+<meta property="og:description" content="請問要如何才能正確轉換1970以前的日期?
+我從資料庫撈出YYYY-mm-dd
+然後希望轉成 M n Y 的格式
+用 date(&#34;M n y&#34;,$date) ps:$date=YYY-mm-dd
+或是先轉成UNIX_TIMESTAMP()也是不行,1970以前的會變成0
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1174902308.A.F0A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ranehwa (rane)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 無法處裡1970年以前的日期!</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Mar 26 17:45:07 2007</span></div>
+請問要如何才能正確轉換1970以前的日期?
+我從資料庫撈出YYYY-mm-dd
+然後希望轉成 M n Y 的格式
+
+用 date(&#34;M n y&#34;,$date) ps:$date=YYY-mm-dd
+或是先轉成UNIX_TIMESTAMP()也是不行,1970以前的會變成0
+然後通通變成 Jen 1 1970  囧~~~
+
+有別的方式嗎?
+
+感謝!!
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.109.136.150
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">iFEELing</span><span class="f3 push-content">:epoch time ??  把日期直接用數字存???</span><span class="push-ipdatetime"> 03/26 18:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">iFEELing</span><span class="f3 push-content">:不過你資料庫裡的時間格式是可以存到1970以前??</span><span class="push-ipdatetime"> 03/26 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ranehwa</span><span class="f3 push-content">:是一些1920~1960的日期資料</span><span class="push-ipdatetime"> 03/26 22:16
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1174902308.A.F0A.html?cacheKey=2148-469786452&amp;offset=709&amp;offset-sig=ac342f8dcfeab6ba1bf4d78fedceb924eba7e18b" data-longpollurl="/v1/longpoll?id=dcc315a3578507310ae06347b0cf50a5be15957e" data-offset="709"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea9d5fae14d0',m:'V081IQCe4Ijvhwb2aGzHuS_kY3KeRuIq9UZX7mkAZQY-1653467504-0-AQQbaRBNHQpdNGhPDln/RNmKx+HZvtfD66WzNaM6YPU5mz59HsBgirB52iqS6//ZJ0pd+r/xO8nD3Y6DV52w2fVV6EyFWOZFl2RdRmerd2eCNxSscbLw2mTHXuvs9YzEY/+YFVKd/ifKL+9gMrx6DtPjMV7gwaph7rLWra5o2GXg',s:[0xdcc84c7f25,0x08caaad06e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

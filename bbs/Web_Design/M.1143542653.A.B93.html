@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 網頁連結的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="┌──┬────┐
+│ m  │    m   │
+│ e  │    a   │
+│ n  │    i   │
+│ u  │    n   │
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 網頁連結的問題">
+<meta property="og:description" content="┌──┬────┐
+│ m  │    m   │
+│ e  │    a   │
+│ n  │    i   │
+│ u  │    n   │
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1143542653.A.B93.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">andreli (第一次賭P幣就沒錢)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 網頁連結的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Mar 28 18:55:04 2006</span></div>
+<span class="f2">※ 引述《RunAwayHare (初心者 (／‵Д′)／~ ╧)》之銘言：
+</span><span class="f6">: ※ 引述《RunAwayHare (初心者 (／‵Д′)／~ ╧)》之銘言：
+</span><span class="f6">: : 標題: [問題] 網頁連結的問題
+</span><span class="f6">: : 時間: Mon Mar 27 14:33:51 2006
+</span><span class="f6">: : 推 mdfh:猜中了...                                                  03/27 14:37
+</span><span class="f6">:   這是類似Dreamweaver的Template嗎？
+</span><span class="f6">: : 推 andreli:也有可能是用include的                                   03/27 15:03
+</span><span class="f6">:   include要怎麼作呢？
+</span><span class="f6">:   我想順便問一下，我可以在表格裡面顯示一個php檔嗎？
+</span><span class="f6">:   這個php檔是人家寫好的，本身可以顯示出一個表格來show出公告。
+</span><span class="f6">:   請各位大哥指點. Orz
+</span>
+
+┌──┬────┐
+│ m  │    m   │
+│ e  │    a   │
+│ n  │    i   │
+│ u  │    n   │
+└──┴────┘
+
+大概想法就是這樣
+
+你做了兩個.php(或者是.htm)檔，分別為menu.php、main.php
+
+然後你就可以在index.php中
+
+在想要放這兩個檔案的地方打上 include(&#34;file_name.php&#34;);
+                                      ↑
+                                 (這樣打沒錯吧...好久沒用了)
+
+接著經過編譯器編譯之後，就會長成你想要的樣子了
+
+比較需要注意的是，如果你的其中一個檔案裡有的標籤
+
+include進來之後，會因為原檔案本身就具有此標籤，所以會有出錯的狀況
+
+像是menu.php裡有了&lt;body&gt;這個標籤，index.php也有，這樣就會出錯了
+
+
+大概是這樣子囉，自已寫寫看就會更了解了。
+
+所以你說的那種方法是可以的。
+
+--
+
+<span class="f3 b6 hl"> 1126 cathycathykc </span><span class="b6 hl">給我一個帥哥相簿看看                                  15:56 </span>
+ 1127 andre        <a href="http://spaces.msn.com/members/andretaiwan/" target="_blank" rel="noreferrer noopener nofollow">http://spaces.msn.com/members/andretaiwan/</a>            15:57
+ 1128 andre        &gt;\\\&lt;                                                 15:57
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.164.227.37
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ChampionHare</span><span class="f3 push-content">:謝謝，待會來試看看。</span><span class="push-ipdatetime"> 03/28 20:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ChampionHare</span><span class="f3 push-content">:我也剛好有這個問題.. Orz</span><span class="push-ipdatetime"> 03/28 20:07
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1143542653.A.B93.html?cacheKey=2149-475729466&amp;offset=1884&amp;offset-sig=546a50e647a0f71ec08331c5478a3a33ef1cc73e" data-longpollurl="/v1/longpoll?id=ef0f4661d0e6072ebae3ccf25ce296a71e5bcf1b" data-offset="1884"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce95b4ea81ee0',m:'c6BztFhmdIS2zbHx0ljsNPn80nWEUHrsCV9kvNHoL9I-1653467452-0-AbPXhGDmZaIPZHbXfOWrNGpwU3Fr/OiRdNbrLY0R585gkHpt5J+CxocbcIQLhOIB+Hn5NfhQVfNLionSbkRzwNt4zP26FYKAqwr4j+cjn4kJVxcTv7VlhKROyeix0GRWMa6hbMi7/Yse1obWDV8kbLsdlGtnS+hgi2INSY9Uo1KS',s:[0x91b9b977d6,0xdd3f491142],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

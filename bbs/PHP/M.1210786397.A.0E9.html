@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 求救 亂數發牌 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這邊有個問題是
+抽第一張牌每張牌被抽到的機率是 1/52
+抽第二張牌時每張牌被抽到的機率變成 1/51 ( 因為少一張 )
+抽第三張牌時每張被抽到的機率變成 1/50 ( 因為少兩張 )
+....
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 求救 亂數發牌">
+<meta property="og:description" content="這邊有個問題是
+抽第一張牌每張牌被抽到的機率是 1/52
+抽第二張牌時每張牌被抽到的機率變成 1/51 ( 因為少一張 )
+抽第三張牌時每張被抽到的機率變成 1/50 ( 因為少兩張 )
+....
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1210786397.A.0E9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">yuleen123 (.......................)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 求救 亂數發牌</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu May 15 01:33:16 2008</span></div>
+<span class="f6">: $i = 0;
+</span><span class="f6">: while($i &lt; 20) {
+</span><span class="f6">:         $tmp = array_rand($cardArray);
+</span><span class="f6">:         if(!in_array($tmp,$card2Array)) {
+</span><span class="f6">:                 $card2Array[$i] = $tmp;
+</span><span class="f6">:                 $i ++;
+</span><span class="f6">:         }
+</span><span class="f6">: }
+</span>
+這邊有個問題是
+
+抽第一張牌每張牌被抽到的機率是 1/52
+
+抽第二張牌時每張牌被抽到的機率變成 1/51 ( 因為少一張 )
+
+抽第三張牌時每張被抽到的機率變成 1/50 ( 因為少兩張 )
+
+....
+
+
+我的作法是建一個對照表
+
+$Poker_map = array( &#34;S1&#34;, &#34;S2&#34;, ... , &#34;S13&#34;, &#34;H1&#34;, &#34;H2&#34;, ... , &#34;H13&#34;,
+                    &#34;D1&#34;, &#34;D2&#34;, ... , &#34;D13&#34;, &#34;C1&#34;, &#34;C2&#34;, ... , &#34;C13 );
+
+共 52 張牌
+
+抽第一張牌時產生 0 ~ 51 的亂數值對應到 $Poker_map 對照表上
+
+$num = rand( 0, 51 );
+
+假設抽到 15 好了, 15 對照到對照表是 H3
+
+把抽到的牌加到已發出牌的陣列中
+
+$deal_map[] = $Poker_map[ $num ];
+
+之後把抽到的牌從 $Poker_map 移除掉
+
+移除的方法有很多種
+
+需要注意的是移除後對照表的 key 要連續
+
+這時候 $Poker_map 裡面剩下 51 張牌
+
+接下來抽第二張牌時產生 0 ~ 50 的亂數值
+
+之後依照前面的方法加到已發牌的陣列中並從 $Poker_map 裡移除
+
+重複步驟直到發完牌
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.227.171.86
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yuleen123</span><span class="f3 push-content">:歐..  其實 c 大的方法就可以了.. XD</span><span class="push-ipdatetime"> 05/15 01:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cleanwind</span><span class="f3 push-content">:只要能夠達成要求，運算少的情況下是沒差的 ^^</span><span class="push-ipdatetime"> 05/15 01:46
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1210786397.A.0E9.html?cacheKey=2148-469794636&amp;offset=1367&amp;offset-sig=384da63b17a456106530900e92984c9937407819" data-longpollurl="/v1/longpoll?id=1250894c2d6be73bcfbd5e10d489f16e5c749e02" data-offset="1367"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5a2e3f8aa4',m:'tgRUoM...TDrrZk7H.nOesMOcDdw7fAznzTaJ8L_96U-1653467493-0-AZpjgDfGqNQr8yr5oNheNG93RoGKDdQWcsELk/3gAQwqi/95ryCyEARusu/uQkbBGOx/KIt2IH9dUskyTubBY5ARcXblNNY2fOEhMAez+4YJeFs96NPZQ4uUdrEltL+CcUrQQTr9OxN8R+gax0pECMftlDTragvnoGfucL5TBcXy',s:[0xd35194d0ea,0x06e8d6cfaa],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

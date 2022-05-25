@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 如何將資料表根據另一資料表的資料作排序 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="        可以用子查詢也可以用join  , 我個人是比較推薦後者 .
+        注意 , 有一個限制是 totalscore
+        不能有一個 studentId 有兩個總分
+        單一題目的寫法
+        select s.questionId,s.studentId, s.score
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 如何將資料表根據另一資料表的資料作排序">
+<meta property="og:description" content="        可以用子查詢也可以用join  , 我個人是比較推薦後者 .
+        注意 , 有一個限制是 totalscore
+        不能有一個 studentId 有兩個總分
+        單一題目的寫法
+        select s.questionId,s.studentId, s.score
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1264341828.A.E2B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710ce9e87ca6f8eb'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">TonyQ (^^)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 如何將資料表根據另一資料表的資料作排序</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jan 24 22:03:43 2010</span></div>
+
+<span class="f2">※ 引述《harryjoker (我很幸福)》之銘言：
+</span><span class="f6">: 使用的語言是C#，資料庫是MSSQL
+</span><span class="f6">: 想請問如何將資料表根據另一資料表的資料作排序
+</span><span class="f6">: 例如有10個題目5個學生
+</span><span class="f6">: Score資料表有[scoreID][studentID][questionID][score]
+</span><span class="f6">: 用來存放每個學生每一題的分數，有50筆資料
+</span><span class="f6">: Totalscore資料表有[totalscoreID][studentID][score]
+</span><span class="f6">: 用來存放每個學生的總成績，有5筆資料
+</span><span class="f6">: 如果我想將學生第一題的得分根據他們的總分(不是這一題的分數喔，是總分)作排序
+</span><span class="f6">: 用sqldatasource取出丟到gridview裡
+</span><span class="f6">: 我該怎麼才能做到
+</span><span class="f6">: 另外，能夠同時將10個題目根據這種方式做排序嗎?
+</span><span class="f6">: 煩請各位指教
+</span><span class="f6">: 謝謝
+</span>
+        可以用子查詢也可以用join  , 我個人是比較推薦後者 .
+
+        注意 , 有一個限制是 totalscore
+        不能有一個 studentId 有兩個總分
+
+
+        單一題目的寫法
+        select s.questionId,s.studentId, s.score
+               ts.score as allScore
+                from score s , totalscore ts
+                where s.studentId = ts.studentid and s.questionId= 題目代碼
+                order by ts.score
+
+        如果你不指定題目 , 而要一次列出所有題目 ,
+        且各題目答題狀況依照總分排序的話
+
+        select s.questionId,s.studentId, s.score
+               ts.score as allScore
+                from score s , totalscore ts
+                where s.studentId = ts.studentid
+                order by s.questionId,ts.score
+
+--
+btw 要這麼做 , 請設定 totalscore.studentId 為索引,免得浪費太多時間在查詢
+
+--
+    I am a person, and I am always thinking .
+    Thinking in love , Thinking in life ,
+    Thinking in why ,  Thinking in worth.
+    I can&#39;t believe any of what ,
+    I am just thinking then thinking ,
+    but worst of all , most of mine is thinking not actioning...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.133.218.161
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:沒測 , 純粹草擬的 如果有type error 自己修 XD</span><span class="push-ipdatetime"> 01/24 22:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:另外有database版可以問這類問題.</span><span class="push-ipdatetime"> 01/24 22:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Assyla</span><span class="f3 push-content">:第一個想到的也是 join</span><span class="push-ipdatetime"> 01/24 22:37
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1264341828.A.E2B.html?cacheKey=2149-475860532&amp;offset=2099&amp;offset-sig=8f9cbca4a50cc0b594d495f7ac2770081473bad5" data-longpollurl="/v1/longpoll?id=797dc30153d0daa27f912a1658b91fd8b0ca2437" data-offset="2099"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9e87ca6f8eb',m:'5hLaNC9DogayObftesKY5ENKvDEE1CibQDg7BETqlFM-1653467475-0-AVSMqH7USnwhvNGVv+iwtyWTV/gPLvP4YxbKEX9VCpF6JbvLYuR7H2ygBqwEmmeDwu0hJV9U5NemDAC5I6HFhsOePkRaRpw8sXjQDxoYt3551JwANjy+PX3rwM/3GmipfALckMTJkYEiAc7q2FrXgBIFpe5m50eH/9BVEWRjJeRL',s:[0xd37ef214a5,0x1e933d1121],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

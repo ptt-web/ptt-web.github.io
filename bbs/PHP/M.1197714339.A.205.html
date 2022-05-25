@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 不重複的亂數 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="19個取10個....
+當然是這樣啊?
+還是你是說順序?
+array_rand並沒有保證會幫你弄亂順序
+再加個array_shuffle吧
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 不重複的亂數">
+<meta property="og:description" content="19個取10個....
+當然是這樣啊?
+還是你是說順序?
+array_rand並沒有保證會幫你弄亂順序
+再加個array_shuffle吧
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1197714339.A.205.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">buganini (霸格尼尼)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 不重複的亂數</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Dec 15 18:25:37 2007</span></div>
+<span class="f2">※ 引述《ckai1983 ( =^^=  )》之銘言：
+</span><span class="f6">: ※ 引述《ybite (小犬)》之銘言：
+</span><span class="f6">: : php的Array函數非常強大，可以用array函數來寫，完全不需要迴圈：
+</span><span class="f6">: : &lt;?php
+</span><span class="f6">: : $b = array_rand(range(1, 60), 25);
+</span><span class="f6">: : ?&gt;
+</span><span class="f6">: : $b陣列你面就是你所要的25個數了，可以用foreach讀出來
+</span><span class="f6">: : 說明：
+</span><span class="f6">: : * range(1, 60)會產生出等同array(1, 2, 3,..., 60)效果的Array
+</span><span class="f6">: : * 再用array_rand從中隨機挑出25個
+</span><span class="f6">: : 詳情可參考線上php手冊 :P
+</span><span class="f6">: 請問一下唷
+</span><span class="f6">: 我用這方法
+</span><span class="f6">: 可是常常亂數不是很亂耶
+</span><span class="f6">: 例如
+</span><span class="f6">: $b = array_rand(range(0, 18), 10);
+</span><span class="f6">: 結果是
+</span>
+19個取10個....
+當然是這樣啊?
+還是你是說順序?
+
+array_rand並沒有保證會幫你弄亂順序
+再加個array_shuffle吧
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 221.169.71.109
+<span class="f2">※ 編輯: buganini        來自: 221.169.71.109       (12/15 18:27)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ckai1983</span><span class="f3 push-content">:黑呀~順序不夠亂..  array_shuffle() 沒有內建嗎?</span><span class="push-ipdatetime"> 12/15 23:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ckai1983</span><span class="f3 push-content">:array_shuffle($b);  他說是沒定義的function</span><span class="push-ipdatetime"> 12/15 23:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:sorry...shuffle而已..沒有array_</span><span class="push-ipdatetime"> 12/15 23:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:<a href="http://tw2.php.net/manual/en/function.shuffle.php" target="_blank" rel="noreferrer noopener nofollow">http://tw2.php.net/manual/en/function.shuffle.php</a></span><span class="push-ipdatetime"> 12/15 23:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ckai1983</span><span class="f3 push-content">:大感謝 ~  〒△〒</span><span class="push-ipdatetime"> 12/15 23:55
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1197714339.A.205.html?cacheKey=2148-469788613&amp;offset=1333&amp;offset-sig=885813db8d93821cb9279b0ccdd49cfdd877fc3c" data-longpollurl="/v1/longpoll?id=6799e160e75a5626f60d65e35eda17ffb173ed06" data-offset="1333"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaabfb6f1ee0',m:'4GiTnVqAx7tdrfL3Ir3uOcDJSkq7AimeJtFr1.wnJ1w-1653467506-0-ATZjFprdvNWTxrKEl4/uV5WeAKgggbQy0qJiVsnrXyk8Xlb4L1yMzh8cy3LvlFUC06cWXgVrw5VC7PHDQBTCAELI/XveqevW6S30bByIxYcI9/Us1D5LOyXkMPr+8JnIRpSggINFlWJDkLduU1Shvb6UlNNG9QxyQijVUOydAupc',s:[0x890578d0c1,0x6c1970eee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

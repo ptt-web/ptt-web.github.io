@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] curl的POST問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="大部分同一個網址要在同一頁顯示都是判斷 submit 按鈕是否有按下去...
+也就是說..你傳的 data 並沒有傳 submit 按鈕過去..
+只要加進去就可以了..
+curl_setopt($c, CURLOPT_POSTFIELDS,
+&#34;SCA_DATE=20100701&amp;SqlMethod=StockNo&amp;StockNo=1234&amp;sub=&#34;.urlencode(&#34;查詢&#34;));
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] curl的POST問題">
+<meta property="og:description" content="大部分同一個網址要在同一頁顯示都是判斷 submit 按鈕是否有按下去...
+也就是說..你傳的 data 並沒有傳 submit 按鈕過去..
+只要加進去就可以了..
+curl_setopt($c, CURLOPT_POSTFIELDS,
+&#34;SCA_DATE=20100701&amp;SqlMethod=StockNo&amp;StockNo=1234&amp;sub=&#34;.urlencode(&#34;查詢&#34;));
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1280580554.A.DDB.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">chaoms (小企鵝)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] curl的POST問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jul 31 20:49:08 2010</span></div>
+<span class="f2">※ 引述《jami520 (我的生命因你而發光)》之銘言：
+</span><span class="f6">: <a href="http://www.tdcc.com.tw/smWeb/QryStock.jsp" target="_blank" rel="noreferrer noopener nofollow">http://www.tdcc.com.tw/smWeb/QryStock.jsp</a>
+</span><span class="f6">: 這樣寫抓到都空白的，沒資料! 是哪邊寫錯了嗎?
+</span><span class="f6">: $c = curl_init();
+</span><span class="f6">: curl_setopt($c, CURLOPT_URL, &#34;<a href="http://www.tdcc.com.tw/smWeb/QryStock.jsp&#34;);" target="_blank" rel="noreferrer noopener nofollow">http://www.tdcc.com.tw/smWeb/QryStock.jsp&#34;);</a>
+</span><span class="f6">: curl_setopt($c, CURLOPT_POST, 1);
+</span><span class="f6">: curl_setopt($c, CURLOPT_POSTFIELDS,
+</span><span class="f6">: &#34;SCA_DATE=20100701&amp;SqlMethod=StockNo&amp;StockNo=1234&#34;);
+</span><span class="f6">: $data = curl_exec($c);
+</span><span class="f6">: curl_close($c);
+</span><span class="f6">: preg_match_all(&#39;!&lt;td align=&#34;center&#34;.*?&gt;(.*?)&lt;/td&gt;!is&#39;,$data,$test);
+</span><span class="f6">: echo $test[0][1];
+</span>
+
+大部分同一個網址要在同一頁顯示都是判斷 submit 按鈕是否有按下去...
+
+也就是說..你傳的 data 並沒有傳 submit 按鈕過去..
+
+只要加進去就可以了..
+
+curl_setopt($c, CURLOPT_POSTFIELDS,
+&#34;SCA_DATE=20100701&amp;SqlMethod=StockNo&amp;StockNo=1234&amp;sub=&#34;.urlencode(&#34;查詢&#34;));
+
+
+--
+我的論壇：TimClub <a href="http://www.timteam.org/" target="_blank" rel="noreferrer noopener nofollow">http://www.timteam.org/</a>
+我的blog：94iPHPer <a href="https://94i.blogspot.com/" target="_blank" rel="noreferrer noopener nofollow">http://94i.blogspot.com/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 114.26.17.12
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jami520</span><span class="f3 push-content">:試過好像也不行，不知道是不是他有做防護動作?</span><span class="push-ipdatetime"> 07/31 23:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jami520</span><span class="f3 push-content">:去他網址查詢，好像查詢的結果也沒有在原始碼裡面顯示說!</span><span class="push-ipdatetime"> 07/31 23:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chaoms</span><span class="f3 push-content">:他網頁是BIG-5呀.”查詢”字串是要BIG-5碼傳過去.</span><span class="push-ipdatetime"> 08/01 00:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chaoms</span><span class="f3 push-content">:資料用sub=%ACd%B8%DF　替代好了,這樣就不用寫轉碼了..</span><span class="push-ipdatetime"> 08/01 00:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jami520</span><span class="f3 push-content">:非常謝謝你的熱心回答!!</span><span class="push-ipdatetime"> 08/01 00:34
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1280580554.A.DDB.html?cacheKey=2148-469791938&amp;offset=1506&amp;offset-sig=fddbf34239dd3d51383b953120a5921288717e95" data-longpollurl="/v1/longpoll?id=3d9b7f0d68e43869351ac058aaeb29eb942bcb02" data-offset="1506"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea304bdeafe5',m:'kqtbCUIPCOdHFDffjh1sGqpslqp7BfXHvJdIBQusgww-1653467486-0-AenoR1l1UD+jqdNGzwEQRpYxmhlXYiJiEWEPj1c7Gu6FHnX2H91ugqAOrapch8ybbOr6O5tvlm+/0GrEOZ5iUbbDIcZXGa0ceuiaGYUrMoYC4t8BvtF+NyiG9xzYzYlE3YQX7M/UYyORD0k+jm0sOTrcB6pSeYjo3jXeByVeB3Uy',s:[0x7b3f558535,0x79e94e59fb],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

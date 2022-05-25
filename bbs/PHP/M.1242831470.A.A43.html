@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 直接修改值 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問一下各位大大
+比如說 有一個頁面有三個值
+我想分別對他們修改
+但是如果不修改的話仍然維持原值
+那應該要怎麼做比較好
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 直接修改值">
+<meta property="og:description" content="請問一下各位大大
+比如說 有一個頁面有三個值
+我想分別對他們修改
+但是如果不修改的話仍然維持原值
+那應該要怎麼做比較好
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1242831470.A.A43.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">alair99 (我難過)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 直接修改值</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed May 20 22:57:49 2009</span></div>
+請問一下各位大大
+比如說 有一個頁面有三個值
+我想分別對他們修改
+但是如果不修改的話仍然維持原值
+那應該要怎麼做比較好
+我目前寫的有修改的話可以正常顯示
+但是沒修改的話就會變成空白值
+
+舉例如下
+         123[修改] 456[修改] 789[修改]   [送出]
+輸入               789                   按下送出之後
+就會變成    [修改] 789[修改]    [修改]   [送出]
+但是我想要的是
+         123[修改] 789[修改] 789[修改]   [送出]
+
+希望能給點提示
+謝謝各位大大囉
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.134.116.22
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mattttt     </span><span class="f3 push-content">:先用hidden儲存原來的值，在判斷有沒有空字串</span><span class="push-ipdatetime"> 05/20 23:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:我也用過 hidden,同事說幹麻這麼累;不過沒想到其他做</span><span class="push-ipdatetime"> 05/20 23:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:法.session 也許好?</span><span class="push-ipdatetime"> 05/20 23:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">w3c         </span><span class="f3 push-content">:利用javascript editable的方式 要更改再點擊就好</span><span class="push-ipdatetime"> 05/20 23:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">w3c         </span><span class="f3 push-content">:修改的值 用ajax送出</span><span class="push-ipdatetime"> 05/20 23:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">w3c         </span><span class="f3 push-content">:<a href="https://tinyurl.com/yoe3x7" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/yoe3x7</a></span><span class="push-ipdatetime"> 05/20 23:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alair99     </span><span class="f3 push-content">:hidden不會用... 只好用Session = =&#34;</span><span class="push-ipdatetime"> 05/22 19:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alair99     </span><span class="f3 push-content">:樓上的方法很炫耶  但是也是不會用  = =</span><span class="push-ipdatetime"> 05/22 19:33
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1242831470.A.A43.html?cacheKey=2148-469798115&amp;offset=1396&amp;offset-sig=f225bf3de634bf5b561862b7f6b8856d0b092f96" data-longpollurl="/v1/longpoll?id=2aada5ed3311eab1cdd64d4d93f064cf540c9abf" data-offset="1396"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cead46e7d14d0',m:'ikkR9bM5AAWR8MuQ3B3_9h3MXEB7p5N37RC7Sg_22Fg-1653467513-0-Adn/PI/62HG9VSELytw+/xrU/jpiNVSXHYZDEmUxv9igKDBIaHurHN5V/BofWOVKF+9hYhowHzjGngwy7cqPRqaQJiJC4jmL0hLYerhFvjzYLKFDu91kiIUE4Qz+Suc2WE9LulyQYze9cf68lNdvc8ESMuHfKoTZMBD3vSMS6M5x',s:[0x59c8a0c72b,0x8d39905de2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

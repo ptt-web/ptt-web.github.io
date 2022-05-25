@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] (使用函式畫的)圓餅圖該如何顯示中文? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="之前感謝這裡的高手 幫我改成可以使用正列顯示圓餅圖
+但是因為我們是要使用中文介面顯示
+所以現在我想要問...該如何使用中文 來顯示 圓餅圖裡的資料...
+還有一個問題是 當資料量太小 EX:1 時 圓餅圖的角度會太小
+資料會被蓋到 有沒有其他方法可以改善...
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] (使用函式畫的)圓餅圖該如何顯示中文?">
+<meta property="og:description" content="之前感謝這裡的高手 幫我改成可以使用正列顯示圓餅圖
+但是因為我們是要使用中文介面顯示
+所以現在我想要問...該如何使用中文 來顯示 圓餅圖裡的資料...
+還有一個問題是 當資料量太小 EX:1 時 圓餅圖的角度會太小
+資料會被蓋到 有沒有其他方法可以改善...
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1228465885.A.626.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">claire0810 (Claire)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] (使用函式畫的)圓餅圖該如何顯示中文?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Dec  5 16:31:24 2008</span></div>
+之前感謝這裡的高手 幫我改成可以使用正列顯示圓餅圖
+
+但是因為我們是要使用中文介面顯示
+
+所以現在我想要問...該如何使用中文 來顯示 圓餅圖裡的資料...
+
+還有一個問題是 當資料量太小 EX:1 時 圓餅圖的角度會太小
+
+資料會被蓋到 有沒有其他方法可以改善...
+
+以下為程式碼
+
+/*********************************************************************
+
+ function Deg2Arc($degrees)
+        {
+          return($degrees * (pi()/180.0));
+        }
+        // 定義一把角度轉換為弳度的函式 END
+
+        // 定義一取得圓弧上之 x,y 點的函式 BEGIN
+        function Center2Pie($deg,$length)
+        {
+          $x= cos(Deg2Arc($deg)) * $length;
+          $y= sin(Deg2Arc($deg)) * $length;
+          return (array($x, $y));
+        }
+        // 定義一取得圓弧上之 x,y 點的函式 END
+
+        class pikelet // 宣告一個 pikelet 的類別
+        {
+          var $radius;        // 圓半徑
+          var $DataArray;    // 每個扇形所代表的資料
+          var $NumberData;
+          var $place;        // 序號
+          var $Number;      // 總數
+          var $num;         // 各數
+
+          function pikelet($res, $length = 100) // 扇形建構子
+          {
+            $this-&gt;radius = $length; // 設定圓半徑
+            $this-&gt;num = count($res);
+
+            $this-&gt;NumberData = array_values($res);  // 產品銷售量
+            $this-&gt;place = array_keys($res);  // 產品序號
+            $this-&gt;Number = array_sum($this-&gt;NumberData);    // 總銷售量
+                 }
+        //******************************圓餅圖控制項開始**********************
+          function DrawPie() // 畫圓餅圖
+          {
+            $im = ImageCreate($this-&gt;radius*2+40,$this-&gt;radius*2+40);
+            $PieCenterX=$this-&gt;radius+10; // 圓心 X座標
+            $PieCenterY=$this-&gt;radius+10; // 圓心 Y座標
+            $radius=$this-&gt;radius*2;      // 圓半徑
+
+            // 定義所使欲使用的顏色 BEGIN
+            $colorBorder = ImageColorAllocate($im, 0, 0, 0);     // 黑
+            $colorback = ImageColorAllocate($im, 255, 255, 255); // 白
+            $colors[0] = ImageColorAllocate($im, 255, 128, 128); // 粉紅
+            $colors[1] = ImageColorAllocate($im, 100, 149, 237); // 粉藍
+            $colors[2] = ImageColorAllocate($im, 50, 205, 50);   // 亮綠
+            $colors[3] = ImageColorAllocate($im, 244, 20, 190);  // 紫
+            $colors[4] = ImageColorAllocate($im, 255, 215, 0);   // 米黃
+            $colors[5] = ImageColorAllocate($im, 144, 238, 144); // 淺綠
+            $colors[6] = ImageColorAllocate($im, 70, 130, 180);  // 海軍藍
+            $colors[7] = ImageColorAllocate($im, 244, 164, 96);  // 棕
+            $colors[8] = ImageColorAllocate($im, 139, 121, 94);  // 土
+            $colors[9] = ImageColorAllocate($im, 190, 190, 190); // 灰
+            // 定義所使欲使用的顏色 END
+
+            ImageFill($im, 0, 0, $colorback); // 填充背景
+            // 開始畫每一個扇形
+            for($i=0;$i&lt;$this-&gt;num;$i++)
+            {
+              // 四捨五入畫弧的起始角度
+              $StartDegrees = round($Degrees);
+              // 累積角度
+              $Degrees += (($this-&gt;NumberData[$i] / $this-&gt;Number)*360);
+              // 四捨五入畫弧的結束角度
+              $EndDegrees = round($Degrees);
+              // 算出每一產品所佔的百分比
+              $percent = number_format(($this-&gt;NumberData[$i] / $this-&gt;Number)*100,
+1);
+
+              // 分配顏色 BEGIN
+              $tmp_color = $i%10; // 取10的餘數
+              $CurrentColor = $colors[$tmp_color]; // 指定顏色
+              // 分配顏色 END
+
+              // 畫扇形的弧
+              ImageArc($im, $PieCenterX, $PieCenterY, $radius, $radius,
+$StartDegrees, $EndDegrees, $CurrentColor);
+
+              // 畫扇形的一邊直線 BEGIN
+              list($ArcX, $ArcY) = Center2Pie($StartDegrees, $this-&gt;radius,
+$this-&gt;radius);
+              ImageLine($im, $PieCenterX, $PieCenterY, floor($PieCenterX + $ArcX),
+floor($PieCenterY + $ArcY), $CurrentColor);
+              // 畫扇形的一邊直線 END
+
+              // 畫畫扇形的另一邊直線 BEGIN
+              list($ArcX, $ArcY) = Center2Pie($EndDegrees, $this-&gt;radius,
+$this-&gt;radius);
+              ImageLine($im, $PieCenterX, $PieCenterY, ceil($PieCenterX + $ArcX),
+ceil($PieCenterY + $ArcY), $CurrentColor);
+              // 畫畫扇形的另一邊直線 END
+
+              // 填充扇形 BEGIN
+              $MidPoint = round((($EndDegrees - $StartDegrees)/2) + $StartDegrees);
+              list($ArcX, $ArcY) = Center2Pie($MidPoint, $this-&gt;radius*3/4,
+$this-&gt;radius*3/4);
+              ImageFilltoBorder($im, floor($PieCenterX + $ArcX), floor($PieCenterY +
+$ArcY), $CurrentColor, $CurrentColor);
+              // 填充扇形 END
+
+              // 寫上字串
+              ImageString($im, 2, floor($PieCenterX + $ArcX-20), floor($PieCenterY +
+$ArcY-2),$this-&gt;place[$i] . &#34; - &#34; . $this-&gt;NumberData[$i], $colorBorder);
+              ImageString($im, 2, floor($PieCenterX + $ArcX-10), floor($PieCenterY +
+$ArcY-20), $percent . &#34;%&#34; , $colorback);
+              // 寫上字串 END
+            }
+            Imagepng($im);     // 做出png檔
+            ImageDestroy($im); // 移除圖形所佔的記憶體
+          }
+        }
+
+  //******************************圓餅圖控制項結束**********************
+
+$res = array(&#34;90分&#34; =&gt; 1,&#34;90~80分&#34; =&gt; 5,&#34;80~70分&#34; =&gt; 10, &#34;70~60分&#34; =&gt; 10,&#34;60以
+下&#34; =&gt; 17) ;
+  mysql_close($link);
+
+
+  header(&#34;Content-type: image/png&#34;);
+  $pie = new pikelet($res); // 宣告 pie 為一個 pikelet 物件
+  $pie-&gt;DrawPie();
+
+
+/*******************************程式碼結束********************************
+
+這就是全部的程式碼
+
+主要問題就是前面所說的那幾項囉...
+
+1. 在陣列中 &#34;分&#34; 無法顯示 會變成亂碼顯示在圓餅圖中
+
+2. 90分的人數只有1 在圓餅圖中的弧度太小 無法全部顯示 有無方法可以讓他全部顯示
+
+
+
+主要就是這兩個問題了&gt;&lt; 拜託可以幫我想想辦法嗎
+
+先謝謝各位了 &gt;&lt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 124.8.83.161
+<span class="f2">※ 編輯: claire0810      來自: 124.8.83.161         (12/05 16:32)
+</span><span class="f2">※ 編輯: claire0810      來自: 124.8.83.161         (12/05 16:35)
+</span><span class="f2">※ 編輯: claire0810      來自: 124.8.83.161         (12/05 16:35)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee      </span><span class="f3 push-content">:ImageString換掉</span><span class="push-ipdatetime"> 12/05 18:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cttlee      </span><span class="f3 push-content">:imagettftext</span><span class="push-ipdatetime"> 12/05 18:19
+</span></div>改了之後程式會錯誤喔...
+<span class="f2">※ 編輯: claire0810      來自: 124.8.83.161         (12/05 18:59)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee      </span><span class="f3 push-content">:引數不太一樣自己對應一下</span><span class="push-ipdatetime"> 12/05 19:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">crazybad    </span><span class="f3 push-content">:imagettftext只接受utf-8記得中文要先用iconv()去轉</span><span class="push-ipdatetime"> 12/06 21:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">claire0810  </span><span class="f3 push-content">:那這樣我要在哪裡改編碼方式呢?</span><span class="push-ipdatetime"> 12/07 17:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">claire0810  </span><span class="f3 push-content">:因為我現在連錯誤訊息都沒有了</span><span class="push-ipdatetime"> 12/07 17:38
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1228465885.A.626.html?cacheKey=2148-469789517&amp;offset=6750&amp;offset-sig=2cc89b350a6f2878dd9f3fc407c34004590cf0b6" data-longpollurl="/v1/longpoll?id=12cb2b5ac2b62b5ed41b7106c4e34607cc08a88c" data-offset="6750"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5dbb661fae',m:'jJ4zXuNR4i65dG2441KljaIPuYoDro7X9ZAlE3qCGuo-1653467494-0-AaVs597hKQwSH/+Cl9QnK6wl4w4UzJs14bvlb68Uy24Utvb0e+ApmZNXmYcJJH1UAEvm87bit6pbgyW+sFjwB2mgNHOS6yLksn96SWQLgLEXTJlcn6xmXlcf1E8Ks6kc9C/oFivWgBZ22H0G+DMtUIwI/YNw9EUOunL7VCeYC0/p',s:[0xc0fb8dfb57,0x4112a1b7c5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 架設實況網站用php? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="根據livehouse.in的CEO說這行很燒錢，所以沒事別入坑。
+livehouse.in用的是node.js，youtube 用的是python，justin.tv用的是ROR。
+twitch我在網路上沒看到相關文章，可能要請神人補充，他們徵才是說至少要：
+Javascript, Ruby, Python, Go, or C++其中一個熟練，所以看不出來是用哪個做的。
+PHP不適合做這個是因為他效能不好，根據：https://goo.gl/ktcWH2
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 架設實況網站用php?">
+<meta property="og:description" content="根據livehouse.in的CEO說這行很燒錢，所以沒事別入坑。
+livehouse.in用的是node.js，youtube 用的是python，justin.tv用的是ROR。
+twitch我在網路上沒看到相關文章，可能要請神人補充，他們徵才是說至少要：
+Javascript, Ruby, Python, Go, or C++其中一個熟練，所以看不出來是用哪個做的。
+PHP不適合做這個是因為他效能不好，根據：https://goo.gl/ktcWH2
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1439517095.A.DFD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">y2468101216 (芸)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 架設實況網站用php?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Aug 14 09:51:32 2015</span></div>
+根據livehouse.in的CEO說這行很燒錢，所以沒事別入坑。
+
+livehouse.in用的是node.js，youtube 用的是python，justin.tv用的是ROR。
+twitch我在網路上沒看到相關文章，可能要請神人補充，他們徵才是說至少要：
+Javascript, Ruby, Python, Go, or C++其中一個熟練，所以看不出來是用哪個做的。
+
+PHP不適合做這個是因為他效能不好，根據：<a href="https://goo.gl/ktcWH2" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/ktcWH2</a>
+指出，即使是公認效能不太好的ruby也是贏PHP一秒，更別說python贏了2秒，
+試想你的客戶看實況時頓了兩秒，他們應該會幹到死吧。
+
+做影音串流最大的問題是流量，因為影片很大，你的server必須扛得住這麼大的流量，
+而且他不能有排隊機制，你有看過youtube說人太多請你等等再來嗎？
+niconico是例外，會因為人太多踢人的生放送只有日本有。
+
+補充：後來有想到中國的bilibili看了一下他們的徵才，是java,.net,ruby,php
+也是不確定主要語言是啥。
+
+
+------------------------------------------------------------------------------
+我覺得不會google的工程師應該都要廢除。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 118.163.30.31
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1439517095.A.DFD.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1439517095.A.DFD.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tas72732002</span><span class="f3 push-content">: 光socket聊天室都沒人再用php做了, 何況是影音串流</span><span class="push-ipdatetime"> 08/14 11:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: socket好像很多都用node.js</span><span class="push-ipdatetime"> 08/14 11:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">locklose</span><span class="f3 push-content">: Php寫socket囉嗦又麻煩</span><span class="push-ipdatetime"> 08/14 16:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">et69523820</span><span class="f3 push-content">: 聊天室部分可以透過影音伺服器去做傳送 即時又省效能</span><span class="push-ipdatetime"> 08/14 20:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tas72732002</span><span class="f3 push-content">: 也可以, 使用UDP的方式開發</span><span class="push-ipdatetime"> 08/14 23:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">: 影音的部分給快的程式處理就可 沒有中大型平台只用一個技術</span><span class="push-ipdatetime"> 08/14 23:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">: 吃全部</span><span class="push-ipdatetime"> 08/14 23:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dlikeayu</span><span class="f3 push-content">: 直接租用串流服務給人接比較快，自己的網站去embed就好</span><span class="push-ipdatetime"> 08/15 03:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dlikeayu</span><span class="f3 push-content">: 燒錢會是在流量進來但是你還沒到資金之時A_A</span><span class="push-ipdatetime"> 08/15 03:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dlikeayu</span><span class="f3 push-content">: 可以參考AWS的串流服務+CDN                 $$$$但省事</span><span class="push-ipdatetime"> 08/15 03:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alex0914</span><span class="f3 push-content">: twitch streaming server 是 wowza</span><span class="push-ipdatetime"> 08/16 10:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alex0914</span><span class="f3 push-content">: 網頁用什麼開發都可以 重點是影片串流要怎麼跑</span><span class="push-ipdatetime"> 08/16 10:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WJAider</span><span class="f3 push-content">: 好奇怎麼用 java 跟 c++ 的好像很少，不會比 python 快</span><span class="push-ipdatetime"> 08/16 17:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WJAider</span><span class="f3 push-content">: 嗎? 還是因為套件支援太少?</span><span class="push-ipdatetime"> 08/16 17:12
+</span></div>c++我不知道，但JAVA因為JVM的關係有效能限制，paypal最近才從JAVA轉換成node.js
+<span class="f2">※ 編輯: y2468101216 (118.163.30.31), 08/17/2015 09:23:06
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">et69523820</span><span class="f3 push-content">: RED5 是用JAVA</span><span class="push-ipdatetime"> 08/17 21:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 亂入一下有不少 PHP 專案可以實作聊天室例如 Ratchet</span><span class="push-ipdatetime"> 08/18 09:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 或是在PHPConf上分享的phpsocket.io也可以拿來實作</span><span class="push-ipdatetime"> 08/18 09:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 至於效能就不說了PHP也是可以打趴node.js的 XD</span><span class="push-ipdatetime"> 08/18 09:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yhls</span><span class="f3 push-content">: 早期bilibili 以PHP為主，後來才導入其他語言</span><span class="push-ipdatetime"> 08/18 21:53
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1439517095.A.DFD.html?cacheKey=2148-469801826&amp;offset=3157&amp;offset-sig=9873780201bf77e951ea4a230cd46f0d5f871fb6" data-longpollurl="/v1/longpoll?id=8887a010ff6bacdf96807582d5e198f9d6ac390d" data-offset="3157"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea24ad2eafcd',m:'0XNK1j5dLZdzGw9YiAQcwqiWrITiyk.RcsLkVOcAy_s-1653467485-0-AeHWximFRJmpk7GYmoIt+8U65Qj8bunhNz0vavXx2e6rF0JSrtnY7K9MqDwgiH6lsLWAg61dtlgM4Dhei9auXjR931U4AH53B3kq9OCf8MVJOKEyT1UlIeBZj2GyzMb7s3QMcBJIZaiwRfINPnSIb4HADMW2l4pLhrlzoKGIH57V',s:[0x5799b976e9,0x96876320fa],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

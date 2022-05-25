@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 如何設定開啟的網頁大小 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我有同樣的問題哩，但使用以上的javascript之後，IE開啟的大小仍未改變。
+網頁：http://140.119.172.157/kouji.htm
+因為flash的大小是120x80 ，希望視窗也能是120x80
+原始碼：
+&lt;script language=&#34;JavaScript&#34;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 如何設定開啟的網頁大小">
+<meta property="og:description" content="我有同樣的問題哩，但使用以上的javascript之後，IE開啟的大小仍未改變。
+網頁：http://140.119.172.157/kouji.htm
+因為flash的大小是120x80 ，希望視窗也能是120x80
+原始碼：
+&lt;script language=&#34;JavaScript&#34;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1135154709.A.2ED.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">fsvsebfbi ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 如何設定開啟的網頁大小</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Dec 21 16:53:09 2005</span></div>
+<span class="f2">※ 引述《pm2001 (va是我的公主喔!!)》之銘言：
+</span><span class="f6">: ※ 引述《pkcqwe (鄉民第99999號)》之銘言：
+</span><span class="f6">: : &lt;script language=&#34;JavaScript&#34;&gt;
+</span><span class="f6">: : &lt;!--
+</span><span class="f6">: : window.open(&#34;Message.htm,&#34;nw&#34;,&#34;width=200,height=50&#34;);
+</span><span class="f6">:                ~~~~~~~~~~~  ~~   ~~~~~~~~~  ~~~~~~~~
+</span><span class="f6">:                 開啟網頁連結  title   寬      高
+</span><span class="f6">: : //--&gt;
+</span><span class="f6">: : &lt;/script&gt;
+</span><span class="f6">: : 將此段放在&lt;head&gt; &lt;/head&gt;之間即可
+</span><span class="f6">: : 書上看來的XD
+</span><span class="f6">: window還有許多屬性可以設
+</span><span class="f6">: 這就要去查書了
+</span>
+我有同樣的問題哩，但使用以上的javascript之後，IE開啟的大小仍未改變。
+
+網頁：<a href="http://140.119.172.157/kouji.htm" target="_blank" rel="noreferrer noopener nofollow">http://140.119.172.157/kouji.htm</a>
+
+因為flash的大小是120x80 ，希望視窗也能是120x80
+
+原始碼：
+
+&lt;script language=&#34;JavaScript&#34;&gt;
+&lt;!--
+window.open(&#34;kouji.htm,&#34;kouji&#34;,&#34;width=120,height=80&#34;);
+//--&gt;
+&lt;/script&gt;
+
+請問問題是出在哪裡呢？麻煩了。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.228.210.245
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ojinjin</span><span class="f3 push-content">:&#34;kouji.htm&#34; &lt;--少了右邊的引號</span><span class="push-ipdatetime"> 12/21 16:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fsvsebfbi</span><span class="f3 push-content">:他會跳一個新視窗出來，但我是要改變原本的視窗。</span><span class="push-ipdatetime"> 12/21 18:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aagogo</span><span class="f3 push-content">:他的問題應該是 點了到他網站的連結 視窗會自動改成他訂的</span><span class="push-ipdatetime"> 12/21 23:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aagogo</span><span class="f3 push-content">:大小，這個不知道跟onload有沒有關@@</span><span class="push-ipdatetime"> 12/21 23:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fsvsebfbi</span><span class="f3 push-content">:謝謝三樓，就是這個問題。拜託各位了。</span><span class="push-ipdatetime"> 12/22 00:27
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1135154709.A.2ED.html?cacheKey=2149-475718161&amp;offset=1406&amp;offset-sig=66f043a529b8ccc6c2b07cf92fcebe5bb75198d9" data-longpollurl="/v1/longpoll?id=16918244abdf0bdd4051c1982073f78277e095ea" data-offset="1406"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9e22f41807e',m:'WlpglXFZGLlJFwyDKBQ0LqN3_kwDnf4FNIe5RTHac3s-1653467474-0-AURm2zpIXpT2h1chEf6TQ9ycM09HAHcNwsFhg0ykIXGQvm0/NWgnJ4IRAvVxfY3EdV90SOnc+BOk2DZJR4kc/sSRoG4UXAydb2NMR9eBuyyB+xyOr2tgPmm31l4RNths75siltLfAdW4F5TFvm72den8uFwK7cQ9d43NAb34vjUE',s:[0x057f41567a,0xccc6f3cd84],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

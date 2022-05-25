@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 不用cookie能做會員管理嗎 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="感謝各位的幫忙
+看了大家的回文與網路上的文章後
+我終於想到了關閉cookie後要如何使用session
+我主要是因為想要在同一台電腦上面做到multi user的功能
+但又要考慮cookie關閉,讓我煩惱了好久
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 不用cookie能做會員管理嗎">
+<meta property="og:description" content="感謝各位的幫忙
+看了大家的回文與網路上的文章後
+我終於想到了關閉cookie後要如何使用session
+我主要是因為想要在同一台電腦上面做到multi user的功能
+但又要考慮cookie關閉,讓我煩惱了好久
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1153288747.A.17B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">eecir (小君你最可愛了)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 不用cookie能做會員管理嗎</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Jul 19 14:05:38 2006</span></div>
+感謝各位的幫忙
+看了大家的回文與網路上的文章後
+我終於想到了關閉cookie後要如何使用session
+我主要是因為想要在同一台電腦上面做到multi user的功能
+但又要考慮cookie關閉,讓我煩惱了好久
+
+以下是我想出來的方式,或許還需要改進,若有不正確的地方
+還要麻煩大家幫我看看 謝謝各位
+
+test1.php
+&lt;form id=&#34;form1&#34; name=&#34;form1&#34; method=&#34;post&#34; action=&#34;test2.php&#34;&gt;
+  &lt;input type=&#34;text&#34; name=&#34;a1&#34; /&gt;帳號
+  &lt;input type=&#34;text&#34; name=&#34;a2&#34; /&gt;暱稱
+  &lt;input type=&#34;submit&#34; name=&#34;Submit&#34; value=&#34;輸入&#34; /&gt;
+  &lt;input name=&#34;sid&#34; type=&#34;hidden&#34; value=&#34;&lt;?=date(&#34;His&#34;);?&gt;&#34; /&gt;
+&lt;/form&gt;
+
+test2.php
+&lt;? //文件名為test2.php
+session_id(&#34;$sid&#34;);
+session_start();
+session_register(&#34;user&#34;);
+session_register(&#34;name&#34;);
+$user=$a1;
+$name=$a2;
+echo $user.&#34;帳號&lt;br&gt;&#34;;
+echo $name.&#34;暱稱&lt;br&gt;&#34;;
+echo &#34;&lt;a href=test3.php?sid=$sid&gt;goto test3.php&lt;/a&gt;&#34;;
+?&gt;
+&lt;form id=&#34;form1&#34; name=&#34;form1&#34; method=&#34;post&#34; action=&#34;test3.php&#34;&gt;
+  &lt;input type=&#34;text&#34; name=&#34;a3&#34; /&gt;測試3
+  &lt;input type=&#34;submit&#34; name=&#34;Submit&#34; value=&#34;輸入&#34; /&gt;
+  &lt;input name=&#34;sid&#34; type=&#34;hidden&#34; value=&#34;&lt;?=$sid;?&gt;&#34; /&gt;
+&lt;/form&gt;
+
+test3.php
+&lt;? //文件名為test3.php
+session_id(&#34;$sid&#34;);
+session_start();
+session_register(&#34;test3&#34;);
+$test3=$a3;
+echo $user.&#34;帳號&lt;br&gt;&#34;;
+echo $name.&#34;暱稱&lt;br&gt;&#34;;
+echo $test3.&#34;test3&lt;br&gt;&#34;;
+echo &#34;&lt;a href=test1.php&gt;goto test1.php &amp; session 消失&lt;/a&gt;&#34;;
+?&gt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.120.76.67
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:session 預設是用檔案處理, 當在量大的時候 XD</span><span class="push-ipdatetime"> 07/19 14:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eecir</span><span class="f3 push-content">:沒辦法,有人堅持要我不能用cookie 只好這樣子弄</span><span class="push-ipdatetime"> 07/19 14:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ast9869</span><span class="f3 push-content">:好像上不是很安全的感覺，知道了$sid後，是不是就可以</span><span class="push-ipdatetime"> 07/19 17:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ast9869</span><span class="f3 push-content">:幹很多事呢？</span><span class="push-ipdatetime"> 07/19 17:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qrtt1</span><span class="f3 push-content">:那你只好寫信database?</span><span class="push-ipdatetime"> 07/19 18:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PRAM</span><span class="f3 push-content">:還是用database處理會較好</span><span class="push-ipdatetime"> 07/21 03:28
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1153288747.A.17B.html?cacheKey=2148-469791773&amp;offset=2032&amp;offset-sig=e458e9b654e1c8dc0001011d80943c27be8e3043" data-longpollurl="/v1/longpoll?id=42ad6cf872244d4ebd2dc23f53b575c243d2e0c1" data-offset="2032"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5f09aff8eb',m:'z7Ana7Wnh8tM75gKL6LDu2RVJSVHJK78xi4_NC8CKZM-1653467494-0-AZSN4PTb1wPacHCGLm1V0VAcFAz4Ja0zSmVylchCAQ8U5AjQog/4kcF8caTjJcq+AeRho4lZ7HqT7MTwafsP5By9bAEVV0YlAJbhvrjlcl7z1Nng5JUXbzIRKcl/p8DPSxlDC2HirGoNUmperfH0RnrSSocsahJ9cbPu+eAtl7c9',s:[0x2fba96ce87,0xb5e9737ca8],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

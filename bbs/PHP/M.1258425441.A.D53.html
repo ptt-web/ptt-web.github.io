@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: php 的 session 運作流程，實驗觀察心得 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="關於session運作原理, 我曾看過某部落格寫得還挺詳細的, 不過一來是
+簡體中文, 二來遣詞用字的習慣跟台灣頗有差異, 所以要看完得多點耐心.
+一回生, 二回熟, 看熟後對於session運作原理的觀念肯定有提升.
+http://blog.chinaunix.net/u/27731/showart_259031.html
+這篇文章應該是原文, 但也可能不知從哪裏轉來的, 大陸的論壇只要一有好
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: php 的 session 運作流程，實驗觀察心得">
+<meta property="og:description" content="關於session運作原理, 我曾看過某部落格寫得還挺詳細的, 不過一來是
+簡體中文, 二來遣詞用字的習慣跟台灣頗有差異, 所以要看完得多點耐心.
+一回生, 二回熟, 看熟後對於session運作原理的觀念肯定有提升.
+http://blog.chinaunix.net/u/27731/showart_259031.html
+這篇文章應該是原文, 但也可能不知從哪裏轉來的, 大陸的論壇只要一有好
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1258425441.A.D53.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">bobju (寶貝豬)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: php 的 session 運作流程，實驗觀察心得</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Nov 17 10:37:17 2009</span></div>
+關於session運作原理, 我曾看過某部落格寫得還挺詳細的, 不過一來是
+
+簡體中文, 二來遣詞用字的習慣跟台灣頗有差異, 所以要看完得多點耐心.
+
+一回生, 二回熟, 看熟後對於session運作原理的觀念肯定有提升.
+
+<a href="http://blog.chinaunix.net/u/27731/showart_259031.html" target="_blank" rel="noreferrer noopener nofollow">http://blog.chinaunix.net/u/27731/showart_259031.html</a>
+
+這篇文章應該是原文, 但也可能不知從哪裏轉來的, 大陸的論壇只要一有好
+
+文, 馬上就被轉貼到到處都是.(這也算是各網站搞流量惡性競爭的關係吧?)
+
+是不是原文就恕不進一步求證了.
+
+這邊我再補充幾點:
+
+1 關於php將 $_SESSION變數的內容 寫入session檔案(或是資料庫)的時機:
+
+  程設師若不在程式當中採用session_write_close()函式處理的話, 那麼
+
+  預設情況就是php script執行完後(包括以exit方式結束), php會自動寫入
+
+  session檔案(當然前提是session要有開).
+
+1.1 session可以檔案形式儲存, 也可存在程設師所自定的媒體(包括資料庫)
+
+    當中, 這是session較進階的應用, 可參考 session_set_save_handler
+
+    , 以下不特別強調的話, 皆以session檔案為討論對象.
+
+2 作業系統記錄session檔案被&#39;讀寫&#39;的時刻:
+
+2.1 php在session初始化(呼叫session_start(),或是在組態中設定自動開啟session)
+
+    時, 會自session檔案將存在裏面的那串資料透過&#34;解序列化&#34;(unserialization)
+
+    程序, 將之載入$_SESSION變數. 這時候, 作業系統會修改session檔案被存取的
+
+    時刻.
+
+2.2 php在php script終結前, 會將$_SESSION變數的內容透過&#34;序列化&#34;(serialization)
+
+    程序, 轉成一段文本字串(格式跟json很像), 寫入session檔案. 這時候, 作業
+
+    系統也會修改session檔案的存取時刻.
+
+3 判斷session檔案是否過期的根據:
+
+  以上 2 要特意提出來, 正是因為session檔案被&#39;讀寫&#39;的時刻, 就是後來php用來
+
+  判斷session檔案是否過期的根據. 判斷方式為:
+
+3.1  session檔案最近被讀寫的時刻 + maxlifetime(單位為秒) &lt; 目前時刻
+
+     符合上述3.1 所描述者, 代表這session檔案已過期. 否則, 代表未過期.
+
+     用戶掛網不動, 自然不會觸動php script, 也就不會觸動php去讀寫其所屬
+
+     的session檔, 作業系統也就不會更新session檔被修改的時刻. 直到php要
+
+     做gc(garbage collection, 垃圾回收, 簡寫為 gc.)時, 就對所有的
+
+     session檔逐個套公式檢查是否過期? 可以想像一下, 如果這是一個萬人
+
+     大站, php要做gc是多麼耗費資源的事, 所以才必須以機率方式
+
+     (用gc_probability及gc_divisor控制發生頻率)來做. 另外, 檔案的讀寫
+
+     效能受限於作業系統, 所以又提供 session_set_save_handler 讓程設師
+
+     可以自訂session的儲存方式: 包括&#39;開啟&#39;,&#39;關閉&#39;,&#39;讀取&#39;,&#39;寫入&#39;,&#39;摧毁&#39;,
+
+     &#39;垃圾回收&#39;的行為定義. (session的實作, 在大型網站上, 用資料庫是優
+
+     於檔案的, 甚至是用記憶體來存session.)
+
+4 關於過期session的處理機制:
+
+  原則上, 用gc_probability, 以及gc_divisor這兩個組態變數來控制發生頻率
+
+  是沒錯. (其實這也很容易理解, 就相當於用rand(1,gc_divisor)取值, 只要
+
+  這個值小於等於gc_probaility, 就bingo了.) 它的運作原理是:
+
+4.1 用戶觸動一個php script, 這個php script要有進行session初始化(就是將
+
+    session檔案的內容載入到$_SESSION變數)的動作才算.
+
+4.2 session初始化完成後, 緊接著php根據gc_probability及gc_divisor所設定
+
+    機率來決定要不要進行gc的動作? 若要清除的話, 則砍除掉所有過期的
+
+    session檔案.
+
+大致上是這樣, 不過session的運作機制若不花點時間還真的有點不太好搞懂. 有
+
+時候run起來&#39;很奇怪&#39;, 多半就是運作上的盲點, 或是還有些細節沒弄清楚.
+
+
+最後貼段程式短碼讓大家玩玩, 看看心裏所想跟實際行為是否一致? :)
+
+&lt;?php
+//執行gc的機率100%, session檔案只要1秒沒動就算逾期.
+ini_set(&#34;session.gc_probability&#34;,1);
+ini_set(&#34;session.gc_divisor&#34;, 1);
+ini_set(&#34;session.gc_maxlifetime&#34;, 1);
+
+session_start();
+
+if(empty($_SESSION[&#39;i&#39;])):
+  $_SESSION[&#39;i&#39;]=0;
+endif;
+
+$_SESSION[&#39;i&#39;]+=1;
+
+echo $_SESSION[&#39;i&#39;];
+
+?&gt;
+
+<span class="f2">※ 引述《megabio (LifeIsKuso)》之銘言：
+</span><span class="f6">: 一切是從這段話開始的 :
+</span><span class="f6">:        &#34;為什麼我修改了 gc_maxlifetime，還是沒有因為閒置而登出呢?&#34;
+</span>(中略)
+<span class="f6">: ★★★ 我們可以想像一下 PHP 的處理過程 ★★★
+</span><span class="f6">: (1) browser A,B,C 都連上 server 開啟 session
+</span><span class="f6">: 並且在 server 的 &#34;/tmp&#34; 當中留下 sess_* 檔案
+</span><span class="f6">: (2) 30 過後，browser A 先重整頁面，對 server 提出連線要求
+</span><span class="f6">: (3) server 檢查 &#34;/tmp&#34; 底下的 sess_* 發現有 browser A 的 session id
+</span><span class="f6">: 於是判定這個 sess_* 不是垃圾
+</span><span class="f6">: (4) 至於其他的 sess_*，由於都已經超過 gc_maxlifetime 沒上來連線
+</span><span class="f6">: 所以這些 sess_* 有 100% 的機率被當成垃圾處理
+</span><span class="f2">※ 編輯: bobju           來自: 58.115.151.184       (11/17 10:42)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1258425441.A.D53.html?cacheKey=2148-469789968&amp;offset=4056&amp;offset-sig=5338821bdd940e29b5734f3abff649b95642bf86" data-longpollurl="/v1/longpoll?id=12f9a4bb8c6985d3f4bccdd74d26ae91590951b8" data-offset="4056"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4da880afd0',m:'8v2PLiQvtyNalnxkunsYqX5_Pbtq2Py_e7ow7AE6rbs-1653467491-0-AV9+9tSvG7eWKPmcc6rF8Q/uYzsYlOk2lBn4ZiA8KsEz0drF8cvmcEHGR9jw3eYq5EdVpk3KOppkiPfBDx5J6tQbqpp+eJKZuTHvMJGIVkK63BPVcuJNkGNskgMNCgWWT91jbwZBfgaXDvRh5tVMZfiqIAf/oj9TdW011Mk4zUyq',s:[0x4c7d60d49a,0x56ea54b5cb],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

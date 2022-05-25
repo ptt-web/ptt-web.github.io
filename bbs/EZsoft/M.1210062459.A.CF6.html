@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 請問網路隱形人真的可以躲過網管追查P2 … - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="mosquito520已經有了精闢的解說，我想在這邊稍稍補充一點
+hideippla似乎是Hide Ip Platium的縮寫
+依照網路上找到的官網，似乎是http://www.hide-ip-soft.com/
+而目前的產品似乎是Hide IP NG (Next Generation)
+這軟體的功能看起來像是自動指派http proxy(代理伺服器)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 請問網路隱形人真的可以躲過網管追查P2 …">
+<meta property="og:description" content="mosquito520已經有了精闢的解說，我想在這邊稍稍補充一點
+hideippla似乎是Hide Ip Platium的縮寫
+依照網路上找到的官網，似乎是http://www.hide-ip-soft.com/
+而目前的產品似乎是Hide IP NG (Next Generation)
+這軟體的功能看起來像是自動指派http proxy(代理伺服器)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1210062459.A.CF6.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">vintw (陽光好青年)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 請問網路隱形人真的可以躲過網管追查P2 …</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue May  6 16:27:36 2008</span></div>
+<span class="f2">※ 引述《steveshu (＊Keep Singing＊)》之銘言：
+</span><span class="f6">: 剛剛在網路上查了一下
+</span><span class="f6">: 有人說hideippla可以躲過網管追查P2P
+</span><span class="f6">: 執行後左下角IP顯示也變了
+</span><span class="f6">: 但我PO文顯示的怎麼還是學校的舊IP = =.....
+</span><span class="f6">: 這真的可以躲過追查嗎@@~~~~~~
+</span><span class="f6">: 請各位高手替我解答我的疑惑.....
+</span>
+mosquito520已經有了精闢的解說，我想在這邊稍稍補充一點
+
+hideippla似乎是Hide Ip Platium的縮寫
+依照網路上找到的官網，似乎是<a href="http://www.hide-ip-soft.com/" target="_blank" rel="noreferrer noopener nofollow">http://www.hide-ip-soft.com/</a>
+而目前的產品似乎是Hide IP NG (Next Generation)
+
+這軟體的功能看起來像是自動指派http proxy(代理伺服器)
+所以只會對http協定有用，上BBS是telnet協定，所以沒用
+至於p2p，絕大多數都是自己的協定，所以也沒用
+
+http的proxy對其他協定沒有用，就跟戴安全帽不能預防感冒一樣XD
+
+至於有人推文提到tor，這是tcp協定的，所以p2p軟體&#34;理論上可以用&#34;
+因為tcp和http是不同層的，p2p底下還是透過tcp/ip在傳
+而且依照tor的設計理念，ip address是可以被隱藏的
+
+但是用tor跑p2p我覺得不要想了，有幾個原因：
+
+1.慢
+封包經過的node越多延遲越大，被tor上面某個點限制住速度的可能也大
+
+2.會被檔
+exit node應該會試著檔p2p協定，雖然PHE等技術應該可以繞過
+
+3.不道德
+這種行為就跟路邊有人奉茶然後你拿10公升的水桶去裝滿帶走一樣...
+
+原po沒有描述清楚，但是我想跳板可能是最好的解
+問題是一般人去哪搞跳板來用XD
+
+--
+CPU: Intel PIII EB 800MHz (Coppermine) / MB: ACER S58M(i815)
+RAM: Apacer PC133 256MB*2 / VGA: Gigabyte ATi 9000pro 64MB DDR
+CD-RW: LiteOn LTR-52327S  / DVD-RW: BenQ DW1640
+HDD: Seagate 7200.7 80G*2 / PSU: AcBel 350W / Case: iCute不知名
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.121.197.213
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xvid</span><span class="f3 push-content">:這篇有推</span><span class="push-ipdatetime"> 05/06 17:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hpo14</span><span class="f3 push-content">:推你的安全帽... XDDD</span><span class="push-ipdatetime"> 05/06 18:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yinjing</span><span class="f3 push-content">:我記得有個網路空間可以幫你下載BT，考慮這個看看？</span><span class="push-ipdatetime"> 05/06 22:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fox726</span><span class="f3 push-content">:freecap+httpproxy也算可以吧...</span><span class="push-ipdatetime"> 05/06 23:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aeolus0829</span><span class="f3 push-content">:3f 提的是 imageshake ?</span><span class="push-ipdatetime"> 05/07 10:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonyhome</span><span class="f3 push-content">:3f指的是seednet最近推出的網路空間吧</span><span class="push-ipdatetime"> 05/07 22:13
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1210062459.A.CF6.html?cacheKey=2148-739025030&amp;offset=2181&amp;offset-sig=6f710eed79a1bf8b9e76def4f34902de19c17b42" data-longpollurl="/v1/longpoll?id=6a468e650f201b8ce5b7dc103f354577c7a7d3c7" data-offset="2181"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb54cab2af2e',m:'2bx682gb10Z4y4LFgl5Tdo.pv77AHMBNjylaQCQ.iNU-1653466878-0-ARXhwdKFegM12oYD+1ZTsZVBdsi0EjnHibf1H3iN87I3f+Sa3AOyhiHdQqz0P0thGwDmuRTvUxKW2KWnbDfsstRUFMGGYfaDCKJtveg/HKUIyQvE8YC2DAFpY6CbjDZVpIl9ud3KAwLywRibgq/uVa8i8/dQdKb36F33fV4Ub5kN',s:[0x6d0dd2b929,0x259398ca17],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] php語法 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="Warning: mysql_num_fields(): supplied argument is not a valid MySQL
+result resource in C:\AppServ\www\new3.php on line 7
+Warning: mysql_fetch_row(): supplied argument is not a valid MySQL
+result resource in C:\AppServ\www\new3.php on line 10
+&lt;?php
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] php語法">
+<meta property="og:description" content="Warning: mysql_num_fields(): supplied argument is not a valid MySQL
+result resource in C:\AppServ\www\new3.php on line 7
+Warning: mysql_fetch_row(): supplied argument is not a valid MySQL
+result resource in C:\AppServ\www\new3.php on line 10
+&lt;?php
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1349531660.A.972.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">artorius (嵐)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] php語法</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Oct  6 21:54:16 2012</span></div>
+Warning: mysql_num_fields(): supplied argument is not a valid MySQL
+
+result resource in C:\AppServ\www\new3.php on line 7
+
+Warning: mysql_fetch_row(): supplied argument is not a valid MySQL
+
+result resource in C:\AppServ\www\new3.php on line 10
+
+
+
+&lt;?php
+  $db=mysql_connect(&#39;localhost&#39;,&#39;root&#39;,&#39;密碼&#39;) or die(&#39;無法連上資料庫伺服器&#39;);
+  mysql_select_db(&#34;test&#34;,$db) or die(&#39;無法連上資料庫&#39;);
+  $sql=&#34;select * from test where id=1&#34;;
+  $result=mysql_query($sql,$db);
+  $no_fields=mysql_num_fields($result);&lt;---有問題
+
+  echo &#34;&lt;table border=3&gt;&#34;;
+  while($x=mysql_fetch_row($result)){ &lt;----有問題
+     echo &#34;&lt;tr&gt;&#34;;
+     for($j=0;$j&lt;$no_fields;$j++)
+        echo &#34;&lt;td&gt; $x[$j]&lt;/td&gt;&#34;;
+     echo &#34;&lt;/tr&gt;&#34;;
+  }
+  echo &#34;&lt;/table&gt;&#34;;
+  mysql_close($db);
+?&gt;
+
+懇請大大指點迷津一下,搞了好久都不行
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 36.237.172.129
+<span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 21:55)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:sql 語法怪怪的 from table where id=1</span><span class="push-ipdatetime"> 10/06 21:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:看了你錯誤訊息 你SQL語法寫錯啦 多練習吧</span><span class="push-ipdatetime"> 10/06 21:56
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 21:59)
+</span><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:00)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">artorius</span><span class="f3 push-content">:qq 還是不行 還是錯在7跟10行</span><span class="push-ipdatetime"> 10/06 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:你沒改對阿</span><span class="push-ipdatetime"> 10/06 22:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:擬資料表的名子是啥</span><span class="push-ipdatetime"> 10/06 22:02
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:02)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:select * from table where id=1</span><span class="push-ipdatetime"> 10/06 22:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">artorius</span><span class="f3 push-content">:不是錯在那邊,那邊我有改了! 改了還是不行</span><span class="push-ipdatetime"> 10/06 22:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:test 那邊應該沒引號</span><span class="push-ipdatetime"> 10/06 22:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">artorius</span><span class="f3 push-content">:樓上你可以試看看有引號還是可以代出來,我印字可以</span><span class="push-ipdatetime"> 10/06 22:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">artorius</span><span class="f3 push-content">:我只是要把表格跟欄位一起帶出來,那邊不行</span><span class="push-ipdatetime"> 10/06 22:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:我是說你SQL語法裡面的TEST</span><span class="push-ipdatetime"> 10/06 22:13
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:27)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">:錯在table不該做為資料表的名稱………</span><span class="push-ipdatetime"> 10/06 22:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">scribeTW</span><span class="f3 push-content">:mysql_close($db); 移到最後一行看看</span><span class="push-ipdatetime"> 10/06 22:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">:疑啊！我看到推文1以為原PO是打table為資料表名………</span><span class="push-ipdatetime"> 10/06 22:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">:原PO引號內的分號有拿掉嗎？</span><span class="push-ipdatetime"> 10/06 22:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:這錯誤訊息感覺就是SQL語法有問題..</span><span class="push-ipdatetime"> 10/06 22:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:他原本是寫select* from id=1</span><span class="push-ipdatetime"> 10/06 22:37
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:37)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:後來改select * from &#39;test&#39; where id=1</span><span class="push-ipdatetime"> 10/06 22:37
+</span></div>&lt;?php
+  $link = mysql_connect(&#39;localhost&#39;,&#39;root&#39;,&#39;密碼&#39;) or die(&#39;無法連上資料庫伺服器&#39;);
+  mysql_query(&#34;test&#34;) or die(&#39;無法連上資料庫&#39;);
+  $sqlstr=&#34;select filename from test01 where id = 3&#34;;
+  $result=mysql_query($sqlstr,$link);
+  echo &#34;&lt;td&gt;&#34;.$row[$i].&#34;&lt;/td&gt;&#34;;
+
+
+?&gt;
+上面先不要看,我這邊重新再打一個,變成無法連線到資料庫
+<span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:39)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:你在還沒執行前 就mysql_close($db)..</span><span class="push-ipdatetime"> 10/06 22:38
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:40)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:mysql_query(&#34;test&#34;,$link) or die(&#39;無法連上資料庫&#39;);</span><span class="push-ipdatetime"> 10/06 22:40
+</span></div>改了還是不能連資料庫ㄟ&gt;_&lt;
+<span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:48)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:上面無視 因為我說錯了 你原文的碼應該能跑了吧</span><span class="push-ipdatetime"> 10/06 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vivi50218</span><span class="f3 push-content">:mysql_query 這個事返回你的查詢結果 我剛眼花沒看清楚</span><span class="push-ipdatetime"> 10/06 22:54
+</span></div><span class="f2">※ 編輯: artorius        來自: 36.237.172.129       (10/06 22:58)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">schoolpopo</span><span class="f3 push-content">:where id = &#39;3&#39;要加上單引號</span><span class="push-ipdatetime"> 10/08 11:43
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1349531660.A.972.html?cacheKey=2148-469785079&amp;offset=4271&amp;offset-sig=2232038db4cb8fa4a497a19899809f0fad8bee7a" data-longpollurl="/v1/longpoll?id=b740dce87698ac98b1c25a6166d2c02602806758" data-offset="4271"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4faf158a27',m:'GRfPTsXg1LXZHnHZ9NXQN3sPkBUcyzefbjj7wRgXpe8-1653467491-0-AZ96J2VJR370sDe2fznHZbNMItun0WN4bz3k19VzamQveNDg3Komz8ofU1/3tpXPzFAaxjbkkWRFXaY6HYk/svKj/INQ1UZPA0OAYynoIIgSkMBIgUFr2EwHLU37lR4dA3TNB7jLtLoSOtiv29kaCwmeraFiiKkeJ1vcBEJJ7mrP',s:[0x0b997550c0,0xa385d65e57],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 在請教一下javascript全域變數跟區域變數 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="插一下嘴, JavaScript可是沒有&#34;全域變數&#34;這種東西(至少在掛在瀏覽器裡的JavaScript
+是這樣)
+例如你在top level宣告了一個變數為X的話
+就於為window這個物件加了一個名為X的property
+所有top level的Data都在window物件下面喔
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 在請教一下javascript全域變數跟區域變數">
+<meta property="og:description" content="插一下嘴, JavaScript可是沒有&#34;全域變數&#34;這種東西(至少在掛在瀏覽器裡的JavaScript
+是這樣)
+例如你在top level宣告了一個變數為X的話
+就於為window這個物件加了一個名為X的property
+所有top level的Data都在window物件下面喔
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1154118742.A.2F2.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">elan (IE是最棒的瀏覽器)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 在請教一下javascript全域變數跟區域變數</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jul 29 04:41:42 2006</span></div>
+<span class="f2">※ 引述《alpe (薛丁格的貓)》之銘言：
+</span><span class="f6">: ※ 引述《kicksmile (aa)》之銘言：
+</span><span class="f6">: : javascript好像不容許在function裡讀取外面的全域變數
+</span>
+插一下嘴, JavaScript可是沒有&#34;全域變數&#34;這種東西(至少在掛在瀏覽器裡的JavaScript
+是這樣)
+
+例如你在top level宣告了一個變數為X的話
+就於為window這個物件加了一個名為X的property
+所有top level的Data都在window物件下面喔
+甚至連&#39;window&#39;這個東西也是屬於我們瀏覽器裡無名&#34;視窗物件&#34;的一個property
+(一個 self-reference)
+
+<span class="f6">: 可以啊~~
+</span><span class="f6">: &lt;html&gt;&lt;head&gt;&lt;title&gt; TEST &lt;/title&gt;
+</span><span class="f6">: &lt;script&gt;
+</span><span class="f6">: var cun = 1;
+</span><span class="f6">: function countG(){cun += 1;return ;}
+</span><span class="f6">: &lt;/script&gt;
+</span><span class="f6">: &lt;/head&gt;&lt;body&gt;&lt;button onclick=&#39;countG();alert(cun)&#39;&gt;test&lt;/button&gt;
+</span><span class="f6">: &lt;/body&gt;&lt;/html&gt;
+</span><span class="f6">: 很正常啊... ..
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.131.6.24
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">elan</span><span class="f3 push-content">:如果你以window為base scope, 說&#34;全域變數&#34;也可以理解啦</span><span class="push-ipdatetime"> 07/29 04:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">elan</span><span class="f3 push-content">:這樣的話和其他程式語言的全域變數定義是不一樣的</span><span class="push-ipdatetime"> 07/29 04:45
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1154118742.A.2F2.html?cacheKey=2149-475745801&amp;offset=1056&amp;offset-sig=8265484a967c413e0a1fb481b35b4e47e1fe7792" data-longpollurl="/v1/longpoll?id=b61d6ba5ac78a5709b65793d6314a6117ac0e2b3" data-offset="1056"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c2db48af5e',m:'0.DGylwtcRDy4bwSV2OAf2ckAmiylTnMUnBgo4lIdJs-1653467469-0-AT0bX1FpDjTcKuVlai5zy4uC9dP8M7rcsfO2EHM5Pe5DRRnpz5wAgZ/BU05Zjq0baXP20KRH5HWXmpBcq1jJObLeAV9WWC8SrI0IkR8HHmUOB2XfY4caawEZjNyRvk67eaa1AWonxW2sWjSEffegTUBXnZl8XvAQe9IB7IiB2bZI',s:[0xce7ee23397,0x70441d3730],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:chweng - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=3&amp;q=author%3Achweng">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Achweng">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Achweng">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:chweng" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1257051154.A.06C.html">[請益] 如何在螢幕上顯示「所有」錯誤訊息</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E8%9E%A2%E5%B9%95%E4%B8%8A%E9%A1%AF%E7%A4%BA%E3%80%8C%E6%89%80%E6%9C%89%E3%80%8D%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1245255115.A.4FE.html">Re: [請益] APPserv的入門</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;APPserv%E7%9A%84%E5%85%A5%E9%96%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/18</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1227525718.A.EBE.html">[請益] 有針對 regexp 逸出字串的 function 嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%87%9D%E5%B0%8D&#43;regexp&#43;%E9%80%B8%E5%87%BA%E5%AD%97%E4%B8%B2%E7%9A%84&#43;function&#43;%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1226975925.A.F6A.html">Re: [請益] 如何搜尋XML並依照條件刪除整個child?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E6%90%9C%E5%B0%8BXML%E4%B8%A6%E4%BE%9D%E7%85%A7%E6%A2%9D%E4%BB%B6%E5%88%AA%E9%99%A4%E6%95%B4%E5%80%8Bchild%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1225954986.A.A90.html">[請益] 正規表示法的問題（已修改，敬請指教）</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E5%95%8F%E9%A1%8C%EF%BC%88%E5%B7%B2%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%95%AC%E8%AB%8B%E6%8C%87%E6%95%99%EF%BC%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1221583209.A.CF8.html">Re: [請益] utf-8的二進制轉中文</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;utf-8%E7%9A%84%E4%BA%8C%E9%80%B2%E5%88%B6%E8%BD%89%E4%B8%AD%E6%96%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1221550095.A.C82.html">Re: [請益] utf-8的二進制轉中文</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;utf-8%E7%9A%84%E4%BA%8C%E9%80%B2%E5%88%B6%E8%BD%89%E4%B8%AD%E6%96%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1220107549.A.02F.html">Re: [請益] 關於傳檔給client端</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BC%E5%82%B3%E6%AA%94%E7%B5%A6client%E7%AB%AF">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1214090287.A.1EB.html">Re: [請益] PHP有辦法執行於cmd(命令提示字元)下嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%E6%9C%89%E8%BE%A6%E6%B3%95%E5%9F%B7%E8%A1%8C%E6%96%BCcmd%28%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E5%AD%97%E5%85%83%29%E4%B8%8B%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1212149769.A.DA3.html">[請益] 如何在每個連線請求時先執行特定程式</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E6%AF%8F%E5%80%8B%E9%80%A3%E7%B7%9A%E8%AB%8B%E6%B1%82%E6%99%82%E5%85%88%E5%9F%B7%E8%A1%8C%E7%89%B9%E5%AE%9A%E7%A8%8B%E5%BC%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1208157008.A.DAE.html">[問題] 如何有效率地大量取代字串？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%8E%87%E5%9C%B0%E5%A4%A7%E9%87%8F%E5%8F%96%E4%BB%A3%E5%AD%97%E4%B8%B2%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1204857361.A.F6B.html">Re: [請益] 如何做迴圈從資料庫中取出所要的資料?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%81%9A%E8%BF%B4%E5%9C%88%E5%BE%9E%E8%B3%87%E6%96%99%E5%BA%AB%E4%B8%AD%E5%8F%96%E5%87%BA%E6%89%80%E8%A6%81%E7%9A%84%E8%B3%87%E6%96%99%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1200797716.A.107.html">[請益] 日期時間轉換問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%97%A5%E6%9C%9F%E6%99%82%E9%96%93%E8%BD%89%E6%8F%9B%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1200045901.A.F2C.html">[請益] 我想替換掉php5內建的iconv...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%88%91%E6%83%B3%E6%9B%BF%E6%8F%9B%E6%8E%89php5%E5%85%A7%E5%BB%BA%E7%9A%84iconv...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1191917947.A.377.html">Re: [請益] echo能不能呼叫出radio??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;echo%E8%83%BD%E4%B8%8D%E8%83%BD%E5%91%BC%E5%8F%AB%E5%87%BAradio%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1189599085.A.38A.html">Re: [請益] 新手的基本問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%96%B0%E6%89%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1187714006.A.3BB.html">Re: [請益] apache安裝error</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;apache%E5%AE%89%E8%A3%9Derror">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1187239750.A.EC7.html">Re: [請益] 有關 form 的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%97%9C&#43;form&#43;%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1184679488.A.2FA.html">[請益] 有點複雜的問題（內詳）</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%BB%9E%E8%A4%87%E9%9B%9C%E7%9A%84%E5%95%8F%E9%A1%8C%EF%BC%88%E5%85%A7%E8%A9%B3%EF%BC%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1181404318.A.420.html">Re: [請益] 一大串文字，請問在資料庫當中怎麼放？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">chweng</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%80%E5%A4%A7%E4%B8%B2%E6%96%87%E5%AD%97%EF%BC%8C%E8%AB%8B%E5%95%8F%E5%9C%A8%E8%B3%87%E6%96%99%E5%BA%AB%E7%95%B6%E4%B8%AD%E6%80%8E%E9%BA%BC%E6%94%BE%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Achweng">搜尋看板內 chweng 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa58ee614d0',m:'MiV779YKYM7mj5qpR4TkDqAvcKA0bNyQjtCdZ9ej_U4-1653467505-0-AZSC3t8bMQwq8+/OMhXg+DaEnPfwzTI2XahJQhhJ6BjgfV5pMf2ut7VgGmdl0s0SVmWbSPwGCEv1dCcROJBP0OK3ecxsQQxZJZQtjSV9kXxAm4teG5iIcyr2IhxQOe70GHsK8WJiY/89f/EMNj4NhkesNs8yaS0Et0amMiaIOxMg',s:[0xda0bd93087,0xc63d9b3cd1],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

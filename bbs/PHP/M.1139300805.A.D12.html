@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 計數器試作遇到個很奇怪的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我想試作一個計數器的小程式，但遇到一個小小的問題。
+廢話不多說先把程式碼PO出來給各位大大瞧瞧
+&lt;?
+        //宣告0~1的圖形Html語法
+        for($i=0; $i&lt;10; $i++)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 計數器試作遇到個很奇怪的問題">
+<meta property="og:description" content="我想試作一個計數器的小程式，但遇到一個小小的問題。
+廢話不多說先把程式碼PO出來給各位大大瞧瞧
+&lt;?
+        //宣告0~1的圖形Html語法
+        for($i=0; $i&lt;10; $i++)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1139300805.A.D12.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">blackbing (blackbing)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 計數器試作遇到個很奇怪的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Feb  7 16:46:38 2006</span></div>
+<span class="hl">我想試作一個計數器的小程式，但遇到一個小小的問題。
+</span><span class="hl">廢話不多說先把程式碼PO出來給各位大大瞧瞧</span>
+&lt;?
+        //宣告0~1的圖形Html語法
+        for($i=0; $i&lt;10; $i++)
+                $count_image[$i]=&#34;&lt;img src=\&#34;image/num/&#34;.$i.&#34;.gif\&#34; /&gt;\r&#34;;
+        <span class="f3 hl">//計數的圖形存在image/num資料夾中0~9.gif</span>
+        session_start();
+        session_register(&#34;ip&#34;);//註冊一個變數
+        $counts = file_get_contents(&#34;data/counter.txt&#34;);//從檔案讀取計數
+
+        if($ip!=$REMOTE_ADDR)//如果session中的變數！＝使用者IP
+        {
+                $counts++;      //計數+1
+                $ip=$REMOTE_ADDR;       //再把使用者IP存入session的變數
+        }
+        file_put_contents(&#34;data/counter.txt&#34;,$counts); //把計數存入檔案
+        <span class="f3 hl">//計數存在data資料夾底下的counter.txt檔案裡頭</span>
+        $count_string = str_repeat($count_image[0],8-strlen($counts));
+        <span class="f3 hl">//我的問題是在底下這一個for迴圈中$counts[$i]的值竟然是空的</span>
+        <span class="f3 hl">//但是我試過如果在$counts++之前echo $counts[0]是正常的</span>
+        <span class="f3 hl">//但我在$counts++之後$counts[0]卻是空值</span>
+        <span class="f3 hl">//不知道有沒有大大能知道這是怎麼一回事@@</span>
+        <span class="hl">for($i=0; $i&lt;strlen($counts); $i++)
+</span><span class="hl">        {
+</span><span class="hl">                $count_string .= $count_image[$counts[$i]];
+</span><span class="hl">        }</span>
+        echo &#34;&lt;div align=center&gt;&#34;;
+        echo &#34;此畫面總共被瀏覽過：&#34;. $count_string.&#34;次&#34;;
+        echo &#34;&lt;/div&gt;&#34;;
+?&gt;
+        <span class="f3 hl">還有，這些問題都是出在第一次開啟瀏覽器時才會發生</span>
+        <span class="f3 hl">也就是說如果我重新整理瀏覽器，計數都會是正常顯示</span>
+        <span class="f3 hl">怪就怪在第一次開啟瀏覽器時為何$counts[0]是空值？？？</span>
+        <span class="f3 hl">而且$counts也是正常的喔</span>
+        <span class="f3 hl">不好意思我試了好久，而且感覺很簡單的東西卻一直卡在這</span>
+        <span class="f3 hl">先謝謝各位大大了</span>
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.127.22.18
+<span class="f2">※ 編輯: blackbing       來自: 140.127.22.18        (02/07 16:54)
+</span><span class="f2">※ 編輯: blackbing       來自: 140.127.22.18        (02/07 16:55)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fillano</span><span class="f3 push-content">:請先確定一下你的php版本。file_put_contents函數到php5才</span><span class="push-ipdatetime"> 02/07 18:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">fillano</span><span class="f3 push-content">:支援喔</span><span class="push-ipdatetime"> 02/07 18:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">blackbing</span><span class="f3 push-content">:有~確定是可以的!!</span><span class="push-ipdatetime"> 02/09 03:25
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1139300805.A.D12.html?cacheKey=2148-469793331&amp;offset=2332&amp;offset-sig=aae06fe2bae5039c005bba2224029fe2b9826b85" data-longpollurl="/v1/longpoll?id=1f66c0ee6abb8986ba659a3be5a71f7f44bf2c32" data-offset="2332"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea99c831807e',m:'3jhU1QgeVefMEZjHi1Mw2mVhyRCZUWr19a84uOufeIA-1653467503-0-AatlR4v5YIIt+mhmTNBOHw/UESDkDhtNpawROQLxgTafbMS088gtoIFwLBLgOTh/+Krd7QZuu9BgRsTqsR/E4fvhbtrqj9QqIc1gjH7s4OE0xov6v9upKo/JrLEHSmhFA5DS0JfHdSJBXtEA7aE1huXwxWNUFZ3Hoi5Bbo0rZKvN',s:[0x6e4c35b486,0x50a818a00b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

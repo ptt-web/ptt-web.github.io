@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 請問PHP關於重複登入.. - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="提供一個想法好了,雖然好像有點費功夫!
+1.使用者登入時,就把該使用者的資訊記錄下來
+  (例如:使用者一登入,把使用者帳號和它登入的電腦IP記錄在一個暫時的資料表)
+  註:在記錄使用者資訊到暫時的資料表前,先查詢使用者資料是否已存在,若已存在,
+  先將原本的資料刪除後才做記錄的動作!
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 請問PHP關於重複登入..">
+<meta property="og:description" content="提供一個想法好了,雖然好像有點費功夫!
+1.使用者登入時,就把該使用者的資訊記錄下來
+  (例如:使用者一登入,把使用者帳號和它登入的電腦IP記錄在一個暫時的資料表)
+  註:在記錄使用者資訊到暫時的資料表前,先查詢使用者資料是否已存在,若已存在,
+  先將原本的資料刪除後才做記錄的動作!
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1136602237.A.47E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">GreatPig (大豬)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 請問PHP關於重複登入..</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jan  7 11:05:39 2006</span></div>
+<span class="f2">※ 引述《accordingto (Knoppix)》之銘言：
+</span><span class="f6">: 各位大大好，請問一下，
+</span><span class="f6">: 我用PHP設計好一個登入介面了，
+</span><span class="f6">: 登入後用SESSION記錄並提供一些會員功能。
+</span><span class="f6">: 但是我發現在不同電腦上，使用者可以重複登入，
+</span><span class="f6">: 請問是否有辦法設定讓使用者在A電腦登入後，
+</span><span class="f6">: 同樣帳號密碼在B電腦登入時，
+</span><span class="f6">: 把A電腦的登入資訊取消掉呢..?
+</span><span class="f6">: 因為不知道該怎麼做....煩請給我一點方向，謝謝～
+</span><span class="f6">: ※ 編輯: accordingto     來自: 220.139.81.64        (01/01 21:31)
+</span><span class="f6">: 推 yohong:Application                                              01/01 22:05
+</span>
+
+提供一個想法好了,雖然好像有點費功夫!
+
+1.使用者登入時,就把該使用者的資訊記錄下來
+  (例如:使用者一登入,把使用者帳號和它登入的電腦IP記錄在一個暫時的資料表)
+
+  註:在記錄使用者資訊到暫時的資料表前,先查詢使用者資料是否已存在,若已存在,
+  先將原本的資料刪除後才做記錄的動作!
+
+2.在每個頁面的程式碼最前面加一個檢查的功能,檢查使用者帳號和電腦IP是否存在暫時
+  的資料表內,如果帳號和電腦IP都存在,則可以繼續執行;如果帳號或電腦IP其中一者不
+  存在,則將這個使用者強制登出!!
+
+好像寫的有點亂,希望你看的懂,還是有人有較好的方法方分享一下^^
+
+
+--
+我的相簿
+<a href="http://photo.xuite.net/farfar" target="_blank" rel="noreferrer noopener nofollow">http://photo.xuite.net/farfar</a>
+
+
+我的布拉格
+<a href="http://blog.xuite.net/farfar/blog" target="_blank" rel="noreferrer noopener nofollow">http://blog.xuite.net/farfar/blog</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 221.169.235.154
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1136602237.A.47E.html?cacheKey=2149-475719229&amp;offset=1273&amp;offset-sig=28181cad80a9ee484149adda12daf71d668468fb" data-longpollurl="/v1/longpoll?id=3f2b0a7ccae96037eabd8d0aa3f25d22c6477328" data-offset="1273"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c728d8afe5',m:'_zt3pwUxkC7FcJJ2Tf4IOLPvDp2kl3eYEplA2hIWzwM-1653467469-0-Aciw9VrzehzWg6rTYmx9FJhTVkXX1BCtio3JgRemq4fWcRvVU+4Ucu4AkCIl0YaDNVojYWw/wf9JX4ZEmj96mcauX9ztp2jqv3lr7aj7ynctMZHfTPXFIeTyqmZGoUip+qE5/Dlk+4i08Gep0y4J6UHredVcIbqFciyyfvWcDSZL',s:[0xda0bd93087,0x4f8f8b5245],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

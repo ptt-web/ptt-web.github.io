@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] win XP 底下 架站的人數上限的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="WindowsXP Win2000 p版僅有在IIS上有session限制
+如果是自行安裝apache 則沒有任何限制
+但是由於winxp的記憶體配置管理不佳，因此效能上會遠不如win2k3
+因此若要使用win平台架站，建議還事2003會比較適合
+另外，apache記得要選擇apache2，該版較適合win平台執行
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] win XP 底下 架站的人數上限的問題">
+<meta property="og:description" content="WindowsXP Win2000 p版僅有在IIS上有session限制
+如果是自行安裝apache 則沒有任何限制
+但是由於winxp的記憶體配置管理不佳，因此效能上會遠不如win2k3
+因此若要使用win平台架站，建議還事2003會比較適合
+另外，apache記得要選擇apache2，該版較適合win平台執行
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1132648002.A.386.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ckmarkhsu (深藍站長)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] win XP 底下 架站的人數上限的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Nov 22 16:29:13 2005</span></div>
+WindowsXP Win2000 p版僅有在IIS上有session限制
+
+如果是自行安裝apache 則沒有任何限制
+
+但是由於winxp的記憶體配置管理不佳，因此效能上會遠不如win2k3
+
+因此若要使用win平台架站，建議還事2003會比較適合
+
+另外，apache記得要選擇apache2，該版較適合win平台執行
+
+實測經驗，p4 2.4 + 1G + win2k3 + mysql4.0 + apache2 + php4.4
+
+以 vBB的論壇系統環境，450人同時在線仍舊非常順暢
+
+<span class="f2">※ 引述《pply (彭彭彭^^)》之銘言：
+</span><span class="f6">: ※ 引述《eugg (狂歡 是一個人的孤單)》之銘言：
+</span><span class="f6">: : 因為xp底下用 IIS架站
+</span><span class="f6">: : 同一時間只能有十個人連線進來
+</span><span class="f6">: : 他的十個人的定義是十個人同時在存取嗎？
+</span><span class="f6">: : 一般網頁不是看到的時候就已經結束存取了？
+</span><span class="f6">: : 請問一下各位前輩，如果我改用 appche架站 (appserv+xoops)
+</span><span class="f6">: : 還會不會用十人人數上限的問題呢？
+</span><span class="f6">: : 如果還有的話，該怎麼解決呢？&gt; &lt;
+</span><span class="f6">: : 先謝謝啦！&lt;m(_ _)m&gt;
+</span><span class="f6">: 伺服器一般透過 session 來辨識使用者是否在線上
+</span><span class="f6">: 使用者關掉視窗一陣子之後 session 就會消失 , 這時間也可以你自己設定
+</span><span class="f6">: 我不是很確定所謂 WinXP 連線數目限制到底限制了哪些東西
+</span><span class="f6">: 但以我的經驗來看
+</span><span class="f6">: 這件事情應該不會阻礙到你架設一般流量的網站
+</span><span class="f6">: 很久以前我寫過一個網站 , 現在已經停止運作
+</span><span class="f6">: 曾經一天容下兩萬五千名訪客 , 將近 五十萬個 Page View
+</span><span class="f6">: 是用 WinXP + Tomcat + JSP
+</span><span class="f6">: 不過更久以前我用 WinXP + IIS + ASP 寫過一個連署系統
+</span><span class="f6">: 確實沒幾個人上線就會出現連線數過多的訊息....Orz...
+</span><span class="f6">: 實際的狀況我不是很清楚
+</span><span class="f6">: 僅提供經驗讓你參考..~~~~
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.112.249.201
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eugg</span><span class="f3 push-content">:感謝！</span><span class="push-ipdatetime"> 11/23 00:53
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1132648002.A.386.html?cacheKey=2149-475716097&amp;offset=1558&amp;offset-sig=ee848ecacb7dc561efe0e9977cec297af787f463" data-longpollurl="/v1/longpoll?id=a4ebafcd6d23673f38000360b36440d7b7d22036" data-offset="1558"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce99adc25afd0',m:'L7zccASbAZBorKWqqf8N.Z6WGsKui24vUOqoOIniIEE-1653467462-0-AcAjkDcKKHZSZdE8AGuJWsYsY9DmDDyjz1ISATPK+U4P/9RPa4qNa9X7+LN/YCQxPX2IYiMdISFzbC0OWU1hQBF5uvK5CcvviixchUKC0TJ6+yqP+Wp4C7BOJmddrAmhqK2/wSZqJC/zoc7ZVXpn+XU1BHXETrGoiP6Eth0y6usf',s:[0x91b9b977d6,0x8923a046e3],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

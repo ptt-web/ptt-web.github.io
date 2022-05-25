@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[推薦] 拖曳簡體CHM至此cmd即可閱讀 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="軟體名稱：
+拖曳簡體CHM至此即可閱讀
+軟體資訊：
+正體中文系統下正確顯示chm檔 / XP(Vista未測試) / 免安裝、但須有applocal / 67Byte
+軟體功能：
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[推薦] 拖曳簡體CHM至此cmd即可閱讀">
+<meta property="og:description" content="軟體名稱：
+拖曳簡體CHM至此即可閱讀
+軟體資訊：
+正體中文系統下正確顯示chm檔 / XP(Vista未測試) / 免安裝、但須有applocal / 67Byte
+軟體功能：
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1213596000.A.638.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">newclicker (Newclicker)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[推薦] 拖曳簡體CHM至此cmd即可閱讀</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jun 16 13:59:59 2008</span></div>
+<span class="f2 hl">軟體名稱：</span>
+
+拖曳簡體CHM至此即可閱讀
+
+<span class="f2 hl">軟體資訊：</span>
+
+正體中文系統下正確顯示chm檔 / XP(Vista未測試) / 免安裝、但須有applocal / 67Byte
+
+<span class="f2 hl">軟體功能：</span>
+
+    許多電子書往往是簡體的chm檔，但在正體中文系統下開啟時往往不是顯示不完整、
+連結錯誤、不然就是無法顯示頁面。CHM是「Compiled Help Manual」的簡寫，即
+「已編譯的幫助文件」。CHM是微軟幫助文件格式，利用HTML作來源，把內容以類似數據
+庫的形式編譯儲存。
+
+    為何簡體的chm會顯示錯誤？這往往是因為該chm在製作時內部的資源檔或是連結是以
+簡體做為檔名或目錄名，以至於正體中文系統無法識別其編碼，雖然說可以用7-zip將
+chm裡面的檔案解出來，但散落一地的資料閱讀起來總是不如已編譯好的單檔chm方便。
+
+    若要將chm解出來的檔案轉換成正體中文雖然不是太難，但若
+要再利用工具編譯回單檔chm則還是得自己重建chm的目錄和索引關鍵字。遇到目錄
+結構比較複雜、彼此連來連去的，光是關鍵字的索引重建就讓人看了倒彈，想說只是想
+閱讀簡體的chm檔，簡體的文字也還看的過去，難道沒有更簡單的方法嗎?
+
+    這時候大家就會想到微軟的applocal，但開啟chm的程式是windows下的hh.exe，本身
+並沒有任何介面的，無法直接以applocal開啟hh.exe再以hh.exe開啟該簡體chm，除非寫
+捷徑，但是若要針對每一個自己擁有的chm檔寫一個捷徑，這還不打緊，倘若該檔案路徑
+改變，則捷徑就無效了得重寫一個，難道沒有其他好方法嗎?
+
+    有的，只要按照以下內容自己寫一個CMD檔，未來有任何無法正確顯示簡體的chm檔，
+只要將該檔拖曳到CMD檔上，即可正確顯示簡體的內容了。
+
+<span class="f2 hl">軟體特色：</span>
+
+    特色就是能正確顯示原本無法閱讀之簡體chm檔，簡化使用以applocal開啟的步驟。
+
+缺點是：
+        <span class="f3 hl">1. 你必須已經有安裝了applocal
+</span><span class="f3 hl">        2. 簡體chm檔名和其存放路徑必須皆為英文或數字</span>
+           因為路徑和檔名似乎applocal也會做轉換，若含有中文的話就會開啟失敗
+
+<span class="f2 hl">下載連結：</span>
+<a href="http://www.badongo.com/file/9910285" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/file/9910285</a>
+
+以下是內容，簡單寫寫，堪用而已。
+/L0804是applocal對簡體語系的編號，改成別的就可以支援別的語系(如日文)
+
+@echo off
+echo 1. 你必須已經有安裝了applocal
+echo 2. 簡體chm檔名和其存放路徑必須皆為英文或數字
+cd\
+C:\WINDOWS\AppPatch\AppLoc.exe &#34;C:\WINDOWS\hh.exe&#34; %1 &#34;/L0804&#34;
+
+推薦原因：
+
+自己的經驗中最省事的方法
+
+誰適合用：
+
+不符合以下條件的人都適用吧?
+
+誰不適合用：
+
+1.堅持非正體中文不看的人
+2.堅持不把簡體chm檔名和其存放路徑改為只有英文或數字的人
+3.堅持不灌或無法灌(例如2k系統)applocal、或piap applocal的人
+4.永遠不會遇到無法顯示的chm檔的人
+
+使用感想：
+
+寫的很簡單，有興趣的人可以寫個判斷式讓提醒訊息只有在執行錯誤才顯示
+
+附註：
+
+希望沒OP
+
+<span class="f2">本著作依據 Creative Commons 姓名標示-非商業性-相同方式分享 授權條款為授權</span>
+<span class="b2 hl"><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/tw/" target="_blank" rel="noreferrer noopener nofollow">http://creativecommons.org/licenses/by-nc-sa/2.0/tw/</a>                     </span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 118.166.251.27
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Bencrie</span><span class="f3 push-content">:既然都已經@echo off了，下面兩行的@就可以免了。</span><span class="push-ipdatetime"> 06/16 14:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">newclicker</span><span class="f3 push-content">:XD...手也變笨了，謝謝，修改一下，雖然不影響功能^^</span><span class="push-ipdatetime"> 06/16 15:40
+</span></div><span class="f2">※ 編輯: newclicker      來自: 118.166.251.27       (06/16 15:40)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">upupchang</span><span class="f3 push-content">:實用</span><span class="push-ipdatetime"> 06/16 17:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">doe</span><span class="f3 push-content">:很實用!推!</span><span class="push-ipdatetime"> 06/17 10:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">george755185</span><span class="f3 push-content">:推薦一個火狐的套件也可以開CHM，最近出了給fx3的</span><span class="push-ipdatetime"> 06/17 11:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tonyhome</span><span class="f3 push-content">:我之前都是放到rar壓縮檔裡面 然後用papplocale開winrar</span><span class="push-ipdatetime"> 06/17 22:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonyhome</span><span class="f3 push-content">:直接點兩下 解出來看</span><span class="push-ipdatetime"> 06/17 22:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fabled</span><span class="f3 push-content">:推一個</span><span class="push-ipdatetime"> 06/18 17:25
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1213596000.A.638.html?cacheKey=2148-739021607&amp;offset=3562&amp;offset-sig=92435ffd9157aacfb3c45101722fe49b498ff6a1" data-longpollurl="/v1/longpoll?id=f0c59dd990e0c706d26ead2e2185ef6789f83d0e" data-offset="3562"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb704974204a',m:'CbH2DVgtSPPvEJqZXSrtdfEcJolafLDjPDAPlG87nP0-1653466882-0-AZip8jKAVupDvG7KRheGUCBgEaAhzXuikns3b2vflxTOHUOcWYfPjIDLfmUhGs9x4WGKoC6SmklKxVW5jBsW1d3gHxL8bnO9fCtsYudK3MQGlmm6R4V8bTxFI3M0+jU5kF7JHPSen9Aamcdp470VS/HxDrhO5DmCtkbn1El0q7Ah',s:[0x2fba96ce87,0x4f8f8b5245],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

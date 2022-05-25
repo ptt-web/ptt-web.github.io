@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[心得] 針對初學者的一些觀念建立...有錯誤請指教 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="因為想說 php 這程式滿容易學習的，所以小弟以之前在網上都可以看到的
+&#34;十天學會&#34;系列中的&#34;十天學會php&#34;當作基礎本
+若是作者覺得不妥請直接跟小弟說，小弟會殺除所有的文章
+然而我有以一個論壇當成討論版若是大家有問題可以進入此論壇指教
+http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144722&amp;page=1
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[心得] 針對初學者的一些觀念建立...有錯誤請指教">
+<meta property="og:description" content="因為想說 php 這程式滿容易學習的，所以小弟以之前在網上都可以看到的
+&#34;十天學會&#34;系列中的&#34;十天學會php&#34;當作基礎本
+若是作者覺得不妥請直接跟小弟說，小弟會殺除所有的文章
+然而我有以一個論壇當成討論版若是大家有問題可以進入此論壇指教
+http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144722&amp;page=1
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1135338087.A.A29.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ztw ( )</span></div><div class="article-metaline-right"><span class="article-meta-tag">站內</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[心得] 針對初學者的一些觀念建立...有錯誤請指教</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Dec 23 19:50:42 2005</span></div>
+因為想說 php 這程式滿容易學習的，所以小弟以之前在網上都可以看到的
+&#34;十天學會&#34;系列中的&#34;十天學會php&#34;當作基礎本
+若是作者覺得不妥請直接跟小弟說，小弟會殺除所有的文章
+
+然而我有以一個論壇當成討論版若是大家有問題可以進入此論壇指教
+<a href="http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144722&amp;page=1" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/viewthread.php?tid=17020&amp;j2pid=144722&amp;page=1</a>
+
+此為十天學會php 的第一天討論串文章
+首先說明相關架構，我儘可能會每天推出一天的內容，就最簡單的方式捕述
+我會先以此篇貼出原文，再以回覆方式說明可以說明的內容
+若是我有重要的地方沒有說明到希望前輩也可以一起說明
+讓想要學習的新手可以更容易了解，也希望若是我有說錯的地方，希望前輩可以跟我說
+別讓我誤人子弟嚕 ^_^
+
+原文如下：  (小弟所看到此篇文章時，已經是轉貼文無作者名，抱歉!!)
+
+以前寫了十天學會ASP，十天學會ASP.NET什麼的，現在想想再寫個PHP吧，也算比較全了
+。
+PHP的除錯方法我這裡就不說了，外面很多文章都有介紹，也有很多不同的群組合。
+我這裡暫時是以 Apache web server 和 MY SQL 作為WEB伺服器和資料庫，在php-4.3.3下
+的環境做的程式。當然要簡單的構建和訪問檢視資料庫 PHPMYADMIN 不可少。
+
+  至於表單設計什麼的，我這裡也不想多說了，在《十天學會ASP》中已經有介紹。
+
+  下面簡單介紹一下PHP的語法。
+
+  1、內嵌方法：
+
+  類似ASP的&lt;%，PHP可以是&lt;?php或是是&lt;?，結束符號是?&gt;，當然您也可以自己指定。
+
+  2、引用檔案：
+
+  引用檔案的方法有兩種：require 及 include。
+  require 的使用方法如 require(&#34;MyRequireFile.php&#34;); 。
+  這個函數通常放在 PHP 程式的最前面，PHP 程式在執行前，就會先讀入 require
+  所指定引入的檔案，使它變成 PHP 程式網頁的一部份。常用的函數，亦可以這個方法
+  將它引入網頁中。
+
+  include 使用方法如 include(&#34;MyIncludeFile.php&#34;); 。這個函數一般是放在
+  流程控制的處理部分中。PHP 程式網頁在讀到 include 的檔案時，才將它讀進來。
+  這種模式，可以把程式執行時的流程簡單化。
+
+  3、註釋方法：
+
+  &lt;?php
+  echo &#34;這是第一種例子。\n&#34; ; // 本例是 C++ 語法的註釋
+  /* 本例採用多行的
+  註釋模式 */
+  echo &#34;這是第二種例子。\n&#34; ;
+
+  echo &#34;這是第三種例子。\n&#34; ; # 本例使用 UNIX Shell 語法註釋
+  ?&gt;
+
+  4、變量類型：
+
+  $mystring = &#34;我是字串&#34; ;
+  $NewLine = &#34;換行了\n&#34; ;
+  $int1 = 38 ;
+  $float1 = 1.732 ;
+  $float2 = 1.4E+2 ;
+  $MyArray1 = array( &#34;子&#34; , &#34;丑&#34; , &#34;寅&#34; , &#34;卯&#34; );
+
+  這裡引出兩個問題，首先PHP變量以$開頭，第二PHP語句以;結尾，可能ASP程式員會
+  不適應。這兩個遺漏也是程式上大多錯誤所在。
+
+  5、運算符號：
+
+  數學運算： 符號 意義
+  +  加法運算
+  -  減法運算
+  *  乘法運算
+  /  除法運算
+  %  取餘數
+  ++  累加
+  --  遞減
+
+  字串運算：
+
+  運算符號只有一個，就是英文的句號。它可以將字串連線起來，變成合併的新字串。
+  類似ASP中的&amp;
+  &lt;?
+
+  $a = &#34;PHP 4&#34; ;
+  $b = &#34;功能強大&#34; ;
+  echo $a.$b;
+  ?&gt;
+  這裡也引出兩個問題，首先PHP中輸出語句是echo，第二類似ASP中的&lt;%=變量%&gt;，
+  PHP中也可以&lt;?=變量?    &gt;。
+
+  邏輯運算：
+
+  符號 意義
+  &lt;  小於
+  &gt;  大於
+  &lt;=  小於或等於
+  &gt;=  大於或等於
+  ==  等於
+  !=  不等於
+  &amp;&amp;  而且 (And)
+  and  而且 (And)
+  ||  或是 (Or)
+  or  或是 (Or)
+  xor  異或 (Xor)
+  !  不 (Not)
+
+  今天就說到這裡，明天說一下流程控制。
+
+--
+討論是你我教學相長的機會
+UO-小築  <a href="http://uniorg.net/" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/</a>  讓我們一同喜愛這討論空間
+喜歡他的話  別忘了推薦給大家...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.73.23.169
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EAFV</span><span class="f3 push-content">:不要用&lt;? ?&gt; 用&lt;?php ?&gt;比較好,不然以後要跟xml整合很麻煩</span><span class="push-ipdatetime"> 12/23 21:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ztw</span><span class="f3 push-content">:嗯嗯   謝謝前輩的指教</span><span class="push-ipdatetime"> 12/23 22:02
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1135338087.A.A29.html?cacheKey=2148-469789525&amp;offset=3290&amp;offset-sig=26ba375431cea1876095d091a8dc26fdd2bd66a4" data-longpollurl="/v1/longpoll?id=d6f0a0da5030c67a4efdc169e85da6da039e1058" data-offset="3290"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab3dc6daf60',m:'syuEkRpkki2dxvozxYYawlkg2UcN3xmRO0gevJuphI8-1653467507-0-AbkYjr/uHbg4GbmXK5vvtiI+Qu0xlVMAI7B8odRrroeUDRX82p7l3Bl8FoxBh+mS7Pe9FeCYPoB1RtqZVn48bJl9KR8GQlLF3KU9d7g3PDEAGu0LITMleY+3ZvfkgVwTSbdYNRMHcXYDvuanLT78gu/L7WUNNaryzF7MnAv51a5x',s:[0xc947fc2196,0xe372a91afe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

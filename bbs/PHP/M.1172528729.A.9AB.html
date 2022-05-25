@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 有關投票的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這邊改成這樣似乎會比較好
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;A&#39;&gt;A
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;B&#39;&gt;B
+你後端接收的時候就用一個變數去接收
+ex:
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 有關投票的問題">
+<meta property="og:description" content="這邊改成這樣似乎會比較好
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;A&#39;&gt;A
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;B&#39;&gt;B
+你後端接收的時候就用一個變數去接收
+ex:
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1172528729.A.9AB.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">arzbar (程式小案 ASP PHP)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 有關投票的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Feb 27 06:25:26 2007</span></div>
+<span class="f2">※ 引述《Conanspe (晃‧盪‧穿‧梭)》之銘言：
+</span><span class="f6">: ※ 引述《eric770715 (北極熊)》之銘言：
+</span><span class="f6">: :     會有什麼錯誤呢?可以說一下嗎，這個應該不算不正常存取MySQL吧~!
+</span><span class="f6">:    謝謝各位大大的解答 :)
+</span><span class="f6">:    我用前兩位大大的說法另外寫了ㄧ個簡單的投票小程式
+</span><span class="f6">:    不考慮+1和存入Sql過程中依些存取的問題
+</span><span class="f6">:    兩者方法都能成功的把票數+1
+</span><span class="f6">:   再比較我原本的程式
+</span><span class="f6">:   所以問題應該不在之前問的那些了
+</span><span class="f6">:   我原本的程式 對於&#34;給使用者的投票選項&#34;不是寫死在code裡的
+</span><span class="f6">:   而是在選項出來之前
+</span><span class="f6">:   會先詢問使用者ㄧ道問題
+</span><span class="f6">:   然後根據問題的解答再列出ㄧ些選項(也就是給使用者的投票選項)
+</span><span class="f6">:   而我選項那邊就不是像類似這樣寫
+</span><span class="f6">:  &lt;input type=checkbox name=&#39;test&#39; value=&#39;A&#39;&gt;A
+</span><span class="f6">:  &lt;input type=checkbox name=&#39;test&#39; value=&#39;B&#39;&gt;B
+</span><span class="f6">:   ....
+</span><span class="f6">:   而是先跑for迴圈把符合的選項列出來
+</span><span class="f6">:   再以checkbox的形式給使用者勾選
+</span><span class="f6">:   &lt;input type =checkbox name=&#34;choice&#34; value=&#34;$i&#34;&gt;
+</span><span class="f6">:   會是因為這個問題嗎?
+</span><span class="f6">:   ㄧ開始我的選項就不是寫好在code中
+</span><span class="f6">:   會先經過ㄧ次的SQL比對 以陣列的方式ㄧㄧ把選項列出來
+</span><span class="f6">:   (我選項比對後列出來 是ok的)
+</span><span class="f6">:   要在submit之後 action的那ㄧ頁
+</span><span class="f6">:   需要再做什麼動作 把什麼變數接收過去之類的
+</span><span class="f6">:   目前是沒error出現
+</span><span class="f6">:   但是counter值沒增加 且echo出來的都是1
+</span>
+這邊改成這樣似乎會比較好
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;A&#39;&gt;A
+  &lt;input type=checkbox name=&#39;test[]&#39; value=&#39;B&#39;&gt;B
+你後端接收的時候就用一個變數去接收
+ex:
+
+$test=$_POST[&#39;test&#39;];
+
+如此一來，你的$test 就是一個 array ...
+你可以用 for OR foreach 來去處理前端勾的值然後做SQL的處理...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.126.172.96
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Conanspe</span><span class="f3 push-content">:問題已經解決囉~ 感謝所有給予建議的大大們^_____^</span><span class="push-ipdatetime"> 02/27 15:36
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1172528729.A.9AB.html?cacheKey=2148-469794853&amp;offset=1654&amp;offset-sig=4cdb158a13c30d0e20861766d12e1aec48a7653f" data-longpollurl="/v1/longpoll?id=c9445d74e64bf960d317e467eca5ae41a68642f1" data-offset="1654"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab93b95af54',m:'Jp442sfy9GdPvEHvraUZYHeYgLKISpZaL5TjxyqH3zQ-1653467508-0-AapnUEp9Q3gtZdMIVY2UrffkjZqFgrelXX+ASGxK+fkviPskc7ZrAx86Z53l29ai64TQeNhC2DDkHqzfjDsgD3/chZdEZv3gYC+V+AvMHqHULKDHq0Zo/5zcvTF8pug8l+RueFutNWt7vYQewxwKx/HdI2E1JtcsBIKNPZ4kUW5/',s:[0xb5ff1eb682,0x3f7f6c3df4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

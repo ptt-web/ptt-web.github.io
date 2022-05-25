@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] json_decode後的資料如何使用? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="$content = file_get_contents($siteurl);
+$data = json_decode($content);
+echo $data[0]-&gt;title.&#34; &#34;.$data[0]-&gt;showinfo[0]-&gt;time;
+資料都出不來，是用法有錯誤嗎?
+用print_r顯示$data的結果(只貼上第一筆)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] json_decode後的資料如何使用?">
+<meta property="og:description" content="$content = file_get_contents($siteurl);
+$data = json_decode($content);
+echo $data[0]-&gt;title.&#34; &#34;.$data[0]-&gt;showinfo[0]-&gt;time;
+資料都出不來，是用法有錯誤嗎?
+用print_r顯示$data的結果(只貼上第一筆)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1394417172.A.2E9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">keisuke08 (車市回溫了嗎?回溫在哪裡)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] json_decode後的資料如何使用?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Mar 10 10:06:09 2014</span></div>
+
+$content = file_get_contents($siteurl);
+$data = json_decode($content);
+
+echo $data[0]-&gt;title.&#34; &#34;.$data[0]-&gt;showinfo[0]-&gt;time;
+資料都出不來，是用法有錯誤嗎?
+
+
+
+用print_r顯示$data的結果(只貼上第一筆)
+Array
+(
+    [0] =&gt; stdClass Object
+        (
+            [version] =&gt; 1.4
+            [UID] =&gt; 526aa481e44da0ea8d4168c4
+            [title] =&gt; 2014TIFA－拉布蘭之心人聲音樂會
+            [category] =&gt; 1
+            [showInfo] =&gt; Array
+                (
+                    [0] =&gt; stdClass Object
+                        (
+                            [time] =&gt; 2014/03/07 19:30:00
+                            [location] =&gt; 台北市中山南路21-1號
+                            [locationName] =&gt; 國家演奏廳
+                            [onSales] =&gt; Y
+                            [price] =&gt; 400,500
+                            [latitude] =&gt; 25.0348366
+                            [longitude] =&gt; 121.5176314
+                        )
+
+                    [1] =&gt; stdClass Object
+                        (
+                            [time] =&gt; 2014/03/08 19:30:00
+                            [location] =&gt; 台北市中山南路21-1號
+                            [locationName] =&gt; 國家演奏廳
+                            [onSales] =&gt; Y
+                            [price] =&gt; 400,500
+                            [latitude] =&gt; 25.0348366
+                            [longitude] =&gt; 121.5176314
+                        )
+
+                )
+
+            [showUnit] =&gt;
+            [discountInfo] =&gt;
+            [descriptionFilterHtml] =&gt;
+            [imageUrl] =&gt;
+            [masterUnit] =&gt; Array
+                (
+                    [0] =&gt; 國立中正文化中心
+                )
+
+            [subUnit] =&gt; Array
+                (
+                    [0] =&gt;
+                )
+
+            [supportUnit] =&gt; Array
+                (
+                    [0] =&gt;
+                )
+
+            [otherUnit] =&gt; Array
+                (
+                    [0] =&gt; 主要藝文支持：JTI
+                )
+
+            [webSales] =&gt;
+<a href="http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID=oK4bYlG1GfzBcHkQto2QJ" target="_blank" rel="noreferrer noopener nofollow">http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID=oK4bYlG1GfzBcHkQto2QJ</a>
+            [sourceWebPromote] =&gt; <a href="http://tifa.ntch.edu.tw/" target="_blank" rel="noreferrer noopener nofollow">http://tifa.ntch.edu.tw/</a>
+            [comment] =&gt;
+            [editModifyDate] =&gt; 2013/10/28 14:46:13
+            [sourceWebName] =&gt; 兩廳院售票網
+            [startDate] =&gt; 2014/03/07
+            [endDate] =&gt; 2014/03/08
+            [status] =&gt; success
+            [total] =&gt; 111
+        )
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.124.108.82
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">liaosankai</span><span class="f3 push-content">:先 json_decode($content, true); 試試</span><span class="push-ipdatetime"> 03/10 10:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rainlay</span><span class="f3 push-content">:同樓上 解完後用陣列方式取</span><span class="push-ipdatetime"> 03/10 10:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:stdObject 取值方式是 $object-&gt;column_name</span><span class="push-ipdatetime"> 03/10 10:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:json_decode 不見得需要轉成 array 就純粹使用差異</span><span class="push-ipdatetime"> 03/10 10:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:另外就是建議用 foreach 去列舉資料</span><span class="push-ipdatetime"> 03/10 10:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:因為如果直接 $object[0]-&gt;object2[0]-&gt;column_name</span><span class="push-ipdatetime"> 03/10 11:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:在部分資料不齊全下會報錯</span><span class="push-ipdatetime"> 03/10 11:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:json_decode 預設是解成物件, 不過個人使用經驗上解成陣列</span><span class="push-ipdatetime"> 03/10 11:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:比較方便使用, 因為解成物件的話 底下可能會有物件包陣列的</span><span class="push-ipdatetime"> 03/10 11:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:情形 資料形態不一致 處理起來很雜很討厭</span><span class="push-ipdatetime"> 03/10 11:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:1樓的做法是解成陣列的做法 我也會這麼做</span><span class="push-ipdatetime"> 03/10 11:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tails32100</span><span class="f3 push-content">:我會用預設的，因為還是可以用foreach取</span><span class="push-ipdatetime"> 03/10 11:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tails32100</span><span class="f3 push-content">:另外，開發中只要出錯，就會知道取值的方式錯誤了</span><span class="push-ipdatetime"> 03/10 11:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tails32100</span><span class="f3 push-content">:Array通常要用foreach, Object通常是要個別取值</span><span class="push-ipdatetime"> 03/10 11:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tails32100</span><span class="f3 push-content">:當然這只是習慣問題啦, 其實兩個方法都可以用XD</span><span class="push-ipdatetime"> 03/10 11:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:這不光是習慣問題而已, 解成陣列的確比物件好處理得多 尤其</span><span class="push-ipdatetime"> 03/10 13:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:若是不均勻的多層樹 或是需要遞迴處理的 物件夾雜陣列的結構</span><span class="push-ipdatetime"> 03/10 13:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:真的會搞死人</span><span class="push-ipdatetime"> 03/10 13:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">liaosankai</span><span class="f3 push-content">:↑樓上+1，最近被遞迴樹搞到XD</span><span class="push-ipdatetime"> 03/10 13:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">keisuke08</span><span class="f3 push-content">:感謝各位回覆，已解決，轉成陣列方式好用很多!!!</span><span class="push-ipdatetime"> 03/10 17:48
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1394417172.A.2E9.html?cacheKey=2148-469799419&amp;offset=4649&amp;offset-sig=38a82c1f61c808b255ce4d31db677b267a8c04d1" data-longpollurl="/v1/longpoll?id=a99664e3eca496164dba6de625563a545a024c60" data-offset="4649"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea54688aafe5',m:'QMu6pGwflPOC9_CmRnWbN4Xm5eWOkG3Pmvo9Xh5oQzE-1653467492-0-AcUG267A00hqZYkUIGNovXEgSZX7sqkYkKAAOw5nRf+c/IIZkwshql+xiCGwZPaOOGVt4npv2lVHWjYF0ULK4rVB/pQcEfzMTvzOVfGQ6bWo8cyWUjGPPbpbPURxN4FrTovhftkIY1BvRMzPDFDjJO4HRT/t0fFWE3puUug4uxvh',s:[0x8feb1ca785,0xe1a91d73dc],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

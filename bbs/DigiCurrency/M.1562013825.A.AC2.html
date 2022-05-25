@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [發錢] 往下競標不灑幣~Bitcoin原來的fee market - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="最近行情又起來了，老問題又來了，BTC又處於禮拜一一到就開始塞車的狀態。
+就趁這個機會來講一下BTC的手續費要如何往上競標，也就用Replace-by-Fee加手續費。
+然後再順便講一下BCH往下競標的手續費要怎麼發出交易。
+首先可以先到下面的網站看BTC塞車實況，不過通常禮拜一到禮拜五都是塞車啦。
+https://jochen-hoenicke.de/queue/#24h
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [發錢] 往下競標不灑幣~Bitcoin原來的fee market">
+<meta property="og:description" content="最近行情又起來了，老問題又來了，BTC又處於禮拜一一到就開始塞車的狀態。
+就趁這個機會來講一下BTC的手續費要如何往上競標，也就用Replace-by-Fee加手續費。
+然後再順便講一下BCH往下競標的手續費要怎麼發出交易。
+首先可以先到下面的網站看BTC塞車實況，不過通常禮拜一到禮拜五都是塞車啦。
+https://jochen-hoenicke.de/queue/#24h
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1562013825.A.AC2.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">DarkerDuck (達克鴨)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [發錢] 往下競標不灑幣~Bitcoin原來的fee market</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jul  2 04:43:43 2019</span></div>
+最近行情又起來了，老問題又來了，BTC又處於禮拜一一到就開始塞車的狀態。
+
+就趁這個機會來講一下BTC的手續費要如何往上競標，也就用Replace-by-Fee加手續費。
+
+然後再順便講一下BCH往下競標的手續費要怎麼發出交易。
+
+首先可以先到下面的網站看BTC塞車實況，不過通常禮拜一到禮拜五都是塞車啦。
+
+<a href="https://jochen-hoenicke.de/queue/#24h" target="_blank" rel="noreferrer noopener nofollow">https://jochen-hoenicke.de/queue/#24h</a>
+
+Y軸越高通常代表塞車越嚴重，顏色越接近紅紫色則是手續費越高。
+
+下面網站也可以給出建議手續費：
+
+<a href="https://bitcoinfees.earn.com/" target="_blank" rel="noreferrer noopener nofollow">https://bitcoinfees.earn.com/</a>
+<a href="https://mempool.space/" target="_blank" rel="noreferrer noopener nofollow">https://mempool.space/</a>
+
+假如你詳細知道你的交易的類型，可用下面的專業計算機
+<a href="https://www.buybitcoinworldwide.com/fee-calculator/" target="_blank" rel="noreferrer noopener nofollow">https://www.buybitcoinworldwide.com/fee-calculator/</a>
+
+通常手續費是用sat/byte來計算，假如是segwit交易就會變成sat/WU才準
+
+但是因為這是個雙盲競標的市場，你根本無法預測下一個區塊產生前大家會如何競標。
+
+所以除非你願意用超額的高價手續費，否則時常會有交易卡住的時候。
+
+這個時候就要感謝，Peter Todd的偉大發明，Replace-by-Fee。
+
+繼這個偉大創見後，他最近還一直認為BTC應該要有通膨呢，大家就拭目以待囉。
+
+這邊就以Electrum這個BTC桌面輕錢包當範例。
+<a href="https://electrum.org/" target="_blank" rel="noreferrer noopener nofollow">https://electrum.org/</a>
+
+手機錢包的話則可以使用blockstream的APP錢包
+<a href="https://blockstream.com/green/" target="_blank" rel="noreferrer noopener nofollow">https://blockstream.com/green/</a>
+
+都可以完整支援RBF功能。
+
+首先請確定錢包的Replace-by-Fee功能有打開
+<a href="https://i.imgur.com/mDJm2Bb.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/mDJm2Bb.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/mDJm2Bbl.png?e=1653668234&amp;s=NiBsJjcIbL9hVBft7fovdg" alt="" loading="lazy" /></div>
+打開後隨便傳個 1sat/byte的交易來試試看
+<a href="https://i.imgur.com/eIHGvti.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/eIHGvti.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/eIHGvtil.png?e=1653647076&amp;s=l8D7MiIG2z223FNxXhSQ1Q" alt="" loading="lazy" /></div>
+這個時候當然是卡住囉，然後就開始往上競標囉，在未確認交易按下滑鼠右鍵
+=提高手續費=
+<a href="https://i.imgur.com/h7GrtGs.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/h7GrtGs.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/h7GrtGsl.png?e=1653668122&amp;s=Js2U6r6_Oy3u8fg-U1-6og" alt="" loading="lazy" /></div>
+輸入一個更高的手續費就可以了
+<a href="https://i.imgur.com/isAzQm7.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/isAzQm7.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/isAzQm7l.png?e=1653626158&amp;s=urx5rIy42EgQVS-3tpNIrg" alt="" loading="lazy" /></div>
+當然這個RBF只適用於自己發出的交易，像是一般交易所發出的交易通常就沒辦法了。
+
+若可以選擇手續費且是有時效性的交易，最好還是不要省，衝了。
+
+
+而在往下競標的Bitcoin Cash，
+
+基本上只要用預設最便宜的手續費就可以保證在下一個區塊被確認。
+
+所以基本上沒有任何調整預設手續費的必要。
+
+唯一有需要調手續費的時候是真的想要讓手續費便宜到沒感覺，那麼我們可以往下競標。
+
+雖然在Bitcoin Cash的roadmap已經有提到Fractional Satoshis Fee
+<a href="https://www.bitcoincash.org/roadmap.html" target="_blank" rel="noreferrer noopener nofollow">https://www.bitcoincash.org/roadmap.html</a>
+
+但是目前只有Bitcoin Unlimited有實作，所以必須連結Bitcoin Unlimited節點才可以。
+
+這邊就以electron cash當作範例
+<a href="https://electroncash.org/" target="_blank" rel="noreferrer noopener nofollow">https://electroncash.org/</a>
+
+首先因為目前只有Bitcoin Unlimited有實作，所以要先連到BU的full node。
+
+目前確認jochen-hoenicke.de的節點是有支援的。
+<a href="https://i.imgur.com/AAv9odk.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/AAv9odk.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/AAv9odkl.png?e=1653617693&amp;s=-G4S1_YyP_th6k72eA19dg" alt="" loading="lazy" /></div>
+然後完全自訂手續費要打開
+<a href="https://i.imgur.com/yVT6S3b.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/yVT6S3b.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/yVT6S3bl.png?e=1653625771&amp;s=SVL0vmvahzI5dZaLv8GsHg" alt="" loading="lazy" /></div>
+這個時候就可以來傳一筆試試看了。
+但是拉到最左邊也才1 sat/byte。整筆交易還是要185 sat啊。
+<a href="https://i.imgur.com/QvtHKHS.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/QvtHKHS.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/QvtHKHSl.png?e=1653644601&amp;s=-kZ5fAL65JJsDzd3WsajUA" alt="" loading="lazy" /></div>
+不用擔心，可以直接到右邊輸入框&#34;直接輸入&#34;想要的手續費。
+既然要最低，當然就是輸入1sat就好囉。
+<a href="https://i.imgur.com/EiCOVzH.png" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/EiCOVzH.png</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/EiCOVzHl.png?e=1653648580&amp;s=6Dph_0N16p_zwKVjznANPQ" alt="" loading="lazy" /></div>
+按下確認警告視窗，交易送出完成。
+
+但是要非常注意，因為絕大部分礦工都不是跑Bitcoin Unlimited。
+
+這使得這種非標準手續費可能要花上數天的時間才會被確認。
+
+若不是像是捐款等完全沒時限需求的交易。
+
+還是建議最低用 1sat/byte 送出交易就好。
+--
+simpleledger:qryeahexpqszdt9ffech6jhxu6wsfp0fnyhgd44ahf
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 111.255.213.246 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1562013825.A.AC2.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1562013825.A.AC2.html</a>
+</span>939字 * 8星 = 7512PCH  <a href="https://tinyurl.com/y2yozqnr" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/y2yozqnr</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">TellthEtRee</span><span class="f3 push-content">: 推 先推再來慢慢研究!</span><span class="push-ipdatetime"> 07/02 05:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b24333666</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 06:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">monserx123</span><span class="f3 push-content">: 我都用預設，虧大了。</span><span class="push-ipdatetime"> 07/02 06:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sdtty</span><span class="f3 push-content">: 支付手續費能那麼低，這點真的羨慕</span><span class="push-ipdatetime"> 07/02 06:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jorden</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 07:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wilson50152</span><span class="f3 push-content">: 版主真的沒在睡的欸XDDD</span><span class="push-ipdatetime"> 07/02 07:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 謝謝實務性的解說</span><span class="push-ipdatetime"> 07/02 07:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Lun0103</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 07:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">itsdelovely</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 08:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">skasia886</span><span class="f3 push-content">: 上次也是塞車塞到to the moon</span><span class="push-ipdatetime"> 07/02 09:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">skasia886</span><span class="f3 push-content">: all in</span><span class="push-ipdatetime"> 07/02 09:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john801110</span><span class="f3 push-content">: 板主不是要開新串嗎@@</span><span class="push-ipdatetime"> 07/02 09:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sdtty</span><span class="f3 push-content">: 還在準備黑btc的新文章阿</span><span class="push-ipdatetime"> 07/02 09:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Songla08</span><span class="f3 push-content">: 這年頭講出事實=黑</span><span class="push-ipdatetime"> 07/02 09:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 這年頭講出事實=黑   +1</span><span class="push-ipdatetime"> 07/02 11:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">harryeli</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 11:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wsp151515</span><span class="f3 push-content">: 歐印bch</span><span class="push-ipdatetime"> 07/02 16:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">trleee</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 18:13
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.82.145 臺灣), 07/04/2019 03:59:34
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jaceda</span><span class="f3 push-content">: 推~</span><span class="push-ipdatetime"> 11/15 20:27
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1562013825.A.AC2.html?cacheKey=2148-150104606&amp;offset=5051&amp;offset-sig=788a212ffb5bd2fa74bb673c58b3bed37216839b" data-longpollurl="/v1/longpoll?id=cb51a8490c4b551ec5a53cdb0a6eeb137ccd5c3a" data-offset="5051"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce23fe967809b',m:'57mdmJGgh762HcKlnPHiRfNRjFTEc9iwDaxmcRm8We8-1653467161-0-AYtwOkTWw0f7bLE3V0aoSqseWgynlpItRerpZiNhZwP62k70YqvdUNE9Jm92Lv91y4A9NQrNGkl2GYoCSOT6zRbWm5JIBhf4ZzXJ359ihefU5vBTsv5EYh6bWf2e7HzGfBDDWi98TlBsZYmIZcgFmwRHX2qoT/dsriuNYJyXYaxL',s:[0xd5a84225a9,0xfe3e69a42a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

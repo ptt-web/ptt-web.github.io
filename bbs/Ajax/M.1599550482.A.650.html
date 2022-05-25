@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[教學] JavaScript 演算法：二元搜尋實作與分析 - 看板 Ajax - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="大家好，我是彭彭 ~
+今天 9/8 週二晚上 9 點鐘，我會在線上進行一次直播教學活動
+主題是【JavaScript 演算法：二元搜尋法的實作與分析】
+想邀請版上的朋友來參加
+直播網址：https://youtu.be/6pK7E8abp6g
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[教學] JavaScript 演算法：二元搜尋實作與分析">
+<meta property="og:description" content="大家好，我是彭彭 ~
+今天 9/8 週二晚上 9 點鐘，我會在線上進行一次直播教學活動
+主題是【JavaScript 演算法：二元搜尋法的實作與分析】
+想邀請版上的朋友來參加
+直播網址：https://youtu.be/6pK7E8abp6g
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Ajax/M.1599550482.A.650.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Ajax/index.html"><span class="board-label">看板 </span>Ajax</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Ajax/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">pply ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Ajax</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[教學] JavaScript 演算法：二元搜尋實作與分析</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Sep  8 15:34:39 2020</span></div>
+大家好，我是彭彭 ~
+
+今天 9/8 週二晚上 9 點鐘，我會在線上進行一次直播教學活動
+主題是【JavaScript 演算法：二元搜尋法的實作與分析】
+
+想邀請版上的朋友來參加
+直播網址：<a href="https://youtu.be/6pK7E8abp6g" target="_blank" rel="noreferrer noopener nofollow">https://youtu.be/6pK7E8abp6g</a>
+<div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/6pK7E8abp6g" frameborder="0" allowfullscreen></iframe></div></div></div>有興趣參與的話，建議可以設定提醒哦 ~
+
+雖然前端的開發比較用不上這些知識
+但我們都知道對經典資料結構和演算法的熟悉程度，一直是軟體工程師的核心能力
+
+一起努力往前走吧 :)
+<a href="https://training.pada-x.com/" target="_blank" rel="noreferrer noopener nofollow">https://training.pada-x.com/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 111.240.216.140 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/Ajax/M.1599550482.A.650.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/Ajax/M.1599550482.A.650.html</a>
+</span><span class="f2">※ 編輯: pply (111.240.216.140 臺灣), 09/08/2020 15:35:38
+</span><span class="f2">※ 編輯: pply (111.240.212.46 臺灣), 11/27/2020 18:03:29
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Ajax/M.1599550482.A.650.html?cacheKey=2148-470185812&amp;offset=740&amp;offset-sig=5fdcc4a8dc8e0981682c07a3dcdb57c5abb70d21" data-longpollurl="/v1/longpoll?id=60209bb6f48e444b2b1e53bbd34b4b2d2aa39163" data-offset="740"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce941c9cc807e',m:'eDa5Z1_15dILZrx3I4EvbDhNRLxlI6bmLO7Lig479Rg-1653467448-0-AZOwXcS75HpWFOCJPuvHiCIQ2k7vcE6WkUgFhJE+/IGE5Hsx6tuLR79PZs0Y2Aqj9Mi/i3z3ujqTsQZZDKR5TXWVrpLQzE6uJWaflhGSOGYZIwQq8i2t+j7L1VNIcPbxk5byuryZlcjmnflQmn4I5HdgLDwbODQ5FcgowHZvvlEs',s:[0x341aeb1760,0x2abe011b05],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

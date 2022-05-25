@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: 求助~PHP上傳圖片的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="  PHP可能看不懂*.*
+  我是用eregi(&#34;/.jpg$/, $File) 來判別檔名,
+  不過或許這個也很好用: $_FILES[&#39;userfile&#39;][&#39;type&#39;]
+--
+※ 發信站: 批踢踢實業坊(ptt.cc) 
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: 求助~PHP上傳圖片的問題">
+<meta property="og:description" content="  PHP可能看不懂*.*
+  我是用eregi(&#34;/.jpg$/, $File) 來判別檔名,
+  不過或許這個也很好用: $_FILES[&#39;userfile&#39;][&#39;type&#39;]
+--
+※ 發信站: 批踢踢實業坊(ptt.cc) 
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1092146663.A.253.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">liwedol (海豚飯店)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: 求助~PHP上傳圖片的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Aug 10 22:11:01 2004</span></div>
+<span class="f2">※ 引述《jupiter86001 (案)》之銘言：
+</span><span class="f6">: 抱歉請問一個問題
+</span><span class="f6">: 如果我想檢查上傳的檔案是不是jpg或gif檔的話
+</span><span class="f6">: 應該怎樣檢查呢??
+</span><span class="f6">: code
+</span><span class="f6">: if($File == &#34;*.jpg&#34; || $File == &#34;*.gif&#34;)
+</span><span class="f6">:       {
+</span><span class="f6">:          echo &#34;上傳成功!&lt;p&gt;&#34;;
+</span><span class="f6">:          rename($File,$File_RE);
+</span><span class="f6">:          $sql=&#34;INSERT INTO data(ID,File,Date)
+</span><span class="f6">:            values(&#39;$ID&#39;,&#39;$File_RE&#39;,&#39;$Date&#39;)&#34;;
+</span><span class="f6">:          mysql_query($sql);
+</span><span class="f6">:          echo &#34;&lt;img src=&#34;.$File_RE.&#34;&gt;&#34;;
+</span><span class="f6">:       }
+</span><span class="f6">:       else
+</span><span class="f6">:          echo &#34;上傳失敗!檔名不符!&lt;p&gt;&#34;;
+</span><span class="f6">: 我們現在是這樣寫的 但是都是顯示上傳失敗的訊息
+</span><span class="f6">: 我想問題可能出在if的判斷式
+</span><span class="f6">: 但是一直改不出來  請教各位 謝謝
+</span>
+  PHP可能看不懂*.*
+  我是用eregi(&#34;/.jpg$/, $File) 來判別檔名,
+  不過或許這個也很好用: $_FILES[&#39;userfile&#39;][&#39;type&#39;]
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 210.85.180.85
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1092146663.A.253.html?cacheKey=2149-475707916&amp;offset=873&amp;offset-sig=af837e8b2d7e0e7c9fc8c73c2de1681a1bf6cc01" data-longpollurl="/v1/longpoll?id=4d1111d8548f1f0d750c5c962e780e59772abafc" data-offset="873"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce97afe4fb00c',m:'DYQIj7VwpcIJsOSqpTwHpTrTvQLyj_mBhKH_t5Q5SGM-1653467457-0-ARG8ptIFGi4Rbnci9GaQXkS3LnGXyL97qcvHnAVK+thh081oMuVpssyO6wouHD/ChXgx7+U1VSByud9rXFIOPkT+6PI4+AqgOR7ixT9Gl17KR5SV6LCPMNj8PM/2L5G5brCD1s8pGpfRvdcFlbb4frOD2zgaRWi7ESlXx5Mz6fhD',s:[0x86f0f524f5,0x967a8ab6ff],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

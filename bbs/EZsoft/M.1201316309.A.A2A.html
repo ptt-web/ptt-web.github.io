@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [免費] 處理 UAO 檔名&amp;純文字檔的工具 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content=" 這問題好像每幾個月就會輪迴一次？
+ 看這兩張圖就可以知道大概了
+  http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86
+%E4%BB%8B%E7%B4%B9&amp;openfile=pic6.gif
+  http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [免費] 處理 UAO 檔名&amp;純文字檔的工具">
+<meta property="og:description" content=" 這問題好像每幾個月就會輪迴一次？
+ 看這兩張圖就可以知道大概了
+  http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86
+%E4%BB%8B%E7%B4%B9&amp;openfile=pic6.gif
+  http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1201316309.A.A2A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">mstar (Wayne Su)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [免費] 處理 UAO 檔名&amp;純文字檔的工具</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jan 26 10:58:26 2008</span></div>
+ 這問題好像每幾個月就會輪迴一次？
+
+ 看這兩張圖就可以知道大概了
+  <a href="http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86" target="_blank" rel="noreferrer noopener nofollow">http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86</a>
+%E4%BB%8B%E7%B4%B9&amp;openfile=pic6.gif
+
+  <a href="http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86" target="_blank" rel="noreferrer noopener nofollow">http://uao.cpatch.org/index.php?plugin=attach&amp;refer=%E5%8E%9F%E7%90%86</a>
+%E4%BB%8B%E7%B4%B9&amp;openfile=pic2.gif
+
+
+ 各種狀況：
+
+
+    輸               在有 uao 的系統               在無 uao 的系統
+    入
+    字                   使用軟體                      使用軟體
+    碼          <span class="b5">支援 unicode</span>  <span class="b6">不支援 unicode</span>  <span class="b5">支援 unicode</span>  <span class="b6">不支援 unicode</span>
+ -----------    -----------產----------出---------結---------果-----------
+ Unicode      |
+ <span class="hl">あ (U+3042)</span>  | <span class="hl">あ (U+3042)</span>   <span class="f2">あ (C6E8)</span>       <span class="hl">あ (U+3042)</span>   <span class="b1">?        </span>
+              |
+              |
+ Unicode      |
+ <span class="f6 hl">   (U+F6F8)</span>  | <span class="hl">あ (U+3042)</span>   <span class="f2">あ (C6E8)</span>       <span class="b1">   (U+</span><span class="f5 b1 hl">F6F8</span><span class="b1">)</span>   <span class="f2">あ (C6E8)</span>
+              |
+              |                       必須有裝造字才看得到 ↗
+ BIG5         |
+ <span class="f2">あ (C6E8)</span>    | <span class="hl">あ (U+3042)</span>   <span class="f2">あ (C6E8)</span>       <span class="b1">   (U+</span><span class="f5 b1 hl">F6F8</span><span class="b1">)</span>   <span class="f2">あ (C6E8)</span>
+              |
+              |                       必須有裝造字才看得到 ↗
+ SJIS         |
+ <span class="f3">あ (82A0)</span>    | <span class="hl">あ (U+3042)</span>   <span class="f2">あ (C6E8)</span>       <span class="hl">あ (U+3042)</span>   <span class="b1">?        </span>
+              |               <span class="f3">あ (82A0)</span>
+
+
+ 註：<span class="f6 hl">U+F6F8</span> 是位於 unicode 的造字區，即「uao 日文」
+            通常沒有字型會去對應，會顯示空白只有裝了 uao 才會轉碼為 U+3042
+
+     <span class="hl">U+3042</span> 才是 あ 的正式 unicode 編碼
+
+     <span class="f2">C6E8</span> 是以前倚天的擴充字區裏面 あ 的編碼，即「BIG5 日文」
+
+
+--
+ 據瞭解正夯英國研究宣稱宅男崩潰欲哭無淚柔腸寸斷的一個動作Ｍ型營養午餐付之一炬
+ 滿目瘡痍踢爆算一算對當事人來說高達八成真是不可置信形成壓倒駱駝的最後一根稻草
+ 爆料低調希望有關單位重視得到確切的回應官員震怒掉頭離去各說各話羅生門各界撻伐
+ 據高層透露表示其中緣由耐人尋味有待釐清靜待真相曝光自有分曉顯示出公道自在人心
+ 一場風波令人費解憂心忡忡不禁要問景氣差物價上漲股市大跌爭議中政府都在做些什麼
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.229.44.26
+<span class="f2">※ 編輯: mstar           來自: 61.229.44.26         (01/26 11:02)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">abccbaandy</span><span class="f3 push-content">:看到第二個直覺就按下開燈XDD</span><span class="push-ipdatetime"> 01/26 11:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">changtai</span><span class="f3 push-content">:也就是說會散布big5日文 跟uao無關 跟非unicode軟體有關?</span><span class="push-ipdatetime"> 01/26 12:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:不支援Unicode的城市之所以會散布UAO定義字正是因為閣下</span><span class="push-ipdatetime"> 01/26 13:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:有裝UAO ( ′-`)y-～</span><span class="push-ipdatetime"> 01/26 13:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ssarc</span><span class="f3 push-content">:那之前有人說UAO會造成亂碼是為何呢? 看圖好像都沒事</span><span class="push-ipdatetime"> 01/26 14:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">changtai</span><span class="f3 push-content">:不用uao也不行啊~ 軟體不支援unicode我也沒辦法~</span><span class="push-ipdatetime"> 01/26 15:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:支援Unicode的慘體不少吧 (真的回到陳年討論串了Orz)</span><span class="push-ipdatetime"> 01/26 15:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">snocia</span><span class="f3 push-content">:看圖程式幾乎不支援UAO的影響比較大，其它很少吧=.=</span><span class="push-ipdatetime"> 01/26 15:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">snocia</span><span class="f3 push-content">:　　　　　　　Unicode　　　　　　　　　　　　（打錯XD）</span><span class="push-ipdatetime"> 01/26 15:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:Hamana (我個人用Windows內建就OK了)</span><span class="push-ipdatetime"> 01/26 15:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jrexz</span><span class="f3 push-content">:ashampoo photo commander 4 :)</span><span class="push-ipdatetime"> 01/26 19:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">changtai</span><span class="f3 push-content">:不合使用習慣啊...囧rz 我試過很多套 最後還是acdsee3.1</span><span class="push-ipdatetime"> 01/26 20:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mstar</span><span class="f3 push-content">:我還在用 acdsee 2.4</span><span class="push-ipdatetime"> 01/26 20:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kmorgue</span><span class="f3 push-content">:acdsee 速度快,可是同一張圖 show 出來不好看.</span><span class="push-ipdatetime"> 01/28 15:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kmorgue</span><span class="f3 push-content">:我指的是acdsee 2.4。  這在看漫畫沒啥感覺,看照片就囧</span><span class="push-ipdatetime"> 01/28 15:36
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1201316309.A.A2A.html?cacheKey=2148-738979430&amp;offset=3832&amp;offset-sig=a42cd56473d6158730d60bc9c5633adb9baa4e01" data-longpollurl="/v1/longpoll?id=c450ef498411e964ce76d9c1868ad453fb092dc0" data-offset="3832"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb85eada8a96',m:'PwwhO02wOGySJgJBJppmlmLnd2OSPcctrlSfFp8G54k-1653466886-0-AQs031nZto9hGJ7GiV+fdqN2+tcb5M80XQMlXL4mdOlUmDkLI5R4IQkdOtvL8FLhx5tKMlYqnwlzOkKlb9mpoGPG+S9XEhJs+2qLiI3j52KtPj+aqGSeRWUd5FcZEwS8DQE4WTSMsxJuheYy9kEYmkkhvUJhc9srMhjRPRwvAV5O',s:[0x8b278990f3,0x69992271d2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

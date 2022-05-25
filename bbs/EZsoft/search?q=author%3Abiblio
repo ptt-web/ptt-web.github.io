@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:biblio - EZsoft - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/EZsoft/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/EZsoft/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3Abiblio">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3Abiblio">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:biblio" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1273596878.A.C0B.html">[請問] 有沒有指定時間分次提醒的計時器?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E6%8C%87%E5%AE%9A%E6%99%82%E9%96%93%E5%88%86%E6%AC%A1%E6%8F%90%E9%86%92%E7%9A%84%E8%A8%88%E6%99%82%E5%99%A8%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1268581506.A.DDA.html">[請問] 有將word轉成「圖檔」形式PDF的軟體嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E5%B0%87word%E8%BD%89%E6%88%90%E3%80%8C%E5%9C%96%E6%AA%94%E3%80%8D%E5%BD%A2%E5%BC%8FPDF%E7%9A%84%E8%BB%9F%E9%AB%94%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1267865992.A.6AD.html">[請問] 有沒有視窗最上層+最小化到系統列的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E8%A6%96%E7%AA%97%E6%9C%80%E4%B8%8A%E5%B1%A4%2B%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E7%B3%BB%E7%B5%B1%E5%88%97%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1251871897.A.21D.html">[請問] 有沒有抓東西時防止系統待命的軟體？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E6%8A%93%E6%9D%B1%E8%A5%BF%E6%99%82%E9%98%B2%E6%AD%A2%E7%B3%BB%E7%B5%B1%E5%BE%85%E5%91%BD%E7%9A%84%E8%BB%9F%E9%AB%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1250562130.A.73F.html">[請問] 有沒有要輸入單字的背單字軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E8%A6%81%E8%BC%B8%E5%85%A5%E5%96%AE%E5%AD%97%E7%9A%84%E8%83%8C%E5%96%AE%E5%AD%97%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1250315163.A.224.html">[請問] 尋更改相片檔名為時間資訊的軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E5%B0%8B%E6%9B%B4%E6%94%B9%E7%9B%B8%E7%89%87%E6%AA%94%E5%90%8D%E7%82%BA%E6%99%82%E9%96%93%E8%B3%87%E8%A8%8A%E7%9A%84%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">11</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1241548778.A.672.html">[推薦] g.ho.st 強大的網路版虛擬電腦</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;g.ho.st&#43;%E5%BC%B7%E5%A4%A7%E7%9A%84%E7%B6%B2%E8%B7%AF%E7%89%88%E8%99%9B%E6%93%AC%E9%9B%BB%E8%85%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/06</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1238587312.A.D92.html">[問題] 有網路版的瀏覽器嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E7%B6%B2%E8%B7%AF%E7%89%88%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1236250585.A.F39.html">[請問] 有沒有適合老師用來整理題庫的軟體？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E9%81%A9%E5%90%88%E8%80%81%E5%B8%AB%E7%94%A8%E4%BE%86%E6%95%B4%E7%90%86%E9%A1%8C%E5%BA%AB%E7%9A%84%E8%BB%9F%E9%AB%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1233602554.A.59F.html">[請問] 有同步硬碟/隨身碟檔案的軟體嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E5%90%8C%E6%AD%A5%E7%A1%AC%E7%A2%9F%2F%E9%9A%A8%E8%BA%AB%E7%A2%9F%E6%AA%94%E6%A1%88%E7%9A%84%E8%BB%9F%E9%AB%94%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1232802607.A.E0F.html">[請問] KMP有沒有類似書籤記錄的功能？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;KMP%E6%9C%89%E6%B2%92%E6%9C%89%E9%A1%9E%E4%BC%BC%E6%9B%B8%E7%B1%A4%E8%A8%98%E9%8C%84%E7%9A%84%E5%8A%9F%E8%83%BD%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1228326513.A.3D3.html">Re: [請益] 綠色軟體與免安裝？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%B6%A0%E8%89%B2%E8%BB%9F%E9%AB%94%E8%88%87%E5%85%8D%E5%AE%89%E8%A3%9D%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1228310426.A.203.html">[情報] 微軟Skydrive升級為25G?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E5%BE%AE%E8%BB%9FSkydrive%E5%8D%87%E7%B4%9A%E7%82%BA25G%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1227955880.A.BB7.html">[請問] 請問有什麼軟體可以把img轉成iso檔？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E4%BB%80%E9%BA%BC%E8%BB%9F%E9%AB%94%E5%8F%AF%E4%BB%A5%E6%8A%8Aimg%E8%BD%89%E6%88%90iso%E6%AA%94%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1224683283.A.2C5.html">[請問] 有沒有自訂文字作為桌面/桌布的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E8%87%AA%E8%A8%82%E6%96%87%E5%AD%97%E4%BD%9C%E7%82%BA%E6%A1%8C%E9%9D%A2%2F%E6%A1%8C%E5%B8%83%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">18</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1197806940.A.B94.html">[請益] 有沒有整理讀書摘要心得的好用軟體啊...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">biblio</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E6%95%B4%E7%90%86%E8%AE%80%E6%9B%B8%E6%91%98%E8%A6%81%E5%BF%83%E5%BE%97%E7%9A%84%E5%A5%BD%E7%94%A8%E8%BB%9F%E9%AB%94%E5%95%8A...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Abiblio">搜尋看板內 biblio 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/16</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdba1af3daf2e',m:'11uNg7Qc1ZzcywL18djYAEr1iF81sdizK3yE9FIAAkk-1653466890-0-ASp+kArqqLvIAiGRzXHTsv4UW5owHinQyUXd561rvtfjCKyDSxfRXTcPJrvQQtFVNW/bI1k+9T/PJuVDLzn/2uDdehrz2Kiw2sr4hP5vEOqUvTsjXJ3dqVamOq5GAWJIGmjQVz/Aj6tSg4iPZwwfoB6LgnJoQkn9pc0+hQ/IwFEU',s:[0xb5ff1eb682,0x96876320fa],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

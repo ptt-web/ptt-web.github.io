@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[發錢] 往下競標不灑幣~Bitcoin原來的fee market - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="Blockstream Core重新定義了許多Bitcoin原來的理念定義。
+其中最常聽到的就是fee market。大家需要去用高手續費去競標來卡1MB的區塊空間。
+今天剛好又是champaign的一天，我就來實際示範和實驗最早Bitcoin的fee market長怎樣。
+中本聰的fee market絕對是個消費者市場。也就是區塊空間的供給遠超過需求。
+這從最原始版本的Bitcoin根本沒有block size limit可以看出來。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[發錢] 往下競標不灑幣~Bitcoin原來的fee market">
+<meta property="og:description" content="Blockstream Core重新定義了許多Bitcoin原來的理念定義。
+其中最常聽到的就是fee market。大家需要去用高手續費去競標來卡1MB的區塊空間。
+今天剛好又是champaign的一天，我就來實際示範和實驗最早Bitcoin的fee market長怎樣。
+中本聰的fee market絕對是個消費者市場。也就是區塊空間的供給遠超過需求。
+這從最原始版本的Bitcoin根本沒有block size limit可以看出來。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1559071898.A.CFD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">DarkerDuck (達克鴨)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[發錢] 往下競標不灑幣~Bitcoin原來的fee market</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed May 29 03:31:36 2019</span></div>
+Blockstream Core重新定義了許多Bitcoin原來的理念定義。
+
+其中最常聽到的就是<span class="f3 hl">fee market</span>。大家需要去用高手續費去競標來卡1MB的區塊空間。
+
+今天剛好又是champaign的一天，我就來實際示範和實驗最早Bitcoin的fee market長怎樣。
+
+
+中本聰的fee market絕對是個消費者市場。也就是區塊空間的供給遠超過需求。
+
+這從最原始版本的Bitcoin根本沒有block size limit可以看出來。
+
+白皮書也完全沒有提到這個機制。既沒有blocksize limit更沒有競標區塊空間市場。
+
+再告訴各位一個驚人的事實，比特幣早期是允許發出和轉傳<span class="f2 hl">零手續費</span>的交易的。
+
+這是早期的bitcoin.org的網頁，不過早就被Blockstream Core當成黑歷史
+<a href="https://web.archive.org/web/20140122225824/http://bitcoin.org/en/" target="_blank" rel="noreferrer noopener nofollow">https://web.archive.org/web/20140122225824/http://bitcoin.org/en/</a>
+
+<span class="f5 hl">Zero</span> or low processing fees
+
+隨便找個早期的bitcoin交易，一大半都是零手續費，譬如以下就是2012年的區塊交易
+<a href="https://tinyurl.com/y2yfnnsd" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/y2yfnnsd</a>
+
+所以中本聰的邏輯絕對不是為了搞出生產者市場來強硬生出fee market。
+
+而純粹是一種<span class="f3 hl">spam的防止機制</span>。因為早期BTC發出交易可以是&#34;零成本&#34;
+
+沒有區塊大小限制的話，大家可以零成本把區塊鏈洗到好幾TB大都沒問題。
+
+而這當然不是中本聰要的。反正1MB區塊限制已經是當時的區塊平均大小的百倍大了。
+
+但中本聰也並非要永久維持1MB的區塊限制，而且他自己都親自寫虛擬碼出來了
+<a href="https://bitcointalk.org/index.php?topic=1347.msg15366#msg15366" target="_blank" rel="noreferrer noopener nofollow">https://bitcointalk.org/index.php?topic=1347.msg15366#msg15366</a>
+
+It can be phased in, like:
+
+if (blocknumber &gt; 115000)
+    maxblocksize = largerlimit
+
+在他預期之下，<span class="f2 hl">比特幣將來若不是on-chain交易量極端之大，要不就是沒交易量(死亡)。</span>
+<a href="https://bitcointalk.org/index.php?topic=48.msg329#msg329" target="_blank" rel="noreferrer noopener nofollow">https://bitcointalk.org/index.php?topic=48.msg329#msg329</a>
+
+In a few decades when the reward gets too small, the transaction fee will
+become the main compensation for nodes.  I&#39;m sure that in 20 years there will
+either be very large transaction volume or no volume.
+
+很不幸的是Blockstream Core選擇死亡
+
+前面屁話了這麼多，那麼中本聰的fee market到底是指什麼？
+
+這從Satoshi回給Mike Hearn的信件中可以窺見一二
+<a href="https://nakamotostudies.org/emails/satoshi-reply-to-mike-hearn/" target="_blank" rel="noreferrer noopener nofollow">https://nakamotostudies.org/emails/satoshi-reply-to-mike-hearn/</a>
+
+I don’t anticipate that fees will be needed anytime soon, but if it becomes
+too burdensome to run a node, it is possible to run a node that only
+processes transactions that include a transaction fee. The owner of the node
+would decide the minimum fee they’ll accept. Right now, such a node would
+get nothing, because nobody includes a fee, but if enough nodes did that,
+then users would get faster acceptance if they include a fee, or slower if
+they don’t. The fee the market would settle on should be minimal. If a node
+requires a higher fee, that node would be passing up all transactions with
+lower fees. It could do more volume and probably make more money by
+processing as many paying transactions as it can. The transition is not
+controlled by some human in charge of the system though, just individuals
+reacting on their own to market forces.
+
+大致說來就是中本聰本來就認為他的系統至少在初期可以免手續費運作，事實也是如此。
+
+就算在成熟期，因為是消費者市場，手續費藉由市場競爭將會是越低越好：
+
+The fee the market would settle on should be minimal.
+
+因為貪婪的礦工會想盡量多收點手續費，在消費者市場的狀態下，唯一方法就是薄利多賺。
+
+<span class="f3 hl">礦工提供大區塊，互相流血下殺最低手續費殺成紅海
+</span><span class="f3 hl">
+</span><span class="f3 hl">===這才是真正符合Bitcoin原有精神的fee market==========</span>
+
+
+
+現在BTC當然沒這種fee market了，不過BCH卻還有辦法讓我這方面的實驗。
+
+目前BTC和BCH能夠被relay的最低手續費都是 1 sat/byte
+
+BTC只能實驗往上的fee market，那個大家每天都在實踐，就不玩了。
+
+但是BCH的 1 sat/byte也看不出往下的fee market，因為幾乎可保證下一個區塊被確認。
+
+實際上BCH的錢包還可以發出更低的手續費，只是會無法被廣泛的relay。
+
+BCH也還是有礦工會去接受這種低於一般標準值的手續費，反正能夠多收一筆是一筆。
+
+那我們現在就來挑戰極限。發錢順便做測試：
+
+
+
+我將會發出兩筆交易給<span class="f3 hl">第一位貼出自己BTC地址的版眾：</span>
+
+0.00008 BTC (須扣手續費)
+0.001688 BCH
+
+因為目前的BTC next block fee會超過100台幣，比要轉的金額還高好幾倍，這太搞笑了。
+
+就學一下Tone Vays用 1 sat/byte 來轉，手續費大約1.5塊新台幣
+
+BCH的部分一樣用1sat/byte 來轉，手續費大約0.07新台幣
+
+<span class="f3 hl">第二位之後可以隨意推文，我直接去PTT CryptoTipper查BCH地址</span>
+
+最後就來挑戰手續費下限：
+
+當我看推文數要達到一百的時候，全部一起發每人0.0000888 BCH
+
+挑戰發給一個人只用1 sat和發給一百個人只用10 sat
+
+最後就可以得知大約要花多久時間多少個區塊會被確認
+
+
+待測試結果如下：
+
+↓<span class="f2 hl">花1.5台幣的交易手續費在BTC網路發錢給一個人，總共花費 </span><span class="f3 hl">363  </span><span class="f2 hl">區塊時間完成</span>
+↓<a href="https://tinyurl.com/yxqboycv" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/yxqboycv</a>
+↓<span class="f2 hl">花0.07台幣的交易手續費在BCH網路上發錢給一人，總共花費 </span><span class="f3 hl">1</span><span class="f2 hl"> 區塊時間完成</span>
+↓<a href="https://tinyurl.com/y3ty3zh2" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/y3ty3zh2</a>
+↓<span class="f2 hl">花0.00015台幣的交易手續費在BCH網路上發錢給一人，總共花費 </span><span class="f3 hl">160</span><span class="f2 hl">  區塊時間完成</span>
+↓<a href="https://tinyurl.com/yyfy3x8d" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/yyfy3x8d</a>
+↓<span class="f2 hl">花0.0015台幣的交易手續費在BCH網路上發錢給83人，總共花費 </span><span class="f3 hl">160</span><span class="f2 hl">  區塊時間完成</span>
+↓<span class="f2 hl">(平均每人0.000016台幣)</span>
+↓<a href="https://tinyurl.com/y4sw3fov" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/y4sw3fov</a>
+↓<span class="f3 hl">手續費往下競標</span>
+
+以下開放大家隨意推文測試領錢，當推文數到達一百或是不再增加時，發出測試交易。
+
+--
+Bitcoin:   1GxtyprMfcxE366BDUsg1skQyuAnxktZjc
+<a href="https://www.blockchain.com/zh/btc/address/1GxtyprMfcxE366BDUsg1skQyuAnxktZjc" target="_blank" rel="noreferrer noopener nofollow">https://www.blockchain.com/zh/btc/address/1GxtyprMfcxE366BDUsg1skQyuAnxktZjc</a>
+Bitcoin Cash:  bitcoincash:qp928h4q4xasa5wh2x88xhsxgc4vwj6g95uzq0ak97
+<a href="https://goo.gl/2qNr43" target="_blank" rel="noreferrer noopener nofollow">https://goo.gl/2qNr43</a>
+Ethereum:  0x4A2B1e35eb64141bbad4C58cB7D79692bC5Dbbc2
+<a href="https://etherscan.io/address/0x4A2B1e35eb64141bbad4C58cB7D79692bC5Dbbc2" target="_blank" rel="noreferrer noopener nofollow">https://etherscan.io/address/0x4A2B1e35eb64141bbad4C58cB7D79692bC5Dbbc2</a>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 36.237.83.39
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1559071898.A.CFD.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1559071898.A.CFD.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: 錢</span><span class="push-ipdatetime"> 05/29 03:33
+</span></div>要BTC的要放地址，限一位
+<span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 03:34:21
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: 放在名片算嗎</span><span class="push-ipdatetime"> 05/29 03:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 你直接copy出來</span><span class="push-ipdatetime"> 05/29 03:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">steven2004ss</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 03:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: bitcoincash:qzdqq797dxsud246yw7hxqrlav4gp0wktg638wn</span><span class="push-ipdatetime"> 05/29 03:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: mha</span><span class="push-ipdatetime"> 05/29 03:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: BTC 3Nasor6fK7VPNgojsQVPH6Skb5uh4HrjuA</span><span class="push-ipdatetime"> 05/29 03:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: 謝版主</span><span class="push-ipdatetime"> 05/29 03:37
+</span></div>OK，我等推文人數差不多滿了，找個良辰吉時實驗。
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: 不過BCH也是傳BTC地址喔？</span><span class="push-ipdatetime"> 05/29 03:39
+</span></div>你兩個地址都會收到
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a23962787</span><span class="f3 push-content">: 好謝版主</span><span class="push-ipdatetime"> 05/29 03:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">skill1095</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 03:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">remia81</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 03:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gR7P4zXH</span><span class="f3 push-content">: champagne~</span><span class="push-ipdatetime"> 05/29 03:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kaeun421</span><span class="f3 push-content">: 好</span><span class="push-ipdatetime"> 05/29 04:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nothink0</span><span class="f3 push-content">: 好</span><span class="push-ipdatetime"> 05/29 04:16
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 04:29:28
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bolobobobo</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 04:51
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 04:58:20
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 三點發文竟然就有一些人看了。</span><span class="push-ipdatetime"> 05/29 05:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gR7P4zXH</span><span class="f3 push-content">: 各位...早安...</span><span class="push-ipdatetime"> 05/29 05:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b24333666</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 05:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chathamcat</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 06:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b03202043</span><span class="f3 push-content">:   推</span><span class="push-ipdatetime"> 05/29 06:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">balancemask</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 06:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Q8i</span><span class="f3 push-content">: 噗，黑鴉大下手不要太重啊</span><span class="push-ipdatetime"> 05/29 06:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Q8i</span><span class="f3 push-content">: 等下BTC被打的臉腫腫很不方便</span><span class="push-ipdatetime"> 05/29 06:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ketao</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 07:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ecoco1424</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 07:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 07:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Rango5566</span><span class="f3 push-content">: 好</span><span class="push-ipdatetime"> 05/29 07:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jorden</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 08:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jixian</span><span class="f3 push-content">: 我覺得BTC會在海上飄七天，但還是希望發錢</span><span class="push-ipdatetime"> 05/29 08:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">asoedarren</span><span class="f3 push-content">: 頂</span><span class="push-ipdatetime"> 05/29 08:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">trleee</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 08:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jameson</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 08:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">runnn</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 08:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vsdvd</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 08:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mithuang</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/29 08:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">edisonsong</span><span class="f3 push-content">: bitcoincash:pzvt37q02phrsrj2l8988spk6r0dgr9lpcn7y4</span><span class="push-ipdatetime"> 05/29 08:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">edisonsong</span><span class="f3 push-content">: 推一個</span><span class="push-ipdatetime"> 05/29 08:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Lun0103</span><span class="f3 push-content">: 推實驗</span><span class="push-ipdatetime"> 05/29 09:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sean896256</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 09:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ariesheart</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 09:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">itsdelovely</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 09:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a040900</span><span class="f3 push-content">: BitcoinCash:</span><span class="push-ipdatetime"> 05/29 10:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a040900</span><span class="f3 push-content">: qqvz448wyfkujjlqwu8m0gghzq3m7655wc5pyrxzp3</span><span class="push-ipdatetime"> 05/29 10:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a040900</span><span class="f3 push-content">: 推一個</span><span class="push-ipdatetime"> 05/29 10:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">COOKIESIR</span><span class="f3 push-content">: 推個</span><span class="push-ipdatetime"> 05/29 10:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DJYeh</span><span class="f3 push-content">: 湊熱鬧。Ether呢？</span><span class="push-ipdatetime"> 05/29 10:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mike0608</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 10:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">smgo</span><span class="f3 push-content">: 不錯的實驗。BTC：1EMrPueXvCHin9baDtGKU3jDR9YmLRNbGJ</span><span class="push-ipdatetime"> 05/29 10:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">smgo</span><span class="f3 push-content">: 另外推4秒快槍俠。XRP：rEb8TK3gBgk5auZkwc6sHnwrGVJH8DuaLh</span><span class="push-ipdatetime"> 05/29 10:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">smgo</span><span class="f3 push-content">: 唉，如果去中心化，絕對搶著用。<a href="https://imgur.com/94Dmmfh" target="_blank" rel="noreferrer noopener nofollow">https://imgur.com/94Dmmfh</a></span><span class="push-ipdatetime"> 05/29 10:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">finalstop</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 10:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Bob9154</span><span class="f3 push-content">: XRP快就是因為中心化啊 怎麼去中心?</span><span class="push-ipdatetime"> 05/29 10:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">harryeli</span><span class="f3 push-content">: 推實驗</span><span class="push-ipdatetime"> 05/29 10:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">uu5l4yk6u</span><span class="f3 push-content">: bch 1MjeE2DiCL7UJD5hKxsBcrMA3zxLwsUHTT</span><span class="push-ipdatetime"> 05/29 10:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">goitaly</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 10:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">george126</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 10:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">george126</span><span class="f3 push-content">: bitcoincash:pzcxh7fg877t2q3xjx9phwfjee8m6yg82vdna52</span><span class="push-ipdatetime"> 05/29 10:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">george126</span><span class="f3 push-content">: yg2</span><span class="push-ipdatetime"> 05/29 10:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CTW8877</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 11:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">frot</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 11:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rfnkwj</span><span class="f3 push-content">: 推實驗精神</span><span class="push-ipdatetime"> 05/29 11:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dct1985</span><span class="f3 push-content">: 3FyxbvWRaSkLvbjTFBrko66U3AMiA2r327</span><span class="push-ipdatetime"> 05/29 11:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dct1985</span><span class="f3 push-content">: 推實驗精神</span><span class="push-ipdatetime"> 05/29 11:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Herbert1102</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 11:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CP64</span><span class="f3 push-content">: 來看熱鬧 &#39; -&#39;)</span><span class="push-ipdatetime"> 05/29 11:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">UK5566</span><span class="f3 push-content">: qzxnmj8na7a5pjtuhsc5yvvre5f7hqf9dqqjxahgfa</span><span class="push-ipdatetime"> 05/29 12:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">play0517</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 12:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">play0517</span><span class="f3 push-content">: 3JdrtRz7FuwUw6TBTwZfWitDE7XcqnJZx1</span><span class="push-ipdatetime"> 05/29 12:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">roastchicken</span><span class="f3 push-content">:  推 1GW3kUeVcuPeSA7MeN1rbg6XH4dwQvxrY7</span><span class="push-ipdatetime"> 05/29 12:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Ash1taka</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 12:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yan719</span><span class="f3 push-content">: 推一個</span><span class="push-ipdatetime"> 05/29 12:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">yan719</span><span class="f3 push-content">: BTC：3MQtiNKjBy6vELZnsKSfGnL4QmB5fCJ4gS</span><span class="push-ipdatetime"> 05/29 12:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dnac6h12o6</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/29 12:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dnac6h12o6</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 05/29 12:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Jkx</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 13:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">monserx123</span><span class="f3 push-content">: GoGo</span><span class="push-ipdatetime"> 05/29 13:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">weizxcvb</span><span class="f3 push-content">: 推實驗精神</span><span class="push-ipdatetime"> 05/29 13:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aierozent</span><span class="f3 push-content">: 推！</span><span class="push-ipdatetime"> 05/29 13:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aierozent</span><span class="f3 push-content">: 34ygR3eZNFzvtDR15gcd8pNsnydzSdegrh</span><span class="push-ipdatetime"> 05/29 13:50
+</span></div><div class="push"><span class="f1 hl push-tag">噓 </span><span class="f3 hl push-userid">jixian</span><span class="f3 push-content">: 中心化誰不快...</span><span class="push-ipdatetime"> 05/29 13:52
+</span></div>我當初對於XRP號稱數秒達到finality沒有很在意，
+因為中心化系統當然不需要花時間凝聚共識。
+中心化系統數秒接受交易是很正常的，像是XRP, XLM, EOS, Liqud
+但是早期Bitcoin也有開發出可接受安全度的零確認支付。
+而更高安全度的Pre-Consensus方案也在開發
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jixian</span><span class="f3 push-content">: 拍謝按到噓，我是在說有人推XRP很快啦</span><span class="push-ipdatetime"> 05/29 14:00
+</span></div>抱歉，會錯意~~
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">modo1979</span><span class="f3 push-content">: bch:qr2fynhazn0etmety4l0yaxpl2at5lm43ghernqx9s感恩^^</span><span class="push-ipdatetime"> 05/29 14:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ReanoX</span><span class="f3 push-content">: 幫忙推</span><span class="push-ipdatetime"> 05/29 14:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">leones</span><span class="f3 push-content">: 1Kn9Hq3rbToHqD5VAd3hAtY1MjDcML6aMB</span><span class="push-ipdatetime"> 05/29 14:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">forttryon</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 14:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 要比快，我家巷口的銀行ATM不到4秒，勝XRP</span><span class="push-ipdatetime"> 05/29 14:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 不過Ripple這大大大學長，也算是對中本聰有啟發作用XD</span><span class="push-ipdatetime"> 05/29 14:25
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 14:27:18
+</span><span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 14:42:29
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ProtectChu56</span><span class="f3 push-content">: 路過推</span><span class="push-ipdatetime"> 05/29 16:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lonehugh</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 17:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pp0528</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 18:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kidneyweakx</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 18:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rmp4rmp4bear</span><span class="f3 push-content">: BCH: qqzeavqylpjrszh6vwgl5smls4za7rfldgqqssnuvt</span><span class="push-ipdatetime"> 05/29 18:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rmp4rmp4bear</span><span class="f3 push-content">: BTC: 1FMBaHtPHN6X99Xkx57yPLPb8mKWTME79o</span><span class="push-ipdatetime"> 05/29 18:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">x51811danny</span><span class="f3 push-content">: BTC: 1KYgCfALuDxCNq15cjczGCuN8RRGG7uf7k</span><span class="push-ipdatetime"> 05/29 18:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">x51811danny</span><span class="f3 push-content">: BCH: prcd5mj8rkxup7zfvwwj7kkm8v8vlenxwgdnxe8tm2</span><span class="push-ipdatetime"> 05/29 19:02
+</span></div>第一位推BTC地址的人已經卡位了，之後直接任意推文就好。
+<span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 19:23:11
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wizchoco</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/29 19:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 幫中本QQ 到底有沒有其他開發組出來跟core爭BTC 控制權</span><span class="push-ipdatetime"> 05/29 20:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 啊</span><span class="push-ipdatetime"> 05/29 20:00
+</span></div>這又是另外一個黑歷史了
+其實早期有Bitcoin Classic, Bitcoin XT, Bitcoin Unlimited
+都是早期想要直接爭奪Bitcoin主導權的Node implementation
+不過後來還是全數失敗。因為硬分叉需要相當高的共識。
+就算支持Blockstream Core只有一小部分人，他們都可以堅持他們自己是正統BTC。
+
+假如讓我來玩，我就搞跟Blockstream一樣的UASF賤招。
+要耍賤是嗎，那就把擴容包裝成Extension block來&#34;軟分叉&#34;
+軟分叉不會照成區塊鏈共識不同而分裂，所以是軟的。
+但是卻可以慢慢地達成想要的功能。反正等擴容派勝利後，再來硬分叉清理門戶就好。
+Blockstream既然可以用軟分叉來搞定交易可塑性，開啟閃電網路。
+那要耍賤的話，擴容派當然也可以搞軟分叉的extension block
+只是大部分的擴容派還是堅持要用硬分叉，免得像blockstream已經搞出太多的技術債了。
+<span class="f2">※ 編輯: DarkerDuck (36.237.83.39), 05/29/2019 20:13:41
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 剛剛google一下bitcoin classic收了，bitcoin unlimite</span><span class="push-ipdatetime"> 05/29 20:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: d支持bch，剩bitcoin xt同時支持btc, bch</span><span class="push-ipdatetime"> 05/29 20:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 有利益就會扯到政治遊戲，唉</span><span class="push-ipdatetime"> 05/29 20:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 還有三十個名額，滿了就會開車了</span><span class="push-ipdatetime"> 05/29 20:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">whataniceday</span><span class="f3 push-content">: PUSH</span><span class="push-ipdatetime"> 05/29 21:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bigjohn8136</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/29 21:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tneduts</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 05/29 23:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">RockGC</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/30 00:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SamuelLuo</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/30 00:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mercy5566</span><span class="f3 push-content">: Btc:13zTrweVAStkLayyShiwAg8urJo4zkCacZ</span><span class="push-ipdatetime"> 05/30 00:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mercy5566</span><span class="f3 push-content">: BCH:13zTrweVAStkLayyShiwAg8urJo4zkCacZ</span><span class="push-ipdatetime"> 05/30 00:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">laijack512</span><span class="f3 push-content">: 3KzPdfZWWNGb4kFJ6SA12wfATksZHRYPMJ</span><span class="push-ipdatetime"> 05/30 01:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyois</span><span class="f3 push-content">: 推一個</span><span class="push-ipdatetime"> 05/30 01:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ly4138</span><span class="f3 push-content">: bitcoincash:qq06s9n0cfxsxze4xh9k9mtlmhs95z07nuv7vxnp4h</span><span class="push-ipdatetime"> 05/30 06:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b24333666</span><span class="f3 push-content">: BTC: 3CViNzDimoWqQEi1H7EhV5rdk7popbwVrQ</span><span class="push-ipdatetime"> 05/30 07:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bkou123456</span><span class="f3 push-content">: BTC:1PtX84k75i9PpYg4z2T3ZXrAgrcfpGAJSy</span><span class="push-ipdatetime"> 05/30 12:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">TimWater</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/30 14:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">matsurichu</span><span class="f3 push-content">: BCH:1LndwxhYxMxBfzEXesbpGXpjiqX6wQueGK</span><span class="push-ipdatetime"> 05/30 17:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mtc609</span><span class="f3 push-content">: BTC: 1HQPPZFU85GPDQv44GK2jqj6vPMHTBKzgS</span><span class="push-ipdatetime"> 05/30 18:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">JLstar</span><span class="f3 push-content">: BTC 3A1o4P1CJ5pnJzWaCCc3GRFQHKk4KeJyZY</span><span class="push-ipdatetime"> 05/30 19:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Emiq</span><span class="f3 push-content">: BTC: 32Er4HkLNzeU5Ujwv9moex6tr2cn7NUn2S</span><span class="push-ipdatetime"> 05/30 20:08
+</span></div>雖然車上不到一百人，不過看起來應該沒幾個人要上車了，準備開車~~~
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyois</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/30 22:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 黑鴨老大老司機 4 ni</span><span class="push-ipdatetime"> 05/30 22:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 一大堆人都沒有去Tipper開錢包，正在幫忙開錢包中= =</span><span class="push-ipdatetime"> 05/30 23:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ksntw</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/31 00:21
+</span></div>發車惹 乘客83人 總車資 10sat BCH
+<a href="https://tinyurl.com/y4sw3fov" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/y4sw3fov</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">uu5l4yk6u</span><span class="f3 push-content">: 太神啦  83人的車確認了</span><span class="push-ipdatetime"> 06/01 09:35
+</span></div>結果BTC還沒被確認 嘻嘻~~~
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: BTC的高手續費或是長確認時間(因付的手續費低)，是它的</span><span class="push-ipdatetime"> 06/01 14:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 致命傷，只要這個問題，BTC不去面對解決，BTC永遠無法</span><span class="push-ipdatetime"> 06/01 14:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">camellala</span><span class="f3 push-content">: 普及</span><span class="push-ipdatetime"> 06/01 14:16
+</span></div><span class="f2">※ 編輯: DarkerDuck (36.237.92.96), 06/01/2019 14:43:45
+</span><span class="f2">※ 編輯: DarkerDuck (118.171.105.232 臺灣), 06/02/2019 18:01:51
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">moonlca</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 06/09 11:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b24333666</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 07/02 06:21
+</span></div><span class="f2">※ 編輯: DarkerDuck (111.255.218.160 臺灣), 08/13/2019 09:04:05
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">vcbcgc1748</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 02/11 23:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Cordova</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 02/12 18:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">plum377</span><span class="f3 push-content">: !tipper bch</span><span class="push-ipdatetime"> 02/28 11:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">plum377</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 02/28 11:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">itislife</span><span class="f3 push-content">: bitcoincash:qztrhq5a9gdfqt4pfequqwv90ne8s3v4jy6cfk8r</span><span class="push-ipdatetime"> 02/28 12:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">itislife</span><span class="f3 push-content">: rf</span><span class="push-ipdatetime"> 02/28 12:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">itislife</span><span class="f3 push-content">: qztrhq5a9gdfqt4pfequqwv90ne8s3v4jy6cfk8rrf</span><span class="push-ipdatetime"> 02/28 12:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BambooRu</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 02/28 12:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BambooRu</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 02/28 12:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BambooRu</span><span class="f3 push-content">: bitcoincash:qqkgmpzmgw0mvfzmymv98lgkfg4yf4ra7qav6hg2</span><span class="push-ipdatetime"> 02/28 12:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">BambooRu</span><span class="f3 push-content">: pr</span><span class="push-ipdatetime"> 02/28 12:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">maozz</span><span class="f3 push-content">: bitcoincash:qpxytskprm7y22f3pq8a6dndxnrvu0uspvd7k4nxlw</span><span class="push-ipdatetime"> 02/28 16:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lhclhc1109</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 02/28 16:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">plum377</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 02/28 23:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mike060606</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 02:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ad1015</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 16:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a23268744</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 17:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hoo329</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 17:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">overzero888</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 18:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">RRGS1230</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 22:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">RPGs</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/01 23:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chaochaoder</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/02 06:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">nmns1807</span><span class="f3 push-content">: bitcoincash:qprgqgdwsg4srxgw3s9g9trtr8qzdr8hhg5u2z7</span><span class="push-ipdatetime"> 03/02 16:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">nmns1807</span><span class="f3 push-content">: j3p</span><span class="push-ipdatetime"> 03/02 16:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">qweccc</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 03/02 22:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">logu</span><span class="f3 push-content">: !tipper BCH</span><span class="push-ipdatetime"> 05/30 03:09
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1559071898.A.CFD.html?cacheKey=2148-151990798&amp;offset=23186&amp;offset-sig=737e5b5791d5e154e67702614b98efae3c04a6c1" data-longpollurl="/v1/longpoll?id=14c937c0a932e02e9bd3bea4416538d1660c5310" data-offset="23186"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce2404ce18a68',m:'igAv9J5WUh0M9zp40Vc7TQgDEWidA83rSE1qpGgI7kk-1653467161-0-ASepijkFpOKzIMeVCPTIL4z1EgRerDzSrN9YaMhhmVfcU+XrDpz8a4zaZnL8C6wnjxnQLFYIuCLWSsbM6pUqlCZQ8j314WpBYPZSqMJRcGRXW3+wfcpoK740amDMIVmn/MBce0q+9fRHRAtZq4zF37ywvuO2ciUUAfOuuINyiZ3K',s:[0xc8e2b475cf,0xd0117d6d9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

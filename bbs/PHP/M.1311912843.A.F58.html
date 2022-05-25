@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] PHP 執行時間的 class 或 function - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="              ^^^^
+請用 pear 的 benchmark pkg
+http://pear.php.net/package/Benchmark/
+require(&#39;/usr/share/php/Benchmark/Timer.php&#39;);
+$timer = new Benchmark_Timer();
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] PHP 執行時間的 class 或 function">
+<meta property="og:description" content="              ^^^^
+請用 pear 的 benchmark pkg
+http://pear.php.net/package/Benchmark/
+require(&#39;/usr/share/php/Benchmark/Timer.php&#39;);
+$timer = new Benchmark_Timer();
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1311912843.A.F58.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">roga (任性)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] PHP 執行時間的 class 或 function</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jul 29 12:13:58 2011</span></div>
+<span class="f2">※ 引述《tkdmaf (皮皮快跑)》之銘言：
+</span><span class="f6">: ※ 引述《chan15 (ChaN)》之銘言：
+</span><span class="f6">: : 請教一下，有沒有哪邊有不錯的測試程式碼執行時間軟體
+</span><span class="f6">: : 一個頁面「多段」測試，顯示多段結果的
+</span>              ^^^^
+
+請用 pear 的 benchmark pkg
+
+<a href="https://pear.php.net/package/Benchmark/" target="_blank" rel="noreferrer noopener nofollow">http://pear.php.net/package/Benchmark/</a>
+
+require(&#39;/usr/share/php/Benchmark/Timer.php&#39;);
+
+$timer = new Benchmark_Timer();
+$timer-&gt;start();
+
+$timer-&gt;setMarker(&#39;MethodStart&#39;);
+/* 寫想測試的方法 */
+$timer-&gt;setMarker(&#39;MethodStop&#39;);
+
+$timer-&gt;setMarker(&#39;FunctionStart&#39;);
+/* 寫想測試時間的函式 */
+$timer-&gt;setMarker(&#39;FunctionStop&#39;);
+
+$timer-&gt;timeElapsed(&#39;MethodStart&#39;, &#39;MethodStop&#39;);
+$timer-&gt;timeElapsed(&#39;FunctionStart&#39;, &#39;FunctionStop&#39;);
+/* 以此類推，可以自己多設一些 Marker 下去測試 */
+
+$timer-&gt;stop();
+$timer-&gt;display();
+
+這樣會有你要的測試結果。
+
+另外如果要細一點的執行效能，
+
+也可以考慮安裝 xdebug 或是 xhprof (pecl 內都有)。
+
+<span class="f6">: 自己隨手寫一個：
+</span><span class="f6">: &lt;?php
+</span><span class="f6">: class effect_time {
+</span><span class="f6">:     var $start_time;
+</span><span class="f6">:     var $end_time;
+</span><span class="f6">:     function start(){
+</span><span class="f6">:         $this-&gt;start_time = $this-&gt;_return_time();
+</span><span class="f6">:         return $this-&gt;start_time.&#39;&lt;br&gt;&#39;;
+</span><span class="f6">:     }
+</span><span class="f6">:     function end(){
+</span><span class="f6">:         $this-&gt;end_time = $this-&gt;_return_time();
+</span><span class="f6">:         return $this-&gt;end_time.&#39;&lt;br&gt;&#39;;
+</span><span class="f6">:     }
+</span><span class="f6">:     function result(){
+</span><span class="f6">:         echo $this-&gt;end_time - $this-&gt;start_time;
+</span><span class="f6">:     }
+</span><span class="f6">:     function _return_time(){
+</span><span class="f6">:         list($sec,$min)  = explode(&#39; &#39;,microtime());
+</span><span class="f6">:         return $min+$sec;
+</span><span class="f6">:     }
+</span><span class="f6">: }
+</span><span class="f6">: ?&gt;
+</span><span class="f6">: 載入之後：
+</span><span class="f6">: $effect_time = new $effect_time;
+</span><span class="f6">: 在要測試的程式起始處：
+</span><span class="f6">: $effect_time-&gt;start();
+</span><span class="f6">: 終止處：
+</span><span class="f6">: $effect_time-&gt;end();
+</span><span class="f6">: 若要看起始或終始時間前面直接加echo。
+</span><span class="f6">: 若要在最後看，就把$effect_time-&gt;start_time或是end_time直接印出來。
+</span><span class="f6">: 效能時間：$effect_time-&gt;result();
+</span><span class="f6">: 大致上是這樣。
+</span>
+建議使用 pear 的套件，功能比較全面。
+
+--
+
+The Internet: where men are men, women are men, and children are FBI agents.
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 202.89.121.16
+<span class="f2">※ 編輯: roga            來自: 202.89.121.16        (07/29 14:08)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1311912843.A.F58.html?cacheKey=2148-469791124&amp;offset=2044&amp;offset-sig=4f1eca7785fd16aeaca086acab43aaa2e2111d4f" data-longpollurl="/v1/longpoll?id=ce351e8a697ae1fedcd12bca2f8d4e59cc2856df" data-offset="2044"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea415e281fae',m:'A8u_OQtxa5tEiFVMH_6WX0WCa.BIUAti6Kr18Xb5fUU-1653467489-0-ARkUDPdw/CWM8QdDOGbNmPVtTDmnTDreJhNK9H3gHNrfunbSzPDBIRAMQ+zq2Rumrka1E6KCaKURGjFV17v9wCLLrQACGw9NN1pwA1KUWr6rjY9O9JJves3BSGc6yIRDGA3F5MlyyL8Qm3CD9TMqcTUHNphsAS4ZcQOCTlBNPALs',s:[0xb494ba7f5b,0x79e94e59fb],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

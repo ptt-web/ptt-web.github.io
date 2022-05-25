@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: 求助~PHP上傳圖片的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你這樣寫的意思是「如果檔名是 &#34;*.jpg&#34; 或 &#34;*.gif&#34;」才會過關
+星號 (*) 在這裡被當作是真的星號, 而不是萬用字元
+你可以用 substr() 來抓出副檔名
+例如:
+    $extension = substr($filename, -4);
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: 求助~PHP上傳圖片的問題">
+<meta property="og:description" content="你這樣寫的意思是「如果檔名是 &#34;*.jpg&#34; 或 &#34;*.gif&#34;」才會過關
+星號 (*) 在這裡被當作是真的星號, 而不是萬用字元
+你可以用 substr() 來抓出副檔名
+例如:
+    $extension = substr($filename, -4);
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1092131888.A.011.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">eliang ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: 求助~PHP上傳圖片的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Aug 10 18:04:43 2004</span></div>
+<span class="f2">※ 引述《jupiter86001 (案)》之銘言：
+</span><span class="f6">: 抱歉請問一個問題
+</span><span class="f6">: 如果我想檢查上傳的檔案是不是jpg或gif檔的話
+</span><span class="f6">: 應該怎樣檢查呢??
+</span><span class="f6">: code
+</span><span class="f6">: if($File == &#34;*.jpg&#34; || $File == &#34;*.gif&#34;)
+</span>
+你這樣寫的意思是「如果檔名是 &#34;*.jpg&#34; 或 &#34;*.gif&#34;」才會過關
+星號 (*) 在這裡被當作是真的星號, 而不是萬用字元
+你可以用 substr() 來抓出副檔名
+
+例如:
+    $extension = substr($filename, -4);
+    if ($extension == &#34;.jpg&#34; || $extension == &#34;.gif&#34;)
+
+詳細用法請看 <a href="http://tw.php.net/manual/en/function.substr.php" target="_blank" rel="noreferrer noopener nofollow">http://tw.php.net/manual/en/function.substr.php</a>
+
+<span class="f6">:       {
+</span><span class="f6">:          echo &#34;上傳成功!&lt;p&gt;&#34;;
+</span><span class="f6">:          rename($File,$File_RE);
+</span><span class="f6">:          $sql=&#34;INSERT INTO data(ID,File,Date)
+</span><span class="f6">:            values(&#39;$ID&#39;,&#39;$File_RE&#39;,&#39;$Date&#39;)&#34;;
+</span><span class="f6">:          mysql_query($sql);
+</span><span class="f6">:          echo &#34;&lt;img src=&#34;.$File_RE.&#34;&gt;&#34;;
+</span><span class="f6">:       }
+</span><span class="f6">:       else
+</span><span class="f6">:          echo &#34;上傳失敗!檔名不符!&lt;p&gt;&#34;;
+</span><span class="f6">: 我們現在是這樣寫的 但是都是顯示上傳失敗的訊息
+</span><span class="f6">: 我想問題可能出在if的判斷式
+</span><span class="f6">: 但是一直改不出來  請教各位 謝謝
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 210.58.168.200
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jupiter86001</span><span class="f3 push-content">:感恩~</span><span class="push-ipdatetime">                                    218.168.239.118 08/10
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1092131888.A.011.html?cacheKey=2149-475707914&amp;offset=1153&amp;offset-sig=f3751bd13bb8039237793cb7ec4601e8822b0fcc" data-longpollurl="/v1/longpoll?id=4acb14992800d703eea591f99469537f2626758b" data-offset="1153"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9781aaf807e',m:'OcBs0PM0gBzi_FN7mniHFI72Bi5JxW3bAZXD4ZQ5Yow-1653467457-0-AQHNPeWcJ79uGvUKfSJFvy1LGOM49AIxPZS5dvIM/eMsxEKSNtMH+UbVBAt5RAqrvxb3rn+pYJAd3YPN1FLFnB1BXLb7hzpE5PmaxkGtlW2d5K08ubkQMvzoB/M1cZaAtFbMEq5359xUmlabtjiXabEJxMQAsasQ38E/vXu907xL',s:[0xc12911ce8f,0x06e8d6cfaa],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

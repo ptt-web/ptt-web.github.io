@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [情報] MadEdit v0.2.9 出了 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這個版本似乎有個算蠻嚴重的bug？
+bug重現方式：
+1.開啟madedit
+2.隨意拖拉兩個madedit可編輯之檔案（在此使用了*.lrc）
+3.tab1 由gbk編碼轉為utf-8
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [情報] MadEdit v0.2.9 出了">
+<meta property="og:description" content="這個版本似乎有個算蠻嚴重的bug？
+bug重現方式：
+1.開啟madedit
+2.隨意拖拉兩個madedit可編輯之檔案（在此使用了*.lrc）
+3.tab1 由gbk編碼轉為utf-8
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1235027777.A.6A4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">shomie ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">站內</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [情報] MadEdit v0.2.9 出了</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Feb 19 15:16:13 2009</span></div>
+<span class="f2">※ 引述《wayfarer (maniac)》之銘言：
+</span><span class="f6">: 更新：
+</span><span class="f6">: 1.檔案的編碼和字型會被記住，在下次開啟時回復
+</span><span class="f6">: 2.按Ctrl+滑鼠滾輪可放大縮小字型
+</span><span class="f6">: 3.加入日語介面
+</span><span class="f6">: 4.修正Tab、Space互轉時的一個bug
+</span><span class="f6">: 5.對話視窗現在只會在madedit主視窗之上，不會在系統所有視窗之上
+</span><span class="f6">: 6.修改檔案關聯相關的東東
+</span><span class="f6">: 7.其他小修正
+</span><span class="f6">: 下載：<a href="https://sourceforge.net/project/showfiles.php?group_id=123568" target="_blank" rel="noreferrer noopener nofollow">http://sourceforge.net/project/showfiles.php?group_id=123568</a>
+</span><span class="f6">: 主頁：<a href="http://madedit.sourceforge.net/wiki" target="_blank" rel="noreferrer noopener nofollow">http://madedit.sourceforge.net/wiki</a>
+</span>這個版本似乎有個算蠻嚴重的bug？
+
+bug重現方式：
+1.開啟madedit
+2.隨意拖拉兩個madedit可編輯之檔案（在此使用了*.lrc）
+3.tab1 由gbk編碼轉為utf-8
+4.tab2 一樣由gbk編碼轉為utf-8
+bug發生：不論怎麼重複第4步，madedit都會一直轉換tab1編碼，而且無法轉換tab2的編
+         碼。而且一切換編碼focus就會跳回tab1，而不是停留在tab2。
+
+
+這應該是bug？而不是新功能吧？
+有人跟我一樣嗎？
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.66.50.25
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ckw</span><span class="f3 push-content">:我也會，不過實際上並非停在tab1，而是第一個處理過的tab</span><span class="push-ipdatetime"> 02/19 16:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wayfarer</span><span class="f3 push-content">:唉~我以為wxWidgets已修掉這個bug了 請重下載0.2.9.1版吧</span><span class="push-ipdatetime"> 02/20 00:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cutekenny</span><span class="f3 push-content">:推MadEdit，現在覺得大剛牙圖示很可愛XD</span><span class="push-ipdatetime"> 02/20 00:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zlw</span><span class="f3 push-content">:原來這串討論的原PO就是作者</span><span class="push-ipdatetime"> 02/20 00:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aqer1224</span><span class="f3 push-content">:0.2.9.1的下載網址有問題</span><span class="push-ipdatetime"> 02/20 02:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ckw</span><span class="f3 push-content">:感謝，馬上重新下載了，我download沒問題</span><span class="push-ipdatetime"> 02/20 10:04
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1235027777.A.6A4.html?cacheKey=2148-738981346&amp;offset=1528&amp;offset-sig=6b91fb39e23151f412bdab578c5630343a4d5c72" data-longpollurl="/v1/longpoll?id=db268569c9d456b3fa4421f0daed6542b7f894fe" data-offset="1528"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdba36b9f0acc',m:'j6m.L0JwFILsGufJ3q_iIepTVKTm.bUmerzgxrCnHj4-1653466890-0-Ab8QtFbR+0SNy1bszFGuEOg1hWMfQcQdVKMh9u/aZ8dlvqdgcbA5ls26WGYdy+jqRLZy74S8elctonOUNBQOZqy2qJIOVXRd0LZAU1rxsHKEY2pJl6PaAb+eLQWsNCvtgQYPaY8HrIhPPeOSFiWiZq6s5zVz8SiocICWhG7Lqgc/',s:[0xc05dfbf323,0xff78be199c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

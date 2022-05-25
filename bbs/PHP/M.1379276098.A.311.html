@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 判斷HTTP_REFERER的來源形式 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="(恕刪)
+: 請問有沒有辦法區分這次點我的網站的連結是哪一種形式？
+這部分剛剛測試了一下
+應該對一般常見的瀏覽器都能拿來判斷
+先說一下這方法來自於
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 判斷HTTP_REFERER的來源形式">
+<meta property="og:description" content="(恕刪)
+: 請問有沒有辦法區分這次點我的網站的連結是哪一種形式？
+這部分剛剛測試了一下
+應該對一般常見的瀏覽器都能拿來判斷
+先說一下這方法來自於
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1379276098.A.311.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">danny8376 (釣到一隻猴子@<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="035c43">[email&#160;protected]</a>)</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 判斷HTTP_REFERER的來源形式</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Sep 16 04:14:54 2013</span></div>
+<span class="f2">※ 引述《LaPass (LaPass)》之銘言：
+</span><span class="f0 hl">(恕刪)</span>
+<span class="f6">: 請問有沒有辦法區分這次點我的網站的連結是哪一種形式？
+</span>
+這部分剛剛測試了一下
+應該對一般常見的瀏覽器都能拿來判斷
+先說一下這方法來自於
+<a href="https://stackoverflow.com/questions/10505678/" target="_blank" rel="noreferrer noopener nofollow">http://stackoverflow.com/questions/10505678/</a>
+
+下面是拿手邊所有能測的設備&amp;瀏覽器測完的結果~~~
+(依序是URI =&gt; ?img 代表網頁內的img tag   沒有query string的就是連結)
+(第二行是User Agent   第三行是Accept Header)
+<a href="https://pastebin.com/j7SVysGW" target="_blank" rel="noreferrer noopener nofollow">http://pastebin.com/j7SVysGW</a>
+
+總體來說...
+IE6-8仍然是特立獨行...
+
+
+判斷兩者分別的方法主要在於一般瀏覽器對img還有hotlink會有不同的 Accept Header
+對img大多瀏覽器都只有*/* 只有GC多了image/webp (Google推廣的格式XD)
+所以判斷上只要符合下面條件應該就會是連結
+反之就是其他的(img audio video ...) (不過embed不適用...)
+IE6-8的部分如果要判斷是否為連結大概就下面幾個MIME選一個來用
+application/x-ms-application, application/x-ms-xbap,
+application/vnd.ms-xpsdocument, application/xaml+xml
+其他瀏覽器目前看來
+text/html
+直接檢查這個MIME就行了
+
+上面只針對HTML標準的多媒體tag有用
+其中Fx的audio多了幾種音訊格式定義(見下方) 但不影響判斷
+
+
+
+
+不過像是embed這類型的話...
+下面這個是針對embed&amp;audio的測試(只簡單測了GC IE Fx)
+<a href="https://pastebin.com/vrt3iNp3" target="_blank" rel="noreferrer noopener nofollow">http://pastebin.com/vrt3iNp3</a>
+比對一下和前面一份的結果
+
+embed的部分應該是無法判斷了(至少IE以外是無法)
+GC&amp;Fx直接跟連結一樣了
+IE的話則是直接丟給WMP 所以UserAgent不同 但都是*/*的Accept Header
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.115.216.102
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">johnny1972</span><span class="f3 push-content">:推認真詳細</span><span class="push-ipdatetime"> 09/16 09:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:其實只是閒閒沒事做的大學生而已www</span><span class="push-ipdatetime"> 09/16 12:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LaPass</span><span class="f3 push-content">:非常感謝 m(_ _)m</span><span class="push-ipdatetime"> 09/16 12:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:推一個</span><span class="push-ipdatetime"> 09/16 20:51
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1379276098.A.311.html?cacheKey=2148-469785108&amp;offset=1860&amp;offset-sig=b5da4b9df277b46e12384acd81de5364a0a47f8b" data-longpollurl="/v1/longpoll?id=cc205fa9e1acb92ff62fb74f8261dc947b2e158d" data-offset="1860"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea405b1f8aa4',m:'iCSOB7C8.rjwFuJFvBAFeFZbyf8DjszoycjQC0BnnAI-1653467489-0-AQo+es9AZ2ElB9kRg7mfQeOElThGHNt3RfSMwncFb2uneE25ufSYvgrflT/EfchLHQKv4+L4UixaFevVvWUmWZ6dSaVXMxPLinW9G0kGyaF3RSPjbHtkANto8beT2002xx9JfxQ94N8AF9S0u/TqRfBSQGW+oBiPx8FhEeIDLCs2',s:[0x3cccf58fec,0xe934804b9e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:b95170088 - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ab95170088">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ab95170088">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:b95170088" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1592227662.A.D9D.html">[請益] class_alias問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;class_alias%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1579438633.A.68E.html">Re: [請益] php-undefined symbol: zend_empty_strin</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php-undefined&#43;symbol%3A&#43;zend_empty_strin">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1577795219.A.76F.html">[請益] php-undefined symbol: zend_empty_strin</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php-undefined&#43;symbol%3A&#43;zend_empty_strin">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1479962930.A.1CC.html">[請益] 想請問thinkphp的url問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%83%B3%E8%AB%8B%E5%95%8Fthinkphp%E7%9A%84url%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1474525034.A.D2B.html">[請益] ckeditor  html 的標籤會被重新排列</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;ckeditor&#43;&#43;html&#43;%E7%9A%84%E6%A8%99%E7%B1%A4%E6%9C%83%E8%A2%AB%E9%87%8D%E6%96%B0%E6%8E%92%E5%88%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1450330688.A.312.html">[請益] phpExcel開啟檔案時會占用網頁伺服器資源</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;phpExcel%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88%E6%99%82%E6%9C%83%E5%8D%A0%E7%94%A8%E7%B6%B2%E9%A0%81%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%B3%87%E6%BA%90">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1448959055.A.63B.html">[請益] phpexcel 無法讀取xlsx問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;phpexcel&#43;%E7%84%A1%E6%B3%95%E8%AE%80%E5%8F%96xlsx%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437710950.A.EB8.html">[請益] 要如何安裝Laravel 4 不要Laravel 5</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A6%81%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9DLaravel&#43;4&#43;%E4%B8%8D%E8%A6%81Laravel&#43;5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437568657.A.7A0.html">[討論] 哪個php的framework最好用</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">b95170088</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E5%93%AA%E5%80%8Bphp%E7%9A%84framework%E6%9C%80%E5%A5%BD%E7%94%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ab95170088">搜尋看板內 b95170088 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea307ea5f8eb',m:'ukmcqJ8APcx82vxzq5sjk3PIYp5wnEvrJJXNKuZtW7k-1653467486-0-Afqt6LI0WBsPZmlrtwAJlXYseCwUPFcZmGAz461TmHCro7FdDv0zxS0lAt0FNiGGNqI5EhVWojTi0q6W9dcrznaf0+7ZFczNTUYhAlRlKDPaSJQzKWmwQhW5G+IzEZKup+P88SRDEjC6zhDdi+TrFS6fLAdAVHWs/MqPiVtHSHOH',s:[0x6012ece3de,0xe9a5fb281e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

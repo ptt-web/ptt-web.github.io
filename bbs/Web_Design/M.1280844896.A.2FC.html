@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] DNS 網域 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你的理解基本上是沒有錯，
+DNS Server 是一層一層查詢的，
+最上面的確有一個 .(root) 的主機存在，
+所以你不能說現在想要個 http://super.man. 這樣的網域 XD&#34;
+(當然你偷改 DNS Server 或改作業系統的對應不算)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] DNS 網域">
+<meta property="og:description" content="你的理解基本上是沒有錯，
+DNS Server 是一層一層查詢的，
+最上面的確有一個 .(root) 的主機存在，
+所以你不能說現在想要個 http://super.man. 這樣的網域 XD&#34;
+(當然你偷改 DNS Server 或改作業系統的對應不算)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1280844896.A.2FC.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">cleanwind (骨傲風清(掛網))</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] DNS 網域</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Aug  3 22:14:53 2010</span></div>
+你的理解基本上是沒有錯，
+
+DNS Server 是一層一層查詢的，
+
+最上面的確有一個 .(root) 的主機存在，
+
+所以你不能說現在想要個 <a href="http://super.man." target="_blank" rel="noreferrer noopener nofollow">http://super.man.</a> 這樣的網域 XD&#34;
+
+(當然你偷改 DNS Server 或改作業系統的對應不算)
+
+(你的 URL 其實省略了最後的 . ，完整的 FQDN 是會包含最後的 . )
+
+telnet://ptt.cc. 也是可以的 :)
+
+
+當然中間是有快取的存在以降低 Server Loading ，
+
+不過沒有一台 DNS Server 擁有所有的 Zone 資料，
+
+透過 DNS Server 一次一次的查詢，
+
+要嘛得到不存在 / 下層 DNS Server 紀錄 / 主機位址(IP) 。
+
+
+順便說說好用的 VirtualHost :p
+
+(在 IIS 內稱為「主機標頭值」)
+
+一台 Server 想跑兩種網站以上有三個方法：
+
+1.給予不同 IP
+  譬如說 <a href="http://120.101.9.1" target="_blank" rel="noreferrer noopener nofollow">http://120.101.9.1</a>  回傳 A 網站
+         <a href="http://120.101.9.22" target="_blank" rel="noreferrer noopener nofollow">http://120.101.9.22</a> 回傳 B 網站
+
+
+2.給予不同 Port
+  http走的預設是 port 80
+  <a href="http://120.101.9.1/" target="_blank" rel="noreferrer noopener nofollow">http://120.101.9.1/</a>           回傳 Apache 的頁面
+  <a href="http://120.101.9.1:8080/" target="_blank" rel="noreferrer noopener nofollow">http://120.101.9.1:8080/</a>      BT傳輸軟體遠端管理
+
+  以上範例只有在 IP 是 120.101 下才連的到 XD&#34;
+
+
+3.Virtualhost
+  <a href="http://ee.niu.edu.tw/" target="_blank" rel="noreferrer noopener nofollow">http://ee.niu.edu.tw/</a>         回傳 NIUEE 系網
+  <a href="http://eelab.niu.edu.tw/" target="_blank" rel="noreferrer noopener nofollow">http://eelab.niu.edu.tw/</a>      回傳(？)別的頁面
+
+  在 DNS Server 上的設定，
+  ee.niu.edu.tw. 與 eelab.niu.edu.tw.
+  都會指向 120.101.9.16 ，也都走 port 80。
+  可是卻神奇的可以跑兩個不同網站，
+  這就是 Virtualhost 的功能 ...
+
+
+推薦用書嘛 ...
+
+難　　1.鳥哥的 Linux 私房菜 伺服器架設篇 / 鳥哥 / 上奇
+↓　　2.Microsoft Windows Server 2003 架站實務 / 施威銘研究室 / 旗標
+易　　3.Windows XP伺服器架設全攻略 / 施威銘研究室 / 旗標
+
+如果 原PO 單純想架個 Server 自娛娛人，
+
+或者單純想寫一些網頁， 3 是你最好的選擇，
+
+如果想往上一點， 1 或 2 都是個人認為不錯的選擇。
+
+
+以上若有錯誤，還請高手指正 :p
+
+<span class="f2">※ 引述《InitialShuk (Shuk)》之銘言：
+</span><span class="f6">: 起先一開始在看apache virtualhost
+</span><span class="f6">: 查了一下了解其功用
+</span><span class="f6">: 後來很好奇 既然架設了DNS server為什麼需要再去申請網域(ex:idv.tw)?
+</span><span class="f6">: 目前自身解讀
+</span><span class="f6">: dns server可以幫自己設定申請網域的前半部  ex:*.idv.tw
+</span><span class="f6">: 會先去tw網域找 在去idv網域 對應到本身的dns server
+</span><span class="f6">: but top網域(tw,cn,org,com....etc)非常多 這些名稱怎麼對應到相對的網域
+</span><span class="f6">: 大致上就是tw為什麼對應到台灣?cn對應到中國大陸?之類的
+</span><span class="f6">: 是說上面還有一個終極網域?所有的domain name皆會從此開始?
+</span><span class="f6">: 上面整串使用的詞彙不確定是否正確(剛進來...)
+</span><span class="f6">: 覺得我問得太淺 沒自己認真翻,請推薦我概念用書 我會非常感謝orz
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 120.101.9.24
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">InitialShuk</span><span class="f3 push-content">:謝謝</span><span class="push-ipdatetime"> 08/03 22:59
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1280844896.A.2FC.html?cacheKey=2149-475874354&amp;offset=2378&amp;offset-sig=a672e7d3085eb67860bc7263d14485e5fd58fce6" data-longpollurl="/v1/longpoll?id=4941a2b0ea7a41b139a0993d8207cf1707aea658" data-offset="2378"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9ed4a991ec4',m:'hJSH8Djdu8aUqcJuA3CSQSCobPoaPgv88JZd.ceGNaA-1653467476-0-AV0D0n2lACJkWohY/yuWIOXSlb0Yc0pFi0wTEj5qhIPZQtsoPhW4Jt3SRcBnWt8vHwL9rksyrozF0I6Bk1ERzx6jb2llSvL3ifhfgZ4CI7m4l0H/LlX7ZrDBSekzrXqLQ3UvvBfCHlkkrhn/7dTTAzVxdG69ItCEecucZWZNxl7Y',s:[0xd94c522d80,0x8616964c9a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

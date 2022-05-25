@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 關於action 和這份檔案的傳出後 找不到網頁 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="&lt;?php
+ if (empty($_GET[&#39;choose&#39;])):
+?&gt;
+ &lt;html&gt;
+ &lt;title&gt;多向轉址&lt;/title&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 關於action 和這份檔案的傳出後 找不到網頁">
+<meta property="og:description" content="&lt;?php
+ if (empty($_GET[&#39;choose&#39;])):
+?&gt;
+ &lt;html&gt;
+ &lt;title&gt;多向轉址&lt;/title&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1259047446.A.286.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">CAnthony15 (CAnthony)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 關於action 和這份檔案的傳出後 找不到網頁</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Nov 24 15:24:03 2009</span></div>
+&lt;?php
+ if (empty($_GET[&#39;choose&#39;])):
+?&gt;
+ &lt;html&gt;
+ &lt;title&gt;多向轉址&lt;/title&gt;
+ &lt;body&gt;
+ 您喜歡瀏覽的運動相關訊息是:&lt;br&gt;
+ &lt;form action=&lt;?php echo $_SERVER[&#39;PHP_SELF&#39;] ?&gt; method=post&gt;
+ &lt;input type=radio name=choose value=1&gt;游泳&lt;br&gt;
+  &lt;input type=radio name=choose value=2&gt;健行&lt;br&gt;
+  &lt;input type=radio name=choose value=3&gt;登山&lt;br&gt;
+  &lt;input type=submit value=&#34; 選好了 &#34;&gt;
+  &lt;/form&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+ &lt;?php
+  else:
+  $hostname=$_SERVER[&#39;HTTP_HOST&#39;];
+  $abs_path=dirname($_SERVER[&#39;PHP_SELF&#39;]);
+  $filename=$_GET[&#39;choose&#39;].&#34;.htm&#34;;
+  header(&#34;Location: <a href="http://&#34;.$hostname.$abs_path.&#34;/&#34;.$filename);" target="_blank" rel="noreferrer noopener nofollow">http://&#34;.$hostname.$abs_path.&#34;/&#34;.$filename);</a>
+  exit;
+  endif
+?&gt;
+
+======================================================================
+自己用appserv 下去做
+
+結果輸入 localhost/chat.php 後
+
+跑出找不到網頁的訊息= =
+
+請問這是什麼原因!!
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.30.14.18
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:找不到網頁應該是AppServ沒設好會你丟錯地方</span><span class="push-ipdatetime"> 11/24 15:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:不過你 from 的 action 跟你讀變數的方法不同要改一下</span><span class="push-ipdatetime"> 11/24 15:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:     form</span><span class="push-ipdatetime"> 11/24 15:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CAnthony15</span><span class="f3 push-content">:action 後面 那個的作用是什麼?(書上的看不懂)</span><span class="push-ipdatetime"> 11/24 15:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">emn178</span><span class="f3 push-content">:action表示傳送到哪,可以想成一個連結位址,傳送到當前網頁</span><span class="push-ipdatetime"> 11/24 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">emn178</span><span class="f3 push-content">:可以用action=&#34;&#34;就好 method表示傳送的方式,server端要用</span><span class="push-ipdatetime"> 11/24 16:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">emn178</span><span class="f3 push-content">:對應的方式取值, 你method=post 用$_GET會取不到</span><span class="push-ipdatetime"> 11/24 16:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">albb0920</span><span class="f3 push-content">:糟糕，我說錯了，我是指你的 method 前後不同 XDrz</span><span class="push-ipdatetime"> 11/24 17:22
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1259047446.A.286.html?cacheKey=2148-469796628&amp;offset=1772&amp;offset-sig=a5047ab3d073d5d9d361f9fed4b65fdb91d74cc0" data-longpollurl="/v1/longpoll?id=00741ed269e9c8f8d1ff6969ab5dc4824a2f515b" data-offset="1772"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea46bfd4807e',m:'B1IE_KcWTJu9FmukBIY4yiHJwmrux7hKVJmhWFrzBuE-1653467490-0-Ab7zrHCWyLds1TFU5QF6Iwk4+8OSw8aUWFPm70MfxgKUUZb7hmLFuh0CNIhTHjSAGh1zSbPkVMDqtOR1pWUWT8KzJyzlXbTOUHO6hsvMUBFuE/qSZ/r48ZKTy0OQc49yiBRPxX/vxxCOCv3uAw+NIdCxcS7MZ3AQdfKIcxlEkxoh',s:[0x67c18df665,0x4edb63e851],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

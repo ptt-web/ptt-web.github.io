@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:weiyucsie - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Aweiyucsie">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Aweiyucsie">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:weiyucsie" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1296489937.A.BDE.html">Re: [請益] 噗浪機器人的問題...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%99%97%E6%B5%AA%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%9A%84%E5%95%8F%E9%A1%8C...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1266431500.A.57E.html">Re: [請益] 用php去設定cron</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%94%A8php%E5%8E%BB%E8%A8%AD%E5%AE%9Acron">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1252662047.A.28D.html">Re: [請益] preg_match的(.+?) 怎麼解讀??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;preg_match%E7%9A%84%28.%2B%3F%29&#43;%E6%80%8E%E9%BA%BC%E8%A7%A3%E8%AE%80%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1246975494.A.C25.html">Re: [請益] ereg()</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;ereg%28%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1245601712.A.18F.html">Re: 有關於讀取txt</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%E6%9C%89%E9%97%9C%E6%96%BC%E8%AE%80%E5%8F%96txt">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1242256489.A.805.html">Re: [請益] 請問什麼是 Zend</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E4%BB%80%E9%BA%BC%E6%98%AF&#43;Zend">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1234340658.A.815.html">Re: [請益] class private</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;class&#43;private">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1226519801.A.F73.html">Re: [請益] 請問如何判斷大小寫？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%B7%E5%A4%A7%E5%B0%8F%E5%AF%AB%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1218369023.A.C16.html">Re: [請益] php網頁會員登入問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">weiyucsie</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php%E7%B6%B2%E9%A0%81%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aweiyucsie">搜尋看板內 weiyucsie 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea6b3eba14d0',m:'fyPM7fudfxwh8iZjjU1e18oo.wqhto0MhlBgl3PzjLA-1653467496-0-AQGGmPfAGtEtbf8EqjZRq2D40BgshrPBZdb8iVFlWz27SKwkLUYMUqplbgbDm0SMusFIzaXcs1HTUB/URQchE2oVbe6yChy0Sbdgh8ZmASG/1GT1rKSYqGvMCjGcyvFwmZ3VI/UjuUuxul600VMbb54PXaxauagLDZkuC4TB0RvG',s:[0x46b8637ff5,0xc63d9b3cd1],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

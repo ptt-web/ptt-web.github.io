@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 不用cookie能做會員管理嗎 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="在關閉cookie的情況之下
+變數要如何能在網頁中一直傳遞呢
+例如登入後設userid
+那是不是每個網頁都要去用post,get抓取變數呢
+ex:
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 不用cookie能做會員管理嗎">
+<meta property="og:description" content="在關閉cookie的情況之下
+變數要如何能在網頁中一直傳遞呢
+例如登入後設userid
+那是不是每個網頁都要去用post,get抓取變數呢
+ex:
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1153210133.A.04A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">eecir (小君你最可愛了)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 不用cookie能做會員管理嗎</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jul 18 16:19:51 2006</span></div>
+在關閉cookie的情況之下
+變數要如何能在網頁中一直傳遞呢
+例如登入後設userid
+那是不是每個網頁都要去用post,get抓取變數呢
+ex:
+test1.php
+$userid=john;
+&lt;? echo &#34;&lt;a href=&#39;test2.php?userid=&#34;.$userid.&#34;&#39;&gt;&#34;; ?&gt;
+
+test2.php
+echo $_GET[&#34;userid&#34;];  //結果:john
+&lt;form id=&#34;form1&#34; name=&#34;form1&#34; method=&#34;POST&#34; action=&#34;test3.php&#34;&gt;
+&lt;input name=&#34;userid&#34; type=&#34;text&#34; id=&#34;userid&#34; value=&#34;&lt;?=$GET[&#34;userid&#34;];?&gt;&#34;/&gt;
+&lt;input name=&#34;Submit&#34; type=&#34;submit&#34; value=&#34;送出&#34; /&gt;
+
+
+test3.php
+echo $_POST[&#34;userid&#34;]; //結果:john
+
+要每個網頁都這樣寫嗎??
+有沒有不用cook比較好的寫法呢
+不然變數豈不是要每個網頁都一直傳遞??
+請大家多多幫忙
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.120.76.67
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:session</span><span class="push-ipdatetime"> 07/18 16:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lazyhome</span><span class="f3 push-content">:給樓上,使用者cookie關閉情況下,用session也沒有用 ...</span><span class="push-ipdatetime"> 07/18 16:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">timyau</span><span class="f3 push-content">:基本上一定是要用cookie的...不用好像不行...</span><span class="push-ipdatetime"> 07/18 21:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">emn178</span><span class="f3 push-content">:我都用資料庫來做session..</span><span class="push-ipdatetime"> 07/19 01:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eecir</span><span class="f3 push-content">:請問用資料庫來做session是什麼意思呢??有辦法詳細說明嗎</span><span class="push-ipdatetime"> 07/19 08:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:給2F... ... session 就是為這種情況設計出來的 =.=</span><span class="push-ipdatetime"> 07/19 09:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cttlee</span><span class="f3 push-content">:<a href="http://tw2.php.net/session" target="_blank" rel="noreferrer noopener nofollow">http://tw2.php.net/session</a></span><span class="push-ipdatetime"> 07/19 09:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee</span><span class="f3 push-content">:visitor accessing your web site is assigned an unique</span><span class="push-ipdatetime"> 07/19 09:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee</span><span class="f3 push-content">:id, the so-called session id.</span><span class="push-ipdatetime"> 07/19 09:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee</span><span class="f3 push-content">:This is either stored in a cookie on the user side</span><span class="push-ipdatetime"> 07/19 09:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cttlee</span><span class="f3 push-content">:or is propagated in the URL.</span><span class="push-ipdatetime"> 07/19 09:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lazyhome</span><span class="f3 push-content">:給1F,用session會產生一組cookie存在client端的電腦裡...</span><span class="push-ipdatetime"> 07/19 11:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lazyhome</span><span class="f3 push-content">:所以把cookie關閉情況下,用session也沒有用....</span><span class="push-ipdatetime"> 07/19 11:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:你要不要看一下你樓上的最後一行... 用get...</span><span class="push-ipdatetime"> 07/19 13:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">forgmonkey</span><span class="f3 push-content">:session的sid除了用cookies也可以用SID環境變數get傳遞</span><span class="push-ipdatetime"> 07/23 20:26
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1153210133.A.04A.html?cacheKey=2148-469795004&amp;offset=2285&amp;offset-sig=af6da9bb32a47835d197ee56428929a47027a2c2" data-longpollurl="/v1/longpoll?id=8ef52b0a9b7c1bd08b66cc463a489cd84b81a348" data-offset="2285"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5dffa0afd0',m:'xJ7uTXXDeKNEv1HWlw2hs7JZF8bMW2nsnFvKgfaHXG8-1653467494-0-Aah9l4lsodxu3OfKyYvy5M85oB9jiBzSEYbYnIWxw6XkhJWpKB85VfSiwU6mfQke93+BEorvau70OaEeguuJp5wy7tEqnEOQf9Sx3ruAXsGnzOFhsJUeXKrtk/ksURyu7N7Csgnsg+MElwt3eZ5COHmCk8xNzEJIQ9KOMan0o0ES',s:[0x79a919c6ea,0xb050ab885e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

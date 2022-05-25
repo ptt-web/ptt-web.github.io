@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:jacobcan118 - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ajacobcan118">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ajacobcan118">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:jacobcan118" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1454649490.A.587.html">[請益] 用preg_match查字串</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%94%A8preg_match%E6%9F%A5%E5%AD%97%E4%B8%B2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1436327451.A.151.html">[請益] telnet 回覆rejected for policy reasons 554</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;telnet&#43;%E5%9B%9E%E8%A6%86rejected&#43;for&#43;policy&#43;reasons&#43;554">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1401767225.A.4E0.html">[請益] php 在array裡找值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php&#43;%E5%9C%A8array%E8%A3%A1%E6%89%BE%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1399354762.A.AEF.html">[請益] php sendEmil error, @domain.com is rejected</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php&#43;sendEmil&#43;error%2C&#43;%40domain.com&#43;is&#43;rejected">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1396659004.A.DEA.html">[請益] 用preg_match_all找pattern</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%94%A8preg_match_all%E6%89%BEpattern">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1393116627.A.BBA.html">[請益] 從array,object裡找值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%BE%9Earray%2Cobject%E8%A3%A1%E6%89%BE%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1392346044.A.BDF.html">[請益] preg_match取數字</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;preg_match%E5%8F%96%E6%95%B8%E5%AD%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1390105288.A.4A3.html">[請益] 取物件裡的值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%8F%96%E7%89%A9%E4%BB%B6%E8%A3%A1%E7%9A%84%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1385799415.A.3F4.html">[請益] 如何測試用rest api, php</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E6%B8%AC%E8%A9%A6%E7%94%A8rest&#43;api%2C&#43;php">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1385177698.A.92B.html">[請益] 請問如何裝php 和 curl 在 redhat</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jacobcan118</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E8%A3%9Dphp&#43;%E5%92%8C&#43;curl&#43;%E5%9C%A8&#43;redhat">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ajacobcan118">搜尋看板內 jacobcan118 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea440febb00c',m:'PJNDvqWcuoh4uOe12l3xcFnXl5yqiCXdQ1xxxECCn1I-1653467489-0-Afv9DBq1LFR0ftjHcBVsGrpT4CQ+KkAB5RrDAMSOJzA6OLtkz/N3oEzHlYXn21YZ2KcaQDq2ixfMfI3hVh6k8LK/EJpXuKEoXFM+pI8sJxkgbPIRqo7nt7NfiNMVGcFFEnf1CwqOJZmKBXF4Zush2Cnz+Y4alkqYbZy3N4Ng4bDc',s:[0x60aba8d7a2,0x637a19d888],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

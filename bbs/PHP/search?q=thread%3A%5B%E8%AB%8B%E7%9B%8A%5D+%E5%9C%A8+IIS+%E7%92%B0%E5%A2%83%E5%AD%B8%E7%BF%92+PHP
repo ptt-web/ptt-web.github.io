@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>thread:[請益] 在 IIS 環境學習 PHP - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8&#43;IIS&#43;%E7%92%B0%E5%A2%83%E5%AD%B8%E7%BF%92&#43;PHP">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8&#43;IIS&#43;%E7%92%B0%E5%A2%83%E5%AD%B8%E7%BF%92&#43;PHP">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="thread:[請益] 在 IIS 環境學習 PHP" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437943938.A.547.html">Re: [請益] 在 IIS 環境學習 PHP</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">HwangTW</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8&#43;IIS&#43;%E7%92%B0%E5%A2%83%E5%AD%B8%E7%BF%92&#43;PHP">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3AHwangTW">搜尋看板內 HwangTW 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1437565199.A.5EB.html">[請益] 在 IIS 環境學習 PHP</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">SophiaH</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8&#43;IIS&#43;%E7%92%B0%E5%A2%83%E5%AD%B8%E7%BF%92&#43;PHP">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3ASophiaH">搜尋看板內 SophiaH 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac9db378a56',m:'_vQm5YV3kAlaH2fPYQ1dH3yW.TYySus4hCCwS.r9.WI-1653467511-0-AYsccyTP0dP9kL/weXgUbIjKt4u03I6eJHRFoeF1nGEfiXvbF6sIXMLD9ifsLk/v4bGxsR01BAJCpqK+DP59fC3y+dotWLCpsFtWTptt0cI/XczU3WrykwPtQWlTX9qBLeLesMJn2W4dlhzibcIHVrRBYdm/yXLPesyHeH8rByi8cw82FomtzQW/57osHaDMonQjUVs1C/inT2R7kds5nxnzSx7p6IEmIQx8Ym06HNKD/gBJ6s1BWRPkU2QYBEiS+w==',s:[0x15239b4961,0x485b2082d4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

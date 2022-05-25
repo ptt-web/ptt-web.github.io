@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 台灣行政區的資料庫 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我現在要用MYSQL
+規劃台灣行政區的資料庫
+可是我希望各位可以給我一點建議
+我做出來的結果是想用下拉式選單選哪個縣市哪個區之類的
+程式碼方面是沒問題
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 台灣行政區的資料庫">
+<meta property="og:description" content="我現在要用MYSQL
+規劃台灣行政區的資料庫
+可是我希望各位可以給我一點建議
+我做出來的結果是想用下拉式選單選哪個縣市哪個區之類的
+程式碼方面是沒問題
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1248765849.A.FC2.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">claire0810 (Claire)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 台灣行政區的資料庫</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jul 28 15:24:08 2009</span></div>
+
+我現在要用MYSQL
+
+規劃台灣行政區的資料庫
+
+可是我希望各位可以給我一點建議
+
+我做出來的結果是想用下拉式選單選哪個縣市哪個區之類的
+
+程式碼方面是沒問題
+
+但是我資料庫方面 卻不知道該怎樣規劃才是最方便的
+
+該以縣當資料庫欄位
+
+EX     (欄位)  台北市 基隆市 .....以此類推  (還有其他縣市)
+       (資料)  中正區 仁愛區
+               大同區 中正區
+               中山區 信義區
+
+還是先預設一些欄位來新增
+
+
+EX     (欄位) 城市名稱  data1    data2     data3  ....以此類推
+       (資料) 台北市    中正區   大同區    中山區
+              基隆市    仁愛區   中正區    信義區
+
+
+
+
+又或者一個城市一個資料表  (因為我還要加上郵遞區號)
+
+
+
+
+
+由於只有我一個人規劃資料庫 希望前輩們可以給我一點意見
+
+如果不能在這討論 請告訴我 我會自D
+
+(因為用PHP程式寫 在這版也比較熟XD)
+
+麻煩各位囉!!!
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.220.30.237
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:感覺是第一種比較正規 但不知你想要怎麼使用資料庫</span><span class="push-ipdatetime"> 07/28 15:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:若每個行政區都有單獨的資料要儲存的話 要在加table</span><span class="push-ipdatetime"> 07/28 15:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:而第一個表就當索引的感覺 (新手發言&gt;&#34;&lt; 請鞭小力點)</span><span class="push-ipdatetime"> 07/28 15:28
+</span></div>    XD 不太懂耶 第一種我不太想用 因為新增上太過麻煩
+
+    雖然這也是我第一個想要用的方式 我現在很猶豫是否要一個城市建立一個資料表
+
+    因為這樣在新增上比較不會麻煩 還有一個重點是 資料表的空值不會太多
+
+    如果用第一種方或第二種方法 會因為行政區多寡的關係 而有許多空值的欄位&gt;&lt;
+
+    請各位跟我討論討論 我真的好煩腦XD
+<span class="f2">※ 編輯: claire0810      來自: 61.220.30.237        (07/28 15:34)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:單純只想是想用資料庫存行政區的名稱的話(應該沒誤?)</span><span class="push-ipdatetime"> 07/28 15:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:應該可以用一張表就好了 欄位是[縣市名][區域鄉鎮]</span><span class="push-ipdatetime"> 07/28 15:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:放入[台北市][中正區]...[台北市][大同區]等資料…</span><span class="push-ipdatetime"> 07/28 15:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">awashharp   </span><span class="f3 push-content">:(話說剛剛我第一次推文沒認真看文章 造成困擾抱歉@@)</span><span class="push-ipdatetime"> 07/28 15:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:不用考慮，就是第一種了，以後要擴充的話在加上國家</span><span class="push-ipdatetime"> 07/28 15:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:識別就好了</span><span class="push-ipdatetime"> 07/28 15:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:第二種方式，不論在搜尋或寫程式上都不方便</span><span class="push-ipdatetime"> 07/28 15:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:也不符合資料庫正規化</span><span class="push-ipdatetime"> 07/28 15:47
+</span></div>
+       XD 我都忘了考慮正規劃的問題  可是這樣會因為行政區域多寡
+
+       會有很多空值 這樣也沒關係@@?
+
+
+<span class="f2">※ 編輯: claire0810      來自: 61.220.30.237        (07/28 15:54)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:第二種才會有空值吧?</span><span class="push-ipdatetime"> 07/28 16:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack      </span><span class="f3 push-content">:如果鄉鎮增加了，你就要改資料庫結構了喔</span><span class="push-ipdatetime"> 07/28 16:09
+</span></div>
+              謝謝你們喔^^ 因為你們也讓我決定該用哪一種方式了^^
+<span class="f2">※ 編輯: claire0810      來自: 61.220.30.237        (07/28 16:12)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knives      </span><span class="f3 push-content">:其實不建議把這個放到資料庫裡面的，幾乎新增一次就</span><span class="push-ipdatetime"> 07/28 16:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knives      </span><span class="f3 push-content">:再也不會再更改</span><span class="push-ipdatetime"> 07/28 16:34
+</span></div>
+
+   那我希望用下拉式選單選擇鄉鎮縣市 還有其他方法麻??
+     (陣列可能會放太大了吧@@&#34;)
+
+<span class="f2">※ 編輯: claire0810      來自: 61.220.30.237        (07/28 16:54)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lgzenith    </span><span class="f3 push-content">:我個人還是建議放資料庫...因為客戶哪天心情好</span><span class="push-ipdatetime"> 07/28 17:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lgzenith    </span><span class="f3 push-content">:說希望把台改成臺之類的，還要能正常搜尋的時候...</span><span class="push-ipdatetime"> 07/28 17:05
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1248765849.A.FC2.html?cacheKey=2148-469789754&amp;offset=3480&amp;offset-sig=a0da1214dd069ff725c5e5b84d0b2d34a02f20b8" data-longpollurl="/v1/longpoll?id=732e92e3d19a77ba17adf5c0364c3aa4b416ca22" data-offset="3480"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5b294daf60',m:'Iop_kwg5kO0c6yb2oy7ymdoE6IffBKFp5_kMzSK1WOI-1653467493-0-AYicClGlIh+ZfXeImucm35tPyRUUSWtQlD80OEK4twvHNvdLZeGmriD/6uUnjn3TA+kkTwENbg6lPS7L2l4lKtzkHYM2M3T0ZsI7sLt1ULQIFn9ZXKGbwOM8wZZ8xQLjuBwWjsmAWKyIF1olkkGgoQF1UiZzJIQEbeI9tDH6c1fB',s:[0xc9139f4902,0x5aecf6a158],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

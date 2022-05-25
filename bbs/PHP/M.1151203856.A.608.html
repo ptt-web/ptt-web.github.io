@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 關於含0陣列的個數 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="array_count_values()
+Counts all the values of an array
+--
+※ 發信站: 批踢踢實業坊(ptt.cc) 
+◆ From: 219.81.161.199
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 關於含0陣列的個數">
+<meta property="og:description" content="array_count_values()
+Counts all the values of an array
+--
+※ 發信站: 批踢踢實業坊(ptt.cc) 
+◆ From: 219.81.161.199
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1151203856.A.608.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ago1414 (自己也要知道肥!!)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 關於含0陣列的個數</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jun 25 10:51:35 2006</span></div>
+<span class="f2">※ 引述《submarine (submarine)》之銘言：
+</span><span class="f6">: 如果我有一個陣列， 大小不定， 會改變
+</span><span class="f6">: 但得到的一定是0 or 1 所以得到的是{0,0,0,1,0,1,0,0,0,1......}
+</span><span class="f6">: 我要怎麼知道這個陣列的元素個數呢？
+</span><span class="f6">: 因為count 還sizeof都是不算0丫 如果我要算整個所有的各數，我要怎算？
+</span>
+
+array_count_values()
+
+Counts all the values of an array
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 219.81.161.199
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1151203856.A.608.html?cacheKey=2148-469796582&amp;offset=478&amp;offset-sig=09cdf477913a75aa7a33691503ca3c858fb8a681" data-longpollurl="/v1/longpoll?id=be12b146a7743ce94ead5c0be1299069d115def1" data-offset="478"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea84ad00af60',m:'JxKM4NaRDElhWD0uZM2.C.nJ.iCGZypOPTdAFzJS1Xo-1653467500-0-AWX8YyLu7pVZfmtvUE5uNwi0mWy9seSB6VplgTO8fiD9q8CMMFLtpqdr2nSVRPViSfU4EBxTtQ1Gk5k4rp9im3XiP1jm6HjzsE+fp/qtH5SnvGilgZsM/M/vS2tVSrIld3rtbfPcxnenRaWhe1yh1mNXj+NI20HF2GUBNu+LlH/K',s:[0xac0fe7ab92,0x5b38e5496d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

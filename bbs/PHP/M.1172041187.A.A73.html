@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 想請教部份程式的問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="            ^^^^^^這部份應該會知道出幾題 題目吧，用FOR就可以解決了
+: 然而在加總部份也有問題
+        加總的話，假設每題配分都一樣好了，
+        因為大大沒有說是哪種選擇答案方式，
+        個人是覺得可以 用一表單來處理，而每題會給他鍵值
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 想請教部份程式的問題">
+<meta property="og:description" content="            ^^^^^^這部份應該會知道出幾題 題目吧，用FOR就可以解決了
+: 然而在加總部份也有問題
+        加總的話，假設每題配分都一樣好了，
+        因為大大沒有說是哪種選擇答案方式，
+        個人是覺得可以 用一表單來處理，而每題會給他鍵值
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1172041187.A.A73.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">j87b0003 (即在不遠處)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 想請教部份程式的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Feb 21 14:59:44 2007</span></div>
+<span class="f2">※ 引述《fantensy (尋愛)》之銘言：
+</span><span class="f6">: 目前正在寫有關線上測驗的程式
+</span><span class="f6">: 目前會員部份已經大致完成
+</span><span class="f6">: 除了修改資料部份 無法修改成功
+</span><span class="f6">: 而線上測驗的地方
+</span><span class="f6">: 我也是參考課本 再自己修改部分
+</span><span class="f6">: 目前 測驗部份 題目部份可以亂數跑出
+</span><span class="f6">: 但是想要再加題數下去 卻不知道該怎麼跑出來
+</span>            ^^^^^^這部份應該會知道出幾題 題目吧，用FOR就可以解決了
+<span class="f6">: 然而在加總部份也有問題
+</span>        加總的話，假設每題配分都一樣好了，
+        因為大大沒有說是哪種選擇答案方式，
+        個人是覺得可以 用一表單來處理，而每題會給他鍵值
+        傳送後，用資料庫去查詢 條件用鍵值 和 使用者答案 去比對
+        有查到的話，就表示答對，反之則否。
+<span class="f6">: 能否有高手可以指導 願意撥空幫我解決問題&lt;(_ _)&gt;
+</span><span class="f6">: (資質魯鈍 實在不知道怎麼寫才好)
+</span>ps：回答不好，就請多指教了。。哈哈
+
+--
+<span class="f4">╬═════════◥</span><span class="f0">           </span>  <span class="f0 hl"> 風 沒有方向   雨 沒有落點</span>
+<span class="f4">║</span> <span class="f2 hl">        </span><span class="f0 hl">══</span><span class="f2 hl">  </span><span class="f3 b4 hl">●</span><span class="f3 hl"> </span><span class="f4">║</span>       <span class="hl"> 既不入塵世            何處惹塵埃</span>
+<span class="f4 hl">╬ </span><span class="f0 hl">╦╩╦═══╬</span><span class="f2 hl">   </span><span class="f4">║        </span><span class="f0 hl"> 龍吟海嘯皆自得  騰風起雲而無拘</span>
+   ║  ║   ║ ║<span class="f6 hl"> </span><span class="f2 hl">  </span><span class="f4">║</span><span class="f2 hl">     </span><span class="hl">翔</span><span class="f0 hl">於</span>天際<span class="f0 hl">而</span><span class="hl">悠遊大地</span>  <span class="hl">風</span><span class="f0 hl">過</span>眾生<span class="f0 hl">而</span><span class="hl">無拘紅塵</span>
+<span class="f2 hl">   </span>║  ║<span class="f2 hl"> </span>║╠ ║<span class="f2 hl">   </span><span class="f4 hl">║            </span><span class="hl">雲</span>浮天際於飄蕩  <span class="hl">龍</span>游海中至無拘
+<span class="f2 hl">   </span>╚═╬ ╩╩ ╚ <span class="f4 hl">╬╝                 </span><span class="hl">翔</span>飛無處而悠遊  <span class="hl">風</span>吹大地之自在 
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.62.35.67
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">fantensy</span><span class="f3 push-content">:感謝這位大大的回答..我努力測試看看&lt;(_ _)&gt;</span><span class="push-ipdatetime"> 02/21 16:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">fantensy</span><span class="f3 push-content">:謝謝這位大大..目前解出來了^^感謝萬分&lt;(_ _)&gt;</span><span class="push-ipdatetime"> 02/25 12:26
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1172041187.A.A73.html?cacheKey=2148-469795436&amp;offset=1775&amp;offset-sig=1cc0a86468b1507e90ea05b7e2a5d8d38663008d" data-longpollurl="/v1/longpoll?id=66e86335e1db0cccbc618810cdf0a8307dcf8c9c" data-offset="1775"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea4b4c3a8aa4',m:'tpCMTQ_4mE43tp0oB5eYghsSfOBStgeZq79dN3YiYlA-1653467491-0-Ac1hXosGzqQpf9sUlaO0sFCm4+P8uTPRLX8Xhp6AneNSJelMfvdWr3XyzrxHYfA8YUsgMPEgCJNWY+0YBi3TnnFOTa9jr8B9TgCx8aPpHA1JMTksln/a2CcUkdART9G+NbWZlvx30FnZ5jGtKZxDIIKsNMLrHTXbFe0Jqa37wcZk',s:[0x3451256b32,0x12de45e8b9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

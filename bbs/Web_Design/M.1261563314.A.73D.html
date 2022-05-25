@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 上傳欄位問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="就是例如發表文章時 預設只有一個上傳欄位
+然後有一個按鈕A 按一下會多出一個上傳欄位
+這個A按鈕 要怎麼設計?
+and, 使用asp的話 該怎麼寫讓它可以在access中自動創一(多)個放檔案名稱的欄位?
+如果有類似的範例可以參考也可以
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 上傳欄位問題">
+<meta property="og:description" content="就是例如發表文章時 預設只有一個上傳欄位
+然後有一個按鈕A 按一下會多出一個上傳欄位
+這個A按鈕 要怎麼設計?
+and, 使用asp的話 該怎麼寫讓它可以在access中自動創一(多)個放檔案名稱的欄位?
+如果有類似的範例可以參考也可以
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1261563314.A.73D.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">redming (看我名片檔!!)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 上傳欄位問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Dec 23 18:15:11 2009</span></div>
+
+就是例如發表文章時 預設只有一個上傳欄位
+
+然後有一個按鈕A 按一下會多出一個上傳欄位
+
+這個A按鈕 要怎麼設計?
+
+and, 使用asp的話 該怎麼寫讓它可以在access中自動創一(多)個放檔案名稱的欄位?
+
+如果有類似的範例可以參考也可以
+
+謝謝:)
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.117.157.18
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:以你的問題好像不應該新創欄位來放檔案吧</span><span class="push-ipdatetime"> 12/23 18:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:我自己會把檔案table 分開放 .  再用關聯的方式組合</span><span class="push-ipdatetime"> 12/23 18:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:有點難懂 囧 我只知道簡單的方式 不知道樓上大大說的詳細</span><span class="push-ipdatetime"> 12/23 18:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:方式是如何 有網頁或啥的可以參考嗎?_?</span><span class="push-ipdatetime"> 12/23 18:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:同類型的東西應該是當成多筆紀錄而不是新建一個欄位</span><span class="push-ipdatetime"> 12/23 19:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cokellen</span><span class="f3 push-content">:Javascript 動態新增欄位</span><span class="push-ipdatetime"> 12/23 19:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cassatte</span><span class="f3 push-content">:動態產生的file欄位好像會出問題..</span><span class="push-ipdatetime"> 12/23 19:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:動態生成為什麼有問題@@?</span><span class="push-ipdatetime"> 12/23 20:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:我知道PHP裡把id都教作adb[]的話</span><span class="push-ipdatetime"> 12/23 20:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kelunyang</span><span class="f3 push-content">:會收到一個教作abc的FILE陣列</span><span class="push-ipdatetime"> 12/23 20:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:動態生成file 欄位不會有問題啦 :p , 有問題的是無法設定</span><span class="push-ipdatetime"> 12/23 20:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:file 裡面的值 .</span><span class="push-ipdatetime"> 12/23 20:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:那...我該怎麼做 有實體一點的解釋嗎&gt;&#34;&lt;</span><span class="push-ipdatetime"> 12/24 11:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:找個會寫 js 的人幫你寫. 或者上網想辦法找個sample</span><span class="push-ipdatetime"> 12/24 11:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:你的問題要回答你要同時處理資料庫跟頁面js新增動態元素</span><span class="push-ipdatetime"> 12/24 11:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:你的asp是真正傳統的那種asp還是asp.net應該要先寫清楚</span><span class="push-ipdatetime"> 12/24 11:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:是傳統ASP...除動態部份 可以交交我嗎..不曉得如何多筆</span><span class="push-ipdatetime"> 12/24 11:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:檔案上傳後要如何跟ACCESS連結比較好@@</span><span class="push-ipdatetime"> 12/24 11:52
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1261563314.A.73D.html?cacheKey=2149-475858461&amp;offset=2223&amp;offset-sig=80b7115db4c449c2f341411963cda11867f90a09" data-longpollurl="/v1/longpoll?id=83cdfe1fc5f4920ed9ca47bf88d0939567c50037" data-offset="2223"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce98b9dec8a27',m:'vl6lBZXf8B8xlTRJQVA3DsF1bhmoiZWl2d7AbvoCmIs-1653467460-0-AdaOO/LmoPt7vEU5AyaVmD/g9CArCZGKahyhDVOqblpCAwqBH9qiBs882MLqCwUOdpUXAIQtTUCmkBhcyD7l5o5hVvqUQEUodhZ0p8lrDP+gQdR+DzZAOwxPOY+FGvooEmEQeNJEUbLx2OpwLd6YnruCUyLHdiR/0pOx1aJgYkWn',s:[0x7ce18da44a,0xef3ff67fe6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

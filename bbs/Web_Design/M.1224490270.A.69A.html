@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] HTML簡單問 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="還是回一下文好了，順便騙p幣
+一：直書css語法
+                for IE  writing-mode:tb-rl;
+                for Fx  direction: rtl;(rtl右至左，ltr左至右)
+                        -moz-column-width: 1em; (每列寬度)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] HTML簡單問">
+<meta property="og:description" content="還是回一下文好了，順便騙p幣
+一：直書css語法
+                for IE  writing-mode:tb-rl;
+                for Fx  direction: rtl;(rtl右至左，ltr左至右)
+                        -moz-column-width: 1em; (每列寬度)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1224490270.A.69A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">kyork (黃金芒果)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] HTML簡單問</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Oct 20 16:11:06 2008</span></div>
+<span class="f2">※ 引述《joyfang (大頭)》之銘言：
+</span><span class="f6">:      想請教各位大大一些html的問題？？
+</span><span class="f6">: 問題一：要怎樣把文字  橫書改成直書？
+</span><span class="f6">: 問題二：可以把照片變小嗎？？
+</span><span class="f6">: 問題三：有那些漂亮的字體可以用阿？  有藝術字嗎，像word那種？
+</span><span class="f6">: 有點貪心，問了三個，但是因為都很簡單，我怕被誤認我在洗文章，
+</span><span class="f6">: 所以才這樣，希望各位大大見諒！！！
+</span>
+還是回一下文好了，順便騙p幣
+
+
+一：直書css語法
+                for IE <span class="f3 hl"> writing-mode:tb-rl;</span>
+
+                for Fx <span class="f3 hl"> direction: rtl;</span>(rtl右至左，ltr左至右)
+                       <span class="f3 hl"> -moz-column-width: 1em;</span> (每列寬度)
+                       <span class="f3 hl"> -moz-column-gap: 1em;</span>(列與列間距)
+                (Fx效果沒有很好，標點符號會跑掉)
+
+
+二：圖片大小 <span class="f3 hl">&lt;img src=&#34;1.jpg&#34; style=&#34;width:100px; height:100px;&#34;&gt;</span>
+                                     ^^^^^^^^^^    ^^^^^^^^^^^
+                                         寬             高
+            (建議還是用影像處理比較好)
+
+
+三、藝術字
+
+    用css濾鏡(filter)可以做出藝術字效果，但 IE only
+    可以參考<a href="http://www.7wind.net/wytx/wz/19.htm" target="_blank" rel="noreferrer noopener nofollow">http://www.7wind.net/wytx/wz/19.htm</a>
+            <a href="http://www.ezsaler.com/Blog/post/166.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ezsaler.com/Blog/post/166.html</a>
+
+    也可以用這種方法
+          <span class="f3 hl"> &lt;font color=#FF8080&gt;我&lt;/font&gt;</span>
+          <span class="f3 hl"> &lt;font color=#AAA955&gt;愛&lt;/font&gt;</span>
+          <span class="f3 hl"> &lt;font color=#7FBF40&gt;網&lt;/font&gt;</span>
+          <span class="f3 hl"> &lt;font color=#56D32B&gt;頁&lt;/font&gt;</span>
+          <span class="f3 hl"> &lt;font color=#2BE915&gt;設&lt;/font&gt;</span>
+          <span class="f3 hl"> &lt;font color=#02FD01&gt;計&lt;/font&gt;</span>
+     沒錯，分別給每個字上顏色，就會出現很不錯的漸變效果
+
+     第三種方法
+    <span class="f3 hl"> &lt;body style=&#34;position:relative;background:#00ffff;&#34;&gt;</span>
+     <span class="f3 hl">  &lt;div style=&#34;position:absolute;top:0px;left:0px;</span>
+          <span class="f3 hl">                     color:#fff;font-size:40px;z-index:1;&#34;&gt;</span>
+        <span class="f3 hl"> 我愛網頁設計</span>
+      <span class="f3 hl"> &lt;/div&gt;</span>
+      <span class="f3 hl"> &lt;div style=&#34;position:absolute;top:1px;left:1px;</span>
+       <span class="f3 hl">                        color:#000;font-size:40px;&#34;&gt;</span>
+        <span class="f3 hl"> 我愛網頁設計</span>
+      <span class="f3 hl"> &lt;/div&gt;</span>
+    <span class="f3 hl"> &lt;/body&gt;</span>
+     利用position:absolute;做出陰影效果
+     多疊個幾層，就可以做出漸層效果，或是配合上面做出漸變+漸層效果
+     當然，最有效解法還是圖片或Flash。
+
+--
+<span class="f2 hl">孤</span><span class="f0 hl">陰</span><span class="f2 hl">不生  </span><span class="f3 hl">獨</span><span class="hl">陽</span><span class="f3 hl">不長</span>
+現在流行放blog在簽名檔
+<a href="https://subwoofe.blogspot.com/" target="_blank" rel="noreferrer noopener nofollow">http://subwoofe.blogspot.com/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 125.224.51.166
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joyfang</span><span class="f3 push-content">:謝謝你</span><span class="push-ipdatetime"> 10/20 16:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">robert38</span><span class="f3 push-content">:stytle?還是style?</span><span class="push-ipdatetime"> 10/21 13:57
+</span></div>修正，感謝
+<span class="f2">※ 編輯: kyork           來自: 125.224.49.25        (10/21 15:05)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1224490270.A.69A.html?cacheKey=2149-475818541&amp;offset=2669&amp;offset-sig=5ef3e197f94f41d31d1b003d7fe0e69ebddc76fa" data-longpollurl="/v1/longpoll?id=1741168f7037bda5e9608c912d3db56cbc0d6b36" data-offset="2669"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9475881af54',m:'gpG3S2AJMDX3.M04Dgr2v0hYv0SosTUNihBWJlnyhvI-1653467449-0-ASGgJTSsAdRJVb86Vo4/cOymp/yY4MHWX0x3hb4h6cxV1A9AEXod3tk8IsRRa4/LLs/RSUYefmn3nOtSpZH/Pb8K9rL1ZNlNXM8ts94HTYN7SBdL/vjdbO1VOBlG+OYzXFge9hpTpd1AByrL4Pi8NwuG+NxiFqzYEloo0uZFvnvn',s:[0xb49b4e6ba9,0x66306b7dc5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

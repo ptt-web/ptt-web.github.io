@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:forkome - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=3&amp;q=author%3Aforkome">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Aforkome">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Aforkome">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:forkome" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1537933944.A.1D3.html">[問題] 網頁互動效果</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E4%BA%92%E5%8B%95%E6%95%88%E6%9E%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1397206210.A.757.html">Re: [討論] 鴻海的五零高手選秀</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E9%B4%BB%E6%B5%B7%E7%9A%84%E4%BA%94%E9%9B%B6%E9%AB%98%E6%89%8B%E9%81%B8%E7%A7%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1389793689.A.BD6.html">[問題] 網頁下載東西的讀取條</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E4%B8%8B%E8%BC%89%E6%9D%B1%E8%A5%BF%E7%9A%84%E8%AE%80%E5%8F%96%E6%A2%9D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1366951125.A.DC8.html">Re: [問題] ASP.Net網頁間傳值問題 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ASP.Net%E7%B6%B2%E9%A0%81%E9%96%93%E5%82%B3%E5%80%BC%E5%95%8F%E9%A1%8C&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1366883337.A.B50.html">[問題] ASP.Net網頁間傳值問題 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ASP.Net%E7%B6%B2%E9%A0%81%E9%96%93%E5%82%B3%E5%80%BC%E5%95%8F%E9%A1%8C&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1363308682.A.085.html">[問題] Google Map圈選範圍</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Google&#43;Map%E5%9C%88%E9%81%B8%E7%AF%84%E5%9C%8D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1353339169.A.E1E.html">[問題] 網頁安全性問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E5%AE%89%E5%85%A8%E6%80%A7%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1301099470.A.EAF.html">[問題] javascript將檔案放置File Server</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript%E5%B0%87%E6%AA%94%E6%A1%88%E6%94%BE%E7%BD%AEFile&#43;Server">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1292765091.A.F04.html">[問題] 請問如何呈現內容移動？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E5%91%88%E7%8F%BE%E5%85%A7%E5%AE%B9%E7%A7%BB%E5%8B%95%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1236480927.A.A19.html">[問題] IIS無法執行RS.update</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;IIS%E7%84%A1%E6%B3%95%E5%9F%B7%E8%A1%8CRS.update">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1218361525.A.F69.html">[問題] 分析HTTP協定封包</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%88%86%E6%9E%90HTTP%E5%8D%94%E5%AE%9A%E5%B0%81%E5%8C%85">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1201181653.A.5D1.html">[問題] 請教Loading效果做法</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E6%95%99Loading%E6%95%88%E6%9E%9C%E5%81%9A%E6%B3%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1199067320.A.5CE.html">[問題] div排版問題！</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;div%E6%8E%92%E7%89%88%E5%95%8F%E9%A1%8C%EF%BC%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1198849596.A.916.html">[問題] 節目表的製作技巧</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%AF%80%E7%9B%AE%E8%A1%A8%E7%9A%84%E8%A3%BD%E4%BD%9C%E6%8A%80%E5%B7%A7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1195650251.A.F62.html">[問題] IIS連線逾時問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;IIS%E9%80%A3%E7%B7%9A%E9%80%BE%E6%99%82%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1193190210.A.21A.html">[問題] ASP匯入網頁問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ASP%E5%8C%AF%E5%85%A5%E7%B6%B2%E9%A0%81%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191916265.A.79A.html">[問題] Jsp RecordSet問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Jsp&#43;RecordSet%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191893304.A.E0A.html">[問題] SQL語法的使用</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;SQL%E8%AA%9E%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191314528.A.BA8.html">[問題]如何取得多項同名的index值呢？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E5%A6%82%E4%BD%95%E5%8F%96%E5%BE%97%E5%A4%9A%E9%A0%85%E5%90%8C%E5%90%8D%E7%9A%84index%E5%80%BC%E5%91%A2%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191302422.A.305.html">[問題] Javascript的Css問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">forkome</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Javascript%E7%9A%84Css%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aforkome">搜尋看板內 forkome 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9b7babc8a56',m:'vb7CtxMe.Ckoy3uLWo7nl7.wBWzrO025wRDYkFfPJWE-1653467467-0-AZXpeC+bZTUSNVbbKy7xmlt7cp/DtHykvCHBado6tMkMSprZM4uvb1KmXUwJmLfJtI5E/eBr2VVGjKyOf8VWOo0KF5J+PlRZYrzmgqS1PUP30yZe+edrO9iZnk6pvr09kIaQNBepU7QVYUlLP0uVMIOPksnRYHoPFmG/bKGD3nNU',s:[0xd4d99a211e,0x9e0f864cfe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] phpmailer的寄件人會多加&lt;&gt; - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="首先，電子郵件系統的設計中，信箱位址的格式本來就是 &#34;Name&#34; &lt;name@domain&gt;，
+例如：
+  &#34;Johnny Collins&#34; &lt;johnny@company.com&gt;
+  &#34;Mary Ford&#34; &lt;mary.ford@mailserver.org&gt;
+不知道你用的 PHPMailer 版本是什麼，
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] phpmailer的寄件人會多加&lt;&gt;">
+<meta property="og:description" content="首先，電子郵件系統的設計中，信箱位址的格式本來就是 &#34;Name&#34; &lt;name@domain&gt;，
+例如：
+  &#34;Johnny Collins&#34; &lt;johnny@company.com&gt;
+  &#34;Mary Ford&#34; &lt;mary.ford@mailserver.org&gt;
+不知道你用的 PHPMailer 版本是什麼，
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1267706666.A.24C.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">JoeHorn (每天都在公司玩OLG)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] phpmailer的寄件人會多加&lt;&gt;</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar  4 20:44:23 2010</span></div>
+<span class="f2">※ 引述《knives ()》之銘言：
+</span><span class="f6">: 之前用mail()在寄信的時候，我的寄件人是寫  我是寄件人
+</span><span class="f6">: 在Gmail收信的時候，寄件人 是寫 我是寄件人
+</span><span class="f6">: 可是換用phpmailer的時候
+</span><span class="f6">: 我是這樣寫的
+</span><span class="f6">: $PHPmail= new PHPMailer(); //建立新物件
+</span><span class="f6">: $PHPmail-&gt;From = &#39;我是寄件人&#39;;
+</span><span class="f6">: 可是在Gmail收信的時候，寄件人那個欄位卻是顯示 我是寄件人 &lt;我是寄件人&gt;
+</span>首先，電子郵件系統的設計中，信箱位址的格式本來就是 &#34;Name&#34; &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="503e313d3510343f3d31393e">[email&#160;protected]</a>&gt;，
+例如：
+
+  &#34;Johnny Collins&#34; &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0cacfc8ceced9e0c3cfcdd0c1ced98ec3cfcd">[email&#160;protected]</a>&gt;
+  &#34;Mary Ford&#34; &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660b07141f4800091402260b070f0a15031410031448091401">[email&#160;protected]</a>&gt;
+
+不知道你用的 PHPMailer 版本是什麼，
+請參考官方文件（<a href="http://phpmailer.worxware.com/index.php?pg=methods" target="_blank" rel="noreferrer noopener nofollow">http://phpmailer.worxware.com/index.php?pg=methods</a>），
+裡面有個 method 叫 SetFrom($address, $name = &#34;&#34;) 。
+
+透過這個方法，要寄信給上面那兩個範例位址，就可以這樣用：
+
+  $PHPmail-&gt;SetFrom(&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b0104030505122b0804061b0a051245080406">[email&#160;protected]</a>&#39;);                    // 不設定名稱
+  $PHPmail-&gt;SetFrom(&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cca6a3a4a2a2b58cafa3a1bcada2b5e2afa3a1">[email&#160;protected]</a>&#39;, &#39;Johnny Collins&#39;);  // 設定名稱
+
+  $PHPmail-&gt;SetFrom(&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6805091a11460e071a0c28050901041b0d1a1e0d1a46071a0f">[email&#160;protected]</a>&#39;);              // 不設定名稱
+  $PHPmail-&gt;SetFrom(&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4924283b30672f263b2d09242820253a2c3b3f2c3b67263b2e">[email&#160;protected]</a>&#39;, &#39;Mary Ford&#39;); // 設定名稱
+
+至於垃圾信、廣告信的判斷，現在已經不會單純用 From: 作判斷了，
+郵件檔頭裡面有很多資訊可以用，連內文都可以一起掃瞄。
+
+--
+ 984   9/11 -        □ (本湯已被喝掉)    ◢<span class="b7">  </span>█◣         <span class="b1 hl"> 這湯有毒...救命~~ </span>
+ 985   9/11 -        □ (本湯已被喝掉)    <span class="b7"> </span><span class="f1 b7 hl">—</span><span class="b7">  </span><span class="f1 b7 hl">—</span><span class="b7"> </span> <span class="f2">▁▁</span>            <span class="f0 b7">〒    〒</span> <span class="f1">◤</span>
+ 986   9/11 -        □ (本湯已被喝掉)    <span class="f1 b7 hl">  //// </span><span class="f2 b7">◢</span><span class="f2">██◣</span>          <span class="b7 hl">▼▼▼▼</span>
+ 987   9/11 -        □ (本湯已被喝掉)╭─◥<span class="f1 b7 hl"> ﹏</span>◤<span class="f2">████</span>──╮   <span class="hl">\</span><span class="b7 hl">▲▲▲▲</span><span class="b6 hl">\ </span><span class="hl">=</span>
+ 988   9/11 -        □ (本湯已被喝掉)<span class="f0">◥</span><span class="b4"> ▇▇▇▇▇▇▇▇▇ </span><span class="b7"> </span>◤
+ 989   9/11 -        □ (本湯已被喝掉) ╰─────────<span class="b4"> </span>╯   <span class="b1 hl">口</span><span class="f1 b7 hl">卡</span>口<span class="f0 b7">卡</span>嘗海龜
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 114.37.131.225
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1267706666.A.24C.html?cacheKey=2148-469785309&amp;offset=2004&amp;offset-sig=0fbb51440d9512c7c319cd3b2d246544c899ce98" data-longpollurl="/v1/longpoll?id=adc75bda4fd11efd9d0c050ca03704596a750298" data-offset="2004"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea615e9aaf54',m:'5J7IC1qOb6Dlxjp6m2Ej3GPnpmsesbtEv3gZLHHk_ks-1653467494-0-AQJ4oI+TizWooZ/RMeNAoYwHNMaUBwv5udM0ibF539FiTfxMwMp3kgAIYhveI8Ufr64xZfBZh+Hb3BxGwCWIB8OB5uGj1MSD2G7TCzQOX5EM1xTMFRbaQ6VxNSTZH/pJw3a0fiR1UFkq1/EG+wQhdn5IdAcipWnYgQGCs1evojd0',s:[0xc947fc2196,0xacc9ba4c9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

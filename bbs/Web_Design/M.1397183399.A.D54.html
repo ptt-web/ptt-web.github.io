@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>可隨時變換內容的EDM/在email裡頭放iframe - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="是這樣的。我要寄電子報到email裡，但是想要能隨機更換電子報的內容。
+能想到的作法是用 iframe / JSON / COR，
+但：
+iframe目前不被主流webmail/outlook支援。
+JSON / COR 一樣也無法在webmail.outlook 生效。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="可隨時變換內容的EDM/在email裡頭放iframe">
+<meta property="og:description" content="是這樣的。我要寄電子報到email裡，但是想要能隨機更換電子報的內容。
+能想到的作法是用 iframe / JSON / COR，
+但：
+iframe目前不被主流webmail/outlook支援。
+JSON / COR 一樣也無法在webmail.outlook 生效。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1397183399.A.D54.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">wanzoo (Zoo)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">可隨時變換內容的EDM/在email裡頭放iframe</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Apr 11 10:29:56 2014</span></div>
+是這樣的。我要寄電子報到email裡，但是想要能隨機更換電子報的內容。
+
+能想到的作法是用 iframe / JSON / COR，
+但：
+
+iframe目前不被主流webmail/outlook支援。
+JSON / COR 一樣也無法在webmail.outlook 生效。
+
+那麼，還有什麼作法呢？
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 210.67.110.242
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/Web_Design/M.1397183399.A.D54.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/Web_Design/M.1397183399.A.D54.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mmis1000</span><span class="f3 push-content">:圖片</span><span class="push-ipdatetime"> 04/11 12:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">gname</span><span class="f3 push-content">:推樓上,只有用圖片.. 其餘免談...</span><span class="push-ipdatetime"> 04/11 15:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:想隨時改內容不如要他自己上網站就好...</span><span class="push-ipdatetime"> 04/11 19:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zxcvforz</span><span class="f3 push-content">:放這種東西有用嗎？現在電子郵件預設都不載入外部連結的</span><span class="push-ipdatetime"> 04/12 08:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zxcvforz</span><span class="f3 push-content">:放了反而變成破圖的電子報</span><span class="push-ipdatetime"> 04/12 08:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mmis1000</span><span class="f3 push-content">:圖片本來就是外連的阿，只是有些客戶端式的會預先載圖</span><span class="push-ipdatetime"> 04/13 17:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mmis1000</span><span class="f3 push-content">:所以改了也沒用，畢竟被快取了</span><span class="push-ipdatetime"> 04/13 17:18
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1397183399.A.D54.html?cacheKey=2149-475949065&amp;offset=1179&amp;offset-sig=c5ff8b169d5f1ac88af6d9e79d030e9817cd7227" data-longpollurl="/v1/longpoll?id=203db9a0f93f511278a399335fc1574aa971ec94" data-offset="1179"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce927ecddafe5',m:'WAjZHt3JBcfCGPj2ed_enWiJmYRnq.P7MaVsehoIjPc-1653467444-0-AWYAby0fto+AlcPt8V/T0QTtKsJ1TSWHaHLpIBVo8EYMZf9D6OEXlywt9+4M9xEOc1cn4tMtOTdsVP7Wyx4+NPpIxhsPmpWQgSbIO6VsPDR1BRcv4palY8bJa4x/08Rpbr5d1dufslg5Kq+FyvQY6nPi1W42Gaq1n8Kyi3oJvq0O',s:[0x29a13ef90d,0xbf884574ac],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

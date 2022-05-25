@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] session使用 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="通常我的做法是直接給變數，不加單引號也不加雙引號
+$_SESSION[$key];
+----------------------------------------------------
+另外補充作者想知道單引號與雙引號的差別
+單引號：所有在單引號&#39;&#39;的字串一律視為純字串，PHP系統不再去判斷
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] session使用">
+<meta property="og:description" content="通常我的做法是直接給變數，不加單引號也不加雙引號
+$_SESSION[$key];
+----------------------------------------------------
+另外補充作者想知道單引號與雙引號的差別
+單引號：所有在單引號&#39;&#39;的字串一律視為純字串，PHP系統不再去判斷
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1224346948.A.800.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">liaosankai (低溫烘焙)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] session使用</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Oct 19 00:22:26 2008</span></div>
+<span class="f2">※ 引述《pppppppMAN (QQ)》之銘言：
+</span><span class="f6">: 我必須要在$_SESSION[&#39;&#39;]的單引號中使用變數$s
+</span><span class="f6">: 請問要怎麼在單引號中使用變數@@&#34;
+</span><span class="f6">: 試過&#39;&#34;$s&#34;&#39;還是不行 這樣等於送出&#34;$s&#34;字串
+</span>
+通常我的做法是直接給變數，不加單引號也不加雙引號
+
+$_SESSION[$key];
+----------------------------------------------------
+
+另外補充作者想知道單引號與雙引號的差別
+
+單引號：所有在單引號&#39;&#39;的字串一律視為純字串，PHP系統不再去判斷
+        是否有PHP變數的存在
+
+
+雙引號：系統會去判斷&#34;&#34;中的字串裡，是否有含有變數名稱的字串
+        有的話先進行轉換
+
+下列每行輸出的結果都是一樣的
+
+  $str1 = &#34;這是變數{$var1}，{$var2}&#34;; //建議使用這種寫法
+  $str1 = &#34;這是變數$var1，$var2&#34;;//
+  $str1 = &#34;這是變數&#34;.$var1.&#34;，&#34;.$var2;
+  $str1 = &#39;這是變數&#39;.$var1.&#39;，&#39;.$var2;
+
+但請注意，若有使用到特殊字元，那麼你就必需使用雙引號
+下列那個結果是不一樣的
+
+$str2 = &#34;有斷行\n&#34;; (\n會轉為看不見的斷行字元)
+$str2 = &#39;有斷行\n&#39;; (\n會被視為字串直接輸出)
+
+或許你有個疑問「就全用雙引號就好了呀？」
+那麼請看下列說明
+
+1. $_SESSION[&#39;key&#39;]
+2. $_SESSION[&#34;key&#34;]
+3. $_SESSION[key]
+
+上面三個索引都輸出相同的值，但是執行效率不同
+其中第一種將會是最有效率的作法
+
+若你已經到需要考慮到效能，可以看看下篇文章：
+
+PHP 程式效能優化的 40 條建議
+<a href="https://jersus.blogspot.com/2008/03/php-40.html" target="_blank" rel="noreferrer noopener nofollow">http://jersus.blogspot.com/2008/03/php-40.html</a>
+
+個人習慣是若這個字串中沒有任何變數，我就使用&#39;&#39;
+若字串中含有變數(通常是用在刻SQL字串時)我就使用&#34;&#34;
+
+例如$sql = &#34;SELECT * FROM table WHERE id = {$id}&#34;;
+
+在陣列索引中，若不是變數索引，一律使用&#39;&#39;
+若是變數索引，就直接給予變數
+
+例如 $arr[&#39;mykey&#39;];
+     $arr[$key];
+
+
+
+
+
+--
+歡迎來我的網誌看看
+@ <a href="http://doublekai.org/blog" target="_blank" rel="noreferrer noopener nofollow">http://doublekai.org/blog</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 123.240.37.127
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">foxzgerald  </span><span class="f3 push-content">:$_SESSION[key] 應該不能跑吧?!</span><span class="push-ipdatetime"> 10/19 00:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chph        </span><span class="f3 push-content">:可以, 看設定, 不過這是很不好的習慣就是了..</span><span class="push-ipdatetime"> 10/19 00:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">foxzgerald  </span><span class="f3 push-content">:如果要設定..是要修改哪個地方?</span><span class="push-ipdatetime"> 10/19 00:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LPH66       </span><span class="f3 push-content">:基本上它能跑的原因是因為PHP發現先前沒有定義過叫做</span><span class="push-ipdatetime"> 10/19 13:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66       </span><span class="f3 push-content">:key的常數  在此之下PHP會視為那東西的值為&#34;key&#34;</span><span class="push-ipdatetime"> 10/19 13:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66       </span><span class="f3 push-content">:(另外自行定義常數可以利用define)</span><span class="push-ipdatetime"> 10/19 13:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66       </span><span class="f3 push-content">:所以基本上你是不知道別人有沒有define(&#39;key&#39;,...);</span><span class="push-ipdatetime"> 10/19 14:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LPH66       </span><span class="f3 push-content">:當然就不一定能保證會跑了</span><span class="push-ipdatetime"> 10/19 14:00
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1224346948.A.800.html?cacheKey=2148-469793417&amp;offset=2475&amp;offset-sig=cb175096b148600eed244227ecb2c060ca455ab3" data-longpollurl="/v1/longpoll?id=681be07a31b109d381eef7f6e0762f52875fa9ff" data-offset="2475"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea8408041fae',m:'HUC__1d8X.3aXU3BaE4dlIuwPMQQ9lNytGGiLdL8jDM-1653467500-0-AXEbtzFsjoGHM63veq2yRM3PDkC2uIRGVM3TaDwN6OQ1o8hdmIJ6iGTZBGcecE2UGZ9kqRm8JZoHgyASxvdoLMVxm7t37Ptc3sAMOSLQm2tQ6Vc1cEjUOca4eu8laQ8xun7UUcsg8m1Be4R4S0TGh2KaObPMan6SJQ5YMTRdEnJu',s:[0x557ddbe1bc,0x10688b9ae4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

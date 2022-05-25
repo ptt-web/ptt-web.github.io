@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 框架 割不割？！ - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="完全不看他，還是會index但不影響排名順序？這兩個差很多
+: 另外SEO不佳的問題是在於網址無法確定
+: 還有menu和內容分割
+: 蜘蛛沒辦法正確建立網頁樹
+這個可以搭配javascript解決一部分
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 框架 割不割？！">
+<meta property="og:description" content="完全不看他，還是會index但不影響排名順序？這兩個差很多
+: 另外SEO不佳的問題是在於網址無法確定
+: 還有menu和內容分割
+: 蜘蛛沒辦法正確建立網頁樹
+這個可以搭配javascript解決一部分
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1187376170.A.9D5.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">GALINE (星光燦爛小天竹)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 框架 割不割？！</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Aug 18 02:42:42 2007</span></div>
+<span class="f2">※ 引述《othree (OOO)》之銘言：
+</span><span class="f6">: 然後被人用hidden frame藏大量關鍵字增加排名
+</span><span class="f6">: 所以現在搜尋引擎大概就不理會frame的內容了～～
+</span>完全不看他，還是會index但不影響排名順序？這兩個差很多
+<span class="f6">: 另外SEO不佳的問題是在於網址無法確定
+</span><span class="f6">: 還有menu和內容分割
+</span><span class="f6">: 蜘蛛沒辦法正確建立網頁樹
+</span>這個可以搭配javascript解決一部分
+
+把決定載入網頁的參數寫在url後面，然後主頁面的javascrip讀入url後分析參數來
+決定載入哪個網頁
+
+看起來就像是整個大網頁的url變成這樣
+
+<a href="http://your.domain.here/frameset.htm?framecontent" target="_blank" rel="noreferrer noopener nofollow">http://your.domain.here/frameset.htm?framecontent</a>
+
+然後把網頁裡面的連結全部寫成這種形式，target指向top。
+
+基本上網頁樹建的出來，而且可以解決無法直連frame的問題
+
+這樣的網頁樹有沒有意義我不敢說，因為搜尋引擎應該無法正確讀到內容。而且有些
+人會關掉javascript…
+<span class="f6">: :    最後一句看不懂 詳細希望._./
+</span><span class="f6">: 例如他在menu frame按下連結
+</span><span class="f6">: 但是實際上換頁的卻是content frame
+</span><span class="f6">: 以視覺障礙者為例，他不會注意到content frame更新了
+</span><span class="f6">: 當然也可以有些技術幫助他
+</span><span class="f6">: 但是這些輔助技術的歧異比現在的瀏覽器問題還大
+</span><span class="f6">: 所以盡可能讓他們不需要依靠輔具也可以瀏覽網頁最好
+</span>這個也許可以靠&lt;link&gt;標籤解決？
+
+在每個網頁裡面塞入導航頁面的link，導航頁面視情況塞入通往各frame內容的超連結。
+沒記錯的話這些瀏覽器會特地將link標籤的內容顯示出來。
+
+只是這樣會造成瀏覽路徑會跟一般使用者不同。
+<span class="f6">: 另外有一個我原來漏掉的
+</span><span class="f6">: 在現在建議內容、樣式、行為分開的架構下
+</span><span class="f6">: frame基本上都是以樣式為出發點的需求
+</span><span class="f6">: 但是這應是style來處理的
+</span><span class="f6">: 所以....
+</span>frame還有個好處是不用重新讀取整個網頁，可以只更新網頁的部份，縮短反應時間。
+這個跟Ajax的想法相同，只是後者做的更徹底。
+
+
+不過我認為frame還是會不死，跟Ajax共生共存
+
+話說Ajax更新的頁面無法被瀏覽器任定為是新的頁面，所以使用者按下「上一頁」的按
+鈕很可能會讓瀏覽器做出違反使用者直覺的動作。
+
+對於這個問題，我記得有種作法是在網頁裡面塞進看不到的iframe或是frame，當ajax有
+動作時讓frame內容改變，而當使用者按下上一頁時看不見的frame的內容會變成「上一
+頁」，藉此驅動主頁面的Javascript載入正確的內容。
+
+
+--
+這閃電拳能射出雷射光，威力每平方公分一萬億瓦特
+威力無比，拳到之處，攻無不克
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 124.8.25.210
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1187376170.A.9D5.html?cacheKey=2149-475780662&amp;offset=2053&amp;offset-sig=e70e1f2f45598c7e8c1d574fc358ab496a91361d" data-longpollurl="/v1/longpoll?id=8565c9a981ce0f59858cbb01ec33f9a8b9608747" data-offset="2053"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce92f286d1fae',m:'pSWpczya3nnQ3XqBIAb20dsQpFI41Xjj5lPABdbZJ6E-1653467445-0-AaOnN3g9RMEJ52o4Si/JiV0gdZG6BUKPStkGaD4/E53mRu9w9LqdAoMf+nL6dYIb4xFRjBnSM/cVNMIWQwKGsw8Nx9vVl2Dxf3fWHrx5ZQDGTUxHbA6mF7U7Vs34jFk6aHroCmiWr1SDlCKY7flYWXw+aJ4Mbv3Y7ZkrjNDPRPDe',s:[0x374efe210b,0x92c17d05ec],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] div內有背景圖，網頁向下拉的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="像這個模版一樣http://0rz.tw/sxD14
+全部置中
+中間最大的div背景是一個綠框
+若裡面的內容超過一個頁面大小
+自動往下拉
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] div內有背景圖，網頁向下拉的問題">
+<meta property="og:description" content="像這個模版一樣http://0rz.tw/sxD14
+全部置中
+中間最大的div背景是一個綠框
+若裡面的內容超過一個頁面大小
+自動往下拉
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1263465551.A.E8E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">sss5 (屁)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] div內有背景圖，網頁向下拉的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jan 14 18:39:08 2010</span></div>
+
+像這個模版一樣<a href="http://0rz.tw/sxD14" target="_blank" rel="noreferrer noopener nofollow">http://0rz.tw/sxD14</a>
+
+全部置中
+
+中間最大的div背景是一個綠框
+
+若裡面的內容超過一個頁面大小
+
+自動往下拉
+
+但背景無法重覆
+
+請問大家遇到這種情況都怎麼處理?
+
+謝謝指導
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.127.157.42
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:1.圓角框切三段，中段repeat 2.用js做tab 3.overflow:auto</span><span class="push-ipdatetime"> 01/14 18:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:已切三段，中間repeat，但該怎麼讓它重覆?仍要做tab?</span><span class="push-ipdatetime"> 01/14 20:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:架構完全有問題~不要用position:absolute吧</span><span class="push-ipdatetime"> 01/14 20:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">evenwu</span><span class="f3 push-content">:中間repeat-y</span><span class="push-ipdatetime"> 01/14 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:仍不懂，為何不要用absolute? kyork大說的是三部都要做嗎?</span><span class="push-ipdatetime"> 01/14 22:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:還是擇一皆可，另外現在這樣還是有問題.. 多謝指教</span><span class="push-ipdatetime"> 01/14 22:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:若是用表格的方式是否會較好? 像<a href="http://0rz.tw/eGaW0" target="_blank" rel="noreferrer noopener nofollow">http://0rz.tw/eGaW0</a></span><span class="push-ipdatetime"> 01/14 22:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:首頁左邊的紫色處，可以依文章長短作延申，是表格關係嗎</span><span class="push-ipdatetime"> 01/14 22:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:跟kyork說的完全無關 ~ 都不用做</span><span class="push-ipdatetime"> 01/14 23:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:三選一，而且方法絕對不只三種</span><span class="push-ipdatetime"> 01/15 00:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:1是讓圓角框可以伸長，再多的內容也吃的下</span><span class="push-ipdatetime"> 01/15 00:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:2可以變化出很多效果，淡入淡出、捲動...等</span><span class="push-ipdatetime"> 01/15 00:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:3捲軸，最省事</span><span class="push-ipdatetime"> 01/15 00:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:另外，中段要伸長請愛用min-height，但是IE6要hack</span><span class="push-ipdatetime"> 01/15 00:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:至於absolute只要能駕馭他，就知道有多好用</span><span class="push-ipdatetime"> 01/15 00:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:rocky823 這個問題才是跟你說的absolute 無關吧.</span><span class="push-ipdatetime"> 01/15 00:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:absolute是在外層包含的父元件，他問的是該元件的內容成員</span><span class="push-ipdatetime"> 01/15 00:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:延展，看不出來 absolute 跟這問題有關在哪。XD</span><span class="push-ipdatetime"> 01/15 00:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:*absolute是設定在</span><span class="push-ipdatetime"> 01/15 00:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:為何會跟absolute他一開始的架構上中下都設absolute</span><span class="push-ipdatetime"> 01/15 18:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:就算中間延伸了 下面那塊也不會自動往下跑</span><span class="push-ipdatetime"> 01/15 18:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:樓主的問題就是hight鎖死 才看不到background</span><span class="push-ipdatetime"> 01/15 18:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sss5</span><span class="f3 push-content">:恩，對。我一開始沒弄清楚，已經懂了，謝謝各位!</span><span class="push-ipdatetime"> 01/15 18:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:TonyQ 看到的應該已經是樓主有修改過的了~</span><span class="push-ipdatetime"> 01/15 18:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:而且這種效果 一張圖就夠延伸了 用到三張效率不太好</span><span class="push-ipdatetime"> 01/15 18:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:soga~</span><span class="push-ipdatetime"> 01/15 19:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:的確是一張圖就夠了，既然要扯效率的話，不用圖豈不更讚XD</span><span class="push-ipdatetime"> 01/15 19:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:不用圖寫圓角框為何會有效率？而且一堆垃圾code</span><span class="push-ipdatetime"> 01/15 19:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:有jQuery Corner阿</span><span class="push-ipdatetime"> 01/15 21:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:jQuery corner 基本上不會比較好，它會產生很多瑣碎的html</span><span class="push-ipdatetime"> 01/15 21:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:元素，會造成browser很大的負擔。</span><span class="push-ipdatetime"> 01/15 21:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:是沒有比較好，只是快又方便，而且對付改稿狂的客戶很好用</span><span class="push-ipdatetime"> 01/15 22:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:然後我要承認我在耍小孩脾氣，</span><span class="push-ipdatetime"> 01/15 22:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:因為rocky823說跟我無關，所以我要跟他說反話XD~~~</span><span class="push-ipdatetime"> 01/15 22:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:XD</span><span class="push-ipdatetime"> 01/15 22:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocky823</span><span class="f3 push-content">:本來就跟你說的完全無關阿 就事論事 樓主只是height問題</span><span class="push-ipdatetime"> 01/16 09:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:你看到的code也是改過的，原本的圓角框只有一個div</span><span class="push-ipdatetime"> 01/16 11:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:原po問內容過多怎麼處理，我只是提出我的方法</span><span class="push-ipdatetime"> 01/16 11:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kyork</span><span class="f3 push-content">:如果你有更優秀的處理方式，可以提出來參考嗎?</span><span class="push-ipdatetime"> 01/16 11:44
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1263465551.A.E8E.html?cacheKey=2149-475860496&amp;offset=4324&amp;offset-sig=f78508af283b30dfab3929bd3284ea5728eb68e0" data-longpollurl="/v1/longpoll?id=8e64e3998a710f09b9ab4745c9fab265d50d14ab" data-offset="4324"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9bf8c4f1fae',m:'NOYL.ONx2yz0z2fwx4iWbsqP1.gmKueuMjI0koAaNos-1653467468-0-AeF54xrkqodju8RiJPxXqZiXAQ4sFxBbfmdCvrsZ/HOOR9OR6o+e27dB8239BAu/DOvZkn9Bs3uhVGsL64drKwMbtfH5fH0BpvMwHCgEoGhkO5CrX6++rc6KSFL3j4V/7Egs3ghxjNrJRLhPxf260gwdsDFExyw69RCKugPe/cfK',s:[0xb9484b4d4a,0xdb140c94c7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

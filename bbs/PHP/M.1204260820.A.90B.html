@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 關於大筆資料的統計 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content=" 請問一下,用php連mssql
+ 如果mssql裡的資料有快5萬筆
+ 統計起來很慢是不是算正常的呢???
+ 比如說我mssql裡有A資料表儲存學生的姓名和基本資料,然後B資料表儲存學生學科的
+ 成績
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 關於大筆資料的統計">
+<meta property="og:description" content=" 請問一下,用php連mssql
+ 如果mssql裡的資料有快5萬筆
+ 統計起來很慢是不是算正常的呢???
+ 比如說我mssql裡有A資料表儲存學生的姓名和基本資料,然後B資料表儲存學生學科的
+ 成績
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1204260820.A.90B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">okdla (跟著鄉民進來看熱鬧)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 關於大筆資料的統計</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Feb 29 12:53:39 2008</span></div>
+
+
+ 請問一下,用php連mssql
+ 如果mssql裡的資料有快5萬筆
+ 統計起來很慢是不是算正常的呢???
+
+ 比如說我mssql裡有A資料表儲存學生的姓名和基本資料,然後B資料表儲存學生學科的
+ 成績
+
+ 我要統計學生成績在0-50,50-60,60-70,70-80,80-90,90-100的個數和學生性別的關係..
+ 我用php的mssql_query去跑,可是要跑快2分鐘,這是正常的嗎??
+ 還是說php無法處理太多筆數的資料表呢??
+
+ 我是這樣下指令的
+ select count(*) from A where A.sex=&#39;F&#39; and A.fid in (select fid from B where
+ B.grade&gt;=0 and B.grade&lt;50)
+ select count(*) from A where A.sex=&#39;M&#39; and A.fid in (select fid from B where
+ B.grade&gt;=0 and B.grade&lt;50)
+                           .
+                           .
+                           .
+                           .
+
+ fid是學生編號為唯一值,sex是性別,grade是成績
+
+ 大概是要做出一個如下的統計表
+
+       0-50 50-60 60-70 70-80 80-90 90-100
+       ------------------------------------
+男筆數
+女筆數
+
+是我指令下錯了嗎???還是php跑的本來就很慢呢???
+建view的話速度可以變快嗎???要如何建呢??
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 125.230.162.114
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aquarianboy</span><span class="f3 push-content">:2分鐘應該是太久了，要不要試著建個view在mssql呢? :)</span><span class="push-ipdatetime"> 02/29 13:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MrMarcus</span><span class="f3 push-content">:五萬筆資料算很少量,會慢多半是出在資料表設計以及query</span><span class="push-ipdatetime"> 02/29 13:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrMarcus</span><span class="f3 push-content">:的寫法</span><span class="push-ipdatetime"> 02/29 13:26
+</span></div><span class="f2">※ 編輯: okdla           來自: 125.230.162.114      (02/29 13:38)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">okdla</span><span class="f3 push-content">:我把大概的資料表和query語法寫出來..希望大家幫幫忙囉..</span><span class="push-ipdatetime"> 02/29 13:38
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1204260820.A.90B.html?cacheKey=2148-469785839&amp;offset=1600&amp;offset-sig=568437c6949d12af7782b457182557e7f21f99ba" data-longpollurl="/v1/longpoll?id=67ac48674fb3fe718602862fa99c52d40887c15d" data-offset="1600"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5f6cbb1fae',m:'ixdX3hlntD.Wm.TEpHTL5OXy7NkTceam2YPXoUSbBTs-1653467494-0-AZQsTV5sn1v599hNjkYaiqtCTpnjS2rb3E3XgkpltIeo0C5YDlw1YEgw1wBhnRvYcs3mZdWdjUb3b9JSEYBDGRMdJ1isEwUCc1XTY4Jmylc4j3SNqltZzzpbV6eU1QetbR2qqvsY11xBV7vGdiBmAEAlCQg1ELtd4k/kACWpKwDr',s:[0xb494ba7f5b,0x8687b52acf],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

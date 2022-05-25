@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 下拉式選單傳值 用$變數失敗? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我一開始不好意思把功能都講出來 感覺很像叫大家幫我寫code =.=
+因為我不太熟悉後台製作 以下可能有很多錯誤觀念 再麻煩大家見諒
+我原本設計的資料庫是有
+1.產品分類名稱 2.產品分類代號 3.產品名稱 4.產品代號 5.產品內容
+                                                   (用來儲存圖文編輯器的內容)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 下拉式選單傳值 用$變數失敗?">
+<meta property="og:description" content="我一開始不好意思把功能都講出來 感覺很像叫大家幫我寫code =.=
+因為我不太熟悉後台製作 以下可能有很多錯誤觀念 再麻煩大家見諒
+我原本設計的資料庫是有
+1.產品分類名稱 2.產品分類代號 3.產品名稱 4.產品代號 5.產品內容
+                                                   (用來儲存圖文編輯器的內容)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1406445822.A.F3E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Notte (why so serious ?)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 下拉式選單傳值 用$變數失敗?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jul 27 15:23:39 2014</span></div>
+
+我一開始不好意思把功能都講出來 感覺很像叫大家幫我寫code =.=
+
+因為我不太熟悉後台製作 以下可能有很多錯誤觀念 再麻煩大家見諒
+
+
+我原本設計的資料庫是有
+
+1.產品分類名稱 2.產品分類代號 3.產品名稱 4.產品代號 5.產品內容
+                                                   (用來儲存圖文編輯器的內容)
+
+我的需求功能是
+
+第一個頁面可以<span class="f1 hl">增加產品分類</span>
+
+所以我在設計上有兩個欄位 輸入產品分類名稱 &amp; 輸入產品分類代號
+
+(這邊我一直思考怎麼設計才好 還是我應該在資料庫用<span class="f3 hl">enum</span>的型態設定?)
+
+
+
+第二個頁面是使用圖文編輯器
+
+1.有個下拉式選單 會是第一頁新增過的<span class="f2 hl">產品分類名稱</span>
+2.有輸入產品名稱的欄位
+
+
+____________以下是我的部分程式碼______________
+
+$sql = (&#34;SELECT 產品分類代號,產品分類名稱 FROM product <span class="f6 hl">GROUP BY</span> 產品分類名稱&#34;);
+(這邊我不知道對不對 因為我不GROUP BY的話 會有很多重複名稱)
+
+$result = mysql_query($sql);
+
+
+&lt;select name=&#34;select&#34;&gt;
+     &lt;?php
+             while ($row = <span class="f4 b7 hl">mysql_fetch_assoc</span>($result)){
+echo &#34;&lt;option value =&#34;.$row[&#39;分類代號&#39;].&#34;&gt;&#34;.$row[&#39;分類名稱&#39;].&#34;&lt;/option&gt;\n&#34;;
+                }
+     ?&gt;
+&lt;/select&gt;
+
+
+&lt;input type=&#34;submit&#34; value=&#34; 確認新增 &#34;/&gt;
+
+________(以上都包在form裡 action到下一頁INSERT進資料庫的code)____________
+
+另外產品內容跟產品名稱 都能順利進資料庫 唯獨下拉式選單的值是空值
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 203.121.251.106
+</span><span class="f2">※ 編輯: Notte (203.121.251.106), 07/27/2014 15:29:37
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:你的 $result 確定有撈到資的??</span><span class="push-ipdatetime"> 07/27 16:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:!! 好像沒有 跑出Resource id #9 但是$sql在資料庫跑可以</span><span class="push-ipdatetime"> 07/27 16:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:我發現echo $row 也沒值 但是選單裡面有值 怎麼會這樣@@???</span><span class="push-ipdatetime"> 07/27 17:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:把你的查詢直接下給DB，沒報錯又沒資料就是你的查詢</span><span class="push-ipdatetime"> 07/27 18:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:寫錯了，有的話在PHP裡dump出來看看，如果是空的再去</span><span class="push-ipdatetime"> 07/27 18:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:檢查看看是什麼原因造成資料沒到PHP，如果dump出來不</span><span class="push-ipdatetime"> 07/27 18:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:是空的，再去看你HTML裡的迴圈錯在哪裡。</span><span class="push-ipdatetime"> 07/27 18:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rocairforce</span><span class="f3 push-content">:debug如果經驗還不夠，最簡單的方式就是一層一層去追</span><span class="push-ipdatetime"> 07/27 18:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:原po是在哪裡 echo $row 的呢？如果是在 while 後面，因為</span><span class="push-ipdatetime"> 07/28 13:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:紀錄已經都跑完了，他只會等於 false @@</span><span class="push-ipdatetime"> 07/28 13:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:另外&#39;像樓上說的用 var_dump() 會比 echo 好，因為你可以</span><span class="push-ipdatetime"> 07/28 13:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:看到那個變數本身的形態與內容 ($row 在 while 裡時應該</span><span class="push-ipdatetime"> 07/28 13:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:是陣列 @@) 不過既然選項有跑出來的話應該是有抓到紀錄...</span><span class="push-ipdatetime"> 07/28 13:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:資料庫的部分，另一種做法是另外用一個表來存分類與代號</span><span class="push-ipdatetime"> 07/28 13:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:產品這邊就只要記錄他所屬的分類代號就好 @@</span><span class="push-ipdatetime"> 07/28 13:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:感謝! 我會多加嘗試的! 我的確是測試時在while後面echo @<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d021d">[email&#160;protected]</a>&#34;</span><span class="push-ipdatetime"> 07/28 23:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:mysql_fetch_assoc()的作用是取出一列資料之後，把指針</span><span class="push-ipdatetime"> 07/29 10:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:移到下一列，所以迴圈跑第二次的時候就會抓到下一列</span><span class="push-ipdatetime"> 07/29 10:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:直到最後沒有任何紀錄了，他就會回傳false</span><span class="push-ipdatetime"> 07/29 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:而while就是不斷在執行mysql_fetch_assoc()，直到false</span><span class="push-ipdatetime"> 07/29 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:就跳離while，所以在while後面時$row就會等於false</span><span class="push-ipdatetime"> 07/29 10:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:已解決 下一頁做處理的頁面 是要GET select的name!</span><span class="push-ipdatetime"> 07/31 18:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:應該說是取POST&gt;&gt;&gt;  $i = $_POST[&#39;select1&#39;];</span><span class="push-ipdatetime"> 07/31 18:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">birkhofflee</span><span class="f3 push-content">: 請使用 PDO，以後 mysql_ 開頭的 function 都會移除</span><span class="push-ipdatetime"> 08/20 21:59
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1406445822.A.F3E.html?cacheKey=2148-469799954&amp;offset=3919&amp;offset-sig=8ee32b30659362f6a436b2a16ef9e88b08442479" data-longpollurl="/v1/longpoll?id=a0b5db6125645d0bdd6e41e8bcc6060ab4c79f18" data-offset="3919"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea190a7eb00c',m:'bXtf_3A9k03aQkKm7y3xDQ6qU48BrPKA03R2Zj4jLHQ-1653467483-0-ARQI/6uxv/VmpjFLrMKDczTh7rRfcwFv9SaYPlGsvlOsykMFzA6Y64duFUZJYq88UAAz9pYJfp7dXhMhiLP0PkZOytNou/s+9SsLyhytM/F0EEbL+021LxCGFe3blDCMvGlG3CW27X1ykib+1XVz/meXw/qRrLLDbEdNNZmKFERx',s:[0x443f4ea002,0x4b167ebb26],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

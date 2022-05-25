@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 請問如何裝php 和 curl 在 redhat - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問各位要如何在redhat 裡安裝和執行php, curl.
+我試了兩台機器
+A: 有curl 沒php
+有Errno 14, Error 404 錯誤
+B:有php 沒curl
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 請問如何裝php 和 curl 在 redhat">
+<meta property="og:description" content="請問各位要如何在redhat 裡安裝和執行php, curl.
+我試了兩台機器
+A: 有curl 沒php
+有Errno 14, Error 404 錯誤
+B:有php 沒curl
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1385177698.A.92B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jacobcan118 (jacobcan118)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 請問如何裝php 和 curl 在 redhat</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Nov 23 11:34:56 2013</span></div>
+請問各位要如何在redhat 裡安裝和執行php, curl.
+我試了兩台機器
+A: 有curl 沒php
+有Errno 14, Error 404 錯誤
+B:有php 沒curl
+有dependence conflict.
+
+我要如果解決這兩種錯誤? 謝謝
+1:
+在A裡用yum 裝php 跑下面error 改了 domain file /etc/resolv.conf 重啟network service 還是一樣
+[<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7a5b8b8a39796">[email&#160;protected]</a> ~]# yum install php
+Loaded plugins: security
+<a href="http://public-yum.oracle.com/repo/EnterpriseLinux/EL5/6/base/x86_64/repodata/repomd.xml:" target="_blank" rel="noreferrer noopener nofollow">http://public-yum.oracle.com/repo/EnterpriseLinux/EL5/6/base/x86_64/repodata/repomd.xml:</a> [Errno 14] HTTP Error 404: Not Found
+Trying other mirror.
+Error: Cannot retrieve repository metadata (repomd.xml) for repository: el5_u6_base. Please verify its path and try again
+
+2:
+[<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="31435e5e4571">[email&#160;protected]</a> ~]# yum install curl
+Installing:
+curl i386 7.15.5-9.el5_6.3 ol5_u7_base 233 k
+curl x86_64 7.15.5-9.el5_6.3 ol5_u7_base 230 k
+Installing for dependencies:
+krb5-libs i386 1.6.1-62.el5 ol5_u7_base 668 k
+libidn i386 0.6.5-1.1 ol5_u7_base 194 k
+openssl i686 0.9.8e-20.el5 ol5_u7_base 1.4 M
+
+Transaction Summary
+================================================================================
+Install 5 Package(s)
+Upgrade 0 Package(s)
+
+
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Finished Transaction Test
+
+
+Transaction Check Error:
+package openssl-0.9.8e-26.el5_9.1.x86_64 (which is newer than openssl-0.9.8e-20.el5.i686) is already installed
+package krb5-libs-1.6.1-70.el5.x86_64 (which is newer than krb5-libs-1.6.1-62.el5.i386) is already installed
+file /etc/pki/tls/certs/Makefile from install of openssl-0.9.8e-20.el5.i686 conflicts with file from package openssl-0.9.8e-26.el5_9
+.1.x86_64
+file /etc/pki/tls/certs/ca-bundle.crt from install of openssl-0.9.8e-20.el5.i686 conflicts with file from package openssl-0.9.8e-26.
+el5_9.1.x86_64
+file /usr/share/man/man1/ca.1ssl.gz from install of openssl-0.9.8e-20.el5.i686 conflicts with file from package openssl-0.9.8e-26.el
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 71.183.242.84
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:説實話 這跟PHP本身沒啥關XD 第一個應該是orcale的repo</span><span class="push-ipdatetime"> 11/24 21:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:有問題 換個repo試試 第二個openssl衝突</span><span class="push-ipdatetime"> 11/24 21:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:自己把openssl升到 &gt;= 0.9.8e-26 之後再試試</span><span class="push-ipdatetime"> 11/24 21:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">danny8376</span><span class="f3 push-content">:看了看好像是ssl太新 XD    要找無視ssl版本的方法</span><span class="push-ipdatetime"> 11/25 00:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanli2</span><span class="f3 push-content">:yum install php php-curl</span><span class="push-ipdatetime"> 11/25 03:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:php手動編譯就好了</span><span class="push-ipdatetime"> 11/26 20:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:yum installl php-curl.</span><span class="push-ipdatetime"> 12/01 00:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:[Errno 4] IOError: &lt;urlopen error(-3 failture in..</span><span class="push-ipdatetime"> 12/01 00:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jacobcan118</span><span class="f3 push-content">:移除openssl.在裝openssl-0.9.8e-20.el5.i686 還是不</span><span class="push-ipdatetime"> 12/01 00:23
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1385177698.A.92B.html?cacheKey=2148-469800910&amp;offset=2896&amp;offset-sig=d5f8d01e41f1f3ac5b5428a0674fb6f4917e297b" data-longpollurl="/v1/longpoll?id=cd99b86714a85ce052f13b2aac471ed45b33140b" data-offset="2896"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea475c0b8a56',m:'oAjyDsNfrjiPtoREibNjih3QmqoQph95lN3bK9IPKMs-1653467490-0-AQaSnl4jY5DmHE/U83GVHV81bV0ksayg7qNOxxr5t5XZznAlAgOhd+mrLnuKu1Vj+X0uLbm/HRYl0pU2rAo/Spqp1o4dXR6xt8qlsdEHhsFL9uhvVPvJt7hZfBHzVWAUqOyr1n9vk3otqBOy6dx9UG5lCijeKG9xXyxD33F9IT1+',s:[0x3548b1aa2c,0x7304cdc6ff],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

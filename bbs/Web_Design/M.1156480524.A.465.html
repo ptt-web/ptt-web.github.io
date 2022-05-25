@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 設定圖層的位置 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="感謝之前幫忙發文回問題的人。= =。
+我還是決定，一次把整~~~~~~個問題拿出來，請大家給意見
+主要是這樣的，我目前所製作的網站，是以「連結樣式表」
+然後用樣式表設定圖層，然後圖層再去用 include virtual 的方式去連結各網頁
+而圖層會以樣式表的所設定的位置、大小去作變動…
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 設定圖層的位置">
+<meta property="og:description" content="感謝之前幫忙發文回問題的人。= =。
+我還是決定，一次把整~~~~~~個問題拿出來，請大家給意見
+主要是這樣的，我目前所製作的網站，是以「連結樣式表」
+然後用樣式表設定圖層，然後圖層再去用 include virtual 的方式去連結各網頁
+而圖層會以樣式表的所設定的位置、大小去作變動…
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1156480524.A.465.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">terrybob (翔翔)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 設定圖層的位置</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Aug 25 13:10:51 2006</span></div>
+感謝之前幫忙發文回問題的人。= =。
+
+我還是決定，一次把整~~~~~~個問題拿出來，請大家給意見
+
+主要是這樣的，我目前所製作的網站，是以「連結樣式表」
+然後用樣式表設定圖層，然後圖層再去用 include virtual 的方式去連結各網頁
+而圖層會以樣式表的所設定的位置、大小去作變動…
+
+主文：
+之所以會想知道圖層的資訊…是想籍此知道資訊，然後用java再作新一步的設定
+
+例：
+圖層1的top為 100
+圖層2的top為 圖層1+50
+
+↑想要作到的效果…
+但…
+
+在剛剛一上午的努力，發現…
+用alert顯示出的資訊…100px ←這……
+直接加數字(+100)…出錯
+先用eval()函數轉數字，也是錯…
+
+主要頭痛的問題：
+不能直接用數字加？也不能用函數去轉換
+= = 那要怎麼去變動…總有辦法吧
+
+加上上午才發現的新問題…樣式連結表 = =
+
+以上問題…希望大家能給個良好的建議！ &gt; &lt;…嗚
+
+--
+朝叩朱門吃餘餐
+嗟來冷眼有德顏
+歸途踏盡金磚路
+漫天彩霞不用錢
+
+吾乃…富貴乞丐-花爵百鍊生
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.211.4.196
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bennylu</span><span class="f3 push-content">:div1Top=(div2Top.replace(&#39;px&#39;,&#39;&#39;)+100) + &#39;px&#39;;</span><span class="push-ipdatetime"> 08/25 13:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bennylu</span><span class="f3 push-content">:因為最近也是都在寫圖層 所以你的問題我大致都可以解答</span><span class="push-ipdatetime"> 08/25 13:34
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1156480524.A.465.html?cacheKey=2149-475747900&amp;offset=1154&amp;offset-sig=0d747853a4fc8463c83b2a83ce8ff748ff664a93" data-longpollurl="/v1/longpoll?id=ac5570a02d6769517069af9077d2f8516d1c62df" data-offset="1154"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9ce5bcfaf54',m:'J0IkPnTWGnsksS1UGRbjRPJxoi7YM4.FwSwY3NstU9w-1653467471-0-AVDQl9DpB4JCd/DADFuO+rjJE/aLNUfnZPolZcbPfGLRX1QV6woij8ICaavCP/EDt1CruxdI8iJ3zF9CdCO5Og2B10R/K00j8C9IpBUOuraRHSMbovrMtB8xY7ITR7tRSvB0sPSL76L9Gc+Ybum8VyFNcKjqH4mVDlwIBCQ0RyeN',s:[0xd94c522d80,0x09fc489eb8],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

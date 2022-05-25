@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:knives - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=6&amp;q=author%3Aknives">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Aknives">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Aknives">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:knives" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1450250405.A.6D4.html">[請益] composer 可以跳過版本檢查嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;composer&#43;%E5%8F%AF%E4%BB%A5%E8%B7%B3%E9%81%8E%E7%89%88%E6%9C%AC%E6%AA%A2%E6%9F%A5%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1431598806.A.1E9.html">[請益] 請問Paypal的快速支付 API</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8FPaypal%E7%9A%84%E5%BF%AB%E9%80%9F%E6%94%AF%E4%BB%98&#43;API">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1430124771.A.E05.html">[請益] 請問php unit 在做測試可以送body出去嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8Fphp&#43;unit&#43;%E5%9C%A8%E5%81%9A%E6%B8%AC%E8%A9%A6%E5%8F%AF%E4%BB%A5%E9%80%81body%E5%87%BA%E5%8E%BB%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1421708049.A.CC5.html">[請益] 無法順利安裝laravel </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%84%A1%E6%B3%95%E9%A0%86%E5%88%A9%E5%AE%89%E8%A3%9Dlaravel&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1419227684.A.7FA.html">[請益] 請問有人也有在用codeception在做測試嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E4%BA%BA%E4%B9%9F%E6%9C%89%E5%9C%A8%E7%94%A8codeception%E5%9C%A8%E5%81%9A%E6%B8%AC%E8%A9%A6%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1402146811.A.C09.html">[請益] 有人會完全不用sql 語法的join完成全部</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E4%BA%BA%E6%9C%83%E5%AE%8C%E5%85%A8%E4%B8%8D%E7%94%A8sql&#43;%E8%AA%9E%E6%B3%95%E7%9A%84join%E5%AE%8C%E6%88%90%E5%85%A8%E9%83%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1360050616.A.893.html">[請益] preg_replace怎麼搜尋全部的 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;preg_replace%E6%80%8E%E9%BA%BC%E6%90%9C%E5%B0%8B%E5%85%A8%E9%83%A8%E7%9A%84&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1355369721.A.693.html">[請益] 怎麼更有效判斷陣列是否沒有重覆的值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%80%8E%E9%BA%BC%E6%9B%B4%E6%9C%89%E6%95%88%E5%88%A4%E6%96%B7%E9%99%A3%E5%88%97%E6%98%AF%E5%90%A6%E6%B2%92%E6%9C%89%E9%87%8D%E8%A6%86%E7%9A%84%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1354874198.A.E21.html">[請益] 如果啟用資料庫的交易機制，怎麼處理錯誤</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E6%9E%9C%E5%95%9F%E7%94%A8%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%E4%BA%A4%E6%98%93%E6%A9%9F%E5%88%B6%EF%BC%8C%E6%80%8E%E9%BA%BC%E8%99%95%E7%90%86%E9%8C%AF%E8%AA%A4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1346825303.A.FA0.html">[請益] 怎麼模擬按下Enter的指令</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%80%8E%E9%BA%BC%E6%A8%A1%E6%93%AC%E6%8C%89%E4%B8%8BEnter%E7%9A%84%E6%8C%87%E4%BB%A4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1342087495.A.794.html">[請益] C#的DES3 怎麼轉成php</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;C%23%E7%9A%84DES3&#43;%E6%80%8E%E9%BA%BC%E8%BD%89%E6%88%90php">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1340781244.A.709.html">[請益] 像這樣的文件，有辦法轉成像陣列去操作嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%83%8F%E9%80%99%E6%A8%A3%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%8C%E6%9C%89%E8%BE%A6%E6%B3%95%E8%BD%89%E6%88%90%E5%83%8F%E9%99%A3%E5%88%97%E5%8E%BB%E6%93%8D%E4%BD%9C%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1339681080.A.B4A.html">[請益] Facebook的API是不是又壞掉了</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Facebook%E7%9A%84API%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%88%E5%A3%9E%E6%8E%89%E4%BA%86">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1334907864.A.CB6.html">[請益] 可以刪除別站的cookie、session ?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%8F%AF%E4%BB%A5%E5%88%AA%E9%99%A4%E5%88%A5%E7%AB%99%E7%9A%84cookie%E3%80%81session&#43;%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1327995480.A.FBA.html">[請益] 可以用fql join兩個table嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%8F%AF%E4%BB%A5%E7%94%A8fql&#43;join%E5%85%A9%E5%80%8Btable%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1326942368.A.AA3.html">[請益] 為什麼有些Gif，用GetImageSize會沒有用</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%82%BA%E4%BB%80%E9%BA%BC%E6%9C%89%E4%BA%9BGif%EF%BC%8C%E7%94%A8GetImageSize%E6%9C%83%E6%B2%92%E6%9C%89%E7%94%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1324448431.A.6A9.html">[請益] FB的API改版之後，是不是不能再用redirec</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;FB%E7%9A%84API%E6%94%B9%E7%89%88%E4%B9%8B%E5%BE%8C%EF%BC%8C%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%8D%E8%83%BD%E5%86%8D%E7%94%A8redirec">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1324270459.A.488.html">[請益] 可以取得Facebook好友的email嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%8F%AF%E4%BB%A5%E5%8F%96%E5%BE%97Facebook%E5%A5%BD%E5%8F%8B%E7%9A%84email%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1323765226.A.5CC.html">[請益] 要怎麼檢查網址</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A6%81%E6%80%8E%E9%BA%BC%E6%AA%A2%E6%9F%A5%E7%B6%B2%E5%9D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1323760464.A.066.html">Fw: [問題] pid為什麼會多1</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">knives</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;pid%E7%82%BA%E4%BB%80%E9%BA%BC%E6%9C%83%E5%A4%9A1">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Aknives">搜尋看板內 knives 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea643c161ec4',m:'hNNPN5_Smrrks3krZP.t1yJPkzuDA5EItKlBISycs70-1653467495-0-AbZrLi/owYPSY/BVh3mkZElDAroX8Oab1ciuOp8NWqUyNoQvZzjVLULFzQuaQsRsAGiftSauHaycFvrvIN9Lbpj4hboAUYEjPQ5Dd71/MEpTpFQnnfKy1VXvDidy6Ci5BHwt2UkfbJzYvp6KlnD3Iadd9PQw+MJT8I/B8DvumXWD',s:[0xc947fc2196,0x221b40b600],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 關於TCP socket和HTTPPOST - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="如果你對 TCP/Socket 不熟，我建議採用 Post 。
+從效能上看，的確 TCP/Socket 比較好。
+不過 Socket 在某些語言上，你需要自己做字串的處理，
+如果手機分兩次送，一次送 a 一次送 b ，
+Server 收到的可能一次是 ab 。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 關於TCP socket和HTTPPOST">
+<meta property="og:description" content="如果你對 TCP/Socket 不熟，我建議採用 Post 。
+從效能上看，的確 TCP/Socket 比較好。
+不過 Socket 在某些語言上，你需要自己做字串的處理，
+如果手機分兩次送，一次送 a 一次送 b ，
+Server 收到的可能一次是 ab 。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1442431927.A.E91.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">cleanwind (C.Y.)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 關於TCP socket和HTTPPOST</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Sep 17 03:32:03 2015</span></div>
+如果你對 TCP/Socket 不熟，我建議採用 Post 。
+
+
+從效能上看，的確 TCP/Socket 比較好。
+
+不過 Socket 在某些語言上，你需要自己做字串的處理，
+
+如果手機分兩次送，一次送 a 一次送 b ，
+
+Server 收到的可能一次是 ab 。
+
+
+又 Socket Server 並沒有辦法準確地得知 Client 斷線，
+
+需要 Server/Client 去做 write/read 來判斷。
+
+WebSocket 我沒用過，就不獻醜了。
+
+<span class="f2">※ 引述《ZCBVXIRD (Alonso)》之銘言：
+</span><span class="f6">: 各位大大好
+</span><span class="f6">: 小弟目前在看Android系統上傳資料的方法
+</span><span class="f6">: (目前是用httppost 到後台寫php處理資料)
+</span><span class="f6">: 如果要比較頻繁、即時的上傳資料(資料size不能太大)
+</span><span class="f6">: 通常會用到TCP socket、HTTPPOST這兩種
+</span><span class="f6">: 我想要釐清兩者的優劣跟使用的時機
+</span><span class="f6">: 可是翻了許多資料，覺得無論如何都會是TCP socket比較好的樣子
+</span><span class="f6">: 因為少了HTTP標頭 也不用頻繁的連線、結束、重練，不斷丟request占用頻寬
+</span><span class="f6">: 速度、頻寬、耗能上都會是TCP socket來得有優勢
+</span><span class="f6">: (畢竟是比較底層的協議 有優勢是理所當然?)
+</span><span class="f6">: 這樣我就不知道，除了瀏覽網頁外，
+</span><span class="f6">: 還有甚麼樣的情況下用HTTP polling會比較好呢?
+</span><span class="f6">: 另外還有幾個小問題:
+</span><span class="f6">: 1.websocket，目前認知這是為browser設計的協議，
+</span><span class="f6">:   請問一般Android APP有辦法整合這功能嗎?(會不會問錯版了XD)
+</span><span class="f6">: 2.Websocket的連線流程(protocol behavior)，是不是就跟TCP/IP socket一模一樣?
+</span><span class="f6">: 謝謝
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 106.105.24.158
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1442431927.A.E91.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1442431927.A.E91.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ZCBVXIRD</span><span class="f3 push-content">: 感謝分享!</span><span class="push-ipdatetime"> 09/21 13:02
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1442431927.A.E91.html?cacheKey=2148-469784629&amp;offset=1447&amp;offset-sig=30fe1c3c1971284d654cee3eae94318de9c7a7f2" data-longpollurl="/v1/longpoll?id=decaff0a43d3639dfa5b741309e775ebdc5c4a4c" data-offset="1447"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea41fe53afe5',m:'aJjI.WOFIhfzED.sLPbVh9pkxCHm8A.VvqUHlPeuqGg-1653467489-0-AWnZ1yLfmYy4Fhaacm6Dd1qQI4CTUBS/pBr9/mMPynjkWiUp2OB1/nvSsXjJBEyLFFXctUULMAPhmp8HXtQlVePT602VSTOJskh/kJzx3fzbbDNhHQYbmgxCaTug1pjdRhyba7hxkFMeKYFT9CiGy0QxHbweGIixYvhvY2U0OeaX',s:[0x42141b6123,0xc2acdf14fb],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

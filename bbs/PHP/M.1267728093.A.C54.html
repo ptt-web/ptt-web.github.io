@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] php 抓 google 搜尋結果特定區塊 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="小弟要做一個整合 Google Yahoo... 等搜尋引擎的網頁
+也就是讓 Google Yahoo 搜尋後，將結果呈現在網頁上
+我需要的是下圖藍色部分
+http://maxis1718.pixnet.net/album/photo/144088115#pictop
+用Google瀏覽器的&#34;檢查元素&#34;功能，可以看到所要的區域
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] php 抓 google 搜尋結果特定區塊">
+<meta property="og:description" content="小弟要做一個整合 Google Yahoo... 等搜尋引擎的網頁
+也就是讓 Google Yahoo 搜尋後，將結果呈現在網頁上
+我需要的是下圖藍色部分
+http://maxis1718.pixnet.net/album/photo/144088115#pictop
+用Google瀏覽器的&#34;檢查元素&#34;功能，可以看到所要的區域
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1267728093.A.C54.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">upp818 (KT)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] php 抓 google 搜尋結果特定區塊</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Mar  5 02:41:31 2010</span></div>
+小弟要做一個整合 Google Yahoo... 等搜尋引擎的網頁
+
+也就是讓 Google Yahoo 搜尋後，將結果呈現在網頁上
+
+我需要的是下圖<span class="f4 hl">藍色</span>部分
+
+<a href="http://maxis1718.pixnet.net/album/photo/144088115#pictop" target="_blank" rel="noreferrer noopener nofollow">http://maxis1718.pixnet.net/album/photo/144088115#pictop</a>
+
+用Google瀏覽器的&#34;檢查元素&#34;功能，可以看到所要的區域
+
+<a href="http://maxis1718.pixnet.net/album/photo/144088116#pictop" target="_blank" rel="noreferrer noopener nofollow">http://maxis1718.pixnet.net/album/photo/144088116#pictop</a>
+
+那應該要取 &lt;div&gt; ~~ &lt;/div&gt;   還是   &lt;li &gt; ~~ &lt;/li&gt; 呢?
+
+
+而在取出某段 html 時，也遇到了一點問題 @@
+
+不知道是正規式沒寫好還是語法有錯，取出來的東西都長得跟原本十分不一樣= =
+
+排版亂了，圖片也很怪，甚至要取Google搜尋結果時還出現以下網頁的問題 Q口Q
+
+<a href="http://myweb.ncku.edu.tw/~f7496115/test/ex-div.php" target="_blank" rel="noreferrer noopener nofollow">http://myweb.ncku.edu.tw/~f7496115/test/ex-div.php</a>
+
+錯出在 <span class="hl">print $match[0]</span>;  這行
+
+--
+
+PHP code 如下:
+
+&lt;?php
+
+$text=file_get_contents(&#39;<a href="https://www.google.com.tw/search?q=php&#39;);" target="_blank" rel="noreferrer noopener nofollow">http://www.google.com.tw/search?q=php&#39;);</a>
+
+preg_match(&#39;/&lt;div[^&gt;]*<span class="f3 hl">id=&#34;res&#34;</span>[^&gt;]*&gt;(.*?) &lt;\/div&gt;/si&#39;,$text,$match);
+
+print($match[0]);
+
+?&gt;
+
+--
+
+弄好久了 Q_Q  懇請各位大大賜教~~
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.116.103.131
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1267728093.A.C54.html?cacheKey=2148-469797703&amp;offset=1082&amp;offset-sig=3e356d4ae3d83597dbf02e2198f0eb9b4f743865" data-longpollurl="/v1/longpoll?id=ebc24abca9fb3142e6948b8acf6f38e62e89294a" data-offset="1082"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea64ee58f8eb',m:'RJ3zVMDplpuQ5qcLvVY7G_8tRMO6Yy9JRALLralxpM4-1653467495-0-ASuXBf/BbYqXN9sor4B3ME4pNiwKRSW4PGEMc/zRALV7xaKLQTBp+CU7dhoZ/Y12B4xfNRgrBMJKqVyD9P/Yca0nRjjfeQi/zIw25q1T+ZMHsPmhzUXZdxWD8LdvTXT9yBAmuRK5rETQjyuIp6w5VwSP2qW2/IsVi6xQEPLnB7TC',s:[0x443f4ea002,0xe9a5fb281e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

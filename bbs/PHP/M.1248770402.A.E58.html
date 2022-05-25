@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 台灣行政區的資料庫 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="PostgreSQL 下的作法啦. 小改一下 MySQL就可以用了
+CREATE TABLE area
+(
+  area_id serial NOT NULL,
+  thread_id integer NOT NULL DEFAULT 0,
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 台灣行政區的資料庫">
+<meta property="og:description" content="PostgreSQL 下的作法啦. 小改一下 MySQL就可以用了
+CREATE TABLE area
+(
+  area_id serial NOT NULL,
+  thread_id integer NOT NULL DEFAULT 0,
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1248770402.A.E58.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">alpe (薛丁格的貓)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 台灣行政區的資料庫</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jul 28 16:39:59 2009</span></div>
+<span class="f2">※ 引述《arrack (Arrack Tseng)》之銘言：
+</span><span class="f6">: ※ 引述《claire0810 (Claire)》之銘言：
+</span><span class="f6">: : 我現在要用MYSQL
+</span><span class="f6">: : 規劃台灣行政區的資料庫
+</span><span class="f6">: : 可是我希望各位可以給我一點建議
+</span><span class="f6">: : 我做出來的結果是想用下拉式選單選哪個縣市哪個區之類的
+</span><span class="f6">: : 程式碼方面是沒問題
+</span><span class="f6">: : 但是我資料庫方面 卻不知道該怎樣規劃才是最方便的
+</span><span class="f6">: : 該以縣當資料庫欄位
+</span><span class="f6">: : EX     (欄位)  台北市 基隆市 .....以此類推  (還有其他縣市)
+</span><span class="f6">: :        (資料)  中正區 仁愛區
+</span><span class="f6">: :                大同區 中正區
+</span>
+
+PostgreSQL 下的作法啦. 小改一下 MySQL就可以用了
+
+CREATE TABLE area
+(
+  area_id serial NOT NULL,
+  thread_id integer NOT NULL DEFAULT 0,
+  zipcode numeric(5),
+  geo point,
+  &#34;name&#34; character varying(300) NOT NULL,
+  ename character varying(300),
+  CONSTRAINT area_pkey PRIMARY KEY (area_id)
+)
+WITH (OIDS=TRUE);
+
+COMMENT ON TABLE area IS &#39; area 地區
+thread_id : 父類別;
+zipcode : 郵遞區號;
+geo : 經緯度 ex : &#34;(124.12547, 24.25488)&#34;;
+name : 地名;
+ename : 英文地名;
+&#39;;
+
+
+50 之前是預留.
+
+INSERT INTO area VALUES (50, 0, NULL, &#39;(121.559834,25.091075)&#39;, &#39;台北市&#39;, NULL);
+INSERT INTO area VALUES (51, 0, NULL, &#39;(121.708145,25.108981)&#39;, &#39;基隆市&#39;, NULL);
+... ...
+INSERT INTO area VALUES (338, 46, 849, &#39;(120.32625400000001,22.648344000000002)&#39;, &#39;那瑪夏鄉&#39;, &#39;Namasia Township&#39;);
+INSERT INTO area VALUES (379, 48, 947, &#39;(120.838409,22.043849999999999)&#39;, &#39;滿洲鄉&#39;, &#39;Manjhou Township&#39;);
+... ...
+
+--
+                 Live Long and Prosper
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.63.31.135
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">claire0810  </span><span class="f3 push-content">:驚!! 這個我整個看不懂= =....mysql 語法嗎?</span><span class="push-ipdatetime"> 07/28 16:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alpe        </span><span class="f3 push-content">:postgresql 的啦, 主架構 mysql 是可以用的啦</span><span class="push-ipdatetime"> 07/28 17:24
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1248770402.A.E58.html?cacheKey=2148-469787283&amp;offset=1739&amp;offset-sig=bc5147f577b256e11320b6319b8acf26a0389c17" data-longpollurl="/v1/longpoll?id=e7ef63cabfe6f09e3f0be5692f31b313211c509c" data-offset="1739"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea5b3b131ee0',m:'IK80WzDCjjcqBnD44WS5ol9mSero9YYfYlGXVBJuWWM-1653467493-0-AQFgkC+n/OOoTuIL7lvoDxKU4UFvYSNa1t4eCNVZ2NfFC1FAcJpxVGqZaaxOCemyTQpydh1Vial6Krh0HIqxrs+DskPthdP+/S7lLKHoz4im1M0geM2nI0BPO+jAFPa+85ynJ9ZsNFCyb1//A6JCC9u594AgAWWhPnCL+suvz/Ym',s:[0x42141b6123,0x8caf9eaee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

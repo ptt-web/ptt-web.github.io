@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:kitkat - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Akitkat">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Akitkat">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:kitkat" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1200847976.A.56F.html">[請益] 換環境出現的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%8F%9B%E7%92%B0%E5%A2%83%E5%87%BA%E7%8F%BE%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1199859861.A.CD9.html">[請益] 迴圈中的其中一個正常的陣列不work</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%BF%B4%E5%9C%88%E4%B8%AD%E7%9A%84%E5%85%B6%E4%B8%AD%E4%B8%80%E5%80%8B%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%99%A3%E5%88%97%E4%B8%8Dwork">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1198711396.A.F0A.html">[請益] insert是假的???</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;insert%E6%98%AF%E5%81%87%E7%9A%84%3F%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1198592813.A.2E4.html">[請益] 計算資料筆數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A8%88%E7%AE%97%E8%B3%87%E6%96%99%E7%AD%86%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1198422421.A.803.html">[請益] 和PHP勉強沾上邊的HTML..</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%92%8CPHP%E5%8B%89%E5%BC%B7%E6%B2%BE%E4%B8%8A%E9%82%8A%E7%9A%84HTML..">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1191743469.A.EBC.html">[請益] 不重複的亂數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kitkat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%8D%E9%87%8D%E8%A4%87%E7%9A%84%E4%BA%82%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akitkat">搜尋看板內 kitkat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab1d9a8af54',m:'qy3B6X93_RF.dPFaNhgNy9GRqS.plIz.J0nPctsFDHI-1653467507-0-AU8BYoKKugfs5pqOmPdxVOL/alw/mt0SyJIXnO+e/DMwD0oHig5BWS/3256/C3vBcrodn9h5rxyA5lR9sCUTrpNspJU81Gf9EMG2LepdvEWqzQhEFOtnfZLjoU9DTBMeqy9vGqWLia4tmMBUb8D6wZW++PFO/4weZ3o2JnMJJVHt',s:[0x84836863ef,0xacc9ba4c9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

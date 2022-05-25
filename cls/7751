@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MusicVideo/index.html">
+                <div class="board-name">MusicVideo</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">ＭＶ</div>
+                <div class="board-title">&#9678;[MV板] 分享MV請先看置底公告</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Japandrama/index.html">
+                <div class="board-name">Japandrama</div>
+                <div class="board-nuser"><span class="hl">163</span></div>
+                <div class="board-class">日劇</div>
+                <div class="board-title">&#9678;[日劇] 月22 波瑠</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Palmar_Drama/index.html">
+                <div class="board-name">Palmar_Drama</div>
+                <div class="board-nuser"><span class="hl f3">27</span></div>
+                <div class="board-class">布袋</div>
+                <div class="board-title">&#9678;天宇黃文耀老師 R.I.P.</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Queer_drama/index.html">
+                <div class="board-name">Queer_drama</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">同志</div>
+                <div class="board-title">&#9678;[同影] 這裡是同影板板兒</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/the_L_word/index.html">
+                <div class="board-name">the_L_word</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">同志</div>
+                <div class="board-title">&#9678;[拉影] 女巫前線最終季 6/21開播</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ThaiDrama/index.html">
+                <div class="board-name">ThaiDrama</div>
+                <div class="board-nuser">10</div>
+                <div class="board-class">泰劇</div>
+                <div class="board-title">&#9678;[泰劇]LFA 死神與鬼怪女孩</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Tokusatsu/index.html">
+                <div class="board-name">Tokusatsu</div>
+                <div class="board-nuser">5</div>
+                <div class="board-class">特攝</div>
+                <div class="board-title">&#9678;[特攝] 超人55×騎士50×戰隊45</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/China-Drama/index.html">
+                <div class="board-name">China-Drama</div>
+                <div class="board-nuser"><span class="hl">88</span></div>
+                <div class="board-class">陸劇</div>
+                <div class="board-title">&#9678;[陸劇]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/HK-drama/index.html">
+                <div class="board-name">HK-drama</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">港劇</div>
+                <div class="board-title">&#9678;[港劇]  為什麼沒人寫徵文</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Realityshow/index.html">
+                <div class="board-name">Realityshow</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">實境</div>
+                <div class="board-title">&#9678;TAR33Finale 3/2 SUR42 3/9首播</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/TaiwanDrama/index.html">
+                <div class="board-name">TaiwanDrama</div>
+                <div class="board-nuser"><span class="hl f3">36</span></div>
+                <div class="board-class">臺劇</div>
+                <div class="board-title">&#9678;[臺劇] 村裡來了個暴走女外科</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ADS/index.html">
+                <div class="board-name">ADS</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">廣告</div>
+                <div class="board-title">&#9678;[廣告] </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/EAseries/index.html">
+                <div class="board-name">EAseries</div>
+                <div class="board-nuser"><span class="hl">274</span></div>
+                <div class="board-class">歐美</div>
+                <div class="board-title">&#9678;[EA] 歐美影集版 </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/KoreaDrama/index.html">
+                <div class="board-name">KoreaDrama</div>
+                <div class="board-nuser"><span class="hl">287</span></div>
+                <div class="board-class">韓劇</div>
+                <div class="board-title">&#9678;[韓劇]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Scifi_Drama/index.html">
+                <div class="board-name">Scifi_Drama</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;===科幻頻道===</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/TaiwanScript/index.html">
+                <div class="board-name">TaiwanScript</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;[台編]台灣編劇板</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cd9d2ebff80ef',m:'30Y3mJ3cndKQeY0sJoxFU.hMMpK8z0JkMLYZUbh_rr8-1653466816-0-ATLyROJew6pb6AnGy2R2cBAMu1HpQG+QhRsGD9b06dmR/tk/jqgtNH05J6jI3UW2GLcq0verRrwhDyNtq7jjUYwK4Snesycb2DVz4/CeQWzJIUX1K84tpWSfHSqUeMTkPw==',s:[0x60f36bd9d6,0x8723408ff3],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

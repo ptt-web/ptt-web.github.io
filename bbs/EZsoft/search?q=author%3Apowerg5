@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:powerg5 - EZsoft - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/EZsoft/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/EZsoft/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/EZsoft/search?page=2&amp;q=author%3Apowerg5">最舊</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=2&amp;q=author%3Apowerg5">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3Apowerg5">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:powerg5" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1454685046.A.16F.html">[請問] 有無可編輯shell32.dll的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E6%9C%89%E7%84%A1%E5%8F%AF%E7%B7%A8%E8%BC%AFshell32.dll%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1425988387.A.7DA.html">[情報] HDD Mechanic限時免費</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;HDD&#43;Mechanic%E9%99%90%E6%99%82%E5%85%8D%E8%B2%BB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1424215841.A.2F7.html">[請問] todo backup出現錯誤訊息無法備份</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;todo&#43;backup%E5%87%BA%E7%8F%BE%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF%E7%84%A1%E6%B3%95%E5%82%99%E4%BB%BD">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1400666568.A.B84.html">[情報] 免費MiniTool Partition Wizard專業版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E5%85%8D%E8%B2%BBMiniTool&#43;Partition&#43;Wizard%E5%B0%88%E6%A5%AD%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1387181113.A.BD0.html">[請問] 請問有人用過易數科技的還原軟體嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E4%BA%BA%E7%94%A8%E9%81%8E%E6%98%93%E6%95%B8%E7%A7%91%E6%8A%80%E7%9A%84%E9%82%84%E5%8E%9F%E8%BB%9F%E9%AB%94%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1252550502.A.F1D.html">[問題] 請問如何讓舊版foobar聽新版編碼器編出 …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E8%AE%93%E8%88%8A%E7%89%88foobar%E8%81%BD%E6%96%B0%E7%89%88%E7%B7%A8%E7%A2%BC%E5%99%A8%E7%B7%A8%E5%87%BA&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1237951083.A.94D.html">[請問] 請問如何將這個網站整個下載下來</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E5%B0%87%E9%80%99%E5%80%8B%E7%B6%B2%E7%AB%99%E6%95%B4%E5%80%8B%E4%B8%8B%E8%BC%89%E4%B8%8B%E4%BE%86">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1235148363.A.5EA.html">Re: [請問] 請問有辦法設定virtualbox和vista共用꘠…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E8%BE%A6%E6%B3%95%E8%A8%AD%E5%AE%9Avirtualbox%E5%92%8Cvista%E5%85%B1%E7%94%A8%EA%98%A0%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1235143074.A.A1F.html">Re: [請問] 請問有辦法設定virtualbox和vista共用꘠…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E8%BE%A6%E6%B3%95%E8%A8%AD%E5%AE%9Avirtualbox%E5%92%8Cvista%E5%85%B1%E7%94%A8%EA%98%A0%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1235139777.A.4B5.html">[請問] 請問有辦法設定virtualbox和vista共用印表機嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E6%9C%89%E8%BE%A6%E6%B3%95%E8%A8%AD%E5%AE%9Avirtualbox%E5%92%8Cvista%E5%85%B1%E7%94%A8%E5%8D%B0%E8%A1%A8%E6%A9%9F%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1227545555.A.942.html">Re: [推薦] XMind, 比 Freemind 更好用的心智圖軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;XMind%2C&#43;%E6%AF%94&#43;Freemind&#43;%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84%E5%BF%83%E6%99%BA%E5%9C%96%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1226804816.A.6CC.html">[請問] 請問vista64bit下有可代替unlocker的軟體嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8Fvista64bit%E4%B8%8B%E6%9C%89%E5%8F%AF%E4%BB%A3%E6%9B%BFunlocker%E7%9A%84%E8%BB%9F%E9%AB%94%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1225001425.A.666.html">[請問] flashget下到一半的檔案有辦法轉給utorrent下嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;flashget%E4%B8%8B%E5%88%B0%E4%B8%80%E5%8D%8A%E7%9A%84%E6%AA%94%E6%A1%88%E6%9C%89%E8%BE%A6%E6%B3%95%E8%BD%89%E7%B5%A6utorrent%E4%B8%8B%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1224550476.A.6FF.html">[請問] 請問在vista 64下還原手動備份的設定的方法</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;%E8%AB%8B%E5%95%8F%E5%9C%A8vista&#43;64%E4%B8%8B%E9%82%84%E5%8E%9F%E6%89%8B%E5%8B%95%E5%82%99%E4%BB%BD%E7%9A%84%E8%A8%AD%E5%AE%9A%E7%9A%84%E6%96%B9%E6%B3%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1219657571.A.648.html">Re: [請問] foobar播不了轉好的flac檔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;foobar%E6%92%AD%E4%B8%8D%E4%BA%86%E8%BD%89%E5%A5%BD%E7%9A%84flac%E6%AA%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1219484153.A.8C2.html">Re: [請問] foobar播不了轉好的flac檔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;foobar%E6%92%AD%E4%B8%8D%E4%BA%86%E8%BD%89%E5%A5%BD%E7%9A%84flac%E6%AA%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1219384455.A.52A.html">[請問] foobar播不了轉好的flac檔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D&#43;foobar%E6%92%AD%E4%B8%8D%E4%BA%86%E8%BD%89%E5%A5%BD%E7%9A%84flac%E6%AA%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1214911808.A.546.html">[請問]有沒有軟體可以做到批次裁圖呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E5%95%8F%5D%E6%9C%89%E6%B2%92%E6%9C%89%E8%BB%9F%E9%AB%94%E5%8F%AF%E4%BB%A5%E5%81%9A%E5%88%B0%E6%89%B9%E6%AC%A1%E8%A3%81%E5%9C%96%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1211631670.A.27B.html">[請益]mdie在搜尋圖片時有辦法顯示縮圖嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5Dmdie%E5%9C%A8%E6%90%9C%E5%B0%8B%E5%9C%96%E7%89%87%E6%99%82%E6%9C%89%E8%BE%A6%E6%B3%95%E9%A1%AF%E7%A4%BA%E7%B8%AE%E5%9C%96%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1211618697.A.676.html">[請益]請問avg-anti virus沒有提供免費版了嗎?&gt;</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">powerg5</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D%E8%AB%8B%E5%95%8Favg-anti&#43;virus%E6%B2%92%E6%9C%89%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B2%BB%E7%89%88%E4%BA%86%E5%97%8E%3F%3E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3Apowerg5">搜尋看板內 powerg5 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb73dbb980a5',m:'J2g6Dxh_FqgWDWSMVVf0APesPRAoF01ffW4S_cMqsdk-1653466883-0-Aeysx0h7CuHDrybHaBco/mBuJbU/dNRp6VyDRJ6tHAQNtNzQPWzyXwMwGCYW83VZyFjDl8vQMXapO4eMzQUHSuUDese9KNG6225Lu1TEqv5q7gnEyKoxYWmpZidDep2f8B+A5UosrRC7+1zAd86p2Z3TefiBPTRgThycb5s+Pmrq',s:[0x8feb1ca785,0x5fa9f810ab],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

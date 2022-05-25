@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:cocakl - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Acocakl">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Acocakl">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Acocakl">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:cocakl" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1204370846.A.452.html">Re: [問題] 主機的流量跟下載速度有關嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%B8%BB%E6%A9%9F%E7%9A%84%E6%B5%81%E9%87%8F%E8%B7%9F%E4%B8%8B%E8%BC%89%E9%80%9F%E5%BA%A6%E6%9C%89%E9%97%9C%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1180117853.A.CEC.html">Re: [問題] domain name套用在不同ip</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;domain&#43;name%E5%A5%97%E7%94%A8%E5%9C%A8%E4%B8%8D%E5%90%8Cip">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1160892470.A.29C.html">Re: [問題] 網域名稱相似是否構成侵權？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1%E7%9B%B8%E4%BC%BC%E6%98%AF%E5%90%A6%E6%A7%8B%E6%88%90%E4%BE%B5%E6%AC%8A%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1159505966.A.2C5.html">[轉貼]MS提供完全免費domain及hosting</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%BD%89%E8%B2%BC%5DMS%E6%8F%90%E4%BE%9B%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B2%BBdomain%E5%8F%8Ahosting">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1154473027.A.BE3.html">Re: [問題] 網路付款問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E8%B7%AF%E4%BB%98%E6%AC%BE%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1153143700.A.F6A.html">Re: [問題] 請問DNS轉址</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8FDNS%E8%BD%89%E5%9D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1149935445.A.D2B.html">Re: [問題] 有人有用過(或看過)MD-Pro嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E4%BA%BA%E6%9C%89%E7%94%A8%E9%81%8E%28%E6%88%96%E7%9C%8B%E9%81%8E%29MD-Pro%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1148252877.A.B01.html">[網路] gabbly？蓋不理？任何網站都可以聊天</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E7%B6%B2%E8%B7%AF%5D&#43;gabbly%EF%BC%9F%E8%93%8B%E4%B8%8D%E7%90%86%EF%BC%9F%E4%BB%BB%E4%BD%95%E7%B6%B2%E7%AB%99%E9%83%BD%E5%8F%AF%E4%BB%A5%E8%81%8A%E5%A4%A9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1146993613.A.E81.html">Re: [問題] XOOPS郵件設定問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;XOOPS%E9%83%B5%E4%BB%B6%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1145088916.A.FDB.html">Re: [問題] DNS問題~~~自己連不進自己網頁</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;DNS%E5%95%8F%E9%A1%8C~~~%E8%87%AA%E5%B7%B1%E9%80%A3%E4%B8%8D%E9%80%B2%E8%87%AA%E5%B7%B1%E7%B6%B2%E9%A0%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1144168349.A.3F7.html">Re: [問題] 請問如何建置實驗室網頁?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%BD%AE%E5%AF%A6%E9%A9%97%E5%AE%A4%E7%B6%B2%E9%A0%81%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1143614512.A.B58.html">Re: [問題] 想問套裝的購物網站軟體</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%83%B3%E5%95%8F%E5%A5%97%E8%A3%9D%E7%9A%84%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%E8%BB%9F%E9%AB%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1141428266.A.A29.html">Re: [問題] 關於申請網域</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BC%E7%94%B3%E8%AB%8B%E7%B6%B2%E5%9F%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1141341475.A.19B.html">Re: [問題] virtual hosting?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;virtual&#43;hosting%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/03</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1141015492.A.A32.html">Re: [問題] 虛擬主機與網頁空間??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%99%9B%E6%93%AC%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E9%A0%81%E7%A9%BA%E9%96%93%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1140664604.A.72E.html">Re: [問題] 網路空間</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E8%B7%AF%E7%A9%BA%E9%96%93">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1140664348.A.5DE.html">Re: 請問大家對 泛用型中文網域 的看法...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%E8%AB%8B%E5%95%8F%E5%A4%A7%E5%AE%B6%E5%B0%8D&#43;%E6%B3%9B%E7%94%A8%E5%9E%8B%E4%B8%AD%E6%96%87%E7%B6%B2%E5%9F%9F&#43;%E7%9A%84%E7%9C%8B%E6%B3%95...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/23</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1139740588.A.C49.html">Re: [問題] 虛擬主機的問題(盅滑電信好貴阿~~~XD)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%99%9B%E6%93%AC%E4%B8%BB%E6%A9%9F%E7%9A%84%E5%95%8F%E9%A1%8C%28%E7%9B%85%E6%BB%91%E9%9B%BB%E4%BF%A1%E5%A5%BD%E8%B2%B4%E9%98%BF~~~XD%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/12</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1138810296.A.3B4.html">Re: [問題] 網頁語系的編碼問題...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E8%AA%9E%E7%B3%BB%E7%9A%84%E7%B7%A8%E7%A2%BC%E5%95%8F%E9%A1%8C...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1137979852.A.228.html">Re: [問題] 虛擬主機的流量判斷何種合理？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">cocakl</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%99%9B%E6%93%AC%E4%B8%BB%E6%A9%9F%E7%9A%84%E6%B5%81%E9%87%8F%E5%88%A4%E6%96%B7%E4%BD%95%E7%A8%AE%E5%90%88%E7%90%86%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Acocakl">搜尋看板內 cocakl 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce96a3eeaafcd',m:'SWSzBfkYj8H3ba0VYm91IN83IQDo0MvtsSbSovk_p7E-1653467455-0-AcJBkfs7kQArpkH2y5TvObYTCuLBsFT+XiP7ZyaUFarBm29MnGFlpvjcmckowVRjpUqMn0rIQOayp2jIj6pArfO3yzMzUnuu1y77fSr+Og5lInFjcDNCPFHo2Fn9+JXmAT2K5AtBpe/R5JD1CyrU6NZ5XakCofvBPRl3VGKKOCeo',s:[0x44fe4ee482,0x98f93f5271],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

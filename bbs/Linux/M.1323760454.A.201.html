@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] pid為什麼會多1 - 看板 Linux - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我用php的popen去呼叫Linux下面的指令
+$exec = &#39;php /var/www/html/myapp.php &amp; &gt; /dev/null &amp; echo $!&#39;;
+$p = popen($exec,&#39;r&#39;);
+$pid =fread($p, 2096);
+然後我印出來的pid 跟用ps aux指令找到的pid
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] pid為什麼會多1">
+<meta property="og:description" content="我用php的popen去呼叫Linux下面的指令
+$exec = &#39;php /var/www/html/myapp.php &amp; &gt; /dev/null &amp; echo $!&#39;;
+$p = popen($exec,&#39;r&#39;);
+$pid =fread($p, 2096);
+然後我印出來的pid 跟用ps aux指令找到的pid
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Linux/M.1323760454.A.201.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Linux/index.html"><span class="board-label">看板 </span>Linux</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Linux/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">knives ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Linux</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] pid為什麼會多1</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Dec 13 15:14:10 2011</span></div>
+我用php的popen去呼叫Linux下面的指令
+$exec = &#39;php /var/www/html/myapp.php &amp; &gt; /dev/null &amp; echo $!&#39;;
+
+$p = popen($exec,&#39;r&#39;);
+
+$pid =fread($p, 2096);
+
+然後我印出來的pid 跟用ps aux指令找到的pid
+
+為什麼印出來的pid都會多一
+
+請問為什麼會這樣阿
+
+謝謝回答
+
+--
+<span class="f6 hl">                     </span><span class="f3 hl">咕~~嚕嚕嚕~~~~      </span><span class="f6 hl">洨洨不要跑~~~ </span><span class="hl">  要被吃了~~快游啊!!</span>
+
+<span class="hl">                             </span><span class="f3 hl">﹨ ﹨      </span><span class="f1">◢██◣      </span><span class="f6 hl">〝        〝  〝</span>
+<span class="f6 hl">                           </span><span class="f3 hl">╲       </span>◢  <span class="f1">█</span>██<span class="f1 b7">◥</span><span class="f1">▌       </span><span class="f6 hl">〝        </span><span class="hl">～●</span>
+<span class="hl">                                    </span><span class="f3 b7 hl">◢</span><span class="f3 hl">█</span><span class="f1 b7">◤</span><span class="f0 b7">□︵□</span><span class="f1">▌      </span><span class="hl">～●   </span><span class="f6 hl">〝</span>
+<span class="f6 hl">          </span><span class="hl"> by hogolayoo           </span>◢<span class="f3 hl">██</span><span class="f0 b7">╲||</span><span class="f1 b7 hl">□</span><span class="f0 b7">╱</span>◤             <span class="hl">～●</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 59.126.209.219
+<span class="f2">※ </span><span class="f2 hl">knives</span><span class="f2">:轉錄至看板 PHP</span>                                           12/13 15:14
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">:你那兩行php程式是 myapp.php 的內容? 還是 $exec 是去執</span><span class="push-ipdatetime"> 12/13 17:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bitlife</span><span class="f3 push-content">:行第1行的命令?</span><span class="push-ipdatetime"> 12/13 17:16
+</span></div><span class="f2">※ 編輯: knives          來自: 59.126.209.219       (12/14 11:45)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Linux/M.1323760454.A.201.html?cacheKey=2147-1007073321&amp;offset=1342&amp;offset-sig=077a6ad670e27cbc27d445a4ec8bb88f46bec1b9" data-longpollurl="/v1/longpoll?id=992923cd7ce0caddb799335cc1d8e99c8a484e0f" data-offset="1342"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea69a954f8eb',m:'OcidOZk0sW.C0Fgo_lov34kBGQ4ZNKls8qFsNbLm_fo-1653467495-0-AT2daKgwWpNwTKw94uLGrQ1RlRAdQ0lprHZFaKhQ5Ko62qN+yx8Hx/t2A5gLU82KXmT2SlNTp1S2eYCKVKUM567njDZYkkUoCM2wH84TcSfcG3s3K03pprvb2jCCcQIabeBFjNG94IrBxYmOU5vvy0285EQnPqKsqcZ1JiBMTjiI',s:[0x6e4c35b486,0x8616964c9a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: 問一個有關PHP計數器的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="雖然整除之後會跳出while，不過你的i還是會加一
+建議寫法：在$i=$i+1;這行多加一個if判斷。。
+將$i=$i+1;
+改成if ($counter != 0) $i=$i+1;
+試試看。。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: 問一個有關PHP計數器的問題">
+<meta property="og:description" content="雖然整除之後會跳出while，不過你的i還是會加一
+建議寫法：在$i=$i+1;這行多加一個if判斷。。
+將$i=$i+1;
+改成if ($counter != 0) $i=$i+1;
+試試看。。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1116863733.A.5BF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">EUGENEKNIGHT (我最愛兄弟)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: 問一個有關PHP計數器的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue May 24 00:00:51 2005</span></div>
+<span class="f2">※ 引述《lugia0930 (告訴我)》之銘言：
+</span><span class="f6">: 不曉得為什麼，我的計數器前面會多一個叉燒包(沒有檔名的GIF)
+</span><span class="f6">: <a href="http://www.hcsh.tpc.edu.tw/~311287/lala.php" target="_blank" rel="noreferrer noopener nofollow">http://www.hcsh.tpc.edu.tw/~311287/lala.php</a> 這是我輸出後的網頁
+</span><span class="f6">: 下面是我的原始碼
+</span><span class="f6">: 麻煩有研究的各位指導一下哪裡寫錯了&gt;&#34;&lt;
+</span><span class="f6">: &lt;?
+</span><span class="f6">: $fp = fopen(&#34;zeny.dat&#34;,&#34;r&#34;);
+</span><span class="f6">: $counter = fgets($fp,1024);
+</span><span class="f6">: echo &#34;$counter&#34;;
+</span><span class="f6">: $counter = $counter+1 ;
+</span><span class="f6">: $fp = fopen(&#34;zeny.dat&#34;,&#34;w+&#34;);
+</span><span class="f6">: fwrite($fp,&#34;$counter\n&#34;);
+</span><span class="f6">: $i=0;
+</span><span class="f6">: while($counter&gt;0){
+</span>
+<span class="f6">: $number[$i]=$counter%10;
+</span><span class="f6">: $counter=($counter-$number[$i])/10;
+</span><span class="f6">: $i=$i+1;
+</span>雖然整除之後會跳出while，不過你的i還是會加一
+建議寫法：在$i=$i+1;這行多加一個if判斷。。
+將$i=$i+1;
+改成if ($counter != 0) $i=$i+1;
+試試看。。
+個人淺見，請大家指正^^
+<span class="f6">: }
+</span><span class="f6">: while($i&gt;-0.5){
+</span><span class="f6">: echo &#34;&lt;img src=&#34;.$number[$i].&#34;.gif&gt;&#34;;
+</span><span class="f6">: $i=$i-1;
+</span><span class="f6">: }
+</span><span class="f6">: ?&gt;
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.127.179.229
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lugia0930</span><span class="f3 push-content">:感謝你&gt;&#34;&lt;終於成功了</span><span class="push-ipdatetime">  61.64.203.233 05/24
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1116863733.A.5BF.html?cacheKey=2149-475712059&amp;offset=1027&amp;offset-sig=bdc3575fb5266b82d2edb6bf0d4b78b0f7b7ff08" data-longpollurl="/v1/longpoll?id=b9e21e6fd41a597e361bed2a687d5d9611034cc7" data-offset="1027"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce97d8f39afd0',m:'8hP72f_6Lkxp8NMKUyQo4XTQs0d2la8oYDn31Rba1jA-1653467458-0-AX3Vob4rCj7R7w0Czu6q0RA2IKZ4uCs8EC7LGv6/ODObzxhvSNu9K4WYhc1lFZKAtCg8md9IyvvOVQ/87OvPQZwEUvv8SyxACeTMzDEptB9xjKM0tH35NKLYy9mUb5NzrXzkPqYpex73weZbz7BMxaVTU+7u+ko/b40OmPQ0esHt',s:[0xbb71529253,0xe372a91afe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

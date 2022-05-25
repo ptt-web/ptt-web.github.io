@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 如何不用表單把資料POST出去 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請教原Po或各位先進
+小弟這幾天遇到的問題剛好是與本篇的情況相反
+我要將原本php網頁中獲得的數值用session傳到之後的網頁
+因此我的form action&#34;&#34;內是下一個會用到session的php網址
+但它並不是我原本網頁想跳轉的下一頁
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 如何不用表單把資料POST出去">
+<meta property="og:description" content="請教原Po或各位先進
+小弟這幾天遇到的問題剛好是與本篇的情況相反
+我要將原本php網頁中獲得的數值用session傳到之後的網頁
+因此我的form action&#34;&#34;內是下一個會用到session的php網址
+但它並不是我原本網頁想跳轉的下一頁
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1464992197.A.44D.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ChenXY (不差不歪 一插就歪)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 如何不用表單把資料POST出去</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jun  4 06:16:26 2016</span></div>
+<span class="f2">※ 引述《gpmm (銀色)》之銘言：
+</span><span class="f6">: ※ 引述《crossdunk (推噓自如)》之銘言：
+</span><span class="f6">: : 各位先進好
+</span><span class="f6">: : 小弟目前有一個問題
+</span><span class="f6">: : 就如標題如何把資料不用form的方式POST出去呢
+</span><span class="f6">: : 也有試過curl，但是這麼一來就無法跟著轉址過去
+</span><span class="f6">: : 而我目前是使用javascript來submit
+</span><span class="f6">: : 請問還有更好的方式嗎？
+</span><span class="f6">: : 先謝謝各位先進了！
+</span><span class="f6">:     1. POST 是一種 HTTP method，要操作 POST 各種方式都可以，
+</span><span class="f6">:        HTML 表單、PHP（curl…）、javascript（ajax…）…etc
+</span><span class="f6">:     2. 轉址，也是各種方式都可以，
+</span><span class="f6">:        HTML、PHP（header…）、javascript（location…）…etc
+</span><span class="f6">:     如果你要把 1 + 2 混在一起做瀨尿牛丸…我是說「POST然後轉址」，
+</span><span class="f6">:     基本上應該怎麼樣都可以辦到吧，
+</span><span class="f6">:     因為 HTML Form 的形式就是將目前的瀏覽器連線直接送出，
+</span><span class="f6">:     所以如果你要 POST 到 A 網址並且轉址到 A 網址，那麼這就是最合適的方法嘍。
+</span>
+
+請教原Po或各位先進
+小弟這幾天遇到的問題剛好是與本篇的情況相反
+
+我要將原本php網頁中獲得的數值用session傳到之後的網頁
+因此我的form action&#34;&#34;內是下一個會用到session的php網址
+但它並不是我原本網頁想跳轉的下一頁
+這兩個會用到session的php網頁之間還要經過幾個html網頁
+目前想到的方法剩土法煉鋼
+把中間每個html都改成php然後一個一個POST
+但這真的太麻煩了而且又感覺白白占空間
+
+所以我的問題是請問如何用form傳值到A網址 但轉址到B網址呢?
+先謝謝各位先進的解惑了!
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 114.26.175.81
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1464992197.A.44D.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1464992197.A.44D.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tsao1211</span><span class="f3 push-content">: 存在session裡面就好啊，後面網頁可以讀session</span><span class="push-ipdatetime">06/04 07:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 用ajax設session啊…省得跳頁</span><span class="push-ipdatetime">06/04 08:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 看不懂前面在幹嘛 不過如果是傳值到A轉值到B</span><span class="push-ipdatetime"> 06/04 11:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 那ajax送到A再window.location到B不就結了</span><span class="push-ipdatetime">06/04 11:04
+</span></div>   不好意思看到原本在談form就忘了跟各位講
+   我本來也是用ajax 但不知為何值傳不到取值那頁
+   後來全用form才成功 所以想請教ajax以外的方法
+<span class="f2">※ 編輯: ChenXY (59.126.66.96), 06/04/2016 11:45:45
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Darkland</span><span class="f3 push-content">: 應該先釐清 ajax 為什麼會失敗再考慮更適合的方式吧</span><span class="push-ipdatetime"> 06/04 14:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 跟session有關除了忘了session_start();</span><span class="push-ipdatetime"> 06/04 15:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 不然就是送了ajax二次，一次是空值</span><span class="push-ipdatetime"> 06/04 15:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Darkland</span><span class="f3 push-content">: 或是最後的頁面在不同 domain 或是不同機器w</span><span class="push-ipdatetime"> 06/04 16:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crossdunk</span><span class="f3 push-content">: 個人覺得是忘了START</span><span class="push-ipdatetime"> 06/04 17:51
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1464992197.A.44D.html?cacheKey=2148-469798814&amp;offset=2544&amp;offset-sig=2a41c40ca7163d51e1c0d5e707f7981b4ee7acee" data-longpollurl="/v1/longpoll?id=8b3bb13e9b67242ddf80d7aebdf4c2048d6d0ba5" data-offset="2544"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea04a9f1af5e',m:'Oml23ma2.qPzpMjUiaaf8OpdTgBhtNF7YL3eMkTMjtU-1653467479-0-Aavit10feDqQ9KUdcP8+zqW45m68PR4MibQ9E4E7UUUWLW9tTxb3ny/ZM2pyCUtfVykGSngwEzuKCLr0ShqmsBwNompDnaMBJoRY7E7xhDmseBfEpkpIxKHRSSxEYsH1cKExI2BTJxTsjb22UKp2A3tpdqDpz4gIhDCGWJDMsA7Z',s:[0x84cb5bd2bd,0x4e224ab341],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

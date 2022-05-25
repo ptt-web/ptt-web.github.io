@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 如何修改Session時效 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="吃到部份原文
+※ 引述《mylucky (後來)》之銘言：
+: 請問各位先進有關session時效的問題
+: 我想做到會員登入之後,如果不按登出的話,自動於10分鐘後,session失效登出
+如果只是要單存的 失效的話可以考慮用可以考慮用Cookie來讓session過時
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 如何修改Session時效">
+<meta property="og:description" content="吃到部份原文
+※ 引述《mylucky (後來)》之銘言：
+: 請問各位先進有關session時效的問題
+: 我想做到會員登入之後,如果不按登出的話,自動於10分鐘後,session失效登出
+如果只是要單存的 失效的話可以考慮用可以考慮用Cookie來讓session過時
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1240810918.A.3E6.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">renn999 (我叫&#34;阿伯&#34;)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 如何修改Session時效</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Apr 27 13:41:56 2009</span></div>
+吃到部份原文
+
+<span class="f2">※ 引述《mylucky (後來)》之銘言：
+</span><span class="f6">: 請問各位先進有關session時效的問題
+</span><span class="f6">: 我想做到會員登入之後,如果不按登出的話,自動於10分鐘後,session失效登出
+</span>
+如果只是要單存的 失效的話可以考慮用可以考慮用Cookie來讓session過時
+
+setcookie(session_name(), session_id(), time() + $timelife, &#34;/&#34;);
+
+但是前提使用者是要有開是要有開Cookie的情況下
+
+--
+                真正的天才並不是因為他與生據來的優異天賦
+
+                        而是他具備不斷努力的才能
+
+               Welcome to my Blog <a href="http://renn999.twbbs.org/" target="_blank" rel="noreferrer noopener nofollow">http://renn999.twbbs.org/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.116.103.98
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mylucky     </span><span class="f3 push-content">:如果我要設定10分鐘 這整行要怎麼寫呢?可否給我ㄧ個</span><span class="push-ipdatetime"> 04/27 14:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mylucky     </span><span class="f3 push-content">:範例?然後是放在session_start();後面嗎??</span><span class="push-ipdatetime"> 04/27 14:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mylucky     </span><span class="f3 push-content">:我設定的SESSION有兩個,$_SESSION[&#39;id&#39;] = $user_id;</span><span class="push-ipdatetime"> 04/27 14:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mylucky     </span><span class="f3 push-content">:$_SESSION[&#39;pw&#39;] = $user_pw;</span><span class="push-ipdatetime"> 04/27 14:30
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1240810918.A.3E6.html?cacheKey=2148-469787310&amp;offset=1083&amp;offset-sig=ff731d8719dd864ff719deca17d6f1796f308d3d" data-longpollurl="/v1/longpoll?id=fcdfe18666f4eaf421c0e8caead4d5b311cf7b0f" data-offset="1083"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea54dd938a27',m:'ukyUpCs0.DZviNtge7beAuEWRe64ZpiHxT8duoMQKD8-1653467492-0-AUd8h7oHa8S3mRLfB3Z9QA+3Ck/LaX+RIvP2qKxbRILRZtepMaYIJIHgBUWGsRRZ4ixfI7naRyGWpyu1Tmg16W+V4IGksGANJ02ftlFQC5EwiRXreekZvInU+sVgLzcVgkXJQG9HOM+qfj4f4fl2Xd0sfgfjrivWMjc7EUqujeEe',s:[0x600a9a46b7,0x69992271d2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

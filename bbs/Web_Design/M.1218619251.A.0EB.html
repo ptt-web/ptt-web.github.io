@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 三欄式div動態寬度(javascript解) - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="後來我發覺我還是對js不熟 Orz
+睡也睡不安穩
+不過在睡夢中想到了一個小方法
+就是作
+#dC {margin-right: #dL&#39;s width;}
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 三欄式div動態寬度(javascript解)">
+<meta property="og:description" content="後來我發覺我還是對js不熟 Orz
+睡也睡不安穩
+不過在睡夢中想到了一個小方法
+就是作
+#dC {margin-right: #dL&#39;s width;}
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1218619251.A.0EB.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ateclean (乙癡光)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 三欄式div動態寬度(javascript解)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Aug 13 17:20:49 2008</span></div>
+
+後來我發覺我還是對js不熟 Orz
+睡也睡不安穩
+不過在睡夢中想到了一個小方法
+就是作
+#dC {margin-right: #dL&#39;s width;}
+就解決了...........
+呃....  算是有學到一點點的js啦 XD
+
+<span class="f2">※ 引述《ateclean (乙癡光)》之銘言：
+</span><span class="f6">:     #dL                              #dC                            #dR
+</span><span class="f6">: 三個div分別為#dC #dL #dR
+</span><span class="f6">:                   ^^^^^^這兩個寬度已定
+</span><span class="f6">: 現下的目標是    把可視寬度-#dL-#dR 剩下的寬度給#dC
+</span><span class="f6">: 下面是沒有js基礎而用一個下午+晚上拼湊出來的 Orz
+</span><span class="f6">: 所以大概會錯得很慘....
+</span><span class="f6">: div*3的基本資料
+</span><span class="f6">: #dR  absolute定位  寬度已定  top: 0; left: 0;
+</span><span class="f6">: #dC  absolute定位  動態寬度  top: 0; left: #dR&#39;s width
+</span><span class="f6">: #dL  absolute定位  寬度已定  top: 0; right: 0;
+</span><span class="f6">: js放的位置 跟 觸發條件
+</span><span class="f6">: &lt;head&gt;&lt;script type=&#34;text/JavaScript&#34; src=&#34;cw.js&#34;&gt;&lt;/script&gt;&lt;/head&gt;
+</span><span class="f6">: &lt;body onload=&#34;centerwidth()&#34; resize=&#34;centerwidth()&#34;&gt;......&lt;/body&gt;
+</span><span class="f6">:     ----------上面是狀態，下面開始是問題情境----------------
+</span><span class="f6">:         遇到一個大問題～
+</span><span class="f6">:         #dC的文字會很多
+</span><span class="f6">:         但是會被#dR遮住 Orz
+</span><span class="f6">:         <a href="https://img217.imageshack.us/img217/6899/ggtm3.jpg" target="_blank" rel="noreferrer noopener nofollow">http://img217.imageshack.us/img217/6899/ggtm3.jpg</a> 給個圖最清楚～
+</span><div class="richcontent"><img src="https://img217.imageshack.us/img217/6899/ggtm3.jpg" alt="" loading="lazy" /></div><span class="f6">:         剛載入完成後，#dC的寬度沒有改變
+</span><span class="f6">:         改變視窗大小後，#dC才變(有沒有變我是看有沒有跳出alert作判斷)
+</span><span class="f6">:         現在希望的是載入時就可以改變#dC寬度 &gt;&#34;&lt;
+</span><span class="f6">: ps: 那個alert(dC)只是想確認寬度是不是有真的變過來了
+</span><span class="f6">: ps2:要附代一提的是我的body包含下面這個onload 還有另外一個onload 不曉得有無關係
+</span><span class="f6">: ---------------------------------------------------------------------------
+</span><span class="f6">: function centerwidth(){
+</span><span class="f6">: var dL = document.all(&#39;Ldiv&#39;).offsetWidth;
+</span><span class="f6">: var dR = document.all(&#39;Rdiv&#39;).offsetWidth;
+</span><span class="f6">: var bA = document.body.clientWidth;
+</span><span class="f6">: dC=bA-dL-dR
+</span><span class="f6">:         if(dC&gt;380)
+</span><span class="f6">:         {
+</span><span class="f6">:                 centerdiv.style.width=dC+&#34;px&#34;;
+</span><span class="f6">:                 alert(dC)
+</span><span class="f6">:         }
+</span><span class="f6">:         else
+</span><span class="f6">:         {
+</span><span class="f6">:                 centerdiv.style.width=350+&#34;px&#34;;
+</span><span class="f6">:                 alert(&#34;你的視窗過小～&#34;);
+</span><span class="f6">:         }
+</span><span class="f6">: }
+</span><span class="f6">: ---------------------------------------------------------------------------
+</span><span class="f6">:                 有請各位大大的幫忙了 &lt;(_ _)&gt;
+</span><span class="f6">:                                             先此拜謝
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.112.153.150
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1218619251.A.0EB.html?cacheKey=2149-475811371&amp;offset=2194&amp;offset-sig=93267100ef2dfaf402544d9ff30cf1df9358173b" data-longpollurl="/v1/longpoll?id=2853288f369a4af425d90e4eb8e6dac5d014d337" data-offset="2194"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9510debf8eb',m:'mPBVg5NAGTur3O_a2KbFgnlkLMLkx8Y3teRzHIMamsY-1653467451-0-AbGN4z2uQlqE+d1hXZqDuGg7DijH50gkHlsvTYhYRerLKNW1NXNLcHhu6yrNUiJQYiTTzdG7KxJGb2Vkst1+G3ZrKSk2jkc+gwegWjdUosnOye7SBmIYG6vA8+9INv6AUonWRqfC4t+/uXLkPnrr3dJL0hP8POrptMldXdvq1W/w',s:[0x4b6d31c353,0x8923a046e3],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

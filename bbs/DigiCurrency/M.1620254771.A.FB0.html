@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[發錢] FANTOM DeFi 生態初探介紹 - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="如我之前的文，逐步移轉資金從 BSC 至 polygon 和 fantom 這兩個興起的鏈…
+沒聽過的可以翻一下前文。 polygon 也已經隨著 BSC 超越以太的每日交易數，
+應該也是蠻多人玩，鏈原生幣 MATIC 價格也翻了四倍，所以就不介紹了。
+下面介紹最近玩的 fantom ，不同於其它的以太側鏈/二層，fantom 是支援以
+太虛擬機 (EVM)，可照搬 solidity 程式的獨立主鏈。但有完整的跨橋服務。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[發錢] FANTOM DeFi 生態初探介紹">
+<meta property="og:description" content="如我之前的文，逐步移轉資金從 BSC 至 polygon 和 fantom 這兩個興起的鏈…
+沒聽過的可以翻一下前文。 polygon 也已經隨著 BSC 超越以太的每日交易數，
+應該也是蠻多人玩，鏈原生幣 MATIC 價格也翻了四倍，所以就不介紹了。
+下面介紹最近玩的 fantom ，不同於其它的以太側鏈/二層，fantom 是支援以
+太虛擬機 (EVM)，可照搬 solidity 程式的獨立主鏈。但有完整的跨橋服務。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1620254771.A.FB0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ECZEMA (ID 亂取的啦!)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[發錢] FANTOM DeFi 生態初探介紹</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu May  6 06:46:07 2021</span></div>
+如我之前的文，逐步移轉資金從 BSC 至 polygon 和 fantom 這兩個興起的鏈…
+沒聽過的可以翻一下前文。 polygon 也已經隨著 BSC 超越以太的每日交易數，
+應該也是蠻多人玩，鏈原生幣 MATIC 價格也翻了四倍，所以就不介紹了。
+
+下面介紹最近玩的 fantom ，不同於其它的以太側鏈/二層，fantom 是支援以
+太虛擬機 (EVM)，可照搬 solidity 程式的獨立主鏈。但有完整的跨橋服務。
+手續費極低，1 顆 FTM 可以玩約一千次的交易，以下推文有附 metamask 地址的都發
+1 顆 FTM。尤其鼓勵有在其它鏈玩過 DeFi 的上 Fantom 看看，莫名其妙的空投
+一堆。
+
+1、跨鏈 anyswap.exchange 或 multichain.xyz ; 官方 bnbbridge.exchange
+
+如果要從以太搬資產到 fantom，可以使用 anyswap.exchange；
+而後者 multichain 基本上是呼叫 anyswap 的合約，如果卡住的話，
+還是得到 anyswap 的 telegram 群組去要錢。
+
+值得一提的是， anyswap 的跨鏈服務最近賺很多錢，明顯看到各 EVM 相容鏈的
+跨鏈需求大增。
+
+官方的那座橋很新還沒用過，可支援從 BSC 搬錢到 fantom opera(鏈的名稱)，
+目前不能用
+
+2、官方 DeFi 入口 pwawallet.fantom.network
+
+可以在裡面進行 質押 staking 年利率從押 14 天的 3% 到押 365 天的 10% 左右；
+抵押後 FTM 會變成 sFTM ，可再去 DeFi 裡鑄合成幣出來，對玩過 Synthetix 的人
+應該不陌生，目前可合成各主要國貨幣(美中德歐韓日)、商品(金銀油)、主要鏈幣(btc/eth/bnb/band)
+、注意抵押率要維持 500% 以上才能領獎勵 (即你合成出的資產價格需小於抵押 FTM 價的兩成)，
+例如你押了 $1000 美的 FTM，最多只能鑄出 $200 的 fUSD 才能領獎勵，而如果當
+FTM 跌價，使得擔保不足合成商品的三倍時(300%)，就會自動清算。
+
+3、資金池和兌換 sushiswap(SUSHI) spiritswap(sPIRIT) spookyswap($BOO)
+
+雖然 fantom 上有老牌 Sushiswap ，但似乎沒人提供資金池，深度上會滑價，我比較少用，
+要看後續發展。目前比較紅的有 spiritswap 和 spookyswap ，在年利率上都數百趴，
+也活了一段時間，空投也丟了使用者不少錢，相對上安全，而且還有官方基金會的資助和宣傳，
+可以小丟玩玩。
+
+4、穩定幣存池與交換 Curve &amp; Popsicle($ICE)
+
+老牌的 curve 有上來開 ftm.curve.fi，可以在存池後，丟到冰棒 popscile 上領 ICE 獎勵，
+穩定幣無 impermanent loss 的年利率約 45%，算是 DeFi 新鏈的中規中矩，沒有高到很誇張，
+冰棒也空投過了，一個帳號丟了幾千鎂，這兩家都有作跨鏈，代幣相對上比只有在一個鏈發行的安全。
+
+5、借貸 cream.finance
+
+啊! 忘記講借貸了… 一定是因為麻吉大割的關係，這個我沒玩 不過要借錢可以來這裡
+
+----
+目前我就玩這樣而已，後續就等版友再去發掘和補充，新鏈的空投機會相對多，
+為鼓勵使用 fantom ，每個有推文 metamask 地址的都發 1 FTM，會利用 disperse.app 來發，順便實驗一下。
+版上使用者看過最多 500 名，就限量 500 名吧！
+
+<span class="f3 hl">收到很多可愛小韭的來信，
+</span><span class="f3 hl">請不要再用任何交易所或手機錢包地址了，任何你不知道私鑰的錢包，
+</span><span class="f3 hl">那顆 fantom 只會給交易所和手機錢包拿走，你也不用去追，沒有人會理不到 1 鎂的錢。
+</span><span class="f3 hl">
+</span><span class="f3 hl">建議使用 metamask 的地址，至少可以無縫進入 fantom 網路和直接使用 DeFi
+</span><span class="f3 hl">
+</span><span class="f3 hl">然後地址打錯/斷位，也不會再重發，因為是你的責任，錢已經發出去了</span>
+--
+simpleledger:qpjmjl7atm2gww9hgjz6z0nh6jdkue04syxjdmgg99
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 68.71.244.218 (美國)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1620254771.A.FB0.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1620254771.A.FB0.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">stonys</span><span class="f3 push-content">: 感謝，0x0a9706fe9392B7dBfF920214cb10E6A234C436a2</span><span class="push-ipdatetime"> 05/06 06:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">decoy</span><span class="f3 push-content">: 正想問有沒有人玩過 EZ大就發文了 感恩</span><span class="push-ipdatetime"> 05/06 06:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">decoy</span><span class="f3 push-content">: 0x382488466990e39315D4f874eCFb660952AEf659</span><span class="push-ipdatetime"> 05/06 06:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ECZEMA</span><span class="f3 push-content">: 已發 請至 fantom 查收</span><span class="push-ipdatetime"> 05/06 07:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fausthsu</span><span class="f3 push-content">: 感恩 0xEE92e42124cd50577b1bC4B1B3659197105B82b2</span><span class="push-ipdatetime"> 05/06 07:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">light921</span><span class="f3 push-content">: 0xe793557e83c6Bd413B1D2bb405CE799D3D2De15a</span><span class="push-ipdatetime"> 05/06 07:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">light921</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 07:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jacky001ya</span><span class="f3 push-content">: 0x2C97B6247e9395CF99A900387C8660Fe102cC129</span><span class="push-ipdatetime"> 05/06 07:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qoojason</span><span class="f3 push-content">: 感恩,已買一些</span><span class="push-ipdatetime"> 05/06 07:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">qoojason</span><span class="f3 push-content">: 0xf609c17f140323d3f4886c0c8dbb005be3fa8c45</span><span class="push-ipdatetime"> 05/06 07:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iec</span><span class="f3 push-content">: 超讚 謝謝分享</span><span class="push-ipdatetime"> 05/06 07:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">minminpp</span><span class="f3 push-content">: 謝謝分享</span><span class="push-ipdatetime"> 05/06 07:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">minminpp</span><span class="f3 push-content">: 0xDe1FD04317492130A9ca13945c078bA3F5A673DC</span><span class="push-ipdatetime"> 05/06 07:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Danja</span><span class="f3 push-content">: 是鑄造fUSD, fusdt是封裝的usdt, 現在fantom很像年初的bsc,</span><span class="push-ipdatetime"> 05/06 07:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Danja</span><span class="f3 push-content">:  用戶持續在進入成長</span><span class="push-ipdatetime"> 05/06 07:26
+</span></div>已修正 感謝指正
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">stonys</span><span class="f3 push-content">: 已收到，感謝！</span><span class="push-ipdatetime"> 05/06 07:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kkjj5566</span><span class="f3 push-content">: 感謝 0x6A91df87486C245A5781c826bAA101fc733d5CaF</span><span class="push-ipdatetime"> 05/06 07:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">trleee</span><span class="f3 push-content">: 0xFdd43923340736FfBcB31C808aC644922c1dF05d</span><span class="push-ipdatetime"> 05/06 07:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">trleee</span><span class="f3 push-content">: 推正想去</span><span class="push-ipdatetime"> 05/06 07:32
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 07:33:17
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CTW8877</span><span class="f3 push-content">: 感謝來試試看</span><span class="push-ipdatetime"> 05/06 07:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CTW8877</span><span class="f3 push-content">: 0xb3f967801f67074810430f00cc075ecd4bb811d4</span><span class="push-ipdatetime"> 05/06 07:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">NegeZoneTFI</span><span class="f3 push-content">: 推爆，0xdb053232bae763a668ccb15dcd120c9c06c6fcc3</span><span class="push-ipdatetime"> 05/06 07:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">map123</span><span class="f3 push-content">: 0xc1b853e5fedf1af33872b7d29fe739de25cefc14</span><span class="push-ipdatetime"> 05/06 07:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jim505082000</span><span class="f3 push-content">: 推個 0xbd11886cc80cbca91bedc62ea47ad52f26ba225e</span><span class="push-ipdatetime"> 05/06 07:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b1izzard2000</span><span class="f3 push-content">: 0xd60d9628fdf0f6807d8898ef67547fe471315fda</span><span class="push-ipdatetime"> 05/06 07:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cooky0309</span><span class="f3 push-content">: 感謝推</span><span class="push-ipdatetime"> 05/06 07:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">cooky0309</span><span class="f3 push-content">: 0xFB226178F3DF94341D42f50C68D25Df2a7980538</span><span class="push-ipdatetime"> 05/06 07:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">loloser</span><span class="f3 push-content">: 0xc4329ac07a5beeaf70b73f2fefc7151278059e00</span><span class="push-ipdatetime"> 05/06 07:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">loloser</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 07:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SAinptt</span><span class="f3 push-content">: 感謝 0xf1473Ef46ACeB42c767f1416048b7d1Fd4711Ef7</span><span class="push-ipdatetime"> 05/06 07:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xup6503</span><span class="f3 push-content">: 感謝0x1B40466c047f1Ff623C9Da7882D920c0a4950715</span><span class="push-ipdatetime"> 05/06 08:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zulumin</span><span class="f3 push-content">: 0x46892bDB054de45e87e6Cda07b0c157715cCf4C9</span><span class="push-ipdatetime"> 05/06 08:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">davidcon</span><span class="f3 push-content">: 感謝！最近也在研究，謝謝您詳細分享！</span><span class="push-ipdatetime"> 05/06 08:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gghf225643</span><span class="f3 push-content">: 0x099dad659dc03c39abb4ac940f274379869a76ad</span><span class="push-ipdatetime"> 05/06 08:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">davidcon</span><span class="f3 push-content">: 大感謝</span><span class="push-ipdatetime"> 05/06 08:07
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">davidcon</span><span class="f3 push-content">: 0x1c0241e5bc063b769ca40eeba8a71c336585ff41</span><span class="push-ipdatetime"> 05/06 08:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">waterpee</span><span class="f3 push-content">: 推 0x996aa5dfbcc4a89f088de7d1230ecfc8be44a966</span><span class="push-ipdatetime"> 05/06 08:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sakurano1</span><span class="f3 push-content">: 推 0xf7c2ab1948c0ae7d86d296bc6aaeaba1fef7e55d</span><span class="push-ipdatetime"> 05/06 08:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tlin0000</span><span class="f3 push-content">: 0x81de58b813291C76C0e2eEb64558DdBB23bFB2e9</span><span class="push-ipdatetime"> 05/06 08:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LazyTrader</span><span class="f3 push-content">: 謝大大 0xe9184353B450b72f4B186b596fe8949811be5e</span><span class="push-ipdatetime"> 05/06 08:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LazyTrader</span><span class="f3 push-content">: 4a</span><span class="push-ipdatetime"> 05/06 08:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">TanyaVonDeg</span><span class="f3 push-content">: 0x79DCF94eC87E1EC6eFBf824CBf7ad5E3CC2deb61</span><span class="push-ipdatetime"> 05/06 08:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">notpeterpan</span><span class="f3 push-content">: 0xc10ecdb1b2982e073f56354a75ab1be34f99fb04</span><span class="push-ipdatetime"> 05/06 08:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mees</span><span class="f3 push-content">: 0xb300b2c4ab3589bb03a2fe241253e08aafa72c5e</span><span class="push-ipdatetime"> 05/06 08:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mees</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 08:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cin8207</span><span class="f3 push-content">: 0xBFeADC108A8FAAb5a2A461EFA354fCF5A3373c72</span><span class="push-ipdatetime"> 05/06 08:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boogieman</span><span class="f3 push-content">: 感謝E大 嘗試看看</span><span class="push-ipdatetime"> 05/06 08:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">boogieman</span><span class="f3 push-content">: 0x4DbAFB3e740714146C949f14Ed462eD2DcadA89B</span><span class="push-ipdatetime"> 05/06 08:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Herbert1102</span><span class="f3 push-content">: 0x5840213da91344FDfE7C1755abA160572af90cac</span><span class="push-ipdatetime"> 05/06 08:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">loyal0055</span><span class="f3 push-content">: 感謝E大0x9F100bd18b808cbb1A124E41Abe970F34a290c30</span><span class="push-ipdatetime"> 05/06 08:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mattgene</span><span class="f3 push-content">: 0x78ec7E48F3914b3C529a72e3A20275621ADE8a80</span><span class="push-ipdatetime"> 05/06 08:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mattgene</span><span class="f3 push-content">: 感謝～～來研究一下</span><span class="push-ipdatetime"> 05/06 08:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kidneyweakx</span><span class="f3 push-content">: 0x0e5Dd9ADeca4DfbeFAF0d8e43F8d8C034f8511e7</span><span class="push-ipdatetime"> 05/06 08:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Paulcc</span><span class="f3 push-content">: 0x1945dace8270b6bd55d26613f9d145c0a76cc318</span><span class="push-ipdatetime"> 05/06 08:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Paulcc</span><span class="f3 push-content">: 感謝E大!!</span><span class="push-ipdatetime"> 05/06 08:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hot96307</span><span class="f3 push-content">: 0xe36bb5a002878be65aa89651cee636eba84fdb30 感謝  來</span><span class="push-ipdatetime"> 05/06 08:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hot96307</span><span class="f3 push-content">: 研究看看</span><span class="push-ipdatetime"> 05/06 08:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kidneyweakx</span><span class="f3 push-content">: ftm幣安出金長時間維修,可能BSC感受到威脅了</span><span class="push-ipdatetime"> 05/06 08:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ncwd1225</span><span class="f3 push-content">: 0x2b8295efE645c7E562F78dF36A314F332eA89324</span><span class="push-ipdatetime"> 05/06 08:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camacafee</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 09:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">camacafee</span><span class="f3 push-content">: 0x90eA503a28b2a8A3d5b1b507cF6b8611e96E2b39</span><span class="push-ipdatetime"> 05/06 09:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pkpkpkpkpkpk</span><span class="f3 push-content">: 0x9b894100991e94e5d3c54cca20836b8c510afbde</span><span class="push-ipdatetime"> 05/06 09:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sean896256</span><span class="f3 push-content">: 0x21e01279b65F418f8C4D6C8BFc0Cf1aEc8Ae80Cf</span><span class="push-ipdatetime"> 05/06 09:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">soda155</span><span class="f3 push-content">: 0x1Ad0Bc1afd9c1B7Ec30Ceb4Ad50A9aD020D5c823</span><span class="push-ipdatetime"> 05/06 09:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">peterchen200</span><span class="f3 push-content">: 0xb771d7d5dc21567694678c88981c5d9f08390be3</span><span class="push-ipdatetime"> 05/06 09:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chunchi1219</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 09:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chunchi1219</span><span class="f3 push-content">: 0xad287278bd04c79fcb9aa975f8fe6931bdd8d026</span><span class="push-ipdatetime"> 05/06 09:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">setsunaxia</span><span class="f3 push-content">: 0xE0AD95bcD29e90fd0927b9154e1Af8dDDbEFC71D</span><span class="push-ipdatetime"> 05/06 09:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rubyms11710</span><span class="f3 push-content">: 0x09819F59ae1905983254c21c68D8228a7c4c7396</span><span class="push-ipdatetime"> 05/06 09:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ph74123</span><span class="f3 push-content">: 0x2c0779a112b0bcda5a9c482bbc6a71f8f189b421</span><span class="push-ipdatetime"> 05/06 09:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LieTo</span><span class="f3 push-content">: 0x95EabB61344f7b326808fbFD5D5B7bFb124d3984</span><span class="push-ipdatetime"> 05/06 09:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pika0424</span><span class="f3 push-content">: 0x24654324d9d2d19b92b39b9856d904b0c6b7aee7</span><span class="push-ipdatetime"> 05/06 09:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kevli</span><span class="f3 push-content">: 0xD2FFd25199aADf2006F865593963Ea88B8270574</span><span class="push-ipdatetime"> 05/06 09:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ECZEMA</span><span class="f3 push-content">: 以上 49 位發送完畢</span><span class="push-ipdatetime"> 05/06 09:26
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 09:28:40
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wsung</span><span class="f3 push-content">: 0xe9e61e8b7fcd1d14bfeffe88a830244132bce128 感謝</span><span class="push-ipdatetime"> 05/06 09:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">david54001</span><span class="f3 push-content">: 0xb5E7C51411641bE9F85d9033f1fbd126a2A45BdF</span><span class="push-ipdatetime"> 05/06 09:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sequoia</span><span class="f3 push-content">: 0x6d6F90E30e8708D615a5cEbFE4A50B7b041DDE99</span><span class="push-ipdatetime"> 05/06 09:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 0x5eAaBf71831F577D2098CCB9994C175d7faD4d19</span><span class="push-ipdatetime"> 05/06 09:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 感謝一直熱心推廣DeFi新玩具，PCH也要搭橋過去玩玩</span><span class="push-ipdatetime"> 05/06 09:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">homo6</span><span class="f3 push-content">: 0x70cec2ca688b19bb36cd7c61191e644070f3c33a</span><span class="push-ipdatetime"> 05/06 09:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pp8888</span><span class="f3 push-content">: 強! 0x73E149b7e674b8396352569Fbc85211796bE5170</span><span class="push-ipdatetime"> 05/06 09:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">agcx4580</span><span class="f3 push-content">: 0x24729305bFC036dC400467fB854E1113ad7Bd848</span><span class="push-ipdatetime"> 05/06 09:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jkl45633</span><span class="f3 push-content">: 0xcfd3d84d1e00a447a26eb865964019cc95bf1e39</span><span class="push-ipdatetime"> 05/06 09:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jkl45633</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 09:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hzhz1010</span><span class="f3 push-content">: 0x9ad608561174528d79c79656fc1d5f273b1e8524</span><span class="push-ipdatetime"> 05/06 09:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hzhz1010</span><span class="f3 push-content">: 感恩</span><span class="push-ipdatetime"> 05/06 09:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WinRoww</span><span class="f3 push-content">: 0xDd0B1E09CE8D718f4fDd573D58264dF1E29c2ab8 謝謝</span><span class="push-ipdatetime"> 05/06 09:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">irene329</span><span class="f3 push-content">: 0xd14bf720801f4c763f1b40190b86729411b17660 謝謝</span><span class="push-ipdatetime"> 05/06 09:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">stanley10741</span><span class="f3 push-content">: 0xfca37f31faa1a25131c17ebbc770ea78bfeadf28。謝大</span><span class="push-ipdatetime"> 05/06 09:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">stanley10741</span><span class="f3 push-content">: 大</span><span class="push-ipdatetime"> 05/06 09:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 870字*10星 = 8700PCH <a href="https://tinyurl.com/2t3fdu56" target="_blank" rel="noreferrer noopener nofollow">https://tinyurl.com/2t3fdu56</a></span><span class="push-ipdatetime"> 05/06 09:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rayccccc</span><span class="f3 push-content">: 0x80b80AB0C916BB28261F051B5F67bEF7D9fFB930</span><span class="push-ipdatetime"> 05/06 09:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jimjim951357</span><span class="f3 push-content">: 0x2dfc741A9C5aabc15b624B5d738cF85b99AD786d 感</span><span class="push-ipdatetime"> 05/06 09:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jimjim951357</span><span class="f3 push-content">: 謝</span><span class="push-ipdatetime"> 05/06 09:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">WinRoww</span><span class="f3 push-content">: 收到空投 感謝~</span><span class="push-ipdatetime"> 05/06 09:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zzxxxzz</span><span class="f3 push-content">: 0xA761b2d12F427f82f1abBA185C9FC6D03584BeA5</span><span class="push-ipdatetime"> 05/06 09:48
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">EasyIsBeauty</span><span class="f3 push-content">: 0x8e8337Ed52D098c7Be1111548ddE14fB76565eE6 感恩</span><span class="push-ipdatetime"> 05/06 09:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Adrian</span><span class="f3 push-content">: 0x61267682f49ac3Aae5E60db2C776ffd11029985F</span><span class="push-ipdatetime"> 05/06 09:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CaOH2</span><span class="f3 push-content">: 0xA78B2c883C01D8E34ad85595C65110b6D66Eedde 感謝</span><span class="push-ipdatetime"> 05/06 09:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">svkv</span><span class="f3 push-content">: 0x8d7D591e2f843c2864f66ea327534a2ca908AA07</span><span class="push-ipdatetime"> 05/06 09:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zz54321aa</span><span class="f3 push-content">: 0x7BEe4a85E460Dff1e9f3A6BB870433f957b3D7df 感謝</span><span class="push-ipdatetime"> 05/06 09:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gflin</span><span class="f3 push-content">: 0xf9d1FC1c6A559dc4285B731a6b55269b183154ac 謝謝</span><span class="push-ipdatetime"> 05/06 09:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ggnoobs</span><span class="f3 push-content">: 0x6155ccAB55c1d729748395F20874E15F3e5a7792</span><span class="push-ipdatetime"> 05/06 09:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ggnoobs</span><span class="f3 push-content">: 謝謝大大分享</span><span class="push-ipdatetime"> 05/06 10:00
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 10:04:21
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ToAimHigh</span><span class="f3 push-content">: 0xC3ae86Ac7C9d964555DcC5b3D5d188BcC568Eecc 感謝分享</span><span class="push-ipdatetime"> 05/06 10:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mini5</span><span class="f3 push-content">: 0xceFbf0a63f7BbD871aE539D9AEC411F50657e47b  感恩</span><span class="push-ipdatetime"> 05/06 10:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">AllanCat</span><span class="f3 push-content">: 0x945c7B3859150b77E6D61a7A98Cb3B491103a688 感謝~</span><span class="push-ipdatetime"> 05/06 10:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kuristing</span><span class="f3 push-content">: 0xe86c936A491953aB88BED6520AaC0c61b154f514</span><span class="push-ipdatetime"> 05/06 10:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sweet0313</span><span class="f3 push-content">: 0x571ad92de33b37546eb923384f2463a9068971b8，謝謝</span><span class="push-ipdatetime"> 05/06 10:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jiang0921</span><span class="f3 push-content">: 0x04895114dA673f16D83a75e4CD3c64a68e2428C8</span><span class="push-ipdatetime"> 05/06 10:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jiang0921</span><span class="f3 push-content">: 感謝分享</span><span class="push-ipdatetime"> 05/06 10:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Ceferino</span><span class="f3 push-content">: 0x5971443e6FEF570F230fde85A402492dED4De96c  謝謝</span><span class="push-ipdatetime"> 05/06 10:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kuoboy1988</span><span class="f3 push-content">: 0xaD077e63a0992Ac9863C31e43726bff8EEfa2C67 謝謝</span><span class="push-ipdatetime"> 05/06 10:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SamuelLuo</span><span class="f3 push-content">: 0xc7c9885DcbE1292592208563D7873CDaBF0Fb31C 感恩~</span><span class="push-ipdatetime"> 05/06 10:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jason789780</span><span class="f3 push-content">: 0xc250f6c64dc5ce222e3f66defab9792ab61ae012   感謝</span><span class="push-ipdatetime"> 05/06 10:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yellenchina</span><span class="f3 push-content">: 0x722BA61d2901692fc7F4d770EFFCFA56A95C501e謝謝！</span><span class="push-ipdatetime"> 05/06 10:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">freezingika</span><span class="f3 push-content">: 0xDF6e262990aC8d6184Daf2fA2Fe977A1C9a0ac14 謝謝</span><span class="push-ipdatetime"> 05/06 10:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">starfoxz</span><span class="f3 push-content">: 0x6421AC9AD09369101274fb9A10a0c5563706374e</span><span class="push-ipdatetime"> 05/06 10:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">starfoxz</span><span class="f3 push-content">: 感恩</span><span class="push-ipdatetime"> 05/06 10:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qq912054</span><span class="f3 push-content">: 0x4953b40e0bc6ce9133cb8720260fd9b62eaf6e9c 感謝</span><span class="push-ipdatetime"> 05/06 10:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ljs1975</span><span class="f3 push-content">: 0x030347c0eF50f625e3172DDeAbB921067E85730c</span><span class="push-ipdatetime"> 05/06 10:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GentelMark</span><span class="f3 push-content">: 0xc011fce8555e22586baa139ff97d2b27a01562c1</span><span class="push-ipdatetime"> 05/06 10:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bikeboy106</span><span class="f3 push-content">: 0x16Cd19f701288ACc58Aa66d296D91B1a258bDfE7</span><span class="push-ipdatetime"> 05/06 10:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xlarge813</span><span class="f3 push-content">: 0x73078002ca1dbff03f0dede9e072bfa12f3943ed  感恩</span><span class="push-ipdatetime"> 05/06 10:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chaochaoder</span><span class="f3 push-content">: 0x99D34E5E69Be421e294F130433e2CDb0F875129B</span><span class="push-ipdatetime"> 05/06 10:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chaochaoder</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 10:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dororoxz</span><span class="f3 push-content">: 0x74823454858810366050fd3a19d82bc48938c31e 感謝</span><span class="push-ipdatetime"> 05/06 10:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kme6833291</span><span class="f3 push-content">: 0x0b53ca0dc9becc501b64a806f175a8e87e1b00d8</span><span class="push-ipdatetime"> 05/06 10:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">layupshot</span><span class="f3 push-content">: 0x14d38025c449327dc0e5c2b3abbf521e48696077 感謝</span><span class="push-ipdatetime"> 05/06 10:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sceneryview</span><span class="f3 push-content">: 0xe60e81963d50A4A9ab3e241B8c8Bb2c12d9586Ef</span><span class="push-ipdatetime"> 05/06 10:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">osso</span><span class="f3 push-content">: 0x56030F96Dc66a42176465406936E3Aa3c0c1bDBa thanks</span><span class="push-ipdatetime"> 05/06 10:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wrytus</span><span class="f3 push-content">: 0xfa36C24B35Dec66E8852Cd9BA8B1912BF11447E6 感謝</span><span class="push-ipdatetime"> 05/06 10:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Leo630</span><span class="f3 push-content">: 0xa952c32b9799d4ed6c2d57d1ff24f372b54b8657</span><span class="push-ipdatetime"> 05/06 11:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Leo630</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 11:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xlox12345</span><span class="f3 push-content">: 0x3142564F1cD53842D8A09eD340a37Ac076dc8Ae0</span><span class="push-ipdatetime"> 05/06 11:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cless1</span><span class="f3 push-content">: 感恩大大0x7b40e7060eb10a20c0fa26afb94b4885f58fa9bb</span><span class="push-ipdatetime"> 05/06 11:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xlox12345</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 11:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qsdf</span><span class="f3 push-content">: 0x91Fb3A05A991D4eB6D1036B9674D3ec940CC12B3 感謝！</span><span class="push-ipdatetime"> 05/06 11:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">abears</span><span class="f3 push-content">: 0x0DC9540a20059cA2D141584ad1f51bf62653588f 謝謝</span><span class="push-ipdatetime"> 05/06 11:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kikiyyyy</span><span class="f3 push-content">: 0xbbf7bfc4d9acce27082613e2c14d9fe8d1a54a29 感謝</span><span class="push-ipdatetime"> 05/06 11:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crazan</span><span class="f3 push-content">: 0x94EA5f391e76dA40a4C4CF8Bc821a1176B03bBEF 謝謝</span><span class="push-ipdatetime"> 05/06 11:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickz008</span><span class="f3 push-content">: 感謝!  0xa4d02E8117bd4E63B5aCd9c5f0F3923645c911Bf</span><span class="push-ipdatetime"> 05/06 11:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">konodioda</span><span class="f3 push-content">: 感謝！   0x22CF017053b728b58f3C75BC50384fC21678A0</span><span class="push-ipdatetime"> 05/06 11:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">konodioda</span><span class="f3 push-content">: 5B</span><span class="push-ipdatetime"> 05/06 11:10
+</span></div><div class="push"><span class="f1 hl push-tag">噓 </span><span class="f3 hl push-userid">lsc25845566</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 11:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">lsc25845566</span><span class="f3 push-content">: 0x1C79e3986e4A461fc2c144fD4fd8712B1BAD1fD1</span><span class="push-ipdatetime"> 05/06 11:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dbshadow</span><span class="f3 push-content">: 0x3Bbda142e88833589084EA7B840D661f028420E2  感謝</span><span class="push-ipdatetime"> 05/06 11:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lunarenaX25</span><span class="f3 push-content">: 0x226F6D103eE45c26aCfD8eFe001bE005CF6B22a4</span><span class="push-ipdatetime"> 05/06 11:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">lsc25845566</span><span class="f3 push-content">: 手指太粗按錯QQ 補推</span><span class="push-ipdatetime"> 05/06 11:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">VincentWu</span><span class="f3 push-content">: 0xE387Ad0fb4e44157954B1CffCB0cCb2621e4F024</span><span class="push-ipdatetime"> 05/06 11:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanzisun24</span><span class="f3 push-content">: 0x77955dec0b4d122550b32cf1412a8c2b79ef9cc2</span><span class="push-ipdatetime"> 05/06 11:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pshadow1</span><span class="f3 push-content">: 0xFF5dF32FC2AD0421662109f6998FDf7Db30944A7</span><span class="push-ipdatetime"> 05/06 11:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pshadow1</span><span class="f3 push-content">: 謝謝！</span><span class="push-ipdatetime"> 05/06 11:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gemilay</span><span class="f3 push-content">: 0xC0b81312DE2F2546D2Bdf6EfC1534BB4C608e086</span><span class="push-ipdatetime"> 05/06 11:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">daniel8475</span><span class="f3 push-content">: 0xeF29FD62FD67151F54Bd51EEA1b99B5929DFdAe5 謝謝</span><span class="push-ipdatetime"> 05/06 11:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">XXXXXJAY</span><span class="f3 push-content">: 0x0aeb9597bf7a4fde6e1af410b8b92dffc1f71ec9</span><span class="push-ipdatetime"> 05/06 11:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadow320</span><span class="f3 push-content">: 0x949cFB72c06AaF1B508Baa517cB99767d73c9db6</span><span class="push-ipdatetime"> 05/06 11:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">AppMaker</span><span class="f3 push-content">: 0x922Adb9236F1899aa95C499a4c363831DD12fCF4</span><span class="push-ipdatetime"> 05/06 11:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">atxx</span><span class="f3 push-content">: 0x7A15e3d45E34381B8C4B69404d4B81df650B20A7</span><span class="push-ipdatetime"> 05/06 11:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pilotcool</span><span class="f3 push-content">: 0xe2c4bd2de58765374480d7c712e2ba691cfcbef4 謝謝</span><span class="push-ipdatetime"> 05/06 11:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">angus426</span><span class="f3 push-content">: 0xfa1acd16d19d0f5b7a6aa2619fa2219f642c6e1f</span><span class="push-ipdatetime"> 05/06 11:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MACD</span><span class="f3 push-content">: 0xfCCF289042890D1d55e3f884893F5eA45C71B580</span><span class="push-ipdatetime"> 05/06 11:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MACD</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 11:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">OwOptt</span><span class="f3 push-content">: 0x1611EEdE581cD4444a2EbA3b89De6f04Cc453a13</span><span class="push-ipdatetime"> 05/06 11:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">guessking</span><span class="f3 push-content">: 0xe0fcdd2fbbe6d8702b3b03c4f297f06258fca65c</span><span class="push-ipdatetime"> 05/06 11:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iMANIA</span><span class="f3 push-content">: 0x15CEC81e202cabA4ef91aDB336E3D5ED629934A2</span><span class="push-ipdatetime"> 05/06 11:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">iMANIA</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 11:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aglaeia</span><span class="f3 push-content">: 0x07Fa4105BB386d04b9aEeCF56ec373496a6707c0</span><span class="push-ipdatetime"> 05/06 11:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dawndawn</span><span class="f3 push-content">: 0xD2cE64B1A66101CA47A313FEf15F7da3b3E58068 感謝</span><span class="push-ipdatetime"> 05/06 11:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">aglaeia</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 11:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">thrco</span><span class="f3 push-content">: 謝謝大大，0x0b23b632C4aFde000530f89136d0c8274B4c8432</span><span class="push-ipdatetime"> 05/06 11:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">winston11tw</span><span class="f3 push-content">: 0xfe2be5412216ad42c92449d3862ec368c6dbc928</span><span class="push-ipdatetime"> 05/06 11:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">winston11tw</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 11:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ewan520</span><span class="f3 push-content">: 0x1BF7889b51C1e66DfCB951819713eAf7E5d4CAAD</span><span class="push-ipdatetime"> 05/06 11:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LinYiJen</span><span class="f3 push-content">: 0x7c118271635346bf2af8c79d53d23e97b5fc6210</span><span class="push-ipdatetime"> 05/06 11:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">LinYiJen</span><span class="f3 push-content">: 感恩大大</span><span class="push-ipdatetime"> 05/06 11:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">NegeZoneTFI</span><span class="f3 push-content">: 前面好像沒收到耶，再一次感恩大大，0xdb053232bae76</span><span class="push-ipdatetime"> 05/06 12:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">NegeZoneTFI</span><span class="f3 push-content">: 3a668ccb15dcd120c9c06c6fcc3</span><span class="push-ipdatetime"> 05/06 12:00
+</span></div>= _ = 明明就有 程式發的哪會漏 <a href="https://t.ly/hzfo" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/hzfo</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">winstonw</span><span class="f3 push-content">: 感謝 0x2FeEf529f83c4bB2068C9Dae0184c0932C615Dc9</span><span class="push-ipdatetime"> 05/06 12:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tomatos</span><span class="f3 push-content">: 感謝～0x17D97231C25809fdCf2e840D11e23D0727CF9909</span><span class="push-ipdatetime"> 05/06 12:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kousakaizumi</span><span class="f3 push-content">: 0xaa8a3085addbf08972abe95b8fcb73b4033faedb 感謝</span><span class="push-ipdatetime"> 05/06 12:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">phoenixazure</span><span class="f3 push-content">: 0xe26C9CA15F1a787170A43c8A9Df094C966304A49</span><span class="push-ipdatetime"> 05/06 12:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">phoenixazure</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 12:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pialboo</span><span class="f3 push-content">: 0x9680766419a74c5eb44fda1044f5a074e0cb1025</span><span class="push-ipdatetime"> 05/06 12:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pialboo</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 12:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PiTangTian</span><span class="f3 push-content">: 0xBC01B6E5E06A39461F028D634316dB0768159E76</span><span class="push-ipdatetime"> 05/06 12:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PiTangTian</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 12:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bananasp</span><span class="f3 push-content">: 0xb06A0b1061b9fcF71C52Be2d3A04Cf12534F4395</span><span class="push-ipdatetime"> 05/06 12:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zing0301</span><span class="f3 push-content">: 0xe7Ee4d5904145fE1Cd3242F5dc94800999261AFd 感謝大大</span><span class="push-ipdatetime"> 05/06 12:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bananasp</span><span class="f3 push-content">: 感謝大大～</span><span class="push-ipdatetime"> 05/06 12:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">st876415</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 12:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">st876415</span><span class="f3 push-content">: 0xd37cdd7e569c902037ade44f0a2135cebdfa9acb</span><span class="push-ipdatetime"> 05/06 12:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kian3256</span><span class="f3 push-content">: 推 0x9465cb02c9fc773bb17175e1865b495e4a6ac2d4</span><span class="push-ipdatetime"> 05/06 12:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dianwu</span><span class="f3 push-content">: 謝謝，0x4427788A485b0B64675A8316b3658cd172bcC6ef</span><span class="push-ipdatetime"> 05/06 12:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">GanGaMan</span><span class="f3 push-content">: 0x498658C69a260fc6157a1ad270c541fb9F047cF9</span><span class="push-ipdatetime"> 05/06 12:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">GanGaMan</span><span class="f3 push-content">:  感謝大大</span><span class="push-ipdatetime"> 05/06 12:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">feveral</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 12:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">feveral</span><span class="f3 push-content">: 0xe3b938c666098b8781799bb0d199fddbcca938ac</span><span class="push-ipdatetime"> 05/06 12:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hsuehroger</span><span class="f3 push-content">: 0x9776C82c8A4E9A388829cF4bd78D3Cc7B25E09f3</span><span class="push-ipdatetime"> 05/06 12:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hsuehroger</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 12:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dongogo</span><span class="f3 push-content">: 0xB5C5133AcBb4bbe6b8bF24cA156EC650Fe597D3b</span><span class="push-ipdatetime"> 05/06 12:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Medres</span><span class="f3 push-content">: bnb1jxzct7q352lz2wrhvpawws7cpje4vke0senl47  感謝大大</span><span class="push-ipdatetime"> 05/06 12:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dongogo</span><span class="f3 push-content">: 感謝!!!</span><span class="push-ipdatetime"> 05/06 12:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Medres</span><span class="f3 push-content">: 剛發錯地址 這才是以太鏈的0x598fF14D441B8b3Fe9532b71183</span><span class="push-ipdatetime"> 05/06 12:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Medres</span><span class="f3 push-content">: 3eBCD64ec11B6</span><span class="push-ipdatetime"> 05/06 12:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zilong308</span><span class="f3 push-content">: 0x87cbaa2e9bf43e686ccf339b0a0f51e816cb2b44  感謝~</span><span class="push-ipdatetime"> 05/06 12:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">heavener</span><span class="f3 push-content">: 0xB1d88A4205258E6b5D29E48bb21e68F46e461433 謝謝佛心</span><span class="push-ipdatetime"> 05/06 12:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chiahoo2012</span><span class="f3 push-content">: 0x4D2f8200b47b51897d630A2880635Eb9B01751F0</span><span class="push-ipdatetime"> 05/06 12:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chiahoo2012</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 12:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yahooyamgoog</span><span class="f3 push-content">: 0x4c22ea3c76b42a90f5ce93343f2d8825833cb275</span><span class="push-ipdatetime"> 05/06 12:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kamix</span><span class="f3 push-content">: 0xCf107822Bfc5D8c26EC2E3E7c60310574d3Fd1c0 感謝大大</span><span class="push-ipdatetime"> 05/06 12:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chengsoul03</span><span class="f3 push-content">: 0xf1211568683be7a2e5521257292b21e9bb85e434</span><span class="push-ipdatetime"> 05/06 12:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jackyucy</span><span class="f3 push-content">: 0x5D065bd7a861d96DA8710bB847C3ADFf2352014D 感謝施主</span><span class="push-ipdatetime"> 05/06 12:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">imagawa</span><span class="f3 push-content">: 0xF3BEC9ef25927b08891874C77e2f468a187347b3 感謝</span><span class="push-ipdatetime"> 05/06 12:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">red1636</span><span class="f3 push-content">: 0xf1e7df0de379268537dc64e4f05a4cfc741c7951</span><span class="push-ipdatetime"> 05/06 12:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">red1636</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 12:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bigstudent</span><span class="f3 push-content">: 0x4A77d5B7C96712413cC8Eabdc8969f46b54bB266</span><span class="push-ipdatetime"> 05/06 12:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bigstudent</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 12:57
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 13:01:29
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chen0404</span><span class="f3 push-content">: 0x14880Df5C311B4C078dA1e64E64A572869D03967</span><span class="push-ipdatetime"> 05/06 13:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BartoloColon</span><span class="f3 push-content">: 0xBb589E5e5f9e70559d66F1d13E5502B2AB9B1276</span><span class="push-ipdatetime"> 05/06 13:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">BartoloColon</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 13:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">angus426</span><span class="f3 push-content">: 0xfa1acd16d19d0f5b7a6aa2619fa2219f642c6e1f</span><span class="push-ipdatetime"> 05/06 13:05
+</span></div>程式說你領過了啦! 是要領幾次？ <a href="https://t.ly/JiCs" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/JiCs</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">youngdawei</span><span class="f3 push-content">: 感謝感謝</span><span class="push-ipdatetime"> 05/06 13:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joiho</span><span class="f3 push-content">: 0x496ba0c03f590be16d62aa443998a4352a1ac024</span><span class="push-ipdatetime"> 05/06 13:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eMule</span><span class="f3 push-content">: 0x175870c35c6b33cfe48c2ae001919e3e3e95f367</span><span class="push-ipdatetime"> 05/06 13:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eMule</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 13:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">g318</span><span class="f3 push-content">: 3GSmWPTtAvEmsqRLq9RYNQjXzpFCja5Qvm</span><span class="push-ipdatetime"> 05/06 13:11
+</span></div>嗚…這格式，是不是開始有人在玩我了…
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joiho</span><span class="f3 push-content">: 推，謝謝。更正錢包成 0xa45B4aE1671c5B6A41d2957b56cE2A4</span><span class="push-ipdatetime"> 05/06 13:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">joiho</span><span class="f3 push-content">: 0a9331EC6</span><span class="push-ipdatetime"> 05/06 13:13
+</span></div>你再自己轉 只發第一個地址 反正 FTM 轉帳便宜
+<span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 13:16:33
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">SamuelLuo</span><span class="f3 push-content">: <a href="https://t.ly/8ZUd" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/8ZUd</a> 感謝，Metamask請記得新增Fantom鏈</span><span class="push-ipdatetime"> 05/06 13:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xzero000</span><span class="f3 push-content">: 0x862dA13d44B313b7037B46A07264c90BfEb5fa24</span><span class="push-ipdatetime"> 05/06 13:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xzero000</span><span class="f3 push-content">: 來試試</span><span class="push-ipdatetime"> 05/06 13:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">happy12345</span><span class="f3 push-content">: 0x6edbb27350d110279c0bd7314b450e37b268024e</span><span class="push-ipdatetime"> 05/06 13:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">joiho</span><span class="f3 push-content">: 謝謝阿</span><span class="push-ipdatetime"> 05/06 13:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">joiho</span><span class="f3 push-content">: 0xa45B4aE1671c5B6A41d2957b56cE2A40a9331EC6</span><span class="push-ipdatetime"> 05/06 13:25
+</span></div>嚴重懷疑你在嚕我… <a href="https://t.ly/Ld29" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/Ld29</a> 已發第一位址 請勿重覆申領
+<span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 13:28:38
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">year0831</span><span class="f3 push-content">: 0x19b4e32a03fefe36d26472d787a08914916443d9</span><span class="push-ipdatetime"> 05/06 13:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ppeterrr</span><span class="f3 push-content">: 感謝，0x65Bd2651BabBE33B7fA40A4bb4E18A91dd60EF16</span><span class="push-ipdatetime"> 05/06 13:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a77881234</span><span class="f3 push-content">: 0x7be1177a62f1f82dfec127e8f04eebeee2c36e5f</span><span class="push-ipdatetime"> 05/06 13:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a77881234</span><span class="f3 push-content">: 謝謝好心版大</span><span class="push-ipdatetime"> 05/06 13:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Osuan</span><span class="f3 push-content">: 0xf61d6e1d5903839a122e9e72d36802ec7b9cfef1</span><span class="push-ipdatetime"> 05/06 13:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pcjosh</span><span class="f3 push-content">: 0xbC71358eFef5dC5E2a733c1aC4A83EA86DE8a7Fb  謝謝！</span><span class="push-ipdatetime"> 05/06 13:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">archangell</span><span class="f3 push-content">: 0xc77488226B6BF960938a68a8fEC43D32E1cb826e</span><span class="push-ipdatetime"> 05/06 13:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">archangell</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 13:39
+</span></div>聲明一個 id 只會發一個地址，給錯或更改也沒辦法，它出去就出去了
+<span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 13:44:37
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">k940545</span><span class="f3 push-content">: 0x5292a286245A19390c0d480a88C009CDC6703C92</span><span class="push-ipdatetime"> 05/06 13:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">k940545</span><span class="f3 push-content">: 謝謝!</span><span class="push-ipdatetime"> 05/06 13:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iceman0603</span><span class="f3 push-content">: 0x7eb4F007479921D26DdF0Eb486300cD0f5d00ed1 感謝</span><span class="push-ipdatetime"> 05/06 13:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">somanyee</span><span class="f3 push-content">: 0x18BFa745dDe3e11A08445F96A723012dcd07182C</span><span class="push-ipdatetime"> 05/06 14:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dear790422</span><span class="f3 push-content">: 0x2107D0961f6e2403E1C17077a1275E442103da8c</span><span class="push-ipdatetime"> 05/06 14:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dear790422</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 14:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">somanyee</span><span class="f3 push-content">: ecz專門報人發財，功德無量</span><span class="push-ipdatetime"> 05/06 14:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Xay69</span><span class="f3 push-content">: 0x63a19dce218741ea77ea0Bee2852BE41648bfF3d</span><span class="push-ipdatetime"> 05/06 14:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Xay69</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 14:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">windgame</span><span class="f3 push-content">: 0xe9d6225e3C47a00b132FAE309ab71f2ff6dB7403</span><span class="push-ipdatetime"> 05/06 14:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">windgame</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 14:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">agcx4580</span><span class="f3 push-content">: 剛剛看地址也有對 可是錢包好像沒顯示欸</span><span class="push-ipdatetime"> 05/06 14:13
+</span></div>應該是有喔~ <a href="https://t.ly/nEq9" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/nEq9</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">s4300</span><span class="f3 push-content">: 0x9DC830CE931B237ED10AE7F174664a343EB40582 感謝</span><span class="push-ipdatetime"> 05/06 14:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pangea</span><span class="f3 push-content">: 0xaa1410F3bFfded2715BA045C4237A668e15f5154 謝謝</span><span class="push-ipdatetime"> 05/06 14:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tncshes86608</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/06 14:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DMM</span><span class="f3 push-content">: 0x15fcdddc0bd22895f52eeab27db044b25f21f0a7</span><span class="push-ipdatetime"> 05/06 14:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Vthree</span><span class="f3 push-content">: 0x9175598d56b7af09b7a0a3c2083c12c162e299ef</span><span class="push-ipdatetime"> 05/06 14:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tncshes86608</span><span class="f3 push-content">: 0x691804c2582f032a31be2c14059c93bb27675a5f</span><span class="push-ipdatetime"> 05/06 14:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">piggy0007</span><span class="f3 push-content">: 0x05eaa2932ab08ca8299ef32add776a407a4ac649 感謝大大</span><span class="push-ipdatetime"> 05/06 14:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">piggy0007</span><span class="f3 push-content">: ！</span><span class="push-ipdatetime"> 05/06 14:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">A1215356</span><span class="f3 push-content">: 0x87ce852cE248aFd15F3A35d9E13aEc4A4AacAca2</span><span class="push-ipdatetime"> 05/06 14:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">somanyee</span><span class="f3 push-content">: 請問，哪個交易所可以直接發usdc到fantom鏈？</span><span class="push-ipdatetime"> 05/06 14:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ronbin</span><span class="f3 push-content">: 推一下 FTM好用 !!</span><span class="push-ipdatetime"> 05/06 15:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ronbin</span><span class="f3 push-content">: 0xa5117820bd4054f9e09Cc0ED5E58F9F73c57cd33</span><span class="push-ipdatetime"> 05/06 15:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CaOH2</span><span class="f3 push-content">: 我用FTX上的FTM錢包沒收到，不過FTMSCAN上面有。</span><span class="push-ipdatetime"> 05/06 15:06
+</span></div>額…FTX 靠北有錢 你為什麼要捐錢給它 0rz
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wukeepo</span><span class="f3 push-content">: 0xb885A306bA1e91Daf4D1798998ff2aF25273ac99</span><span class="push-ipdatetime"> 05/06 15:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jameshuangg</span><span class="f3 push-content">: 0xcc7f3147f9342b935462eb443e1774d7e5c887ea</span><span class="push-ipdatetime"> 05/06 15:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jameshuangg</span><span class="f3 push-content">: 穴穴泥</span><span class="push-ipdatetime"> 05/06 15:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tchnight</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 05/06 15:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tchnight</span><span class="f3 push-content">: 0x3eE5949A128a7F50BDaAe0A897b7f5E6Dd210077</span><span class="push-ipdatetime"> 05/06 15:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Dingysu</span><span class="f3 push-content">: 0x316a22475438100DeAF988C8a4f05c5d2744027a</span><span class="push-ipdatetime"> 05/06 15:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">x147159357</span><span class="f3 push-content">: 感謝推  0x6a682B0D7799f2a5700e8Fda0B4543C4a574eC</span><span class="push-ipdatetime"> 05/06 15:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">x147159357</span><span class="f3 push-content">: ef</span><span class="push-ipdatetime"> 05/06 15:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Dingysu</span><span class="f3 push-content">: 感謝！</span><span class="push-ipdatetime"> 05/06 15:28
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jayv63</span><span class="f3 push-content">: 0x640a0F3594E4A8f69Ef0A42926b953c2A7cfcA9F</span><span class="push-ipdatetime"> 05/06 15:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">x147159357</span><span class="f3 push-content">: 0x6a682B0D7799f2a5700e8Fda0B4543C4a574eCef</span><span class="push-ipdatetime"> 05/06 15:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">x147159357</span><span class="f3 push-content">: 沒想到會斷頭XD</span><span class="push-ipdatetime"> 05/06 15:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jayv63</span><span class="f3 push-content">: 謝大大</span><span class="push-ipdatetime"> 05/06 15:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wertyl</span><span class="f3 push-content">: 0x5278890EcAac3D713E90DbD152604877086fb8EE 感謝～</span><span class="push-ipdatetime"> 05/06 15:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ksb49217</span><span class="f3 push-content">: 0x367fc8A11468Ad550832ebfaF40D519Dd6284195</span><span class="push-ipdatetime"> 05/06 16:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ksb49217</span><span class="f3 push-content">: 感恩！</span><span class="push-ipdatetime"> 05/06 16:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sktwilllose</span><span class="f3 push-content">: 0x8eed34b3c7e7ef97c108cfc09c60182bbf04eed2</span><span class="push-ipdatetime"> 05/06 16:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sktwilllose</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 16:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jackpig</span><span class="f3 push-content">: 0x0aa7b73FFDdb587BaA2A3FE635B2E29d60de463E</span><span class="push-ipdatetime"> 05/06 16:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Austinwei</span><span class="f3 push-content">: 0x9a783eeeafa3ff9261941df4584f01e7bed1636a 感謝</span><span class="push-ipdatetime"> 05/06 16:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ozami</span><span class="f3 push-content">: 0x13416bc49ce13eab7690ee093e171eb588cabf8f 感恩～～～</span><span class="push-ipdatetime"> 05/06 16:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a29654776</span><span class="f3 push-content">: 0x13FB97da9d2407DA6dBc2D6C175b51d0f5d9d903 3Q</span><span class="push-ipdatetime"> 05/06 16:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">monserx123</span><span class="f3 push-content">: 0xD827fd20c545a911C87364830bA860Cf79C5751a</span><span class="push-ipdatetime"> 05/06 16:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">larrykkk</span><span class="f3 push-content">: 0x28cd0059733d0144b79e49794b521221fe405144 謝！</span><span class="push-ipdatetime"> 05/06 16:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dark6358</span><span class="f3 push-content">: 0x4009Da255D894917aF3C4263455133E9d9121cdE</span><span class="push-ipdatetime"> 05/06 16:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dark6358</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 16:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eric10252013</span><span class="f3 push-content">: 0x7e6790ea1cac98f41822024ac1831d0df9623b31</span><span class="push-ipdatetime"> 05/06 16:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eric10252013</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 16:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">asunshing</span><span class="f3 push-content">: 期待 0xf3104C19c1C9b6510C4c89A639a10AE1EfC17665</span><span class="push-ipdatetime"> 05/06 16:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: 感謝！ 0xb688450700a3dc11f07c28e8815abeffc590b76</span><span class="push-ipdatetime"> 05/06 17:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: c</span><span class="push-ipdatetime"> 05/06 17:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: 0xb688450700a3dc11f07c28e8815abeffc590b76c</span><span class="push-ipdatetime"> 05/06 17:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">JLstar</span><span class="f3 push-content">: 期待 0xc7ad02f4284f6b9f15960e598eaf929c56b9c764</span><span class="push-ipdatetime"> 05/06 17:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">robintung</span><span class="f3 push-content">: 0x3a868ad07b40315b8aDd195ee4d56F41313a60e8  感謝</span><span class="push-ipdatetime"> 05/06 17:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Balduran</span><span class="f3 push-content">: 0x44737047Fa1b031043b00EaC536d0DE1414BbB8D</span><span class="push-ipdatetime"> 05/06 17:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kissross</span><span class="f3 push-content">: 0x156e065140ee57ba4564b29c603cdf3a82a77a64</span><span class="push-ipdatetime"> 05/06 17:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boogieman</span><span class="f3 push-content">: 我用metamask錢包沒有收到 是有什麼問題嗎?</span><span class="push-ipdatetime"> 05/06 17:55
+</span></div><a href="https://t.ly/mIYG" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/mIYG</a> 你可能要切換到 fantom 網路
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sixtynine</span><span class="f3 push-content">: 0xF871f8c17c571c158b4b5d18802cc329Ee9F19dF</span><span class="push-ipdatetime"> 05/06 18:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sixtynine</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 18:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">paramice</span><span class="f3 push-content">: 0x86d65d0dd61d8f4d4ded99c0797a6cdadf70f4e4</span><span class="push-ipdatetime"> 05/06 18:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rayccccc</span><span class="f3 push-content">: 0x1625B4fddaEFcbF757C54697Dd6A18EA7c34aFEE</span><span class="push-ipdatetime"> 05/06 18:12
+</span></div>你前面領過了啦! <a href="https://t.ly/pU3V" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/pU3V</a>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">WinRoww</span><span class="f3 push-content">: @boogieman 你要把網路轉成fontom才能看到</span><span class="push-ipdatetime"> 05/06 18:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Lawrencezi</span><span class="f3 push-content">: 0xdfaa72e7e4e642a2bc5b25112d3222ef20cb39d2</span><span class="push-ipdatetime"> 05/06 18:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Lawrencezi</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 18:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">larry780109</span><span class="f3 push-content">: 0xb6383945bd50f4d4c48c5a0d0af2d9cf7e70b981</span><span class="push-ipdatetime"> 05/06 18:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HCSYF</span><span class="f3 push-content">: 0xd49e5a4a2de46bd85f6eed5affa55726ecce548e</span><span class="push-ipdatetime"> 05/06 18:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aQQQQQQQQQQ</span><span class="f3 push-content">: 0x0D7bC903654f8af53DF551100D2D8dCbbAAA8702</span><span class="push-ipdatetime"> 05/06 19:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CrackedVoice</span><span class="f3 push-content">: 0x656c540f419ad5b88f93817d3950ac7a9a72a355</span><span class="push-ipdatetime"> 05/06 19:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">CrackedVoice</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/06 19:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">vincent81614</span><span class="f3 push-content">: 0x202ff5b9fb00b84fef1abf53131687328b168fff</span><span class="push-ipdatetime"> 05/06 19:24
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 19:34:58
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dreamtime</span><span class="f3 push-content">: 0x48e9E2F211371bD2462e44Af3d2d1aA610437f82</span><span class="push-ipdatetime"> 05/06 19:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dreamtime</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 19:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">luckykpt</span><span class="f3 push-content">: 0x3c2f27201ce1b86afbd4ef1b85d7f21bc6c0fc6d</span><span class="push-ipdatetime"> 05/06 19:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xu3yk6cj</span><span class="f3 push-content">: 0xC74406A05fB99565b47d1526CcF0CFa0EF730e99</span><span class="push-ipdatetime"> 05/06 19:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xu3yk6cj</span><span class="f3 push-content">: 感謝！</span><span class="push-ipdatetime"> 05/06 19:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wholala</span><span class="f3 push-content">: bnb1fpqq3nq0s3hg03tsuhc3g2n4dd4fzwh4wx6z9c</span><span class="push-ipdatetime"> 05/06 19:49
+</span></div>你有沒發現你地址和大家長得不一樣？
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Stenly1234</span><span class="f3 push-content">: 0xe9DCEcc6949651aF6DFd5A92cdE46FFE16a6bF91</span><span class="push-ipdatetime"> 05/06 19:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Stenly1234</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 19:51
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 20:01:06
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jojoba</span><span class="f3 push-content">: 0x11e502d0dD1473EC732e72708248C89424Bc0A1E</span><span class="push-ipdatetime"> 05/06 20:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jojoba</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 20:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">as8644731</span><span class="f3 push-content">: 0x8f230080d942ee1658448efac475ae876d978887</span><span class="push-ipdatetime"> 05/06 20:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">as8644731</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/06 20:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wholala</span><span class="f3 push-content">: 0x0A2feF86a86061a328A3D044c64ec9493020C3Fa</span><span class="push-ipdatetime"> 05/06 20:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">karnage</span><span class="f3 push-content">: 0x835f0B7aA2574d6D7cB2C965B6e81EE965c97ebB</span><span class="push-ipdatetime"> 05/06 20:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">karnage</span><span class="f3 push-content">: 感恩大大</span><span class="push-ipdatetime"> 05/06 20:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wholala</span><span class="f3 push-content">: 馬上改用另一個，感謝大大指導</span><span class="push-ipdatetime"> 05/06 20:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boogieman</span><span class="f3 push-content">: 收到了 感謝</span><span class="push-ipdatetime"> 05/06 20:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aee1027</span><span class="f3 push-content">: 0x4f5556a1f0fB0e701f58c363596c34A7aE8975cF</span><span class="push-ipdatetime"> 05/06 20:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">minihaha</span><span class="f3 push-content">: 0xef01f7bd8d9920e284fbc506d2c767c6778b5cee</span><span class="push-ipdatetime"> 05/06 20:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">minihaha</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 20:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">YCLeo</span><span class="f3 push-content">: 0x1eE26294960B75975E45Ab2DF25Ecec94C6Cb7C5</span><span class="push-ipdatetime"> 05/06 20:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gto80637ai</span><span class="f3 push-content">: 0x59d7218f84858f2c82f2efba766a1c798f11775c</span><span class="push-ipdatetime"> 05/06 20:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hn880265</span><span class="f3 push-content">: 0xaC2554A87E9dff1A0ea91d7bFE7B36eD9CA51698</span><span class="push-ipdatetime"> 05/06 20:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ksntw</span><span class="f3 push-content">: 0xb10bb19a3410876e736bba195ce192e116d6b4c2</span><span class="push-ipdatetime"> 05/06 20:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ksntw</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/06 20:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ksntw</span><span class="f3 push-content">: 0xb10bb19a3410876e736bba195ce192e116d6b4c2</span><span class="push-ipdatetime"> 05/06 20:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Sanbeeth</span><span class="f3 push-content">: 感謝推廣</span><span class="push-ipdatetime"> 05/06 20:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Sanbeeth</span><span class="f3 push-content">: 0x729b23d56A68021ed039d861087777c2c88f7BcD</span><span class="push-ipdatetime"> 05/06 20:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jsie</span><span class="f3 push-content">: 0x12947e8a54a3ab2f21b0eed7d0ef24bc1bb6de39   謝謝</span><span class="push-ipdatetime"> 05/06 20:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: 我沒收到 可能選成ERC20了？</span><span class="push-ipdatetime"> 05/06 20:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: 感謝 0xb688450700a3dc11f07c28e8815abeffc590b76c</span><span class="push-ipdatetime"> 05/06 20:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pluto9951020</span><span class="f3 push-content">: 欸可是仔細看好像碼都一樣？</span><span class="push-ipdatetime"> 05/06 20:47
+</span></div>早就發了 <a href="https://t.ly/pKvw" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/pKvw</a> 先理解各區塊鏈網的切換 地址是一樣的
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jok</span><span class="f3 push-content">: 0x8be74e40812edaf2688ab9cb673edcbf553bf423   謝謝</span><span class="push-ipdatetime"> 05/06 20:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MrWC</span><span class="f3 push-content">: 0x9f9CcbC33aCe87801EC0E9E5d1358Cedbb63A4Ec</span><span class="push-ipdatetime"> 05/06 21:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shurman</span><span class="f3 push-content">: 0x6f752b02817664681c91dDF35b6773E05fD91a43</span><span class="push-ipdatetime"> 05/06 21:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qaz123342</span><span class="f3 push-content">: 0x89CCbb375b48866E33b57F79deDA00Ffc323F25B</span><span class="push-ipdatetime"> 05/06 21:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">roger</span><span class="f3 push-content">: 0x9b860bbe7c599af8023e029e18e40d1b2ddae2cb</span><span class="push-ipdatetime"> 05/06 21:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">houjun</span><span class="f3 push-content">: 0x2b6F63b74660ab40E6d2f73A9adb37c3F08De4dB</span><span class="push-ipdatetime"> 05/06 21:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">houjun</span><span class="f3 push-content">: 感謝!</span><span class="push-ipdatetime"> 05/06 21:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shioreck</span><span class="f3 push-content">: 0xCc6C492e6F4947fCD92acb0fBA5d20ffE942d7c3</span><span class="push-ipdatetime"> 05/06 21:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">msbekgb</span><span class="f3 push-content">: 0xaf13f38dc409363aBa470701538Ac02Ce3501617 感謝</span><span class="push-ipdatetime"> 05/06 21:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dukyroro</span><span class="f3 push-content">: 0xb8136af1202170721b43535d76b7b869b15543e3 感謝</span><span class="push-ipdatetime"> 05/06 22:19
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.218 美國), 05/06/2021 22:39:40
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">boNing</span><span class="f3 push-content">: 0x8017d3920d7eb332d0f8fa63c6b22bfa2b6f8e86 感謝!</span><span class="push-ipdatetime"> 05/06 22:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">LorryMark</span><span class="f3 push-content">: 0x2Bd6cBa3c1BFae2D170976905BF2cDF55333ad80    謝謝</span><span class="push-ipdatetime"> 05/06 22:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">tommywu83</span><span class="f3 push-content">: 0xccb734167eDF3085e2bAa4bb7F7774c3c6a1FC2f</span><span class="push-ipdatetime"> 05/06 22:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iec</span><span class="f3 push-content">: 0x501A97f9B5d58Bb213aB81D4Dcdd44F54863557f</span><span class="push-ipdatetime"> 05/06 22:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">iec</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 22:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mike070</span><span class="f3 push-content">: 0xf237FB8a443E54674B4B8D067B52Ba92BB92d592</span><span class="push-ipdatetime"> 05/06 22:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">allofchen</span><span class="f3 push-content">: 0x760cEF8D263A988A048631BA27a082f5Ed8e6Ec6</span><span class="push-ipdatetime"> 05/06 23:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allofchen</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 23:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xichen0326</span><span class="f3 push-content">: 0xc3d2CE188c28CA67BbD3Ceb7f76A2B8Bd528e541</span><span class="push-ipdatetime"> 05/06 23:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">xichen0326</span><span class="f3 push-content">: 謝謝大大</span><span class="push-ipdatetime"> 05/06 23:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">worldfallsin</span><span class="f3 push-content">: 0xf4465b2Ce45f29BE59EB0f1D16133c8931fD7A8d</span><span class="push-ipdatetime"> 05/06 23:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wobule</span><span class="f3 push-content">: 0x96CC80292fa3A7045611EB84aE09DF8bd15936d2</span><span class="push-ipdatetime"> 05/06 23:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">year0831</span><span class="f3 push-content">: 0x35f10EDfd238eb54BCD32c78E38C1Ba25C096a86</span><span class="push-ipdatetime"> 05/06 23:43
+</span></div>你們是不是覺得程式都抓不到換地址再上來推的？<a href="https://t.ly/WGt6" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/WGt6</a> 已發
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">b22319</span><span class="f3 push-content">: 0xf7D5629082D9dF44c458fFBA478eD9999ccFBd5c</span><span class="push-ipdatetime"> 05/06 23:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">newyorkoo</span><span class="f3 push-content">: 0xf05e75e42272ec60ba6157d647924fd2de7a9495   感謝</span><span class="push-ipdatetime"> 05/06 23:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">owen1309</span><span class="f3 push-content">: 0x25ee4c92629a9fa301691ad5a27b16a5c41a0243</span><span class="push-ipdatetime"> 05/07 00:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">asolitary</span><span class="f3 push-content">: 0x31dE2385e8077a0e68d47C23904E37983f416523 謝謝你!</span><span class="push-ipdatetime"> 05/07 00:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">RoseofPain</span><span class="f3 push-content">: 0x6a8316EEce4c0cf90ec80861F52e9aED9E56b2b8</span><span class="push-ipdatetime"> 05/07 00:06
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PTTgov</span><span class="f3 push-content">: 0xF816bBC2D652AD1867544ace4Cb889047bee5DC9</span><span class="push-ipdatetime"> 05/07 00:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">AppMaker</span><span class="f3 push-content">: 謝謝 E 大，MetaMask 連入 Fantom 網路後，收到了~ Yes</span><span class="push-ipdatetime"> 05/07 00:38
+</span></div>當然 區塊鏈毋需信任 所以傳輸證據都在線上很難作假
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">milleryc</span><span class="f3 push-content">: 0xfEc23b0d00b82C3Cd88CD0d9AB73D6505bd64062</span><span class="push-ipdatetime"> 05/07 00:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wonyeouuu</span><span class="f3 push-content">: 0xf1703c735d456d283f1ab45F464141ab6f05e467</span><span class="push-ipdatetime"> 05/07 00:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dwadefans</span><span class="f3 push-content">: 感謝，0x3D7086C843FC938706AB1f8b40E119683975f771</span><span class="push-ipdatetime"> 05/07 01:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jimjim951357</span><span class="f3 push-content">: 收到了 感謝大大</span><span class="push-ipdatetime"> 05/07 01:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">anyenjoy</span><span class="f3 push-content">: 0x108B6f82f205550A6dDe148C4A8c999f9604BE6A</span><span class="push-ipdatetime"> 05/07 01:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eggheadbala</span><span class="f3 push-content">: 0x873564acB60D700a7Bfa177B960163ecF2BBD5Bc</span><span class="push-ipdatetime"> 05/07 02:16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eggheadbala</span><span class="f3 push-content">: 感謝分享和空投～正在找存穩定幣的池不想全放幣安</span><span class="push-ipdatetime"> 05/07 02:17
+</span></div><span class="f2">※ 編輯: ECZEMA (68.71.244.132 美國), 05/07/2021 03:34:17
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">praive</span><span class="f3 push-content">: 0xf0C4512408Bf021C0B83c4Af77f8920B85372120</span><span class="push-ipdatetime"> 05/07 07:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">curtishtceye</span><span class="f3 push-content">: 0xEC7f04b0a61965F320C2834e8587744238b99712</span><span class="push-ipdatetime"> 05/07 08:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">curtishtceye</span><span class="f3 push-content">: 0x34C3e41927903fBAe8E50C2eC14294C4E23CB4a9</span><span class="push-ipdatetime"> 05/07 08:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">curtishtceye</span><span class="f3 push-content">: 第一個我發錯了@@第二個才是狐狸的</span><span class="push-ipdatetime"> 05/07 08:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jiang0921</span><span class="f3 push-content">: 謝謝分享 已收到 看到這樓回覆發現牛市應該還有一陣子</span><span class="push-ipdatetime"> 05/07 08:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jiang0921</span><span class="f3 push-content">: 這些韭菜還沒被割光</span><span class="push-ipdatetime"> 05/07 08:44
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ggininde5566</span><span class="f3 push-content">: 0x2cA6dCA3879Ae927c64FBf045bb434015314E1C7</span><span class="push-ipdatetime"> 05/07 09:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dslee097</span><span class="f3 push-content">: 0xeA04965Fc2cA0F62e4ca2446AfB0c25cCc9335C4</span><span class="push-ipdatetime"> 05/07 10:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dslee097</span><span class="f3 push-content">: 謝謝大大，可以來FTM鏈探險看看</span><span class="push-ipdatetime"> 05/07 10:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iamlier</span><span class="f3 push-content">: 0x57f919cdd4Ee7707F42e77D4aAEdEB143A218549 謝謝你!</span><span class="push-ipdatetime"> 05/07 12:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ilove0618</span><span class="f3 push-content">: 0xa946174c101c8631aa1967d2db1477558f174649 感謝</span><span class="push-ipdatetime"> 05/07 12:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eric98276</span><span class="f3 push-content">: 0xCa32053cBA736796DDA8C90c35Cf56f3B7fb6237</span><span class="push-ipdatetime"> 05/07 14:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eric98276</span><span class="f3 push-content">: 謝謝，正好在看跨鍊題材</span><span class="push-ipdatetime"> 05/07 14:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">linporu</span><span class="f3 push-content">: 0xBdc3486832514A43E4430d8D5710040Cc936B4BE</span><span class="push-ipdatetime"> 05/07 17:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">flyinthesky</span><span class="f3 push-content">: 0x58204bD7c34EC47C15E6652faca5537b969a8BaB</span><span class="push-ipdatetime"> 05/07 18:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">flyinthesky</span><span class="f3 push-content">: 感謝</span><span class="push-ipdatetime"> 05/07 18:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jazztyy</span><span class="f3 push-content">: 0xa324CD04fe1a6b54BdEa77a122F5CbEe346D9549 謝謝</span><span class="push-ipdatetime"> 05/08 00:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Kashionz</span><span class="f3 push-content">: 0xE66A343A014F1F17feF12eCd0E0E5b1B54Bd902B</span><span class="push-ipdatetime"> 05/08 01:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Kashionz</span><span class="f3 push-content">: 感謝大大</span><span class="push-ipdatetime"> 05/08 01:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">s88302s</span><span class="f3 push-content">: 0x6E7BeEE644fe0B56956eFdc81e96CD8342E0729D 感謝</span><span class="push-ipdatetime"> 05/08 08:12
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">leftc</span><span class="f3 push-content">: 0x19C3E39af1D5680f7a1714a65f70304e023B7cd9 新玩具~</span><span class="push-ipdatetime"> 05/08 08:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chunyuaztec</span><span class="f3 push-content">: 0x0e757eA17b5060585101d67eeDf5159Acae4308D 真心感</span><span class="push-ipdatetime"> 05/08 15:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chunyuaztec</span><span class="f3 push-content">: 謝</span><span class="push-ipdatetime"> 05/08 15:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iwillbehere</span><span class="f3 push-content">: 0x490825C05c1E29e34169be5aD486023338fAf251</span><span class="push-ipdatetime"> 05/08 17:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CaffeinePT</span><span class="f3 push-content">: 0x3CC2dd6EE26b422298a7c91036C3af25764A6d5B</span><span class="push-ipdatetime"> 05/08 21:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">blackmoon</span><span class="f3 push-content">: 0xE74Af974852aEB6633a4A71e4336503108547955 感謝</span><span class="push-ipdatetime"> 05/08 22:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ECZEMA</span><span class="f3 push-content">: 好好利用周日即將來到的空投 <a href="https://t.ly/YSOE" target="_blank" rel="noreferrer noopener nofollow">https://t.ly/YSOE</a></span><span class="push-ipdatetime"> 05/08 23:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dwarfofking</span><span class="f3 push-content">: 0x3faE2f4b26605F18EFad4370210C94C3C5c0E79D</span><span class="push-ipdatetime"> 05/09 00:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dwarfofking</span><span class="f3 push-content">: 謝謝</span><span class="push-ipdatetime"> 05/09 00:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">BeALoser</span><span class="f3 push-content">: 0x8ea3a6fcdb08bec1f0155c1d1ca5197968a27c4b   謝謝</span><span class="push-ipdatetime"> 05/09 08:43
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hidicence</span><span class="f3 push-content">: 0x978Fe0cc6923aF50b83F9a850206121160867419 感謝</span><span class="push-ipdatetime"> 05/09 17:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a2603</span><span class="f3 push-content">: 推推 0xc68E5c70e5AC1Ec1E2fF7C6f64eea1918ecC83a3</span><span class="push-ipdatetime"> 05/09 22:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">school4303</span><span class="f3 push-content">: 0x34Ee069E95a6F0Aa208F265efd032b64C66F8724 感謝</span><span class="push-ipdatetime"> 05/10 04:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pandadna</span><span class="f3 push-content">: 0xf9c01afD07825C183af6b07b659a8b6c98D2f39D 感謝</span><span class="push-ipdatetime"> 05/11 10:07
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Data000</span><span class="f3 push-content">: 0x01322633592ba62D64E0EcD9Fe606b365Cd5b10E 謝謝</span><span class="push-ipdatetime"> 05/11 19:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dd84607dd</span><span class="f3 push-content">: 0xd17eA7b96EBfb3Cf36679F3f4C57888c1e68601D 感謝</span><span class="push-ipdatetime"> 05/14 11:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mango314</span><span class="f3 push-content">: 0xD55E71711a412F742EDFaD52FAE71aF6bC85d2aA 感謝</span><span class="push-ipdatetime"> 05/19 01:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 優文，再推一次</span><span class="push-ipdatetime"> 05/23 21:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gary8442</span><span class="f3 push-content">: 0xf570fBB739bA6d32ee428e85E3B35d2C5aB4a10b 感謝</span><span class="push-ipdatetime"> 05/29 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ECZEMA</span><span class="f3 push-content">: =========近月無新請求，此為截止線，新推不再發=========</span><span class="push-ipdatetime"> 06/25 19:09
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1620254771.A.FB0.html?cacheKey=2148-152136936&amp;offset=47874&amp;offset-sig=3c8993882f1d6babc97a482606cb58164fce688d" data-longpollurl="/v1/longpoll?id=92ed1be4a1841f42450ac7ac0e68ee0b203eea40" data-offset="47874"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce2abccc12098',m:'h3GCsTDkKK1MtUNstk1h68wmoHbSH0WyZmUvNjKfKvc-1653467178-0-AQGHjTY1BIZqOulWqk+SohjBzxSlL0UdZBmDdfypvB39ZCTMWECVBQczUtU7qzR31Ma0XqxYhYRD9xBtDl2oAR0rJ9YybUPwMBkUbFG9rJfmGlxvyWBFmpW57+9AVStoN0S5tGVRiqxjJqYEB9Kfrza7GNAtIzxOySgzencw2X8I',s:[0xc1d2a7b0f9,0x50d3b3d978],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

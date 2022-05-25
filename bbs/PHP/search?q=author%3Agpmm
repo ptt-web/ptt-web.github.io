@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:gpmm - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=7&amp;q=author%3Agpmm">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Agpmm">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Agpmm">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:gpmm" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1517320086.A.C34.html">[情報] The end of Silex</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;The&#43;end&#43;of&#43;Silex">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1516805546.A.996.html">Re: [請益] 請教一個日期條件設計問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E6%95%99%E4%B8%80%E5%80%8B%E6%97%A5%E6%9C%9F%E6%A2%9D%E4%BB%B6%E8%A8%AD%E8%A8%88%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1516665083.A.7B0.html">Re: [請益] 請教一個日期條件設計問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E6%95%99%E4%B8%80%E5%80%8B%E6%97%A5%E6%9C%9F%E6%A2%9D%E4%BB%B6%E8%A8%AD%E8%A8%88%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1514534966.A.50A.html">Re: [請益] 請問LARAVEL中DI跟使用static的差異</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8FLARAVEL%E4%B8%ADDI%E8%B7%9F%E4%BD%BF%E7%94%A8static%E7%9A%84%E5%B7%AE%E7%95%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1512233355.A.897.html">Re: [請益] https和wss是否有“關聯性”?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;https%E5%92%8Cwss%E6%98%AF%E5%90%A6%E6%9C%89%E2%80%9C%E9%97%9C%E8%81%AF%E6%80%A7%E2%80%9D%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1501768577.A.B6D.html">Re: [請益] 有關上傳圖片至DB 新手請教</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%97%9C%E4%B8%8A%E5%82%B3%E5%9C%96%E7%89%87%E8%87%B3DB&#43;%E6%96%B0%E6%89%8B%E8%AB%8B%E6%95%99">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1497159653.A.487.html">Re: [請益] 為何php.ini找不到display error?怎嘛改?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%82%BA%E4%BD%95php.ini%E6%89%BE%E4%B8%8D%E5%88%B0display&#43;error%3F%E6%80%8E%E5%98%9B%E6%94%B9%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1496208113.A.E49.html">Re: [討論] 想監看API的動作，要用web socket嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E6%83%B3%E7%9B%A3%E7%9C%8BAPI%E7%9A%84%E5%8B%95%E4%BD%9C%EF%BC%8C%E8%A6%81%E7%94%A8web&#43;socket%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1495433916.A.678.html">Re: [請益] PHP中scr的指定位置網頁跟實際中不一樣</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%E4%B8%ADscr%E7%9A%84%E6%8C%87%E5%AE%9A%E4%BD%8D%E7%BD%AE%E7%B6%B2%E9%A0%81%E8%B7%9F%E5%AF%A6%E9%9A%9B%E4%B8%AD%E4%B8%8D%E4%B8%80%E6%A8%A3">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1490754212.A.DE1.html">Re: [請益] Smarty使用疑問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Smarty%E4%BD%BF%E7%94%A8%E7%96%91%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1490722778.A.42E.html">Re: [請益] php與javascript使用cookie問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php%E8%88%87javascript%E4%BD%BF%E7%94%A8cookie%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1488786576.A.407.html">Re: [請益] 直接url存取檔案能不能用參數保護?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%9B%B4%E6%8E%A5url%E5%AD%98%E5%8F%96%E6%AA%94%E6%A1%88%E8%83%BD%E4%B8%8D%E8%83%BD%E7%94%A8%E5%8F%83%E6%95%B8%E4%BF%9D%E8%AD%B7%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1488206954.A.05B.html">Re: [請益] 要達到這些功能會太困難?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A6%81%E9%81%94%E5%88%B0%E9%80%99%E4%BA%9B%E5%8A%9F%E8%83%BD%E6%9C%83%E5%A4%AA%E5%9B%B0%E9%9B%A3%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1478052528.A.A66.html">Re: [請益] PHP抓json後使用foreach問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%E6%8A%93json%E5%BE%8C%E4%BD%BF%E7%94%A8foreach%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1477489662.A.F7E.html">Re: [請益] 如何判斷表單提交來源是從本站傳送的？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%B7%E8%A1%A8%E5%96%AE%E6%8F%90%E4%BA%A4%E4%BE%86%E6%BA%90%E6%98%AF%E5%BE%9E%E6%9C%AC%E7%AB%99%E5%82%B3%E9%80%81%E7%9A%84%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1476988535.A.2FE.html">[閒聊] froeach pass by reference</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;froeach&#43;pass&#43;by&#43;reference">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1473492064.A.6C5.html">[請益] bugsnag vs rollbar</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;bugsnag&#43;vs&#43;rollbar">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1464818442.A.352.html">Re: [請益] 如何不用表單把資料POST出去</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E4%B8%8D%E7%94%A8%E8%A1%A8%E5%96%AE%E6%8A%8A%E8%B3%87%E6%96%99POST%E5%87%BA%E5%8E%BB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1458925045.A.F71.html">Re: [討論] PHP 板活動</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;PHP&#43;%E6%9D%BF%E6%B4%BB%E5%8B%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1457502614.A.8AB.html">[閒聊] Google AI vs 李世石圍棋直播</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">gpmm</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;Google&#43;AI&#43;vs&#43;%E6%9D%8E%E4%B8%96%E7%9F%B3%E5%9C%8D%E6%A3%8B%E7%9B%B4%E6%92%AD">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Agpmm">搜尋看板內 gpmm 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9fa1990f8eb',m:'i1QEsp5t_0SftYbSVY4RbYCAaoVf3L9_r1xVEho5XVY-1653467478-0-AUTZ4ftiLoJt3oOSZrol1Ull8IarXfB33d0EnfH/jYPxAtt6o6C2aUNpo2FXsiFuWXrvvugeFZszh7aSqdhpifjHe60cjtfjJPxx9dW9V6/KhCzbsbP+zWoLL439T4oxem1q+yhGKV2fa82JsC8qRuw=',s:[0x443f4ea002,0xd87400444f],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

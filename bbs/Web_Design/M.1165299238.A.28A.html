@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] JavaScript的問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="程式碼如下：
+&lt;form name=&#34;cForm&#34; method=&#34;post&#34; action=&#34;&#34;&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;A&#34;&gt;值1&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;B&#34;&gt;值2&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;C&#34;&gt;值3&lt;/p&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] JavaScript的問題">
+<meta property="og:description" content="程式碼如下：
+&lt;form name=&#34;cForm&#34; method=&#34;post&#34; action=&#34;&#34;&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;A&#34;&gt;值1&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;B&#34;&gt;值2&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;C&#34;&gt;值3&lt;/p&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1165299238.A.28A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">terrybob (翔翔)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] JavaScript的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Dec  5 14:18:16 2006</span></div>
+程式碼如下：
+&lt;form name=&#34;cForm&#34; method=&#34;post&#34; action=&#34;&#34;&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;A&#34;&gt;值1&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;B&#34;&gt;值2&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;C&#34;&gt;值3&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;NO&#34; type=&#34;checkbox&#34; id=&#34;NO&#34; value=&#34;D&#34;&gt;值4&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;Submit&#34; type=&#34;button&#34; value=&#34;檢查&#34; onClick=&#34;Check();&#34;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;input name=&#34;TXT&#34; type=&#34;text&#34; id=&#34;TXT&#34;&gt;&lt;/p&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script language=&#34;javascript&#34; type=&#34;text/javascript&#34;&gt;
+function Check()
+{
+with(window.document.cForm)
+{
+        var ShowValue;
+        ShowValue=&#34;&#34;;
+        TXT.value=&#34;&#34;;
+        for(i=0;i&lt;window.document.cForm.NO.length;i++)
+        {
+                if(window.document.cForm.NO[i].checked==true)
+                {
+                        ShowValue=ShowValue+window.document.cForm.NO[i].value+&#39;,&#39;;
+                }
+        }
+        if(ShowValue==&#34;&#34;)
+        {
+                alert(&#34;你沒有選取任何一項&#34;);
+        }else{
+                TXT.value=ShowValue;
+        }
+}
+}
+&lt;/script&gt;
+如果是以上的JavaScript直接去跑，的確是正常的，並且txt也能讀取到選取的值！
+
+問題是…
+
+如果將上述所說的checkbox，改成只留下一個…我勾選一個後，再按檢查…
+程式就跑不了，連txt也讀不到，只會跳出訊息說你沒有勾選…
+
+我明明就有呀…請高手幫忙，我是不是那邊要改善？！…感謝
+
+--
+朝叩朱門吃餘餐
+嗟來冷眼有德顏
+歸途踏盡金磚路
+漫天彩霞不用錢
+
+吾乃…富貴乞丐-花爵百鍊生
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 218.211.4.196
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shiengchyi</span><span class="f3 push-content">:一個的話...存放方式不是array</span><span class="push-ipdatetime"> 12/05 15:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">shiengchyi</span><span class="f3 push-content">:是一般變數的型態存放</span><span class="push-ipdatetime"> 12/05 15:25
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">terrybob</span><span class="f3 push-content">:感謝！所以我只要先作變數檢查就好…^0^~謝謝呢</span><span class="push-ipdatetime"> 12/05 15:58
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1165299238.A.28A.html?cacheKey=2149-475759163&amp;offset=1904&amp;offset-sig=75bb90205aed58a7b5616403c21499285e234b27" data-longpollurl="/v1/longpoll?id=b00a1e464447c45a1d919ed51477afe0aa576d7a" data-offset="1904"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c548e9afcd',m:'xaeRMY.bpf6v8ksmj1S9YjuSuonTEYd4ENaiWyZSzAQ-1653467469-0-AWzuoLQOaB2J0VOq7bF6EU3/NOi7yszeI9Q8G281tjYUWB5Bad0UUKUbYq2g8b+yXz6/+arNNN6541z5cvmTJQkH+23VdZCpKygHVZvheZVUdRQkyecK/opo96bJ83CLp/I7tIhyST4bpS3ye6lIN9JwwdMSYj5fIUNQOpJa4bmS',s:[0x3c6b5749f7,0x3d0b666c4c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

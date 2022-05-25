@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 用php去設定cron - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問如何在網頁上實行cron呢??
+當user在web設定好時間後
+(可能一天要主動執行幾次這樣)
+因為時間的設定是放在$_POST[]裡
+所以那個post變數是個關鍵嗎??
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 用php去設定cron">
+<meta property="og:description" content="請問如何在網頁上實行cron呢??
+當user在web設定好時間後
+(可能一天要主動執行幾次這樣)
+因為時間的設定是放在$_POST[]裡
+所以那個post變數是個關鍵嗎??
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1266408257.A.A64.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">s66449 (閒泡菜)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 用php去設定cron</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Feb 17 20:04:15 2010</span></div>
+請問如何在網頁上實行cron呢??
+
+當user在web設定好時間後
+
+(可能一天要主動執行幾次這樣)
+
+因為時間的設定是放在$_POST[]裡
+
+所以那個post變數是個關鍵嗎??
+
+----------------------------------------
+不好意思
+
+我打的太簡短了...
+
+
+我這邊有一個未完成的網頁
+
+<a href="http://210.71.15.139:9001/nmap/index.php" target="_blank" rel="noreferrer noopener nofollow">http://210.71.15.139:9001/nmap/index.php</a>
+
+在右邊有一個&#34;每隔掃描時間(分)：&#34;
+
+我想要讓使用者去輸入那個時間
+
+我卡在該怎麼去寫說
+
+打好時間然後勾選checkbok之後
+
+再按上面的scan button
+
+就能啟動cron服務來定時執行網頁??
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 114.27.176.66
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:我沒有仔細看，不過前面用cron這個關鍵字找</span><span class="push-ipdatetime"> 02/17 22:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:剛好有一串文章</span><span class="push-ipdatetime"> 02/17 22:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:那篇我看過了 但不是我要的而且也沒有要用到db ^^&#34;</span><span class="push-ipdatetime"> 02/17 23:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:其實我不太懂你的要求說... 也許可以描述一下你的想法？</span><span class="push-ipdatetime"> 02/17 23:39
+</span></div><span class="f2">※ 編輯: s66449          來自: 114.27.176.66        (02/17 23:50)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:我的想法是 db只是一個儲存資料的方式</span><span class="push-ipdatetime"> 02/18 00:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:在web上比較容易達到...(不用管開檔案的權限問題)</span><span class="push-ipdatetime"> 02/18 00:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:像你的xml也是儲存資料的方式</span><span class="push-ipdatetime"> 02/18 00:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:一個使用者的cron服務，可能隨時都在跑</span><span class="push-ipdatetime"> 02/18 00:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:可以另外寫一個php 經由crontab去執行(php-cli模式)</span><span class="push-ipdatetime"> 02/18 00:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:或是直接改crontab的資料，也是一種</span><span class="push-ipdatetime"> 02/18 00:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:基本概念就是 一隻php給外界呼叫</span><span class="push-ipdatetime"> 02/18 00:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:一隻php給crontab呼叫，或是說模擬crontab</span><span class="push-ipdatetime"> 02/18 00:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:樓上大大說直接改crontab資料 是指把crontab -e指令打好嗎?</span><span class="push-ipdatetime"> 02/18 00:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:crontab -l可以列出crontab內容</span><span class="push-ipdatetime"> 02/18 00:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:crontab 檔名 可以直接用那個檔案當crontab</span><span class="push-ipdatetime"> 02/18 00:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:請問我要是把這隻php程式改成你說的crontab /路徑/xx.php</span><span class="push-ipdatetime"> 02/18 00:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:會有什麼特別的嗎??  不好意思~我學的還不是很久..</span><span class="push-ipdatetime"> 02/18 00:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:你誤會了啦 crontab 檔名 裡面那個檔案 內容類似-e那種</span><span class="push-ipdatetime"> 02/18 00:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:不過我覺得這種要直接改crontab的方式，可能有點麻煩</span><span class="push-ipdatetime"> 02/18 00:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:所以我會覺得說crontab裡面加一行 去執行一隻php</span><span class="push-ipdatetime"> 02/18 00:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:那隻php再去讀取相關資料，以便執行對應動作</span><span class="push-ipdatetime"> 02/18 00:34
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:所以建議是再寫一隻xx.php程式 給cron去叫它 讓xx.php去</span><span class="push-ipdatetime"> 02/18 00:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:執行我主要網頁上的php程式??</span><span class="push-ipdatetime"> 02/18 00:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiyucsie</span><span class="f3 push-content">:語句怪怪的(去執行 主要 php程式) 不過大概這樣吧:p</span><span class="push-ipdatetime"> 02/18 00:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:我有疑問耶...因為我是第一次寫這東西 到底那隻xx.php</span><span class="push-ipdatetime"> 02/18 00:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:長怎樣???我直接用cron去執行我那個網頁就好了 為什麼還要</span><span class="push-ipdatetime"> 02/18 00:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:再寫一隻xx.php去執行我那個網頁??</span><span class="push-ipdatetime"> 02/18 00:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:我有嘗試去google  可是我不知怎麼下關鍵字&gt; &lt;</span><span class="push-ipdatetime"> 02/18 00:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">s66449</span><span class="f3 push-content">:找到的都不是我要的</span><span class="push-ipdatetime"> 02/18 00:51
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1266408257.A.A64.html?cacheKey=2148-469787880&amp;offset=3633&amp;offset-sig=83f965add67bccfa0c1cacda3fd6d73b551dc0e0" data-longpollurl="/v1/longpoll?id=3c4e39768d38642d8d26df0ccc0aab796625ce90" data-offset="3633"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea68acba14d0',m:'M0bJnY7HYhLp.pBTkk7Cl6Ff7gvyjtMgnw_wRx1nvFU-1653467495-0-ARK5gLDAs16kUislHs7ecdDuHYzPtiwU9mVEdqt0+TJLhYtkhFahREWvMzpBju7FhRYFV7vjmJn6EIvgP0KqZcVDeoRLzJWxyjn6IBr/bxsD8ZshCPcBM37BSwRSVELDoUo0qXy4URKuZShbl86MAUux/Aef0+FX5CmfrRI9gZNa',s:[0x15239b4961,0x5235627b05],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

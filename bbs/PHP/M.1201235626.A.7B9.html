@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 多條件查詢 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="所以我才說你文章根本沒念清楚
+你即然要作 like 的查詢比對
+你根本沒下模糊區域當然找不到東西啊~&#34;~
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;model&#39; order by i_date DESC (╳)
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;%model%&#39; order by i_date DESC (○)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 多條件查詢">
+<meta property="og:description" content="所以我才說你文章根本沒念清楚
+你即然要作 like 的查詢比對
+你根本沒下模糊區域當然找不到東西啊~&#34;~
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;model&#39; order by i_date DESC (╳)
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;%model%&#39; order by i_date DESC (○)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1201235626.A.7B9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">shadowjohn (台灣獨立公投入聯)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 多條件查詢</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jan 25 12:33:44 2008</span></div>
+
+<span class="f2">※ 引述《camille168 (凱凱)》之銘言：
+</span><span class="f6">: : if (isset($_GET[&#39;$field&#39;])) {
+</span><span class="f6">: :   $colname_RecID = (get_magic_quotes_gpc()) ? $_GET[&#39;$field&#39;] : addslashes($_GET[&#39;$field&#39;]);
+</span><span class="f6">: : }
+</span><span class="f6">: : 打開檔案一看就看到你的錯誤了...
+</span><span class="f6">: : $_GET[&#39;field&#39;]   ○
+</span><span class="f6">: : $_GET[&#39;$field&#39;]  ╳
+</span><span class="f6">: : $query_RecID = sprintf
+</span><span class="f6">: : (&#34;SELECT * FROM `01_id`
+</span><span class="f6">: : WHERE &#39;%s&#39; like &#39;%s&#39; ORDER BY i_date DESC&#34;, $field,$colname_RecID);
+</span><span class="f6">: : 另外....
+</span><span class="f6">: : 一般用SQL用 like指令
+</span><span class="f6">: : 我習慣是 tablefield放前，查的字放後
+</span><span class="f6">: : 比如
+</span><span class="f6">: : $name=&#39;羽山&#39;;
+</span><span class="f6">: : $sql=&#34;select id from data where name like &#39;%&#34;.$name.&#34;%&#39; &#34;;
+</span><span class="f6">: : 也就是說..   name like &#39;%羽山%&#39;
+</span><span class="f6">: : 即可以查  名字中 有 羽山 二字的所有人名
+</span><span class="f6">: : 比如 肥羽山秋人 或 胖羽山
+</span><span class="f6">: : 當然你用sprintf也不是不行，只是你的%s會被你鍵入的field取代
+</span><span class="f6">: : 變成應有的%就消失了
+</span><span class="f6">: : 所以你應該要...
+</span><span class="f6">: : $query_RecID = sprintf
+</span><span class="f6">: : (&#34;SELECT * FROM `01_id`
+</span><span class="f6">: : WHERE &#39;%s&#39; like &#39;%%s%&#39; ORDER BY i_date DESC&#34;, $field,$colname_RecID);
+</span><span class="f6">: :                  ^  ^
+</span><span class="f6">: : 大概就是如此...
+</span><span class="f6">: 我改了
+</span><span class="f6">: $query_RecID = sprintf
+</span><span class="f6">: (&#34;SELECT * FROM `01_id`
+</span><span class="f6">: WHERE &#39;%s&#39; like &#39;%s&#39; ORDER BY i_date DESC&#34;, $field,$colname_RecID);
+</span><span class="f6">: 這樣
+</span><span class="f6">: 然後打了
+</span><span class="f6">: 你說的印出query_recid
+</span><span class="f6">: 查詢工號（id）
+</span><span class="f6">: 他印出select * from &#39;01_id&#39; where &#39;id&#39; like &#39;id&#39; order by i_date DESC
+</span><span class="f6">: 查型號（model）的話
+</span><span class="f6">: 他會印出select * from &#39;01_id&#39; where &#39;model&#39; like &#39;model&#39; order by i_date DESC
+</span>
+所以我才說你文章根本沒念清楚
+你即然要作 like 的查詢比對
+你根本沒下模糊區域當然找不到東西啊~&#34;~
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;model&#39; order by i_date DESC (╳)
+
+select * from &#39;01_id&#39; where &#39;model&#39; like &#39;%model%&#39; order by i_date DESC (○)
+
+只是你查東西的構想還真怪...
+通常會用like，我以為只有查文章某一段內容才會用的到呢..
+
+在下習慣like的用法如下
+
+$sql=&#34;select id,title,date,time from library where
+concat(title,content) like &#39;%&#34;.$keywords.&#34;%&#39; order by id desc&#34;;
+
+用concat組合某些欄段拿來作 like 滿實用的, 可作簡單的全文查詢機
+
+你把field用id來代替，又沒下模糊區(%,?)不如用 = 就好了，速度還比較快些..
+
+like 可以在你關鍵字前後 加上 % 或 ? , 就看你需求怎定了
+
+
+
+
+
+--
+3WA訓練家的工作室
+
+宗旨：人生就是要爽
+
+個人佈弱格 網址：<a href="http://3wa.myvnc.com" target="_blank" rel="noreferrer noopener nofollow">http://3wa.myvnc.com</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 123.240.117.82
+<span class="f2">※ 編輯: shadowjohn      來自: 123.240.117.82       (01/25 12:35)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">camille168</span><span class="f3 push-content">:謝謝S大的指導，我總算用出來了</span><span class="push-ipdatetime"> 01/25 13:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">camille168</span><span class="f3 push-content">:不好意思，剛學PHP，不是很懂，請多見諒</span><span class="push-ipdatetime"> 01/25 13:42
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1201235626.A.7B9.html?cacheKey=2148-469786348&amp;offset=2495&amp;offset-sig=c91e66a1238fcdc737a8f10fb667e88e60804b60" data-longpollurl="/v1/longpoll?id=bb8942e9a8f8baa1c11ab5d26e79a46f13701559" data-offset="2495"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea9a4fcb8aa4',m:'rMlWDlWHH1G7CaSeZtL0.9AMW4XKbxRkZPmMxY5pvQs-1653467503-0-AfHjVZ6bfju6CPHmc1Rnb1TtmDyd0oqNG7RsyvaB7jwLKf1LvEbB0qUUNXB1Rnrgc6Bt5stJfvOt3ssflqPX7WV1ZUMDB+QEX0bu/sx/LUXhIzPStG3aThcrl/FSL0w4lNpeeRwn2MLKexHPjOBNAYK59jaiqu/G4nzaxjW9GMxN',s:[0xa6512a7a7a,0x8caf9eaee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

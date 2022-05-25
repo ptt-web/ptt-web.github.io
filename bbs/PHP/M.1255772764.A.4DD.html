@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 請幫看一下程式碼 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這是我的程式碼，我在appserv-win32-2.4.7可以正常執行，但是在WampServer2.0i執行
+卻會出現Parse error: parse error in C:\wamp\www\xxx\xxx.php on line 101
+請幫我看一下哪邊有問題
+&lt;?php
+ $link = mysql_connect(&#39;localhost&#39;, &#39;root&#39;, &#39;&#39;);
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 請幫看一下程式碼">
+<meta property="og:description" content="這是我的程式碼，我在appserv-win32-2.4.7可以正常執行，但是在WampServer2.0i執行
+卻會出現Parse error: parse error in C:\wamp\www\xxx\xxx.php on line 101
+請幫我看一下哪邊有問題
+&lt;?php
+ $link = mysql_connect(&#39;localhost&#39;, &#39;root&#39;, &#39;&#39;);
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1255772764.A.4DD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tanxdx (tanxdx)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 請幫看一下程式碼</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Oct 17 17:46:03 2009</span></div>
+這是我的程式碼，我在appserv-win32-2.4.7可以正常執行，但是在WampServer2.0i執行
+
+卻會出現Parse error: parse error in C:\wamp\www\xxx\xxx.php on line 101
+
+請幫我看一下哪邊有問題
+
+
+
+&lt;?php
+ $link = mysql_connect(&#39;localhost&#39;, &#39;root&#39;, &#39;&#39;);
+
+ mysql_select_db(&#34;test&#34;, $link) or die(&#34;資料庫連結錯誤&#34;);
+?&gt;
+
+
+&lt;title&gt;123&lt;/title&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;form action=&#34;&#34; method=&#34;post&#34;&gt;
+&lt;center&gt;&lt;select name=&#34;language&#34;&gt;
+&lt;option&gt;請選擇&lt;/option&gt;
+&lt;option value=&#34;l&#34;&gt;1&lt;/option&gt;
+&lt;option value=&#34;2&#34;&gt;2&lt;/option&gt;
+&lt;option value=&#34;3&#34;&gt;3&lt;/option&gt;
+&lt;option value=&#34;4&#34;&gt;4&lt;/option&gt;
+&lt;option value=&#34;5&#34;&gt;5&lt;/option&gt;
+&lt;option value=&#34;6&#34;&gt;6&lt;/option&gt;
+&lt;/select&gt;
+&lt;INPUT TYPE=&#34;SUBMIT&#34; VALUE=&#34;開始查詢&#34;&gt;&lt;/center&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class=&#34;style3&#34;&gt;
+&lt;p&gt;
+
+&lt;?php
+
+
+
+if($language !=&#34;&#34;){
+$sql = &#34;select * from $language where id like &#39;%$id%&#39;&#34;;
+
+$id = 0;
+
+ $result = mysql_query($sql) or die(mysql_error());;
+
+ $row = mysql_fetch_row($result);
+
+
+
+?&gt;
+
+&lt;/p&gt;
+&lt;table width=&#34;1023&#34; border=&#34;1&#34;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;a&lt;/td&gt;
+    &lt;td&gt;b&lt;/td&gt;
+    &lt;td&gt;c&lt;/td&gt;
+    &lt;td&gt;d&lt;/td&gt;
+    &lt;td&gt;e&lt;/td&gt;
+    &lt;td&gt;f&lt;/td&gt;
+    &lt;td&gt;g&lt;/td&gt;
+
+
+  &lt;/tr&gt;
+ &lt;?
+  while ($row != NULL)
+ {
+  list( $id, $vocabulary, $chiexample, $rot, $example, $Translation, $Note) = $row; {
+
+
+                        echo &#34;&lt;td&gt;$id&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$vocabulary&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$chiexample&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$rot&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$example&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$Translation&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;$Note&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;&lt;a href=update.php?id=$id&amp;language=$language target=_blank&gt;修改資料&lt;/a&gt;&lt;/td&gt;&#34;;
+                        echo &#34;&lt;td&gt;&lt;a href=del.php?id=$id&amp;language=$language target=_blank onclick=&#39;return delconfirm()&#39;&gt;刪除此筆資料&lt;/a&gt;&lt;/td&gt;&#34;;
+                        echo &#34;&lt;/tr&gt;&#34;;
+        }
+
+
+
+   $row = mysql_fetch_row($result);
+  }
+  }
+  mysql_close($link);
+  ?&gt;
+
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp; &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script&gt;
+function delconfirm(){
+if(window.confirm(&#34;確定刪除資料?&#34;))
+{
+        location.reload();
+        return true;
+}
+else
+        return false;
+}
+&lt;/script&gt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 114.33.77.10
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:好像貼上來的也沒有101行，看起來list那邊有錯</span><span class="push-ipdatetime"> 10/17 19:28
+</span></div>嗯 我有改到 他都會在最後一行給我錯誤&gt;&lt;
+那要怎麼修訂呢？
+<span class="f2">※ 編輯: tanxdx          來自: 114.33.77.78         (10/17 19:34)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:所以list那行到底是?</span><span class="push-ipdatetime"> 10/17 20:19
+</span></div><span class="f2">※ 編輯: tanxdx          來自: 114.33.77.78         (10/17 20:31)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PretenderY</span><span class="f3 push-content">:因為你說原來的環境可以執行,換一個環境無法執行,另外,</span><span class="push-ipdatetime"> 10/17 20:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PretenderY</span><span class="f3 push-content">:while 前方的是 &lt;?  ,因此,我想會不會是short tags的問</span><span class="push-ipdatetime"> 10/17 20:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">PretenderY</span><span class="f3 push-content">:題!?</span><span class="push-ipdatetime"> 10/17 20:58
+</span></div><span class="f2">※ 編輯: tanxdx          來自: 114.33.77.78         (10/17 20:59)
+</span><span class="f2">※ 編輯: tanxdx          來自: 114.33.77.78         (10/17 21:37)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:如果我沒看錯的話 &lt;? ?&gt; 裡面有2個{ 3個}</span><span class="push-ipdatetime"> 10/17 21:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:list( $id, $vocabula...後面接;跟{ 沒看過這種用法= =</span><span class="push-ipdatetime"> 10/17 21:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:我也沒看過 不過可能{}值機被當成一個區塊跑而已</span><span class="push-ipdatetime"> 10/17 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:直接..</span><span class="push-ipdatetime"> 10/17 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:沒錯 {}是被當成一塊程式碼</span><span class="push-ipdatetime"> 10/17 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:他已經被包在while的{}裡面了 所以沒有意義</span><span class="push-ipdatetime"> 10/17 22:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:如果是short_tag的問題 code應該會直接吐出來</span><span class="push-ipdatetime"> 10/17 22:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:應該是{}不對稱造成parse error</span><span class="push-ipdatetime"> 10/17 22:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:我用搜尋的是3{3}</span><span class="push-ipdatetime"> 10/17 22:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:剛剛測試了一下 的確是short_tag的問題 改成&lt;?php即OK</span><span class="push-ipdatetime"> 10/17 22:45
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:喔喔 有一個{是上面的if</span><span class="push-ipdatetime"> 10/18 00:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:所以是short_tag沒開所以下面的}都不算數了</span><span class="push-ipdatetime"> 10/18 00:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:是阿</span><span class="push-ipdatetime"> 10/18 01:27
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1255772764.A.4DD.html?cacheKey=2148-469788118&amp;offset=4410&amp;offset-sig=c4b2718aaac3c12fe51c3599e5a722a60c1b34f6" data-longpollurl="/v1/longpoll?id=060a148f501caf0fd4ed52a1f7df1c97676dc4aa" data-offset="4410"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea6b8d2c1fae',m:'QtwbNanyy148162mpZUlXDgAOo6xJcnIDRD26uiOtic-1653467496-0-AYOFxXfVzLpJn1kdpFB9tYvbWlWEaa2uCs8PyDQw5OMUjk61+PQoksQdkZdUoU3wjhCoTpQGmXpbfuNbyOprqXtdnwK9lpp87pnvCVgzNxobXss21gzxh1Qpohu9eTtKLYsaePTaW9qOpVJFmwOajSWCK9qEhpE3spUIdlyl/zuL',s:[0x8635c53083,0x3ad6d5cd67],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

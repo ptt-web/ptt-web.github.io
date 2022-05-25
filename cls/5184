@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/6988">
+                <div class="board-name">Cooperstown</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">=HOF</div>
+                <div class="board-title">&#931;[棒球] 批踢踢棒球名人堂</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/5656">
+                <div class="board-name">Football_HOF</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">=HOF</div>
+                <div class="board-title">&#931;[足球] 批踢踢足球名人堂</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/17762">
+                <div class="board-name">Naismith</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">=HOF</div>
+                <div class="board-title">&#931;[籃球] 批踢踢籃球名人堂</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/4887">
+                <div class="board-name">PingPong_HOF</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">=HOF</div>
+                <div class="board-title">&#931;[桌球] 批踢踢桌球名人堂</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/17868">
+                <div class="board-name">Tennis_HOF</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">=HOF</div>
+                <div class="board-title">&#931;[網球] 批踢踢網球名人堂</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cf20a29b18a90',m:'lSevuWWmH6c.s.RCi2oX7bcYcc0R0jkarBRZkJXRZdA-1653467808-0-AQRUQGoE7Y9+h5a/2Uvl1YtDv68eUQrMQftvlpdBL5FvNdIuSyDneiCcDLtk66PmuaIcXWyj9Lnyr0bHPd10AN25xKqxhFnB6J9dPK4oHzI201Mmu+Cy42+n9krQGztfqA==',s:[0x735b8580cc,0x899530de75],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

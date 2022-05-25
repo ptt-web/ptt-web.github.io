@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] javascrpt和PHP的變數 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="請問各位
+Javascript中的陣列要如何才可以轉給PHP使用？
+看了很多文章都說要用POST來轉換
+所以小弟就試
+$PHP變數 = $HTTP_POST_VARS[變數名稱];
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] javascrpt和PHP的變數">
+<meta property="og:description" content="請問各位
+Javascript中的陣列要如何才可以轉給PHP使用？
+看了很多文章都說要用POST來轉換
+所以小弟就試
+$PHP變數 = $HTTP_POST_VARS[變數名稱];
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1182360674.A.797.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">vSofav (十四度)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] javascrpt和PHP的變數</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun 21 01:31:13 2007</span></div>
+請問各位
+Javascript中的陣列要如何才可以轉給PHP使用？
+看了很多文章都說要用POST來轉換
+
+所以小弟就試
+$PHP變數 = $HTTP_POST_VARS[變數名稱];
+並且存進session中
+
+javascript的程式碼如下
+=======================================
+function ArrayAdd(choose){
+                TagArray.push(choose);
+
+                &lt;?php
+                        $_SESSION[&#39;AddTag&#39;] = array();
+                        $_SESSION[&#39;AddTag&#39;] = $HTTP_POST_VARS[TagArray];
+                ?&gt;
+
+                return false;
+}
+=======================================
+先設定onclick事件 將多個數字用push寫進陣列中
+再用session存起來
+但是到了其他頁echo $_SESSION[&#39;AddTag&#39;] 結果都沒有東西
+（確定都有加上session_start();)
+
+請問各位是程式碼出了什麼問題嗎
+又或者
+有其他方法可以讓PHP和JS的變數互通
+
+謝謝
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.115.230.171
+<span class="f2">※ 編輯: vSofav          來自: 140.115.230.171      (06/21 01:39)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">krama2</span><span class="f3 push-content">:兩種不一樣的東西可以轉換@@</span><span class="push-ipdatetime"> 06/21 04:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:如果這樣能通就是奇蹟了.</span><span class="push-ipdatetime"> 06/21 09:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:例： var strTest = &#39;&lt;?php print $strTest; ?&gt;&#39;;</span><span class="push-ipdatetime"> 06/21 10:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:喔 是JS TO PHP喔 ~ 降子用法更多啦 ~ :)</span><span class="push-ipdatetime"> 06/21 11:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:AJAX的方式是現在比較多人用的~ 再者就是利用URL傳GET值</span><span class="push-ipdatetime"> 06/21 11:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:POST的東西只能用AJAX跟FORM ，不然就用COOKIE吧~</span><span class="push-ipdatetime"> 06/21 11:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:看了一下你的寫法 ~ function裡的變數要用GLOBAL喔</span><span class="push-ipdatetime"> 06/21 11:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:例：global $_SESSION,$HTTP_POST_VAR;</span><span class="push-ipdatetime"> 06/21 11:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:JS的東西不要放進來 .. TagArray.push(choose); &lt;==</span><span class="push-ipdatetime"> 06/21 11:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:原來是JS ... 7 8 9 樓 不用理...</span><span class="push-ipdatetime"> 06/21 11:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:所以你這做法是完完全全不行的 ~~</span><span class="push-ipdatetime"> 06/21 11:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">knockout</span><span class="f3 push-content">:上班中 看的斷斷續續的  莫怪 XD</span><span class="push-ipdatetime"> 06/21 11:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alpe</span><span class="f3 push-content">:原po整個沒搞懂.</span><span class="push-ipdatetime"> 06/21 16:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">foxzgerald</span><span class="f3 push-content">:google://JSON  :)</span><span class="push-ipdatetime"> 06/21 19:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">foxzgerald</span><span class="f3 push-content">:就是在 js 和 php 間傳遞／處理有變數所轉成的字串</span><span class="push-ipdatetime"> 06/21 20:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MrMarcus</span><span class="f3 push-content">:推JSON。除了js/php之間傳遞資料可用，最近Flash的AS和</span><span class="push-ipdatetime"> 06/22 00:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrMarcus</span><span class="f3 push-content">:後端程式交換資料也開始漸漸愛用JSON了:)</span><span class="push-ipdatetime"> 06/22 00:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrMarcus</span><span class="f3 push-content">:不過話說回來，原po那樣的寫法還是不會通的...</span><span class="push-ipdatetime"> 06/22 00:50
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1182360674.A.797.html?cacheKey=2148-469797014&amp;offset=2816&amp;offset-sig=f4efa41ffcb881a7e91418a4e68d3a764ff1ef22" data-longpollurl="/v1/longpoll?id=bb520343c2bfe5358242e95bad5a11597c9154c9" data-offset="2816"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaaee92e1fae',m:'TF08Qh8qGl.gxWCzf8zzQTEHR9_xpD0MwVuUWWQjhGc-1653467507-0-ATYKxJT/I9x82rd0fldvMPjNy3+3UCBEufHLJyLaNFEvX5wc1HvNN1SmyVZPtU9instSQ9UAwYRHHfnu6R2b30vjTJKLbCU5fmrkYgDTW0TQ5gAI+nLk8ZRDzbyt8vJYy/reTT0ykythMrEsNnzumeC/bgyZXmHjtu9KeyHIz4TM',s:[0x8768dec32c,0xdf95db2b7c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

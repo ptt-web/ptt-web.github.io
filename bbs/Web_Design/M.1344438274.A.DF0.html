@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 如何監控INPUT 元素被javascript改值 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="不好意思，推文要推有點多所以占一點版面討論
+因為在HTML裡面的id元素也是動態產生的
+可能input 欄位的id 叫做 c[0-9]_stream[0-9]_[mpg4,h264]
+括號[ ]  裡面代表是集合 所以可能是 c0_stream0_mpg4 -&gt; c9_stream9_h264
+幾百種排列組合。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 如何監控INPUT 元素被javascript改值">
+<meta property="og:description" content="不好意思，推文要推有點多所以占一點版面討論
+因為在HTML裡面的id元素也是動態產生的
+可能input 欄位的id 叫做 c[0-9]_stream[0-9]_[mpg4,h264]
+括號[ ]  裡面代表是集合 所以可能是 c0_stream0_mpg4 -&gt; c9_stream9_h264
+幾百種排列組合。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1344438274.A.DF0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tao2tw (smile_ting)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 如何監控INPUT 元素被javascript改值</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Aug  8 23:04:31 2012</span></div>
+不好意思，推文要推有點多所以占一點版面討論
+
+因為在HTML裡面的id元素也是動態產生的
+
+可能input 欄位的id 叫做 c[0-9]_stream[0-9]_[mpg4,h264]
+括號[ ]  裡面代表是集合 所以可能是 c0_stream0_mpg4 -&gt; c9_stream9_h264
+幾百種排列組合。
+
+後端在assgin value的javascript 經過很多人maintain , 每個人用法都不太懂。
+
+有可能先透過 object , 去做 each 再去取到 input 欄位的 id .
+也有可能透過hard code 暴力法,去assgin 給這些id value.
+
+我無法透過一個 確定的元素名稱 比如說 c0_stream0_mpg4 去搜尋這個關鍵字
+看看js裡面有誰更改到他。
+
+而且js檔,經過很多人的改版,是在是很大,function也是亂call一通。追起來有點花時間
+
+才想說有沒有類似中斷點的東西
+我知道 firebug裡面可以設定某一行中斷點，程式執行到指定的那一行，就會停住。
+並且可以找到是誰call他的，追溯回去。
+
+感謝tony大～有些方法我沒試過 我會try看看。
+但是看起來感覺上，還是要先在js裡面找出哪些code是可能改到他
+或者是有一個確定的變數名稱？
+
+<span class="f2">※ 引述《tonytonyjan (南洋大兜蟲)》之銘言：
+</span><span class="f6">: 1. input tag 如果有 id 或 class 就用這些字去搜尋附近的程式碼，直接閱讀。
+</span><span class="f6">: 2. 如果你是用 IE，試試 onpropertychange，他可以偵測到用程式改變 value 的事件。
+</span><span class="f6">:    （oninput 和 onchange 辦不到）
+</span><span class="f6">:     範例：請用 IE 打開 <a href="https://jsfiddle.net/cye78/" target="_blank" rel="noreferrer noopener nofollow">http://jsfiddle.net/cye78/</a> 並且按 F12 開啟主控台
+</span><span class="f6">: 3. 善用瀏覽器的開發人員工具，以 chrome 為例，他的開發人員工具可設中斷點，
+</span><span class="f6">:    也能用監看式，看區域變數值等等，盡量不要傻呼呼用 alert()。
+</span>
+
+
+
+<span class="f6">: ※ 引述《tao2tw (smile_ting)》之銘言：
+</span><span class="f6">: : 請問一下各位，目前在maintain一份很臭又長的code
+</span><span class="f6">: : 前端html網頁 有很多input欄位
+</span><span class="f6">: : 後面js網頁 程式碼 很長又亂，
+</span><span class="f6">: : 有一些input 欄位的value 想要知道他被哪個javascript function更改
+</span><span class="f6">: : 有比較好的偵測方法嗎？
+</span><span class="f6">: : 類似 設定中斷點這樣的方法呢？
+</span><span class="f6">: : 謝謝.....
+</span><span class="f6">: : 我只想到暴力法,每一個function enter的時候 都alert該input欄位value出來看。
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 119.77.136.156
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:jquery用.live()去綁onchange事件</span><span class="push-ipdatetime"> 08/08 23:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:1. live() 1.7 之後已經過時，改用 on()</span><span class="push-ipdatetime"> 08/08 23:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:2. 就說 onchange 偵測不到用程式改變屬性的事件了</span><span class="push-ipdatetime"> 08/08 23:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tao2tw</span><span class="f3 push-content">:onchange 我印象是要user 透過網頁去 trigger才會觸發。</span><span class="push-ipdatetime"> 08/09 00:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ghchen</span><span class="f3 push-content">:<a href="https://tinyurl.com/9rpu25f" target="_blank" rel="noreferrer noopener nofollow">http://tinyurl.com/9rpu25f</a> 也許有幫助 fyi</span><span class="push-ipdatetime"> 08/09 01:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:喔,他要即時偵測喔,那只能靠瀏覽器的套件解決了</span><span class="push-ipdatetime"> 08/09 08:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tao2tw</span><span class="f3 push-content">:後來還是找不到有效方法，還是慢慢設中斷點 縮小範圍</span><span class="push-ipdatetime"> 08/10 22:53
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1344438274.A.DF0.html?cacheKey=2149-475918373&amp;offset=2597&amp;offset-sig=a1f03fe609641a5dcddb1b1d004014a9606c563b" data-longpollurl="/v1/longpoll?id=4da32edc4d39f29ed124f7a42b37bdd15d447b58" data-offset="2597"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9f53f34afe5',m:'WECc1qMzZVDm1B38Wyy3guogjjp51SI0YWQ37zAhHFI-1653467477-0-ARTHoKulm0e0O7ONtzTLCRc+CU4fUbYqWkxd29Z0MsSzGg9J53NHz51hBlgXg7UhHdmOVLFexGLwZNN4UIfkriYGElEgE4XZk6miTIfuDQuJeMh9mZDmkx5a9jFemwPxXcDC0ru9Cop2xi7g3OOeZwA6n0FnuJ0qK1B+921NuTnR',s:[0x46b8637ff5,0xe372a91afe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

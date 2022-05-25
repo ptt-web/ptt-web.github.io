@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] SQL語法的使用 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="        我應該說我回這篇是在開玩笑，還是我是說認真的呢，(思)
+        應該一半一半吧......既然都寫了就貼出來了...XDXDXD
+        其實我是覺得你可以用 &#34;分類;子分類;書名&#34;這樣的字串
+        然後用TreeSet存 , 這樣也是可以達到用分類子分類排序的效果 ,
+        要取用的時候用iterator掃一次就可以找到你想要的了...
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] SQL語法的使用">
+<meta property="og:description" content="        我應該說我回這篇是在開玩笑，還是我是說認真的呢，(思)
+        應該一半一半吧......既然都寫了就貼出來了...XDXDXD
+        其實我是覺得你可以用 &#34;分類;子分類;書名&#34;這樣的字串
+        然後用TreeSet存 , 這樣也是可以達到用分類子分類排序的效果 ,
+        要取用的時候用iterator掃一次就可以找到你想要的了...
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1191921629.A.784.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">TonyQ (骨頭)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] SQL語法的使用</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Oct  9 17:20:27 2007</span></div>
+
+<span class="f2">※ 引述《forkome (丁丁是個人材)》之銘言：
+</span><span class="f6">:              種類       子種類      書名
+</span><span class="f6">:   第一筆     小說       科幻        丁丁大戰哥吉拉
+</span><span class="f6">:   第二筆     小說       科幻        星際大戰丁丁
+</span><span class="f6">:   第三筆     小說       愛情        丁丁再愛我一遍
+</span><span class="f6">:   第四筆     雜誌       生活        學丁丁減肥
+</span><span class="f6">:   第五筆     雜誌       語言        跟丁丁學英文
+</span><span class="f6">: 目前小弟想把他放進三維陣列裡來使用
+</span><span class="f6">: array[0] = 小說  array[0][0] = 科幻   array[0][0][0] = 丁丁大戰哥吉拉
+</span><span class="f6">: array[1] = 雜誌  array[0][1] = 愛情   array[0][1][0] = 丁丁再愛我一遍
+</span><span class="f6">: 小弟使用的方式是
+</span><span class="f6">: rs1 = select distinct 種類 from book
+</span><span class="f6">: while(rs1.next()){
+</span><span class="f6">:    array[i] = rs1.getString(1)
+</span><span class="f6">:    ↑把種類放進一維陣列
+</span><span class="f6">:    rs2 = select distinct 子種類 from book where 種類 = rs1.getString(1)
+</span><span class="f6">:    while(rs1.next()){
+</span><span class="f6">:       array[i][j] = rs2.getString(1)
+</span><span class="f6">:       ↑把子種類放進二維陣列
+</span><span class="f6">:       rs3 = select * from book where 種類=rs1.getString(1) and 子種類 = rs2.getString(1)
+</span><span class="f6">:       while(rs3.next()){
+</span><span class="f6">:          array[i][j][k] = rs3.getString(1)
+</span><span class="f6">:          ↑把書名放進三維陣列
+</span><span class="f6">:       }
+</span><span class="f6">:    }
+</span><span class="f6">: }
+</span><span class="f6">: 為了將結果放進陣列裡，使用了三個RecordSet，若量大的話
+</span><span class="f6">: 會跑的很慢，上面是小弟使用的方式，不知有沒有比較快的方式
+</span><span class="f6">: 使用的語言是java，主要是想減少RecordSet的使用
+</span><span class="f6">: 還是說~~沒錯，只能那樣用
+</span>
+        我應該說我回這篇是在開玩笑，還是我是說認真的呢，(思)
+        應該一半一半吧......既然都寫了就貼出來了...XDXDXD
+
+        其實我是覺得你可以用 &#34;分類;子分類;書名&#34;這樣的字串
+        然後用TreeSet存 , 這樣也是可以達到用分類子分類排序的效果 ,
+
+        要取用的時候用iterator掃一次就可以找到你想要的了...
+
+
+        唯一的缺點大概是同樣的分類/子分類/底下不能有同樣的書名吧，
+        對於有些書只有版本號不同的時候可能有點不方便。
+
+        當然 這還是能改的 ,很多方式就是了...:P
+
+
+        至於底下這個無聊作 看看就好(核爆)
+
+────────────────────────────────
+
+  /*懶得做資料庫....用array替代先...*/
+  String[][] list={
+        {&#34;小說&#34;,&#34;科幻&#34;,&#34;丁丁大戰哥吉拉&#34;},
+         {&#34;小說&#34;,&#34;科幻&#34;,&#34;星際大戰丁丁&#34;} ,
+         {&#34;小說&#34;,&#34;愛情&#34;,&#34;丁丁再愛我一遍&#34;} ,
+         {&#34;雜誌&#34;,&#34;生活&#34;,&#34;丁丁再愛我一遍&#34;} ,
+         {&#34;雜誌&#34;,&#34;語言&#34;,&#34;跟丁丁學英文&#34;}
+       };
+  BookList listBook=new BookList();
+
+  for(int i=0;i&lt;list.length;i++){
+
+    BookObj objBook=new BookObj(list[i][0],list[i][1],list[i][2]);
+    listBook.addBook(objBook);
+
+  }
+  printBook(listBook.getTypeBook(&#34;小說&#34;));
+  printBook(listBook.getSubTypeBook(&#34;小說&#34;,&#34;科幻&#34;));
+
+────────────────────────────────
+  static public void printBook(BookObj[] array){
+    for(int i=0;i&lt;array.length;i++){
+        System.out.println(array[i].m_strType+&#34;:&#34;
+                +array[i].m_strSubtype+&#34;:&#34;+array[i].m_strName);
+    }
+  }
+────────────────────────────────
+
+class BookObj{
+  String m_strType;
+  String m_strSubtype;
+  String m_strName;
+  public BookObj(String strType,String strSubtype,String strName){
+    m_strType=strType;
+    m_strSubtype=strSubtype;
+    m_strName =strName;
+  }
+}
+
+/*考慮到可能會有查找分類項目的需求 ,建立一個有分類的結構.*/
+class BookList{
+  private HashMap m_setBook;
+  BookList(){
+    m_setBook=new HashMap();
+  }
+
+  boolean addBook(BookObj rBook){
+    if(!m_setBook.containsKey(rBook.m_strType)){  //分類
+    m_setBook.put(rBook.m_strType,new HashMap());
+    }
+    HashMap setSubType= (HashMap)m_setBook.get(rBook.m_strType);
+
+    if(!setSubType.containsKey(rBook.m_strSubtype)){  //子分類
+    setSubType.put(rBook.m_strSubtype,new ArrayList());
+    }
+
+    ArrayList aryBooks= (ArrayList)setSubType.get(rBook.m_strSubtype);
+    //aryBooksadd(rBook);
+    aryBooks.add(rBook);
+    return true;
+  }
+
+  BookObj getBook(String strBookname){
+    Iterator irType=m_setBook.values().iterator();
+
+    BookObj retBook;
+    while(irType.hasNext()){
+    Iterator irSubType= ((HashMap)irType.next()).values().iterator();
+    while(irSubType.hasNext()){
+      retBook = findBook((ArrayList)irSubType.next(),strBookname);
+      if(retBook!=null) return retBook;
+    }
+    }
+
+    return null;
+  }
+
+  BookObj[] getTypeBook(String strType){
+
+    ArrayList listRet=new ArrayList();
+       if(m_setBook.containsKey(strType)){
+
+    Iterator irSubType= ((HashMap)m_setBook.get(strType)).values().iterator();
+    while(irSubType.hasNext()){
+      listRet.addAll(((ArrayList)irSubType.next()));
+    }
+    }
+    return transToBook(listRet);
+  }
+
+
+  BookObj[] getSubTypeBook(String strType,String strSubType){
+    ArrayList listRet=new ArrayList();
+       if(m_setBook.containsKey(strType)){
+       HashMap setSubType=(HashMap)m_setBook.get(strType);
+      if(setSubType.containsKey(strSubType)){
+        listRet.addAll((ArrayList)setSubType.get(strSubType));
+      }
+    }
+    return transToBook(listRet);
+  }
+
+  private BookObj[] transToBook(ArrayList listBook)
+  {
+    BookObj[] aryBook=new BookObj[listBook.size()];
+
+    for(int i=0;i&lt;listBook.size();i++){
+    aryBook[i]=(BookObj)listBook.get(i);
+    }
+    return aryBook;
+  }
+  private BookObj findBook(ArrayList listBook,String strBookname){
+    for(int i=0;i&lt;listBook.size();i++){
+    BookObj bookTmp=(BookObj)listBook.get(i);
+    if(bookTmp.m_strName.equals(strBookname)) return bookTmp;
+    }
+
+    return null;
+  }
+  BookObj getBook(String strType,String strSubType,String strBookname){
+
+    if(!m_setBook.containsKey(strType)) return null;  //分類不存在
+    if(!((HashMap)m_setBook.get(strType)).containsKey(strSubType))
+        return null;  //子分類不存在
+
+    ArrayList listSubtypeBook = (ArrayList)
+        ((HashMap)(m_setBook.get(strType))).get(strSubType);
+
+    return findBook(listSubtypeBook,strBookname);
+  }
+  int size(){
+    int size=0;
+    Iterator irType=m_setBook.values().iterator();
+
+    while(irType.hasNext()){
+    Iterator irSubType= ((HashMap)irType.next()).values().iterator();
+    while(irSubType.hasNext()){
+      size+=  ((ArrayList)irSubType.next()).size();
+    }
+    }
+    return size;
+  }
+
+}
+
+--
+<span class="f6">　▄▅▆▇███▇▆▅▄▃</span>　　　　　　<span class="f0 b7">　　╰┼╯─╮ ╮　　　　　     　</span>
+　<span class="f6">◥███████████◣</span>　　　　　<span class="f0 b7">　　╰┼╯＝│=│　　　　　　　　 </span>
+<span class="f6">◥██████</span><span class="f0 b6">───────</span><span class="f6">◣</span>　　　　<span class="f4 b7">＊．　╯　  ╯ ╯ の　物　語　．＊</span>
+<span class="f6">　◥███████</span><span class="f0 b6">──────</span><span class="f6">◣　～　◢◣　　　　　　　　　　　　 ◢◣</span>
+<span class="f6">　◥██████</span><span class="f0 b6">───────</span><span class="f6">◤　　　◥◤</span><span class="f0 hl">＊</span>　　空白的世界．翼   <span class="f0 hl">＊</span><span class="f6">◥◤</span>
+<span class="f6">  　◥██</span><span class="b6">▁▂▃▄▅▆▇███</span>▆▅▄▃▂▂<span class="f6">～</span><span class="f0 hl">telnet://tony1223.no-ip.info</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 220.132.59.247
+<span class="f2">※ 編輯: TonyQ           來自: 220.132.59.247       (10/09 17:22)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">forkome</span><span class="f3 push-content">:對於經驗不足的我，幫助良多，非常謝謝你用心的回我</span><span class="push-ipdatetime"> 10/10 13:16
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1191921629.A.784.html?cacheKey=2149-475784759&amp;offset=6790&amp;offset-sig=4c2918235e1479054a8c63802885fd9857cd73db" data-longpollurl="/v1/longpoll?id=0cad0e94c3ac97da5c347bc6e4559d2f5b44582a" data-offset="6790"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9bda93dafe5',m:'YTMZRHKAyX9wyVs4DIKjVXEqsRqri7i7zbEsPg37YcY-1653467468-0-AYmvXhwlAOy4CksV8TiERdQ1Aa2SbucUR5029BcN+Aq7MXZESKNxwc5KWeKh875X4GFqoAITDeOgPJy8UcddOpPsfzkbA5yht6iMcp6aPQS6RIKbT6neswLfBt4/u2EYaFROKHgoGB7f93l4az26jnzFsZFe086P03c+s3p25/0O',s:[0x1ad1076c61,0xaa20e0b704],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

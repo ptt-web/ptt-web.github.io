@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 請問如何排序？很困難… - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="假設我目前有一個陣列如下
+array(
+  [&#34;AssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;AssetsAbstract&#34;,
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 請問如何排序？很困難…">
+<meta property="og:description" content="假設我目前有一個陣列如下
+array(
+  [&#34;AssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;AssetsAbstract&#34;,
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1325263749.A.48D.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">dowbatw (Dowbatw)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 請問如何排序？很困難…</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Dec 31 00:49:06 2011</span></div>
+假設我目前有一個陣列如下
+array(
+  [&#34;AssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;AssetsAbstract&#34;,
+    [&#34;belong&#34;]=&gt;&#34;BalanceSheet&#34;,
+    [&#34;order&#34;]=&gt;&#34;1.0&#34;
+  }
+  [&#34;BalanceSheet&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;BalanceSheet&#34;
+  }
+  [&#34;OtherFinancialAssetsCurrent&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;OtherFinancialAssetsCurrent&#34;,
+    [&#34;belong&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;14.0&#34;
+  }
+  [&#34;CurrentAssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;belong&#34;]=&gt;&#34;AssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;1.0&#34;
+  }
+  [&#34;HedgingDerivativeAssetsCurrent&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;HedgingDerivativeAssetsCurrent&#34;,
+    [&#34;belong&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;5.0&#34;
+  }
+)
+陣列中每一個元素的belong指定了從屬性，說明屬於哪一個母元素
+order指定了當有多個元素隸屬於同一個母元素時，其各個子元素排列順序為何
+沒有belong時，則原則上相對不主動變動他在陣列中的位置
+我想要讓他排序之後可以變成這樣的順序：
+array(
+  [&#34;BalanceSheet&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;BalanceSheet&#34;
+  }
+  [&#34;AssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;AssetsAbstract&#34;,
+    [&#34;belong&#34;]=&gt;&#34;BalanceSheet&#34;,
+    [&#34;order&#34;]=&gt;&#34;1.0&#34;
+  }
+  [&#34;CurrentAssetsAbstract&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;belong&#34;]=&gt;&#34;AssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;1.0&#34;
+  }
+  [&#34;HedgingDerivativeAssetsCurrent&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;HedgingDerivativeAssetsCurrent&#34;,
+    [&#34;belong&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;5.0&#34;
+  }
+  [&#34;OtherFinancialAssetsCurrent&#34;]=&gt;
+  array {
+    [&#34;label&#34;]=&gt;&#34;OtherFinancialAssetsCurrent&#34;,
+    [&#34;belong&#34;]=&gt;&#34;CurrentAssetsAbstract&#34;,
+    [&#34;order&#34;]=&gt;&#34;14.0&#34;
+  }
+)
+即依據belong和order
+把子元素放在所屬母元素後面
+請各位高手指點一下方向…
+我想破頭都想不出來怎麼搞…
+之所以會有這個問題是因為會計科目的問題
+
+我自己嘗試使用quicksort如下，還是沒辦法順利排出來：
+function quicksort($arr) {
+
+      if(!isset($arr[2])) {
+
+         return $arr;
+
+      }
+
+      $piv = $arr[0];
+
+      $x = $y = array();
+
+      $len = count($arr);
+
+      $i = 1;
+
+      while($i &lt; $len) {
+         if( $arr[$i][&#39;belong&#39;] == $piv[&#39;label&#39;] ) {
+
+            $y[] = $arr[$i];
+
+         }
+
+         else {
+
+            $x[] = $arr[$i];
+
+         }
+
+         ++$i;
+
+      }
+
+      return array_merge(quicksort($x), array($piv),
+quicksort($y));
+
+   }
+
+如蒙解惑，不勝感激！
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 114.46.151.251
+<span class="f2">※ 編輯: dowbatw         來自: 114.46.151.251       (12/31 01:32)
+</span><span class="f2">※ 編輯: dowbatw         來自: 114.46.151.251       (12/31 01:40)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:今天徹夜用了quicksort還是排不出來…</span><span class="push-ipdatetime"> 12/31 10:14
+</span></div><span class="f2">※ 編輯: dowbatw         來自: 114.46.118.220       (12/31 10:35)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kuAIpAI</span><span class="f3 push-content">:你要不要考慮再說清楚點~ 哈哈 我不太懂需求</span><span class="push-ipdatetime"> 12/31 11:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuAIpAI</span><span class="f3 push-content">:是要用 ORDER 數字大小作排序?</span><span class="push-ipdatetime"> 12/31 11:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:謝謝，我想說得更清楚應該是「關聯」「從屬」等…這樣應該</span><span class="push-ipdatetime"> 12/31 12:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:可以了吧？</span><span class="push-ipdatetime"> 12/31 12:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:「樹狀結構」</span><span class="push-ipdatetime"> 12/31 12:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:這不是排序…照我看取出來再依序塞回新陣列比較快。</span><span class="push-ipdatetime"> 12/31 12:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuAIpAI</span><span class="f3 push-content">:你要不要考慮 將資訊弄成 ABC 這種一看就懂得~</span><span class="push-ipdatetime"> 12/31 14:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuAIpAI</span><span class="f3 push-content">:然後 再用相同方式說 你想排成怎樣~ 哈哈</span><span class="push-ipdatetime"> 12/31 14:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuAIpAI</span><span class="f3 push-content">:或許比較幫助 我們了解你想要的</span><span class="push-ipdatetime"> 12/31 14:02
+</span></div>
+想不到我的文意有這麼難理解……
+節錄資產負債表如下圖
+
+資產負債表
+　 資產
+　　 流動資產
+　　　 其他金融資產-流動
+　　　 存貨
+　　　　 存貨-製造業
+　　　　　 存貨-製造業淨額
+　　　　 存貨合計
+　　　 其他流動資產
+　　　　 遞延所得稅資產-流動
+　　　　 受限制資產
+　　　　 其他流動資產-其他
+　　　　 其他流動資產合計
+
+
+假設一個科目就是一個項目
+我所得到的資料裏面可以知道任一個項目的從屬性
+例如「受限制資產」屬於「其他流動資產」
+（即根據前文所述的belong值）
+
+又「其他流動資產」的所有子項目中，
+「受限制資產」排在「其他流動資產-其他」前面
+在「流動資產」的所有子項目中，
+「存貨」排在「其他流動資產」前面
+（即根據前文所述order值）
+
+我現在只能得到各個項目的資料（在一個陣列中）
+要如何重新依照上面所說的從屬關係以及先後順序關係
+重新排列陣列
+
+這就是我的問題，謝謝各位了！
+
+
+<span class="f2">※ 編輯: dowbatw         來自: 114.46.118.220       (12/31 14:17)
+</span><span class="f2">※ 編輯: dowbatw         來自: 114.46.118.220       (12/31 14:19)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bmyone</span><span class="f3 push-content">:項目固定,每個項目給個sort key就可以了</span><span class="push-ipdatetime"> 12/31 21:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">guardlan</span><span class="f3 push-content">:<a href="http://pchome.syspower.com.tw/stock/sto2/sid2498.html" target="_blank" rel="noreferrer noopener nofollow">http://pchome.syspower.com.tw/stock/sto2/sid2498.html</a></span><span class="push-ipdatetime"> 12/31 22:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">guardlan</span><span class="f3 push-content">:你是要做像這樣的表?</span><span class="push-ipdatetime"> 12/31 22:09
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dowbatw</span><span class="f3 push-content">:請教bmyone前輩的微言大意</span><span class="push-ipdatetime"> 12/31 23:33
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1325263749.A.48D.html?cacheKey=2148-469793851&amp;offset=4919&amp;offset-sig=84cf82cf6c7421e3c6faf873a1acc7fee7bd80d3" data-longpollurl="/v1/longpoll?id=f285027eb72e06755ebce256897155aec48f4eca" data-offset="4919"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea658d06af54',m:'I1lP.fySwLz_3CIodrS.7JyDWoOYYraoLD4ai1_jTts-1653467495-0-Ae3AfIYkErWXJFzcJmaiIoMgCY17KL7tdf/Z0WkhAWWuB1za096iGZtnK8uYxneJ7QxI/tmBDtP9NSWDzLXKQ3ptRLKuwD6blb/qH8ee+fiTQBe0KFV4svBO1d0x719cLnSiZ04A11gFwoIFOT8Y78rzpcufhJE43j7FO6uUQyBY',s:[0x6292842f5c,0xacc9ba4c9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

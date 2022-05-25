@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] CSS 在 menu layout 上的配置 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="如果可以接受某種程度的瑕疵, 那可以直接用 CSS 硬上,
+http://jsfiddle.net/5j4LV/
+我試了 firefox6 chrome12 都 ok,
+ie8 不行, 這很正常,
+但可怕的是 firefox8 竟然也不行...
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] CSS 在 menu layout 上的配置">
+<meta property="og:description" content="如果可以接受某種程度的瑕疵, 那可以直接用 CSS 硬上,
+http://jsfiddle.net/5j4LV/
+我試了 firefox6 chrome12 都 ok,
+ie8 不行, 這很正常,
+但可怕的是 firefox8 竟然也不行...
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1313558687.A.F24.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ChowMein (杉斑加紋)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] CSS 在 menu layout 上的配置</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Aug 17 13:24:44 2011</span></div>
+<span class="f2">※ 引述《chonhan ()》之銘言：
+</span><span class="f6">: 想請問版上的各位
+</span><span class="f6">: 小弟最近寫了一個樣板 menu 的部份是參照這個網頁
+</span><span class="f6">: <a href="http://demonstration.abgne.tw/jquery/0015/0015_4.html" target="_blank" rel="noreferrer noopener nofollow">http://demonstration.abgne.tw/jquery/0015/0015_4.html</a>
+</span><span class="f6">: 但有一個地方有點疑問
+</span><span class="f6">: 主要是這網頁的子選項是從整個選單的左側開始排列
+</span><span class="f6">: 網頁上只有四個母選項 所以看起來是還ok
+</span><span class="f6">: 但今天一旦母選項數量多起來 子選項卻只有一兩個選項時
+</span><span class="f6">: 偏右邊的母選項要點他自己的子選項時 就會覺得有點遠
+</span><span class="f6">: 我想問問能否讓子選項以他的母選項下方為中心 然後左右開展呢？
+</span><span class="f6">: 當然 母選項還是從左開始向右排列 只有子選項從他正下方開始左右延展
+</span><span class="f6">: (至於子選項的排列 希望能包在整個選單的寬度內 不會超過選單的寬度)
+</span><span class="f6">: 這部份的CSS, jQuery我不太熟悉 不知道該怎麼樣調整
+</span><span class="f6">: 還請版上各位高手能給予建議 謝謝 :)
+</span>
+如果可以接受某種程度的瑕疵, 那可以直接用 CSS 硬上,
+
+<a href="https://jsfiddle.net/5j4LV/" target="_blank" rel="noreferrer noopener nofollow">http://jsfiddle.net/5j4LV/</a>
+
+我試了 firefox6 chrome12 都 ok,
+ie8 不行, 這很正常,
+但可怕的是 firefox8 竟然也不行...
+
+幾年前的人很喜歡玩這套 XD
+
+編:
+有空就修改了一下, 讓它稍微有實用性,
+firefox8 chrome13 ie8 opera11.5 都 ok
+
+<a href="https://jsfiddle.net/5j4LV/2/" target="_blank" rel="noreferrer noopener nofollow">http://jsfiddle.net/5j4LV/2/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 112.104.185.105
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TonyQ</span><span class="f3 push-content">:firefox8 ...?</span><span class="push-ipdatetime"> 08/17 14:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:firefox 的 nightly 的確是到了 8.0a1 XD</span><span class="push-ipdatetime"> 08/17 17:23
+</span></div><span class="f2">※ 編輯: ChowMein        來自: 112.104.185.105      (08/17 21:09)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">arrack</span><span class="f3 push-content">:firefox 每6個禮拜就改一次版號..很快就會追上chrome了XD</span><span class="push-ipdatetime"> 08/17 23:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">chonhan</span><span class="f3 push-content">:推一個 感謝 :D</span><span class="push-ipdatetime"> 08/19 13:49
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1313558687.A.F24.html?cacheKey=2149-475898888&amp;offset=1614&amp;offset-sig=2ddfe208f137e3e7d6160628cc223eb58c7d32c2" data-longpollurl="/v1/longpoll?id=fc518f437ba757deeb5923bd1938669e6437a972" data-offset="1614"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9f9589aaf5e',m:'.w8UYJz0Vg0wjiqILJJ3Fo_5eRrT4xg7hrcHBb5P_Vg-1653467478-0-AQKMU8u2/5yCzBRad16BhnampDQeA8/y/gxd2N6sASBO/FDHhsZ61jdfONi2VlDvqEFJUQsR6+JWBYKINYyOUbBbdtoKLhliXCOn3PY7QzA/WgMXj1/jECY3ZdoRFJulskD4xSqdc1zN221ImrDW+5EJkZlDqdK2A3Nz4gEGuWZ0',s:[0xefe0b61230,0x2827d0c3a9],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

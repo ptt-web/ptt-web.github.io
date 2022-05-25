@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:roga - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710ce9636f851fae'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Aroga">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Aroga">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Aroga">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:roga" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1213914961.A.9F0.html">Re: [問題] Apache port 可設定超過 65535 嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Apache&#43;port&#43;%E5%8F%AF%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%8E&#43;65535&#43;%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1213914640.A.4E4.html">Re: [問題] Apache port 可設定超過 65535 嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Apache&#43;port&#43;%E5%8F%AF%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%8E&#43;65535&#43;%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1213913710.A.A94.html">Re: [問題] 請問控制IE載入js的順序</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E6%8E%A7%E5%88%B6IE%E8%BC%89%E5%85%A5js%E7%9A%84%E9%A0%86%E5%BA%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1213913114.A.44C.html">Re: [問題] 關於隨解析度變換尺寸的網站圖片</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BC%E9%9A%A8%E8%A7%A3%E6%9E%90%E5%BA%A6%E8%AE%8A%E6%8F%9B%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%B6%B2%E7%AB%99%E5%9C%96%E7%89%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1213912406.A.5CA.html">Re: [問題] Apache port 可設定超過 65535 嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;Apache&#43;port&#43;%E5%8F%AF%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%8E&#43;65535&#43;%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1212469350.A.9CA.html">Re: [問題] 請問剛設計好的網站 如何在奇摩自然搜的到</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%89%9B%E8%A8%AD%E8%A8%88%E5%A5%BD%E7%9A%84%E7%B6%B2%E7%AB%99&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A5%87%E6%91%A9%E8%87%AA%E7%84%B6%E6%90%9C%E7%9A%84%E5%88%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1212419734.A.CF5.html">Re: [問題] 請問剛設計好的網站 如何在奇摩自然搜的到</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%89%9B%E8%A8%AD%E8%A8%88%E5%A5%BD%E7%9A%84%E7%B6%B2%E7%AB%99&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A5%87%E6%91%A9%E8%87%AA%E7%84%B6%E6%90%9C%E7%9A%84%E5%88%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1212401320.A.8D1.html">Re: [問題] 請問剛設計好的網站 如何在奇摩自然搜的到</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%89%9B%E8%A8%AD%E8%A8%88%E5%A5%BD%E7%9A%84%E7%B6%B2%E7%AB%99&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A5%87%E6%91%A9%E8%87%AA%E7%84%B6%E6%90%9C%E7%9A%84%E5%88%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1212398556.A.D16.html">Re: [問題] 請問剛設計好的網站 如何在奇摩自然搜的到</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%89%9B%E8%A8%AD%E8%A8%88%E5%A5%BD%E7%9A%84%E7%B6%B2%E7%AB%99&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A5%87%E6%91%A9%E8%87%AA%E7%84%B6%E6%90%9C%E7%9A%84%E5%88%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1203013216.A.956.html">Re: [問題] 如何強制另存新檔，不以內嵌方式開啟?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E5%BC%B7%E5%88%B6%E5%8F%A6%E5%AD%98%E6%96%B0%E6%AA%94%EF%BC%8C%E4%B8%8D%E4%BB%A5%E5%85%A7%E5%B5%8C%E6%96%B9%E5%BC%8F%E9%96%8B%E5%95%9F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1190590905.A.07E.html">Re: [討論] 關於表格排版和css排版!?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E9%97%9C%E6%96%BC%E8%A1%A8%E6%A0%BC%E6%8E%92%E7%89%88%E5%92%8Ccss%E6%8E%92%E7%89%88%21%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1190590519.A.ABD.html">Re: [討論] 關於表格排版和css排版!?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E9%97%9C%E6%96%BC%E8%A1%A8%E6%A0%BC%E6%8E%92%E7%89%88%E5%92%8Ccss%E6%8E%92%E7%89%88%21%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1190566092.A.21E.html">Re: [討論] 關於表格排版和css排版!?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E9%97%9C%E6%96%BC%E8%A1%A8%E6%A0%BC%E6%8E%92%E7%89%88%E5%92%8Ccss%E6%8E%92%E7%89%88%21%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1190486992.A.021.html">Re: [問題]迴圈產生表格的疑問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E8%BF%B4%E5%9C%88%E7%94%A2%E7%94%9F%E8%A1%A8%E6%A0%BC%E7%9A%84%E7%96%91%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1187359820.A.FAF.html">Re: [問題] CSS+PHP 版面置換</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%2BPHP&#43;%E7%89%88%E9%9D%A2%E7%BD%AE%E6%8F%9B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1181092948.A.1C0.html">Re: [問題] 一個問題請教</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%B8%80%E5%80%8B%E5%95%8F%E9%A1%8C%E8%AB%8B%E6%95%99">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1180844094.A.1FC.html">Re: [問題] 縮圖</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B8%AE%E5%9C%96">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179931375.A.D68.html">Re: [問題] domain name套用在不同ip</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;domain&#43;name%E5%A5%97%E7%94%A8%E5%9C%A8%E4%B8%8D%E5%90%8Cip">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179904705.A.38A.html">Re: hinet煩人的廣告</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3Ahinet%E7%85%A9%E4%BA%BA%E7%9A%84%E5%BB%A3%E5%91%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1179892105.A.F0A.html">Re: hinet煩人的廣告</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">roga</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3Ahinet%E7%85%A9%E4%BA%BA%E7%9A%84%E5%BB%A3%E5%91%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aroga">搜尋看板內 roga 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9636f851fae',m:'GPYgnbaoyBv6OjmU6CaRIUXPAxc.SeQW8rZTDhayOAM-1653467454-0-Ae1MWw1oMIqe/BN6wyczqybNSrJu71WZ+y8HM077pUziaije2KZBy6tzhk4H0SftZ095M0TFcrhQNFZU7sC1nvRXCZXfc1x/6UMlB0Z2w92Uof1wChC21m4WoP13ldY/KK0PrZsk5Gn2FcOlr2OQKWQrhe6++BIg+D5cHvGyIHyf',s:[0x1e0f5b6c08,0x8c8fa73441],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

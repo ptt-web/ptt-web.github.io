@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[Coin] 擴容爭議介紹(偏擴容派觀點) - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我看見在台灣很多人恨不得BCH(BCC)快死掉,也很驚訝為什麼BCH可以撐那麼久
+因為其實國外有不少人是擴容派信仰者,並非如台灣一面倒向BTC的情況
+為什麼會有人想支持BCH?我來說一下擴容鬥爭的故事你們就知道了
+為了避免混淆,我不用BCH V.S. BTC這個字眼,而是用&#34;擴容派&#34;和&#34;結算派&#34;
+BCH只是擴容派其中的鷹派,而且加入了中國礦工的因素,已不純粹
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[Coin] 擴容爭議介紹(偏擴容派觀點)">
+<meta property="og:description" content="我看見在台灣很多人恨不得BCH(BCC)快死掉,也很驚訝為什麼BCH可以撐那麼久
+因為其實國外有不少人是擴容派信仰者,並非如台灣一面倒向BTC的情況
+為什麼會有人想支持BCH?我來說一下擴容鬥爭的故事你們就知道了
+為了避免混淆,我不用BCH V.S. BTC這個字眼,而是用&#34;擴容派&#34;和&#34;結算派&#34;
+BCH只是擴容派其中的鷹派,而且加入了中國礦工的因素,已不純粹
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1501926013.A.EB0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Rokund (....)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[Coin] 擴容爭議介紹(偏擴容派觀點)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Aug  5 17:40:11 2017</span></div>
+我看見在台灣很多人恨不得BCH(BCC)快死掉,也很驚訝為什麼BCH可以撐那麼久
+因為其實國外有不少人是擴容派信仰者,並非如台灣一面倒向BTC的情況
+為什麼會有人想支持BCH?我來說一下擴容鬥爭的故事你們就知道了
+
+為了避免混淆,我不用BCH V.S. BTC這個字眼,而是用&#34;擴容派&#34;和&#34;結算派&#34;
+BCH只是擴容派其中的鷹派,而且加入了中國礦工的因素,已不純粹
+我也會直接用Core來表示結算派,他們也算是很團結,沒什麼內部分岐
+我不用BCH和BTC字眼的另一個原因是,BCH和BTC己經隱含了誰勝誰敗的意思
+勝者為王敗者為寇,人們總會先入為主贏的就是對的,就像如果我要說雍正上位的故事
+我會寫&#34;四爺&#34;和&#34;八爺&#34;鬥爭的故事,而不是寫&#34;雍正&#34;和&#34;胤禩&#34;鬥爭的故事
+雖然只是名字不同但感覺就差很多
+
+揭露:我算是擴容派,想讓台灣多一點擴容派的聲音,文長,Core粉勿入
+
+擴容的事己經吵三年了,Core想要SegWit功能,擴容派想要調整區塊上限
+Core擁有少數算力和多數支持者,擴容派擁有多數算力和少數支持者
+在2016年香港共識其實已讓Core和擴容派同意上SegWit和增加區塊上限功能
+跟後來SegWit2X功能一樣,後來Core又反悔,導致爭議又往後拖延
+也許是到了今年比特幣大爆發,區塊和Mempool整個塞滿導致手續費飆漲
+才讓擴容爭議變得刻不容緩
+
+今年真正的爆點是因為Core不顧共識直接上UASF的關係
+他們決議讓使用者&#34;無條件&#34;在8/1啟動軟分叉UASF
+SegWit2X雖然也包含啟動SegWit,但在投票機制上不兼容UASF
+是後來為了避免分裂,只好出BIP91讓SegWit2X兼容UASF
+
+所以為什麼最後BTC這個名字是被Core派拿走?相信大家都有聽過
+兩個女人爭孩子的故事,國王提議把孩子切成兩半一人一半後
+Core是那個手起刀落直接就要砍下去的那一個媽媽
+擴容派是說&#34;好那我不要孩子了,為了不讓孩子死,孩子給你吧!&#34;的那一個媽媽
+當然擴容派不是完全奉送,而是有條件
+也就是SegWit2X中的2X部分是他們三個月後希望也能啟動的
+可見Core會贏除了因為擁有多數支持者的原因之外
+就是手段和心腸都夠狠。
+
+Core派會有那麼多支持者的原因,是因為他是由中本聰開發團隊一路下來
+以往都是他們在維護程式,然而真正繼承中本聰意志的人
+早就都因為鬥爭而出走了,目前Core多數開發人員受雇於BlockStream公司
+他們的思維早己完全被BlockStream牽著走。BlockStream主推Lighting Network(LN)
+LN這部分我之後會再另開文章說為什麼很多人反對的原因。
+我認為大多數新進者一定都先選擇相信Core,他們也不懂技術
+就會覺得反正Core一定是對的,就像有人會認為大哥一定是對的一樣
+所以Core才會有那麼多支持者,殊不知現在的Core己非當年的Core
+
+我一直在想如果當初擴容派也不顧共識
+率先決定無條件佈署現在所謂BCH版本不知道會如何
+因為理論上要硬上的話,擴容派是比較有優勢的,因為他們有絕大多數算力
+但想不到最後竟然是被Core無條件硬上,用分叉危機逼迫擴容派屈服
+這真的是很不好的示範,如果先硬上就先贏的話,那是不是以後誰不爽都先硬上
+你不想分裂就得屈服於我?
+
+這次的UASF技術上說是軟分叉
+但實際上不論是程式內容和對比特幣的定位都跟中本聰版本差很遠
+程式方面,連Core自己也說,要把SegWit用軟分叉的方式實作
+幾乎必須改每一行程式碼,有寫程式經驗的人就知道
+能backward compatiable是很好,但像這種修改幅度極大只為了
+向下相容的方式,會讓程式留下極為沈重的技術債
+定位方面,中本聰是要讓比特幣成為類似現金的使用方式
+讓每個人與人都能直接交易,而Core則是,要讓比特幣成為結算網路
+人們還要再透過類似銀行的機構才能交易,這跟中本聰的思想完全背道而馳。
+
+反而擴容派提升容量上限雖然是硬分叉,但基本上不用改太多的東西
+因為增加區塊上限也是在中本聰的計劃之中,甚至程式碼中本聰都寫好了
+只是沒merge進去。而對比特幣的定位上來說,擴容的思維也符合中本聰的意志
+
+先不論發展成結算網路是否會成功,結算網路這種已偏離中本聰原本藍圖的東西
+為了避免分裂擴容派都願意接受了
+為什麼原本就是中本聰計劃上的擴容方案,Core會不惜分裂比特幣也不願讓它上架
+這裡我就真的一直搞不懂。
+
+我其實本來也沒有那麼討厭Core,但種種事蹟都讓人覺得
+他們的堅持根本已經到了有點變態的地步了
+其實擴容也沒那麼複雜,只要Core同意SegWit2X就好了,只要Core同意
+事情就會像過去八年來一樣,好像什麼都沒發生,但其實比特幣己經升級過好幾次了
+但很奇怪的是,擴容派都同意上SegWit功能了,為什麼Core堅決不同意2X?
+(註:2X是最高8MB,不是最高2MB,到底多大必須視該區塊裡的轉帳類型而定
+只有極端情況才可能用滿8MB,平均會是3~4M)
+
+Core說法是不想硬分叉,但硬分叉並不可怕,可怕的是沒有共識的硬分叉。
+
+Core又說不想讓礦工控制比特幣發展,這也沒錯,但還是要看事情的本質
+如果說礦工希望把區塊獎勵改回一個區塊給50BTC那當然不能同意。
+但擴容是中本聰本來就在計劃中的事,不能因為計劃剛好對礦工有利就拒絕升級
+更別說擴容又不是世界末日,有需要讓Core把分叉威脅拿來當籌碼嗎?
+就算8MB又如何,中本聰版本還33MB咧,中本聰最原始的版本是33MB
+當初因為使用者少,DDOS成本也低,怕被攻擊才臨時調成1MB
+現在使用者明顯比較多,要填滿區塊必須跟真正的使用者競爭手續費
+付出的成本會很大,所以區塊大小調回去比較不會有什麼問題
+
+其實如果Core同意SegWit2X,那就不會有BCH了,就算有也比現在更師出無名。
+所以把事情搞複雜的絕對是Core,只是大多數人都只看結果不看原因,
+才會有一面倒向BTC的情況
+
+我們就等著看吧~事情還沒有結束
+現在的BTC是擴容派先把SegWit給了Core
+然後擴容派自己說三個月後我要2X功能
+但Core從頭到尾沒有答應擴容派2X功能
+因為Core是用分叉危機來逼擴容派就範的
+Core可沒直接答應擴容派要給2X喔!
+
+Core的態度就是,我根本沒答應要給2X功能呀
+你想要2X可以直接讓比特幣分叉嘛~是你自己要來支持我的
+又不是我求你支持我的,憑什麼跟我要2X功能
+原本我還覺得Core在8/1後可能會乖乖閉嘴,畢竟人家都挾帶大量算力來支持你
+也先給你SegWit了,默默接受就好,至少保住面子了,但顯然不是如此
+最近Core派開始又在論壇上說,2X要延長6月啟動,先發展LN
+甚至有人直接說,SegWit己拿到,該是想辦法讓2X無法實現的時候了
+照這樣下去BTC在11月又有分叉危機了
+
+到時候如果2X真的沒共識...大家有看過投名狀吧~兩軍對峙一方投降
+結果勝利方就趁敗方放下武器之際,過河拆橋就算把所有降兵都殺了也無妨
+反正大哥是對的,在這裡降兵就是那些怕分裂所以才支持SegWit的擴容派
+到時候他們會怎麼逃竄,我都不敢想像。
+
+BCH就是擴容派中當初不肯投降的那票人,最後以中國礦工主導硬分叉分出BCH。
+相信我,我超級討厭中國大礦工,但我更難以直視Core的嘴臉
+我也不希望比特幣分裂,所以對我來說
+如果BCH真的有那麼一點點存在正面的意義
+就是讓SegWit2X中的2X部分順利成真,為2X提供一些籌碼
+別讓Core能毫無顧慮地輕易反對
+
+Core所推崇的Lighting Network有許多人不看好,我本身也是不看好
+目前所有加密貨幣,沒有任何一個使用情境是如同LN的
+有空我會再寫一篇普遍對LN不看好的原因。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 114.40.191.193
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1501926013.A.EB0.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1501926013.A.EB0.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ww578912tw</span><span class="f3 push-content">: LTC之前也有上lighting network 到現在都沒啟用</span><span class="push-ipdatetime"> 08/05 17:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">distal</span><span class="f3 push-content">: 不管怎麼樣 我只在乎價格XD好的都買</span><span class="push-ipdatetime"> 08/05 18:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: LTC只有支援segwit吧，LN一直都還是在測試階段</span><span class="push-ipdatetime"> 08/05 18:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 這就是戰爭。</span><span class="push-ipdatetime"> 08/05 18:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">goldflower</span><span class="f3 push-content">: 在我的認知中 重點在於他們725才開始跟大家說要分這</span><span class="push-ipdatetime"> 08/05 19:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">goldflower</span><span class="f3 push-content">: 東西 根本不是純粹的擴容派</span><span class="push-ipdatetime"> 08/05 19:37
+</span></div>是啊,我第五行就說了
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">goldflower</span><span class="f3 push-content">: 如果他們很早就出來說要搞這個 我想不會這麼混亂吧@@</span><span class="push-ipdatetime"> 08/05 19:37
+</span></div>絕大部分擴容派都投降了
+希望到時候他們別被圍在城裡面,被圍牆上的弓兵亂箭射死
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john801110</span><span class="f3 push-content">: 優文推</span><span class="push-ipdatetime"> 08/05 19:57
+</span></div><span class="f2">※ 編輯: Rokund (114.40.191.193), 08/05/2017 20:05:34
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 結算派=》大家的銀行 擴容派=》自己當銀行</span><span class="push-ipdatetime"> 08/05 20:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 結算派可賺錢，就像銀行一樣</span><span class="push-ipdatetime"> 08/05 20:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wtl</span><span class="f3 push-content">: BCC算是free money 分叉後兩邊都有錢 BCC最大的問題是沒有</span><span class="push-ipdatetime"> 08/05 20:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 以比特幣當初的理念，be your own bank</span><span class="push-ipdatetime"> 08/05 20:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 所以很多早期的比特幣玩家才都會支持擴容</span><span class="push-ipdatetime"> 08/05 20:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wtl</span><span class="f3 push-content">: developer 比特幣是一個正在發展中的東西 吸引不到開發者 BCC</span><span class="push-ipdatetime"> 08/05 20:24
+</span></div>他們很希望Gavin Andresen回來,但應該不太可能
+但我覺得另一最大問題是失去Bitcoin這個招牌
+我現在只希望BCH在2X實現之前別崩崩,之後就算了
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wtl</span><span class="f3 push-content">: 只有死路一條 沒有roadmap 未來只會被越拉越開</span><span class="push-ipdatetime"> 08/05 20:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 反正目前大家的共識就是SegWit2x，以後也會擴容</span><span class="push-ipdatetime"> 08/05 20:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 在這種態勢下，BCC的確沒有太大的存在空間</span><span class="push-ipdatetime"> 08/05 20:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: 假如是以前擴容派和Core派各55波的時候，還有可能發展</span><span class="push-ipdatetime"> 08/05 20:27
+</span></div><span class="f2">※ 編輯: Rokund (114.40.191.193), 08/05/2017 20:43:39
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">petC</span><span class="f3 push-content">: 我覺得你搞錯重點了，現在分叉的BCH之所以被唾棄，是因為它</span><span class="push-ipdatetime"> 08/05 20:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">petC</span><span class="f3 push-content">: 根本不是本來爭論的BCC或BTU，兩邊早就達成妥協，現在這個</span><span class="push-ipdatetime"> 08/05 20:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">petC</span><span class="f3 push-content">: 本質上就是viaBTC為了撈錢趁機搞出來師出無名的偽物</span><span class="push-ipdatetime"> 08/05 20:51
+</span></div>我不想評論太多BCH,搞得我好像在支持它,但兩邊並沒有達成妥協,這是確定的
+基本上是擴容派拿算力去貼Core的冷屁股,而且他們也只能這樣
+不然就要因為UASF分裂了
+<span class="f2">※ 編輯: Rokund (114.40.191.193), 08/05/2017 21:01:31
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">monyo</span><span class="f3 push-content">: 好文推推</span><span class="push-ipdatetime"> 08/05 22:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zhiping8</span><span class="f3 push-content">: core現在不肯11月2MB嗎？如果是，那我被2X騙了</span><span class="push-ipdatetime"> 08/05 22:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Rokund</span><span class="f3 push-content">: Core從來沒說要2X,是BIP91出來之後,他們很少說什麼刺激的</span><span class="push-ipdatetime"> 08/05 22:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Rokund</span><span class="f3 push-content">: 話,但SegWit確定了之後,就開始要把2X部分抛棄了</span><span class="push-ipdatetime"> 08/05 22:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sgg25981393</span><span class="f3 push-content">: 好文！</span><span class="push-ipdatetime"> 08/05 22:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zhiping8</span><span class="f3 push-content">: 那11月的2MB到底會不會有呢？是未知數嗎？還是肯定呢？</span><span class="push-ipdatetime"> 08/05 23:19
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yys310</span><span class="f3 push-content">: 一陣子沒看core竟然贏了？</span><span class="push-ipdatetime"> 08/05 23:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Rokund</span><span class="f3 push-content">: 未知數~現在就是Core到處放話階段,你可以搜Adam Back</span><span class="push-ipdatetime"> 08/05 23:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Rokund</span><span class="f3 push-content">: BlockStream大魔王都在講什麼幹話</span><span class="push-ipdatetime"> 08/05 23:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ZERX</span><span class="f3 push-content">: 好文，謝謝分享，長知識了！</span><span class="push-ipdatetime"> 08/05 23:29
+</span></div>其實目前共識大部分還是有2X,但如果Core那些人繼續說幹話就很難說了
+就像在那裡說忽然出現BCH,那可能BTC就不需要大區塊了
+或者列一堆接下來要實施的計劃,然後就剛好沒有2X之類的...
+<span class="f2">※ 編輯: Rokund (114.40.191.193), 08/05/2017 23:39:21
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 講解推。等看你的LN分析文。</span><span class="push-ipdatetime"> 08/06 00:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">commandoEX</span><span class="f3 push-content">: 問一下segwit到底是啥??</span><span class="push-ipdatetime"> 08/06 01:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 幫回樓上，segregated witness, 隔離見證，是結算派要</span><span class="push-ipdatetime"> 08/06 01:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">john371911</span><span class="f3 push-content">: 發展的方向。</span><span class="push-ipdatetime"> 08/06 01:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">john801110</span><span class="f3 push-content">: 就是要擴容的一種方案吧</span><span class="push-ipdatetime"> 08/06 02:03
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">:  是不是忽略了一件事，要不是有BCH出來，core隨時可以</span><span class="push-ipdatetime"> 08/06 05:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 翻臉不上sigwet2x</span><span class="push-ipdatetime"> 08/06 05:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: BCH其實也是逼迫core的手段，core不認帳已有先例</span><span class="push-ipdatetime"> 08/06 05:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 就算BCH失敗，沒有人出來當屍體就等著被core坑囉</span><span class="push-ipdatetime"> 08/06 05:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">author008</span><span class="f3 push-content">: 原來原po有說了…</span><span class="push-ipdatetime"> 08/06 05:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: core根本沒參加NYA, 所以沒翻臉不翻臉的問題。是core要</span><span class="push-ipdatetime"> 08/06 07:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: 不要吞下去的問題。</span><span class="push-ipdatetime"> 08/06 07:53
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: 總之看好戲就對了。等segwit lock-in 再說</span><span class="push-ipdatetime"> 08/06 07:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zhiping8</span><span class="f3 push-content">: 如果BTC跟著Core走，遲早會出大問題的。拒絕1MB</span><span class="push-ipdatetime"> 08/06 08:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">st945306</span><span class="f3 push-content">: 推詳細解說！想問為什麼segwit會跟原本的be your own ba</span><span class="push-ipdatetime"> 08/06 11:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">st945306</span><span class="f3 push-content">: nk背道而馳？</span><span class="push-ipdatetime"> 08/06 11:11
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: Core的目的就是要把你鎖在1MB裡逼你接受LN啊</span><span class="push-ipdatetime"> 08/06 19:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 個人覺得sigwet本身沒什麼不好 SW可以讓區塊容納更多</span><span class="push-ipdatetime"> 08/06 19:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 交易 只要有確實擴容SW也是利多 這大概也是core版SW</span><span class="push-ipdatetime"> 08/06 19:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 沒啥人支持 SW2x卻取得多數共識的原因吧</span><span class="push-ipdatetime"> 08/06 19:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: segwit反的人不多啦，有擴容的話，要不要用隨你啊</span><span class="push-ipdatetime"> 08/06 20:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">DarkerDuck</span><span class="f3 push-content">: on-chain交易就比特幣的基礎，基礎穩固要玩啥都可以</span><span class="push-ipdatetime"> 08/06 20:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">price20</span><span class="f3 push-content">: 我問一下現在1M很塞 擴2M.可以撐幾年?過幾年又要擴?</span><span class="push-ipdatetime"> 08/06 21:20
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 光是擴容與Segwit連續劇就已經狂拖戲。</span><span class="push-ipdatetime"> 08/06 21:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: LN更複雜，無論好壞大概都很難成功推動</span><span class="push-ipdatetime"> 08/06 21:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 我記得中本聰本來的劇本是有需求就一直HF擴容下去吧</span><span class="push-ipdatetime"> 08/06 21:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">:  反正礦工硬體有摩爾定律撐著不用怕</span><span class="push-ipdatetime"> 08/06 21:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: 當初Mike Hearn ragequit比特幣的時候就說比特幣給core</span><span class="push-ipdatetime"> 08/06 22:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: 帶領註定失敗，跑去加入R3，還說把比特幣賣光光了</span><span class="push-ipdatetime"> 08/06 22:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">eb5137d</span><span class="f3 push-content">: 那時候比特幣大概兩百到四百美元之間</span><span class="push-ipdatetime"> 08/06 22:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 擴容影響主要不是受限摩爾定律的算力。</span><span class="push-ipdatetime"> 08/06 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 而是區塊鏈容量暴增速度。算力其實不是</span><span class="push-ipdatetime"> 08/06 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 用於處理交易，而是爭奪記帳權。</span><span class="push-ipdatetime"> 08/06 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 真正記帳用的算力不管容量幾MB差異不大。</span><span class="push-ipdatetime"> 08/06 22:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 錢包要下載整個區塊鏈，所以當初不希望</span><span class="push-ipdatetime"> 08/06 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 容量成長太快。怕個人電腦無法下載。</span><span class="push-ipdatetime"> 08/06 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 家用傳統硬碟容量其實跟不太上摩爾定律</span><span class="push-ipdatetime"> 08/06 22:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zhiping8</span><span class="f3 push-content">: 擴容和家用傳統硬碟有什麼關係呢？</span><span class="push-ipdatetime"> 08/07 07:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 比特幣每區塊容量跟年增區塊總容量多寡有關</span><span class="push-ipdatetime"> 08/07 09:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 以前大概幾GB-數十GB連SSD小筆電也能下載</span><span class="push-ipdatetime"> 08/07 09:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 甚至手機也能下載完整的鏈。</span><span class="push-ipdatetime"> 08/07 09:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">allen139443</span><span class="f3 push-content">: 喔喔 感謝kuma大 糾正了抱了2年的錯誤觀念囧</span><span class="push-ipdatetime"> 08/07 13:28
+</span></div>k大說得沒錯,區塊大小主要影響到的是硬碟而不是算力
+雖然區塊變大會讓個人跑比特幣程式更吃力
+但我覺得應該要再想清楚
+一般人跑Full Node對整個比特幣生態的意義是什麼?
+我認為自從算力中心化之後,一般人跑Full Node就沒什麼意義了
+整個比特幣生態重要的是礦場,交易所,錢包商(Bitpay,Trezor,MyCelium...等等)
+由他們去跑Full Node即可,他們自然有一定程度互相牽制互相監督的效果
+
+我問幾個問題就好
+如果這個世界忽然間所有的礦場都關閉,會發生什麼事?
+沒人挖礦,沒出塊就沒辦法轉帳,比特幣變得沒辦法用
+那如果所有交易所瞬間全關閉呢,會發生什麼事?
+會有流動性恐慌,大家怕換不回法幣
+那如果錢包商瞬間全關閉服務呢?
+一堆人沒辦法轉帳,一定哀鴻遍野
+最重要的問題是,那如果所有使用者跑的Full Node全關閉呢?
+我可以告訴你,什麼事都不會發生,比特幣照樣活得好好的
+
+有些人讓Bitcoin Cor跑在樹莓派
+覺得好棒棒連樹莓派都可以跑
+覺得自己為比特幣的去中心化做出貢獻而沾沾自喜
+為此讓區塊限制在1MB也無所謂,殊不知那只不過是虛幻的虛容心
+自從沒人在用Bitcoin Core挖礦之後
+使用者跑的Full Node早就一點都不重要
+有你沒有你都不會改變比特幣中心化的程度
+
+Security,Decentralization,Scalability
+以目前技術來說,只能三選二
+我也很希望三者能同時存在,但如果一定要我選
+我覺得犧牲一點點去中心化是可以接受的
+而不是為了假的去中心化,去犧牲真正的Scalability
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zhiping8</span><span class="f3 push-content">: 錢包不需要下載區塊容量，所以和硬碟大小無關</span><span class="push-ipdatetime"> 08/07 21:11
+</span></div><span class="f2">※ 編輯: Rokund (114.40.183.93), 08/07/2017 22:21:35
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 礦場關掉的想定很有意思，其實中國那邊就自稱</span><span class="push-ipdatetime"> 08/07 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 如果中國政府不爽，封印他那邊70-80%算力</span><span class="push-ipdatetime"> 08/07 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 可以一夜搞死比特幣……</span><span class="push-ipdatetime"> 08/07 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 因為原本比特幣在算力暴跌後，難度調整超級久。</span><span class="push-ipdatetime"> 08/07 22:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 這種疑慮讓比特幣想要變成全球幣蒙上陰影。</span><span class="push-ipdatetime"> 08/07 22:57
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 現在BCC分叉就搞了新招，他難度回升一樣很慢</span><span class="push-ipdatetime"> 08/07 22:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 他難度降低卻很快。只要半天每出塊就能降20%難度</span><span class="push-ipdatetime"> 08/07 22:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 所以不怕分叉後，算力太低時無法出塊</span><span class="push-ipdatetime"> 08/07 22:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kuma660224</span><span class="f3 push-content">: 連降幾次沒有限制。但回升慢，容易吸引算力短暫投靠</span><span class="push-ipdatetime"> 08/07 23:01
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1501926013.A.EB0.html?cacheKey=2148-145144127&amp;offset=16264&amp;offset-sig=213a2c2e43899b25519e5da9c3032bb5f42c6e01" data-longpollurl="/v1/longpoll?id=626a36a8458c2a841f947a054285d0b191e711d6" data-offset="16264"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce23e6dd52098',m:'EvcGmZMpOQQewMpKJ9_Ql7_Rtsa2SYAZhg6NC_TLLPs-1653467161-0-Ae3LyCgFsrqMJq8189GGmMhkbfQ7dTAQS8GV2RYEGx0YPOHVp7J55SMJvbEu39XfKHLiKuhl0PrViSjuNFezxBW9BMSsmrseyqT0b59sI9CQ8BFbAQGQ3mmznZ+DE6BTV2dUTD3aw8xlDLN6R8kyOlCBx8WRc9aCruIHrqsLFzG/',s:[0x4b6d31c353,0x207bf62813],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

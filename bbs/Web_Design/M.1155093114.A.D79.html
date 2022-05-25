@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] asp.net網頁如何include另一個.aspx網頁? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="最近在作網頁
+有一個部份會在很多頁中用到
+所以想把那一個部份寫成一個module
+然後在其他頁做類似php的#include anotherfile.php
+那樣把檔案include進來
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] asp.net網頁如何include另一個.aspx網頁?">
+<meta property="og:description" content="最近在作網頁
+有一個部份會在很多頁中用到
+所以想把那一個部份寫成一個module
+然後在其他頁做類似php的#include anotherfile.php
+那樣把檔案include進來
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1155093114.A.D79.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jayd (LearnWhatIWant)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] asp.net網頁如何include另一個.aspx網頁?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Aug  9 11:16:04 2006</span></div>
+
+最近在作網頁
+有一個部份會在很多頁中用到
+所以想把那一個部份寫成一個module
+然後在其他頁做類似php的#include anotherfile.php
+那樣把檔案include進來
+
+不知道asp.net要怎麼做到這樣
+自己Google了一下
+有找到用Response.WriteFile()
+可是這個只能用在寫靜態網頁或client端script
+
+請問 asp.net要怎麼做到這樣Q_Q
+
+還是說我只能先寫好一份
+然後copy paste &amp; copy paste Orz...
+
+感謝你的回答
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.112.217.8
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1155093114.A.D79.html?cacheKey=2149-475746846&amp;offset=555&amp;offset-sig=939dbadbc79697087aad83d802a8e2744111baad" data-longpollurl="/v1/longpoll?id=63f617ef63ebc887176ece5191807803f2e52a69" data-offset="555"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9aae9c9807e',m:'kDY6_gnpI3wGxs9IoSPx7mFT7KFa9_Bm_m3sNj6Dy08-1653467465-0-AWVtgeac1AQ2wzEYDpmTDUJwA4OdpJ2qkoZXPGZReAtnUlZMHGR+kNeRbZ8u9g7FW30GycvlvXvEGLgQUKd9ANl9tkncPWTyaKBjq7Y1wyU/RBEbz3CDyNhIco6yUyXyGQmrVbYhUh5Mj57N4IzmrisZGlk5TtD6I/eCZAqKwQdJ',s:[0x0a30cc04b7,0x52282545e7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 讀不出本地端的首頁 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我試了一下：
+Apache 2.2.4 + php 4.4.4手動安裝在windows xp sp2
+1. 手動安裝php4.4.4
+很簡單，去www.php.net下載php4.4.4的zip package，然後解壓縮到C:\
+然後把目錄名稱改成c:\php
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 讀不出本地端的首頁">
+<meta property="og:description" content="我試了一下：
+Apache 2.2.4 + php 4.4.4手動安裝在windows xp sp2
+1. 手動安裝php4.4.4
+很簡單，去www.php.net下載php4.4.4的zip package，然後解壓縮到C:\
+然後把目錄名稱改成c:\php
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1170671158.A.8E4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">fillano (冒牌費大公)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 讀不出本地端的首頁</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Feb  5 18:25:54 2007</span></div>
+我試了一下：
+Apache 2.2.4 + php 4.4.4手動安裝在windows xp sp2
+
+1. 手動安裝php4.4.4
+
+很簡單，去www.php.net下載php4.4.4的zip package，然後解壓縮到C:\
+然後把目錄名稱改成c:\php
+
+2. 要把php 4.4.4安裝成apache 2.2.4的模組，有一點要注意：
+
+php 4.4.4裡面附的php4apache2.dll不支援apache 2.2.4，所以去
+<a href="https://www.apachelounge.com/download/mods/php4apache2.dll-php4.4.x.zip" target="_blank" rel="noreferrer noopener nofollow">http://www.apachelounge.com/download/mods/php4apache2.dll-php4.4.x.zip</a>
+下載這個zip檔案，然後將裡面的php4apache2.dll解壓縮到c:\php
+
+3.下載apache2.2.4的msi安裝檔，然後安裝起來
+
+4. 將c:\php\php4ts.dll拷貝到c:\windows
+
+5. 把c:\php\php.ini-recommanded改名為php.ini，視需求來修改內容
+
+6. 修改c:\Program Files\Apache Software Foundation\Apache2.2\conf\httpd.conf
+
+在那一堆LoadModule最後加上相關設定：
+LoadModule php4_module c:/php/php4apache2.dll
+AddType application/x-httpd-php .php
+PHPIniDir c:/php
+
+
+這樣就可以執行php了
+
+安裝好apache的時候，預設網頁根目錄（DocumentRoot）是在：
+C:\Program Files\Apache Software Foundation\Apache2.2\htdocs
+
+如果想要用別的目錄（例如D:/htdocs）當作網頁的根目錄，有兩個地方要改：
+1. DocumentRoot &#34;D:/htdocs&#34;
+2. 把
+&lt;Directory &#34;C:/Program Files/Apache Software Foundation/Apache2.2/htdocs&#34;&gt;
+改成
+&lt;Directory &#34;D:/htdocs&#34;&gt;
+
+如果沒改，就會出現權限不符合的錯誤訊息。
+
+我大概這樣就可以安裝成功。當然，用AppServ會比較方便就是了:)
+
+--
+Sapere Aude! 這就是啟蒙運動的口號！
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.128.137.98
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rmilk</span><span class="f3 push-content">:LoadModule 那三行加進去後，apache不給跑。</span><span class="push-ipdatetime"> 02/05 19:20
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rmilk</span><span class="f3 push-content">:然後我換了5.20版本的PHP也是一樣的問題，設定都沒變。</span><span class="push-ipdatetime"> 02/05 19:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fillano</span><span class="f3 push-content">:有另外下載php4apache2.dll嗎？沒有的話我也是不行。</span><span class="push-ipdatetime"> 02/06 00:15
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rmilk</span><span class="f3 push-content">:加了LoadModule和PHPInidir那兩行APACHE無法執行。</span><span class="push-ipdatetime"> 02/06 01:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fillano</span><span class="f3 push-content">:確實按照這個步驟從頭做了嗎？我可以跑喔</span><span class="push-ipdatetime"> 02/06 14:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rmilk</span><span class="f3 push-content">:費大，會不會是跟我裝router有關？</span><span class="push-ipdatetime"> 02/06 19:41
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1170671158.A.8E4.html?cacheKey=2148-469792348&amp;offset=2056&amp;offset-sig=740b60b31e9142193580b7d38281458b95f9f7c9" data-longpollurl="/v1/longpoll?id=eff73aa25d1c05c8af03bc11c4d25d74e3817525" data-offset="2056"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac0ae458a27',m:'b7xjgb3.c.G5kiTPLvjxfCLoBEmIHxC5_ErbD4bPAtI-1653467509-0-ARpigwZh4558GVgZ7BJNQduSUegQgu9leIi+w0Qest0UoNzzwKb7qbXRxNTWS+ir8QNwpu9GJLPfvsf00gIfd5iFsakXSNy4ZPy5ENgMQtWbo7HOeA8fFTBNsJK3lcrmRlZ0H8dGj5kvCVweoivbjdeTqKVLORH3a2ejKvxku+Hp',s:[0x79a919c6ea,0x6c1970eee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

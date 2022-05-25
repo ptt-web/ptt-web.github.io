@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] (繼續閱讀)功能 以explode切? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我想呈現像多數網站 連結列表是文章的前幾行字
+然後再給他連結(繼續閱讀...) 這樣的方式
+我的文章是$content
+$output = explode(&#34; &#34;,$content,10)
+echo $output 只會顯示Array
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] (繼續閱讀)功能 以explode切?">
+<meta property="og:description" content="我想呈現像多數網站 連結列表是文章的前幾行字
+然後再給他連結(繼續閱讀...) 這樣的方式
+我的文章是$content
+$output = explode(&#34; &#34;,$content,10)
+echo $output 只會顯示Array
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1407404069.A.5F6.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Notte (why so serious ?)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] (繼續閱讀)功能 以explode切?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Aug  7 17:34:25 2014</span></div>
+
+我想呈現像多數網站 連結列表是文章的前幾行字
+
+然後再給他連結(繼續閱讀...) 這樣的方式
+
+
+我的文章是$content
+
+$output = explode(&#34; &#34;,$content,10)
+
+echo $output 只會顯示Array
+
+我爬文看相關用法也都是Array 接內容
+
+Array
+(
+[0] =&gt; Hello
+[1] =&gt; world.
+)
+
+是我的用法錯誤 還是要另外加函數呢???
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 61.230.101.185
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1407404069.A.5F6.html" target="_blank" rel="noreferrer noopener nofollow">http://www.ptt.cc/bbs/PHP/M.1407404069.A.5F6.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jhunkyoiori</span><span class="f3 push-content">:mb_substr( $content,起始位置,長度,&#34;utf-8&#34;);</span><span class="push-ipdatetime"> 08/07 17:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:就像樓上給的那樣。原po用的explde的功能是: 把字串依照你</span><span class="push-ipdatetime"> 08/07 17:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:指定的符號切開(你指定的是半形空白)，將切開後的每個部份</span><span class="push-ipdatetime"> 08/07 17:42
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:放進陣列裡，所以你的程式只會把文章裡每個單字放進陣列</span><span class="push-ipdatetime"> 08/07 17:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:如果是沒空白像中文的話，甚至就切都沒切 XD</span><span class="push-ipdatetime"> 08/07 17:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:第三個參數 10 表示最多取 10 個 (還沒取完的都會塞在陣列</span><span class="push-ipdatetime"> 08/07 17:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">hit1205</span><span class="f3 push-content">:的第 10 個元素裡)</span><span class="push-ipdatetime"> 08/07 17:47
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wayway2004</span><span class="f3 push-content">:print_r</span><span class="push-ipdatetime"> 08/07 18:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:有 html tag 看 &lt;p&gt;，純文字看 \r\n 到第幾個</span><span class="push-ipdatetime"> 08/08 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:然後剩下的部分就不要</span><span class="push-ipdatetime"> 08/08 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:然後把它寫成個函數</span><span class="push-ipdatetime"> 08/08 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alog</span><span class="f3 push-content">:ex: $summary = get_summary($content);</span><span class="push-ipdatetime"> 08/08 01:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Notte</span><span class="f3 push-content">:感謝指教 已解決問題 謝謝!</span><span class="push-ipdatetime"> 08/08 10:11
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1407404069.A.5F6.html?cacheKey=2148-469801454&amp;offset=1844&amp;offset-sig=d1af3f52c5bbfb9843e40bfb0022ea2ce059511a" data-longpollurl="/v1/longpoll?id=dac373d4438e1fcd10d9c1026bc1e110ae728607" data-offset="1844"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea1d18d31ec4',m:'jCIAz_fbDNLvVHIwYiNwNl_IwOgZwvKiy_fnzG968Yw-1653467484-0-AVrTvi46aN8s2IsLJ2dZmgX7X9WZd+2RRn90hxyx0ed2fEJkTnpfNn05YKC0sp6LZKT/UJdcrD2AgxHikXspDuS6fUHjqblJE8c/x9SPHrp7vWBsJYnWi+eMx0TscbXBhetX8aPIEfqjkfcThbtC5n7MmLWTR47WcWGvyf01418o',s:[0x179b85b155,0x8bb007f9a1],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

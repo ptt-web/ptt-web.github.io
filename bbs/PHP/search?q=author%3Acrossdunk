@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:crossdunk - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Acrossdunk">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Acrossdunk">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:crossdunk" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1514386307.A.51E.html">[請益] 請問LARAVEL中DI跟使用static的差異</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8FLARAVEL%E4%B8%ADDI%E8%B7%9F%E4%BD%BF%E7%94%A8static%E7%9A%84%E5%B7%AE%E7%95%B0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1464785609.A.AB6.html">[請益] 如何不用表單把資料POST出去</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E4%B8%8D%E7%94%A8%E8%A1%A8%E5%96%AE%E6%8A%8A%E8%B3%87%E6%96%99POST%E5%87%BA%E5%8E%BB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1440406396.A.3AF.html">[請益] Laravel與CI </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Laravel%E8%88%87CI&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1426216119.A.938.html">[請益] 關於websocket的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BCwebsocket%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1419502466.A.54B.html">[請益] 關於跟其他網站合作的問題(POST/GET)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BC%E8%B7%9F%E5%85%B6%E4%BB%96%E7%B6%B2%E7%AB%99%E5%90%88%E4%BD%9C%E7%9A%84%E5%95%8F%E9%A1%8C%28POST%2FGET%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1416211028.A.725.html">[請益] curl抓回來的亂碼問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;curl%E6%8A%93%E5%9B%9E%E4%BE%86%E7%9A%84%E4%BA%82%E7%A2%BC%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1411003150.A.8AC.html">[請益] 金流要使用什麼形式的呢??</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%87%91%E6%B5%81%E8%A6%81%E4%BD%BF%E7%94%A8%E4%BB%80%E9%BA%BC%E5%BD%A2%E5%BC%8F%E7%9A%84%E5%91%A2%3F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1409805448.A.BC1.html">[請益] 如何產生WORD檔呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E7%94%A2%E7%94%9FWORD%E6%AA%94%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1407289915.A.FAF.html">Re: [請益] 同頁多圖上傳及更改?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%90%8C%E9%A0%81%E5%A4%9A%E5%9C%96%E4%B8%8A%E5%82%B3%E5%8F%8A%E6%9B%B4%E6%94%B9%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1403852797.A.372.html">Re: [請益] 關於劃位系統的概念</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BC%E5%8A%83%E4%BD%8D%E7%B3%BB%E7%B5%B1%E7%9A%84%E6%A6%82%E5%BF%B5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1402544694.A.640.html">[請益] 不好意思，又是FB API的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%EF%BC%8C%E5%8F%88%E6%98%AFFB&#43;API%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1402469555.A.192.html">[請益]連結FB，請問可以看到是哪些人按讚嗎？(非粉絲團)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D%E9%80%A3%E7%B5%90FB%EF%BC%8C%E8%AB%8B%E5%95%8F%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%98%AF%E5%93%AA%E4%BA%9B%E4%BA%BA%E6%8C%89%E8%AE%9A%E5%97%8E%EF%BC%9F%28%E9%9D%9E%E7%B2%89%E7%B5%B2%E5%9C%98%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1401269286.A.8DE.html">[請益] 關於phpmailer 的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">crossdunk</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BCphpmailer&#43;%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Acrossdunk">搜尋看板內 crossdunk 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea045a831ee0',m:'jAS6wK1A1tFfEtu4s6FohoVXT1FcqlFKts7E3dx55Xk-1653467479-0-AYddNAFGlq/S7ShNbvK+SVbfWklGIXlAH0c1kd3iM56JL/rtAf9xxmBbDHLEkpw3PZPWRXgmKRtlg3gPjCbCKZMn3+uwk/ZC3GA9ENoIPmTMxAD+MEe7Q706IVJcV91tL2yRKXJpFUCaRBqro8SA40Jpwoq9v4NfS++68ZxnJvcn',s:[0x3533dfe6a3,0x2ee34649b7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

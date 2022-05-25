@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 問一下這 CSS 寫法哪裡有誤呢 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你有一個#container區塊 裡面只有兩個floated element
+一個為#left_block(floated left)
+一個為#right_block(floated right)
+只有floated element的container區塊大小不會隨之擴展包住子element是很正常的
+解決方法有二:
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 問一下這 CSS 寫法哪裡有誤呢">
+<meta property="og:description" content="你有一個#container區塊 裡面只有兩個floated element
+一個為#left_block(floated left)
+一個為#right_block(floated right)
+只有floated element的container區塊大小不會隨之擴展包住子element是很正常的
+解決方法有二:
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1154270488.A.2FF.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">elan (IE是最棒的瀏覽器)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 問一下這 CSS 寫法哪裡有誤呢</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jul 30 23:15:36 2006</span></div>
+<span class="f2">※ 引述《sweetwords (米虫三號)》之銘言：
+</span><span class="f6">: <a href="http://uflc.nccu.edu.tw:8080/uflc_web/test/web_test/5/css/Css.css" target="_blank" rel="noreferrer noopener nofollow">http://uflc.nccu.edu.tw:8080/uflc_web/test/web_test/5/css/Css.css</a>
+</span><span class="f6">: 這是我現在在寫這一頁的 CSS 編輯
+</span><span class="f6">: <a href="http://uflc.nccu.edu.tw:8080/uflc_web/test/web_test/5/" target="_blank" rel="noreferrer noopener nofollow">http://uflc.nccu.edu.tw:8080/uflc_web/test/web_test/5/</a>
+</span><span class="f6">: 很奇怪的是，為啥下面那張圖跟 1212 數字那一個 &lt;div&gt;
+</span><span class="f6">: 無法包在我主體 container 底下，
+</span>
+你有一個<a href="/bbs/Web_Design/G.2984135473.A.A35.html" target="_blank" rel="noreferrer noopener nofollow">#container</a>區塊 裡面只有兩個floated element
+一個為<a href="/bbs/Web_Design/G.2013158386.A.9AE.html" target="_blank" rel="noreferrer noopener nofollow">#left_block</a>(floated left)
+一個為<a href="/bbs/Web_Design/G.2883582319.A.CA6.html" target="_blank" rel="noreferrer noopener nofollow">#right_bloc</a>k(floated right)
+
+只有floated element的container區塊大小不會隨之擴展包住子element是很正常的
+解決方法有二:
+
+1. 在你的<a href="/bbs/Web_Design/G.2883582319.A.CA6.html" target="_blank" rel="noreferrer noopener nofollow">#right_bloc</a>k之後多加一個block-level的element, 給它clear:both的css屬性
+   (你的網頁應該還沒設計完吧? <a href="/bbs/Web_Design/G.2883582319.A.CA6.html" target="_blank" rel="noreferrer noopener nofollow">#right_bloc</a>k之後應該還有東西要加進去)
+
+2. 或者是, 你不打算在<a href="/bbs/Web_Design/G.2883582319.A.CA6.html" target="_blank" rel="noreferrer noopener nofollow">#right_bloc</a>k之後再加別的markup, 那就利用css加入這個clearing element,
+   加入以下的css到你的stylesheet
+
+<a href="/bbs/Web_Design/G.2984135473.A.A35.html" target="_blank" rel="noreferrer noopener nofollow">#container</a>:after {
+    display: block;
+    clear: both;
+    content: &#34;.&#34;;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+    /* 寫到這裡應該就可以了 為了更保險 我會多寫: */
+    overflow: hidden;
+    text-indent: -1000px;
+}
+
+
+<span class="f6">: 反而跑到外面來了 &gt;&#34;&lt;
+</span><span class="f6">: 在 FF 下看不正常，可是在 IE 下看就正常，到底是我 CSS
+</span>                    ^^^^^^^^^^^^^^^^^^^^
+至目前IE6 並不支援:after選擇器 (IE7有沒有支援,我需要去查證,或版上知道的人請回饋一下)
+而且本來你的<a href="/bbs/Web_Design/G.2984135473.A.A35.html" target="_blank" rel="noreferrer noopener nofollow">#container</a>並無clearing element,
+那為什麼用IE看就沒問題呢? 那是因為你的<a href="/bbs/Web_Design/G.2984135473.A.A35.html" target="_blank" rel="noreferrer noopener nofollow">#container</a>給了width:800px
+這也正好是IE解決floats enclosing的workground (就是給container高度或寬度)
+既然你已設定了<a href="/bbs/Web_Design/G.2984135473.A.A35.html" target="_blank" rel="noreferrer noopener nofollow">#container</a>的寬度 我們也免了去使用一些hacks來解決IE上面的問題
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 220.131.18.85
+<span class="f2">※ 編輯: elan            來自: 220.131.18.85        (07/30 23:19)
+</span><span class="f2">※ 編輯: elan            來自: 220.131.18.85        (07/30 23:27)
+</span><span class="f2">※ 編輯: elan            來自: 220.131.18.85        (07/30 23:28)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sweetwords</span><span class="f3 push-content">:感謝  用第一個方法已經解決了 &lt;0&gt;</span><span class="push-ipdatetime"> 07/30 23:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">weipuyan</span><span class="f3 push-content">:詳細~大推~推推推</span><span class="push-ipdatetime"> 07/31 02:40
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1154270488.A.2FF.html?cacheKey=2149-475745808&amp;offset=2044&amp;offset-sig=833b0a6c3b7ec7a5bf24d383fe91f95b89fdcfbc" data-longpollurl="/v1/longpoll?id=ff04e648af94b285a6b1dc07f6223ca240403f69" data-offset="2044"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c2fa6ef8eb',m:'cnJH.ye.e1X_dyOF86E44b05yUru.G0CWW_HZommrbI-1653467469-0-AYbvaybyUha8SGio/O4phCZagMGzWb+03hZmhc8kMjV4D+3B0vLRPVOPBR85mzoaa0kn7/eHuldpoIjHGrwYqBUhjySeV+e73+PzVrESW0sH3exaaL5aIaKCAXyE4r+kS7uWJploB46Pb8h+rsicosHKUoEtEBPCt5bhKn0ovzel',s:[0xd35194d0ea,0xa385d65e57],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

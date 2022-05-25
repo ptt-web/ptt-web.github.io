@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 關於使用dreamweaver將影片置入網頁中 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="感謝T大幫忙
+但是現在老闆又丟一個問題(他真的很煩)
+我們的網站http://www.music-rm.com/rco/index.html
+下載音樂跟影片的時間
+跟這個網站的音樂http://www.gnflive.com/taipei/index.html
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 關於使用dreamweaver將影片置入網頁中">
+<meta property="og:description" content="感謝T大幫忙
+但是現在老闆又丟一個問題(他真的很煩)
+我們的網站http://www.music-rm.com/rco/index.html
+下載音樂跟影片的時間
+跟這個網站的音樂http://www.gnflive.com/taipei/index.html
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1344849163.A.13E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">anniekinki (我是安絲琪!)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 關於使用dreamweaver將影片置入網頁中</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Aug 13 17:12:39 2012</span></div>
+感謝T大幫忙
+
+但是現在老闆又丟一個問題(他真的很煩)
+我們的網站<a href="http://www.music-rm.com/rco/index.html" target="_blank" rel="noreferrer noopener nofollow">http://www.music-rm.com/rco/index.html</a>
+下載音樂跟影片的時間
+跟這個網站的音樂<a href="http://www.gnflive.com/taipei/index.html" target="_blank" rel="noreferrer noopener nofollow">http://www.gnflive.com/taipei/index.html</a>
+下載時間比起來差很多
+他說為什麼會這樣,是撥放器的問題嗎???
+上面那個網站是用FLASH去做的,是因為這樣嗎?
+
+抱歉這麼多問題~~再麻煩幫忙(跪)
+
+
+<span class="f2">※ 引述《tonytonyjan (南洋大兜蟲)》之銘言：
+</span><span class="f6">: 問題不出 cross-browser，
+</span><span class="f6">: 例如 IE 只有在適合的播放器有安裝時，才會支援 embed。
+</span><span class="f6">: 因為 embed tag 不是標準，而解決這個的辦法就是不要用 embed。
+</span><span class="f6">: 你可以選擇使用 HTML5 或是 Flash Player，只是前者也未必每個瀏覽器都支援，
+</span><span class="f6">: 這時建議你可以找一些有 Flash fallback 功能的 HTML5 播放器，餵狗一下，不難找。
+</span><span class="f6">: 一般播放器有許多事件可綁，你裝上去之後，
+</span><span class="f6">: 寫一點 javascript 去控制，我想必可以解決你第一個問題
+</span><span class="f6">: -- 更新
+</span><span class="f6">: 想到更簡單的 HTML5 解法：
+</span><span class="f6">: 把你的 video 轉成以下格式：
+</span><span class="f6">: mp4, webm, ogg
+</span><span class="f6">: audio 檔案轉成以 下格式：
+</span><span class="f6">: mp3, wav, ogg
+</span><span class="f6">: 寫法像這樣：
+</span><span class="f6">: &lt;video controls=&#34;controls&#34;&gt;
+</span><span class="f6">:   &lt;source src=&#34;movie.mp4&#34; type=&#34;video/mp4&#34; /&gt;
+</span><span class="f6">:   &lt;source src=&#34;movie.ogg&#34; type=&#34;video/ogg&#34; /&gt;
+</span><span class="f6">:   ...
+</span><span class="f6">: &lt;/video&gt;
+</span><span class="f6">: 如此市面上五大瀏覽器都可播放
+</span><span class="f6">: ※ 引述《anniekinki (我是安絲琪!)》之銘言：
+</span><span class="f6">: : 大家好~
+</span><span class="f6">: : 終於找到這裡了~
+</span><span class="f6">: : 想請問各位高手
+</span><span class="f6">: : 我使用dreamweaver製作了一個網站如下
+</span><span class="f6">: : <a href="http://www.music-rm.com/rco/index.html" target="_blank" rel="noreferrer noopener nofollow">http://www.music-rm.com/rco/index.html</a>
+</span><span class="f6">: : (這是用網路抓的版型去套的,所以我其實並不是真的會做網頁)
+</span><span class="f6">: : 在網頁的左下角我置入了影片及音樂
+</span><span class="f6">: : 想問各位高手
+</span><span class="f6">: : 1.有辦法可以讓影片播放時音樂自動停止,影片播放結束後又自動撥放音樂嗎
+</span><span class="f6">: : 2.有人告訴我他的電腦無法看影片,連播放鍵都沒有就是一個黑黑的方型在那邊
+</span><span class="f6">: :   這有可能是什麼問題呢?因為我的電腦看都是沒問題的~
+</span><span class="f6">: : 以上~~
+</span><span class="f6">: : 有請大家幫幫忙了
+</span><span class="f6">: : 估狗好久都沒答案
+</span><span class="f6">: : 我快被老闆煩死了(哭哭)
+</span><span class="f6">: : 謝謝~~~
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 1.164.2.158
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:Sorry, I can&#39;t reproduce your problem.</span><span class="push-ipdatetime"> 08/13 17:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">onininon</span><span class="f3 push-content">:速度跟來源有關吧  你網站的伺服器跟另一個流量不一樣</span><span class="push-ipdatetime"> 08/13 17:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">onininon</span><span class="f3 push-content">:要怎麼比??</span><span class="push-ipdatetime"> 08/13 17:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">anniekinki</span><span class="f3 push-content">:因為我對這個也不太了解~只能來這裡問高手T_T謝謝幫忙T</span><span class="push-ipdatetime"> 08/13 17:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">anniekinki</span><span class="f3 push-content">:所以音樂的下載速度跟我所使用的播放外掛是沒關係的嗎</span><span class="push-ipdatetime"> 08/13 17:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:<a href="https://imgur.com/AXxJU" target="_blank" rel="noreferrer noopener nofollow">http://imgur.com/AXxJU</a> 看起來是你們的比較快</span><span class="push-ipdatetime"> 08/13 17:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">anniekinki</span><span class="f3 push-content">:那這樣到底該怎麼辦呢??</span><span class="push-ipdatetime"> 08/13 18:02
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1344849163.A.13E.html?cacheKey=2149-475918385&amp;offset=2564&amp;offset-sig=0d3638da11537f36c6065a49fcfc37963fd43cd4" data-longpollurl="/v1/longpoll?id=a7029eee2149781a1759ccc71700b0662d119899" data-offset="2564"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9ff7c64afcd',m:'pxyFuBSofYscb8XowTjSWr8jXE20PKOyVTxV3JTHFMM-1653467478-0-ActXt2U0ESjBHuniMYFBYQCDr8LAOyRaCFNYQ6cDrRy6kfTZLiQATu8MskS/90vqPpPGIeJAmM0IxN95I1Z//dXaOmRiQ/XxBjzfg1aiosC7Hpx9B7u2TbOQrb2oivRDaj6fEVx+m0SzklvSxFInYdnT1uqMwserBv2Zk3zz+icM',s:[0x29a13ef90d,0x2abe011b05],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

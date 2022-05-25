@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:santin - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Asantin">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Asantin">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:santin" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1255377467.A.1C3.html">Re: [問題] css排版問題，表格超出div範圍?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;css%E6%8E%92%E7%89%88%E5%95%8F%E9%A1%8C%EF%BC%8C%E8%A1%A8%E6%A0%BC%E8%B6%85%E5%87%BAdiv%E7%AF%84%E5%9C%8D%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1225382640.A.5D9.html">Re: [問題] 解析度的問題?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%A7%A3%E6%9E%90%E5%BA%A6%E7%9A%84%E5%95%8F%E9%A1%8C%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1160291623.A.84E.html">Re: CSS排版,IE跟FF的問題...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3ACSS%E6%8E%92%E7%89%88%2CIE%E8%B7%9FFF%E7%9A%84%E5%95%8F%E9%A1%8C...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157617128.A.2C4.html">Re: [問題] 如何直接看到flash檔名或路徑</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E7%9B%B4%E6%8E%A5%E7%9C%8B%E5%88%B0flash%E6%AA%94%E5%90%8D%E6%88%96%E8%B7%AF%E5%BE%91">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157594379.A.376.html">Re: [問題] css firefox,ie顯示不同</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;css&#43;firefox%2Cie%E9%A1%AF%E7%A4%BA%E4%B8%8D%E5%90%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157195586.A.740.html">Re: [問題] 請問各位網頁設計師</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">santin</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%90%84%E4%BD%8D%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E5%B8%AB">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Asantin">搜尋看板內 santin 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9b5fd97afe5',m:'MG4F567Tk4m7M1.UKFsXFEn.gkxxxhnWELaJ9dIbpuw-1653467467-0-AQdfFkOwJ2Xvr9fOQAb0rrB1Ss6JRj8ffsx12Gbeav6JGeXLlmBjIHt0QIsGFuSYlbGEkhwQBnjJc7z9KiZTseivcWENYCGMBmFZBr3+5pE5G7tDDc6KuHvWlx+rthnflGllqD/3YDdFi2UJQn355XnnQEs/1xDBENOcHpTr3nZz',s:[0x346bb11e64,0xfea3cd7c6d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

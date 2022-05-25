@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:backfish - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Abackfish">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Abackfish">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Abackfish">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:backfish" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1595501500.A.0F2.html">Re: [請益] 請教一各關於PHPMailer的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E6%95%99%E4%B8%80%E5%90%84%E9%97%9C%E6%96%BCPHPMailer%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/23</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1422929353.A.FFE.html">Fw: [討論] Yahoo vs Google</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;Yahoo&#43;vs&#43;Google">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1422878801.A.3FF.html">[請益] 有教pdo的書籍</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E6%95%99pdo%E7%9A%84%E6%9B%B8%E7%B1%8D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1421706171.A.A68.html">Fw: [問題] 幾天google得到？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%B9%BE%E5%A4%A9google%E5%BE%97%E5%88%B0%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1421651584.A.B72.html">[請益] transaction如何寫？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;transaction%E5%A6%82%E4%BD%95%E5%AF%AB%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1384781463.A.0C2.html">Fw: [問題] goole公司名稱顯示map</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;goole%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A8%B1%E9%A1%AF%E7%A4%BAmap">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1384610121.A.CDA.html">Fw: [問題] mobile web的作法</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;mobile&#43;web%E7%9A%84%E4%BD%9C%E6%B3%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1375871356.A.E78.html">Fw: [問題] 網頁技術士證照</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E6%8A%80%E8%A1%93%E5%A3%AB%E8%AD%89%E7%85%A7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1333289864.A.ED1.html">[請益] 統量統計與分析</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%B5%B1%E9%87%8F%E7%B5%B1%E8%A8%88%E8%88%87%E5%88%86%E6%9E%90">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1330519929.A.145.html">[請益] round函數計算錯誤</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;round%E5%87%BD%E6%95%B8%E8%A8%88%E7%AE%97%E9%8C%AF%E8%AA%A4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1325479098.A.C19.html">Re: [請益] 多國語言</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A4%9A%E5%9C%8B%E8%AA%9E%E8%A8%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1325434181.A.D22.html">[請益] 多國語言</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A4%9A%E5%9C%8B%E8%AA%9E%E8%A8%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1325087391.A.4C0.html">[請益] IIS伺服器的轉址設定</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;IIS%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%9A%84%E8%BD%89%E5%9D%80%E8%A8%AD%E5%AE%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1324910049.A.3FC.html">[請益] 一次顯示多張圖片</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%80%E6%AC%A1%E9%A1%AF%E7%A4%BA%E5%A4%9A%E5%BC%B5%E5%9C%96%E7%89%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1323081084.A.DA0.html">Re: [請益] Facebook 取得UserID</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;Facebook&#43;%E5%8F%96%E5%BE%97UserID">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1322822311.A.5FF.html">[請益] 外面網路連不到我的網站</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A4%96%E9%9D%A2%E7%B6%B2%E8%B7%AF%E9%80%A3%E4%B8%8D%E5%88%B0%E6%88%91%E7%9A%84%E7%B6%B2%E7%AB%99">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1322137110.A.044.html">[請益] 如何避免mail被列為垃圾信</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8Dmail%E8%A2%AB%E5%88%97%E7%82%BA%E5%9E%83%E5%9C%BE%E4%BF%A1">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1322052828.A.2F1.html">Fw: [問題] facebook的share縮圖</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;facebook%E7%9A%84share%E7%B8%AE%E5%9C%96">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1318576400.A.033.html">[請益] IIS+FTP</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;IIS%2BFTP">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1252560629.A.95C.html">[請益] 用header下載檔案是否有限制大小</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">backfish</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%94%A8header%E4%B8%8B%E8%BC%89%E6%AA%94%E6%A1%88%E6%98%AF%E5%90%A6%E6%9C%89%E9%99%90%E5%88%B6%E5%A4%A7%E5%B0%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abackfish">搜尋看板內 backfish 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cead17eee1ec4',m:'Czn.ZIATsCOkhavwrRJsDTW9XrG73GBMkuCZn6grCpE-1653467512-0-Abk18sQwvx3V8HJh+BZW9ep/4Tbaj7aQ7eLWeIxdpRmNCL+ABdnXcG0QaHUBbpAfVcZxmJDblCXg5p/Of2ZXT6UCsLSCvUziQ9hOol1a2uddi5lDXBpfognfRov5t7XHMy2bhhsvv/TAFlW/ahETQzALoZcBN/0bqUYJtWUI9FgO',s:[0xc5408c8bcf,0x1e933d1121],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

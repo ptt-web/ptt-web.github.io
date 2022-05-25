@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="分享一下我個人的經驗 我寫了一個銷售系統 當中需要有印製BarCode的功能
+系統是用PHP開發 使用者用瀏覽器登入後台後可以選取註冊了的貨品 並輸入數量
+來列印條碼 我的作法是在銷售系統的Server上安裝一套軟體
+叫Nice Label Suite 我是用V5版 其中Suite包含一套軟體叫 Nice Watch
+他可以檢查你指定的目錄中有沒有新建的指定檔案 然後你可以設多個Watch
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎?">
+<meta property="og:description" content="分享一下我個人的經驗 我寫了一個銷售系統 當中需要有印製BarCode的功能
+系統是用PHP開發 使用者用瀏覽器登入後台後可以選取註冊了的貨品 並輸入數量
+來列印條碼 我的作法是在銷售系統的Server上安裝一套軟體
+叫Nice Label Suite 我是用V5版 其中Suite包含一套軟體叫 Nice Watch
+他可以檢查你指定的目錄中有沒有新建的指定檔案 然後你可以設多個Watch
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1421730819.A.B26.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cea2489371fae'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">rockmanalpha (KIN)</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] PHP可以用條碼機輸出條碼貼紙嗎?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jan 20 13:13:37 2015</span></div>
+<span class="f2">※ 引述《kingoface (Vince)》之銘言：
+</span><span class="f6">: 嗨,大家好
+</span><span class="f6">: 請問PHP可以用條碼機來輸出貼紙嗎?
+</span><span class="f6">: 比如我建立了一個 料號
+</span><span class="f6">: 然後系統產生了一個barcode
+</span><span class="f6">: 接下來想把他利用條碼機印出來.
+</span><span class="f6">: 假設我去買了一台條碼機,驅動都灌好的情況下.
+</span><span class="f6">: 是直接右鍵點列印,就會出來嗎?
+</span><span class="f6">: 還是我要去弄個API接條碼機之類的?
+</span>
+分享一下我個人的經驗 我寫了一個銷售系統 當中需要有印製BarCode的功能
+
+系統是用PHP開發 使用者用瀏覽器登入後台後可以選取註冊了的貨品 並輸入數量
+
+來列印條碼 我的作法是在銷售系統的Server上安裝一套軟體
+
+叫Nice Label Suite 我是用V5版 其中Suite包含一套軟體叫 Nice Watch
+
+他可以檢查你指定的目錄中有沒有新建的指定檔案 然後你可以設多個Watch
+
+然後你可以用Nice Label來設計條碼 然後在條碼上指定變數
+
+像我設計的Label就包含 貨品名稱 貨品編號 還有列印數量
+
+設計好後存檔 在Nice Watch增加一個例行檢查工作 指定用這個Label設計檔
+
+然後指定要檢查那個資料夾 在設定用那個印表機 還有設定檢查到的檔案中(通常是TXT)
+
+那個值對應到那個變數 他還可以設定每次他處理完一個檔案之後可以將這個檔案移到
+
+另一個你設定好的資料夾並重新命名 像我會把處理完的放到另一個資料夾 副檔名改成
+
+.log 方便的點是如果有用戶跑來跟你說條碼沒印出來可以把這個檔案改名丟回去重印
+
+所以我銷售系統要處理的就是將用戶選好要印的貨品生成一個TXT檔 裏面就是長以下這樣
+
+
+1001,貨品1,3
+1002,貨品2,2
+1005,貨品3,1
+
+依序就是產品編號，產品名稱，列印數量 (次序是按你在Nice Watch的設定)
+
+NiceWatch看到這個檔案就會拿去印成條碼 不過像我現在用的條碼是一列3行的
+
+所以如果你只是要列印一個條碼 那另外兩行就會浪費掉
+
+另外你可以在Nice Watch設定多個檢查工作 例如工作1是檢查A資料夾 用A印表機
+
+工作2是檢查B資料夾 用B印表機 這樣有什麼好處?
+
+那就是例如我有兩名同事是會需要列印條碼 我就在那兩名同事的電腦裝上條碼打印機
+
+並共用到網路上 在NiceWatch設定兩個工作 對應到這兩台印表機 檢查不同的資料夾
+
+然後在銷售系統上給用戶選你要列印到那一台印表機 其實就是PHP將生成的檔案丟到
+
+A或者B資料夾 就會用指定好的印表機印出來了~~
+
+______________________________________________________________________________
+
+再補充一下 這套軟體是Windows限定 所以如果你Host PHP的SERVER是Linux的話 你可以
+
+把這套軟體安裝到另一台Windows的機器上 然後用來檢查的資料夾共用到網路上給Linux
+
+那台電腦有可寫入的權限 這樣便能將PHP生成的檔案寫到Windows的用來檢查檔案的共用
+
+資料夾上 達到相同的效果
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 182.93.22.138
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1421730819.A.B26.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1421730819.A.B26.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bcawosxy</span><span class="f3 push-content">: 推分享</span><span class="push-ipdatetime"> 01/20 15:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">twsphere</span><span class="f3 push-content">: 用php fsockopen (如果該列印機有支援網路通訊)</span><span class="push-ipdatetime"> 01/20 17:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">twsphere</span><span class="f3 push-content">: 也可直接丟資料過去列印</span><span class="push-ipdatetime"> 01/20 17:55
+</span></div><span class="f2">※ 編輯: rockmanalpha (182.93.22.138), 01/20/2015 17:58:37
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1421730819.A.B26.html?cacheKey=2148-469801673&amp;offset=2738&amp;offset-sig=77b0e58d3cecc34d1feeaecabdd7d3873da9bfc0" data-longpollurl="/v1/longpoll?id=8d4efb7e52b51228992d1242a87060eb3f39b2fc" data-offset="2738"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea2489371fae',m:'PnouEV2wEovcjxtF9XLLSokxQP55Yrx7daarn4oOa48-1653467485-0-AVC0QLjYfRv4iw+P5t31HHv9SoN7+hs63JuAfBkJU7i8TCgeD6JozB3OnJpBIbtBs6t5GTmOFFCMbsbiZo7s2P7UBAOtFHl4tkWl0cSqM4RTsS3F7DRytqPqY9+wLmZnqKLvenTINAvPSxq03TPF0efXznWWrmKoUYln9LlnVafq',s:[0x883c2b8bcc,0xc55b20ba9b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

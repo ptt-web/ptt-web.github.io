@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] IIS跑asp的一個問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我確實照這篇文的方法作了
+不過還是有問題
+難道我的電腦真的異於常人~&#34;~
+卡在這個部分  兩個方法都試過:
+: （三）同步COM+應用程序所用的IWAM_MYSERVER的密碼
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] IIS跑asp的一個問題">
+<meta property="og:description" content="我確實照這篇文的方法作了
+不過還是有問題
+難道我的電腦真的異於常人~&#34;~
+卡在這個部分  兩個方法都試過:
+: （三）同步COM+應用程序所用的IWAM_MYSERVER的密碼
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1176532340.A.62C.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">xioak (蠢)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] IIS跑asp的一個問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Apr 14 14:32:19 2007</span></div>
+
+我確實照這篇文的方法作了
+
+不過還是有問題
+
+難道我的電腦真的異於常人~&#34;~
+
+卡在這個部分  兩個方法都試過:
+
+<span class="f6">: （三）同步COM+應用程序所用的IWAM_MYSERVER的密碼
+</span><span class="f6">: 同步COM+應用程序所用的IWAM_MYSERVER的密碼，我們有兩種方式可以選擇:一種是使用
+</span><span class="f6">: 組件服務MMC管理單元，另一種是使用IWAM賬號同步腳本synciwam.vbs。
+</span><span class="f6">: 1、使用組件服務MMC管理單元
+</span><span class="f6">: （1）啟動組件服務管理單元：選擇“開始”-&gt;“運行”-&gt;“MMC”，啟動管理控制台,打
+</span><span class="f6">: 開“添加/刪除管理單元”對話框,將“組件服務”管理單元添加上。
+</span><span class="f6">: （2）找到“組件服務”-&gt;“計算機”-&gt;“我的電腦”-&gt;“COM+應用程序”-&gt;“Out-Of-P
+</span>
+我的情形是出現錯誤視窗  錯誤碼是8004E00F
+
+<span class="f6">: rocess Pooled Applications”，右擊“Out-Of-Process Pooled Applications”-&gt;“
+</span><span class="f6">: 屬性”。
+</span><span class="f6">: （3）切換到“Out-Of-Process Pooled Applications”屬性對話框的“標志”選項卡。
+</span><span class="f6">: “此應用程序在下列賬戶下運行”選擇中“此用戶”會被選中，用戶名是“IWAM_MYSERV
+</span><span class="f6">: ER”。這些都是缺省的，不必改動。在下面的“密碼”和“確認密碼”文本框內輸入正
+</span><span class="f6">: 確的密碼“Aboutnt2001”，確定退出。
+</span><span class="f6">: （4）系統如果提示“應用程序被一個以上的外部產品創建。你確定要被這些產品支持嗎
+</span><span class="f6">: ？”時確定即可。
+</span><span class="f6">: （5）如果我們在IIS中將其它一些Web的“應用{序保護”設置為“高（獨立的）”,那
+</span><span class="f6">: 麼這個WEB所使用的COM+應用程序的IWAM賬號密碼也需要同步。重復（1）-（4）步，同
+</span><span class="f6">: 步其它相應Out of process application的IWAM賬號密碼。
+</span><span class="f6">: 2、使用IWAM賬號同步腳本synciwam.vbs
+</span><span class="f6">: 實際上微軟已經發現IWAM賬號在密碼同步方面存在問題， 因此在IIS5的管理腳本中單獨
+</span><span class="f6">: 為IWAM賬號密碼同步編寫了一個腳本synciwam.vbs，這個腳本位于C:\inetpub\adminscr
+</span><span class="f6">: ipts子目錄下（位置可能會因你安裝IIS5時設置的不同而有所變動）。
+</span><span class="f6">: synciwam.vbs腳本用法比較簡單：
+</span><span class="f6">: cscript synciwam.vbs [-v|-h]
+</span><span class="f6">: “-v”參數表示詳細顯示腳本執行的整個過程(建議使用)，“-h”參數用于顯示簡單的
+</span><span class="f6">: 幫助信息。
+</span><span class="f6">: 我們要同步IWAM_MYSERVER賬號在COM+應用程序中的密碼，只需要執行“cscript
+</span><span class="f6">: synciwam.vbs -v”即可，如下：
+</span><span class="f6">: cscript c:\inetpub\adminscripts\synciwam.vbs -v
+</span><span class="f6">: Microsoft (R) Windows Script Host Version 5.6
+</span><span class="f6">: 版權所有(C) Microsoft Corporation 1996-2000。保留所有權利。
+</span><span class="f6">: WamUserName:IWAM_MYSERVER
+</span><span class="f6">: WamUserPass:Aboutnt2001
+</span><span class="f6">: IIS Applications Defined:
+</span><span class="f6">: Name, AppIsolated, Package ID
+</span><span class="f6">: w3svc, 0, {3D14228C-FBE1-11d0-995D-00C04FD919C1}
+</span><span class="f6">: Root, 2,
+</span><span class="f6">: IISHelp, 2,
+</span><span class="f6">: IISAdmin, 2,
+</span><span class="f6">: IISSamples, 2,
+</span><span class="f6">: MSADC, 2,
+</span><span class="f6">: ROOT, 2,
+</span><span class="f6">: IISAdmin, 2,
+</span><span class="f6">: IISHelp, 2,
+</span><span class="f6">: Root, 2,
+</span><span class="f6">: Root, 2,
+</span><span class="f6">: Out of process applications defined:
+</span><span class="f6">: Count: 1
+</span><span class="f6">: {3D14228D-FBE1-11d0-995D-00C04FD919C1}
+</span><span class="f6">: Updating Applications:
+</span><span class="f6">: Name: IIS Out-Of-Process Pooled Applications Key:
+</span><span class="f6">: {3D14228D-FBE1-11D0-995D-00C04FD919C1}
+</span>
+我的情形並沒跑出上面的文字  而是出現Error:8004E00F
+
+
+<span class="f6">: 從上面腳本的執行情況可以看出，使用synciwam.vbs腳本要比使用組件服務的方法更全
+</span><span class="f6">: 面和快捷。它首先從IIS的metabase數據庫找到IWAM賬號&#34;IWAM_MYSERVER&#34;並取出對應的
+</span><span class="f6">: 密碼“Aboutnt2001”，然後查找所有已定義的IIS Applications和Out of process
+</span><span class="f6">: applications，並逐一同步每一個Out of process applications應用程序的IWAM賬號密
+</span><span class="f6">: 碼。
+</span><span class="f6">: 使用synciwam.vbs腳本時，要注意一個問題，那就是在你運行synciwam.vbs之前，必須
+</span><span class="f6">: 保証IIS metabase數據庫與Active Directory中的IWAM密碼已經一致。因為synciwam.vb
+</span><span class="f6">: s腳本是從IIS metabase數據庫而不是從Active Directory取得IWAM賬號的密碼，如果II
+</span><span class="f6">: S metabase中的密碼不正確，那synciwam.vbs取得的密碼也會不正確，同步操作執行到
+</span><span class="f6">: “Updating Applications”系統就會報80110414錯誤，即“找不到應用程序{3D14228D-
+</span><span class="f6">: FBE1-11D0-995D-00C04FD919C1}”。
+</span><span class="f6">: 序三處的密碼已經同步成功，你的ASP程序又可以運行了！
+</span>
+
+我也有去google一下這個錯誤碼  不過找不太到國內的資料
+
+大部分都是大陸的網站 但是我連大陸網站超級龜速
+
+所以不好意思咧  又要請教各位了~
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 218.171.56.180
+<span class="f2">※ 編輯: xioak           來自: 218.171.56.180       (04/14 14:35)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1176532340.A.62C.html?cacheKey=2149-475771425&amp;offset=3685&amp;offset-sig=3b7c2980900a911de45e3827d7a27cb68d038981" data-longpollurl="/v1/longpoll?id=da905720323f02da17a17f7cc0dfeb462f71a7d7" data-offset="3685"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce943ce9fafe5',m:'BVo4C8iBcHixr_LXDWPm9P.rPa8SWvcFCreK8DzKFks-1653467448-0-ATTylEiPVBVhan/FFy64mnVLqw2Q76HjDY8VvpZCF26Kq21+IbN7KA2NlxEA/22Hzh8mtByCYm5bvKKdRrvTbYchR0MR4FwGNatJZMGCfBtzfsbdbZLK5l5KkZz9TgX4a86+k0O3gsyouCg9Dm4wchwkbwGpIocsRJPQ8lyiDgD2',s:[0x67c18df665,0xeaec4941e6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

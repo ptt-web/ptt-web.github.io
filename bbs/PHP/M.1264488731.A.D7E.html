@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[SQL ] 字串回傳查詢 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="作者: JasBG (麥香嚴選奶茶) 看板: Database
+標題: [SQL ] 字串回傳查詢
+時間: Tue Jan 26 12:14:59 2010
+我第一次丟一個號碼
+當他查詢之後會有相關的號碼就是string01[2]
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[SQL ] 字串回傳查詢">
+<meta property="og:description" content="作者: JasBG (麥香嚴選奶茶) 看板: Database
+標題: [SQL ] 字串回傳查詢
+時間: Tue Jan 26 12:14:59 2010
+我第一次丟一個號碼
+當他查詢之後會有相關的號碼就是string01[2]
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1264488731.A.D7E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">JasBG (麥香嚴選奶茶)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[SQL ] 字串回傳查詢</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Jan 26 14:52:09 2010</span></div>
+<span class="f2">※ [本文轉錄自 Database 看板]
+</span>
+作者: JasBG (麥香嚴選奶茶) 看板: Database
+標題: [SQL ] 字串回傳查詢
+時間: Tue Jan 26 12:14:59 2010
+
+我第一次丟一個號碼
+當他查詢之後會有相關的號碼就是string01[2]
+我希望在做一次他的查詢變成另一個表格顯示在網頁上
+我的資料表大概會有5-6次的相關查詢
+
+感覺我在回傳自串做第2次查詢的時候變成空值變得查不出來
+不知道問題出在哪裡
+就連第一次查詢的結果也不會出現
+
+
+
+
+
+          $no = $_POST[&#39;no&#39;];
+          $sql = &#34;SELECT `a`,`b`,`c` FROM `tt` WHERE `a` like &#39;%$no%&#39;&#34;
+
+          $string01[2] = $_POST[&#39;$string01[2]&#39;];
+          $sql = &#34;SELECT `a`,`b`,`c` FROM `tt` WHERE `b` like &#39;$string01[2]&#39;&#34;;
+
+          $result=mysql_query($sql,$link);
+
+        echo &#34;&lt;br&gt;&lt;table border=1&gt;&lt;tr&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;1&lt;/td&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;2&lt;/td&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;3&lt;/td&gt;&lt;tr&gt;&#34;;
+        while($string01 = mysql_fetch_row($result)){
+                echo &#34;&lt;tr&gt;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string01[0].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string01[1].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string01[2].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string01[3].&#34;&lt;/td&gt;&lt;tr&gt;&#34;;
+        }
+        echo &#34;&lt;/table&gt;&#34;;
+                echo &#34;&lt;br&gt;&lt;table border=2&gt;&lt;tr&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;1&lt;/td&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;2&lt;/td&gt;
+                        &lt;td align=\&#34;center\&#34;&gt;3&lt;/td&gt;&lt;tr&gt;&#34;;
+        while($string02 = mysql_fetch_row($result)){
+                echo &#34;&lt;tr&gt;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string02[0].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string02[1].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string02[2].&#34;&lt;/td&gt;&#34;;
+                echo &#34;&lt;td align=\&#34;center\&#34;&gt;&#34;.$string02[3].&#34;&lt;/td&gt;&lt;tr&gt;&#34;;
+        }
+        echo &#34;&lt;/table&gt;&#34;;
+mysql_close($link);
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.223.5.75
+<span class="f2">※ 編輯: JasBG           來自: 61.223.5.75          (01/26 12:16)
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.223.5.75
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1264488731.A.D7E.html?cacheKey=2148-469790256&amp;offset=2096&amp;offset-sig=5574ce86b985f6542b366d0214b64f18acf9bc23" data-longpollurl="/v1/longpoll?id=7892967c90cdb49e3f662fdda7ba76a158397000" data-offset="2096"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea538f29af60',m:'IglUWs4mIetLCK0ymhoERl9M.oLWhIGInLazNbIRgDY-1653467492-0-AU5wN16qD1hptZ/L4o5Hq9/hu9hjJcbL0ktZ9+Bvwf//jQZqmAlqBhj8/Tg9CCJIgC2oV/ib9iDPQO3d6eHZWoaRNs8E/R5gheI8bk+4ToR/6jNZSPTIQT0TK9ArPh32pqW3qUA7i9v9JDhMGOzZzImYyQ7GfsrCUPsU7SaykIie',s:[0x8feb1ca785,0x69992271d2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

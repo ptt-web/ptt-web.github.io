@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 要抓RSS標籤時，標籤是保留字怎麼辦 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="&lt;?php
+$data = &#34;http://blog.goo.ne.jp/satojin71/rss2.xml&#34;;
+$xml = simplexml_load_file($data, &#39;SimpleXMLElement&#39;, LIBXML_NOCDATA);
+$dc = $xml-&gt;channel-&gt;children(&#34;http://purl.org/dc/elements/1.1/&#34;);
+echo &#39;&lt;pre&gt;&#39;;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 要抓RSS標籤時，標籤是保留字怎麼辦">
+<meta property="og:description" content="&lt;?php
+$data = &#34;http://blog.goo.ne.jp/satojin71/rss2.xml&#34;;
+$xml = simplexml_load_file($data, &#39;SimpleXMLElement&#39;, LIBXML_NOCDATA);
+$dc = $xml-&gt;channel-&gt;children(&#34;http://purl.org/dc/elements/1.1/&#34;);
+echo &#39;&lt;pre&gt;&#39;;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1432694668.A.F31.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">newton2009 (Time flies)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 要抓RSS標籤時，標籤是保留字怎麼辦</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed May 27 10:44:24 2015</span></div>
+<span class="f2">※ 引述《poeta (鍵盤詩人)》之銘言：
+</span><span class="f6">:     我要抓的XML是這個：<a href="http://blog.goo.ne.jp/satojin71/rss2.xml" target="_blank" rel="noreferrer noopener nofollow">http://blog.goo.ne.jp/satojin71/rss2.xml</a>
+</span><span class="f6">: 一般的般，是這樣  -&gt;channel-&gt;item-&gt;pubDate  就抓到了。可是這個XML的
+</span><span class="f6">: 時間是包在&lt;dc:date&gt;標籤裡，date是保留字，一打出來，編輯器就報錯，實
+</span><span class="f6">: 作也展示不出來，要怎麼抓到他的日期啊？
+</span>
+&lt;?php
+
+$data = &#34;<a href="http://blog.goo.ne.jp/satojin71/rss2.xml&#34;;" target="_blank" rel="noreferrer noopener nofollow">http://blog.goo.ne.jp/satojin71/rss2.xml&#34;;</a>
+
+$xml = simplexml_load_file($data, &#39;SimpleXMLElement&#39;, LIBXML_NOCDATA);
+
+$dc = $xml-&gt;channel-&gt;children(&#34;<a href="http://purl.org/dc/elements/1.1/&#34;);" target="_blank" rel="noreferrer noopener nofollow">http://purl.org/dc/elements/1.1/&#34;);</a>
+
+echo &#39;&lt;pre&gt;&#39;;
+var_dump($dc);
+echo &#39;&lt;/pre&gt;&#39;;
+
+foreach ($xml-&gt;channel-&gt;item as $item) {
+    $dc2 = $item-&gt;children(&#34;<a href="http://purl.org/dc/elements/1.1/&#34;);" target="_blank" rel="noreferrer noopener nofollow">http://purl.org/dc/elements/1.1/&#34;);</a>
+
+    echo &#39;&lt;pre&gt;&#39;;
+    var_dump($dc2);
+    echo &#39;&lt;/pre&gt;&#39;;
+}
+
+--
+ <span class="f1 b7 hl"> ● </span><span class="hl"> 日本的驕傲                    </span><span class="f3 hl">●          </span><span class="hl">乒乓球放在上面也不會滾動，</span>
+                  <span class="f0 hl">██████████████  </span><span class="hl">            馬路就是這麼平！</span>
+<span class="hl"> </span><span class="b4 hl"> ＊ </span><span class="b1 hl">   </span><span class="hl"> 中華民國</span>
+<span class="hl"> </span><span class="b1 hl">       </span><span class="hl"> 的驕傲   </span><span class="f0 hl">▄    ▄        ▄</span><span class="f3 hl">●</span><span class="f0 hl">▄  ▄          </span><span class="hl">      我們台灣也可以</span>
+                  <span class="f0 hl">██████████████                   </span><span class="f2 hl">ψ FallRed</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 61.222.32.250
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1432694668.A.F31.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1432694668.A.F31.html</a>
+</span><span class="f2">※ 編輯: newton2009 (61.222.32.250), 05/27/2015 10:54:15
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: 研究一下，謝謝。</span><span class="push-ipdatetime"> 06/01 21:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: $x-&gt;{&#34;屬性&#34;}-&gt;val就無往不利了。</span><span class="push-ipdatetime"> 06/01 21:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">poeta</span><span class="f3 push-content">: <a href="http://purl.org/dc/elements/1.1/" target="_blank" rel="noreferrer noopener nofollow">http://purl.org/dc/elements/1.1/</a> 這個是什麼意思啊？</span><span class="push-ipdatetime"> 06/01 22:01
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1432694668.A.F31.html?cacheKey=2148-469801592&amp;offset=1749&amp;offset-sig=814e44602fc2b72b85199bae11a1f2f679ed5881" data-longpollurl="/v1/longpoll?id=4b803738b64d44b4f72a15042d9e7ed11adadc6c" data-offset="1749"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea30482a8aa4',m:'Mt6h2MJRYlsd92tOjBHSmhWeo7YKMhB26TFr5K_kC6k-1653467486-0-AamCki6vjBOges0vZgi2KW4TUUQ2YV3Yq5FO/j2BNkbsFONI1t/WG1+LPt5iABqNSVw+S/ftChTP4H7zn4gOly7jWaIc1RuMOgo71HvKbu5sKISADdbhbUOxa4VrxhBF+PT03j0u7Ovg4MzUU5NwKwh98t6UafPKsnKelxC9QIXb',s:[0xc24eab3247,0x69701c413c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

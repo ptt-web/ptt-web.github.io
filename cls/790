@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/AmericanIdol/index.html">
+                <div class="board-name">AmericanIdol</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;[UKXF] 期待美偶強勢回歸！！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/CSI/index.html">
+                <div class="board-name">CSI</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;CSI:Vegas AXN 5/30起重磅回歸</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/DoctorWho/index.html">
+                <div class="board-name">DoctorWho</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;Doctor Who</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/GreysAnatomy/index.html">
+                <div class="board-name">GreysAnatomy</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;此Grey&#39;s非彼Gray&#39;s</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/HIMYM/index.html">
+                <div class="board-name">HIMYM</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;all legendary comes to an end</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MacGyver/index.html">
+                <div class="board-name">MacGyver</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;[馬蓋先] 中文板全七季發售中</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NCIS/index.html">
+                <div class="board-name">NCIS</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;We love you forever, Cote!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NextTopModel/index.html">
+                <div class="board-name">NextTopModel</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;[ANTM] 雙J合體 開啟X-file真相</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/StarTrek/index.html">
+                <div class="board-name">StarTrek</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;星際爭霸戰</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/TBBT/index.html">
+                <div class="board-name">TBBT</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;[TBBT] Season 7---&gt;10!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/wearefriends/index.html">
+                <div class="board-name">wearefriends</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;Friends 六人行</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/X-files/index.html">
+                <div class="board-name">X-files</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;在一起、在一起</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/YAseries/index.html">
+                <div class="board-name">YAseries</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;YA美劇板 請小心Netflix合購詐騙</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Zombie/index.html">
+                <div class="board-name">Zombie</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">影集</div>
+                <div class="board-title">&#9678;Disney+台灣上線陰屍路！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/CTU-24/index.html">
+                <div class="board-name">CTU-24</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;24: Legacy After Super Bowl</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ER/index.html">
+                <div class="board-name">ER</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;歡迎大家發表劇情</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Glee/index.html">
+                <div class="board-name">Glee</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;             GLEE</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Stargate/index.html">
+                <div class="board-name">Stargate</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;星際之門 Stargate:Original 2017</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Superman/index.html">
+                <div class="board-name">Superman</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;10年時光 Thanks to Smallville:)</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Supernatural/index.html">
+                <div class="board-name">Supernatural</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;超自然檔案S11 _____回歸!? </div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cd9d1eb593402',m:'13e0FrgTpuPwygEbPZigYf_xNoBO_5Hgu_DYZIPwZbE-1653466816-0-AdEqXE2snz6UnZqob67Alli+eMGMpJA1YoDEGbfREfyvMGi7+PF3DMULh0X1+DgKQ2xdbkzc0+HjhZ+KfH8hs8UhhEeOFHTVeBcAh4IYOCeDGmDvoQojbveRSQVPF2qI7w==',s:[0xd4d99a211e,0x9be8f57c6d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

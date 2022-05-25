@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:PsMonkey - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=3&amp;q=author%3APsMonkey">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3APsMonkey">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3APsMonkey">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:PsMonkey" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1328776088.A.28E.html">[翻譯] Cache 教學手冊 (上半部)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E7%BF%BB%E8%AD%AF%5D&#43;Cache&#43;%E6%95%99%E5%AD%B8%E6%89%8B%E5%86%8A&#43;%28%E4%B8%8A%E5%8D%8A%E9%83%A8%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1317865930.A.511.html">Re: [問題] javascript和伺服器的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript%E5%92%8C%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1266425005.A.A42.html">Re: [問題] 新手上路，卻不知路在何處...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF%EF%BC%8C%E5%8D%BB%E4%B8%8D%E7%9F%A5%E8%B7%AF%E5%9C%A8%E4%BD%95%E8%99%95...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1266339310.A.32F.html">Re: [問題] 新手上路，卻不知路在何處...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF%EF%BC%8C%E5%8D%BB%E4%B8%8D%E7%9F%A5%E8%B7%AF%E5%9C%A8%E4%BD%95%E8%99%95...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1260161211.A.A1A.html">Re: [心得] 有效減少 HTTP Request的CSS Sprites</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;%E6%9C%89%E6%95%88%E6%B8%9B%E5%B0%91&#43;HTTP&#43;Request%E7%9A%84CSS&#43;Sprites">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1255067976.A.5F7.html">Re: [請益] 比較 ASP PHP JSP Javascript </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%AF%94%E8%BC%83&#43;ASP&#43;PHP&#43;JSP&#43;Javascript&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1253163440.A.118.html">Re: [問題] jsp的pageContext.forward</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;jsp%E7%9A%84pageContext.forward">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1188327896.A.AA1.html">[問題] &lt;input&gt; 指定目錄而非檔案</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%3Cinput%3E&#43;%E6%8C%87%E5%AE%9A%E7%9B%AE%E9%8C%84%E8%80%8C%E9%9D%9E%E6%AA%94%E6%A1%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1181391198.A.460.html">Re: [問題] 安裝兩個Tomcat在同一台機器</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%AE%89%E8%A3%9D%E5%85%A9%E5%80%8BTomcat%E5%9C%A8%E5%90%8C%E4%B8%80%E5%8F%B0%E6%A9%9F%E5%99%A8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1178307207.A.A0B.html">Re: [建議] 請給我網頁設計版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BB%BA%E8%AD%B0%5D&#43;%E8%AB%8B%E7%B5%A6%E6%88%91%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1178253632.A.882.html">Re: [建議] 請給我網頁設計版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BB%BA%E8%AD%B0%5D&#43;%E8%AB%8B%E7%B5%A6%E6%88%91%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/04</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1175342481.A.D80.html">Re: [請益] 把網頁轉成圖檔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%8A%8A%E7%B6%B2%E9%A0%81%E8%BD%89%E6%88%90%E5%9C%96%E6%AA%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/31</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1170662119.A.8CD.html">Re: [問題] 幾個疑問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%B9%BE%E5%80%8B%E7%96%91%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1170658538.A.F07.html">Re: [問題] 幾個疑問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%B9%BE%E5%80%8B%E7%96%91%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1169296281.A.B82.html">Re: [問題] javascript動態生成button</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript%E5%8B%95%E6%85%8B%E7%94%9F%E6%88%90button">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1168585859.A.BA0.html">Re: [問題] 有人對ruby有研究嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E4%BA%BA%E5%B0%8Druby%E6%9C%89%E7%A0%94%E7%A9%B6%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1164541188.A.D97.html">Re: [問題] 關閉(離開)頁面時，做資料庫的修改</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E9%96%89%28%E9%9B%A2%E9%96%8B%29%E9%A0%81%E9%9D%A2%E6%99%82%EF%BC%8C%E5%81%9A%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%E4%BF%AE%E6%94%B9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1161087683.A.760.html">Re: [問題] 有關Java Script的問題？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E9%97%9CJava&#43;Script%E7%9A%84%E5%95%8F%E9%A1%8C%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1160058813.A.297.html">Re: [問題] XML顯示</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;XML%E9%A1%AF%E7%A4%BA">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">10</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1159112862.A.3A3.html">[情報] 網頁設計之十大熱門程式語言</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">PsMonkey</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E4%B9%8B%E5%8D%81%E5%A4%A7%E7%86%B1%E9%96%80%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3APsMonkey">搜尋看板內 PsMonkey 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce930abba1d5f',m:'GgvP47AH.S6q817bSEZA7wvDT.xypcvbtkVRajqB8Zg-1653467445-0-ASG5xSfPQ0JxD+yCQabBY6p/1yubikR4V5BLDMlHmZN5Q/JJ8ZcXWEFxmY62UWB0/VerzDyuc8iQ7zcosUcT0qMxCr7JujYAbhls8l2UvnuY79hO4cuwLcOFIO37i5MLra3U8ig9pgqCZ9Uw+GcnQxO3Ks/rjCfxBlDJ8hY8CWoF',s:[0x6181569b35,0x8687b52acf],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:taiwancat - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Ataiwancat">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Ataiwancat">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Ataiwancat">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:taiwancat" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1161273658.A.8A4.html">Re: [請益] 有沒有用物件導向寫的簡單討論區</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E7%94%A8%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E5%AF%AB%E7%9A%84%E7%B0%A1%E5%96%AE%E8%A8%8E%E8%AB%96%E5%8D%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1160718569.A.C99.html">[閒聊] OOP的一些守則...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;OOP%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%88%E5%89%87...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1160678070.A.78B.html">Re: [請益] 有關憑證的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%97%9C%E6%86%91%E8%AD%89%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1160544561.A.318.html">Re: [請益] 尋找一個結構化的PHP專案</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%B0%8B%E6%89%BE%E4%B8%80%E5%80%8B%E7%B5%90%E6%A7%8B%E5%8C%96%E7%9A%84PHP%E5%B0%88%E6%A1%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1160540358.A.313.html">Re: [請益] 尋找一個結構化的PHP專案</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%B0%8B%E6%89%BE%E4%B8%80%E5%80%8B%E7%B5%90%E6%A7%8B%E5%8C%96%E7%9A%84PHP%E5%B0%88%E6%A1%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/11</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1160529670.A.1E4.html">Re: [請益] 尋找一個結構化的PHP專案</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%B0%8B%E6%89%BE%E4%B8%80%E5%80%8B%E7%B5%90%E6%A7%8B%E5%8C%96%E7%9A%84PHP%E5%B0%88%E6%A1%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1159984204.A.9A9.html">Re: [請益] 如何將網址列變數轉換為日期時間</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%B0%87%E7%B6%B2%E5%9D%80%E5%88%97%E8%AE%8A%E6%95%B8%E8%BD%89%E6%8F%9B%E7%82%BA%E6%97%A5%E6%9C%9F%E6%99%82%E9%96%93">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1158715662.A.434.html">Re: [問題]關於if...else問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E9%97%9C%E6%96%BCif...else%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1154827058.A.E76.html">[網站]php editors</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E7%B6%B2%E7%AB%99%5Dphp&#43;editors">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1152691707.A.111.html">Re: [問題] 檔案壓縮下載</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%AA%94%E6%A1%88%E5%A3%93%E7%B8%AE%E4%B8%8B%E8%BC%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1151887037.A.9E9.html">Re: [問題]有關 php使用中文檔名存取</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E6%9C%89%E9%97%9C&#43;php%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87%E6%AA%94%E5%90%8D%E5%AD%98%E5%8F%96">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1151832500.A.7C3.html">Re: [請益] session 傳值的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;session&#43;%E5%82%B3%E5%80%BC%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1151172352.A.F90.html">Re: [請益] 關於含0陣列的個數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BC%E5%90%AB0%E9%99%A3%E5%88%97%E7%9A%84%E5%80%8B%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1151063213.A.6A8.html">Re: [請益] php可以跟串列埠通訊嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php%E5%8F%AF%E4%BB%A5%E8%B7%9F%E4%B8%B2%E5%88%97%E5%9F%A0%E9%80%9A%E8%A8%8A%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/23</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">16</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1150816456.A.7A3.html">[分享]0rz.net短網址的php函數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%88%86%E4%BA%AB%5D0rz.net%E7%9F%AD%E7%B6%B2%E5%9D%80%E7%9A%84php%E5%87%BD%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/20</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1150540821.A.CEE.html">Re: [請益] 關於伺服器的開啟或關閉狀態</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%97%9C%E6%96%BC%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%9A%84%E9%96%8B%E5%95%9F%E6%88%96%E9%97%9C%E9%96%89%E7%8B%80%E6%85%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1150455017.A.1A2.html">Re: [請益] 讓User可以看到自己的IP和MAC的PHP網頁？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AE%93User%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84IP%E5%92%8CMAC%E7%9A%84PHP%E7%B6%B2%E9%A0%81%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1147675811.A.F8D.html">Re: [請益] GD函數輸出圖片</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;GD%E5%87%BD%E6%95%B8%E8%BC%B8%E5%87%BA%E5%9C%96%E7%89%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1145336021.A.92D.html">[問題]php5對物件導向的支援程度...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5Dphp5%E5%B0%8D%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E7%9A%84%E6%94%AF%E6%8F%B4%E7%A8%8B%E5%BA%A6...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1145294080.A.532.html">Re: [請益] 有關於Session問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">taiwancat</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E9%97%9C%E6%96%BCSession%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Ataiwancat">搜尋看板內 taiwancat 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea7c0fc18a56',m:'kWn8So3wnfg2mXHpznzbkMUBeqisdToEamlokPkFVdM-1653467498-0-ATa1AqxdaTaiDfz6auW+EEYaXaC8+GgPtBixgBx2xapi1v4P6/7Gl7n3LotK0R2/zBH5jiJIZu6fISHm7PoTP6vdpk8rH33jkALeOB+R4AE9aVmfbJbw4c1lqdYFDWAxuk9wl6qGQKxYZ+cySk1OO4lH/OMv8Oup76OBx1EWVoGO',s:[0x88ba9a3ce5,0x4112a1b7c5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

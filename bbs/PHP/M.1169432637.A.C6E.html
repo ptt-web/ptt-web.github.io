@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] get和post方法變數一樣怎麼獲取get值 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="form用get方法來submit的話，其實你在form裡面的變數就用
+test.php?var1=value1&amp;var2=value2這樣的形式傳給伺服器了
+我想伺服器處理用get傳來變數的時候，如果是由左而右的話，那後來加進去的變
+數應該會蓋過先前的，所以你透過get方法傳過去的變數會蓋過你在action裡面指
+定的。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] get和post方法變數一樣怎麼獲取get值">
+<meta property="og:description" content="form用get方法來submit的話，其實你在form裡面的變數就用
+test.php?var1=value1&amp;var2=value2這樣的形式傳給伺服器了
+我想伺服器處理用get傳來變數的時候，如果是由左而右的話，那後來加進去的變
+數應該會蓋過先前的，所以你透過get方法傳過去的變數會蓋過你在action裡面指
+定的。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1169432637.A.C6E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">fillano (冒牌費大公)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] get和post方法變數一樣怎麼獲取get值</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan 22 10:23:52 2007</span></div>
+form用get方法來submit的話，其實你在form裡面的變數就用
+test.php?var1=value1&amp;var2=value2這樣的形式傳給伺服器了
+我想伺服器處理用get傳來變數的時候，如果是由左而右的話，那後來加進去的變
+數應該會蓋過先前的，所以你透過get方法傳過去的變數會蓋過你在action裡面指
+定的。
+
+php.ini裡面有一個directive，是指定處理變數的順序：
+通常是variables_order = &#34;EGPCS&#34;，表示會依照這個順序處理伺服器傳過來的變數
+E:系統環境變數、G:Get、P:Post、C:Cookie、S:php內建變數
+處理的順序是由左而右，後面會蓋過前面，$_REQUEST裡面的東西已經經過這個順序處理
+過了，所以如果get跟post傳過去同樣名稱的變數，在$_REQUEST裡面只能取到post的
+
+get跟post都是http裡面定義的方法，可以去讀一下RFC2616(http1.1)的文件，看看他
+怎麼定義的
+
+get會受限於系統定義環境變數可使用的空間大小，post則否，所以有較大資料要傳的話
+一般都會用post。
+
+--
+Sapere Aude! 這就是啟蒙運動的口號！
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.128.137.98
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wellwind</span><span class="f3 push-content">:上了一課!!</span><span class="push-ipdatetime"> 01/22 13:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">jimmyken793</span><span class="f3 push-content">:印象中get的字數限制是含網址256字</span><span class="push-ipdatetime"> 01/22 17:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shingoliang</span><span class="f3 push-content">:但是要複製給別人看同一頁就沒辦法吧，那是缺點！</span><span class="push-ipdatetime"> 01/22 19:37
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">shingoliang</span><span class="f3 push-content">:我是指POST。</span><span class="push-ipdatetime"> 01/22 19:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">foxzgerald</span><span class="f3 push-content">:所以搜尋引擎才會用 GET</span><span class="push-ipdatetime"> 01/23 03:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">superGA</span><span class="f3 push-content">:get字數限制各家瀏覽器不一樣 但還是有限制就是了</span><span class="push-ipdatetime"> 01/23 04:10
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1169432637.A.C6E.html?cacheKey=2148-469793276&amp;offset=1612&amp;offset-sig=f68dbbbaee739fdd3ec98d1bf749d814b671e80f" data-longpollurl="/v1/longpoll?id=a7138d4d4d612e4ddcd0bbd628a4e60e5eaf4aba" data-offset="1612"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac08f08b00c',m:'L0JgqpTh._KC3m1Y.34EqoKVrpBSJLeHmC9E7a5bGXQ-1653467509-0-AVZD2GLnyk6g5PPXl2hyynVisCFMfbpZ031EVgwYceeiYDV7t+cFSs37ScZpeOBn5MXPTrS1nmMohJ8XOatOdaByy4rZp4mK5v5UMYsKEbDcdff2xGm9cZLauDoYkAS39skW1UhvHArfsNNo0TtOEdO/k5AvUEYmsvdXzM/KRRJN',s:[0x44ac013e0e,0x2bf6797b0b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

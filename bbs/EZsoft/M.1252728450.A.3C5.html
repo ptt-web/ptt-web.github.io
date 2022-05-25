@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請問] Notepad++ 中使用正規表述式大量修改內文 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="因為你根本沒搞懂這個判斷是，
+.*  指的是不管任何內容，
+所以你用的搜索式：&lt;span class=&#34;green&#34;&gt;.*&lt;/span&gt;
+指的是只要是被 &lt;span class=&#34;green&#34;&gt; 跟 &lt;/span&gt; 包起來的通通都刪除，
+至於要怎麼做看你怎麼想，
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請問] Notepad++ 中使用正規表述式大量修改內文">
+<meta property="og:description" content="因為你根本沒搞懂這個判斷是，
+.*  指的是不管任何內容，
+所以你用的搜索式：&lt;span class=&#34;green&#34;&gt;.*&lt;/span&gt;
+指的是只要是被 &lt;span class=&#34;green&#34;&gt; 跟 &lt;/span&gt; 包起來的通通都刪除，
+至於要怎麼做看你怎麼想，
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1252728450.A.3C5.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">sanbis (方正)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請問] Notepad++ 中使用正規表述式大量修改內文</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Sep 12 12:07:28 2009</span></div>
+<span class="f2">※ 引述《Yukie (Yukie)》之銘言：
+</span><span class="f6">:         手上有一些 HTML 檔案內容如下：
+</span><span class="f6">:             &lt;span class=&#34;green&#34;&gt;一堆被標為綠色的文字&lt;/span&gt;
+</span><span class="f6">:             &lt;span class=&#34;yellow&#34;&gt;一堆被標為黃色的文字&lt;/span&gt;
+</span><span class="f6">:             &lt;span class=&#34;green&#34;&gt;一堆被標為綠色的文字&lt;/span&gt;
+</span><span class="f6">:             &lt;span class=&#34;yellow&#34;&gt;一堆被標為黃色的文字&lt;/span&gt;
+</span><span class="f6">:             &lt;span class=&#34;green&#34;&gt;一堆被標為綠色的文字&lt;/span&gt;
+</span><span class="f6">:             &lt;span class=&#34;yellow&#34;&gt;一堆被標為黃色的文字&lt;/span&gt;
+</span><span class="f6">:         現在希望將綠色文字部份刪除。
+</span><span class="f6">:         我試著在 Notepad++ 中用正規表述式(Regular Expression) 將過程簡化：
+</span><span class="f6">:             搜尋：&lt;span class=&#34;green&#34;&gt;.*&lt;/span&gt;
+</span><span class="f6">:           取代為：
+</span><span class="f6">:         結果，
+</span><span class="f6">:         我是笨蛋！！
+</span><span class="f6">:         整篇文章都不見了，
+</span><span class="f6">:         因為這樣的表述式會找到第一個 &lt;span class=&#34;&#34;green&#34;&gt;
+</span><span class="f6">:         與最後一個 &lt;/span&gt;，並將之中的所有文字全部刪除。
+</span><span class="f6">:         請問我應該怎麼做才能比較快的將綠色部份刪除呢？
+</span><span class="f6">:         謝謝您的指導！
+</span>因為你根本沒搞懂這個判斷是，
+.*  指的是不管任何內容，
+所以你用的搜索式：<span class="f1 hl">&lt;span class=&#34;green&#34;&gt;.*&lt;/span&gt;</span>
+指的是只要是被 <span class="f1 hl">&lt;span class=&#34;green&#34;&gt;</span> 跟 <span class="f1 hl">&lt;/span&gt;</span> 包起來的通通都刪除，
+至於要怎麼做看你怎麼想，
+你是單純把顏色去除？
+還是換個顏色？
+如果是把顏色去除的話請改用搜索式
+<span class="f1 hl">&lt;span class=&#34;green&#34;&gt;(.*)&lt;/span&gt;</span>
+取代為\1
+PS. 這是使用 emeditor 的～ <span class="f1 hl">()</span> 指的是參閱後方設定
+PS2.有 regexp 版
+
+--
+<span class="hl">應徵時</span>
+
+<span class="f3 hl">『老闆你好   我是國立的 』  『有消息會跟你聯絡』</span>
+<span class="f2 hl">『老闆你好   我是私立的 』  『有消息會跟你聯絡』</span>
+<span class="f3 hl">『(把奶放在桌上)  老~~~~~~~闆~~~~~~』 『Amy! 給她個私人秘書職位』</span>
+<span class="f2 hl"> 國立私立尬不過兩粒 </span>                                   <span class="f5 hl">這就是現實</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 123.205.243.215
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Yukie</span><span class="f3 push-content">:謝謝！我在 RegExp 看到 <a href="/bbs/EZsoft/M.1228839870.A.CC3.html" target="_blank" rel="noreferrer noopener nofollow">#19Ffk-p3</a> 這一篇很方便。:)</span><span class="push-ipdatetime"> 09/13 18:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Yukie</span><span class="f3 push-content">:不過可惜在 notepad++ 中跑不出來。</span><span class="push-ipdatetime"> 09/13 18:33
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1252728450.A.3C5.html?cacheKey=2148-738967611&amp;offset=2017&amp;offset-sig=984f9ff87353c8f7fd26e8da8de66f1321cc3c79" data-longpollurl="/v1/longpoll?id=c47bbc6f37b0808e112d9438fff2557c8764c9db" data-offset="2017"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb824bc080a5',m:'CyNYA5GhXQKQe5t53kryMJTqhth2XmKk03NB6wSAyGQ-1653466885-0-AdmwvzB/TIqllcVj6aR7J8teg6rkhHj9vFPhROH0KxQ3ZtiFsce4nKKQEWtfT/F7f+86+bofJcfbmaTelg7PmXZ/YK9c5KayKVRbDzzKK08sMeaPj39AnzlEIXRxGbTedn3k2NjAo0PPGPrA9jDcZ9FpsDV9kB2q6BXr1XYuQxUT',s:[0x8ca983717e,0x89912fbabe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

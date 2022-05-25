@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[心得] Unicode 補完計畫 (UAO) - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="(本篇在某些細節處可能會稍有錯誤，還請指正)
+系統字元編碼 (ASCII、codepage)
+ 很久很久以前，美國人做出電腦時只考慮了歐洲語系，沒考慮到東方語系的問題
+ 當時採用的國別 codepage 方法，編碼只有 8 bit (1 byte)，最多 255 個字
+   前面 127 個字元 (只用 7 bit) 是一些字母、符號和控制字元，相容 ASCII 標準
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[心得] Unicode 補完計畫 (UAO)">
+<meta property="og:description" content="(本篇在某些細節處可能會稍有錯誤，還請指正)
+系統字元編碼 (ASCII、codepage)
+ 很久很久以前，美國人做出電腦時只考慮了歐洲語系，沒考慮到東方語系的問題
+ 當時採用的國別 codepage 方法，編碼只有 8 bit (1 byte)，最多 255 個字
+   前面 127 個字元 (只用 7 bit) 是一些字母、符號和控制字元，相容 ASCII 標準
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1194002853.A.D55.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">mstar (Wayne Su)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[心得] Unicode 補完計畫 (UAO)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Nov  2 19:27:31 2007</span></div>
+(本篇在某些細節處可能會稍有錯誤，還請指正)
+
+<span class="f6 hl">系統字元編碼 (ASCII、codepage)</span>
+
+ 很久很久以前，美國人做出電腦時只考慮了歐洲語系，沒考慮到東方語系的問題
+ 當時採用的國別 codepage 方法，編碼只有 8 bit (1 byte)，最多 255 個字
+
+   前面 127 個字元 (只用 7 bit) 是一些字母、符號和控制字元，相容 ASCII 標準
+
+   後面 127 個字元叫「高位元」(因為用到 8 bit)，則是按 codepage 而不同
+   預設的 codepage 是 437，裏面有西歐語言字母和表格框線的符號
+
+   <a href="https://en.wikipedia.org/wiki/Code_page_437" target="_blank" rel="noreferrer noopener nofollow">http://en.wikipedia.org/wiki/Code_page_437</a>
+
+
+<span class="f6 hl">東亞語言雙字元系統編碼 (DBCS)</span>
+
+ 之後，東亞地區也有很多人在使用電腦了，
+ 不能一直只有英文字，於是各國就開始發展各國語言的編碼系統
+
+ 因東亞文字數量太多，就採用兩個 byte 來組成文字，理論上最多可有 65535 個字
+ (實際上當然不可能有這麼多，因為低位元部分要保留給英文字母和符號，
+  第一碼只能用高位元，否則到時像「at」這樣普通的英文字都被轉成文字)
+
+ 各國各有自己的編碼，台灣香港 BIG5、日本 SJIS、中國 GB、韓國 KS
+
+   例如在 BIG5 裏面「特」字的編碼是 AF53，表示由十六進位的 AF、53 兩碼組成
+   AF (175) 是「&gt;&gt; 」，53 (83) 是「R」
+   在中文模式下，只要發現這兩個字元組合在一起，系統就會將之轉成「特」字
+
+     就因這原理，故常有一些英文軟體畫面的框線在中文模式下變成亂碼
+     (eg. C4C4C4C4「────」 會變成「闡闡」)
+
+   而在 SJIS 裏面，AF53 是「ｯR」，在 GB 裏面是「瘲(的簡體)」
+   也就是說，同樣的碼用不同的系統來看會是不同的字
+
+
+<span class="f6 hl">BIG5</span>
+
+ 台灣在那時其實是「萬&#34;碼&#34;奔騰」，各公司都推出自己的中文編碼，沒有統一
+ 後來資訊公統一弄出了 BIG，到後來卻成了主流
+
+ 當時 BIG5 編碼是非常急就章而推出的，選字根本就是依據教育部的常用字標準，
+ 所以很多字都沒被選入 (eg.堃、煊、喆) 但因變成主流，大家只好將就著用
+ (政府戶政、圖書管理等系統用不同的編碼，所以字數多很多)
+
+
+<span class="f6 hl">Unicode</span>
+
+ 後來有一群人/公司開始發展 unicode，也就是將世界上主要的文字統一編碼
+ 只要電腦支援該編碼、有相對應的字型，就可以看到所有文字
+
+ <a href="https://zh.wikipedia.org/wiki/Unicode" target="_blank" rel="noreferrer noopener nofollow">http://zh.wikipedia.org/wiki/Unicode</a>
+
+   unicode 下的編碼方式和 BIG、GB、SJIS 等傳統編碼 (稱為 DBCS) 有點不一樣，
+   以目前最常用的 UTF8 來說，它按照文字的屬性分為用 1 byte 組成的、
+   用 2 byte 組成的...到用 4 byte 組成的，普通的中文字多是 3 byte 組成
+
+   <a href="https://zh.wikipedia.org/wiki/UTF-8" target="_blank" rel="noreferrer noopener nofollow">http://zh.wikipedia.org/wiki/UTF-8</a>
+
+   有人認為中文、日文、韓文、越南文中很多漢字其實都一樣或是差不多，
+   所以推動 CJKV，以將編入 unicode 中的漢字數量縮減
+
+   <a href="https://zh.wikipedia.org/wiki/CJKV" target="_blank" rel="noreferrer noopener nofollow">http://zh.wikipedia.org/wiki/CJKV</a>
+
+
+ 以上是講古，以下開始講到重點了
+
+<span class="f6 hl">倚天中文</span>
+
+ &#39;80、&#39;90 年代初，佔市場比例最大的是「倚天」的中文系統
+ 倚天當時在 BIG5 保留的「造字區」放了一些部首、符號、日文假名、俄文字母
+ 在 DOS 時代很常被使用者用到，累積了不少用到那些字的文件資料
+
+
+<span class="f6 hl">萬惡的淵藪、一切問題的起源：微軟</span>
+
+ 時代繼續發展，<span class="f3 hl">萬惡的微軟</span>推出 Windows，將正體中文編為 codepage 950
+ 但是，<span class="f1 hl">沒把前述造字區中的日文、俄文字母以及某些符號收進去！</span>
+ 之後一直到 Win2003，除了新增了歐元符號以外，還是沒日文字
+ (沒用 Vista ，不知道 Vista 的情形)
+
+ <a href="https://zh.wikipedia.org/wiki/Big5" target="_blank" rel="noreferrer noopener nofollow">http://zh.wikipedia.org/wiki/Big5</a>
+
+ 這就是今天發生這個問題的起源！
+
+   話說微軟放了造字區的符號進正體中文 CP 950，但就是日文假名、俄文字母不收
+   簡體中文 CP 936 甚至連日製漢字、常用正體字都弄進去了，CP 950 卻是啥都缺
+
+ (Win9x 時代，大多是用匯入 eudc、font.24 等使用造字區的方式來解決)
+
+ 到了 Win NT 之後，系統都採用 unicode 做內部處理，
+ 如果應用軟體也使用 unicode，那當然沒有問題
+ 但是對於一些仍用以前 DBCS 編碼的軟體，Windows 就使用 codepage 轉換方式
+
+   CP 950 (正體中文)       unicode              CP 932 (日文)
+
+   特 (AF53)       &lt;-&gt;     特 (U+7279)    &lt;-&gt;   特 (93C1)
+
+ 也就是：從 DBCS 軟體貼到 unicode 的軟體時，系統會做內碼切換，反之亦然
+
+ 但是，在繁體中文的 CP 950 中並沒有日文假名，當然更沒有日製漢字
+ 所以中文 Windows 下，不支援 unicode 的軟體碰到此類未對應的 unicode 字元時
+ 轉換會出問題，變成 ? 或 _，若檔名就有這種字元時，則連該檔案都無法開
+ (漢字部份則拜 CJKV 所賜，大多可以直接轉換)
+
+   簡單來說，若是有名稱含日文假名的檔案
+   因為 Windows 檔案系統可處理 unicode，所以 Windows 下看得到日文
+   而不能讀 unicode 的軟體則只能看到 ? ，要開啟檔案時會讀取失敗
+
+     CP 932 (日文)         unicode             CP 950 (正體中文)
+
+     あ (82A0)      &lt;-&gt;    あ (U+3042)    -&gt;   <span class="b1">?        </span>
+
+
+<span class="f6 hl">Unicode 補完計畫 (Unicode at Once)</span>
+
+ 「Unicode 補完計畫」就是為了解決這問題而出現的
+
+ 當初它的名字叫「Big5 Extension」，意思就是擴充 BIG5 缺少的部分
+ (結果改成現在名字後反而產生被人誤會的問題)
+
+ 它的做法：
+
+   CP 932 (日文)         unicode              CP 950 (正體中文)
+
+   あ (82A0)      &lt;-&gt;    あ (U+3042)    &lt;-&gt;   あ (C6E8)
+
+                            (U+F6F8)     ↗
+
+   它修改 unicode 對 CP950 的轉換對照表
+   使 unicode 日文假名在非 unicode 狀況下改去用原倚天的造字區編碼
+   甚至還增加對應 unicode 日製漢字、簡體中文、特殊正體中文字 (也是用造字區)
+
+
+<span class="f3 hl">Unicode 補完計畫的問題點</span>
+
+ 由於對應的是 CP 950 沒有使用到的區域 (原 BIG5/倚天 的造字區)
+ 因此不支援 unicode 軟體弄出來的字，在未裝 uao 的電腦上看時會是空白
+
+ 使用者若沒注意到這點而大量用不支援 unicode 的軟體處理檔案，結果就發生慘案
+
+   unicode             CP 950 (正體中文)
+
+      (U+<span class="f5 hl">F6F8</span>)    &lt;-   <span class="f0 hl">あ</span> (C6E8)
+
+                          ↖ 必須有裝造字才看得到
+
+ 要有裝 uao 的電腦才能看到字
+
+   unicode             CP 950 (正體中文)
+
+   あ (U+<span class="f5 hl">3042</span>)    &lt;-   あ (C6E8)
+
+
+ 當然，若都是在 unicode 環境下就完全沒有問題了
+
+   unicode             unicode
+
+   あ (U+3042)   &lt;-&gt;   あ (U+3042)
+
+
+ 只不過，目前不支援 unicode 的軟體仍為數不少
+ 或者用慣了的軟體不支援 unicode，有支援的卻又功能不符合需求、用不慣
+
+ 按人的惰性來看，只要還有這種情況，uao 就仍會一直存在、就會有人去使用
+
+ <span class="f3 hl">如果真要使用 uao，就必須時常注意軟體輸出的文字是否變成 BIG5 了
+</span><span class="f3 hl"> 否則雖然自己電腦看得到，但傳出去在沒有 uao 的電腦上看到的都是空白啊</span>
+
+
+
+<span class="f1 hl">可能發生的情形整理表</span>
+
+
+                在有 uao 的系統               在無 uao 的系統
+
+ 字碼           支援 unicode  不支援 unicode  支援 unicode  不支援 unicode
+ -----------    ------------  --------------  ------------  --------------
+ Unicode      |
+ あ (U+3042)  | あ (U+3042)   あ (C6E8)       あ (U+3042)   <span class="b1">?        </span>
+              |
+              |
+ Unicode      |
+    (U+F6F8)  | あ (U+3042)   あ (C6E8)       <span class="b1 hl">   (</span><span class="f5 b1 hl">U+F6F8</span><span class="b1">)</span>   <span class="f0 hl">あ</span> (C6E8)
+              |
+              |                       必須有裝造字才看得到 ↗
+ BIG5         |
+ あ (C6E8)    | あ (U+3042)   あ (C6E8)       <span class="b1">   (U+</span><span class="f5 b1 hl">F6F8</span><span class="b1">)</span>   <span class="f0 hl">あ</span> (C6E8)
+              |
+              |                       必須有裝造字才看得到 ↗
+ SJIS         |
+ あ (82A0)    | あ (U+3042)   あ (C6E8)       あ (U+3042)   <span class="b1">?        </span>
+              |               あ (82A0)
+
+
+ 註：U+F6F8 是位於 unicode 的造字區，通常沒有字型會去對應
+     U+3042 才是 あ 的正式 unicode 編碼
+
+
+<span class="f2 hl">參考資料</span>
+
+ <a href="http://uao.cpatch.org/index.php?%E5%8E%9F%E7%90%86%E4%BB%8B%E7%B4%B9" target="_blank" rel="noreferrer noopener nofollow">http://uao.cpatch.org/index.php?%E5%8E%9F%E7%90%86%E4%BB%8B%E7%B4%B9</a>
+ <a href="http://uao.cpatch.org/index.php?%E5%8E%9F%E7%90%86%E8%A3%9C%E5%85%85" target="_blank" rel="noreferrer noopener nofollow">http://uao.cpatch.org/index.php?%E5%8E%9F%E7%90%86%E8%A3%9C%E5%85%85</a>
+
+
+--
+ <span class="f2 hl">○</span> <span class="f3 hl">再</span>一次        <span class="f1 hl">╳</span> <span class="f1 hl">在</span>一次        <span class="f2 hl">○</span> 騎車<span class="f3 hl">戴</span>安全帽    <span class="f1 hl">╳</span> 騎車<span class="f1 hl">帶</span>安全帽
+ <span class="f2 hl">○</span> 幹<span class="f3 hl">得</span>好        <span class="f1 hl">╳</span> 幹<span class="f1 hl">的</span>好        <span class="f2 hl">○</span> 知<span class="f3 hl">道</span>            <span class="f1 hl">╳</span> 知<span class="f1 hl">到</span>
+ <span class="f2 hl">○</span> 名<span class="f3 hl">字</span>          <span class="f1 hl">╳</span> 名<span class="f1 hl">子</span>          <span class="f2 hl">○</span> 抽<span class="f3 hl">菸</span>            <span class="f1 hl">╳</span> 抽<span class="f1 hl">煙</span>
+ <span class="f2 hl">○</span> <span class="f3 hl">坐</span>捷運        <span class="f1 hl">╳</span> <span class="f1 hl">做</span>捷運        <span class="f2 hl">○</span> <span class="f3 hl">誹</span>謗罪          <span class="f1 hl">╳</span> <span class="f1 hl">毀</span>謗罪
+ <span class="f2 hl">○</span> 好<span class="f3 hl">厲</span>害        <span class="f1 hl">╳</span> 好<span class="f1 hl">利</span>害        <span class="f2 hl">○</span> <span class="f3 hl">應</span>該            <span class="f1 hl">╳</span> <span class="f1 hl">因</span>該
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 61.229.46.166
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bajiqa</span><span class="f3 push-content">:想推一下</span><span class="push-ipdatetime"> 11/02 19:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">localtrain</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/02 19:51
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zupi</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/02 19:59
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kyrc</span><span class="f3 push-content">:推~</span><span class="push-ipdatetime"> 11/02 20:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">timmerix</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/02 20:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">holanet</span><span class="f3 push-content">:當初我的軟體本來要安裝 UAO，不過現在已經沒必要了，因為</span><span class="push-ipdatetime"> 11/02 20:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holanet</span><span class="f3 push-content">:經過長久的努力後，已經可以支援 Unicode。</span><span class="push-ipdatetime"> 11/02 20:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jyhfang</span><span class="f3 push-content">:Good</span><span class="push-ipdatetime"> 11/02 20:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sarsman</span><span class="f3 push-content">:GJ！</span><span class="push-ipdatetime"> 11/02 20:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alicekey</span><span class="f3 push-content">:Unicode軟體推齊計畫 | <a href="http://unicode.twftp.org/" target="_blank" rel="noreferrer noopener nofollow">http://unicode.twftp.org/</a></span><span class="push-ipdatetime"> 11/02 20:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alicekey</span><span class="f3 push-content">:有空的話，可以幫忙編輯一下。這是coca推的計畫</span><span class="push-ipdatetime"> 11/02 20:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">PTTFHK</span><span class="f3 push-content">:感謝～ 雖然我看得有點頭暈^^</span><span class="push-ipdatetime"> 11/02 20:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">holanet</span><span class="f3 push-content">:忘了說我的網站：<a href="http://hola.idv.tw" target="_blank" rel="noreferrer noopener nofollow">http://hola.idv.tw</a> 雖有不足但仍在努力.</span><span class="push-ipdatetime"> 11/02 20:31
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rexx</span><span class="f3 push-content">:推!!太通透了</span><span class="push-ipdatetime"> 11/02 20:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alicekey</span><span class="f3 push-content">:好想給你兩個m，可是沒辦法</span><span class="push-ipdatetime"> 11/02 20:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">abccbaandy</span><span class="f3 push-content">:講解的很清楚，不過那些bug...</span><span class="push-ipdatetime"> 11/02 20:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">filiaslayers</span><span class="f3 push-content">:寫的很詳細，推一個</span><span class="push-ipdatetime"> 11/02 20:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">CHCOOBOO</span><span class="f3 push-content">:兩個板主都給m 絕對不會變m^2</span><span class="push-ipdatetime"> 11/02 20:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sicao</span><span class="f3 push-content">:請問有沒有UTF-8跟unicode跟UTF-16等一干差別?</span><span class="push-ipdatetime"> 11/02 21:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Phcozy</span><span class="f3 push-content">:雖然只看懂一半 但是還是大推!</span><span class="push-ipdatetime"> 11/02 21:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">realmax</span><span class="f3 push-content">:這篇是我看過整理最完整的,辛苦了</span><span class="push-ipdatetime"> 11/02 21:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">DemonRing</span><span class="f3 push-content">:push</span><span class="push-ipdatetime"> 11/02 21:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cole945</span><span class="f3 push-content">:中文區裡沒有日文和俄文不是很正常嗎?為什麼要萬惡軟體@<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6f9e6">[email&#160;protected]</a></span><span class="push-ipdatetime"> 11/02 21:54
+</span></div>
+ 因為按東亞處理資訊的情況來看，會用到日文的機會相當大，但微軟卻不將之放入
+ 對岸的 CP 936 卻完整放進去了，且不只假名而已，連日製漢字、正體中文字都有
+
+ 雖說用 unicode 就沒問題了，但仍有為數很多的不支援軟體啊
+ 不然怎會跑出 uao 來呢？
+
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HZYSoft</span><span class="f3 push-content">:big5 相關歷史有些不正確，unicode 介紹太簡略</span><span class="push-ipdatetime"> 11/02 21:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">HZYSoft</span><span class="f3 push-content">:另外還有 MBCS 一詞，或許也可以稍加解釋</span><span class="push-ipdatetime"> 11/02 21:55
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ooxxman</span><span class="f3 push-content">:dj;6wjo</span><span class="push-ipdatetime"> 11/02 22:17
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">riverless</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/02 22:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">KeeperOf7Key</span><span class="f3 push-content">:推</span><span class="push-ipdatetime"> 11/02 23:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ddx</span><span class="f3 push-content">:好東西，下次重灌電腦試試看。（之前是覺得2.4,2.5比較好）</span><span class="push-ipdatetime"> 11/02 23:04
+</span></div><span class="f2">※ 編輯: mstar           來自: 61.229.46.166        (11/03 10:00)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mantohu</span><span class="f3 push-content">:Excellent</span><span class="push-ipdatetime"> 11/03 10:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">flylover</span><span class="f3 push-content">:推 沒看過整理這麼好的文章</span><span class="push-ipdatetime"> 11/03 20:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">donkeychen</span><span class="f3 push-content">:這篇好棒 推推</span><span class="push-ipdatetime"> 11/04 16:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">donkeychen</span><span class="f3 push-content">:我轉到IME版唷 謝謝</span><span class="push-ipdatetime"> 11/04 16:53
+</span></div><span class="f2">※ </span><span class="f2 hl">donkeychen</span><span class="f2">:轉錄至看板 IME</span>                                       11/04 16:53
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yinjing</span><span class="f3 push-content">:純推不下（咦？）</span><span class="push-ipdatetime"> 11/08 18:17
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1194002853.A.D55.html?cacheKey=2148-738999847&amp;offset=11433&amp;offset-sig=b5b15762c47c0ecd90bcf850008b323987bdf882" data-longpollurl="/v1/longpoll?id=fb50b425b186329124c9e59de2bf0c74fe7c2701" data-offset="11433"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb88381a3505',m:'5uRJKbKiiH2Z2Yx6kzKmJJ_yCRhqy_FKtXDLsyNRfDo-1653466886-0-AWfXiOTH+pZYqwGYV7ly91AWkuVPhOrmj4+zlzrkB15Xo19WR7Y68CU+1gh7u4gMCMl9FhPCmvM5pc6/rh9CKtRo4Sl2gl3QvMq6mofU5MyI9bFtZedBC5PROja/sxeW0PpUtXh+piEheXmkV9jeAEfRZb4B+233cVJjHVmpEUli',s:[0xc24eab3247,0x8d39905de2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

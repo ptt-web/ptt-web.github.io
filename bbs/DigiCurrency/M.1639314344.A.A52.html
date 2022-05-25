@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [閒聊]分享FTX自動交易bot開發-defenderAutotask - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="為什麼我覺得很像派網的屯幣寶xd
+建議可以參考看看
+另外鏈上的話可以看看eth上的balancer
+其他的鏈我不確定
+不過應該也都有仿的
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [閒聊]分享FTX自動交易bot開發-defenderAutotask">
+<meta property="og:description" content="為什麼我覺得很像派網的屯幣寶xd
+建議可以參考看看
+另外鏈上的話可以看看eth上的balancer
+其他的鏈我不確定
+不過應該也都有仿的
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1639314344.A.A52.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">pinner (滅。驅蚊大師)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [閒聊]分享FTX自動交易bot開發-defenderAutotask</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Dec 12 21:05:39 2021</span></div>
+<span class="f2">※ 引述《jojomango (jojo)》之銘言：
+</span><span class="f6">: 大家午安大家好
+</span><span class="f6">: 最近我寫出了一個可以讓我ftx錢包根據價格變動自動交易的bot：
+</span><span class="f6">: medium文章
+</span><span class="f6">: <a href="https://reurl.cc/0xAD06" target="_blank" rel="noreferrer noopener nofollow">https://reurl.cc/0xAD06</a>
+</span><span class="f6">: 簡單的規則：
+</span><span class="f6">: 錢包內有兩種幣: BTC, USD
+</span><span class="f6">: 當BTC/USD 價格變動3% 我就修改BTC 1%的持倉為USD, 低買高賣
+</span><span class="f6">: 並且把成交價格當作下一次判斷價格變動的基準
+</span><span class="f6">: 並抓 40%, 60%為資產平衡的邊界, 達到邊界就不做1%調整 而是逼近邊界的買賣量
+</span><span class="f6">: 這個task會在OpenZeppelin的defender autotask上跑
+</span><span class="f6">: 每兩分鐘跑一次, 免費額度是一小時120個task (因為我還有其他錢包要交易 和放貸所以
+</span><span class="f6">: 抓這個頻率)
+</span><span class="f6">: 可修改參數
+</span><span class="f6">: 交易對BTC/USD 可改為任何FTX上有的交易對
+</span><span class="f6">: 買賣幣種 BTC -&gt; 改為你選擇的交易對的其一
+</span><span class="f6">: 平衡邊界40, 60可以改為更激進的20 80 你開心 無價
+</span><span class="f6">: 須具備基本知識
+</span><span class="f6">: git, yarn
+</span><span class="f6">: 須申請FTX, Openzeppelin-defender帳號 (都是免費的)
+</span><span class="f6">: 注意事項：
+</span><span class="f6">: 邏輯會以最後一次的成交金額 來計算+-3%當做買賣觸發
+</span><span class="f6">: 如果該錢包沒有任何交易紀錄 或是你不想要以最後一次的交易金額來做初始金額依據
+</span><span class="f6">: 需手動修改code 請看文章介紹
+</span><span class="f6">: 開發背景
+</span><span class="f6">: 之前我一直做自動放貸, 貸出90%的錢包資產, 然後設定[量化空間]的條件來自動買賣平
+</span><span class="f6">: 衡資產
+</span><span class="f6">: 另外用app設定到價通知, 每當變動3% 就去量化空間修改平衡百分比, 並更新app的到價
+</span><span class="f6">: 通知為新的高低價
+</span><span class="f6">: 其實一開始我也想讓量化空間維持50:50的平衡就好, 後來發現實在觸發機率低 量又少
+</span><span class="f6">: 所以才想到價格變動3% 改變平衡1%這種增加價差的操作(大部分資金還是buy and hold)
+</span><span class="f6">: 但這個a. 修改平衡百分比 b.修改app到價通知 c. 注意手機通知
+</span><span class="f6">: 這些任務實在是很機械化 又常常遲一步 浪費我心力
+</span><span class="f6">: 終於寫出一個task自動取代我的手動策略 開心
+</span><span class="f6">: 如果有看到沒想到的case 或是文章讓你confuse的地方也歡迎指出
+</span><span class="f6">: 謝謝 祝發財
+</span>
+為什麼我覺得很像派網的屯幣寶xd
+建議可以參考看看
+另外鏈上的話可以看看eth上的balancer
+其他的鏈我不確定
+不過應該也都有仿的
+
+雖然我很久沒用派網了
+但還是幫忙推一個
+很多機器人很實用其實
+不過也是要會用啦
+網格其實真的不是給新手用的
+但是這個是後話了qq
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 176.189.137.194 (法國)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1639314344.A.A52.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1639314344.A.A52.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jojomango</span><span class="f3 push-content">: 感謝分享 來看看</span><span class="push-ipdatetime"> 12/15 23:34
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1639314344.A.A52.html?cacheKey=2148-143321367&amp;offset=2127&amp;offset-sig=a73e16d1dfb8b1f4a00a87334d5194a030ad3ef5" data-longpollurl="/v1/longpoll?id=78a2864c777dd22ad5cb05ed9bdcefaff8f968f6" data-offset="2127"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce25c7c4a0ab4',m:'M273kWOQcY_sku8yokfA8cOSDamvZ6d8AC3VMTsj8cw-1653467166-0-AWL9cy4mr+kEcLob+omUPCiDCsEmWPU9EqJ9bUo6YTI2Fq0TJfGvURTsXQeNh1WH8TvFL7/tTKXox5opwxtvgK3CVZ5E24mlrKyw8aHecMnWkqEv8LS1e7hTXZ1YcfOL4e8rAzsavOP6L3yVvF5GAyS0P90YpOcCVIkxa+MlK9jT',s:[0xd4d99a211e,0x147e2ac19c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

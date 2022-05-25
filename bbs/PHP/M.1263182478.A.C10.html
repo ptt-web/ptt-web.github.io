@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 請問各位高手開發PHP的問題? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我採用的原則是分成三層:
+1 資料模型(model)層:
+1.1 透過sql語法存取關聯式資料庫(以mysql為代表).
+1.2 所有sql構句的程式通通放在這一層.
+1.3 用物件導向繼承機制來串起sql的條件式(left join, where),
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 請問各位高手開發PHP的問題?">
+<meta property="og:description" content="我採用的原則是分成三層:
+1 資料模型(model)層:
+1.1 透過sql語法存取關聯式資料庫(以mysql為代表).
+1.2 所有sql構句的程式通通放在這一層.
+1.3 用物件導向繼承機制來串起sql的條件式(left join, where),
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1263182478.A.C10.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">bobju (寶貝豬)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 請問各位高手開發PHP的問題?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan 11 12:01:15 2010</span></div>
+我採用的原則是分成三層:
+
+1 資料模型(model)層:
+1.1 透過sql語法存取關聯式資料庫(以mysql為代表).
+1.2 所有sql構句的程式通通放在這一層.
+1.3 用物件導向繼承機制來串起sql的條件式(left join, where),
+    簡化不同model所採用的結構相似的sql query構句的重複性及複雜性.
+1.4 model層只能由程式邏輯層存取, 不允許其它任何&#39;管道&#39;存取.
+
+2 程式邏輯(control)層:
+2.1 透過model層的物件存取data.
+2.2 這一層不允許出現任何一道sql語法.
+2.3 屬於這一層的程式都是可直接執行的，透過url or cli, 供外部執行.
+2.4 根據組態設定, 負責處理: 權限檢查, session, 以及作業邏輯.
+2.5 必要時再切出一層&#39;組態層&#39;,透過組態設定盡量做到程式在不同的環境下
+    可重複使用的目的, 以及簡化設計的重複性.
+
+3 表達(presentation/view)層:
+3.1 基本上是以 smarty 的 template 來做.
+3.2 這一層只允許看見html/javascript/css這些東西, 不准出現任何php或
+    sql code.
+3.3 由屬於程式邏輯層的程式透過smarty物件來控制.
+
+大致上是這樣. 其實現在很多MVC framework也都是這麼設計. 只是framework
+更public, 更具社群支援的優勢, 可以做得更深入更細膩, 比起私人發展自己
+在用的framework自然是強得多.
+
+不過雖說 MVC 是個明確的design pattern, 但也不是非得這麼做不可. 有些
+堪稱是popular的open source, 其架構簡直稱得上是大雜燴. sql,php,html通
+通擠在一起, 個人是蠻懷疑這種結構的維護成本如何down得下來?
+
+有人是說別管這個, 反正發展到一定的規模後就是砍掉重做比較快. 你只要掌
+握了設計的精神, 到時候要透過什麼樣的framework或是develop tool kit來
+重新開發都不是問題, 只要有人(幫你攤時間),有錢(幫你養人)讓你玩就一定能
+夠玩得起來. :P
+
+<span class="f2">※ 引述《iloveelva (iloveelva)》之銘言：
+</span><span class="f6">: 各位在開發PHP 專案裡面 是網頁與程式分離的方式還是一起的方式
+</span><span class="f6">: 還有開發工具的選擇 我是用NOTEPAD++
+</span><span class="f6">: 另外會使用到物件導向的方式開發網頁嗎??
+</span><span class="f6">: 想問問看各位在開發PHP時後的方法和維護效率的方法
+</span><span class="f6">: 希望各位指點!!
+</span><span class="f6">: 剛剛在看MVC和ZEND FRAMEWORK的文章  想說要步要轉換撰寫PHP方式!!
+</span><span class="f6">: 希望可以達到有效率開發和方便維護的方式!!
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.75.224.229
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">iloveelva</span><span class="f3 push-content">:我在思考思考再問你</span><span class="push-ipdatetime"> 01/11 14:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:您慢慢思考吧,不急. :P</span><span class="push-ipdatetime"> 01/11 18:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bobju</span><span class="f3 push-content">:而且你問,我未必有時間答你.</span><span class="push-ipdatetime"> 01/11 18:34
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1263182478.A.C10.html?cacheKey=2148-469798543&amp;offset=2263&amp;offset-sig=1b0e6a011f61a8911548eca85c3a99d225817fe9" data-longpollurl="/v1/longpoll?id=cc0fb6ff9576674b168d9af4f6b95b960bf8f94a" data-offset="2263"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea47db021fae',m:'rCTtmVeY0k20G_E3aiZov8Bb9u1XeRmixbDyU4QKquY-1653467490-0-Adny3N2y8xYKF6GHMgvHUVvR76MZKW1IKOs5CLzr0r3dqmu3SgaN+dwK854heovoBhnG6a/8TH4cUqHbzVTETwrOjgLlYYepPb0gfdidYPSBcAyY7inIk0xaAVF4gZ9wS1gNJLhImB8VIVwwLM3my2THIbWS4E+etv4zXlOePniT',s:[0x44933dd4ec,0xaa2883e8ed],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

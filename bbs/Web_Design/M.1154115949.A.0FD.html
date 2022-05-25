@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 請教一下java script算數學有誤差的問題? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="呵呵 這可不是&#34;JavaScript&#34;本身的問題喔 這是我們二進位電腦的先天&#34;缺陷&#34;
+以我們電腦系統base 2的浮點數格式要去計算表示base 10的實數系統本來就會有
+不可避免的誤差(在這系統下 你也只能以最接近的二進位可表示的數值去表示部份實數值)
+你用C語言寫也一樣:
+    float v1 = 100;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 請教一下java script算數學有誤差的問題?">
+<meta property="og:description" content="呵呵 這可不是&#34;JavaScript&#34;本身的問題喔 這是我們二進位電腦的先天&#34;缺陷&#34;
+以我們電腦系統base 2的浮點數格式要去計算表示base 10的實數系統本來就會有
+不可避免的誤差(在這系統下 你也只能以最接近的二進位可表示的數值去表示部份實數值)
+你用C語言寫也一樣:
+    float v1 = 100;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1154115949.A.0FD.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">elan (IE是最棒的瀏覽器)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 請教一下java script算數學有誤差的問題?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Jul 29 04:15:10 2006</span></div>
+<span class="f2">※ 引述《kicksmile (aa)》之銘言：
+</span><span class="f6">: function cal(){
+</span><span class="f6">: sum.value=&#39;$ &#39;+(t11+t22+t33+t44+t55);
+</span><span class="f6">: }
+</span><span class="f6">: function callbylist1(){
+</span><span class="f6">: t11=i1.value*q1.value;// i1.value是物品價錢，q1.value是client輸入的數量
+</span><span class="f6">: cal();  //call cal()去算總total
+</span><span class="f6">: }
+</span><span class="f6">: .
+</span><span class="f6">: .
+</span><span class="f6">: .
+</span><span class="f6">: function callbylist5(){
+</span><span class="f6">: t55=i5.value*q5.value;
+</span><span class="f6">: cal();
+</span><span class="f6">: }
+</span><span class="f6">: 可是算出來有時候會出現誤差
+</span><span class="f6">: 有時候又會正常
+</span><span class="f6">: 正常是沒有小數點的，因為都是整數相乘
+</span><span class="f6">: 但有時會出現這種情形59.849999999999994
+</span><span class="f6">: 請問有人有相同情形嗎要怎麼解決呢
+</span><span class="f6">: 謝謝
+</span><span class="f6">: 從網路查了一下，有篇文章是說javascript計算都會有此問題，浮點數運算問題
+</span>
+呵呵 這可不是&#34;JavaScript&#34;本身的問題喔 這是我們二進位電腦的先天&#34;缺陷&#34;
+以我們電腦系統base 2的浮點數格式要去計算表示base 10的實數系統本來就會有
+不可避免的誤差(在這系統下 你也只能以最接近的二進位可表示的數值去表示部份實數值)
+
+你用C語言寫也一樣:
+
+    float v1 = 100;
+    float v2 = 0.1;
+
+    if ((v1 * v2) == 10)
+        printf(&#34;這真是個完美的世界!&#34;);
+    else
+        printf(&#34;這世界就是這樣~&#34;);
+
+<span class="f6">: 所以要display的話，可以用Math.round()解決這個問題
+</span><span class="f6">: 如要精確到小數第二位，就乘100, round,在除以100
+</span><span class="f6">: x=Math.round( x* 100 ) /100
+</span><span class="f6">: 詳細內容轉自<a href="http://www.takka.com.hk/jstutor/ch18/ch18.htm" target="_blank" rel="noreferrer noopener nofollow">http://www.takka.com.hk/jstutor/ch18/ch18.htm</a>
+</span><span class="f6">: 不過這個方法頗呆，不知道有沒有更聰明的方法哈
+</span>
+  不, 這方法頗好 反正你也只能求某個程度的精準
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 220.131.6.24
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1154115949.A.0FD.html?cacheKey=2149-475745800&amp;offset=1423&amp;offset-sig=9ecf19f1e3e0b1f0acf8cf449dd5ccd2f76f2dc0" data-longpollurl="/v1/longpoll?id=ba218c5f81355df4de9836549b1905fd74808452" data-offset="1423"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c2cb678a27',m:'Nfk1dBAobAa2EhIMsJbedH70bSpqJ8jedwTGL1d2nAc-1653467469-0-AWcyOYKtHHjT0bKbdumcBp/VaibaYYndRySI8U5wskqTarb/8BH9qJFLVD+Zg6GmurS6lyJ7WgzMSiGdQRom4uhdlU1G29TZRi+HvYJd9xjWmA5q6PUU3yYGA68TWWPfHSniIHOojEO/mZAmrKEasr1FYr9NCS+fDZ8iX4OmgKWz',s:[0x6012ece3de,0x69992271d2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

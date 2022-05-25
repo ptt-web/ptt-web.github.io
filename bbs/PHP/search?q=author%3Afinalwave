@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:finalwave - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Afinalwave">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Afinalwave">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:finalwave" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1153264472.A.430.html">[請益] 再mysql新增一筆資料 而其值為</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%86%8Dmysql%E6%96%B0%E5%A2%9E%E4%B8%80%E7%AD%86%E8%B3%87%E6%96%99&#43;%E8%80%8C%E5%85%B6%E5%80%BC%E7%82%BA">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1153173818.A.3AE.html">[請益] 一個表單 兩個php程式都能接受函數?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%80%E5%80%8B%E8%A1%A8%E5%96%AE&#43;%E5%85%A9%E5%80%8Bphp%E7%A8%8B%E5%BC%8F%E9%83%BD%E8%83%BD%E6%8E%A5%E5%8F%97%E5%87%BD%E6%95%B8%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1153142597.A.496.html">[請益] gd...繪圖 請問函式問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;gd...%E7%B9%AA%E5%9C%96&#43;%E8%AB%8B%E5%95%8F%E5%87%BD%E5%BC%8F%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1153135213.A.AB7.html">[請益] 解析原始檔怎麼做</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A7%A3%E6%9E%90%E5%8E%9F%E5%A7%8B%E6%AA%94%E6%80%8E%E9%BA%BC%E5%81%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136902008.A.4AC.html">[請益] 錯誤訊息</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136897351.A.D20.html">[請益] 有沒有免費的支援php網頁空間</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89%E5%85%8D%E8%B2%BB%E7%9A%84%E6%94%AF%E6%8F%B4php%E7%B6%B2%E9%A0%81%E7%A9%BA%E9%96%93">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1136726749.A.1FA.html">[請益] 表單文字方塊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A1%A8%E5%96%AE%E6%96%87%E5%AD%97%E6%96%B9%E5%A1%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1132414792.A.719.html">Re: [請益] 放上網路空間就不能跑 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%94%BE%E4%B8%8A%E7%B6%B2%E8%B7%AF%E7%A9%BA%E9%96%93%E5%B0%B1%E4%B8%8D%E8%83%BD%E8%B7%91&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1132413303.A.56B.html">Re: [請益] 放上網路空間就不能跑 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%94%BE%E4%B8%8A%E7%B6%B2%E8%B7%AF%E7%A9%BA%E9%96%93%E5%B0%B1%E4%B8%8D%E8%83%BD%E8%B7%91&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1132412498.A.21A.html">[請益] 放上網路空間就不能跑 </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">finalwave</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%94%BE%E4%B8%8A%E7%B6%B2%E8%B7%AF%E7%A9%BA%E9%96%93%E5%B0%B1%E4%B8%8D%E8%83%BD%E8%B7%91&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Afinalwave">搜尋看板內 finalwave 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa48e29af54',m:'jdqw.ZrXeVH_lI1Tcas9C6b6IPdIJU8V0y4LpPPl62c-1653467505-0-AUzW+SvTmOUgcLc3wPjOX7WrG3Ctgnchh26dmMEicXh9MbQ0djK88hLm2E/Bhkbh5dxxSY3pPK//BJMM86uEMOswMPDFs/TYdY+Qc3qZDS5ItdPSKYq6Z7MPeKQt35VbIXNGSmN0+s+iIP7SzULcqLQAKubWf+w68kXr9JooxSYd',s:[0x7efa894e9f,0xb68cc82fe2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

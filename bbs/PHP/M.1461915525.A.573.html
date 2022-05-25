@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[教學] pdo使用基礎教學(影片) - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="大家好。
+會興起做這個教學影片的內容。
+主要是在藍色小舖和幾位人士討論到當前很多教學資源的問題。
+包括幾乎很多php新手的發問全都圍繞在舊的mysql()指令集。
+然而我想大家也知道php7開始不再支援mysql()指令集。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[教學] pdo使用基礎教學(影片)">
+<meta property="og:description" content="大家好。
+會興起做這個教學影片的內容。
+主要是在藍色小舖和幾位人士討論到當前很多教學資源的問題。
+包括幾乎很多php新手的發問全都圍繞在舊的mysql()指令集。
+然而我想大家也知道php7開始不再支援mysql()指令集。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1461915525.A.573.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tkdmaf (皮皮快跑)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[教學] pdo使用基礎教學(影片)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Apr 29 15:38:41 2016</span></div>
+大家好。
+會興起做這個教學影片的內容。
+主要是在藍色小舖和幾位人士討論到當前很多教學資源的問題。
+包括幾乎很多php新手的發問全都圍繞在舊的mysql()指令集。
+然而我想大家也知道php7開始不再支援mysql()指令集。
+而官方也就餘下了mysqli和pdo這二個連資料庫的功能。
+前者自然只能用於mysql，但後者能支援幾乎大部份主流的資料庫系統。
+在安全性及效能上也有不錯的改進。
+可惜的是pdo出來也很多年了，但是市售的書籍一直未對此有所改進。
+這可能會造成初學者學到資料庫那個單元，要是他的環境是php7就等於所有
+書上的範例code均無法使用。
+
+本來我是想說寫成文字教學，可是發現初學者很多光看文字思考也不見得能
+立刻明瞭。最終我還是決定以小單元的方式來錄製影片。
+
+第一次錄教學影片，有很多地方我覺得做得還不好，請大家給予鼓勵與指正。
+
+題外話：其實錄了大概七、八次才挑出比較沒那麼「出槌」的二個影片……
+
+第一篇：pdo的基本使用方法
+<a href="https://www.youtube.com/watch?v=CfmYngJX1KA" target="_blank" rel="noreferrer noopener nofollow">https://www.youtube.com/watch?v=CfmYngJX1KA</a>
+<div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/CfmYngJX1KA" frameborder="0" allowfullscreen></iframe></div></div></div>
+第二篇：pdo防範sql injection
+<a href="https://www.youtube.com/watch?v=s70JaZgTNt0" target="_blank" rel="noreferrer noopener nofollow">https://www.youtube.com/watch?v=s70JaZgTNt0</a>
+<div class="richcontent"><div class="resize-container"><div class="resize-content"><iframe class="youtube-player" type="text/html" src="//www.youtube.com/embed/s70JaZgTNt0" frameborder="0" allowfullscreen></iframe></div></div></div>
+說真的…active record或elquent orm用習慣了……反而基本語法規則有些
+給他忘了…………
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 123.204.161.190
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1461915525.A.573.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1461915525.A.573.html</a>
+</span><span class="f2">※ 編輯: tkdmaf (123.204.161.190), 04/29/2016 15:39:32
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gamania54088</span><span class="f3 push-content">: 最近也慢慢的改用pdo了</span><span class="push-ipdatetime"> 04/29 16:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 贊</span><span class="push-ipdatetime"> 04/29 16:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">weiclin</span><span class="f3 push-content">: 推一把, 現在學 php 不能不知道 pdo</span><span class="push-ipdatetime"> 04/29 16:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">hung0724</span><span class="f3 push-content">: 推一個  基本語法隨便google都有 其實忘記了也沒差吧</span><span class="push-ipdatetime"> 04/29 17:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mon112600</span><span class="f3 push-content">: 真心感謝無私的付出</span><span class="push-ipdatetime"> 04/29 19:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gpmm</span><span class="f3 push-content">: 推有心</span><span class="push-ipdatetime"> 04/29 22:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn</span><span class="f3 push-content">: 皮皮太神啦</span><span class="push-ipdatetime"> 04/29 22:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">my1938</span><span class="f3 push-content">: 感謝~~我正在努力學習中~~</span><span class="push-ipdatetime"> 04/29 23:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">swallowcc</span><span class="f3 push-content">: 推推</span><span class="push-ipdatetime"> 04/30 07:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mitsui0309</span><span class="f3 push-content">: 推一個，感謝分享</span><span class="push-ipdatetime"> 04/30 12:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">u315521</span><span class="f3 push-content">: 推</span><span class="push-ipdatetime"> 04/30 12:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cokellen</span><span class="f3 push-content">: 感謝大大無私的分享</span><span class="push-ipdatetime"> 04/30 15:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zx4109</span><span class="f3 push-content">: 推！</span><span class="push-ipdatetime"> 04/30 16:08
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zx4109</span><span class="f3 push-content">: 想請問一下，類似原PO這種autocomplete 會出現完整參數跟</span><span class="push-ipdatetime"> 04/30 16:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zx4109</span><span class="f3 push-content">: 說明文件，除了sublime gotoDocumentation 其餘IDE有類似</span><span class="push-ipdatetime"> 04/30 16:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zx4109</span><span class="f3 push-content">: 的功能或插件嗎？</span><span class="push-ipdatetime"> 04/30 16:14
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 我用的是netbeans</span><span class="push-ipdatetime"> 04/30 16:26
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">wangpipi</span><span class="f3 push-content">: 好奇有人聽過medoo嗎</span><span class="push-ipdatetime"> 04/30 16:42
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zx4109</span><span class="f3 push-content">: 感謝皮皮！@tkdmaf 滿好奇有沒有其他IDE有類似的功能</span><span class="push-ipdatetime"> 04/30 17:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 一直以來我都是用netbeans用得很習慣了。</span><span class="push-ipdatetime"> 04/30 21:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 推熱心</span><span class="push-ipdatetime"> 05/01 07:14
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yongb</span><span class="f3 push-content">: 已經收藏！！</span><span class="push-ipdatetime"> 05/01 08:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 要有 autocomplete 功能註解必須遵照 PHPDoc 格式或是</span><span class="push-ipdatetime"> 05/03 08:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 在參數中加上 type hint。目前有支援 autocomplete 的</span><span class="push-ipdatetime"> 05/03 08:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">:  IDE 不外乎 Netbeans 或是要錢的 PHPStorm</span><span class="push-ipdatetime"> 05/03 08:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">rickysu</span><span class="f3 push-content">: 回樓主，是否有想過來個 PHPCast 頻道 XD</span><span class="push-ipdatetime"> 05/03 08:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">taikobo</span><span class="f3 push-content">: 推熱心分享</span><span class="push-ipdatetime"> 05/03 09:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jerry1144</span><span class="f3 push-content">: 熱心推，找時間來看看</span><span class="push-ipdatetime"> 05/03 14:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">JF00</span><span class="f3 push-content">: 推用心</span><span class="push-ipdatetime"> 05/08 19:35
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Uzen</span><span class="f3 push-content">: 感謝分享</span><span class="push-ipdatetime"> 02/15 11:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">crow1270</span><span class="f3 push-content">: 推熱心分享！</span><span class="push-ipdatetime"> 10/26 18:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">uukoQAQ</span><span class="f3 push-content">: 謝謝大大無私分享</span><span class="push-ipdatetime"> 01/06 16:17
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1461915525.A.573.html?cacheKey=2148-469784801&amp;offset=4533&amp;offset-sig=5923cd4901484fc41cb7eccfceb20735b8f7f8f8" data-longpollurl="/v1/longpoll?id=e01312806576c43b2adce700274a7c29346c0348" data-offset="4533"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea09aada8a27',m:'oMDVf8NG.ZQapE61RJ2GSraXSpIVxOCQKF7_czMaT8A-1653467481-0-ARIdbQB/dJvBKujVNkiQOQfdws+dEoAWhVBNJHi5IN+EsK7OCQ9cujvz1SFUeX8sz1THa1tPRTp330emAr/DnpND9rOvvFTsw2/yQh+k9/wVh71hIedFDv8vkWjaKdvO1PNExXNqwiYxBXlxjsvUSisyv1UCkak2xt02CXxR1/Y9',s:[0xd109f74526,0xfe3e69a42a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

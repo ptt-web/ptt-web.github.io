@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 要如何用CSS將圖片上下左右皆置中？ - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="不知道有沒有人能提供一個利用CSS將圖片上下左右皆置中的辦法
+先講解一下我想要做出來的網頁架構
+目前是打算寫一個類似相簿的系統
+列出縮圖的部份原始碼架構大致上如下：
+&lt;div id=&#34;container&#34;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 要如何用CSS將圖片上下左右皆置中？">
+<meta property="og:description" content="不知道有沒有人能提供一個利用CSS將圖片上下左右皆置中的辦法
+先講解一下我想要做出來的網頁架構
+目前是打算寫一個類似相簿的系統
+列出縮圖的部份原始碼架構大致上如下：
+&lt;div id=&#34;container&#34;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1136201773.A.83F.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">hwakeye (hwakeye)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 要如何用CSS將圖片上下左右皆置中？</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan  2 19:51:00 2006</span></div>
+不知道有沒有人能提供一個利用CSS將圖片上下左右皆置中的辦法
+先講解一下我想要做出來的網頁架構
+目前是打算寫一個類似相簿的系統
+列出縮圖的部份原始碼架構大致上如下：
+&lt;div id=&#34;container&#34;&gt;
+    &lt;div class=&#34;album&#34;&gt;
+        &lt;div class=&#34;images&#34;&gt;
+            &lt;a href=&#34;ccc.php&#34;&gt;&lt;img src=&#34;xxx.jpg&#34; /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+       相簿名稱一
+    &lt;/div&gt;
+    &lt;div class=&#34;album&#34;&gt;
+        &lt;div class=&#34;images&#34;&gt;
+            &lt;a href=&#34;ccc.php&#34;&gt;&lt;img src=&#34;xxx.jpg&#34; /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+       相簿名稱二
+    &lt;/div&gt;
+    ...
+&lt;/div&gt;
+
+在列出相簿縮圖的時候因為不確定縮圖大小
+只知道縮圖長跟寬最大為150px
+所以我用下面的語法設定.images
+
+.album .images {
+    width: 160px;
+    height: 160px;
+    text-align: center;
+}
+
+但是這樣只能讓縮圖左右置中
+沒辦法讓縮圖上下也置中
+試過用vertical-align: middle;也無效
+不知道有沒有人能提供我一個方法解決這個問題
+在這裡先謝過了...m(_ _)m
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.130.27.149
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1136201773.A.83F.html?cacheKey=2149-475719191&amp;offset=1016&amp;offset-sig=7d7db7d27842a2c00e9c128a3b86f71daa9d1b48" data-longpollurl="/v1/longpoll?id=6e582e861ea91ec1a912b2036b068d84eb5ba6d6" data-offset="1016"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9974e33f8eb',m:'JBQVunePUgPqt9fSFxy6F7GIjEldCHBwGaVTkQmHUMo-1653467462-0-AcraHhkI/GP2qtmrHmyEM8Tfp4IfTDlXCuLUtBjlLpu7jRHzJ5Ej1O4Oz3rHdSaQZ9OiGT4hG5sPvVLQix9PwsPz2zJmM4i3PwcNiN62purevPKwGh+I/7xovTJfkv3UcFh6PmJt7F/6poPsaNfZ3LS0l4WD1Y0N/yDvL9eSnCe5',s:[0x8eac8471a8,0x5b38e5496d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

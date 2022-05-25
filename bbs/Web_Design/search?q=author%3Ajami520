@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:jami520 - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=4&amp;q=author%3Ajami520">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3Ajami520">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Ajami520">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:jami520" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1648941343.A.2CA.html">[問題] 請問如何讓儲存網頁會輸出亂碼內容?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E8%AE%93%E5%84%B2%E5%AD%98%E7%B6%B2%E9%A0%81%E6%9C%83%E8%BC%B8%E5%87%BA%E4%BA%82%E7%A2%BC%E5%85%A7%E5%AE%B9%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1639091255.A.AA2.html">[問題] CSS進度條由右到左?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%E9%80%B2%E5%BA%A6%E6%A2%9D%E7%94%B1%E5%8F%B3%E5%88%B0%E5%B7%A6%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1592258826.A.2A1.html">[問題] 如何載入網頁清除圖片快取?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E8%BC%89%E5%85%A5%E7%B6%B2%E9%A0%81%E6%B8%85%E9%99%A4%E5%9C%96%E7%89%87%E5%BF%AB%E5%8F%96%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1437688125.A.0F6.html">[問題] 網站被惡意植入寄發垃圾信程式，如何找?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E7%AB%99%E8%A2%AB%E6%83%A1%E6%84%8F%E6%A4%8D%E5%85%A5%E5%AF%84%E7%99%BC%E5%9E%83%E5%9C%BE%E4%BF%A1%E7%A8%8B%E5%BC%8F%EF%BC%8C%E5%A6%82%E4%BD%95%E6%89%BE%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1433482854.A.4AF.html">[問題] 有否方法禁止FTP檔案變動? (被駭客上傳)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E5%90%A6%E6%96%B9%E6%B3%95%E7%A6%81%E6%AD%A2FTP%E6%AA%94%E6%A1%88%E8%AE%8A%E5%8B%95%3F&#43;%28%E8%A2%AB%E9%A7%AD%E5%AE%A2%E4%B8%8A%E5%82%B3%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1428366568.A.1FE.html">[問題] 網頁下拉至一定內容跑出浮動選單bar</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E9%A0%81%E4%B8%8B%E6%8B%89%E8%87%B3%E4%B8%80%E5%AE%9A%E5%85%A7%E5%AE%B9%E8%B7%91%E5%87%BA%E6%B5%AE%E5%8B%95%E9%81%B8%E5%96%AEbar">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1424176553.A.503.html">Re: [問題] ajax tab載入google地圖無法顯示?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ajax&#43;tab%E8%BC%89%E5%85%A5google%E5%9C%B0%E5%9C%96%E7%84%A1%E6%B3%95%E9%A1%AF%E7%A4%BA%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1424157731.A.97F.html">[問題] ajax tab載入google地圖無法顯示?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ajax&#43;tab%E8%BC%89%E5%85%A5google%E5%9C%B0%E5%9C%96%E7%84%A1%E6%B3%95%E9%A1%AF%E7%A4%BA%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1423963727.A.A9B.html">[問題] jquery tab未點選的部分是否可不先載入?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;jquery&#43;tab%E6%9C%AA%E9%BB%9E%E9%81%B8%E7%9A%84%E9%83%A8%E5%88%86%E6%98%AF%E5%90%A6%E5%8F%AF%E4%B8%8D%E5%85%88%E8%BC%89%E5%85%A5%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1418766909.A.B81.html">[問題] 請問這網頁中是用哪支Flash外掛呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E7%B6%B2%E9%A0%81%E4%B8%AD%E6%98%AF%E7%94%A8%E5%93%AA%E6%94%AFFlash%E5%A4%96%E6%8E%9B%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1398206271.A.64D.html">[問題] 如何點選連結還沒載出網頁先出現讀取圖形</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E9%BB%9E%E9%81%B8%E9%80%A3%E7%B5%90%E9%82%84%E6%B2%92%E8%BC%89%E5%87%BA%E7%B6%B2%E9%A0%81%E5%85%88%E5%87%BA%E7%8F%BE%E8%AE%80%E5%8F%96%E5%9C%96%E5%BD%A2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1389794749.A.1FE.html">[問題] 大資料庫國內有什麼好主機商可支援嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A4%A7%E8%B3%87%E6%96%99%E5%BA%AB%E5%9C%8B%E5%85%A7%E6%9C%89%E4%BB%80%E9%BA%BC%E5%A5%BD%E4%B8%BB%E6%A9%9F%E5%95%86%E5%8F%AF%E6%94%AF%E6%8F%B4%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1387667663.A.306.html">[請益] 請問這手機購物車是利用HTML5來做的嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E6%89%8B%E6%A9%9F%E8%B3%BC%E7%89%A9%E8%BB%8A%E6%98%AF%E5%88%A9%E7%94%A8HTML5%E4%BE%86%E5%81%9A%E7%9A%84%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1365720390.A.4F5.html">[請益] 如何實踐進入到網頁就跑出廣告?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%AF%A6%E8%B8%90%E9%80%B2%E5%85%A5%E5%88%B0%E7%B6%B2%E9%A0%81%E5%B0%B1%E8%B7%91%E5%87%BA%E5%BB%A3%E5%91%8A%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1362609956.A.980.html">[問題] 這樣的圖表是用哪個套件呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%80%99%E6%A8%A3%E7%9A%84%E5%9C%96%E8%A1%A8%E6%98%AF%E7%94%A8%E5%93%AA%E5%80%8B%E5%A5%97%E4%BB%B6%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1351212879.A.CB3.html">[問題] 請問這樣的檔案要如何下載呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E6%A8%A3%E7%9A%84%E6%AA%94%E6%A1%88%E8%A6%81%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BC%89%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1350007690.A.C8F.html">[問題] 這網站的浮動欄位是應用什麼外掛呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%80%99%E7%B6%B2%E7%AB%99%E7%9A%84%E6%B5%AE%E5%8B%95%E6%AC%84%E4%BD%8D%E6%98%AF%E6%87%89%E7%94%A8%E4%BB%80%E9%BA%BC%E5%A4%96%E6%8E%9B%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1293243905.A.62F.html">[問題] 如何更改無名在google登錄的網站內容呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9%E7%84%A1%E5%90%8D%E5%9C%A8google%E7%99%BB%E9%8C%84%E7%9A%84%E7%B6%B2%E7%AB%99%E5%85%A7%E5%AE%B9%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1277350300.A.D2C.html">[問題] IE6右邊版面跑到下面去?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;IE6%E5%8F%B3%E9%82%8A%E7%89%88%E9%9D%A2%E8%B7%91%E5%88%B0%E4%B8%8B%E9%9D%A2%E5%8E%BB%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1277167942.A.CED.html">[問題] 表格排版，內容稱大IE會有留白問題?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">jami520</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%A1%A8%E6%A0%BC%E6%8E%92%E7%89%88%EF%BC%8C%E5%85%A7%E5%AE%B9%E7%A8%B1%E5%A4%A7IE%E6%9C%83%E6%9C%89%E7%95%99%E7%99%BD%E5%95%8F%E9%A1%8C%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Ajami520">搜尋看板內 jami520 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce94aed97af54',m:'HquO4EEQjqbLdbUn8yb9pvnHD8DL.POtEOm7sYronpQ-1653467450-0-AdSO9NZ58eHZa09xgCPCLtDjgGmuoMR/5JrNciuiRZHSNEWFPkQ3LxK0H0+HoVnx8wugwBWhk7c/8T+x6p3ojzsLJcI0wlNrEwj9qBFAuhygO6M8KaRQEHTJ+t/qrvAdQULkivrpHFrcqulKWW6tCM+xkjediqgIQNxvnzNbcLY4',s:[0x1c8b339954,0x97f96a6e28],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 上傳前先做檔名比對，但還是要上傳完才 … - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="自己寫的  放上來讓大家批評一下
+/* 2006.7.xx ; alpe ; upload processer
+ return true / false
+ (object) $db = DB Class
+ (Mix) $i = &lt;input type=&#39;file&#39; name=&#39;XX&#39;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 上傳前先做檔名比對，但還是要上傳完才 …">
+<meta property="og:description" content="自己寫的  放上來讓大家批評一下
+/* 2006.7.xx ; alpe ; upload processer
+ return true / false
+ (object) $db = DB Class
+ (Mix) $i = &lt;input type=&#39;file&#39; name=&#39;XX&#39;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1155840706.A.258.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">alpe (薛丁格的貓)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 上傳前先做檔名比對，但還是要上傳完才 …</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Aug 18 03:15:14 2006</span></div>
+
+
+自己寫的  放上來讓大家批評一下
+
+
+/* 2006.7.xx ; alpe ; upload processer
+ return true / false
+ (object) $db = DB Class
+ (Mix) $i = &lt;input type=&#39;file&#39; name=&#39;XX&#39;&gt;
+ (string) $targetdir = move file to
+ (Array) $data = extra infomations
+
+*/
+function uploadfile(&amp;$db, $i ,$targetdir, $data) {
+        if ( !isset($_FILES[&#34;f&#34;][&#34;name&#34;][$i]) &amp;&amp;
+$_FILES[&#34;f&#34;][&#34;error&#34;][$i] != 0) return ;
+
+        $dir = $_SERVER[&#34;DOCUMENT_ROOT&#34;] .
+dirname($_SERVER[&#34;SCRIPT_NAME&#34;]).&#34;/&#34;;
+        $upto = str_replace(&#34;/* file locatio  directory */
+&#34;, $targetdir, $dir);
+        //errchk        echo $upto . &#34;&lt;br/&gt;&#34;;
+
+        $size = $_FILES[&#34;f&#34;][&#34;size&#34;][$i];
+        $name = $_FILES[&#34;f&#34;][&#34;name&#34;][$i];
+        $ftype = $_FILES[&#34;f&#34;][&#34;type&#34;][$i];
+        $tname = $_FILES[&#34;f&#34;][&#34;tmp_name&#34;][$i];
+        $fname = md5(time() .$name. rand());
+        $size = floor($size/1024);
+        $dat = date(&#34;Y-m-d&#34;);
+        $adj = explode(&#39;.&#39;, $name);
+        $tmp = count($adj)-1;
+        $adj = $adj[$tmp];
+
+
+        if (is_numeric($data[&#34;Cata&#34;])) $Scate = $data[&#34;Cata&#34;];
+        $Sname = $data[&#34;name&#34;].&#34;.$adj&#34; ;
+        $Sver  = $data[&#34;ver&#34;];
+        $Snote = $data[&#34;note&#34;];
+
+        $sql = &#34;INSERT INTO FileB SET Loc = &#39;$fname&#39;, name = &#39;$Sname&#39;,
+app = &#39;$ftype&#39;,
+         ver =&#39;$Sver&#39;, Cata = &#39;$Scate&#39;, note = &#39;$Snote&#39; ,size=&#39;$size&#39;,
+ fdate = &#39;$dat&#39;&#34;;
+
+        if(move_uploaded_file($tname, $upto.$fname)){
+                //errchk                echo $sql . &#34;&lt;br&gt;&#34;;
+                $db-&gt;query($sql);
+                return true;
+        } else {
+                return false;
+        }
+}
+// Cata 是類別
+
+
+---  下載用
+
+$db = &amp; new DB();
+$db-&gt;query($sql);
+$data = $db-&gt;fetchAssoc();
+$fname = &#34;files/&#34;.$data[&#34;Loc&#34;];
+$name = $data[&#34;name&#34;];
+$size = $data[&#34;size&#34;];
+$app = $data[&#34;app&#34;];
+
+header(&#34;Content-Type: $app&#34;);
+header(&#34;Content-Disposition: attachment; filename=$name;&#34;);
+header(&#34;Content-Transfer-Encoding: binary&#34;);
+
+if(!file_exists($fname)) die(&#34; file was gone!&#34;);
+$handle = fopen($fname, &#34;r&#34;);
+$contents = fread($handle, filesize($fname));
+fclose($handle);
+print ($contents);
+flush();
+
+
+<span class="f6">: 推 piligo:謝謝以上各位，不過我的問題真的沒辦法上傳前就做比對嗎?    08/15 18:37
+</span> 誰曉得他們傳什麼東西上去... ... 檔名一樣內容不一樣
+他們還要再改檔名,會被碎碎唸吧
+
+<span class="f6">: 推 ottokang:AJAX是你的好朋友                                       08/16 01:51
+</span>檔名我是真的不推用ajax檢查...
+
+
+--
+                 Live Long and Prosper
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 221.169.25.33
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1155840706.A.258.html?cacheKey=2148-469787540&amp;offset=2551&amp;offset-sig=9e7b6ed8b8e79f2e902e7e9c6b34af44078fc076" data-longpollurl="/v1/longpoll?id=b682052e47b6abbe7c5e85dd086974ad8d23cf72" data-offset="2551"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab83a34af54',m:'T8FwA.NEckqEnUh1HT4h4aHUSzsfh8Rz4q8VrVLo_5w-1653467508-0-AUSKC5U5Wi9+8aIU1SGzn4ySMFm95T6vE35enaDAbYZw/JOerUobcylbLNa7TcxIucyYB2CpqHkehDkRqEnU27eBYm7y+njoWjjnCJutvaftnkFVuv4e5DgX1qd46XFwblgEVI6O/KeVSUgwjFhgyG2/ui/eOPb9GYASQwwjKb41',s:[0xc12911ce8f,0x69992271d2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

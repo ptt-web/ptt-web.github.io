@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:terrybob - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Aterrybob">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Aterrybob">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:terrybob" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1324564210.A.A15.html">Re: [問題] 菜鳥發問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%8F%9C%E9%B3%A5%E7%99%BC%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1264481128.A.20E.html">Re: [問題] checkbox讀取資料庫問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;checkbox%E8%AE%80%E5%8F%96%E8%B3%87%E6%96%99%E5%BA%AB%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1261455890.A.602.html">Re: [問題] 父div的高度只包含了一個子div</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%88%B6div%E7%9A%84%E9%AB%98%E5%BA%A6%E5%8F%AA%E5%8C%85%E5%90%AB%E4%BA%86%E4%B8%80%E5%80%8B%E5%AD%90div">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1216985404.A.4C4.html">[問題] [ASP]Session的存取疑問？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%5BASP%5DSession%E7%9A%84%E5%AD%98%E5%8F%96%E7%96%91%E5%95%8F%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1214314099.A.C16.html">[問題] 如何讓人在看網頁時，無法回上一頁</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E8%AE%93%E4%BA%BA%E5%9C%A8%E7%9C%8B%E7%B6%B2%E9%A0%81%E6%99%82%EF%BC%8C%E7%84%A1%E6%B3%95%E5%9B%9E%E4%B8%8A%E4%B8%80%E9%A0%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1195988533.A.0D7.html">Re: [問題] 煩請高手幫我看看我做的網頁是出了什麼 …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%85%A9%E8%AB%8B%E9%AB%98%E6%89%8B%E5%B9%AB%E6%88%91%E7%9C%8B%E7%9C%8B%E6%88%91%E5%81%9A%E7%9A%84%E7%B6%B2%E9%A0%81%E6%98%AF%E5%87%BA%E4%BA%86%E4%BB%80%E9%BA%BC&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1192648464.A.0F6.html">[問題]亂數取3個</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E4%BA%82%E6%95%B8%E5%8F%963%E5%80%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191739023.A.7E2.html">[問題]印出每個月的最後一天</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E5%8D%B0%E5%87%BA%E6%AF%8F%E5%80%8B%E6%9C%88%E7%9A%84%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/07</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1165392114.A.796.html">Re: [問題] 內容可伸縮怎麼做的?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%85%A7%E5%AE%B9%E5%8F%AF%E4%BC%B8%E7%B8%AE%E6%80%8E%E9%BA%BC%E5%81%9A%E7%9A%84%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/06</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1165299238.A.28A.html">[問題] JavaScript的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;JavaScript%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1164001656.A.BDC.html">Re: [心得] 分享簡易檔垃圾留言SPAM方法～</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;%E5%88%86%E4%BA%AB%E7%B0%A1%E6%98%93%E6%AA%94%E5%9E%83%E5%9C%BE%E7%95%99%E8%A8%80SPAM%E6%96%B9%E6%B3%95%EF%BD%9E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1156484593.A.E44.html">Re: [問題] 設定圖層的位置</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%A8%AD%E5%AE%9A%E5%9C%96%E5%B1%A4%E7%9A%84%E4%BD%8D%E7%BD%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1156480524.A.465.html">[問題] 設定圖層的位置</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%A8%AD%E5%AE%9A%E5%9C%96%E5%B1%A4%E7%9A%84%E4%BD%8D%E7%BD%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1156469189.A.0AC.html">Re: [問題] 如何得知訊窗元件裡的資訊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E5%BE%97%E7%9F%A5%E8%A8%8A%E7%AA%97%E5%85%83%E4%BB%B6%E8%A3%A1%E7%9A%84%E8%B3%87%E8%A8%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1156414848.A.515.html">[問題] 如何得知訊窗元件裡的資訊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">terrybob</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E5%BE%97%E7%9F%A5%E8%A8%8A%E7%AA%97%E5%85%83%E4%BB%B6%E8%A3%A1%E7%9A%84%E8%B3%87%E8%A8%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Aterrybob">搜尋看板內 terrybob 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9c52ba0afd0',m:'UvOx4e6na9LCHSHfAg_nOhvJRawIU9jjz8vJ57OIHL0-1653467469-0-AViH8/X+NoYBgTYFeJDmiofgqCZ0pYm8JmwhjFU7iqXP1EmdOfIdxyaEdrZ0GEZ77Az2NDg2Rtfj375b6huEWXfA6CNQprU/tb2Fg4N4QgDEysWIdPyRyEuaNZ0FUx8BbSUNZHEw/cVvdZD7YYs8D6iyN5H1h3YHWMULgCLGNOWP',s:[0x24f99d877a,0x221b40b600],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

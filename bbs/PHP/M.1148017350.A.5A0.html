@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] mail()相關於 php.ini 中設定以及問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="之前我有寫了一隻 php
+主要是傳送檔案到我的 gmail 信箱中
+而昨天我將 php4 升級至最新版之後
+我發現 我的 mail() 出現錯誤
+[19-May-2006 12:36:05] PHP Fatal error:
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] mail()相關於 php.ini 中設定以及問題">
+<meta property="og:description" content="之前我有寫了一隻 php
+主要是傳送檔案到我的 gmail 信箱中
+而昨天我將 php4 升級至最新版之後
+我發現 我的 mail() 出現錯誤
+[19-May-2006 12:36:05] PHP Fatal error:
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1148017350.A.5A0.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ztw ( )</span></div><div class="article-metaline-right"><span class="article-meta-tag">站內</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] mail()相關於 php.ini 中設定以及問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri May 19 13:51:15 2006</span></div>
+之前我有寫了一隻 php
+主要是傳送檔案到我的 gmail 信箱中
+而昨天我將 php4 升級至最新版之後
+
+我發現 我的 mail() 出現錯誤
+[19-May-2006 12:36:05] PHP Fatal error:
+Call to undefined function:  mail() in /home/xxxx/scripts/mail.php on line 9
+
+不知道是不是我的 php.ini
+有少設定些什麼東西
+目前我查 phpinfo() 裡面，我的sendmail_from: no value
+不知道這需不需要設定
+
+我也有試過 php官網裡面的範例
+&lt;?php
+// The message
+$message = &#34;Line 1\nLine 2\nLine 3&#34;;
+
+// In case any of our lines are larger than 70 characters,
+// we should use wordwrap()
+$message = wordwrap($message, 70);
+
+// Send
+mail(&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="33505255555a5d5247565773564b525e435f561d505c5e">[email&#160;protected]</a>&#39;, &#39;My Subject&#39;, $message);
+?&gt;
+
+結果也是一樣的錯誤(同上)
+
+請各位前輩可以給我一點方向謝謝!!
+
+--
+討論是你我教學相長的機會
+UO-小築  <a href="http://uniorg.net/" target="_blank" rel="noreferrer noopener nofollow">http://uniorg.net/</a>  讓我們一同喜愛這討論空間
+喜歡他的話  別忘了推薦給大家...
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 59.104.65.126
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">KiroKu</span><span class="f3 push-content">:imap.dll前面的;要拿掉喔</span><span class="push-ipdatetime"> 05/19 15:56
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ztw</span><span class="f3 push-content">:但是我的環境是Freebsd 不是 windows...</span><span class="push-ipdatetime"> 05/19 18:52
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1148017350.A.5A0.html?cacheKey=2148-469793970&amp;offset=1176&amp;offset-sig=026f611891bb9023a5746e7a0b34d0ad6d53f007" data-longpollurl="/v1/longpoll?id=a0d7d3fd2e4b82e0226a43764addf4d102d62946" data-offset="1176"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab1ae3df8eb',m:'NUUuGn2aAUT.x9hoMVKZBUy1h0.VfpXDahhfccYNaho-1653467507-0-AdlitHbjd4ScMwaD7r4Y+Y7gQ/KAkQai3ZPR9ZGJJmPUkqhGiyAeLCLyGM+4wcsT1noW8j5uy7I8+9ERHUvYjL5Js+FPBzTDCgOf1qKFNQKVHsvniyscEx+fVzXBEr0bRT8lGHOSw8sJh+M6GGcgDnqIPCEDuCTgYTnhlEZ/ahY9',s:[0x6292842f5c,0xea3a9940e5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

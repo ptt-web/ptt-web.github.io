@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 網頁big5 + mysql utf8 時 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="首先建議不要動不動就去改php.ini來配合程式
+最好用最嚴謹的php.ini，讓程式換到其他平台也能正常運作
+-----  big5 分隔線  -------
+自從愛上utf8後， 很久沒用 big5了
+mysql 自從5.0後 (好像4.1也是) ，骨子裡(system)是utf8
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 網頁big5 + mysql utf8 時">
+<meta property="og:description" content="首先建議不要動不動就去改php.ini來配合程式
+最好用最嚴謹的php.ini，讓程式換到其他平台也能正常運作
+-----  big5 分隔線  -------
+自從愛上utf8後， 很久沒用 big5了
+mysql 自從5.0後 (好像4.1也是) ，骨子裡(system)是utf8
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1218946821.A.11A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">PHP5 (Powered by Zend Engine2)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 網頁big5 + mysql utf8 時</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Aug 17 12:20:20 2008</span></div>
+<span class="f2">※ 引述《tonytsai88 (我愛吃涼麵)》之銘言：
+</span><span class="f6">: 如果我的網頁是 big5 charset
+</span><span class="f6">: 但 mysql 資料庫是 utf8
+</span><span class="f6">: 我的資料裡面有中文，insert 到資料庫時要怎麼做才正確呢
+</span><span class="f6">: 我目前是先 SET NAMES big5
+</span><span class="f6">: 雖然這樣子讀取資料庫裡的中文資料, 可以正常的在網頁顯示中文
+</span><span class="f6">: 但是我 insert 到資料庫的時候，最後一個字如果是中文特殊字，比如說「餐」、「珮」
+</span><span class="f6">: 就會有 insert fail 的情況
+</span><span class="f6">: 我目前是有把 magic_quotes_gpc 設為 ON
+</span><span class="f6">: 請問該如何處理才是正確的呢
+</span>
+首先建議不要動不動就去改php.ini來配合程式
+最好用最嚴謹的php.ini，讓程式換到其他平台也能正常運作
+
+-----  big5 分隔線  -------
+
+自從愛上utf8後， 很久沒用 big5了
+mysql 自從5.0後 (好像4.1也是) ，骨子裡(system)是utf8
+只是跟 client 溝通可以選 utf8或big5
+
+首先 SET NAMES big5
+
+以下這些function是參考osc，不過做法跟它不太一樣
+
+// 強制把 magic_quotes_gpc 關掉
+  function MY_db_prepare_input($string)
+  {
+    if (is_string($string))
+    {
+      return (get_magic_quotes_gpc()) ? stripslashes($string) : $string;
+    }
+    elseif (is_array($string))
+    {
+      reset($string);
+      while (list($key, $value) = each($string))
+      {
+        $string[$key] = MY_db_prepare_input($value);
+      }
+      return $string;
+    }
+    else
+    {
+      return $string;   // neither string nor array
+    }
+  }
+if (get_magic_quotes_gpc())
+{
+  $_GET = MY_db_prepare_input($_GET);
+  $_POST = MY_db_prepare_input($_POST);
+  $_COOKIE = MY_db_prepare_input($_COOKIE);
+}
+
+// 寫入 mysql
+// 處理許蓋功問題
+// determine if mysql query need addslashes
+$test_string = &#39;許蓋功 &#39;;
+$test_string_result = mysql_result (mysql_query (&#34;SELECT &#39;$test_string&#39;&#34;),0,0);
+
+if ($test_string == $test_string_result)
+  define (&#39;MYSQL_NEED_ADDSLASHES&#39;, false);
+else
+  define (&#39;MYSQL_NEED_ADDSLASHES&#39;, true);
+
+// INSERT入 mysql 時先 MY_db_input() 處理字串
+  function MY_db_input($string)
+  {
+    return (MYSQL_NEED_ADDSLASHES == true) ? addslashes ($string) : big5_addslashes ($string);
+  }
+
+addslashes 跟 big5_addslashes 的差別
+許a\b&#39; ===&gt; addslashes ===&gt;      許\a\\b\&#39;
+許a\b&#39; ===&gt; big5_addslashes ===&gt; 許a\\b\&#39;
+
+big5_addslashes() 有點長，請自行下載 osc (好像要下載舊版，新版的改用utf8了)，
+參考 big5_func.inc 。
+<a href="http://twpug.net/modules/wfdownloads/singlefile.php?cid=24&amp;lid=214" target="_blank" rel="noreferrer noopener nofollow">http://twpug.net/modules/wfdownloads/singlefile.php?cid=24&amp;lid=214</a>
+上面這個載點是 goole big5_addslashes 估到的
+
+
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.112.242.190
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bcse        </span><span class="f3 push-content">:好有趣的Fix           （或者說是好刻苦的Fix？XD）</span><span class="push-ipdatetime"> 08/17 13:50
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shadowjohn  </span><span class="f3 push-content">:謝好經驗，感謝PHP5分享Orz</span><span class="push-ipdatetime"> 08/18 00:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kylekai     </span><span class="f3 push-content">:很棒的處理..:)</span><span class="push-ipdatetime"> 08/18 14:02
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1218946821.A.11A.html?cacheKey=2148-469795351&amp;offset=2691&amp;offset-sig=e7dc416bef45253c9f633c49bce8fca1d0092587" data-longpollurl="/v1/longpoll?id=32a663b270ff395c304ba5d8267b43f03d2545bc" data-offset="2691"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea739bfb1ec4',m:'RLSK6c.JToenhyNwKzL1FetrChZtr1S2dtwj7hgqg04-1653467497-0-Ad8YBh8vqMlIVvtDnoUS6Rxnv2759k+IJ3pxA2iOkNPYdXs5OuEWQuetvOBJbekD6nMvP9Jvj0T0cVgPelRsR61B516NXcUy307wjD9xqnxsls1R0cFW2FW2DCb6MXz6eNTJ6L/BqhF1oQW9M5Z62rikDV3BDDzd5Z8MgsBaFm9e',s:[0xc9bb808384,0xfea3cd7c6d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

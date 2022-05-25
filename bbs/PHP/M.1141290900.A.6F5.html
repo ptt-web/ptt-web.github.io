@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [心得] PHP裡單引號(&#39;&#39;)跟雙引號(&#34;&#34;)的差別 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="有另一個做法可以讓sql查詢字串比較簡單易懂，特別是sql中有陣列或物件的時候。
+就是利用sprintf()函數來格式化sql.
+例：$sql = sprintf(&#34;SELECT * FROM user WHERE uid = &#39;%s&#39; AND password = &#39;%s&#39;&#34;,
+           $session-&gt;uid, $session-&gt;password);
+這樣就不會有那麼多小點點跟單雙引號跟大括弧{ }，看起來很累... ORZ
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [心得] PHP裡單引號(&#39;&#39;)跟雙引號(&#34;&#34;)的差別">
+<meta property="og:description" content="有另一個做法可以讓sql查詢字串比較簡單易懂，特別是sql中有陣列或物件的時候。
+就是利用sprintf()函數來格式化sql.
+例：$sql = sprintf(&#34;SELECT * FROM user WHERE uid = &#39;%s&#39; AND password = &#39;%s&#39;&#34;,
+           $session-&gt;uid, $session-&gt;password);
+這樣就不會有那麼多小點點跟單雙引號跟大括弧{ }，看起來很累... ORZ
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1141290900.A.6F5.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710ceaa35f6c1ec4'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Clessin (Clemond)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [心得] PHP裡單引號(&#39;&#39;)跟雙引號(&#34;&#34;)的差別</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar  2 17:41:03 2006</span></div>
+<span class="f2">※ 引述《sonicjr (平凡中的不平凡)》之銘言：
+</span><span class="f6">: 所以 SQL 語法的部份單雙引號的配合就變的很重要
+</span><span class="f6">: 我個人是習慣這樣用
+</span><span class="f6">: $sql = &#34;select * from member where name = &#39;&#34;.$name.&#34;&#39; and pw = &#39;&#34;.$pw.&#34;&#39;&#34;;
+</span><span class="f6">: 我的寫法是 讓字串歸字串 變數歸變數
+</span><span class="f6">: SQL 語法字串只接受單引號 所以我就用雙引號去包 才不用去加 \
+</span><span class="f6">: 新手不建議把 SQL 語法分行寫 因為你觀念還不懂 很容易出錯
+</span><span class="f6">: 等你熟一點在嘗試分行 分行的寫法也有很多種 這邊就不多說了
+</span><span class="f6">: 這是個人的一點小小心得 希望對初學者有幫助
+</span><span class="f6">: 高手就請多多指教了 也許你有更好的方法
+</span><span class="f6">: 如果可以也請你分享給大家
+</span>
+有另一個做法可以讓sql查詢字串比較簡單易懂，特別是sql中有陣列或物件的時候。
+就是利用sprintf()函數來格式化sql.
+例：$sql = sprintf(&#34;SELECT * FROM user WHERE uid = &#39;%s&#39; AND password = &#39;%s&#39;&#34;,
+           $session-&gt;uid, $session-&gt;password);
+這樣就不會有那麼多小點點跟單雙引號跟大括弧{ }，看起來很累... ORZ
+sprintf()的詳細用法可上PHP官方網站查詢。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.72.181.15
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1141290900.A.6F5.html?cacheKey=2148-469794760&amp;offset=1034&amp;offset-sig=49d9e8debe38ea496b35c2bdc02e5b2e81149e28" data-longpollurl="/v1/longpoll?id=81c5e4260455aef5c0162f3a0ec18d9fa1edb47d" data-offset="1034"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa35f6c1ec4',m:'TaYJhPwnUR82BkX8QUUkhaxJBRcrwmfzGFbNrWR9n.U-1653467505-0-AUdbCnHp7VRBdnBLjIBSDfbUfc/dYnIOgB8evWdJdIm8n2BY/mCel8Jrk34nG9d6gkh+ToixRFCvLeS7aU4TQqr+4OTRAlPBSaOW5GZyHPTQ1pSZB3Q0rFYoIwwYZOH+i5PYJfO0LVxi2JXUhSN8NMoVJqhWUcPdOMoximnctJZG',s:[0xf081ee4d65,0x5ade2bfefd],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

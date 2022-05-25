@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益]分頁變數傳遞 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="你的windows的設定其實是不好的。
+這可能會產生所謂的「變數資料注入」
+因為不單單是get，連post都可以注入變數資料。
+早期一些書藉也是這樣教。
+不過通常遇到的都是問為什麼書上的範例無法使用。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益]分頁變數傳遞">
+<meta property="og:description" content="你的windows的設定其實是不好的。
+這可能會產生所謂的「變數資料注入」
+因為不單單是get，連post都可以注入變數資料。
+早期一些書藉也是這樣教。
+不過通常遇到的都是問為什麼書上的範例無法使用。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1460098682.A.35C.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tkdmaf (皮皮快跑)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益]分頁變數傳遞</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Apr  8 14:57:59 2016</span></div>
+<span class="f2">※ 引述《kevin10449 (鹽酥雞)》之銘言：
+</span><span class="f6">: 最近遇到windows 網頁轉移到Linux上的問題
+</span><span class="f6">: 例如: a.php
+</span><span class="f6">: &lt;a href=&#34;xxxx?page=&lt;?=$row-&gt;Id?&gt;&#34;&gt;test&lt;/a&gt;
+</span><span class="f6">: b.php
+</span><span class="f6">: $sql=&#34;select * from xxx where Id=&#34;.$page;
+</span><span class="f6">: 在windows環境下，傳遞分頁變數給b.php的mysql作為篩選條件是可以的，但是
+</span><span class="f6">: 轉移到Linux上傳遞是似乎抓不到$page變數。
+</span><span class="f6">: 想請問是否哪邊語法或設定檔需要修改?
+</span>你的windows的設定其實是不好的。
+這可能會產生所謂的「變數資料注入」
+因為不單單是get，連post都可以注入變數資料。
+早期一些書藉也是這樣教。
+不過通常遇到的都是問為什麼書上的範例無法使用。
+
+這問題基本上就是php.ini中的register_globals 開了 on
+(雖然我記得我聽了很久的說是要把這個參數廢止掉，但似乎這個設定還是
+一直都在)
+
+而不管怎麼樣建議就是開off就好了。
+不要去做自動註冊全域變數這件事。
+
+至於除掉這件事之外。
+該如何取得get方法或是post方法的資料……
+我覺得那是相當基本的事情，就留給你自己去查資料了。
+僅告訴你問題的原因。
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 123.204.161.190
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1460098682.A.35C.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1460098682.A.35C.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">weiclin</span><span class="f3 push-content">: register_globals在5.4就沒有嘍,而且5.4也已經EOL了</span><span class="push-ipdatetime"> 04/08 16:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 說是沒有，但是在設定檔卻還是能看到………</span><span class="push-ipdatetime"> 04/09 00:33
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiclin</span><span class="f3 push-content">: 猜你複製了舊版的php.ini去用? 我這邊 5.4 之後的都沒有</span><span class="push-ipdatetime"> 04/09 08:42
+</span></div>這個問題就要問xampp了。
+雖然我基本是無視這個設定。
+喔！剛剛去看我另一台linux(php 5.5)，的確沒有這個設定值……
+那應該是xampp不知道在幹嘛還是保留了這個設定值。
+(我的是mac os版的xampp，也是php5.5)
+
+<span class="f2">※ 編輯: tkdmaf (123.204.161.190), 04/09/2016 10:26:44
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1460098682.A.35C.html?cacheKey=2148-469784804&amp;offset=1634&amp;offset-sig=6c76992313c7f2944cad655ee68c61b6f142c289" data-longpollurl="/v1/longpoll?id=ff0b419a8499cd98f80a0e467e75981a4b4d03c1" data-offset="1634"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea09af581ee0',m:'fknHv5bl71hWhusBRod62aBpWoWc29R4H3aHYCgZGOg-1653467481-0-ATgWAD3ieGDijuk6QXhBSOFMgaFtVNx1FwCoBirdJVHwELQjZNYkcjJYvhTEmoUYNA9jqrPLi/qvk+RLRlhTc6gfVfmpSXCRftbECBwWiDudmIMmQO6JwGcaEnDH6lWei3J3TNYlFm54tEB3Jx6hjsvAwpGIi/cIzSBrYYoq/fzC',s:[0x82c9196415,0x50a818a00b],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] php5 上傳xml並讀取數據 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="如果XML的來源是「上傳xml」，一般來講應該可以取得「上傳的檔案名稱」
+不過你打算重新命名自訂的名稱之後再做XML的剖析處理也是可行的
+上傳的部分或許你可以考慮用PEAR中的HTTP_Uload，可以簡化許多動作
+http://pear.php.net/package/HTTP_Upload
+剖析XML的方法，DOM是個不錯的選擇，不過你如要分析大量資料時，可以試試
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] php5 上傳xml並讀取數據">
+<meta property="og:description" content="如果XML的來源是「上傳xml」，一般來講應該可以取得「上傳的檔案名稱」
+不過你打算重新命名自訂的名稱之後再做XML的剖析處理也是可行的
+上傳的部分或許你可以考慮用PEAR中的HTTP_Uload，可以簡化許多動作
+http://pear.php.net/package/HTTP_Upload
+剖析XML的方法，DOM是個不錯的選擇，不過你如要分析大量資料時，可以試試
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1224344111.A.C39.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">liaosankai (低溫烘焙)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] php5 上傳xml並讀取數據</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Oct 18 23:35:07 2008</span></div>
+<span class="f2">※ 引述《godsing (執著是苦)》之銘言：
+</span><span class="f6">: 小弟上個月才開始接觸php,所以還有很多不懂,希望板上鄉民多多提示
+</span><span class="f6">: 先說明這不是作業,純粹是老師的考驗而已
+</span><span class="f6">: 首先是上傳xml,這部份很簡單
+</span><span class="f6">: 分析xml也是一樣,小弟是用dom分析的
+</span><span class="f6">: 小弟目前進行到上傳之後的xml,檔名並不一定,可能是a.xml或b.xml之類的
+</span><span class="f6">: 而小弟所學的方法是$doc-&gt;load( &#39;test.xml&#39; ); 但是這要固定檔名
+</span><span class="f6">: 小弟目前的想法是把上傳的檔案再copy一次,這樣我可以得到任意我想要的檔名
+</span><span class="f6">: 去配合上面寫死的讀取法
+</span><span class="f6">: 請問各位鄉民
+</span><span class="f6">: 除了這樣的作法還有別的方法嗎?
+</span><span class="f6">: 我的用法有什麼缺陷嗎?
+</span><span class="f6">: 一般的上傳結合分析xml作法又是怎樣的?
+</span>
+如果XML的來源是「上傳xml」，一般來講應該可以取得「上傳的檔案名稱」
+不過你打算重新命名自訂的名稱之後再做XML的剖析處理也是可行的
+上傳的部分或許你可以考慮用PEAR中的HTTP_Uload，可以簡化許多動作
+
+<a href="https://pear.php.net/package/HTTP_Upload" target="_blank" rel="noreferrer noopener nofollow">http://pear.php.net/package/HTTP_Upload</a>
+
+剖析XML的方法，DOM是個不錯的選擇，不過你如要分析大量資料時，可以試試
+SAX的方式，分批餵送資料做處理，這個方法在記憶體吃緊的主機是個很好的
+解決辦法
+
+至於PHP與XML配合的書本，有一本可以推薦你，你可以透過下列的資訊方便
+你搜尋借閱或購買(建議善用圖書館資源，特別你還是學生的時候)
+
+書名：「XML&amp;PHP整合應用實務」
+書碼：「ISBN 986-7944-45-3」
+出版：「上奇出版社」
+書號：「EB149」
+作者：「Vikram Vaswani」
+譯者：「陳武麟」
+
+透過這本書你還可以了解到WDDX、XML-RPC的原理，滿不錯的
+
+--
+歡迎來我的網誌看看
+@ <a href="http://doublekai.org/blog" target="_blank" rel="noreferrer noopener nofollow">http://doublekai.org/blog</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 123.240.37.127
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">godsing     </span><span class="f3 push-content">:感謝!!</span><span class="push-ipdatetime"> 10/19 00:11
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1224344111.A.C39.html?cacheKey=2148-469795260&amp;offset=1569&amp;offset-sig=4656eccee21137929f5ee51a8fc32d67ef9ceb31" data-longpollurl="/v1/longpoll?id=1eca71de75e092505e8f8f3010986277277aa6b8" data-offset="1569"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea840c39b00c',m:'35Z7kkLDI2S6QXHAZ_XdiqC6Uig20MkI37MYncA9aZc-1653467500-0-Abd37KnDDWlx1Lp0mrIqg5kxbIFIsLQrv2zjMwbquqcdAkXVPdU7DAz86u3s6rtTn/fxqn/b0QcGviob9jYbEq+1Q7ZlwbSBd2U/iNRfG6Z3vd19DZVsPTBJauRpO3M84MrT09Em+V7jwnorYEm2wSJjwUPYucWa7LWFeuZ9zDMW',s:[0xb7a45502f5,0x06e8d6cfaa],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

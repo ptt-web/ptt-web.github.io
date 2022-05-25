@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[心得] PHP解決MSSQL的UTF-8亂碼(for win) - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="1.首先你要先安裝php5.4在IIS上，別使用APACHE，
+這邊我是用windows server 2008 R2 64bit的版本
+使用Web Platform Installer 5.0來安裝會簡單很多，千萬不要在那邊下zip慢慢弄。
+安裝好以後直接新增站台就可以用了，你可以使用phpinfo()來看是否有正確執行。
+注意phpinfo下面是否有support sqlsrv。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[心得] PHP解決MSSQL的UTF-8亂碼(for win)">
+<meta property="og:description" content="1.首先你要先安裝php5.4在IIS上，別使用APACHE，
+這邊我是用windows server 2008 R2 64bit的版本
+使用Web Platform Installer 5.0來安裝會簡單很多，千萬不要在那邊下zip慢慢弄。
+安裝好以後直接新增站台就可以用了，你可以使用phpinfo()來看是否有正確執行。
+注意phpinfo下面是否有support sqlsrv。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1425544492.A.E1F.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">y2468101216 (芸)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[心得] PHP解決MSSQL的UTF-8亂碼(for win)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar  5 16:34:43 2015</span></div>
+1.首先你要先安裝php5.4在IIS上，別使用APACHE，
+這邊我是用windows server 2008 R2 64bit的版本
+使用Web Platform Installer 5.0來安裝會簡單很多，千萬不要在那邊下zip慢慢弄。
+安裝好以後直接新增站台就可以用了，你可以使用phpinfo()來看是否有正確執行。
+注意phpinfo下面是否有support sqlsrv。
+
+2.使用sqlsrv別使用PDO，根據微軟官方的文件PDO沒SUPPORT CharacterSet這個參數
+使用的具體例子可以參考：
+<a href="https://msdn.microsoft.com/en-us/library/cc626307.aspx" target="_blank" rel="noreferrer noopener nofollow">https://msdn.microsoft.com/en-us/library/cc626307.aspx</a>
+
+這東西花了我四天，我真像智障。
+有問題下面推文。
+
+上班偷發文超有刺激感的。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 118.163.30.31
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1425544492.A.E1F.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1425544492.A.E1F.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kenwufederer</span><span class="f3 push-content">: 雖然沒在用IIS，但願意分享給推</span><span class="push-ipdatetime"> 03/05 20:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kevin31a2</span><span class="f3 push-content">: 記得日期轉字串也要設定ㄧ下</span><span class="push-ipdatetime"> 03/06 07:49
+</span></div>可以說得更詳細一點嗎？
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">localhost</span><span class="f3 push-content">: 這有解決漏字的問題嗎</span><span class="push-ipdatetime"> 03/06 10:32
+</span></div>有，我之前簡中的字會亂碼。
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">marklaiw</span><span class="f3 push-content">: 同一樓,推大大</span><span class="push-ipdatetime"> 03/06 16:34
+</span></div><span class="f2">※ 編輯: y2468101216 (118.163.30.31), 03/06/2015 17:04:28
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">xdraculax</span><span class="f3 push-content">: 沒在用 php+mssql, 推分享</span><span class="push-ipdatetime"> 03/07 02:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kevin31a2</span><span class="f3 push-content">: 資料庫的日期印出來沒問題?</span><span class="push-ipdatetime"> 03/07 20:21
+</span></div>這我沒有注意，下星期看看。
+<span class="f2">※ 編輯: y2468101216 (122.116.19.98), 03/07/2015 20:50:56
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 日期會有問題？MySQL的日期沒有預設的l10n轉換吧？</span><span class="push-ipdatetime"> 03/08 01:37
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1425544492.A.E1F.html?cacheKey=2148-469801808&amp;offset=1649&amp;offset-sig=fdbb6ef89e171896367165ebd95fabb1b7db2289" data-longpollurl="/v1/longpoll?id=ca53c9bf1e72c4ed7f8c6fb0973c2e33e9f67ab2" data-offset="1649"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea1639858a27',m:'N2ci7evn0BabvTt2iO8b2ETpH2vEHsI90aNbObRUuHI-1653467482-0-AfnYC5HGKxFL6CnpPe2gyIY9TBgTOTwBJLD7DsorboAMDVR7W6IU0nJd0ZnNEq28W7vDdW3b4SGe7LMXNV84so590Qe77E/svvKY43R9kWKzybUhyk8ZlK+H1MgpNYHPui8JdE1tr9OOoX2vhFEXWZ02o9hamKZPocNiUwe8aYcE',s:[0xc5b961bb0c,0xe8f37cfa79],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

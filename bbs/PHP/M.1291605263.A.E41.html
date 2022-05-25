@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 這種UTF8、Big5何解? - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="        自問自答一下
+        今天終於把問題解決了
+        其實只要把Apache預設的語言從UTF8改成none就可以了
+        我之前是把UTF8改成big5是重要的網頁亂碼
+        現在已經把伺服器改成
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 這種UTF8、Big5何解?">
+<meta property="og:description" content="        自問自答一下
+        今天終於把問題解決了
+        其實只要把Apache預設的語言從UTF8改成none就可以了
+        我之前是把UTF8改成big5是重要的網頁亂碼
+        現在已經把伺服器改成
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1291605263.A.E41.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">mitsui0309 (前途無量、前途無亮??)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 這種UTF8、Big5何解?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Dec  6 11:14:17 2010</span></div>
+
+        自問自答一下
+
+        今天終於把問題解決了
+
+        其實只要把Apache預設的語言從UTF8改成none就可以了
+
+        我之前是把UTF8改成big5是重要的網頁亂碼
+
+        現在已經把伺服器改成
+
+        AddDefaultCharset none
+
+        這樣就ok了
+
+        詳細情形如下
+
+        #vi /etc/httpd/conf/httpd.conf
+        按/ 搜尋AddDefaultCharset 將UTF-8s改成Big5(如要多語系共存.則改為none)
+        #service httpd restart 重新啟動apache
+
+        資料來源
+
+        <a href="http://spp.hopto.org/jqpd5/archiver/?tid-207.html" target="_blank" rel="noreferrer noopener nofollow">http://spp.hopto.org/jqpd5/archiver/?tid-207.html</a>
+
+<span class="f2">※ 引述《mitsui0309 (前途無量、前途無亮??)》之銘言：
+</span><span class="f6">:         作業系統：FreeBSD
+</span><span class="f6">:         A：重要網頁→使用UTF8
+</span><span class="f6">:         B：亂碼網頁→使用big5
+</span><span class="f6">:         所以不能動到Apache的設定
+</span><span class="f6">:         本來想說只要B的網頁的編碼改成UTF8就解決了
+</span><span class="f6">:         但是後來發現，網頁的預設編碼big5是從其它網頁引用(暫定c網頁)的
+</span><span class="f6">:         而c網頁的default語言也是從d網頁引用
+</span><span class="f6">:         看起來好像只要改d網頁就好了，但是事實的結果好像又不是這樣子
+</span><span class="f6">:         請問我該a怎麼改這個網頁......
+</span><span class="f6">:         很複雜，簡單的說明如下
+</span><span class="f6">:         B.php內容如下
+</span><span class="f6">:         if (!file_exists(&#34;data/lock&#34;))
+</span><span class="f6">:         {header(&#34;Location:install.php&#34;);
+</span><span class="f6">:         exit;
+</span><span class="f6">:         }
+</span><span class="f6">:         require(&#34;c.php&#34;);
+</span><span class="f6">:         ..........................................
+</span><span class="f6">:         c.php
+</span><span class="f6">:         $cfg.............................
+</span><span class="f6">:         $cfg[&#39;lang_DEFAULT&#39;] = &#39;chinese_big5&#39;;
+</span><span class="f6">:         $cfg.............................
+</span><span class="f6">:         d.php
+</span><span class="f6">:         $lang[&#39;charse&#39;] = &#34;big5&#34;; →我改成UTF-8還是無效
+</span><span class="f6">:         //Gustbook
+</span><span class="f6">:         $lang[&#39;name&#39;] = &#34;????????&#34;; →中文亂碼的樣子
+</span><span class="f6">:         $lang[&#39;from&#39;] = &#34;????????&#34;; 如上
+</span><span class="f6">:         .............................................
+</span><span class="f6">:          現在真的很頭痛，完全不知該怎麼手下，有請高手來幫忙解答一下，謝謝。
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">athelok</span><span class="f3 push-content">:推 我也沒遇過這樣</span><span class="push-ipdatetime"> 12/06 13:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:我們上次有一個經驗剛好就是這樣</span><span class="push-ipdatetime"> 12/06 15:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">:可我看不懂第一篇那三個程式修改是在改啥</span><span class="push-ipdatetime"> 12/06 15:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">mitsui0309</span><span class="f3 push-content">:那個前人寫的，說實在的，我也看不懂~</span><span class="push-ipdatetime"> 12/06 17:30
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kylekai</span><span class="f3 push-content">:apache.conf 改 none , .htaccess 改該網站用的...</span><span class="push-ipdatetime"> 12/07 11:35
+</span></div><span class="f2">※ 編輯: mitsui0309 (1.160.214.194), 06/01/2016 02:21:27
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1291605263.A.E41.html?cacheKey=2148-469799032&amp;offset=2416&amp;offset-sig=defdba48e1228e2015e9c64021e60138ea858cd7" data-longpollurl="/v1/longpoll?id=2821dd05ccb1f8c94cd195ecbbbeadbf544ded15" data-offset="2416"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac229caafd0',m:'zZuwUJsv5lPqNL9lrmCEm1F2ihOqYj6JtHSVt3CZM0U-1653467510-0-ATVDTpD5hygMiXL1kS6hc/q+xvEx3rws+pijMN7nKzLhAH/nF3Rvi9TOLxJuBP5C/AqmbxGNyDijE3aUS5q9pzQbT+TX+VQi0aGafFh4ZF/McPl4SY6phX12cgK4HscCTjU4VtWTppDnWPQE71Y1uy52zAcZtd9Vr5Ilzh31LDlA',s:[0x972c868ef9,0x86555a9510],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

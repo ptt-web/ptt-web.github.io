@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] CSS 在 menu layout 上的配置 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="想請問版上的各位
+小弟最近寫了一個樣板 menu 的部份是參照這個網頁
+http://demonstration.abgne.tw/jquery/0015/0015_4.html
+但有一個地方有點疑問
+主要是這網頁的子選項是從整個選單的左側開始排列
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] CSS 在 menu layout 上的配置">
+<meta property="og:description" content="想請問版上的各位
+小弟最近寫了一個樣板 menu 的部份是參照這個網頁
+http://demonstration.abgne.tw/jquery/0015/0015_4.html
+但有一個地方有點疑問
+主要是這網頁的子選項是從整個選單的左側開始排列
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1313466345.A.CC4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">chonhan ()</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] CSS 在 menu layout 上的配置</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Tue Aug 16 11:45:43 2011</span></div>
+想請問版上的各位
+
+小弟最近寫了一個樣板 menu 的部份是參照這個網頁
+
+<a href="http://demonstration.abgne.tw/jquery/0015/0015_4.html" target="_blank" rel="noreferrer noopener nofollow">http://demonstration.abgne.tw/jquery/0015/0015_4.html</a>
+
+但有一個地方有點疑問
+
+主要是這網頁的子選項是從整個選單的左側開始排列
+
+網頁上只有四個母選項 所以看起來是還ok
+
+但今天一旦母選項數量多起來 子選項卻只有一兩個選項時
+
+偏右邊的母選項要點他自己的子選項時 就會覺得有點遠
+
+我想問問能否讓子選項以他的母選項下方為中心 然後左右開展呢？
+
+當然 母選項還是從左開始向右排列 只有子選項從他正下方開始左右延展
+
+(至於子選項的排列 希望能包在整個選單的寬度內 不會超過選單的寬度)
+
+這部份的CSS, jQuery我不太熟悉 不知道該怎麼樣調整
+
+還請版上各位高手能給予建議 謝謝 :)
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 60.251.167.2
+<span class="f2">※ 編輯: chonhan         來自: 60.251.167.2         (08/16 11:46)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:如果要以母選項為中心的話感覺要修改HTML結構</span><span class="push-ipdatetime"> 08/16 12:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:但如果以整個選單至中的話也許用margin:0 auto把次選單</span><span class="push-ipdatetime"> 08/16 12:28
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:置中？不過這樣次選單要有寬度或是要用inline-block吧</span><span class="push-ipdatetime"> 08/16 12:30
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kurtisgod</span><span class="f3 push-content">:可以  css position  或者手動拉左邊的距離</span><span class="push-ipdatetime"> 08/16 14:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:我試過各種方法都覺得有點彆扭 後來改成直式下拉選單...</span><span class="push-ipdatetime"> 08/17 11:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:其實這些選單網路上免費分享的很多 選擇也很多啦</span><span class="push-ipdatetime"> 08/17 11:23
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:橫式選單理想的方式 應該是要讓次選單左邊與其主選項切齊</span><span class="push-ipdatetime"> 08/17 11:24
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:做成橫式可以一直顯示在畫面上，直式要做浮動的吧</span><span class="push-ipdatetime"> 08/17 11:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:然後當次選單寬度無法與其主選項切齊時 至少會貼到最右邊</span><span class="push-ipdatetime"> 08/17 11:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:但以上這理想我沒有做出來Orz....</span><span class="push-ipdatetime"> 08/17 11:26
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:直式浮動選單其實相對來講容易 且應用時比較不易出錯</span><span class="push-ipdatetime"> 08/17 11:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Isacat</span><span class="f3 push-content">:假如是幫客戶做的網站 又讓選單可以自訂時 橫式選單很不利</span><span class="push-ipdatetime"> 08/17 11:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:我可能想得比較單純，但如果用文字置中於畫面，</span><span class="push-ipdatetime"> 08/17 11:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">oj113068</span><span class="f3 push-content">:不就好了嗎Orz 或一樣用浮動，我是說如果想要橫式的話</span><span class="push-ipdatetime"> 08/17 11:30
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1313466345.A.CC4.html?cacheKey=2149-475898883&amp;offset=2272&amp;offset-sig=4fcfb824d54891e9e114b09d81abe0aeefba2157" data-longpollurl="/v1/longpoll?id=914095254d701af698d0a404aa53648d60ae9bc3" data-offset="2272"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9fdab7d807e',m:'MxsR0NzQd5HRxt3QmxNcKo9ra_KuLm4d9LDlqP4cGqs-1653467478-0-AReCF69ODCG+qDL5tosFUb1hOpvpkoap5U7yqjpzIZIJvHhOzAkIBGQFxTHNTF6+/4eWe8iixcNGL1KcySUt9jQzqBBxiCHa9I2iRCCWLiqs2qqy/Gab0LlM77jnXZ1lcU8vVJorJU3vO0RsMslgI9vTphZ6FYvOCJzyh4Xm8AUl',s:[0x3249e9a933,0x8caf9eaee4],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

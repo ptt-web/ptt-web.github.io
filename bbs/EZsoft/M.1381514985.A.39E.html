@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請問] 有沒有可以自動開網頁的小軟體 - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="                  ^^^^^^^^^^^
+這是你目前電腦所在區域網路的預設閘道(IP分享器)位址
+: PPP的又不一樣
+  ^^^
+這個常見於ADSL撥接的PPP adapter連線
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請問] 有沒有可以自動開網頁的小軟體">
+<meta property="og:description" content="                  ^^^^^^^^^^^
+這是你目前電腦所在區域網路的預設閘道(IP分享器)位址
+: PPP的又不一樣
+  ^^^
+這個常見於ADSL撥接的PPP adapter連線
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1381514985.A.39E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">newclicker (Newclicker)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請問] 有沒有可以自動開網頁的小軟體</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Oct 12 02:08:55 2013</span></div>
+
+<span class="f2">※ 引述《thisisshita (..................)》之銘言：</span>
+<span class="f6">: 出來的東西分成兩個</span>
+<span class="f6">: 一個是區域網路一個是PPP</span>
+
+<span class="f6">: 區域網路的IP ADDRESS192.168.1.2</span>
+<span class="f6">: SUBNETＭＡＳＫ　２５５。２５５。２５５。０</span>
+<span class="f6">: Default gateway 192.168.1.1</span>
+                  ^^^^^^^^^^^
+這是你目前電腦所在區域網路的預設閘道(IP分享器)位址
+
+<span class="f6">: PPP的又不一樣</span>
+  ^^^
+這個常見於ADSL撥接的PPP adapter連線
+也就是你的電腦有設定除了區域網路的DHCP之外
+又再自行以ADSL的PPPoE撥號連上網路
+
+<span class="f6">: IP 跟default一樣</span>
+<span class="f6">: subnet mask 255.255.255.255</span>
+<span class="f6">: default gateway</span>
+<span class="f6">: 是哪一個呢</span>
+<span class="f6">: 我192.168.1.1 .2我都試過了</span>
+<span class="f6">: 255我也試了....</span>
+<span class="f6">: 唉 我不懂了</span>
+
+我推文的第一點是關鍵啊
+<span class="f3 hl">首先把電腦用無線或有線的方式連線到你要查的機器</span>
+照你前面所述，如果連過去發現192.168.1.1不是你要查的那台機器
+就表示你目前的電腦沒有與你要查的那台機器連線，
+或是路由沒有以你要查的那台機器為閘道
+
+你可以
+1.把192.168.1.1那台機器先行關掉
+
+2.把你的電腦以直接用有線或無線的方式連線到你要查的機器
+  (有些機器會禁止以無線的連線方式登入設定頁面,所以最好是以有線連接)
+
+3.執行ipconfig
+
+4.以瀏覽器或telent登入ipconfig裡的預設閘道ip位址
+  (有些舊型機器預設是以telnet登入)
+
+5.假設仍然失敗,則有可能該機器並未開啟DHCP功能
+
+6.請翻閱該機器說明書(若無請上網搜尋該廠牌型號的手冊)
+  尋找原廠的ip登入設定，並照手冊說明登入該裝置設定介面。
+
+7.若仍失敗,請翻閱手冊尋找重置該機器的按鈕方法恢復原廠設定
+
+8.重複步驟6
+
+9.仍然失敗，請送修。
+
+補充:
+
+假設你家的網路結構是這樣,以便說明的更清楚
+
+
+                ┌桌機2 192.168.1.3
+                ├桌機1 192.168.1.2
+                │
+中華電信的小烏龜┤192.168.1.n
+(192.168.1.1)   └電力線網路+無線分享器 192.168.x.m ╮╮╮IPad 192.168.x.y
+                                                    ╮╮╮筆電 192.168.x.z
+
+以下回答是假設你家的網路結構是這樣子接的話
+忘記ip，想要連線至電力線+無線分享器進行設定
+你可以有三個確切的方法
+
+1.使用iPad或筆電查詢自己的預設閘道192.168.x.m,
+  然後使用iPad或筆電的瀏覽器連線192.168.x.m 並輸入該機器設定介面的帳號密碼
+
+2.桌機進入中華電信的小烏龜192.168.1.1查詢IP分配或連線紀錄
+  即可得知192.168.1.n是甚麼，然後由桌機瀏覽器連線192.168.1.n
+  並輸入該機器設定介面的帳號密碼
+
+3.將桌機直接以網路線連接該機器(電力線網路+無線分享器)的LAN端網路孔(非WAN端),
+  然後同步驟 1.
+
+其他就如同前面回文
+<span class="f6">: : 6.請翻閱該機器說明書(若無請上網搜尋該廠牌型號的手冊)
+</span><span class="f6">: :   尋找原廠的ip登入設定，並照手冊說明登入該裝置設定介面。
+</span><span class="f6">: : 7.若仍失敗,請翻閱手冊尋找重置該機器的方法恢復原廠設定
+</span><span class="f6">: : 8.重複步驟六
+</span><span class="f6">: : 9.仍然失敗，請送修。
+</span>
+--
+內文無私人ip資訊,故回文至原發文處,提供給其他版友參考、指教。
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 1.34.163.231
+<span class="f2">※ 編輯: newclicker      來自: 1.34.163.231         (10/12 20:53)
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1381514985.A.39E.html?cacheKey=2148-739038286&amp;offset=2944&amp;offset-sig=d48d3483e8e13195854f1d50b46b0445bde1c73e" data-longpollurl="/v1/longpoll?id=fb330b98eed9809a9cf8ea82c4acbf9146ecf16c" data-offset="2944"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb6dfdbeaf2e',m:'Lrup4b.C4xJ294zmimtQMge7vZt.3j6_ejDqKKgwv_g-1653466882-0-ARfvE8WP4iMDhqkZFG2Pkuh+iTvt31WcOCvpGnuUHmqAntlIcJX1CU+oBWD2d9JJFGuVUOKWlG4ip0nvnDvgrpRSAkFKlyyUq8TcLFo4eYYhh0hqf8roB9eUTUpdwnwOjkU5T8vPr9D3owP9q6U1sCURFyRwVtvAK/EL3LOpSiPr',s:[0xcdcc50462e,0xea3a9940e5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

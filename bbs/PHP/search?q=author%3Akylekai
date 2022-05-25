@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:kylekai - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=3&amp;q=author%3Akylekai">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Akylekai">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Akylekai">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:kylekai" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1299478282.A.40F.html">Re: [請益] cakephp 多語系的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;cakephp&#43;%E5%A4%9A%E8%AA%9E%E7%B3%BB%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1285814279.A.CCB.html">Re: [請益] cakephp renderElement()</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;cakephp&#43;renderElement%28%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/30</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1283509094.A.C2F.html">Re: [請益] cakephp的mod_rewrite問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;cakephp%E7%9A%84mod_rewrite%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1280229239.A.418.html">Re: 上網找到一個方法，關於檔案下載計數的方法</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%E4%B8%8A%E7%B6%B2%E6%89%BE%E5%88%B0%E4%B8%80%E5%80%8B%E6%96%B9%E6%B3%95%EF%BC%8C%E9%97%9C%E6%96%BC%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%E8%A8%88%E6%95%B8%E7%9A%84%E6%96%B9%E6%B3%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1272965510.A.7FE.html">Re: [請益] PHP有自動轉換跳脫字元的function嗎</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%E6%9C%89%E8%87%AA%E5%8B%95%E8%BD%89%E6%8F%9B%E8%B7%B3%E8%84%AB%E5%AD%97%E5%85%83%E7%9A%84function%E5%97%8E">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1272271564.A.F37.html">Re: [請益] 請問cakePHP可以有model不用controller …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8FcakePHP%E5%8F%AF%E4%BB%A5%E6%9C%89model%E4%B8%8D%E7%94%A8controller&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1244175580.A.B3A.html">Re: [請益] 一行code</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%80%E8%A1%8Ccode">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1242094818.A.AEE.html">Re: [請益] 系統MySQL使用量過多</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%B3%BB%E7%B5%B1MySQL%E4%BD%BF%E7%94%A8%E9%87%8F%E9%81%8E%E5%A4%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1239353576.A.50C.html">Re: [請益] 請問在PHP中驗證網址該怎麼寫呢?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E5%9C%A8PHP%E4%B8%AD%E9%A9%97%E8%AD%89%E7%B6%B2%E5%9D%80%E8%A9%B2%E6%80%8E%E9%BA%BC%E5%AF%AB%E5%91%A2%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1239342322.A.86E.html">Re: [請益] 在ubuntu下跑php的session和cookie的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9C%A8ubuntu%E4%B8%8B%E8%B7%91php%E7%9A%84session%E5%92%8Ccookie%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1233823949.A.BE0.html">Re: [請益] 如何讓PHP網站自動偵測瀏覽器解析度自뀠…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E8%AE%93PHP%E7%B6%B2%E7%AB%99%E8%87%AA%E5%8B%95%E5%81%B5%E6%B8%AC%E7%80%8F%E8%A6%BD%E5%99%A8%E8%A7%A3%E6%9E%90%E5%BA%A6%E8%87%AA%EB%80%A0%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1233561979.A.5E6.html">Re: [請益] 請教foreach進階用法~~</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E6%95%99foreach%E9%80%B2%E9%9A%8E%E7%94%A8%E6%B3%95~~">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1231562191.A.1E5.html">Re: [請益] cakephp的webroot底下的php檔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;cakephp%E7%9A%84webroot%E5%BA%95%E4%B8%8B%E7%9A%84php%E6%AA%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/10</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1229678657.A.A66.html">Re: [請益] 使用ftp函數還會受限於max_upload_size …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%BD%BF%E7%94%A8ftp%E5%87%BD%E6%95%B8%E9%82%84%E6%9C%83%E5%8F%97%E9%99%90%E6%96%BCmax_upload_size&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1228483617.A.C5F.html">Re: [請益] php表單處理一問 (重新發文)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;php%E8%A1%A8%E5%96%AE%E8%99%95%E7%90%86%E4%B8%80%E5%95%8F&#43;%28%E9%87%8D%E6%96%B0%E7%99%BC%E6%96%87%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1224223091.A.EE6.html">[活動] 2008 十月份的 <span class="__cf_email__" data-cfemail="1e4d5f5e4a7f776e7b77">[email&#160;protected]</span> - 四連發之 Yahoo! is Open</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E6%B4%BB%E5%8B%95%5D&#43;2008&#43;%E5%8D%81%E6%9C%88%E4%BB%BD%E7%9A%84&#43;SA%40Taipei&#43;-&#43;%E5%9B%9B%E9%80%A3%E7%99%BC%E4%B9%8B&#43;Yahoo%21&#43;is&#43;Open">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1223369558.A.B8F.html">[活動] 2008 十月份的 <span class="__cf_email__" data-cfemail="5f0c1e1f0b3e362f3a36">[email&#160;protected]</span> - 四連發之 Yahoo! is Open</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E6%B4%BB%E5%8B%95%5D&#43;2008&#43;%E5%8D%81%E6%9C%88%E4%BB%BD%E7%9A%84&#43;SA%40Taipei&#43;-&#43;%E5%9B%9B%E9%80%A3%E7%99%BC%E4%B9%8B&#43;Yahoo%21&#43;is&#43;Open">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1222857966.A.4B4.html">[心得] CakePHP 1.2 i18n 實做.</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;CakePHP&#43;1.2&#43;i18n&#43;%E5%AF%A6%E5%81%9A.">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1222852083.A.760.html">Re: [請益] checkbox 勾選後進行刪除的方法?!</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;checkbox&#43;%E5%8B%BE%E9%81%B8%E5%BE%8C%E9%80%B2%E8%A1%8C%E5%88%AA%E9%99%A4%E7%9A%84%E6%96%B9%E6%B3%95%3F%21">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/01</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1221993153.A.413.html">[情報] <span class="__cf_email__" data-cfemail="a0f3e1e0">[email&#160;protected]</span>台中 九月 CakePHP 1.2 rc 快速上手!~</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kylekai</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;SA%40%E5%8F%B0%E4%B8%AD&#43;%E4%B9%9D%E6%9C%88&#43;CakePHP&#43;1.2&#43;rc&#43;%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%21~">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Akylekai">搜尋看板內 kylekai 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceab0dfe21ee0',m:'VQ8aPYV_UhP8otu_KUSx8aoQwHHjXrbTKjbdviKPZOg-1653467507-0-Aca3iZT0OfvyJCunfXoZDWql8z6gKuq47czwmDyPbsJo4j1tfWOjkSgeQHLH2Dy3mHr4mKPAL+jsQVVlXo6ty2CO8Zt/q9vm7VF6i4Lquzs8ZT3hI/PfIC4wrvnAyH1ZUMpIqRx7We7WVU/5iW25rbDpfC4awrEqoOpt0Qn9V9Bk',s:[0xd94c522d80,0xcc52b95a16],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

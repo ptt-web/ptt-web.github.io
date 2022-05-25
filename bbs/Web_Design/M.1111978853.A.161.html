@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] phpMyAdmin一個常見的問題  卻無法解ꠠ… - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="不知你問題解決沒? 我的經驗是:
+1. 修改php.ini，將&#34;;extension=php_mbstring.dll&#34;前面那個分號&#34;;&#34;消掉，存檔，
+　重新啟動Apache，應該就可以了。
+2. 若不行，應該是你PATH沒設好，可以右鍵按我的電腦，內容，進階，環境變數，設定
+Path，將你的php路徑，dll目錄路徑設好，重新開機，應該就OK了。
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] phpMyAdmin一個常見的問題  卻無法解ꠠ…">
+<meta property="og:description" content="不知你問題解決沒? 我的經驗是:
+1. 修改php.ini，將&#34;;extension=php_mbstring.dll&#34;前面那個分號&#34;;&#34;消掉，存檔，
+　重新啟動Apache，應該就可以了。
+2. 若不行，應該是你PATH沒設好，可以右鍵按我的電腦，內容，進階，環境變數，設定
+Path，將你的php路徑，dll目錄路徑設好，重新開機，應該就OK了。
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1111978853.A.161.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">Clessin (Clemond)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] phpMyAdmin一個常見的問題  卻無法解ꠠ…</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Mar 28 11:05:28 2005</span></div>
+<span class="f2">※ 引述《mysteriousge (一朝蛇咬十年草繩)》之銘言：
+</span><span class="f6">: 我的phpMyAdmin在主頁的部份會出現一段紅色的訊息
+</span><span class="f6">: The mbstring PHP extension was not found and you seem to be using multibyte
+</span><span class="f6">: charset. Without mbstring extension phpMyAdmin is unable to split strings
+</span><span class="f6">: correctly and it may result in unexpected results.
+</span><span class="f6">: 打上google搜尋  有很多解答沒錯  但都不符合我的狀況~~&gt;&lt;&#34;&#34;
+</span><span class="f6">: 我已經抓到php_mbstring.dll這個檔案  但我不知道該放哪裡
+</span><span class="f6">: PS.  我不是用AppServ裝的...
+</span><span class="f6">: 如果直接消掉php.ini檔案裡頭extension=php_mbstring.dll前面的分號
+</span><span class="f6">: 再重新啟動Apache的話會出現
+</span><span class="f6">: Unknown():Unable to load dynamic library &#39;./php_mbstring.dll&#39;-找不到指定的模組
+</span><span class="f6">: 的錯誤訊息
+</span><span class="f6">: 請問我的問題該怎麼解決呢~~&gt;&lt;&#34;&#34;
+</span><span class="f6">: 先感謝各位大大了
+</span>
+不知你問題解決沒? 我的經驗是:
+1. 修改php.ini，將&#34;;extension=php_mbstring.dll&#34;前面那個分號&#34;;&#34;消掉，存檔，
+　重新啟動Apache，應該就可以了。
+2. 若不行，應該是你PATH沒設好，可以右鍵按我的電腦，內容，進階，環境變數，設定
+Path，將你的php路徑，dll目錄路徑設好，重新開機，應該就OK了。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.72.181.15
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1111978853.A.161.html?cacheKey=2149-475711034&amp;offset=1161&amp;offset-sig=ca2737fc7abe039fc2018d1182a1b26deec73c5d" data-longpollurl="/v1/longpoll?id=3c4c465c401c35e27463872f35a2e492de31b81b" data-offset="1161"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce978f843afe5',m:'a.8Ym.bKBi51h8MvU8wpQhq0e2mQTv87YD5rR0SB8n4-1653467457-0-AUxsIAiVo7u8ikqZvxKDYvm4turwv0R7MBWyJUvqy+ukI9EctinbQGgX9lGOhYSPNua5VBgmFzQoayCfql+CwoBixSiYpm2yAco3jhx3zTEbGdkjhd5SuXqj1p7+ak3ZR3hiAeyMfGfQjdUMFcQQ+UcgylLD7FOY49lYoNLqfGus',s:[0x54e9cc7b92,0xe9a5fb281e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

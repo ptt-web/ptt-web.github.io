@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 使用frame下登出問題 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="index.asp裡面分兩個
+&lt;frame src=&#34;left.asp&#34; name=&#34;leftframe&#34; scrolling=no noresize&gt;
+&lt;frame src=&#34;right.asp&#34; name=&#34;rightframe&#34;&gt;
+我在left.asp 裡 有如下CODE
+&lt;% if session(&#34;login&#34;) then%&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 使用frame下登出問題">
+<meta property="og:description" content="index.asp裡面分兩個
+&lt;frame src=&#34;left.asp&#34; name=&#34;leftframe&#34; scrolling=no noresize&gt;
+&lt;frame src=&#34;right.asp&#34; name=&#34;rightframe&#34;&gt;
+我在left.asp 裡 有如下CODE
+&lt;% if session(&#34;login&#34;) then%&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1252296662.A.46E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">redming (無塵室遊魂)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 使用frame下登出問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Sep  7 12:11:01 2009</span></div>
+index.asp裡面分兩個
+&lt;frame src=&#34;left.asp&#34; name=&#34;leftframe&#34; scrolling=no noresize&gt;
+&lt;frame src=&#34;right.asp&#34; name=&#34;rightframe&#34;&gt;
+
+我在left.asp 裡 有如下CODE
+&lt;% if session(&#34;login&#34;) then%&gt;
+         &lt;a href=&#34;left.asp?admin=exit&amp;thisdate=&lt;%=thisdate%&gt;&#34;&gt;離開系統&lt;/a&gt;
+發現有一個問題
+就是當我登入後 在rightframe裡 是使用edit.asp在編輯檔案
+這時候  leftframe 是left.asp  rightframe是edit.asp
+如果我按下離開系統的話 只有left.asp會變化  可是 rightframe不變
+我要如何改才能讓案下離開系統後 rightframe也隨之變回一開始未登入的right.asp
+請多指教&gt;&#34;&lt; 謝謝
+= = = == = = =
+經過一樓提示後我改成這樣
+&lt;a target=_top href=&#34;index.asp?admin=exit&#34;&gt;離開系統&lt;/a&gt;
+然後在index.asp裡面加上
+&lt;%
+if request(&#34;admin&#34;) = &#34;exit&#34; then
+  session(&#34;login&#34;)=false
+end if
+%&gt;
+之後功能是OK了 可是 之後網址列那邊 就永遠是<a href="http://#@$$%/index.asp?admin=exit" target="_blank" rel="noreferrer noopener nofollow">http://#@$$%/index.asp?admin=exit</a>
+asp後面的admin都一直存在 囧 雖然測試登入登出或 edit.asp也沒問題
+但還是想問問看有無辦法把登出之後的admin=exit消掉@@
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.117.157.18
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:target=_top</span><span class="push-ipdatetime"> 09/07 12:16
+</span></div><span class="f2">※ 編輯: redming         來自: 140.117.157.18       (09/07 13:14)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">redming</span><span class="f3 push-content">:發現新問題@@</span><span class="push-ipdatetime"> 09/07 14:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:離開系統應該是連到一個取消session的頁面再轉回首頁</span><span class="push-ipdatetime"> 09/07 14:52
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">yanli2</span><span class="f3 push-content">:location.href =&#34;index.asp&#34;</span><span class="push-ipdatetime"> 09/07 18:46
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1252296662.A.46E.html?cacheKey=2149-475849237&amp;offset=1559&amp;offset-sig=56f1f5d64fbb6194f9a8becc60176e9da2e0c56d" data-longpollurl="/v1/longpoll?id=2640f5e05934a449a630aaea797fbee8d449f3ff" data-offset="1559"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce987acd314d0',m:'NUDxiGxEFMnO3hpggwkUL4yfey5aJlKuIK50fNUyMSg-1653467459-0-AY1j9wsauxdFaA/lrWV9MinoqEe9Db7Wsa2es/xjlbW1tFowCsarjyRI4arY7NSBHa9asdpFYHQitvdzkG8DYEdQ+2Ycn8cIpiVdY0j1tFndP38rdCxPQf9mGjtNU9yGim23xzEvWYxBVMHQRc1pMkCaFULlm6g2+mJEDZGBQ3yE',s:[0xd35bb25768,0xc53897560c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

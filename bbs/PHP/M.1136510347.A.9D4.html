@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] &lt;form&gt;的xhtml1.0 strict 檢測 不能用n … - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="上一篇的推文都沒先試試看嘛？XD
+※ 引述《picachuxyz (XHTML&amp;CSS&amp;PHP)》之銘言：
+執行js的時候，網頁發生錯誤，不知道是js的問題還是html的問題?
+&lt;script type=&#34;text/javascript&#34;&gt;
+&lt;!--
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] &lt;form&gt;的xhtml1.0 strict 檢測 不能用n …">
+<meta property="og:description" content="上一篇的推文都沒先試試看嘛？XD
+※ 引述《picachuxyz (XHTML&amp;CSS&amp;PHP)》之銘言：
+執行js的時候，網頁發生錯誤，不知道是js的問題還是html的問題?
+&lt;script type=&#34;text/javascript&#34;&gt;
+&lt;!--
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1136510347.A.9D4.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">gckenny (絕体絕命!小君君的最期～)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] &lt;form&gt;的xhtml1.0 strict 檢測 不能用n …</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jan  6 09:25:22 2006</span></div>
+上一篇的推文都沒先試試看嘛？XD
+
+
+<span class="f2">※ 引述《picachuxyz (XHTML&amp;CSS&amp;PHP)》之銘言：
+</span>執行js的時候，網頁發生錯誤，不知道是js的問題還是html的問題?
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+&lt;!--
+  function send() {
+    if (document.<span class="f3 hl">forms[0]</span>.email.value.length==0) {
+      alert(&#34;姓名不能空白&#34;);
+      return false;
+    }
+    if (document.<span class="f3 hl">forms[0]</span>.subject.value.length==0) {
+      alert(&#34;主題不能空白&#34;);
+      return false;
+    }
+    if (document.<span class="f3 hl">forms[0]</span>.message.value.length==0) {
+      alert(&#34;內容不能空白&#34;);
+      return false;
+    }
+    <span class="f3 hl">document.forms[0]</span>.submit();
+  }
+// --&gt;
+&lt;/script&gt;
+
+
+&lt;body&gt;
+&lt;div id=&#34;content&#34;&gt;
+&lt;form action=&#34;mailing.php&#34; method=&#34;post&#34;&gt;
+&lt;table id=&#34;mail&#34;&gt;
+&lt;tr&gt;&lt;td&gt;你的e-mail&lt;/td&gt;&lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;email&#34; size=&#34;30&#34; /&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;主旨&lt;/td&gt;&lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;subject&#34; size=&#34;30&#34; /&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;內容&lt;/td&gt;&lt;td&gt;&lt;textarea cols=&#34;30&#34; rows=&#34;6&#34; name=&#34;message&#34;&gt;&lt;/textarea&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&#34;2&#34;&gt;&lt;input type=&#34;button&#34; value=&#34;送出&#34; onclick=&#34;send()&#34; /&gt;
+    &lt;input type=&#34;reset&#34; value=&#34;清除&#34; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+很神奇的是，把id=&#34;mailform&#34;改成name=&#34;mailform&#34;，就不會執行錯誤了&gt;&lt;&#34;?
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 220.132.202.165
+
+--
+
+<span class="f0 hl">聽說沒有部落格，就是跟不上時代...囧rz</span>
+
+<a href="http://BLOG.Orz.tw" target="_blank" rel="noreferrer noopener nofollow">http://BLOG.Orz.tw</a><span class="f0 hl"> [</span><span class="f1 hl">180禁！未成年勿瀏覽！</span><span class="f0 hl">]</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 219.84.65.198
+<span class="f2">※ 編輯: gckenny         來自: 219.84.65.198        (01/06 09:40)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">picachuxyz</span><span class="f3 push-content">:試過了...失敗&gt;&lt;</span><span class="push-ipdatetime"> 01/06 18:22
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1136510347.A.9D4.html?cacheKey=2148-469794032&amp;offset=1757&amp;offset-sig=d4de72a4024702752d7d094b2dd2279a9485c8d6" data-longpollurl="/v1/longpoll?id=a386ccbdea0eb2848c50ceeb054fb74c5793f8c3" data-offset="1757"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaa22eed8a27',m:'cp5GMIoj3tgYemW4lhO9sV4s5y7SAU0LjKKAiUWi324-1653467505-0-AVSY7NHBQzkybREVPGKMABxee1XAgw9Xq9mZdUrRQb9pHgvS7Th+L5kVrXKgFd0Sm6r98oggVRBPamz0E/r1Y02mjVQMtVjv7Be7FgJkVkRWCMCmmF3xEWADAYpe/UnjmWqYbYxOvp1lPf1WGscs7pDrL4i3ekq1x/VcijDvgUcP',s:[0x89ad79d68b,0x637a19d888],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

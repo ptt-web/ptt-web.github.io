@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:Numino - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=3&amp;q=author%3ANumino">最舊</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=2&amp;q=author%3ANumino">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3ANumino">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:Numino" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1482909254.A.1B2.html">[問題] css能否做出三角形</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;css%E8%83%BD%E5%90%A6%E5%81%9A%E5%87%BA%E4%B8%89%E8%A7%92%E5%BD%A2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1308634221.A.4AA.html">Re: [問題][ASP] 如何在登入之後回到上一頁?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%5BASP%5D&#43;%E5%A6%82%E4%BD%95%E5%9C%A8%E7%99%BB%E5%85%A5%E4%B9%8B%E5%BE%8C%E5%9B%9E%E5%88%B0%E4%B8%8A%E4%B8%80%E9%A0%81%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1305184089.A.B75.html">Re: [問題] 關於msgBox的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BCmsgBox%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1264761017.A.DC7.html">[問題] DIV的height設置問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;DIV%E7%9A%84height%E8%A8%AD%E7%BD%AE%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1247308784.A.980.html">Re: [問題] 會員註冊完畢馬上確認的寫法？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%83%E5%93%A1%E8%A8%BB%E5%86%8A%E5%AE%8C%E7%95%A2%E9%A6%AC%E4%B8%8A%E7%A2%BA%E8%AA%8D%E7%9A%84%E5%AF%AB%E6%B3%95%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1242381547.A.CA6.html">[問題] 怎樣移動div</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%80%8E%E6%A8%A3%E7%A7%BB%E5%8B%95div">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1205379358.A.509.html">[問題] css讓div居中的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;css%E8%AE%93div%E5%B1%85%E4%B8%AD%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1205318084.A.22C.html">Re: [問題] html自動開啟網頁問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;html%E8%87%AA%E5%8B%95%E9%96%8B%E5%95%9F%E7%B6%B2%E9%A0%81%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1205314620.A.47E.html">Re: [問題] ASP.NET 開新視窗(更正)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ASP.NET&#43;%E9%96%8B%E6%96%B0%E8%A6%96%E7%AA%97%28%E6%9B%B4%E6%AD%A3%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1197548304.A.9E1.html">Re: [問題] 請問如何用javascript清空textarea內容</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E7%94%A8javascript%E6%B8%85%E7%A9%BAtextarea%E5%85%A7%E5%AE%B9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1191402907.A.38E.html">Re: [問題] javascript和瀏覽器問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript%E5%92%8C%E7%80%8F%E8%A6%BD%E5%99%A8%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1185183720.A.9CF.html">Re: [問題] FireFox 對 Javascript 的指令支援</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;FireFox&#43;%E5%B0%8D&#43;Javascript&#43;%E7%9A%84%E6%8C%87%E4%BB%A4%E6%94%AF%E6%8F%B4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1182098232.A.74B.html">Re: [問題] javascript</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1177815461.A.73D.html">Re: [問題] JavaScript Select OnChange </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;JavaScript&#43;Select&#43;OnChange&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1177805107.A.149.html">Re: [問題] 把一個html參數傳遞到另外一個html</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%8A%8A%E4%B8%80%E5%80%8Bhtml%E5%8F%83%E6%95%B8%E5%82%B3%E9%81%9E%E5%88%B0%E5%8F%A6%E5%A4%96%E4%B8%80%E5%80%8Bhtml">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1177482498.A.D57.html">Re: [問題] javascript</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;javascript">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1177205580.A.219.html">Re: [問題] 有人熟ASP或MSSQL的嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%89%E4%BA%BA%E7%86%9FASP%E6%88%96MSSQL%E7%9A%84%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1176738257.A.272.html">Re: [問題] 請問表格的邊線如何自訂顯示與否</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E8%A1%A8%E6%A0%BC%E7%9A%84%E9%82%8A%E7%B7%9A%E5%A6%82%E4%BD%95%E8%87%AA%E8%A8%82%E9%A1%AF%E7%A4%BA%E8%88%87%E5%90%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1176736751.A.CF4.html">Re: [問題] 用Dreamwaever+access 輸入中文卻變亂碼</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%94%A8Dreamwaever%2Baccess&#43;%E8%BC%B8%E5%85%A5%E4%B8%AD%E6%96%87%E5%8D%BB%E8%AE%8A%E4%BA%82%E7%A2%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1176517961.A.7F9.html">Re: [問題] IIS跑asp的一個問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Numino</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;IIS%E8%B7%91asp%E7%9A%84%E4%B8%80%E5%80%8B%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3ANumino">搜尋看板內 Numino 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce93c4caf1f2b',m:'wHSWh4clEvSd6KbeGBy9Bfddd8YVFfCt31.wlRPwTdI-1653467447-0-AQYcJlHzKY1imfh8Gmn9qNP07DCNVy7fpShxwsw77/Ayl3edNiDOEnsQYBuN2U1k4Wr7Xu+CSODCtQJbgG30wuavJCZuAaIOo5OsDHB6bv0MXPGh3U3oQzBgnMVf+FR9PiERXdngqikY+8oeIxqTsco6RNUOE8TmRslDvqDVWAB0',s:[0x64fed2ea9b,0x899530de75],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

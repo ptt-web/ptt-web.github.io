@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 解析度的問題? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="以改最少的方法解決的話
+在&lt;body&gt;&lt;/body&gt;之間直接塞一個table(設定寬度，依照上面圖片看來應該是982px)
+看起來就會像是這樣
+&lt;body&gt;
+  &lt;table&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 解析度的問題?">
+<meta property="og:description" content="以改最少的方法解決的話
+在&lt;body&gt;&lt;/body&gt;之間直接塞一個table(設定寬度，依照上面圖片看來應該是982px)
+看起來就會像是這樣
+&lt;body&gt;
+  &lt;table&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1225382640.A.5D9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">santin (被雷劈)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 解析度的問題?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Oct 31 00:03:57 2008</span></div>
+以改最少的方法解決的話
+在&lt;body&gt;&lt;/body&gt;之間直接塞一個table(設定寬度，依照上面圖片看來應該是982px)
+看起來就會像是這樣
+&lt;body&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        ......你原本網頁的內容在這裏......
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+不知道這樣你看不看得懂，然後還有個問題就是左邊的最新消息那條table也沒有寬度
+你可以定在寬150px左右應該不會破圖
+
+不過這當然是治標不治本的方法
+大家會推薦div其實也只是方便css排版以及網頁結構化
+只是看了一下原始碼，如果要結構化要改的地方太多
+真有時間的話可以慢慢學
+沒時間的話可以先用這種方式硬上，以後再慢慢學囉 :)
+
+
+<span class="f2">※ 引述《freetw (freetw)》之銘言：
+</span><span class="f6">: 請教一下系網的解析度問題，在1024x768瀏覽下沒有問題，
+</span><span class="f6">: 網頁位置都不會變。
+</span><span class="f6">: 那如果解析度調大的話，左邊的網頁會跑掉，請問這是什麼問題?
+</span><span class="f6">: 原本是使用表格的方式，但是不想網頁在高解析度變的怪怪的。
+</span><span class="f6">: 有什麼辦法可以解決的呢，用div嗎???
+</span><span class="f6">: 忘了貼網址= =|||
+</span><span class="f6">: <a href="http://leisure.stut.edu.tw/news.php" target="_blank" rel="noreferrer noopener nofollow">http://leisure.stut.edu.tw/news.php</a>
+</span><span class="f6">: 我右邊是接iframe的方式，解析度變大真的會扭曲掉。
+</span><span class="f6">: 左邊置中的話，好像還是一樣。
+</span>
+--
+SaDESIGN <a href="http://www.san-tin.com/" target="_blank" rel="noreferrer noopener nofollow">http://www.san-tin.com/</a>
+凌晨4點10分，失眠夜... <a href="http://www.san-tin.com/blog/" target="_blank" rel="noreferrer noopener nofollow">http://www.san-tin.com/blog/</a>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 118.168.203.113
+<span class="f2">※ 編輯: santin          來自: 118.168.203.113      (10/31 00:05)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">pm2001</span><span class="f3 push-content">:結論:時間允許的話請砍掉重練</span><span class="push-ipdatetime"> 10/31 00:51
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1225382640.A.5D9.html?cacheKey=2149-475819561&amp;offset=1374&amp;offset-sig=6844808f13c94dd17bdac2d815dc35186f2f5d0e" data-longpollurl="/v1/longpoll?id=b5bc4480cf286d82df5b67ec5146e89efe282806" data-offset="1374"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9ba1ab5807e',m:'0X8UXVNZ28uyLlOaamYHcVYGHFcS5kJGZCm11mFh5qc-1653467467-0-AT8OXwu7h3DGmjQKEfAZ8/ri1oLjoQHaUpXmYkJus28xlM8q8p44GAMYlRZrZqx+m5wYcmLcai6cKYvA353ZCA2SFBhTun4d2vL6Q5NorlY+o9imyR/qsGEcWVgaBx74ykEKDqh1wZbEYBD5WZaIz/mn6KzGyU62ZLbUQMuMtsP1',s:[0x21f7db009c,0xea3a9940e5],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

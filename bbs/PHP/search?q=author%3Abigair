@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:bigair - PHP - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/PHP/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/PHP/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Abigair">最舊</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=2&amp;q=author%3Abigair">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/PHP/search?page=1&amp;q=author%3Abigair">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:bigair" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1320670430.A.A0B.html">Re: [請益] 抓取相同網址下的網頁內容</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%8A%93%E5%8F%96%E7%9B%B8%E5%90%8C%E7%B6%B2%E5%9D%80%E4%B8%8B%E7%9A%84%E7%B6%B2%E9%A0%81%E5%85%A7%E5%AE%B9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1277216825.A.5DB.html">Re: [問題] 如何把像&lt;span style=&#34;display:none&#34;&gt;&lt; …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%A6%82%E4%BD%95%E6%8A%8A%E5%83%8F%3Cspan&#43;style%3D%22display%3Anone%22%3E%3C&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1251205186.A.9A7.html">Re: [請益] 請問這四種判斷方式的差異？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E5%9B%9B%E7%A8%AE%E5%88%A4%E6%96%B7%E6%96%B9%E5%BC%8F%E7%9A%84%E5%B7%AE%E7%95%B0%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1251197036.A.503.html">Re: [請益] 請問這四種判斷方式的差異？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%AB%8B%E5%95%8F%E9%80%99%E5%9B%9B%E7%A8%AE%E5%88%A4%E6%96%B7%E6%96%B9%E5%BC%8F%E7%9A%84%E5%B7%AE%E7%95%B0%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1248855253.A.5BA.html">Re: [請益] 一篇網誌是一個文件檔嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%80%E7%AF%87%E7%B6%B2%E8%AA%8C%E6%98%AF%E4%B8%80%E5%80%8B%E6%96%87%E4%BB%B6%E6%AA%94%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1247763521.A.FF3.html">Re: [請益] 如何刪除目錄列表的.與..</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%88%AA%E9%99%A4%E7%9B%AE%E9%8C%84%E5%88%97%E8%A1%A8%E7%9A%84.%E8%88%87..">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1246530010.A.3C6.html">Re: [請益] 製作php排序工具的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E8%A3%BD%E4%BD%9Cphp%E6%8E%92%E5%BA%8F%E5%B7%A5%E5%85%B7%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1245116860.A.2F2.html">Re: [請益] 字串轉數字問題!</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%AD%97%E4%B8%B2%E8%BD%89%E6%95%B8%E5%AD%97%E5%95%8F%E9%A1%8C%21">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1239284110.A.563.html">Re: [請益] 更新網頁時會重寫入$_POST的值</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9B%B4%E6%96%B0%E7%B6%B2%E9%A0%81%E6%99%82%E6%9C%83%E9%87%8D%E5%AF%AB%E5%85%A5%24_POST%E7%9A%84%E5%80%BC">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1233111789.A.232.html">Re: [心得] 歡迎參觀我的網頁</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;%E6%AD%A1%E8%BF%8E%E5%8F%83%E8%A7%80%E6%88%91%E7%9A%84%E7%B6%B2%E9%A0%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1231408840.A.284.html">Re: [請益] PHP+MySQL訊息發佈系統的超連結...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%2BMySQL%E8%A8%8A%E6%81%AF%E7%99%BC%E4%BD%88%E7%B3%BB%E7%B5%B1%E7%9A%84%E8%B6%85%E9%80%A3%E7%B5%90...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1231397648.A.0DA.html">Re: [請益] PHP+MySQL訊息發佈系統的超連結...</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;PHP%2BMySQL%E8%A8%8A%E6%81%AF%E7%99%BC%E4%BD%88%E7%B3%BB%E7%B5%B1%E7%9A%84%E8%B6%85%E9%80%A3%E7%B5%90...">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1223036170.A.86E.html">Re: [請益] 1437篇中curl抓取原始檔部分</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;1437%E7%AF%87%E4%B8%ADcurl%E6%8A%93%E5%8F%96%E5%8E%9F%E5%A7%8B%E6%AA%94%E9%83%A8%E5%88%86">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1217927034.A.5E5.html">Re: [請益] 公司的php網頁有一些電腦看了會有問題，請教如꘠…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%85%AC%E5%8F%B8%E7%9A%84php%E7%B6%B2%E9%A0%81%E6%9C%89%E4%B8%80%E4%BA%9B%E9%9B%BB%E8%85%A6%E7%9C%8B%E4%BA%86%E6%9C%83%E6%9C%89%E5%95%8F%E9%A1%8C%EF%BC%8C%E8%AB%8B%E6%95%99%E5%A6%82%EA%98%A0%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1213289860.A.91E.html">[請益] 看不到PHP的錯誤訊息</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E7%9C%8B%E4%B8%8D%E5%88%B0PHP%E7%9A%84%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1211967463.A.AD6.html">[請益] 如何取得 FTP 回應</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%A6%82%E4%BD%95%E5%8F%96%E5%BE%97&#43;FTP&#43;%E5%9B%9E%E6%87%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1196628378.A.365.html">[請益] 不使用form直接送出變數</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E4%B8%8D%E4%BD%BF%E7%94%A8form%E7%9B%B4%E6%8E%A5%E9%80%81%E5%87%BA%E8%AE%8A%E6%95%B8">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1195800688.A.837.html">[請益] 因 register_globals 的錯誤而修改程式</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E5%9B%A0&#43;register_globals&#43;%E7%9A%84%E9%8C%AF%E8%AA%A4%E8%80%8C%E4%BF%AE%E6%94%B9%E7%A8%8B%E5%BC%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1177062969.A.1FA.html">Re: [請益] 檔案上傳進度條</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E9%80%B2%E5%BA%A6%E6%A2%9D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/PHP/M.1173352656.A.D09.html">Re: [閒聊] 身分認證機制</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">bigair</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/PHP/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E8%BA%AB%E5%88%86%E8%AA%8D%E8%AD%89%E6%A9%9F%E5%88%B6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/PHP/search?q=author%3Abigair">搜尋看板內 bigair 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceac44ba51ec4',m:'lEX98Ww5Jsyut1AztNR2g5i6QGklttrykM6AyY1XnXQ-1653467510-0-AbuBq6UgYrQnH68EkLHPwe9V4YIU3YByCkWWrZyB6rsQ9ZaPYj9MhhqcnlJYRrwLVdclkQzBl6puIEixQiAJUOgLGp6ACN+hOZphRVOVSyDMGbkRzu7WbzX/hOt8DUyPc7zRzA86i4ug62fcOwT+YTzAZKDBS1Dp81BlSFl50xZt',s:[0xc1d2a7b0f9,0xa9f87b7afc],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

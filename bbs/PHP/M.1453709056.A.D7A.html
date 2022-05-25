@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 抓某個tag - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="php 請教
+我只想抓出 td class=&#34;t_f&#34;
+請問該怎寫，
+我怎找都不對，
+我原本是這樣寫
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 抓某個tag">
+<meta property="og:description" content="php 請教
+我只想抓出 td class=&#34;t_f&#34;
+請問該怎寫，
+我怎找都不對，
+我原本是這樣寫
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1453709056.A.D7A.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">soul810707 (louis)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 抓某個tag</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Jan 25 16:04:14 2016</span></div>
+php 請教
+我只想抓出 td class=&#34;t_f&#34;
+請問該怎寫，
+我怎找都不對，
+我原本是這樣寫
+&#39;&#39;#&lt;td class[^&gt;]*&gt;(.*?)&lt;/td&gt;#is&#39;&#39;
+但抓不到
+<a href="https://i.imgur.com/HnHJyPn.jpg" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/HnHJyPn.jpg</a>
+<div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/HnHJyPnl.jpg?e=1653654501&amp;s=xGnj_IBJn3G703BsUywubQ" alt="" loading="lazy" /></div>
+
+--
+Sent from my Android
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 110.30.80.49
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1453709056.A.D7A.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1453709056.A.D7A.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 天啊 你螢幕前面是有紗窗嗎</span><span class="push-ipdatetime"> 01/25 16:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: <a href="http://simplehtmldom.sourceforge.net/" target="_blank" rel="noreferrer noopener nofollow">http://simplehtmldom.sourceforge.net/</a> 這個不錯</span><span class="push-ipdatetime"> 01/25 17:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 直接$ht-&gt;find(&#39;td[class=t_f]&#39;)就可以取出整段了</span><span class="push-ipdatetime"> 01/25 17:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">soul810707</span><span class="f3 push-content">: 想請問一下，如果我是用 curl 然後用preg_match_all</span><span class="push-ipdatetime"> 01/25 18:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">soul810707</span><span class="f3 push-content">:  的話 ，該怎麼改呢？ 還是說用 Dom 比較方便</span><span class="push-ipdatetime"> 01/25 18:05
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">jhunkyoiori</span><span class="f3 push-content">: &lt;td[\s]+class[^&gt;]*&gt;(.*?)&lt;/td&gt;#is</span><span class="push-ipdatetime"> 01/25 18:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 你curl成一個字串一樣可以送給simplehtmldom啊</span><span class="push-ipdatetime"> 01/25 19:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">soul810707</span><span class="f3 push-content">: 成功了 ，謝謝 用dom真的比較好抓</span><span class="push-ipdatetime"> 01/27 16:15
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 他的dom也沒有jquery那麼厲害 不過夠用 :)</span><span class="push-ipdatetime"> 01/27 17:07
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1453709056.A.D7A.html?cacheKey=2148-469799405&amp;offset=1306&amp;offset-sig=b810cce19a6b8c1a79d249c91bc8fdb0d07c5ce0" data-longpollurl="/v1/longpoll?id=9207bfc7ce148604fc2f9ec53373a76acd003e06" data-offset="1306"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea673d598a27',m:'xdyM0GUP6N3KK9H0UUGgdjf9u75SIi8cz0a6YdDoc50-1653467495-0-AVOpl3V/Os89dWFPqUXhYqTgddViXe8ZljVrw9NIf0cJ+VSVqmA0r1WpLMCSH/khVP7GGBZvFtoRWZp0LzSGwvxmIvYj0oBfD4MN8ghvN4vT9QZjP8kSawdEQ6R3vyBoqI+k68HktYyOnwzftxQNj/UwJ0x1Ywa0GEwol6wn85tA',s:[0xe9a1a5b1fd,0xeaec4941e6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

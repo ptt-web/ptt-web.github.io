@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/GirlsPlanet/index.html">
+                <div class="board-name">GirlsPlanet</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;[Kep1er] Kep1ian一期招募中</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Men543/index.html">
+                <div class="board-name">Men543</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;國光幫幫忙 邁入下一個十年</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PRODUCEX101/index.html">
+                <div class="board-name">PRODUCEX101</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;[PDX ] 每顆星都繼續閃亮</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SuperStar/index.html">
+                <div class="board-name">SuperStar</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;[明日之星] 天佑高雄</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SuperStarAve/index.html">
+                <div class="board-name">SuperStarAve</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;[聲林之王] 每週五21:00首播</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SuperTaste/index.html">
+                <div class="board-name">SuperTaste</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678; ＊　ㄨㄚ係食尚玩家　＊</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Talent/index.html">
+                <div class="board-name">Talent</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;[天才衝衝衝] 週六晚間十點在華視</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/YuBeauty/index.html">
+                <div class="board-name">YuBeauty</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">節目</div>
+                <div class="board-title">&#9678;新聞挖挖哇 私房話老實說</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/CN_Entertain/index.html">
+                <div class="board-name">CN_Entertain</div>
+                <div class="board-nuser"><span class="hl f3">16</span></div>
+                <div class="board-class">綜藝</div>
+                <div class="board-title">&#9678;[中綜] 沒選秀了</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/ComeHere/index.html">
+                <div class="board-name">ComeHere</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">綜藝</div>
+                <div class="board-title">&#9678;☁☁康熙來了謝幕☁☁</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/JP_Entertain/index.html">
+                <div class="board-name">JP_Entertain</div>
+                <div class="board-nuser"><span class="hl f3">19</span></div>
+                <div class="board-class">綜藝</div>
+                <div class="board-title">&#9678;[日綜] 歡迎來日綜 (づ′▽`)づ</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/KR_Entertain/index.html">
+                <div class="board-name">KR_Entertain</div>
+                <div class="board-nuser"><span class="hl">132</span></div>
+                <div class="board-class">綜藝</div>
+                <div class="board-title">&#9678;[韓綜] Show Me The 新板主!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/TW_Entertain/index.html">
+                <div class="board-name">TW_Entertain</div>
+                <div class="board-nuser"><span class="hl">211</span></div>
+                <div class="board-class">綜藝</div>
+                <div class="board-title">&#9678;[台綜] 原子少年 全明星觀察中2</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/KR_1N2D/index.html">
+                <div class="board-name">KR_1N2D</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;☆2天1夜☆ </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MusicStation/index.html">
+                <div class="board-name">MusicStation</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;[MS] 塔摩利桑</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PeopleSeries/index.html">
+                <div class="board-name">PeopleSeries</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;[全民] 物換星移，擇日再戰！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SuperIdol/index.html">
+                <div class="board-name">SuperIdol</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">觀察</div>
+                <div class="board-title">&#9678;[超偶] 期待新一季超偶及新板主~</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cd9d2bb3b3505',m:'ay_yJ4F23EOHT_PyMrl12EaJgmCmUVbmUND_e9O6ZRY-1653466816-0-ATOBHiDCMJ8UnnKuQUf6GgtbQrzWw+dMIMfkDHJu2Z5O1RXGbHLpUnQ/gvSprJXlpsgcooHYfJfCw6pZnBxCHj2n+pYqgpn+xcaWwdMcH0z6R6vIwQt/R0N7JLmd2gpn3A==',s:[0xcdcc50462e,0xdd3f491142],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

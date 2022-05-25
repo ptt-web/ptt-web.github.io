@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題] 請問一個SQL - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="  假設上面這個叫做 Student
+  下設下面這個叫做 Class
+: Name    Course  Grade
+: ====================
+: John    Math      A
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題] 請問一個SQL">
+<meta property="og:description" content="  假設上面這個叫做 Student
+  下設下面這個叫做 Class
+: Name    Course  Grade
+: ====================
+: John    Math      A
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1134375233.A.A54.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">PsMonkey (痞子軍團團長)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題] 請問一個SQL</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Dec 12 16:23:05 2005</span></div>
+<span class="f2">※ 引述《cyril63 (陽光 海與沙灘)》之銘言：
+</span><span class="f6">: 我有下列 2 table
+</span><span class="f6">: Name    Sex     Age
+</span><span class="f6">: =====================
+</span><span class="f6">: John    M        21
+</span><span class="f6">: Mark    M        20
+</span><span class="f6">: Mary    F        25
+</span><span class="f6">: Jean    F        23
+</span>
+  假設上面這個叫做 Student
+  下設下面這個叫做 Class
+
+<span class="f6">: Name    Course  Grade
+</span><span class="f6">: ====================
+</span><span class="f6">: John    Math      A
+</span><span class="f6">: John    Art       B
+</span><span class="f6">: John    English   A
+</span><span class="f6">: Mark    Math      A
+</span><span class="f6">: Mark    Art       A
+</span><span class="f6">: Mary    Math      C
+</span><span class="f6">: Mary    Art       B
+</span><span class="f6">: Mary    English   B
+</span><span class="f6">: Jean    Art       A
+</span>
+  硬幹法
+  select s.*, m.grade as Math, a.grade as Art, e.grade as English
+  from  student as s,
+        (select * from class where course=&#39;math&#39;) as m,
+        (select * from class where course=&#39;art&#39;) as a,
+        (select * from class where course=&#39;english&#39;) as e
+  where s.name *= m.name and s.name *= a.name and s.name *= e.name
+
+  這個語法應該是 OK 的，不過，看個概念就好... XD
+  *= 應該是 left outter join，我忘記標準的 SQL 要怎麼寫了...
+
+  不過，說真的為什麼只能用 SQL 呢？  ==.==?
+  有時候把事情都丟給 SQL，未必是好事情
+
+<span class="f6">: 如何只用 SQL 展成下列 Table ????
+</span><span class="f6">: Name    Sex    Age     Math    Art     English
+</span><span class="f6">: ===============================================
+</span><span class="f6">: John     M      21      A       B         A
+</span><span class="f6">: Mark     M      20      A       A
+</span><span class="f6">: Mary     F      25      C       B         B
+</span><span class="f6">: Jean     F      23              A
+</span>
+--
+            侃侃長論鮮窒礙          <a href="http://www.psmonkey.idv.tw" target="_blank" rel="noreferrer noopener nofollow">http://www.psmonkey.idv.tw</a>
+            眾目睽睽無心顫          telnet://legend.twbbs.org
+            煢居少聊常人事
+            殺頭容易告白難
+
+                拜託不要，我對女案主過敏  \囧/
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 203.204.16.17
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">cyril63</span><span class="f3 push-content">:Thank you..你的方法可以喔</span><span class="push-ipdatetime"> 12/12 22:12
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1134375233.A.A54.html?cacheKey=2149-475717152&amp;offset=1824&amp;offset-sig=fa8985b63e4bb890c3c6bfcef25fcb9dfe1cf36e" data-longpollurl="/v1/longpoll?id=78e5a4ad7f50fbd39b1fd6046b5fa84be8d5cf6d" data-offset="1824"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9e79abcafcd',m:'buS0cUgOaSgixBD4c6el7jwjtiQS0GoJEMeKVS4qR0U-1653467475-0-AeV4EWTk9fc3iNetDSy6TH3kfgMRKnk8rzql28Nm0VxlvtNe3BS5vmGpspcXpnXvI101ugCuup4bywu14dRRQtij2fsdFXksvByx2J8F7VeEkJqs5KjiNYizc7uxusDNi8sMmpQ2KBwdBZF8VAuWO03s5f+Pkyf1hB73j52IV5Tn',s:[0xc947fc2196,0x3ad6d5cd67],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

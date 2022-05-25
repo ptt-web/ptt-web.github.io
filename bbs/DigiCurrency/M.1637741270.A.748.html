@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[挖礦] NBMINer 更新到 40.1版 - 看板 DigiCurrency - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="最近更新節奏越來越快了 感覺離全破解 指日可進
+難怪3060ti越來越貴
+比較好奇 從系統裡面超頻  跟用msi afterburner超頻有什麼不同就是
+----------
+v40.1版(今天更新)
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[挖礦] NBMINer 更新到 40.1版">
+<meta property="og:description" content="最近更新節奏越來越快了 感覺離全破解 指日可進
+難怪3060ti越來越貴
+比較好奇 從系統裡面超頻  跟用msi afterburner超頻有什麼不同就是
+----------
+v40.1版(今天更新)
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/DigiCurrency/M.1637741270.A.748.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/DigiCurrency/index.html"><span class="board-label">看板 </span>DigiCurrency</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/DigiCurrency/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">G4321 (小胖囉)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">DigiCurrency</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[挖礦] NBMINer 更新到 40.1版</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Nov 24 16:07:48 2021</span></div>
+
+最近更新節奏越來越快了 感覺離全破解 指日可進
+
+難怪3060ti越來越貴
+
+比較好奇 從系統裡面超頻  跟用msi afterburner超頻有什麼不同就是
+
+
+----------
+
+
+v40.1版(今天更新)
+fix: ethashv40.0 false 在最新的 Nvidia 驅動程序版本下被檢測為 LHR 鎖定。
+feature：支持未來的 LHR GPU 模型
+
+
+v40版
+
+feature：為 Nvidia GPU 添加超頻選項，需要管理員權限，接受逗號分隔列表以指定每
+個 GPU。
+
+-power-limit, -pl: 設置 GPU 的功率限制。例子：
+
+以瓦特為單位設置 PL： -pl 200
+
+以默認 PowerLimit 的百分比設置 PL：（-pl 75%在 Windows bat 文件中，需要 dual
+%, -pl 75%%）
+
+-cclock: 以 MHz 為單位設置核心時鐘。例子：
+
+設置時鐘偏移：（-cclock 100 僅限 Windows）
+
+設置鎖定時鐘： -cclock @1500
+
+-mclock：以 MHz 為單位設置內存時鐘偏移（僅限 Windows）
+
+-lock-cv: 以mV為單位設置GPU的鎖定核心電壓，支持圖靈和更新的GPU。（僅限 Windows
+）
+
+-fan：以 GPU 的百分比設置風扇速度。（僅限 Windows）
+
+feature：在控制台匯總表和網絡監視器中顯示當前的 LHR 值。
+
+feature：-proxy選項現在支持 SOCKS5 代理的用戶名和密碼。格式：-proxy
+user:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0474657777446c6b7770">[email&#160;protected]</a>:port
+
+feature: 網頁監控更改，刪除未使用的信息進行雙重挖掘。
+
+feature：日誌控制的新選項。
+
+-log-no-job: 關閉New job控制台中的線路。
+-log-cycle: 設置更改控制台和日誌中匯總表顯示的周期，以秒為單位，默認為30。
+fix: 將ethashCPU 共享驗證更改為獨立線程，降低在極低難度池中挖掘時的性能下降。
+
+fix：在某些情況下，LHR 鎖檢測到失敗。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 180.217.3.161 (臺灣)
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/DigiCurrency/M.1637741270.A.748.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/DigiCurrency/M.1637741270.A.748.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ClixTW</span><span class="f3 push-content">: NB內建超頻不錯，問題是關掉視窗之後不會恢復</span><span class="push-ipdatetime"> 11/24 16:10
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ClixTW</span><span class="f3 push-content">: 似乎只能重開機才能恢復原本的值…</span><span class="push-ipdatetime"> 11/24 16:10
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aixiiae2005</span><span class="f3 push-content">: 有人更新了嗎  算力提升多少?</span><span class="push-ipdatetime"> 11/24 16:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">c123791598</span><span class="f3 push-content">: 算力提升幅度不大 3060和3080自己試過解鎖增加0.5%來</span><span class="push-ipdatetime"> 11/24 16:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">c123791598</span><span class="f3 push-content">: 到74.5%</span><span class="push-ipdatetime"> 11/24 16:53
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">c123791598</span><span class="f3 push-content">: 但整體功耗因降壓超頻低了14%左右</span><span class="push-ipdatetime"> 11/24 16:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">c123791598</span><span class="f3 push-content">: 40.1a 卡的算力穩定不少</span><span class="push-ipdatetime"> 11/24 16:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bwa</span><span class="f3 push-content">: 有版友可以示範多張顯卡用；號區隔設定降壓超頻的語法嗎？看</span><span class="push-ipdatetime"> 11/24 17:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">bwa</span><span class="f3 push-content">: 不懂  感謝版友</span><span class="push-ipdatetime"> 11/24 17:02
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aixiiae2005</span><span class="f3 push-content">: 了解~ 39.6提升有感 40.1只有0.5%= = 不過有比沒有好</span><span class="push-ipdatetime"> 11/24 17:02
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ohyakmu</span><span class="f3 push-content">: 只是針對新的驅動問題吧，算力還是沒突破啊</span><span class="push-ipdatetime"> 11/24 17:04
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">autherchan30</span><span class="f3 push-content">: 奈米礦工問個 現在nicehash裡的NBminer不能用-lhr</span><span class="push-ipdatetime"> 11/24 22:38
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">autherchan30</span><span class="f3 push-content">: -mode 1了嗎 每次校準完還是顯示使用mode 2</span><span class="push-ipdatetime"> 11/24 22:38
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">angellll</span><span class="f3 push-content">: 用40.1 是不是就不需要用afterburner了?</span><span class="push-ipdatetime"> 11/24 22:58
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aspd193</span><span class="f3 push-content">: -lhr mode1 壞掉惹</span><span class="push-ipdatetime"> 11/24 23:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">bwa</span><span class="f3 push-content">: 有人可以教我 多顯卡怎麼設定不同的核心 記憶體 pl fan嗎</span><span class="push-ipdatetime"> 11/25 00:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">winiel559</span><span class="f3 push-content">: 你先把你的指令貼出來吧 不然哪知道你卡在哪</span><span class="push-ipdatetime"> 11/25 00:18
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">alkuo</span><span class="f3 push-content">: NiceHash裡開mode1的指令： —lhr-mode 1 —lhr 74</span><span class="push-ipdatetime"> 11/25 08:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">alkuo</span><span class="f3 push-content">: lhr前面的-要打兩次</span><span class="push-ipdatetime"> 11/25 08:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">aspd193</span><span class="f3 push-content">: 感謝樓上 雖然我現在都改用trex挖NH惹</span><span class="push-ipdatetime"> 11/25 11:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">winiel559</span><span class="f3 push-content">: 樓上不如用2miners的BTC出金，抽成比較低</span><span class="push-ipdatetime"> 11/25 11:30
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/DigiCurrency/M.1637741270.A.748.html?cacheKey=2148-150251520&amp;offset=3697&amp;offset-sig=6e167c381e6f7bbcd30158c212a3a054b63b9009" data-longpollurl="/v1/longpoll?id=f10f86b0d4e331b3d1b06f53ddce75038b43281b" data-offset="3697"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce29f7e812023',m:'N6hHZh2wNUvknhhh92KLqkmBM57KtUIhOQUlYR.zLuw-1653467176-0-AQRhJZkCVva9WKhjIxCN4IBMIYDtuF0j3qzXpGO3Qco+7gu3eWp6odnvsiiaA6nhqDFe2jFVrjpPA24WlCCgTJzXFVChu2lcoz8HGl3/t7550aklAibJwrT5wbaTcKC86tdAujnj27qsao0W2ER7W+dYXc1pWvf0wyOuK/cuopDa',s:[0x4448d14385,0xbe632ffc56],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

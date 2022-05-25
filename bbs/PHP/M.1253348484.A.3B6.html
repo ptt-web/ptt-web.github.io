@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 選擇性限制條件 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="使用相加的概念如何？
+0 不限制
+1 通過手機認證
+2 通過e-mail認證
+4 好友名單內
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 選擇性限制條件">
+<meta property="og:description" content="使用相加的概念如何？
+0 不限制
+1 通過手機認證
+2 通過e-mail認證
+4 好友名單內
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1253348484.A.3B6.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">cleanwind (骨傲風清(掛網))</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 選擇性限制條件</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sat Sep 19 16:21:22 2009</span></div>
+使用相加的概念如何？
+
+0 不限制
+1 通過手機認證
+2 通過e-mail認證
+4 好友名單內
+8 拒絕黑名單(？)
+
+要 通過手機認證 與 通過e-mail認證，欄位記錄 3
+
+要 拒絕黑名單 與 好友名單內，欄位記錄 12
+
+
+又或者完全依照資料庫正規化的概念，
+
+多建一個資料表，記錄賣方所設定的條件。
+
+
+請參考看看，若有錯誤還請高手指正。
+
+
+
+<span class="f2">※ 引述《j87b0003 (山貓好威)》之銘言：
+</span><span class="f6">: 在網路上買賣東西，賣方可以選擇性設定買方條件，
+</span><span class="f6">:     例：0.不限制
+</span><span class="f6">:         1.通過手機認證
+</span><span class="f6">:         2.通過e-mail驗證
+</span><span class="f6">:         3.好友名單內
+</span><span class="f6">:         4.拒絕黑名單..等
+</span><span class="f6">:     ps：僅需符合一項買方就可向該賣方購買
+</span><span class="f6">: 在db部份，目前是想到用一欄位標示該選擇的條件，
+</span><span class="f6">:     如：1,2,4 、0 、2,4 等等
+</span><span class="f6">: 在php部份，則是抓出上述欄位寫出對應之程式碼，
+</span><span class="f6">: 再丟回db做過濾條件。
+</span><span class="f6">: 不知道有沒有更好的方法或建議，
+</span><span class="f6">: 不管是在db部份或php部份。
+</span><span class="f6">: 謝謝大家指教
+</span>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 114.37.98.26
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">j87b0003    </span><span class="f3 push-content">:這部份是有想過，但讀出後還是要寫判斷...</span><span class="push-ipdatetime"> 09/19 17:27
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">JoeHorn     </span><span class="f3 push-content">:判斷是避不了的..</span><span class="push-ipdatetime"> 09/19 17:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">j87b0003    </span><span class="f3 push-content">:所以想說那一開始就分開，再去串sql會比較方便</span><span class="push-ipdatetime"> 09/19 17:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">rb1979      </span><span class="f3 push-content">:建立買方條件資料表 買方檢視時的資料時就已過濾SQL</span><span class="push-ipdatetime"> 09/22 12:06
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1253348484.A.3B6.html?cacheKey=2148-469785574&amp;offset=1352&amp;offset-sig=5078fa1b1733fe9f3cde9278c7ddf7a6b21fa2a3" data-longpollurl="/v1/longpoll?id=d2f00725893175801165a0173151bfd5a17d77b9" data-offset="1352"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea44eb89afcd',m:'HC2Xmsalw9dmhLEXp1UvfZPlGrO7AFuGmZZ6yVCJ..8-1653467490-0-AfQ3x4aCsQ01aKpvhJV7RZ7FA3YJ2uhZXIL50yAXqQtnExkGFBg2ip4MGc9o77nhk5UBMC+iEMYzyD/NI4VH9fq/W90CPjNNSSWIa7KyFQDrcQur/npjBXQC76/My1EaX9/UM+/Ih3B8V5QTjeb6JpDtnlboeAoE5mQ2/oqFaNZ0',s:[0x7efa894e9f,0x7eb89e7dfc],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

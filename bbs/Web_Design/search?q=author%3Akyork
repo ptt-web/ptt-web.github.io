@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:kyork - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Akyork">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3Akyork">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:kyork" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1332733865.A.5F8.html">Re: [問題] css透明度問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;css%E9%80%8F%E6%98%8E%E5%BA%A6%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1287414473.A.521.html">Re: [問題] CSS hack !important的用法</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS&#43;hack&#43;%21important%E7%9A%84%E7%94%A8%E6%B3%95">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/18</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1253609563.A.CBA.html">Re: [問題] CSS區塊往下擠</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%E5%8D%80%E5%A1%8A%E5%BE%80%E4%B8%8B%E6%93%A0">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1250747264.A.F76.html">[閒聊] 大絕–如何加強學習Html&amp;css的意願</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E5%A4%A7%E7%B5%95%E2%80%93%E5%A6%82%E4%BD%95%E5%8A%A0%E5%BC%B7%E5%AD%B8%E7%BF%92Html%26css%E7%9A%84%E6%84%8F%E9%A1%98">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1247814742.A.D52.html">Re: [問題] CSS做的選單在不同瀏覽器效果不同？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%E5%81%9A%E7%9A%84%E9%81%B8%E5%96%AE%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%80%8F%E8%A6%BD%E5%99%A8%E6%95%88%E6%9E%9C%E4%B8%8D%E5%90%8C%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1246638871.A.EC4.html">Re: [CSS]a:style1{} #style2{} .style3{} style4{ …</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5BCSS%5Da%3Astyle1%7B%7D&#43;%23style2%7B%7D&#43;.style3%7B%7D&#43;style4%7B&#43;%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">14</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1245919543.A.921.html">[閒聊] 有沒有IE6被排擠的八卦</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89IE6%E8%A2%AB%E6%8E%92%E6%93%A0%E7%9A%84%E5%85%AB%E5%8D%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1245048959.A.B14.html">[情報] Google官方seo初心者指南</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;Google%E5%AE%98%E6%96%B9seo%E5%88%9D%E5%BF%83%E8%80%85%E6%8C%87%E5%8D%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1242295594.A.380.html">Re: [問題] copyright? creativecommons?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;copyright%3F&#43;creativecommons%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/14</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1240833068.A.90E.html">Re: [問題] 滑鼠移過變圖片ASP.NET</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%BB%91%E9%BC%A0%E7%A7%BB%E9%81%8E%E8%AE%8A%E5%9C%96%E7%89%87ASP.NET">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1232521139.A.975.html">Re: [CSS] 圖片垂直置中的 css hack</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5BCSS%5D&#43;%E5%9C%96%E7%89%87%E5%9E%82%E7%9B%B4%E7%BD%AE%E4%B8%AD%E7%9A%84&#43;css&#43;hack">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">3</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1228357857.A.7B5.html">Re: [問題] 不知道版面能夠做成樣板嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%B8%8D%E7%9F%A5%E9%81%93%E7%89%88%E9%9D%A2%E8%83%BD%E5%A4%A0%E5%81%9A%E6%88%90%E6%A8%A3%E6%9D%BF%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1227665681.A.9B0.html">[心得] Desgin 不錯的網頁設計輔助工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;Desgin&#43;%E4%B8%8D%E9%8C%AF%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BC%94%E5%8A%A9%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1224490270.A.69A.html">Re: [問題] HTML簡單問</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;HTML%E7%B0%A1%E5%96%AE%E5%95%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1224063165.A.B8C.html">Re: 請問大家寫網頁用的工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%E8%AB%8B%E5%95%8F%E5%A4%A7%E5%AE%B6%E5%AF%AB%E7%B6%B2%E9%A0%81%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/15</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1220933178.A.90B.html">Re: [問題] 請問為何html的href連結設定為下載ppt쀠…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E7%82%BA%E4%BD%95html%E7%9A%84href%E9%80%A3%E7%B5%90%E8%A8%AD%E5%AE%9A%E7%82%BA%E4%B8%8B%E8%BC%89ppt%EC%80%A0%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1219644632.A.9AB.html">Re: [問題] 請問如何還原屬性? (CSS)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E8%AB%8B%E5%95%8F%E5%A6%82%E4%BD%95%E9%82%84%E5%8E%9F%E5%B1%AC%E6%80%A7%3F&#43;%28CSS%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1217332433.A.FB4.html">Re: [問題] CSS 3 大家會想去實作嗎?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS&#43;3&#43;%E5%A4%A7%E5%AE%B6%E6%9C%83%E6%83%B3%E5%8E%BB%E5%AF%A6%E4%BD%9C%E5%97%8E%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1215497041.A.2D8.html">Re: [請益] CSS在IE中的Position:fixed的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">kyork</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;CSS%E5%9C%A8IE%E4%B8%AD%E7%9A%84Position%3Afixed%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3Akyork">搜尋看板內 kyork 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce942982d1ee0',m:'BRC3EvZujVq9CTieWCbg4oNHrM_95YZj5n7iS40QOdY-1653467448-0-AeH75T/1Qk7VrxcTt5/70CRwLU2Zw87ihn22jRL68tSeM1XHVCwjcobzK4KDDRwze5/3h//JgxiG596TjYO+KX8iEgV63Wh0d7clp5VcoGQCPj2ke431M7AOmudVuc/CxNaSgN3L0Y/hANb6mILihuhddhdQoITwXbXh1bmvdrB+',s:[0xd37ef214a5,0x5b38e5496d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

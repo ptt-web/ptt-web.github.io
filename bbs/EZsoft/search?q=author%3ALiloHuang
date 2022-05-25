@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:LiloHuang - EZsoft - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/EZsoft/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/EZsoft/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3ALiloHuang">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/EZsoft/search?page=1&amp;q=author%3ALiloHuang">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:LiloHuang" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1190993625.A.4B2.html">[免費] KUSO ANSI Editor V1.5 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%85%8D%E8%B2%BB%5D&#43;KUSO&#43;ANSI&#43;Editor&#43;V1.5&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">18</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1188484268.A.E6F.html">[共享] KUSO PTT BBS 看板備份程式(BETA 3)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%85%B1%E4%BA%AB%5D&#43;KUSO&#43;PTT&#43;BBS&#43;%E7%9C%8B%E6%9D%BF%E5%82%99%E4%BB%BD%E7%A8%8B%E5%BC%8F%28BETA&#43;3%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/30</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">14</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1188037589.A.879.html">[共享] KUSO BBS2HTML V1.2 (穩定版本)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%85%B1%E4%BA%AB%5D&#43;KUSO&#43;BBS2HTML&#43;V1.2&#43;%28%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/25</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">16</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1181487091.A.E90.html">[情報] BBS 程式碼標色小工具</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;BBS&#43;%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%A8%99%E8%89%B2%E5%B0%8F%E5%B7%A5%E5%85%B7">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/10</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1175758265.A.E20.html">Re: [請益] 有沒有ANSI轉成HTML或是圖檔的軟體?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E8%AB%8B%E7%9B%8A%5D&#43;%E6%9C%89%E6%B2%92%E6%9C%89ANSI%E8%BD%89%E6%88%90HTML%E6%88%96%E6%98%AF%E5%9C%96%E6%AA%94%E7%9A%84%E8%BB%9F%E9%AB%94%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/05</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1174977268.A.7C4.html">[推薦] KUSO GPS Editor 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;KUSO&#43;GPS&#43;Editor&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/27</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1167925918.A.209.html">Re: [問題] 可抓推文ID的程式(網頁？)</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%8F%AF%E6%8A%93%E6%8E%A8%E6%96%87ID%E7%9A%84%E7%A8%8B%E5%BC%8F%28%E7%B6%B2%E9%A0%81%EF%BC%9F%29">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1160417094.A.99D.html">[推薦] KUSO Exif Viewer V2.0 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;KUSO&#43;Exif&#43;Viewer&#43;V2.0&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/10</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">15</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1158745757.A.E63.html">[免費] Microsoft Image Resizer</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%85%8D%E8%B2%BB%5D&#43;Microsoft&#43;Image&#43;Resizer">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/20</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1158394158.A.D82.html">[推薦] KUSO EXIF Viewer 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E6%8E%A8%E8%96%A6%5D&#43;KUSO&#43;EXIF&#43;Viewer&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/16</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/EZsoft/M.1157018954.A.E5C.html">[免費] 檔案保護精靈 V1.2 中文版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">LiloHuang</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/EZsoft/search?q=thread%3A%5B%E5%85%8D%E8%B2%BB%5D&#43;%E6%AA%94%E6%A1%88%E4%BF%9D%E8%AD%B7%E7%B2%BE%E9%9D%88&#43;V1.2&#43;%E4%B8%AD%E6%96%87%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/EZsoft/search?q=author%3ALiloHuang">搜尋看板內 LiloHuang 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/31</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdba02c08af2e',m:'wWGUUE3kfomGZK4m2T2UddcQoETRy_YeQP3f4CNE8Rw-1653466890-0-AXJTu+ysPda68d4gpS/h6o0k3MGO1g3bIY0ZdfujMLyufTd9zcXK7mvTU9FG8IrgpLXX8Wq9MHPTXmzxSb1NEBIU1jRetGrs45/jet3pcQS6m4lA5VQzyjppv9q3xggFGALbmmkfATasc7yPKTUV4bFcbs/Fj4vYIaIg5+T5V9y8',s:[0x8885866df3,0xb8af5efeac],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

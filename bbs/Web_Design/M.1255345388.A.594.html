@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] css排版問題，表格超出div範圍? - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我是用div包table，用css去控制，但還是會跑出這樣的結果..
+http://0rz.tw/56jdG
+(重點! 在firefox底下是正常的!)
+正常一列2筆資料，第3筆要跳到第二列第一欄，但他會無限延申..
+弄很久還是不清楚哪裡的問題!??
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] css排版問題，表格超出div範圍?">
+<meta property="og:description" content="我是用div包table，用css去控制，但還是會跑出這樣的結果..
+http://0rz.tw/56jdG
+(重點! 在firefox底下是正常的!)
+正常一列2筆資料，第3筆要跳到第二列第一欄，但他會無限延申..
+弄很久還是不清楚哪裡的問題!??
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1255345388.A.594.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">sss5 (屁)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] css排版問題，表格超出div範圍?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Mon Oct 12 19:03:07 2009</span></div>
+我是用div包table，用css去控制，但還是會跑出這樣的結果..
+
+<a href="http://0rz.tw/56jdG" target="_blank" rel="noreferrer noopener nofollow">http://0rz.tw/56jdG</a>
+
+(重點! 在firefox底下是正常的!)
+正常一列2筆資料，第3筆要跳到第二列第一欄，但他會無限延申..
+
+弄很久還是不清楚哪裡的問題!??
+
+下面是主區塊apdiv2裡的程式碼...
+
+麻煩比較懂css的幫我找問題!  謝謝!!
+(div名稱是 &#34;apDiv2&#34;)
+&lt;div align=&#34;center&#34; class=&#34;style1&#34;&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;?php do { ?&gt;
+          &lt;table width=&#34;368&#34; height=&#34;153&#34; border=&#34;0&#34; align=&#34;left&#34;&gt;
+            &lt;tr&gt;
+              &lt;td width=&#34;198&#34; rowspan=&#34;6&#34; background=&#34;images/himg.jpg&#34;&gt;&lt;div align=&#34;center&#34;&gt;&lt;a href=&#34;house1.php?H_ID=&lt;?php echo $row_Recordset1[&#39;H_ID&#39;]; ?&gt;&#34;&gt;&lt;img src=&#34;images/house.jpg&#34; width=&#34;180&#34; height=&#34;135&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+              &lt;td width=&#34;160&#34; height=&#34;21&#34;&gt;&lt;img src=&#34;images/arrow_330.gif&#34; width=&#34;8&#34; height=&#34;8&#34; /&gt;&lt;?php echo $row_Recordset1[&#39;H_Name&#39;]; ?&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td height=&#34;21&#34;&gt;&lt;img src=&#34;images/line.jpg&#34; width=&#34;160&#34; height=&#34;6&#34; /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td height=&#34;21&#34;&gt;地區：&lt;?php echo $row_Recordset1[&#39;Addr&#39;]; ?&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td height=&#34;21&#34;&gt;價格：&lt;?php echo $row_Recordset1[&#39;Price&#39;]; ?&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td height=&#34;33&#34;&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td height=&#34;21&#34;&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+          &lt;?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p align=&#34;center&#34;&gt;第一頁 ▲ 上ㄧ頁
+&lt;select name=&#34;page&#34; id=&#34;page&#34;&gt;
+          &lt;/select&gt;
+下一頁   ▼ 最後頁 | 1 / 1&lt;/p&gt;
+        &lt;p&gt;&lt;br /&gt;
+      &lt;span class=&#34;style1&#34;&gt;        &lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 114.33.190.170
+<span class="f2">※ 編輯: sss5            來自: 114.33.190.170       (10/12 19:04)
+</span><span class="f2">※ 編輯: sss5            來自: 114.33.190.170       (10/12 20:44)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">fet0124</span><span class="f3 push-content">:話說ie8也正常 ie7就不行了</span><span class="push-ipdatetime"> 10/12 21:38
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1255345388.A.594.html?cacheKey=2149-475852327&amp;offset=2447&amp;offset-sig=e084a434c5c9aa5aafe9004181f7abab32405115" data-longpollurl="/v1/longpoll?id=fd693e97ff9be6c25eb73475237a4770d3bdcb33" data-offset="2447"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9bc8a701ec4',m:'d05K.oGr6Rn4.X4B1GlIs0kcZztpF8H33Ez5Vi38CbA-1653467468-0-AdQtRLoXe7+iIPTQJyJyWKwPyNOMehBZ4I6U4u4BNPjOUNlWMpDd3iRkz7XRptHgvrBLDVgXBpu7LEjxYHWmHpgE28tqezn9eL+UlX9ssXRdt8MtveXH69KNxFSlSX0zmq74umr22/KsmqWhpWgO+UaJeUYxIeLMMikITlnHkRZy',s:[0xb7b75dacbd,0x62c6aab7ce],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

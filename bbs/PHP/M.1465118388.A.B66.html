@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 無法透過 PHP 將 EMAIL 存進 MariaDB - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="註冊頁：
+&lt;?php
+    header(&#39;Content-Type:text/html;charset=utf8&#39;);?&gt;
+&lt;body&gt;
+    &lt;form name=&#34;form&#34; method=&#34;post&#34; action=&#34;newuser.php&#34; align=&#34;center&#34;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 無法透過 PHP 將 EMAIL 存進 MariaDB">
+<meta property="og:description" content="註冊頁：
+&lt;?php
+    header(&#39;Content-Type:text/html;charset=utf8&#39;);?&gt;
+&lt;body&gt;
+    &lt;form name=&#34;form&#34; method=&#34;post&#34; action=&#34;newuser.php&#34; align=&#34;center&#34;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1465118388.A.B66.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">HwangTW (谷歌翻譯王)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 無法透過 PHP 將 EMAIL 存進 MariaDB</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Jun  5 17:19:38 2016</span></div>
+註冊頁：
+&lt;?php
+    header(&#39;Content-Type:text/html;charset=utf8&#39;);?&gt;
+&lt;body&gt;
+    &lt;form name=&#34;form&#34; method=&#34;post&#34; action=&#34;newuser.php&#34; align=&#34;center&#34;&gt;
+        帳號：&lt;input type=&#34;varchar&#34; name=&#34;id&#34;/&gt; &lt;br&gt;
+        密碼：&lt;input type=&#34;password&#34; name=&#34;pw&#34;/&gt; &lt;br&gt;
+        再輸入一次密碼：&lt;input type=&#34;password&#34; name=&#34;pw2&#34;/&gt; &lt;br&gt;
+        E-MAIL：&lt;input type=&#34;text&#34; name=&#34;email&#34; size=&#34;32&#34;/&gt; &lt;br&gt;
+        信用卡結帳日：&lt;select name=&#34;default_day&#34;&gt;
+&lt;?php       for($i=1;$i&lt;=31;$i++){
+                if ($i &lt; 10){ ?&gt;
+                    &lt;option value=&#34;&lt;?php echo &#34;0&#34;,$i?&gt;&#34;&gt;&lt;?php echo
+&#34;0&#34;,$i;?&gt;&lt;/option&gt;
+&lt;?php           } else { ?&gt;
+                    &lt;option value=&#34;&lt;?php echo $i?&gt;&#34;&gt;&lt;?php echo $i;?&gt;&lt;/option&gt;
+&lt;?php           } ?&gt;
+&lt;?php       }?&gt;
+        &lt;/select&gt;
+        &lt;p&gt;&lt;/p&gt;
+&lt;?php   $uid=  substr(md5(uniqid(rand(), true)), 10);?&gt;
+        &lt;input type=&#34;submit&#34; name=&#34;button&#34; value=&#34;註冊&#34; align=&#34;center&#34;
+onclick=&#34;&lt;?php $_SESSION[&#39;uid&#39;] = $uid; ?&gt;&#34; /&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+
+newuser.php：
+&lt;?php
+    header(&#39;Content-Type:text/html;charset=utf8&#39;);
+    require_once &#39;function.php&#39;;
+    $function  = new Fuction;
+    if ($_SESSION != NULL){
+        require_once &#39;Connect.php&#39;;
+        $pdo = new Connect;
+        $id = filter_input(INPUT_POST,&#39;id&#39;);
+        $pw = filter_input(INPUT_POST,&#39;pw&#39;);
+        $pw2 = filter_input(INPUT_POST,&#39;pw2&#39;);
+        $email = filter_input(INPUT_POST,&#39;email&#39;);
+        echo $email;
+        $default_day = filter_input(INPUT_POST,&#39;default_day&#39;);
+/*省略*/
+                    $sql1 = &#34;INSERT INTO `users`
+(`username`,`userpassword`,EMAIL,`default_day`) VALUES
+(&#39;$username&#39;,&#39;$userpassword&#39;,&#39;{$email}&#39;,&#39;$default_day&#39;)&#34;;
+                    $register = $pdo-&gt;prepare($sql1);
+                    $register-&gt;execute();
+                    $reg = $register-&gt;fetch();
+
+經嘗試後 可以正常 echo 出 EMAIL
+且在phpmyadmin下insert指令email也存得進去
+可是透過網頁就是寫不進去SQL(用phpmyadmin看其他欄位都有寫入，唯獨EMAIL沒寫到)
+有沒有甚麼辦法可以解決這問題QQ
+
+我找到問題了 結果都不是SQL那邊的問題
+而是我前面再寫偵測空值的部分唯獨EMAIL少打了一個等於
+
+if ($id == &#34;&#34; || $pw == &#34;&#34; || $pw2 == &#34;&#34; || $email=&#34;&#34;)
+
+難怪email死都不給我寫進去....
+而我還是在後面多加了一個偵測才發現這裡少打了一個等於
+
+if ($id == &#34;&#34; || $pw == &#34;&#34; || $pw2 == &#34;&#34; || $email==&#34;&#34; || $default_day==&#34;00&#34;)
+
+--
+當你年輕的時候 你會覺得真愛無敵 麵包以後就會有
+當你中年之後 你會發現真愛很重要 所以他需要麵包來保護
+
+　　--文章代碼(AID): <a href="/bbs/Gossiping/M.1432602287.A.107.html" target="_blank" rel="noreferrer noopener nofollow">#1LOyQl47 (Gossiping)</a> 作者：<span class="hl">yasaq</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 220.133.80.67
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/PHP/M.1465118388.A.B66.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/PHP/M.1465118388.A.B66.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiclin</span><span class="f3 push-content">: 你是不是誤會 prepare 的用法了...</span><span class="push-ipdatetime"> 06/05 17:29
+</span></div>應該是誤會了 那該用甚麼QQ
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tkdmaf</span><span class="f3 push-content">: 你這樣……{$email}…完全就沒有prepare的必要性了……</span><span class="push-ipdatetime"> 06/05 21:41
+</span></div>$sql1 = &#34;INSERT INTO `users`
+(`username`,`userpassword`,`EMAIL`,`default_day`) VALUES
+(&#39;$username&#39;,&#39;$userpassword&#39;,&#39;$email&#39;,&#39;$default_day&#39;)&#34;;
+因為當初用這樣也是不給寫才會用 {$email} 來嘗試QQ
+有甚麼方法呢QQ
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">weiclin</span><span class="f3 push-content">: <a href="https://goo.gl/Op5uLU" target="_blank" rel="noreferrer noopener nofollow">http://goo.gl/Op5uLU</a></span><span class="push-ipdatetime"> 06/05 22:00
+</span></div>他說找不到bindParam參數QQ
+我先承認我看不懂他在寫甚麼
+$stmt = $conn-&gt;prepare(&#34;INSERT INTO MyGuests (firstname, lastname, email)
+VALUES (?, ?, ?)&#34;);
+$stmt-&gt;bind_param(&#34;sss&#34;, $firstname, $lastname, $email);
+尤其是這裡
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: 看不懂就模仿阿 不用懂也可以模仿</span><span class="push-ipdatetime"> 06/06 09:54
+</span></div>就模仿了出現錯誤@@
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: <a href="https://php.net/manual/en/pdo.prepare.php" target="_blank" rel="noreferrer noopener nofollow">http://php.net/manual/en/pdo.prepare.php</a> 自己看一看</span><span class="push-ipdatetime"> 06/06 09:54
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MOONRAKER</span><span class="f3 push-content">: php.net的範例總不會看不懂了吧</span><span class="push-ipdatetime"> 06/06 09:55
+</span></div><span class="f2">※ 編輯: HwangTW (220.133.80.67), 06/06/2016 10:13:40
+</span></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1465118388.A.B66.html?cacheKey=2148-469784799&amp;offset=3802&amp;offset-sig=dc39fa8de90e66ddbce2606d70c9c7f991aedfea" data-longpollurl="/v1/longpoll?id=904b3b851293ae5431c8b3a3b3ed7eba24eef1ce" data-offset="3802"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ceaca7e6f1fae',m:'ahDgwYLlihPYPv1DJsY1SlUOXRTogdrt5_pRtxeppcU-1653467511-0-AYRxqXjskzINKoqYjkwsJ743rHKXAwKiKKdt45ffC/YyRFXf5SlPGvOGbKkwrQZLQtnvbdywoXEWKmX27Jui17OcNg6gJMK3HMYuBIZXiSJM5/kCGg+arn/PR7RC++9YgP1Ih0SSxzmPMsAJIeSDEf/laD6KvTk5wqd8pybyi7y3',s:[0x0cc78a43ee,0xb810e45246],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題]給blogger用的javascript不會動 - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我想可能是你少加了雙引號...
+: &lt;/Body&gt;
+: &lt;/Html&gt;
+--
+        ○-.∫
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題]給blogger用的javascript不會動">
+<meta property="og:description" content="我想可能是你少加了雙引號...
+: &lt;/Body&gt;
+: &lt;/Html&gt;
+--
+        ○-.∫
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1224346972.A.B56.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">adamp3 (Boston&#39;s 10th Man.)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題]給blogger用的javascript不會動</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Sun Oct 19 00:22:50 2008</span></div>
+<span class="f2">※ 引述《sabertooth (劍齒虎)》之銘言：
+</span><span class="f6">: 小弟想在自己的blogger裡加一個javascript
+</span><span class="f6">: 以外部連結的圖檔(aa.jpg)製造類似落葉的視覺效果
+</span><span class="f6">: 簡單的說，就是圖片從上而下掉落、水平方向微微變動
+</span><span class="f6">: 但是執行之後，圖片卻停留在初始位置不會動
+</span><span class="f6">: 且調整&lt;IMG&gt;裡的width值似乎也沒辦法改變水平位置
+</span><span class="f6">: 不知道哪邊出錯了，可以請教高手解決之道嗎？
+</span><span class="f6">: 感謝！
+</span><span class="f6">: &lt;Html&gt;
+</span><span class="f6">: &lt;Head&gt;&lt;TITLE&gt;fall&lt;/TITLE&gt;
+</span><span class="f6">: &lt;SCRIPT language=JavaScript&gt;
+</span><span class="f6">: &lt;!--
+</span><span class="f6">: function fall()
+</span><span class="f6">: {
+</span><span class="f6">:  var y
+</span><span class="f6">:  y = down1.style.posTop + 5
+</span><span class="f6">:  if(y &gt;= document.body.clientHeight-down1.height) y = 0
+</span><span class="f6">:  down1.style.posLeft=Math.floor(document.body.clientWidth/4-20)+Math.sin(y/240)*40
+</span><span class="f6">:  down1.style.posTop = y
+</span><span class="f6">:  setTimeout(&#34;fall()&#34;, 150)
+</span><span class="f6">: }
+</span><span class="f6">: --&gt;
+</span><span class="f6">: &lt;/SCRIPT&gt;
+</span><span class="f6">: &lt;/Head&gt;
+</span><span class="f6">: &lt;Body background=&#34;bg.gif&#34; onload=&#34;fall()&#34;&gt;
+</span><span class="f6">:     &lt;IMG  border=0  id=down1  src=&#34;<a href="http://xxx.yyy.zzz/aa.jpg&#34;" target="_blank" rel="noreferrer noopener nofollow">http://xxx.yyy.zzz/aa.jpg&#34;</a>
+</span><span class="f6">:       style=&#34;POSITION: absolute; top: 50px;</span><span class="f3 hl">&#34;  width=&#34;20&#34;</span>&gt;
+
+我想可能是你少加了雙引號...
+<span class="f6">: &lt;/Body&gt;
+</span><span class="f6">: &lt;/Html&gt;
+</span>
+--
+        ○-<span class="f1 hl">.</span><span class="f0 hl">∫</span>
+   <span class="f3 hl">  ︻</span>〔   我的二十歲/四十天美國自助旅行全記錄+球場觀察
+   <span class="f3 b3 hl">  ║  </span>》               <span class="f0 hl">睡過車站 機場 還有旅舍交誼廳</span>
+   <span class="f3 b3 hl">  ║  </span><span class="f0 hl">                        八座城市 七場大聯盟球賽</span>
+                                        <a href="http://adamp3.myweb.hinet.net/" target="_blank" rel="noreferrer noopener nofollow">http://adamp3.myweb.hinet.net/</a> 
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.168.45.3
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sabertooth</span><span class="f3 push-content">:加上去了，原來我誤解了，這是調整image大小用</span><span class="push-ipdatetime"> 10/19 00:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sabertooth</span><span class="f3 push-content">:但還是不會動<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d2323234d">[email&#160;protected]</a>@</span><span class="push-ipdatetime"> 10/19 00:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sabertooth</span><span class="f3 push-content">:我也google了一些類似效果放上去試，但都一樣不會動耶</span><span class="push-ipdatetime"> 10/19 00:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">sabertooth</span><span class="f3 push-content">:會不會是blogger不支援??</span><span class="push-ipdatetime"> 10/19 00:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">humanfly</span><span class="f3 push-content">:有可能，無名或wordpress等都禁用javascript</span><span class="push-ipdatetime"> 10/19 01:13
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Reder</span><span class="f3 push-content">:Blogger 可以用 JS</span><span class="push-ipdatetime"> 10/19 15:13
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1224346972.A.B56.html?cacheKey=2149-475818531&amp;offset=2055&amp;offset-sig=2739cb8b356f3475bcc9c39a4a68ff9e411afea8" data-longpollurl="/v1/longpoll?id=a242b686378651207c14d8f30769a56799b8fa9b" data-offset="2055"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce954eadbb00c',m:'hzfXsNql3s6DcswluKmcgs0KUBIV7ghIokZuJGDzxuw-1653467451-0-AUcQ9uobnsajiA6d68isHDyvpqZmjJ1qVaswF6VuD7gaB5/eOkQLbfHjWg66DoAWN8oLpypx+U6el2VyCbTQ4nlVJJ1YgTwQydKH8hboESOTa93F5wCAMQ+Q+Xh9yzvlOrkt15bGmaGGGa63B4Xk0J4ZdYwvQNcrato87bd5D+WW',s:[0xa14bcb414e,0x429338b575],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

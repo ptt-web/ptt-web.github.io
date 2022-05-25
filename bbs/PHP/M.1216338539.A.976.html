@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請益] 關於傳遞變數 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這個也是可以用的..
+&lt;form method=&#34;POST&#34; action=&#34;xx.php&#34; name=&#39;form&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;name&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;password&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;submit&#39; style=&#39;display:none&#39;&gt;
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請益] 關於傳遞變數">
+<meta property="og:description" content="這個也是可以用的..
+&lt;form method=&#34;POST&#34; action=&#34;xx.php&#34; name=&#39;form&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;name&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;password&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;submit&#39; style=&#39;display:none&#39;&gt;
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1216338539.A.976.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=710cea8eabf514d0'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">KC73 (肯先生)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請益] 關於傳遞變數</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jul 18 07:48:58 2008</span></div>
+<span class="f2">※ 引述《Jim33 (龍龍)》之銘言：
+</span><span class="f6">: 我看到版上有很多前人傳遞變數的方法，
+</span><span class="f6">: 一種是把參數掛在網頁上傳遞的時候，
+</span><span class="f6">: 例如：<a href="http://xxxxxx/xxxx?id=2" target="_blank" rel="noreferrer noopener nofollow">http://xxxxxx/xxxx?id=2</a>
+</span><span class="f6">: 取值的時候就是用$_GET[&#39;id&#39;]
+</span><span class="f6">: 另外一種方法是(我不會講，用程式表示)
+</span><span class="f6">: 這一部份應該是html的語法
+</span><span class="f6">: &lt;form method=&#34;POST&#34; action=&#34;xx.php&#34;&gt;
+</span><span class="f6">: &lt;input type=&#34;submit&#34; name=&#34;id&#34; value=&#34;2&#34;&gt;
+</span><span class="f6">: &lt;/form&gt;
+</span>
+這個也是可以用的..
+
+&lt;form method=&#34;POST&#34; action=&#34;xx.php&#34; name=&#39;form&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;name&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;password&#39; value=&#39;xxxx&#39;&gt;
+&lt;input type=&#39;submit&#39; style=&#39;display:none&#39;&gt;
+&lt;/form&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+        // 按下去.. kukuku
+        document.forms.form.submit();
+&lt;/script&gt;
+
+這樣就會「按下去」了..
+
+按鈕那一行 html 一定要有, 不然 Firefox 會有錯誤。
+建議把密碼用 md5 編碼後再放到 html 上面來傳遞。
+
+如果希望安全一點, 可以在程式中事先設定一串東西..
+
+例如:
+
+$p = &#34;w340mpdsdggp34ybmo&#34;; // 胡打一通
+$password = md5($_POST[&#39;password&#39;].$p);
+
+然後這個 $password 再放到 POST 或 GET 上面使用。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.166.133.20
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">allen501pc  </span><span class="f3 push-content">:好方法~推一個！！</span><span class="push-ipdatetime"> 07/18 11:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:因為在學 phpbb,所以很習慣用它的方法;它依賴資料庫</span><span class="push-ipdatetime"> 07/18 13:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:XD 這真是太豪華了,把資料丟進資料庫,另一邊再Query</span><span class="push-ipdatetime"> 07/18 13:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:只要帶進自取的 session_id(所以當然要唯一)即可</span><span class="push-ipdatetime"> 07/18 13:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">HuangJC     </span><span class="f3 push-content">:以這方法,想&#39;全域&#39;或被&#39;傳送&#39;的變數不管有多少都可以</span><span class="push-ipdatetime"> 07/18 13:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">sd1029      </span><span class="f3 push-content">:那是有代價的，人多時DB的負擔會很重！</span><span class="push-ipdatetime"> 07/19 04:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Jim33       </span><span class="f3 push-content">:感謝解答!!大家都好厲害喔...</span><span class="push-ipdatetime"> 07/21 08:22
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1216338539.A.976.html?cacheKey=2148-469790437&amp;offset=1832&amp;offset-sig=f8ff494cb0004adf71382281b03ed9136cb95e5c" data-longpollurl="/v1/longpoll?id=10f4c83542a147cda1157b36a837bc828edd3ff4" data-offset="1832"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea8eabf514d0',m:'0qeALRh_rht6fJmsHztjK_IPJJarWjRuLObpqv20djY-1653467501-0-AXW2rsA2SSFCRKj2aVXfQU7bNO6+xb7ehLqcnx3H60qZlYJz+KWJF7iSMh6v6fEuREfAkREGNkyl2PBQExZoTFRwWCKZduRjf3QwKueb1ZKqtlvjYP8mHX0ZP9yoxU/uF8YDrspDLmQka/j/dqhiwnQaBthiWIJ2NdzGUEybmk+I',s:[0xf9395af65c,0x88ad8511ff],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

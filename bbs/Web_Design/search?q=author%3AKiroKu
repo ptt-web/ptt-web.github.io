@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:KiroKu - Web_Design - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Web_Design/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Web_Design/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3AKiroKu">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Web_Design/search?page=1&amp;q=author%3AKiroKu">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:KiroKu" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1324839312.A.A1C.html">[問題] 以網站收簡訊?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E4%BB%A5%E7%B6%B2%E7%AB%99%E6%94%B6%E7%B0%A1%E8%A8%8A%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1257952720.A.12A.html">[問題] 關於.htaccess</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%97%9C%E6%96%BC.htaccess">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1252401840.A.EFF.html">[問題] DOC 轉HTML最準確的方式？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;DOC&#43;%E8%BD%89HTML%E6%9C%80%E6%BA%96%E7%A2%BA%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/08</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1229008326.A.C13.html">[問題] xml在網頁的應用？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;xml%E5%9C%A8%E7%B6%B2%E9%A0%81%E7%9A%84%E6%87%89%E7%94%A8%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1221297486.A.2D8.html">[問題] html 在ie裡面產生了scrollbar?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;html&#43;%E5%9C%A8ie%E8%A3%A1%E9%9D%A2%E7%94%A2%E7%94%9F%E4%BA%86scrollbar%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1168184004.A.695.html">[問題] ie7的z-index?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;ie7%E7%9A%84z-index%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157743020.A.329.html">[問題] 最近辭典類書籍..</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9C%80%E8%BF%91%E8%BE%AD%E5%85%B8%E9%A1%9E%E6%9B%B8%E7%B1%8D..">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/09</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157623283.A.29E.html">Re: [問題]留言板該怎麼架設?(已爬文) </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E7%95%99%E8%A8%80%E6%9D%BF%E8%A9%B2%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%3F%28%E5%B7%B2%E7%88%AC%E6%96%87%29&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1157286064.A.CCB.html">[問題] icon的大小?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;icon%E7%9A%84%E5%A4%A7%E5%B0%8F%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1156619466.A.E55.html">[問題] 網站小圖示問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E7%B6%B2%E7%AB%99%E5%B0%8F%E5%9C%96%E7%A4%BA%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/27</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1144125268.A.593.html">Re: [問題] CSS問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Web_Design/M.1144099334.A.B80.html">[問題] CSS問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">KiroKu</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Web_Design/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;CSS%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Web_Design/search?q=author%3AKiroKu">搜尋看板內 KiroKu 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce97ddff6807e',m:'i8oO7DFcHxYRzIejEDZHj0LcBK7VKUeDtASUppYq8p4-1653467458-0-AaIWWUyiD2/AnjGNGSSjjlrdFGpL037lnYfkO4ihmFy4preMw2kSzFOJQLLzxPhjTyzXUqrf2OL0Qtky/t8U3y7vbW5KEOh1ukP05IEiYGMw3KO35tVwgdbs4pJVLyFhBSWJ7SmHgi8SP6bQ6NgKFVs+Du+12s3AxON9BqngAmaR',s:[0xd4d99a211e,0x62c6aab7ce],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

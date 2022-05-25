@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請問] 請問有辦法設定virtualbox和vista共用印表機嗎? - 看板 EZsoft - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="我的環境:
+host端:vista 64bit
+client端:win xp 32bit
+印表機:fuji xerox c1110(以usb線直接連接到本機)
+===
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請問] 請問有辦法設定virtualbox和vista共用印表機嗎?">
+<meta property="og:description" content="我的環境:
+host端:vista 64bit
+client端:win xp 32bit
+印表機:fuji xerox c1110(以usb線直接連接到本機)
+===
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/EZsoft/M.1235139777.A.4B5.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/EZsoft/index.html"><span class="board-label">看板 </span>EZsoft</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/EZsoft/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">powerg5 (mac)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">EZsoft</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請問] 請問有辦法設定virtualbox和vista共用印表機嗎?</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Feb 20 22:22:55 2009</span></div>
+我的環境:
+host端:vista 64bit
+client端:win xp 32bit
+印表機:fuji xerox c1110(以usb線直接連接到本機)
+===
+類似的文章在網路上只找到這篇，它是用建立網芳的方式來共用
+<a href="http://gordon168.tw/?p=60" target="_blank" rel="noreferrer noopener nofollow">http://gordon168.tw/?p=60</a>
+但裡面的例子是host端為win xp，client端為unbuntu
+我照教學將virtualbox中的網路設定裡的附掛到一欄選為&#34;主端介面&#34;
+但啟動虛擬機器後，出現區域網路的連線能力為有限的的圖示
+而在vista的部份，&#34;控制台==&gt;網路和共用中心==&gt;管理網路連線&#34;
+也沒看到應該會多出來的&#34;virtualbox主端介面&#34;這個項目
+所以也無法橋接器連線
+
+請問:(只要有其中一個問題的解法即可)
+1.有什麼方法可讓virtualbox中的xp使用vista的印表機呢?
+2.或是有無方法建立網芳，讓xp可看到vista分享出來的印表機?
+3.請問有無第三方給64bit vista用的postscript驅動程式
+  這樣的話就不必用如此繞彎的方式使用postscript了
+
+--
+徵求一個PC GAME，詳細請看名片檔
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 219.91.100.164
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">zlw</span><span class="f3 push-content">:最原本的作法就是在VirtualBox的guest xp關機狀態，把印表機連</span><span class="push-ipdatetime"> 02/20 22:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zlw</span><span class="f3 push-content">:上開機，然後在設定值-USB那裡加入印表機再關掉印表機。然後開</span><span class="push-ipdatetime"> 02/20 22:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zlw</span><span class="f3 push-content">:guest xp後，打開印表機，host會跳出找到硬體就自動搜尋去安裝</span><span class="push-ipdatetime"> 02/20 22:44
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">zlw</span><span class="f3 push-content">:如果你的host要列印，就從選單把他拿掉，控制權就會交回VISTA</span><span class="push-ipdatetime"> 02/20 22:45
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/EZsoft/M.1235139777.A.4B5.html?cacheKey=2148-739023873&amp;offset=1355&amp;offset-sig=b5d7141188daa47c04eda4fdda52489806f27a42" data-longpollurl="/v1/longpoll?id=244f78974a6588b09a132b46eb6626120f3ac48b" data-offset="1355"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cdb79feeaaf2e',m:'XnyTPUfPipHFiBqGf.WV9MiPq7lz2rHWIOwywAohZWY-1653466884-0-AQ7huXl2aq95Z6M3piYkpm77Fy9dVZPreuVSmDCaEqLS4n5FRjGWgsHNa2DmkeA07SniiLUnEwtUNpOQYrSCMiUSJgudzreSvXjG/vWi1LmxLbuTiK+maIjATdO6JxHkz+O6Th/pmVd9Fm18VI0RUMf57W0o+XcpQryBsWb/aP4+',s:[0xcdcc50462e,0x0ff170b590],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

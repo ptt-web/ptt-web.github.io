@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[問題] 如何在 server 端開瀏覽器擷圖？ - 看板 Web_Design - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="input: URL
+output: screen capture of the URL
+有人有實做過類似的服務嗎？
+我打算使用 chromium 開在 server 端
+取得 URL 後在 server loading（或從 client 直接傳 HTML）
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[問題] 如何在 server 端開瀏覽器擷圖？">
+<meta property="og:description" content="input: URL
+output: screen capture of the URL
+有人有實做過類似的服務嗎？
+我打算使用 chromium 開在 server 端
+取得 URL 後在 server loading（或從 client 直接傳 HTML）
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Web_Design/M.1340265639.A.52E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Web_Design/index.html"><span class="board-label">看板 </span>Web_Design</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Web_Design/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">tonytonyjan (南洋大兜蟲)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Web_Design</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[問題] 如何在 server 端開瀏覽器擷圖？</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun 21 16:00:35 2012</span></div>
+input: URL
+output: screen capture of the URL
+
+有人有實做過類似的服務嗎？
+
+我打算使用 chromium 開在 server 端
+取得 URL 後在 server loading（或從 client 直接傳 HTML）
+讓頁面閒置數秒後再只用 chromium API 去擷圖
+（因為有時候像 trello 一類的網站需要一段時間讓 JS 去產生頁面）
+
+我這個想法對嗎？或者有更簡單的方法？
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.113.246.1
+<span class="f2">※ 編輯: tonytonyjan     來自: 140.113.246.1        (06/21 16:00)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mervynW</span><span class="f3 push-content">:wkhtmltoimage  or wkhtmltopdf</span><span class="push-ipdatetime"> 06/21 17:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:謝謝M大，我測了一下似乎跑不了 Flash</span><span class="push-ipdatetime"> 06/22 02:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:加上我也沒有自己的 linux server……QAQ</span><span class="push-ipdatetime"> 06/22 02:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:參考：<a href="http://wp.xdite.net/?p=765" target="_blank" rel="noreferrer noopener nofollow">http://wp.xdite.net/?p=765</a></span><span class="push-ipdatetime"> 06/22 03:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:既然XDite大大都弄出來了，我打算挑戰 Chromium on</span><span class="push-ipdatetime"> 06/22 03:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:FreeBSD</span><span class="push-ipdatetime"> 06/22 03:01
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">mervynW</span><span class="f3 push-content">:那個 flash 一定死啊, 有要弄flash那就...</span><span class="push-ipdatetime"> 06/22 11:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">buganini</span><span class="f3 push-content">:<a href="http://pearlcrescent.com/products/pagesaver/" target="_blank" rel="noreferrer noopener nofollow">http://pearlcrescent.com/products/pagesaver/</a></span><span class="push-ipdatetime"> 06/22 20:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tonytonyjan</span><span class="f3 push-content">:樓上你只是把我發的連結中的連結貼出來而已啊……</span><span class="push-ipdatetime"> 06/23 13:08
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Web_Design/M.1340265639.A.52E.html?cacheKey=2149-475915316&amp;offset=1476&amp;offset-sig=408365567b02bc4815cc5afd7572944d055f5cf4" data-longpollurl="/v1/longpoll?id=12b9b2672956b311635e8964a7ac38bf3db27c2f" data-offset="1476"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ce9fbda411ec4',m:'0e3GobiyMZ8YfrBHCYFb2ZyDQeF7qBbsrfjsXqh47Ck-1653467478-0-ASo6Xwc/ZZ9r7waokMHpxSYwD8Rgi5oZ/qWpdxHFGww3egwVsB2FR0GWiI07EmTxTuM0UP+AmrxdcHiLB4yXPdMGB1YknbTNPaD8yr8/XcpSdrPYu/ON13oRpxjolmQ56e3fF9bjZdinWm3pl1HkBrb7yFEZ+Ef7MnZgOkSUw/NW',s:[0x3451256b32,0x92c17d05ec],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

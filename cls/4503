@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Badminton/index.html">
+                <div class="board-name">Badminton</div>
+                <div class="board-nuser"><span class="hl">62</span></div>
+                <div class="board-class">羽球</div>
+                <div class="board-title">&#9678;[羽球版]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NFL/index.html">
+                <div class="board-name">NFL</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">美足</div>
+                <div class="board-title">&#9678;2022年NFLスケジュール発表！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PlayFootball/index.html">
+                <div class="board-name">PlayFootball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">美足</div>
+                <div class="board-title">&#9678;[美式足球板] 不討論橄欖球</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Chuang/index.html">
+                <div class="board-name">Chuang</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">桌球</div>
+                <div class="board-title">&#9678;莊智淵 </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/tabletennis/index.html">
+                <div class="board-name">tabletennis</div>
+                <div class="board-nuser"><span class="hl f3">12</span></div>
+                <div class="board-class">桌球</div>
+                <div class="board-title">&#9678;老莊久違的單打冠軍</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Volleyball/index.html">
+                <div class="board-name">Volleyball</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">排球</div>
+                <div class="board-title">&#9678;[排球] play完 勤洗手</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Bowling/index.html">
+                <div class="board-name">Bowling</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;《保齡球板》</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Cricket/index.html">
+                <div class="board-name">Cricket</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[板球] 板球板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Golf/index.html">
+                <div class="board-name">Golf</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[高球]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/HandBall/index.html">
+                <div class="board-name">HandBall</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;這是手球板。。下一個比賽是。。</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/hockey/index.html">
+                <div class="board-name">hockey</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[冰球] 曲棍球的世界</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Rugby/index.html">
+                <div class="board-name">Rugby</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[橄欖球版] </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Softball/index.html">
+                <div class="board-name">Softball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[壘球] 勇氣 面對</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/squash/index.html">
+                <div class="board-name">squash</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">球類</div>
+                <div class="board-title">&#9678;[壁球] 壁球板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Billiard/index.html">
+                <div class="board-name">Billiard</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">撞球</div>
+                <div class="board-title">&#9678;[撞球]二級警戒 撞球場應嚴格禁煙</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Pool-Beauty/index.html">
+                <div class="board-name">Pool-Beauty</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">撞球</div>
+                <div class="board-title">&#9678;安麗盃熄燈QQ</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Snooker/index.html">
+                <div class="board-name">Snooker</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">撞球</div>
+                <div class="board-title">&#9678;2022 W.Champ－Ronnie O&#39;Sullivan</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cf20a098faff1',m:'ttiiLI6NRzAWLvA1olYvYeqZ50_oZ.tPHObzrDRSWkc-1653467808-0-AUfC93pMaCIAl75aWB7B9XJ53JhHGABp8s8mOIqekPTcPmgxf8FKVhfwjTAicYy0tr4Syg+9Ekz5eYQjQlAouXNx8CrXEoLqEV9zNPSXpd1Z64S5XGvyogvW3NvdxGR8vw==',s:[0xbb71529253,0x5fb7f6c1ab],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

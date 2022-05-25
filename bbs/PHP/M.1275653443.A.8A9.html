@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[請益] 亂碼問題 - 看板 PHP - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="小弟使用xampp for linux 1.7.3a
+終於也碰到了亂碼的問題
+爬過文, 都是推薦使用mysql_query(&#34;SET NAMES &#39;UTF8&#39;&#34;, $s);
+可是小弟不用還好, 一用全都變成&#34;????????&#34;
+這是使用前
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[請益] 亂碼問題">
+<meta property="og:description" content="小弟使用xampp for linux 1.7.3a
+終於也碰到了亂碼的問題
+爬過文, 都是推薦使用mysql_query(&#34;SET NAMES &#39;UTF8&#39;&#34;, $s);
+可是小弟不用還好, 一用全都變成&#34;????????&#34;
+這是使用前
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/PHP/M.1275653443.A.8A9.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/PHP/index.html"><span class="board-label">看板 </span>PHP</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/PHP/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">EmptySmile (Smile LikeThe EmptySoul)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">PHP</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[請益] 亂碼問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Jun  4 20:10:40 2010</span></div>
+小弟使用xampp for linux 1.7.3a
+
+終於也碰到了亂碼的問題
+
+爬過文, 都是推薦使用mysql_query(&#34;SET NAMES &#39;UTF8&#39;&#34;, $s);
+
+可是小弟不用還好, 一用全都變成&#34;????????&#34;
+
+這是使用前
+
+<a href="http://www.badongo.com/pic/9524783" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/pic/9524783</a>
+
+使用後
+
+<a href="http://www.badongo.com/pic/9524739" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/pic/9524739</a>
+
+整個作用是抓取yahoo新聞, 然後列出來
+
+
+新手上路, 請教各位高手們該如何解決
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 61.60.254.32
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a613204</span><span class="f3 push-content">:資料庫的編碼是??</span><span class="push-ipdatetime"> 06/04 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:utf8</span><span class="push-ipdatetime"> 06/04 20:21
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:也查過是不是table給的欄位不夠大, 結果也不是...</span><span class="push-ipdatetime"> 06/04 20:22
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a613204</span><span class="f3 push-content">:頁面的編碼是UTF-8嗎?? header也設定UTF-8看看</span><span class="push-ipdatetime"> 06/04 20:27
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">a613204</span><span class="f3 push-content">:或者在meta設定UTF-8</span><span class="push-ipdatetime"> 06/04 20:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:都是utf8, META也是</span><span class="push-ipdatetime"> 06/04 20:31
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:分離開來測試, 抓出來是正常,可是寫進資料庫,就亂碼</span><span class="push-ipdatetime"> 06/04 20:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:是說，在 phpmyadmin 中看是亂碼？但抓出來正常？</span><span class="push-ipdatetime"> 06/04 21:09
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">evernever</span><span class="f3 push-content">:database,table,column都可設定編碼, column查了嗎?</span><span class="push-ipdatetime"> 06/04 21:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:回chris大, 是的</span><span class="push-ipdatetime"> 06/04 21:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:回ever大, SET NAMES不就等同於告訴sql三個全部設定嗎</span><span class="push-ipdatetime"> 06/04 21:23
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">a613204</span><span class="f3 push-content">:root.php是@@? 要po出來看看嗎</span><span class="push-ipdatetime"> 06/04 21:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:解法大概是 <a href="https://goo.gl/5thj" target="_blank" rel="noreferrer noopener nofollow">http://goo.gl/5thj</a></span><span class="push-ipdatetime"> 06/04 21:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:原因可能為 <a href="https://goo.gl/SJRD" target="_blank" rel="noreferrer noopener nofollow">http://goo.gl/SJRD</a></span><span class="push-ipdatetime"> 06/04 21:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:如果可以的話，照著原因那篇的解法會好一點</span><span class="push-ipdatetime"> 06/04 21:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:第一篇就真的只是偷吃步而已ˇˇ</span><span class="push-ipdatetime"> 06/04 21:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:看了原PO的圖才知道，應該是 evernever 所提的問題</span><span class="push-ipdatetime"> 06/04 21:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:回a大, 那裡面只是帳號,密碼和資料庫名稱</span><span class="push-ipdatetime"> 06/04 21:52
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:回chris大,我不太明白ever大的意思</span><span class="push-ipdatetime"> 06/04 21:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:照著您給的網頁修改, 這是status的結果</span><span class="push-ipdatetime"> 06/04 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:<a href="http://www.badongo.com/pic/9525772" target="_blank" rel="noreferrer noopener nofollow">http://www.badongo.com/pic/9525772</a></span><span class="push-ipdatetime"> 06/04 22:00
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:<a href="http://ppt.cc/y0hd" target="_blank" rel="noreferrer noopener nofollow">http://ppt.cc/y0hd</a></span><span class="push-ipdatetime"> 06/04 22:29
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:我覺得是建立資料庫時的欄位編碼沒選 utf8</span><span class="push-ipdatetime"> 06/04 22:43
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:看看你的資料表是否為 DEFAULT CHARSET=utf8</span><span class="push-ipdatetime"> 06/04 22:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:不太懂您的意思, 貼在上面的ppt縮址是文字碼的設定狀況</span><span class="push-ipdatetime"> 06/04 23:01
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:<a href="http://sofree.cc/phpmyadmin-mysql/2/" target="_blank" rel="noreferrer noopener nofollow">http://sofree.cc/phpmyadmin-mysql/2/</a></span><span class="push-ipdatetime"> 06/04 23:04
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">chrisQQ</span><span class="f3 push-content">:看一下你的第一步和第三步，是否都選為 utf8_unicode_ci</span><span class="push-ipdatetime"> 06/04 23:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:...緊急關頭那網頁進不去...我砍掉xampp從弄一次</span><span class="push-ipdatetime"> 06/04 23:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:如果用命令列該怎麼輸入呢?</span><span class="push-ipdatetime"> 06/04 23:11
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:因為我都是create database XXX;這樣建立的</span><span class="push-ipdatetime"> 06/04 23:12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:我瞧見了, 筆記起來, 正在作那網頁的步驟, 希望能成功</span><span class="push-ipdatetime"> 06/04 23:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:回chris大, 棒!大部分的字都正常了, 可是仍有小部份</span><span class="push-ipdatetime"> 06/04 23:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:還是亂碼</span><span class="push-ipdatetime"> 06/04 23:48
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:棒, 完全搞定了, 我把原本欄位長度100改成200就都好了</span><span class="push-ipdatetime"> 06/05 00:05
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">EmptySmile</span><span class="f3 push-content">:感謝您!</span><span class="push-ipdatetime"> 06/05 00:05
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/PHP/M.1275653443.A.8A9.html?cacheKey=2148-469789544&amp;offset=4057&amp;offset-sig=b74f396fe12374f9b5d9503e190568c68d17640b" data-longpollurl="/v1/longpoll?id=c018de6f8f28a0398fd9f3d4b348ae5cc0f016cd" data-offset="4057"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cea79cd0cafe5',m:'7rqtyfBGzbn9.kl39.yl38cvH2XzrwXpc4GPcb6sRpU-1653467498-0-AQFp63rtWnFkqCxRyRXB8mZc5m2stYHhe54D8ex15/PMjglP2lq7zD3LWva0PzMXnLsjaaqzFGXCOdz8snRN6d6MmDGPo6BS79HIjQnEuj4WY0kwsndhaPGn5PlB4QYLv4y8Mw3TxVS2hPQWDng4kAFAry7U3k+Z4YgSTEX7WN5T',s:[0x6d0dd2b929,0x791c9ee13e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
