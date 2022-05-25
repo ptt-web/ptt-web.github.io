@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653469200'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBA/index.html">
+                <div class="board-name">NBA</div>
+                <div class="board-nuser"><span class="hl f1">3071</span></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#9678;[NBA] 5/25西決Game 4 主場&#34;放水&#34;</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBA_Film/index.html">
+                <div class="board-name">NBA_Film</div>
+                <div class="board-nuser"><span class="hl f3">47</span></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#9678;請好好遵守板規</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBAEasyChat/index.html">
+                <div class="board-name">NBAEasyChat</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#9678;【ＥＺ】2020/1/24 RIP KOBE</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBAGM/index.html">
+                <div class="board-name">NBAGM</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#9678;封館結束</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBAJerseys/index.html">
+                <div class="board-name">NBAJerseys</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#9678;NBA球衣版＠徵求板主！！！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/7402">
+                <div class="board-name">NBAStar</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#931;NBA球員板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/cls/3748">
+                <div class="board-name">NBAteam</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">NBA.</div>
+                <div class="board-title">&#931;NBA球隊區</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBA_Picket/index.html">
+                <div class="board-name">NBA_Picket</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">板務</div>
+                <div class="board-title">&#9678;NBA檢舉板 文章/推文/分身檢舉用</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NBA_Project/index.html">
+                <div class="board-name">NBA_Project</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">專案</div>
+                <div class="board-title">&#9678;NBA板救濟專案（已結束）</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/NCAA/index.html">
+                <div class="board-name">NCAA</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">籃球</div>
+                <div class="board-title">&#9678;[瘋三] Off-Season / Scheduling</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/WNBA/index.html">
+                <div class="board-name">WNBA</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">籃球</div>
+                <div class="board-title">&#9678;美國女子職業籃球 </div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710d17058a1eaf55',m:'IpxaG74jGI_3ESZPZKadCaq1EoZRtgPomJL.4xXhmRM-1653469323-0-AfW8SYouLzl94suFh8hnfhSpLjHQhTQQ+yE20yssM3UwucbsRPfVUiC/sfTOaxbCbkoAQI3diAJYdMd9S/v0hbVSW66jz6+DgSRD8OE5HpiS2EVjrbviOY9/h9tmz7EJ2g==',s:[0x46b8637ff5,0x3d5ca43951],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
