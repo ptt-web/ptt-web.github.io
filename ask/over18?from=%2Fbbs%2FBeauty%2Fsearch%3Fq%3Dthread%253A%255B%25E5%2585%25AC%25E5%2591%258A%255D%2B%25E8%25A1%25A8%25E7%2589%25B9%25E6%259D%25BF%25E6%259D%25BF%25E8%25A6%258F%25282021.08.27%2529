@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653469200'></script></head>
+    <body>
+		
+<div class="bbs-screen bbs-content">
+    <div class="over18-notice">
+        <p>本網站已依網站內容分級規定處理</p>
+
+        <p>警告︰您即將進入之看板內容需滿十八歲方可瀏覽。</p>
+
+        <p>若您尚未年滿十八歲，請點選離開。若您已滿十八歲，亦不可將本區之內容派發、傳閱、出售、出租、交給或借予年齡未滿18歲的人士瀏覽，或將本網站內容向該人士出示、播放或放映。</p>
+    </div>
+</div>
+
+<div class="bbs-screen bbs-content center clear">
+    <form action="/ask/over18" method="post">
+        <input type="hidden" name="from" value="/bbs/Beauty/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D+%E8%A1%A8%E7%89%B9%E6%9D%BF%E6%9D%BF%E8%A6%8F%282021.08.27%29">
+        <div class="over18-button-container">
+            <button class="btn-big" type="submit" name="yes" value="yes">我同意，我已年滿十八歲<br><small>進入</small></button>
+        </div>
+        <div class="over18-button-container">
+            <button class="btn-big" type="submit" name="no" value="no">未滿十八歲或不同意本條款<br><small>離開</small></button>
+        </div>
+    </form>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710d21164efc351d',m:'ngYRLolI4l0y6RuaBH60AOtB6w81sG7VWAenvwdj9UI-1653469735-0-AcEOO3PgHmg3N0yVhQynzAoy6sAXjzfO5iHbwuQikXy+NNdlInLZUYcYD3hqMh7smJ7lL2lJgNFamPrkDmfbqD6qgO8mHXoEPGDykzvBBcQLJdr2aP2eWlLxF0UhTu0OLXHR4Tomo3et8IA9P9r9YRIonRx2oMB4qiGgfokez9wM9beTRZC1jhNzHEjU3hlfzgiO10aVQ7tM2KrRS2hG/dktzPjU3suqHIhXJva+0zDwyzs3LHVnwMep//XlN3GYbW+5jhl1e7WfRVxdvddohxR/d6nxj0uUjgJOKLW0nRT0CGFjdakFqSZ7qbOqNcZuro2raOaOtLC2Oc5mDdGl0qrjgc9iKYR1XC5ws3H/WdA/Vl2pBTDe2CJmbGoE94OJZg==',s:[0xf9708bc8eb,0x6957f1e6de],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
