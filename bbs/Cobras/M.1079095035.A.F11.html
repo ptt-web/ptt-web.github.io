@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BABIP, Prevent Hits and DIPS - 看板 Cobras - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="沒什麼，最近對這個題目很感興趣。
+這是兩名大聯盟投手在 1999 年的紀錄︰
+Pitcher         W  L   ERA     IP    H  HR TBB  IB   SO  HP  BFP
+Aaron Sele     18  9  4.79  205.0  244  21  70   3  186  12  920
+Jose Rosado    10 14  3.85  208.0  197  24  72   1  141   5  882
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="BABIP, Prevent Hits and DIPS">
+<meta property="og:description" content="沒什麼，最近對這個題目很感興趣。
+這是兩名大聯盟投手在 1999 年的紀錄︰
+Pitcher         W  L   ERA     IP    H  HR TBB  IB   SO  HP  BFP
+Aaron Sele     18  9  4.79  205.0  244  21  70   3  186  12  920
+Jose Rosado    10 14  3.85  208.0  197  24  72   1  141   5  882
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Cobras/M.1079095035.A.F11.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Cobras/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">test123 (Schilling = Everything)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Cobras</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">BABIP, Prevent Hits and DIPS</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Mar 12 14:31:50 2004</span></div>
+沒什麼，最近對這個題目很感興趣。
+
+這是兩名大聯盟投手在 1999 年的紀錄︰
+
+Pitcher         W  L   ERA     IP    H  HR TBB  IB   SO  HP  BFP
+Aaron Sele     18  9  4.79  205.0  244  21  70   3  186  12  920
+Jose Rosado    10 14  3.85  208.0  197  24  72   1  141   5  882
+
+誰是比較好的投手？撇開勝負紀錄這個大家公認受到外力影響極大的數字，應
+該大多數人都會說 Jose Rosado是個比較好的投手，而 Sele 在整個聯盟中應
+該是屬於後面那一群的。
+
+但是如果現在有人告訴你說 Sele 比較好，而且他還是當年全美聯中最好的投
+手之一，你會怎麼想？
+
+先不談這些，先說 BABIP這個數據。這個數據表示的是〝被打進場內的球成為
+安打的機率〞，算法是︰
+                （H－HR）╱（BFP－HR－BB－SO－HB）
+
+你會怎麼想這個數字？一般我們常常會聽到一些投手、教練、球評告訴我們說
+，好的投手不一定要投出很多三振，讓球打進場內交給守備解決打者是更有效
+率更省力氣的做法。所以我們應該可以得出一個結論，好的投手像是鼎鼎大名
+的技巧派 Greg Maddux，他們可以讓打者打出很容易被守備解決的球，以此有
+效的製造出局數，也因此，這些投手的 BABIP應該會較低。
+
+又或者你會想說，像是 Pedro Martinez 還有 Randy Johnson這類超級投手，
+球是公認的難打，所以他們不但可以 K掉一大堆打者，他們的球被打者打到也
+多半都是軟弱的內滾或是內飛之類會被輕鬆處理掉的球，也因此他們的 BABIP
+應該是相當低的。
+
+結果呢？Pedro 在 2000 年的 BABIP是全聯盟最低，看起來很合理，但是回溯
+一年， Pedro在 1999 年的 BABIP是全聯盟最高的之一。
+
+再看 Maddux ，他在 1998 年的 BABIP是全聯盟第五低，似乎跟我們的推論相
+符，但是在一年後的 1999 年，麥狗狗的 BABIP是全聯盟第四高。
+
+需要更多例子嗎？ 1999 年 BABIP最低的投手是 Kevin Millwood ，而前一年
+呢？1999年，他是全聯盟第八高，而且同年第六高的投手叫做 Randy Johnson。
+
+事實上，在比較過大聯盟眾多投手連續多年的紀錄之後，得出了一個結論，所
+有投手的 BABIP是幾乎的，在短短一兩年內會有所變動，但是若把時間拉長到
+十年以上，所有投手的通算 BABIP都是在 .280 ～ .290 之間，而且差距相當
+的小。
+
+也因此我們得出了一個結論，一個投手對於被打出去的球會不會成為安打，完
+全無能為力，或者保守一點說，幾乎無能為力。也就是說，所有投手被打出去
+的球，都有大約 30%的機會成為安打。球被打出去後是否成為安打，跟投手本
+身的能力無關。
+
+那像是前面提到的 1998 年的 Maddux 還有 2000 年的 Pedro是怎麼回事？其
+實簡單的說，那只是他們那年運氣比較好罷了。
+
+好的，現在我們知道 BABIP是投手無法控制的了，那什麼是投手可以控制的呢
+？比較資料，我們得到的結論是 BB、SO、HB、HR ，也就是一開始計算 BABIP
+中要扣掉的那幾項數據。
+
+這些是怎麼得來的？同樣比較數據之後，我們發現這些數據是投手可以穩定維
+持，而且在不同投手間差距明顯的。簡單說，我們發現投手每年的 BABIP之間
+幾乎完全沒有規律，但是以上幾項數字是有規律的。或許有人會懷疑 HR 這一
+部分，但是數據是這樣告訴我們的。
+
+從這邊我們得到一個結論，一個好的投手應該有的條件是，投出大量的三振，
+很少的保送跟觸身，很少被打全壘打。而常常聽到的〝好的投手不一定要很多
+三振，可以依靠守備來解決打者〞這種說法是不可靠的。好的投手應該要能丟
+出一堆三振，聽起來似乎是棒球初學者說的話，但是數據告訴我們這其實是對
+的。
+
+那麼，如果 BABIP不受到投手能力的影響，是什麼在影響 BABIP呢？結論是球
+隊的防守能力。待在防守比較好的球隊的投手，會在這邊有優勢，這點應該相
+當容易明白，不需要再靠引用數據來證明。而 Park Effect也是另外一項會影
+響 BABIP的因素。
+
+是不是有一種方法可以去除那些投手無法控制的因素，只看這些投手本身可以
+控制的能力來評斷投手的方法？Voros McCracken 依據以上的觀點，創造出了
+ DIPS 這個數據。
+
+這個數字的公式計算還有推導的過程這邊不詳細說明了，如果有興趣的話可以
+去拜訪文末附的幾個網站。
+
+所以為什麼我們在一開始說 Sele 是比較好的投手？經過換算之後，我們得到
+了以下的數字︰
+
+Pitcher  dERA
+Sele     3.80
+Rosado   4.55
+
+McCracken 作出了這個數據之後，他預期投手間 dERA 的差距應該遠小於真實
+世界 ERA的差距，dERA應該會集中在 3～4 這個區間之內。但是他很驚訝的發
+現 dERA 的差分布範圍就跟真實 ERA的分布範圍一樣廣大。也因此他得到了一
+個結論，投手可以操控的部分看起來很少，但是這些因素事實上仍然可以在場
+上發揮強大的影響。縱使去掉了防守（還有球場）的影響，投手間的能力仍有
+明顯的區別。
+
+另外，還有相當有趣的一段話︰
+
+Pitchers are often dubbed as &#34;unpredictable&#34;, and hits allowed is by
+far the most unpredictable of the component stats. In other words, it
+is one of the main culprits of pitcher unpredictability.
+
+說了這麼多，我到底相不相信這件事情呢？老實說我個人仍然相當懷疑，這些
+東西跟我一直以來的觀念完全不同。我的第一個想法是，或許進入球場的球成
+為安打的機會是一樣的，但是部分投手比較容易被打出長打，就跟數據說明有
+些投手比較容易被貓全壘打一樣，但是結果是，在 McCracken回覆疑問的文章
+中我看到下面這些︰
+
+I wonder if you have looked at whether there is evidence that pitchers
+can &#34;control&#34; extra-base hits. By this, I mean, are there pitchers off
+whom batters generally do not hit the ball as hard or hit the ball on
+the ground? If there is no correlation between a pitcher and &#34;giving up&#34;
+hits, is there a correlation between a pitcher and the kind of hits he
+gives up?
+                                                        --Josh
+
+The short answer is that you probably won&#39;t find anything there.
+Pitchers may differ in this ability--they probably do a little just as
+they probably do a little on hits on balls in play--but it will be
+difficult to find it on a case-by-case basis.
+
+事實上，在提出這些東西之後，McCracken 受到了許多攻擊，相當多的人都表
+示不能接受，整個理論受到相當多的挑戰。到目前為止仍然沒有確切的結論，
+不過 McCracken本人也提出了幾個可能的假說︰
+
+1. Scouting.
+   大聯盟球探網必須要在數量眾多的潛力球員中找出那些有可能成為大聯盟
+   球員者。為此他們或許使用了一些可能並不公平的策略來縮小尋找的範圍
+   ，像是不選用身高低於 5&#39;10&#34;的球員或是投手的球速一定要達到某個標準
+   之類的。而這種做法可能剛好除去了那些不符合該理論的投手。
+
+2. High talent level.
+   很可能投手防止安打的能力最好就僅止於此，而能進入大聯盟的投手都有
+   著非常接近此一極限的能力。這種說法常出現在關鍵時刻打者是否存在的
+   討論中。
+
+3. Too many variables.
+   投手防止球形成安打的能力可能存在也可能不存在，但是影響球是否形成
+   安打的因素太多了，導致投手控制的能力相形之下就小了許多。換句話說
+   ，就像背景雜訊蓋過了傳送訊號。
+
+4. A misunderstanding of how the batter/pitcher dynamic works.
+   這應該沒什麼好說的了:p
+
+
+最近常常想這方面的問題，不過以我個人淺薄的能力當然是沒有什麼結果，大
+體上說來我還是感到懷疑，難道中職投手去打大聯盟也只會有 30%的場內球會
+形成安打？不過對於投手要多丟三振少丟保送這點是很可以接受的:p
+
+另外一方面，從這邊也牽扯出了打者應該有什麼策略的問題，不過這邊先不討
+論了。
+
+還有一點，是有關於所謂中華隊選投手的問題。套用以上理論，我們應該優先
+考慮三振能力強的投手。而我們也知道了投手在被安打這方面受到守備的影響
+明顯，所以像是許銘傑就（問題是我們也沒有幾個比他好的投手）....我們都
+看到亞錦賽中華隊的〝黃金內野〞是怎麼害死他的....
+
+相關的東西可以看下面這些網站︰
+Voros McCracken 的個人網頁︰
+<a href="http://www.baseballstuff.com/mccracken/index.html" target="_blank" rel="noreferrer noopener nofollow">http://www.baseballstuff.com/mccracken/index.html</a>
+（順代一提，Voros McCracken 跟 Bill James 目前都在紅襪的 Front Office
+裡面工作）
+
+在 BP 的說明以及相關問題的回答︰
+<a href="http://www.baseballprospectus.com/news/20010123mccracken.html" target="_blank" rel="noreferrer noopener nofollow">http://www.baseballprospectus.com/news/20010123mccracken.html</a>
+<a href="http://www.baseballprospectus.com/news/20010206mailbag.html" target="_blank" rel="noreferrer noopener nofollow">http://www.baseballprospectus.com/news/20010206mailbag.html</a>
+
+相關的討論文章︰
+<a href="http://baseballstuff.com/fraser/new/dips.htm" target="_blank" rel="noreferrer noopener nofollow">http://baseballstuff.com/fraser/new/dips.htm</a>
+（最近都在看這些，不過東西好多唷....）
+
+--
+耶，下禮拜要交的作業都沒寫~~
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 140.113.93.6
+<span class="f2">※ 編輯: test123         來自: 140.113.93.6         (03/12 14:53)
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Grant44</span><span class="f3 push-content">:不過有趣的是，Pedro 99年的成績是生涯最</span><span class="push-ipdatetime">      推140.116.113.185 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Grant44</span><span class="f3 push-content">:棒的一年.. XD</span><span class="push-ipdatetime">                               推140.116.113.185 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">winxp</span><span class="f3 push-content">:DIPS還不是很完備的理論吧 @@&#34;</span><span class="push-ipdatetime">                  推 203.70.133.141 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wuyen11</span><span class="f3 push-content">:中職投手去那邊BABIP要0.3當然不可能 ^^;</span><span class="push-ipdatetime">      推140.125.190.161 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wuyen11</span><span class="f3 push-content">:不過我想在一個水準相近的聯盟內</span><span class="push-ipdatetime">              推140.125.190.161 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">wuyen11</span><span class="f3 push-content">:投手應該都會是趨近同樣一個值</span><span class="push-ipdatetime">                推140.125.190.161 03/12
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">parn</span><span class="f3 push-content">:至少中職投手被打進場內的球將會比較多..</span><span class="push-ipdatetime">         推 192.192.90.241 03/12
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Cobras/M.1079095035.A.F11.html?cacheKey=2151-965142559&amp;offset=7902&amp;offset-sig=5044227544be45e40262060c31f6046aea0f8383" data-longpollurl="/v1/longpoll?id=5d4b4f33b8c0d003d7531ec0ea9bd300050c478c" data-offset="7902"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cc85738203535',m:'eXvKwECzdSrUcL2LHcef8uyVFzlAVcKmTi1QZhivX9I-1653466100-0-AXoBE6Sc1pjeR2p5YiWEgVD4HEWzjtYm1UQshLkFNNkGGfNfBeC3yiyhcx1HGvNIvkyzCtXXb4Y/2PXJZPvtMSTjNvL3+4uwhPK+tPsQrD0zXHEMQTiG4+6m+RI58UZK3rOwemr//px+6cpTRxTtIVg3Tf+cNDZ1uueMnFm5U+1G',s:[0x67c18df665,0x8616964c9a],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

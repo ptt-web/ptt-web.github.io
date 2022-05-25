@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:Debugger - Cobras - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Cobras/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Cobras/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Cobras/search?page=4&amp;q=author%3ADebugger">最舊</a>
+				<a class="btn wide" href="/bbs/Cobras/search?page=2&amp;q=author%3ADebugger">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Cobras/search?page=1&amp;q=author%3ADebugger">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:Debugger" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1226036896.A.FA7.html">米迪亞(含誠泰)隊史投手生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E7%B1%B3%E8%BF%AA%E4%BA%9E%28%E5%90%AB%E8%AA%A0%E6%B3%B0%29%E9%9A%8A%E5%8F%B2%E6%8A%95%E6%89%8B%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1224762761.A.74A.html">米迪亞(含誠泰)隊史打者生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E7%B1%B3%E8%BF%AA%E4%BA%9E%28%E5%90%AB%E8%AA%A0%E6%B3%B0%29%E9%9A%8A%E5%8F%B2%E6%89%93%E8%80%85%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1193582678.A.E2E.html">誠泰隊史投手生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%AA%A0%E6%B3%B0%E9%9A%8A%E5%8F%B2%E6%8A%95%E6%89%8B%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">14</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1193580806.A.90F.html">誠泰隊史打者生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%AA%A0%E6%B3%B0%E9%9A%8A%E5%8F%B2%E6%89%93%E8%80%85%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1185761792.A.748.html">王傳家 - 台灣職棒史高飛犧牲打王</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E7%8E%8B%E5%82%B3%E5%AE%B6&#43;-&#43;%E5%8F%B0%E7%81%A3%E8%81%B7%E6%A3%92%E5%8F%B2%E9%AB%98%E9%A3%9B%E7%8A%A7%E7%89%B2%E6%89%93%E7%8E%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/30</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1184558159.A.78D.html">Re: 本周可望達成紀錄</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E6%9C%AC%E5%91%A8%E5%8F%AF%E6%9C%9B%E9%81%94%E6%88%90%E7%B4%80%E9%8C%84">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/16</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1178507056.A.928.html">Re: [問題] 小明到底怎麼了</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%B0%8F%E6%98%8E%E5%88%B0%E5%BA%95%E6%80%8E%E9%BA%BC%E4%BA%86">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/07</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">22</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1178358734.A.AC6.html">Re: 樣本超小的今年守備Win Shares</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E6%A8%A3%E6%9C%AC%E8%B6%85%E5%B0%8F%E7%9A%84%E4%BB%8A%E5%B9%B4%E5%AE%88%E5%82%99Win&#43;Shares">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/05</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1176255738.A.DBF.html">代打安打王</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E4%BB%A3%E6%89%93%E5%AE%89%E6%89%93%E7%8E%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/11</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">6</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1175439533.A.E79.html">Win Shares</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3AWin&#43;Shares">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1173793569.A.73E.html">Re: [問題]網路購票系統的問題</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%A5%A8%E7%B3%BB%E7%B5%B1%E7%9A%84%E5%95%8F%E9%A1%8C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/13</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1160799576.A.503.html">誠泰隊史投手生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%AA%A0%E6%B3%B0%E9%9A%8A%E5%8F%B2%E6%8A%95%E6%89%8B%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/14</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">11</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1160794824.A.5FD.html">史上單季WHIP top 20</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E5%8F%B2%E4%B8%8A%E5%96%AE%E5%AD%A3WHIP&#43;top&#43;20">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/14</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1160632554.A.C5E.html">誠泰隊史打者生涯紀錄排行榜</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%AA%A0%E6%B3%B0%E9%9A%8A%E5%8F%B2%E6%89%93%E8%80%85%E7%94%9F%E6%B6%AF%E7%B4%80%E9%8C%84%E6%8E%92%E8%A1%8C%E6%A6%9C">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/12</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1156989298.A.842.html">賀 - 林恩宇榮登誠泰勝投王</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%B3%80&#43;-&#43;%E6%9E%97%E6%81%A9%E5%AE%87%E6%A6%AE%E7%99%BB%E8%AA%A0%E6%B3%B0%E5%8B%9D%E6%8A%95%E7%8E%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/31</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1151853213.A.80E.html">本月可望達成記錄</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E6%9C%AC%E6%9C%88%E5%8F%AF%E6%9C%9B%E9%81%94%E6%88%90%E8%A8%98%E9%8C%84">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/02</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1151488526.A.612.html">Re: [討論] 打線得分期待</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;%E6%89%93%E7%B7%9A%E5%BE%97%E5%88%86%E6%9C%9F%E5%BE%85">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">8</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1151432318.A.55B.html">台灣職棒史 Win Shares system 生涯成就排名</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E5%8F%B0%E7%81%A3%E8%81%B7%E6%A3%92%E5%8F%B2&#43;Win&#43;Shares&#43;system&#43;%E7%94%9F%E6%B6%AF%E6%88%90%E5%B0%B1%E6%8E%92%E5%90%8D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1151431908.A.04D.html">誠泰前49場Win Shares</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A%E8%AA%A0%E6%B3%B0%E5%89%8D49%E5%A0%B4Win&#43;Shares">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/28</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/Cobras/M.1151246864.A.C65.html">Re: 100 Records to be achieved</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">Debugger</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/Cobras/search?q=thread%3A100&#43;Records&#43;to&#43;be&#43;achieved">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/Cobras/search?q=author%3ADebugger">搜尋看板內 Debugger 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/25</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cc4b8fc133511',m:'bFR46vA8KL578ChecsVWYqLoKb6cQE3.zwR7MIZ9Wus-1653465952-0-AZA4abrVr9DHqqzto1kPU4DJrV3TNlXGSrwXKckXwsoiorgmeXv0oWrGcP4b7VvLu9Z8TRePKFnGf0QcD7BBEHPq0E+xmW3h6uwWdJVVdAKUuiQUlhnYzTsNTiIfCEt5ruGH7ku6cNu/RKNJjyucmfsZ8cNzBr7c5wQLcO/4k9UD',s:[0x60f36bd9d6,0x86040f9697],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

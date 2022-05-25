@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>各種攻擊指數的觀念和算法(一)  - 看板 Cobras - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="發信人: benda@cis_nctu (女兒的大玩偶), 信區: &#39;TML&#39;
+標  題: 各種攻擊指數的觀念和算法(一)
+發信站: 交大資科_BBS (Wed Nov 13 17:29:55 2002)
+來  源: 221.119.30.61.isp.tfn.net.tw
+Who&#39;s the best？誰是最好的？
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="各種攻擊指數的觀念和算法(一) ">
+<meta property="og:description" content="發信人: benda@cis_nctu (女兒的大玩偶), 信區: &#39;TML&#39;
+標  題: 各種攻擊指數的觀念和算法(一)
+發信站: 交大資科_BBS (Wed Nov 13 17:29:55 2002)
+來  源: 221.119.30.61.isp.tfn.net.tw
+Who&#39;s the best？誰是最好的？
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Cobras/M.1062736459.A.B50.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Cobras/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">benda (工作好累好累)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Gida</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">各種攻擊指數的觀念和算法(一) </span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Sep  5 12:34:34 2003</span></div>
+
+發信人: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="07656269636647646e74">[email&#160;protected]</a>_nctu (女兒的大玩偶), 信區: &#39;TML&#39;
+標  題: 各種攻擊指數的觀念和算法(一)
+發信站: 交大資科_BBS (Wed Nov 13 17:29:55 2002)
+來  源: 221.119.30.61.isp.tfn.net.tw
+
+
+
+Who&#39;s the best？誰是最好的？
+
+這個問題其實經常是為人津津樂道的話題，彭政閔和陳文賓誰是今年中華職棒聯盟最好
+的打者？謝佳賢和米西亞誰才是台灣職棒大聯盟最好的打者？這些的問題的解答當然就
+只好從他們的棒球數據中去比較，只有數據才能說服人，只有數據才能說明一切。
+
+棒球的攻擊數據比起其他運動例如籃球方面是要簡單多了，主要原因是因為它很單純，
+是一個一個個別獨立的 play 組合而成的，不管你前面的打者打擊內容是什麼，只要輪到
+你打擊，就是一個全新的 play ，你如果在籃球場上有一位很會得分的隊友，那麼你得分
+的數據就會遭到壓縮，因為你的出手次數會相對減低，但是你有一位會打全壘打的隊友
+，這並不會影響你打全壘打的機率。這是棒球數據的獨立性和有趣的地方。
+
+But, How？怎麼去看數據？怎麼去判斷？
+
+以下是我以前就很想寫的東西，介紹美國現在一些攻擊指數的算法，當然，藉此可以明
+瞭美國人對於棒球數據的觀念和他們的價值觀，唯有建立正確的觀念和價值觀，才能夠
+真正明瞭到一個棒球打者應該追求的是什麼，應該是怎麼樣的打者才是一個正確的好打
+者。
+
+在開始之前先介紹一個名詞：Sabermetrics，什麼是 Sabermetrics？簡單來說，就是
+用科學化和系統化來對於棒球數據作研究，利用大量數據和各種數值分析的方法對棒球
+數據作分析，這種概念和數據稱為 Sabermetrics。
+
+Sabermetrics is the scientific research of the available evidence to
+identify, study and measure forces in professional baseball.
+- Craig Wright (The Bill James Baseball Abstract 1985)
+
+這個名詞也應該是對於棒球數據的正確態度和觀念。
+
+以下每個數字其實都個別還有很大的討論空間，我只是簡略說明。
+
+1. TA，Total Average
+
+這個數據對於台灣比較用功的棒球迷來說，應該是不陌生的，因為這是中華職棒聯盟目
+前採用的攻擊指數的算法。它是 Thomas Boswell 在一九八一年，在他的書中&#34;How Life
+Imitates the World Series.&#34;提到的攻擊數據的算法。
+
+這個數據的觀念其實很簡單，就是 （Total bases Gained）／（Total batters cost）
+，中文的解釋方法也就是打者得到的壘包數除以打者使出局的次數，算法是：
+
+[TB+SB+BB+HBP-CS] / [AB-H+CS+GIDP]
+
+中文就是
+
+「壘打數＋四壞球＋觸身球＋盜壘成功－盜壘失敗」除以「打數－安打數＋雙殺
+打＋盜壘失敗」
+
+當然，有一些近似的算法我們也可以歸在這裡面，重點是觀念。在這個數據中，我們
+可以看到作者的觀念就是他認為打者一次使出局的次數中，能夠獲得的壘包數越多的
+打者，他認為是越好的打者。
+
+當然，乍聽之下好像是很合理的，但是我個人並不認為這是很好的攻擊數據的算法。
+
+第一，一支一壘安打和一次保送在他的數據中，功用是一樣的，但是在棒球實際世界
+中，其實功用是有一段差距，棒球的攻擊包含上壘和推進壘包兩部分，一壘安打的功
+用是不但可以自己上壘，也可以幫助隊友推進一個壘包，但是保送就沒有推進壘包的
+功用了（除非強迫進壘狀態），這種上壘和推進壘包功能不分的情形讓它這數據失色
+不少，第二，我個人覺得以出局數作為數據的分母並不恰當，缺乏邏輯可解釋的地方
+，很難去解釋的通。不過，我覺得這數據另外它有一項有很好的地方，也就是它把跑
+者的價值也列進去了（盜壘的部分），有些其他的攻擊指數比較偏重在打擊的部分，
+但是整體而言，我仍然覺得這數據有缺陷。
+
+基於以上的原因，所以我個人並不太覺得這數據是很好的數據，當然，還是有人用就
+是了。
+
+2. OPS，Onbase Plus Slugging
+
+Pete Palmer（這個人還需要介紹嗎？）所創立的數據，也是目前很多人最常用簡單的數
+據，它的算法非常簡單，也就是長打率 SLG 加上上壘率 OBP 就成為OPS。
+
+這個數據的邏輯就比上面的 TA 清楚許多，棒球的攻擊包含上壘和推進壘包兩部分，
+而上壘這部份的價值就用上壘率來代表，推進壘包的能力就用長打率來代表，而一位
+打者的攻擊能力就可以很簡單的用兩者的相加來代表。
+
+這數值的優點就是簡單容易，而且邏輯很清楚，但是由於在很多的面向太過簡單，而
+且還不夠精細，使得它只能是很初步的判斷打者的優劣。
+
+它是很好用且被常被用的棒球攻擊數據，但是嚴格來說，不夠精細。
+
+美國大聯盟官方網站中的打擊數據中也把 OPS 這數值列入。
+
+3. RC，Run Created
+
+這是由 Bill James（此人被譽為是 Sabermetrics 之父）所創立的攻擊指數計算的系統，
+路上隨便抓一個美國大聯盟的球迷可能也都知道這數字，這個數字字面上的意義就是
+製造分數的多寡，邏輯和上面的 OPS 有點相似卻又不同，它最初的版本算法是：
+
+RC= OBP*TB，也幾乎等於是上壘壘包數乘壘打數除以打席數
+
+很簡單的觀念：Get on base, then move the runners around，上壘後用壘打數打回分數。
+
+事實上這種最初的版本有著還不錯的準確度，可以近似去求得一支球隊的總得分，但
+是仍不夠精細，後來陸陸續續有了其他版本出現，據我所知是有二十四種修正版本，
+目前最新的版本我不確定，底下是我知道的版本。
+
+RC = A * B / C（和初版概念很接近，上壘乘以壘打除以打席，只是做了數值修正）
+其中
+A=(H + HB - GIDP - CS)
+B=[ TB + ((W + HB - IBB)*.29) + (SB*.64) + ((SH+SF)*.53)-(.03*K) ]
+C=(AB + W + HB + SH + SF)
+
+修正後的版本把跑者的價值也考慮進去，同時也做了更精細的數值修正。
+
+事實上，要驗證上面的所謂 Run Created 的公式，最佳的方法是把一支球隊的各種
+數值帶進去，去求得這支球隊的攻擊數據下的得分期望值，再和球隊的總得分去比
+較差異程度，這在美國已經是近似很準確的公式了，不過如果要用在台灣，可能也要
+有一些數值的修正。
+
+同樣地，由於這數字可以近似準確預估球隊得分的期望值，假設它是正確的，所以亦
+可以用來計算一個球員〔為球隊製造的分數〕，一個球員的 Run Created 的數值就
+是把一個球員的各項數字代入上述公式中，就可以判斷這個球員為球隊帶來多少分數
+，能帶來越多分數的打者，理論上自然是越好的打者。
+
+此外，為了平均化一個打者的 RC 值，也有平均的數值產生，也就是常見的 RC/27 或是
+RC/ 25，公式如下：
+
+RC/27 = RC / O * 27　（RC/25 就是數字變成25）
+O = AB - H + CS + GIDP + SH + SF
+
+也就是這位球員出局二十七次（一場九局的比賽）或二十五次（一場比賽經常打不到
+九局下半結束，所以實際上平均一場比賽大約只有二十五出局數）所能製造的分數，
+用白話一點，也就是當全隊打者都是這位打者時，一場比賽能打下多少分數。
+
+雖然嚴格來說，這數字還有些小瑕疵，高上壘率的打者會有一些比較高估的情形發生
+，但是整體而言，這是相當好的攻擊數據的計算方式。
+
+以下待續，if possible...
+
+
+--
+ * Origin: ★ 交通大學資訊科學系 BBS ★ &lt;bbs.cis.nctu.edu.tw: 140.113.23.3&gt;
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.csie.ntu.edu.tw) 
+</span>◆ From: 210.202.193.29
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Cobras/M.1062736459.A.B50.html?cacheKey=2151-965137429&amp;offset=5783&amp;offset-sig=ab3ded4f7a5b6144abcbab3c0bb6c9429ee62e2e" data-longpollurl="/v1/longpoll?id=9104136b74a2992f3d733cc39356f10f1c86590a" data-offset="5783"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ccc999a60af25',m:'4K_BKUPOcn3YvEVMDPTqCa039ck4w95TjjuLRTwSlRw-1653466274-0-AZoqn5KAn7ktWnn26dUHQOCeymRNCqwALKWOGccrp5XS1v0tYjfaGhhL3sqHXptY3SxIlVkbO5MmVhAVH8Opz1htPuk6nHgmW9R4WQHlfobChhWJ0wE9LtPzQdoFH1u8UNqzijY3+I3R33vdchWcrtYN32eIO2P3ugAq23beGDiD',s:[0xd35194d0ea,0xde0ebcf3c0],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

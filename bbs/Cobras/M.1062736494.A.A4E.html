@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>各種攻擊指數的觀念和算法(二) - 看板 Cobras - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="發信人: benda@kkcity.com.tw (女兒的大玩偶), 信區: TML
+標  題: 各種攻擊指數的觀念和算法(二)
+發信站: KKCITY (Thu Nov 14 17:24:05 2002)
+轉信站: cis_nctu!news.cis.nctu!KKCITY
+來  源: bbs.kkcity.com.tw
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="各種攻擊指數的觀念和算法(二)">
+<meta property="og:description" content="發信人: benda@kkcity.com.tw (女兒的大玩偶), 信區: TML
+標  題: 各種攻擊指數的觀念和算法(二)
+發信站: KKCITY (Thu Nov 14 17:24:05 2002)
+轉信站: cis_nctu!news.cis.nctu!KKCITY
+來  源: bbs.kkcity.com.tw
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Cobras/M.1062736494.A.A4E.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Cobras/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">benda (工作好累好累)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Gida</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">各種攻擊指數的觀念和算法(二)</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Sep  5 12:35:07 2003</span></div>
+發信人: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90f2f5fef4f1d0fbfbf3f9e4e9bef3fffdbee4e7">[email&#160;protected]</a> (女兒的大玩偶), 信區: TML
+標  題: 各種攻擊指數的觀念和算法(二)
+發信站: KKCITY (Thu Nov 14 17:24:05 2002)
+轉信站: cis_nctu!news.cis.nctu!KKCITY
+來  源: bbs.kkcity.com.tw
+
+
+
+4 BPV，Base Performance Value
+
+嚴格來說，這應該不能算是一種攻擊指數的數據，這只能算是一個球員個別能
+力的總和而已，照字面上翻譯，可以說是基礎能力表現數字的總和。
+
+這數字其實包含投手和打者兩部分，投手的部分有機會再介紹，打者的部分則
+是公式如下：
+
+Batting BPV= (Batting Eye x 20) + ((Batting Average - .300) / .003)
++ (Linear Weighted Power x 1.25)
+
+其中
+Batting Eye = (Walks / Strikeouts)
+Batting Average，最基本的數據，應該沒人不會算吧！
+Linear Weighted Power:
+(((2B x .8) + (3B x .8) + (HRx 1.4)) / AB) x 365
+
+撇開一些加乘的效應不看（其實我覺得加乘的意義不大，個別的意義比較有意
+思），很明顯的可以看到打者的基礎能力分成下面三個部分：
+
+Batting eye，Batting Average，Linear Weighted Power。
+
+可以看出這數據很簡單的把打者的基礎能力分成三種，一種是好壞球的判斷能
+力（batting eye），一種是 ability to hit the ball safely（Batting Average）
+，最後一種是ability to hit with power（Linear Weighted Power）。
+
+簡言之，Batting BPV就是選球力，安打力以及長打能力三種能力的總和數
+字。不過，我不覺得總和數字是很準的數字，因為總覺意義並不大，真正有意
+義的是個別數字代表的意義。
+
+5. XR，Extrapolated Runs
+
+有一群人很努力的想把棒球打擊數據的貢獻用線性方式表現出來，Paul Johnson
+的 Estimated Runs Produced （ERP）以及Pete Palmer 的 Batting Runs（BR），
+這兩種數據都是線性方程式去模擬打者的數據，不過，仍然不夠好。Jim Furtado
+在1999年發展出了 XR ，Extrapolated Runs 的攻擊數據，則把攻擊數據線性方程
+式化推向一個新的高點。
+
+如果你有興趣的話，連結如下：
+<a href="http://www.baseballstuff.com/btf/scholars/furtado/articles/IntroducingXR.htm" target="_blank" rel="noreferrer noopener nofollow">http://www.baseballstuff.com/btf/scholars/furtado/articles/IntroducingXR.htm</a>
+
+他利用了數值回歸分析，分析了各種打擊數據，最後建立了下列方程式：
+
+XR
+=  (.50 x 1B) + (.72 x 2B) + (1.04 x 3B) + (1.44 x HR) + (.34 x (HP+TBB-IBB))
++(.25 x IBB)+ (.18 x SB) + (-.32 x CS) + (-.090 x (AB - H - K)) + (-.098 x K)
++ (-.37 x GIDP) + (.37 x SF) + (.04 x SH)
+
+這數字一個非常好的地方在於它點出了每一個攻擊數據對於球隊會得到的分數
+有多少影響，例如一支全壘打可以為球隊帶來 1.44 分的效益，一次盜壘會為球
+隊帶來 0.18 分的效益，以此類推等等，每個數據可以在此數據中找到相對應的
+為球隊貢獻的分數。因此，把每位打者的打擊數據代入此數據，可以得到這位
+打者為球隊帶來的分數大約有多少。
+
+這數據目前被證明就算不是最準確的攻擊模擬方程式，也會是最準確的一群數
+據其中之一。
+
+
+以下待續，possible....
+
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.csie.ntu.edu.tw) 
+</span>◆ From: 210.202.193.29
+</div>
+    
+    <div id="article-polling" data-pollurl="/poll/Cobras/M.1062736494.A.A4E.html?cacheKey=2151-965137430&amp;offset=2581&amp;offset-sig=fcbe2b8769aac7d6f86e6692ec677d57de810074" data-longpollurl="/v1/longpoll?id=1b05bdc21f40d27c3bae6a4566426d813fdb3480" data-offset="2581"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710ccc99fa2480c9',m:'3Q9lwAdcIP85kFnhizKJHJrRBRSIXarUCFmwl6uDJlg-1653466274-0-AXDqwqWqcKH+mi3ehp2JnQNBfnvoFE8pnkjFYD2Kr9IEq9y5XaRW1hOjBzc43Tea9KziziGYh+1TX/d+Jfk6dhaHpsKTVy6gH54dYMAGzv92zISejRDMjLgJU1WKyw2VX9E+qynDYtKOPKO0s9B0xvpHjnvQCZfWWdnzSQnZREj3',s:[0x374efe210b,0x357f6743a6],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

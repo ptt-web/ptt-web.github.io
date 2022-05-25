@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>之前在討論觸擊的問題 - 看板 Cobras - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="這邊有一個很有趣的東西可以參考︰
+http://www.harvard-magazine.com/on-line/050221.html
+我不清楚他的詳細過程是怎麼來的，網頁中只有大致說是利用 Markov Theory
+來處理，不過出來的結果很有趣。
+                                Men on base
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="之前在討論觸擊的問題">
+<meta property="og:description" content="這邊有一個很有趣的東西可以參考︰
+http://www.harvard-magazine.com/on-line/050221.html
+我不清楚他的詳細過程是怎麼來的，網頁中只有大致說是利用 Markov Theory
+來處理，不過出來的結果很有趣。
+                                Men on base
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Cobras/M.1082077772.A.A03.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Cobras/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">test123 (Schilling = Everything)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Cobras</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">之前在討論觸擊的問題</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Fri Apr 16 01:23:20 2004</span></div>
+這邊有一個很有趣的東西可以參考︰
+<a href="http://www.harvard-magazine.com/on-line/050221.html" target="_blank" rel="noreferrer noopener nofollow">http://www.harvard-magazine.com/on-line/050221.html</a>
+
+我不清楚他的詳細過程是怎麼來的，網頁中只有大致說是利用 Markov Theory
+來處理，不過出來的結果很有趣。
+
+                                Men on base
+    │      0       1       2       3     1,2     1,3     2,3   1,2,3
+──┼─────────────────────────────────
+O  0│  0.537   0.907   1.138   1.349   1.515   1.762   1.957   2.399
+u  1│  0.294   0.544   0.720   0.920   0.968   1.140   1.353   1.617
+t  2│  0.114   0.239   0.347   0.391   0.486   0.522   0.630   0.830
+
+簡單的說，這是一名打者站上打擊區後可能面臨的所有 24 種狀況，在這些不同
+狀況下得分的期望值（用期望值其實不是很好的詞，不過一時想不到更好的）。
+
+根據這個表，我們可以知道無人出局，一壘有人，採用觸擊成功，對球隊後續總
+得分的貢獻會是︰
+                0.720 - 0.907 = -0.187
+
+負分，表示會讓球隊得分的期望往下降。而二壘有人，無人出局採用觸擊成功的
+結果會是︰
+                0.920 - 1.138 = -0.218
+
+賠的更多。
+
+這個表拿到台灣來用應該還需要作一些修正，不過很值得參考。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 140.113.93.6
+<div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">TVRO0627</span><span class="f3 push-content">:可是表上不論什麼時候 觸擊都是負分 @<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e5cba584">[email&#160;protected]</a></span><span class="push-ipdatetime">     推    61.70.0.107 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">test123</span><span class="f3 push-content">:強迫取分就會是正的了XD</span><span class="push-ipdatetime">                      推   140.113.93.6 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">test123</span><span class="f3 push-content">:ㄟ....不對，強迫取分還是負分....</span><span class="push-ipdatetime">            推   140.113.93.6 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">tiger25</span><span class="f3 push-content">:1 out 3壘有人   強迫取分是正的</span><span class="push-ipdatetime">              推  202.8.178.225 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">test123</span><span class="f3 push-content">:同理,1 out 2,3壘有人時強迫取分也是正分</span><span class="push-ipdatetime">      推   140.113.93.6 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">test123</span><span class="f3 push-content">:應該多研究一下表才對的XD</span><span class="push-ipdatetime">                    推   140.113.93.6 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">schumii</span><span class="f3 push-content">:還得考慮輪到的棒次以及接下來的棒次</span><span class="push-ipdatetime">          推 140.112.251.38 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">schumii</span><span class="f3 push-content">:跑壘員的腳程跟比賽情勢才能比較得失吧</span><span class="push-ipdatetime">        推 140.112.251.38 04/16
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MILGM</span><span class="f3 push-content">:這個是用真實資料統計的 已經考慮進去了</span><span class="push-ipdatetime">         推 218.174.151.31 04/16
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Cobras/M.1082077772.A.A03.html?cacheKey=2151-965142581&amp;offset=2135&amp;offset-sig=eafb527d97feb9ff68b75cd03a148f671825483a" data-longpollurl="/v1/longpoll?id=af2aa6f949f9bbf6802a660d4f59ca5ff13f9333" data-offset="2135"></div>
+    
+
+    
+</div>
+
+		
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cc857fa5cefaa',m:'6YSsyZQ84MjZkcuEPJOIqsvPL0T9vti8r_AWq.ijD6I-1653466100-0-AZOlLmU+Bl5BwjerYxIDlb/D5Rtx2y0qN2dD+rIEUznT8Lak4Ol+0CSru1fSlyvvpZ0B8wAelpfxmNKA8/4h9gXtkQTdDLGXBWknfAlGXnnTIMuPOY9KV1T71ZMmDQOMSNkNdgbqnFHNXSA/MNFRtnmeq+/93+uyiKmmAtIL8+sO',s:[0x46b8637ff5,0xe616e68bdb],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

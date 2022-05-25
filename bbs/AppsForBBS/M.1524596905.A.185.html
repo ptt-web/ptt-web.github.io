@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [問題]手機 ptt 個人信箱打不開 - 看板 AppsForBBS - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="粗略測試一下
+將 Current Ptt 的 mbbsd/mail.c 的 m_read() 下的
+outs(&#34;您沒有來信&#34;);
+改成
+vmsg(&#34;您沒有來信&#34;);    //MapleBBS系列幾乎都有的底部訊息提示
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [問題]手機 ptt 個人信箱打不開">
+<meta property="og:description" content="粗略測試一下
+將 Current Ptt 的 mbbsd/mail.c 的 m_read() 下的
+outs(&#34;您沒有來信&#34;);
+改成
+vmsg(&#34;您沒有來信&#34;);    //MapleBBS系列幾乎都有的底部訊息提示
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/AppsForBBS/M.1524596905.A.185.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/AppsForBBS/index.html"><span class="board-label">看板 </span>AppsForBBS</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/AppsForBBS/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">holishing ( )</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">AppsForBBS</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [問題]手機 ptt 個人信箱打不開</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Apr 25 03:08:23 2018</span></div>
+<span class="f2">※ 引述《kiwatami (悠游自在)》之銘言：
+</span><span class="f6">: 推 holishing: 若自己的信箱沒有任何信件，可先嘗試寄信給自己，因為   04/02 21:23
+</span><span class="f6">: 推 holishing: 不少 app 在設計時都沒想到這個例外                    04/02 21:24
+</span><span class="f6">: ※ 編輯: celine168 (220.136.8.246), 04/02/2018 21:46:48
+</span><span class="f6">: 推 Metro123Star: 樓上，以前看過信箱沒信結果也不能寄信XD            04/10 15:51
+</span><span class="f6">: 推 holishing: 恩對，因為他送的指令是進去信箱後按Ctrl+P             04/11 22:19
+</span><span class="f6">: 推 holishing: 那就只能用分身或站外寄純文字了                       04/11 22:20
+</span><span class="f6">: 順便來做個科普好了
+</span><span class="f6">: 其實要做 PTT app 需要懂的眉角還滿多的
+</span><span class="f6">: 首先，為什麼大多數的 PTT app 需要在信箱有信件時才能寄信呢？
+</span><span class="f6">: 原因就是這件事
+</span><span class="f6">: <a href="https://i.imgur.com/a0fSjjb.jpg" target="_blank" rel="noreferrer noopener nofollow">https://i.imgur.com/a0fSjjb.jpg</a>
+</span><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/a0fSjjbl.jpg?e=1653649068&amp;s=QjjKGRix_BjhCpzytHu8VA" alt="" loading="lazy" /></div><span class="f6">: 當信箱爆滿時
+</span><span class="f6">: 不管用什麼方法都無法跳出去
+</span><span class="f6">: ctrl + z 雖然可以跳到其他地方
+</span><span class="f6">: 但退出後回到最底層還是上面那張圖的頁面
+</span><span class="f6">: 所以為了避開這個問題
+</span><span class="f6">: 大多數的 app 都是使用 ctrl + z 再輸入 m 直接進入信件列表
+</span><span class="f6">: 但這樣會有一個問題
+</span><span class="f6">: 就是信箱內沒有信件時
+</span><span class="f6">: 這個指令只會回到選單頁
+</span><span class="f6">: 並不會進入信件列表然後顯示沒有信件
+</span><span class="f6">: 也因為沒有進入信件列表
+</span><span class="f6">: 自然沒有辦法使用 ctrl + p 寄送信件
+</span><span class="f6">: 所以其實不是 app 沒有判斷
+</span><span class="f6">: 而是因為有判斷 但沒有其他辦法
+</span><span class="f6">: 才會要求使用者先自行轉寄一篇文章到自己的信箱才能發信
+</span><span class="f6">: 只要信箱爆滿時無法退出的這個預設行為沒有改掉
+</span><span class="f6">: app 就無法直接從選單的私人信件區操作信件
+</span><span class="f6">: 因為程式沒辦法判斷使用者的信箱在什麼時候會爆掉
+</span><span class="f6">: 所以只能選擇完全不進入私人信件區的目錄來避開這個問題
+</span>
+粗略測試一下
+
+將 Current Ptt 的 mbbsd/mail.c 的 m_read() 下的
+
+outs(&#34;您沒有來信&#34;);
+
+改成
+
+vmsg(&#34;您沒有來信&#34;);    //MapleBBS系列幾乎都有的底部訊息提示
+
+重新編譯執行
+
+應該就能使得不論從 menu 進去
+
+或是透過 ^z m 或 ^u r 進去發現沒信，都可以有明確的提示了這樣
+
+看看還有沒有其他問題，或是沒考慮到的
+
+不然感覺可以 pr 這個 patch 看看
+
+--
+<span class="f6 hl">      </span>▄▅◣                      ◢▆▄  <span class="hl">     </span><span class="f4 hl">┼───</span>
+<span class="f6 hl">   </span>◢████◣  <span class="f3 hl">◢▄▅▄◣    </span>◢████◣  <span class="f4 hl">┼ </span> <span class="hl">敲敲</span><span class="f6 hl">hh</span><span class="hl">，呼叫</span><span class="f6 hl">小天使</span><span class="hl">。</span>
+<span class="f6 hl">  </span>◢█<span class="f0 b7">╱  </span><span class="b7 hl">&#34;</span><span class="f0 b7">   </span>█◣<span class="f3 hl">▌</span>      <span class="f3 hl">▌</span>◢██<span class="b7 hl">&#34; </span>█<span class="f0 b7">╲</span>█◣ <span class="f4 hl">│</span>
+  <span class="f6 hl"> </span>◢<span class="b7">  </span><span class="f0 b7">  ∕/ </span>█◤ <span class="f3 hl">◥▄▅▄◤ </span>◥█<span class="f0 b7"> \﹨  </span>██◣<span class="f4 hl">│  </span><span class="hl">雖然不是無時無刻都在，  </span><span class="f4 hl">│</span>
+<span class="f6 hl">  </span>◢█<span class="f0 b7">/ </span>██◤  <span class="f0">ψ阿鬼        </span>  ◥██<span class="f0 b7">\ </span>█◣  <span class="f1 hl"> </span>                          <span class="f4 hl">┼</span>
+  <span class="f6 hl">  </span>◤                                  ◥     <span class="f4 hl">  </span><span class="hl">但祂會盡力地服務您。</span><span class="f4 hl">─┼</span>
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 42.73.69.195
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/AppsForBBS/M.1524596905.A.185.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/AppsForBBS/M.1524596905.A.185.html</a>
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">kiwatami</span><span class="f3 push-content">: 其實目前的情況就可以判斷有沒有信件了</span><span class="push-ipdatetime"> 04/25 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kiwatami</span><span class="f3 push-content">: 主要是沒有信件就無法進入信件列表</span><span class="push-ipdatetime"> 04/25 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">kiwatami</span><span class="f3 push-content">: ctrl + p 就無法使用這個問題</span><span class="push-ipdatetime"> 04/25 22:55
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/AppsForBBS/M.1524596905.A.185.html?cacheKey=2148-1006662920&amp;offset=2979&amp;offset-sig=4d27b657fa9484c1077e3bf90d83f337094175a2" data-longpollurl="/v1/longpoll?id=3ff5fbfcdb1a992260ceca2afffb5d697e4ea7ba" data-offset="2979"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cc08e0ca0af3c',m:'NhyqLJtEXii0.Fx9qT9UM5TsvUo27dvD_oboXMGGFAg-1653465781-0-AafC0AxWZD1Lv6qaWQNce2bgBlCuGVtdAAhqL0piC6BFqMYImE24sPgu5Cx1ABElqK2nPkatzyWsCH1Wsv2GJdOpZ7wqlipd3BtACQyBQOuYagMKKDdsv4CZ7Z7j7HHIYj2hT6X0+qa8cegOZ9XHcbH6Wa25NHjaEYJXeH1eCUJs',s:[0x393e4e067f,0x09fc489eb8],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

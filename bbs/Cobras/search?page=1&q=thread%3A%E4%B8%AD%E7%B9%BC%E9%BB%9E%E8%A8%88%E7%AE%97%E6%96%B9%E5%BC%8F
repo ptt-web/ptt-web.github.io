@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>thread:中繼點計算方式 - Cobras - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Cobras/index.html"><span class="board-label">看板 </span>Cobras</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/Cobras/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/Cobras/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/Cobras/search?page=1&amp;q=thread%3A%E4%B8%AD%E7%B9%BC%E9%BB%9E%E8%A8%88%E7%AE%97%E6%96%B9%E5%BC%8F">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/Cobras/search?page=1&amp;q=thread%3A%E4%B8%AD%E7%B9%BC%E9%BB%9E%E8%A8%88%E7%AE%97%E6%96%B9%E5%BC%8F">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="thread:中繼點計算方式" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cc53cb9d63535',m:'E9rSuZOpkqf2csQkt_KcoMVR7oizmCTNMLgjtPz0Q84-1653465973-0-AQWEdSXwSJXc5ibNt5FiOABFn7rwCz+7+1Wk+2FXmVszg3uZS2QQRxtUi97/tZmndrPb71l3o9Mrzdj53eEaiSXHR1fCMtZxp5IXmUxFLW2Yt6zf8vCNaFzI1ksgUQd8rGdfuDJpU87Q6RInWdDxT9oSlYPouspA2dd2yspw7Oi2NzlD0ay3rl2b2Op+MLZZaN+d91yfc70v4Ykh+rLG2SpAl8FafY78kJc0bbJ/PeD6aG8miB7ZRlTkWHuAN59Ylg==',s:[0xb494ba7f5b,0x05a71128ee],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
