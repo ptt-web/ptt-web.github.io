@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:xdbx - FuMouDiscuss - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653465600'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/FuMouDiscuss/index.html"><span class="board-label">看板 </span>FuMouDiscuss</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/FuMouDiscuss/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/FuMouDiscuss/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/FuMouDiscuss/search?page=1&amp;q=author%3Axdbx">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/FuMouDiscuss/search?page=1&amp;q=author%3Axdbx">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:xdbx" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/FuMouDiscuss/M.1395658168.A.428.html">Re: 為何反服貿跟洪案不一樣</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">xdbx</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/FuMouDiscuss/search?q=thread%3A%E7%82%BA%E4%BD%95%E5%8F%8D%E6%9C%8D%E8%B2%BF%E8%B7%9F%E6%B4%AA%E6%A1%88%E4%B8%8D%E4%B8%80%E6%A8%A3">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/FuMouDiscuss/search?q=author%3Axdbx">搜尋看板內 xdbx 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710cf351fccb20b3',m:'DtUMUL6X5uJrjIeKKcg3rH9E3n8UeBUmLL7Qsk.qACo-1653467860-0-AbEYYcQzHFySbYOMM6j51RKQrVMm/87ja+uae1X5vTY+4c29owJlfPzbfZUP7vwfRPj13cR3UQAQuV16smk72Yb8/PUk2sXRMyejimz+bFz1rdtfzn8i5hTOUZGrwOqc2y1sA36XOfiVRhaU4YjHukZ5Nr7/zF1vYZHAQl9vIarl',s:[0x883c2b8bcc,0x30a663aff7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
