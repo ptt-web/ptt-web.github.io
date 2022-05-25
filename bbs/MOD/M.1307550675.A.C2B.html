@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[閒聊] 請教MOD送的家庭WIFI設備 - 看板 MOD - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="  請教一下50M/3M FTTB+MOD方案 好像有送 家庭WIFI + 全省WIFI熱點
+  不知道 家庭WIFI 是否表示 VDSL modem 可提供WIFI功能?? (與一般無線AP有何不同)
+  附上我家的 網路連線圖:
+  VDSL modem --&gt; Ethernet #1 --&gt;  書房 PC #1
+             --&gt; Ethernet #2 --&gt;  臥室 PC #2
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[閒聊] 請教MOD送的家庭WIFI設備">
+<meta property="og:description" content="  請教一下50M/3M FTTB+MOD方案 好像有送 家庭WIFI + 全省WIFI熱點
+  不知道 家庭WIFI 是否表示 VDSL modem 可提供WIFI功能?? (與一般無線AP有何不同)
+  附上我家的 網路連線圖:
+  VDSL modem --&gt; Ethernet #1 --&gt;  書房 PC #1
+             --&gt; Ethernet #2 --&gt;  臥室 PC #2
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/MOD/M.1307550675.A.C2B.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/MOD/index.html"><span class="board-label">看板 </span>MOD</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/MOD/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">pandahsu (聰明笨蛋熊)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">MOD</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[閒聊] 請教MOD送的家庭WIFI設備</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Jun  9 00:31:12 2011</span></div>
+  請教一下50M/3M FTTB+MOD方案 好像有送 家庭WIFI + 全省WIFI熱點
+  不知道 家庭WIFI 是否表示 VDSL modem 可提供WIFI功能?? (與一般無線AP有何不同)
+
+  附上我家的 網路連線圖:
+
+  VDSL modem --&gt; Ethernet #1 --&gt;  書房 PC #1
+             --&gt; Ethernet #2 --&gt;  臥室 PC #2
+             --&gt; Ethernet #3 --&gt;  客廳switch hub --&gt; Ethernet #4 --&gt; HTPC #3
+                                                 --&gt; Ethernet #5 --&gt; MOD STB
+                                               * --&gt; Ethernet #6 to WiFi AP
+
+
+  客廳因為只有 預留 Ethernet#3 一個網路孔, 所以使用 switch hub分接 MOD及 HTPC
+  因為 MOD不能放在 NAT網域內, 且我希望 HTPC #3 可網芳分享 PC #1 &amp; PC #2影片.
+  所以 PC #1,#2,#3 分別指定 192.168.0.1 ~192.168.0.3 虛擬IP,
+       PC #1,#2,#3 各自 獨立使用 PPPoE 撥號上網.
+
+  最近想 添購一台 無線AP 提供 WiFi 讓 iPad上網, 可能會接在 * Ethernet #6
+  這樣 iPad 就 變成在 無線AP的NAT內部, 無法連結 PC #1,#2,#3.
+
+  不知道 家庭WIFI , 是否 VDSL modem 可變成無線AP,
+  那 PC #1,#2,#3 &amp; iPad 便可以在相同的 NAT網域...
+  但此時 Ethernet #5 --&gt; MOD STB 也在 NAT網域內,好像會不能看ㄟ
+
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc) 
+</span>◆ From: 118.169.44.203
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">qqq123455   </span><span class="f3 push-content">:把新買的當中繼站就結束拉</span><span class="push-ipdatetime"> 06/09 07:54
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dawei       </span><span class="f3 push-content">:為什麼我辦的時候~櫃台人員堅持這方案沒送家庭WIFI?</span><span class="push-ipdatetime"> 06/09 11:34
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">e1000060    </span><span class="f3 push-content">:樓上打123問好了 這方案可以免費租用無線AP阿</span><span class="push-ipdatetime"> 06/09 11:40
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">e1000060    </span><span class="f3 push-content">:我當初去營業處現場申請 他也說沒有無線AP租用</span><span class="push-ipdatetime"> 06/09 11:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">e1000060    </span><span class="f3 push-content">:裝機的時候問工程師說可以 然後打電話到123就有了</span><span class="push-ipdatetime"> 06/09 11:41
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Nearctic    </span><span class="f3 push-content">:櫃檯人員可能不知道AP,只知道家用wifi~XD</span><span class="push-ipdatetime"> 06/09 11:51
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">asukayi     </span><span class="f3 push-content">:申請家用Wi-Fi表示會改為有內建無線AP的數據機、或將</span><span class="push-ipdatetime"> 06/09 12:45
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">asukayi     </span><span class="f3 push-content">:數據機原有的無線AP功能開通；原po說的基本上可行，</span><span class="push-ipdatetime"> 06/09 12:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">asukayi     </span><span class="f3 push-content">:由於已經另外切割VLAN給MOD STB使用，MOD屬於不同網</span><span class="push-ipdatetime"> 06/09 12:46
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">asukayi     </span><span class="f3 push-content">:段，所以沒有影響</span><span class="push-ipdatetime"> 06/09 12:46
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">dawei       </span><span class="f3 push-content">:我後來有再問123~結果他說以櫃台說的為準~家裡是已經</span><span class="push-ipdatetime"> 06/09 19:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">dawei       </span><span class="f3 push-content">:有無線ap~只是覺得怎麼方案有那麼多不同說法...</span><span class="push-ipdatetime"> 06/09 19:18
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pandahsu    </span><span class="f3 push-content">:請教若是數據機開通WIFI, Ethernet#1~#5都是NAT內吧</span><span class="push-ipdatetime"> 06/11 01:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pandahsu    </span><span class="f3 push-content">:還是可以 Ethernet #3,#4,#5 另外切割VLAN網段?</span><span class="push-ipdatetime"> 06/11 01:58
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pandahsu    </span><span class="f3 push-content">:或是可以做到Ethernet#1~#4 NAT, 僅#5跑 VLAN</span><span class="push-ipdatetime"> 06/11 02:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">riverless   </span><span class="f3 push-content">:我是先有家庭wifi後再申請MOD 工程師沒有動什麼就可</span><span class="push-ipdatetime"> 06/14 10:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">riverless   </span><span class="f3 push-content">:以看了</span><span class="push-ipdatetime"> 06/14 10:26
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/MOD/M.1307550675.A.C2B.html?cacheKey=2148-470410249&amp;offset=2957&amp;offset-sig=b41e65fa7585c40f23245dd4631bfef6341b6532" data-longpollurl="/v1/longpoll?id=c4c45858237031118ca0ebaeda58b3c8f418c37e" data-offset="2957"></div>
+    
+
+    
+<div class="bbs-screen bbs-footer-message">本網站已依台灣網站內容分級規定處理。此區域為限制級，未滿十八歲者不得瀏覽。</div>
+
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c7ba6fdc61d9b',m:'6PtgMSMRZZ6qFI5KL6p_3IAmMSq0mm_crnk6KU_22RY-1653462959-0-AWsW1F646hlmWmbj2iYDtjEEAigK2/sT0rtJZ7AZ2TKR7Pv1ov2qYhVWBI3GFUAPFwwnA2GpC3wMMsKuW6+b9a/tXChmXYnqlAD/bGG494yKXghyLU0SxxzVoj4iUm+VYuWh9yMqUWaoElYxjNLVUiWVqmGiEByRu4EzvDBjtJ4N',s:[0x7be3477f45,0x4e795f8266],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

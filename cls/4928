@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/DivingSport/index.html">
+                <div class="board-name">DivingSport</div>
+                <div class="board-nuser">5</div>
+                <div class="board-class">水泳</div>
+                <div class="board-title">&#9678;[潛水] 該檢查或新添裝備了</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Surf/index.html">
+                <div class="board-name">Surf</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">水泳</div>
+                <div class="board-title">&#9678;[衝浪]衡量自身能力，注意安全!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/swim/index.html">
+                <div class="board-name">swim</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">水泳</div>
+                <div class="board-title">&#9678;[游泳板] 大蛙 小蛙 都幾?</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Aikido/index.html">
+                <div class="board-name">Aikido</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;[合氣道]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Boxing/index.html">
+                <div class="board-name">Boxing</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;拳擊BOXINGボクシング</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Capoeira/index.html">
+                <div class="board-name">Capoeira</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;[卡波耶拉]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Fencing/index.html">
+                <div class="board-name">Fencing</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;∣∣ 擊  劍  ▏   ▏Fencing∣∣</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Judo/index.html">
+                <div class="board-name">Judo</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;[柔道]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/KARATE/index.html">
+                <div class="board-name">KARATE</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;            空手道</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/kendo/index.html">
+                <div class="board-name">kendo</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;[劍道] </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MartialArts/index.html">
+                <div class="board-name">MartialArts</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;格鬥家vs武術家</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/MMA/index.html">
+                <div class="board-name">MMA</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;總合、立技、散打格鬥：K-1、UFC</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Wrestle/index.html">
+                <div class="board-name">Wrestle</div>
+                <div class="board-nuser">8</div>
+                <div class="board-class">技擊</div>
+                <div class="board-title">&#9678;[摔角] RAW vs. SMACKDOWN</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Board/index.html">
+                <div class="board-name">Board</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">板輪</div>
+                <div class="board-title">&#9678;[滑板]</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Freeline/index.html">
+                <div class="board-name">Freeline</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">板輪</div>
+                <div class="board-title">&#9678;Freeline Skates 自在漂移板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/skating/index.html">
+                <div class="board-name">skating</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">板輪</div>
+                <div class="board-title">&#9678;溜冰溜冰</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SkiSnowboard/index.html">
+                <div class="board-name">SkiSnowboard</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">板輪</div>
+                <div class="board-title">&#9678;滑雪板！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/FigureSkate/index.html">
+                <div class="board-name">FigureSkate</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">花滑</div>
+                <div class="board-title">&#9678;[花式滑冰] 2022 健康平安</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/YuzuruHanyu/index.html">
+                <div class="board-name">YuzuruHanyu</div>
+                <div class="board-nuser">8</div>
+                <div class="board-class">花滑</div>
+                <div class="board-title">&#9678;羽生結弦  Yuzuru Hanyu</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Road_Running/index.html">
+                <div class="board-name">Road_Running</div>
+                <div class="board-nuser"><span class="hl f3">12</span></div>
+                <div class="board-class">跑步</div>
+                <div class="board-title">&#9678;跑步版--天天跑步天天健康</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Ironman/index.html">
+                <div class="board-name">Ironman</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">極限</div>
+                <div class="board-title">&#9678;鐵人三項討論區</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PaintBall/index.html">
+                <div class="board-name">PaintBall</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">極限</div>
+                <div class="board-title">&#9678;[三桼弓單] &gt;&gt; 台灣加油!</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/SurvivalGame/index.html">
+                <div class="board-name">SurvivalGame</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">極限</div>
+                <div class="board-title">&#9678;生存遊戲 百年新希望.人人有槍打</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/X-game/index.html">
+                <div class="board-name">X-game</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">極限</div>
+                <div class="board-title">&#9678;極限運動：上山下海 飛天飆速</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Aerobics/index.html">
+                <div class="board-name">Aerobics</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;[有氧] &gt;&gt; 減脂增肌修線條</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Archery/index.html">
+                <div class="board-name">Archery</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;[射箭] 君子無所爭 必也射乎</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Chi-Gong/index.html">
+                <div class="board-name">Chi-Gong</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;[氣功]如此多嬌 引無數英雄競折腰</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Dart/index.html">
+                <div class="board-name">Dart</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;飛鏢版</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Equestrian/index.html">
+                <div class="board-name">Equestrian</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;[賽馬] 5/29 目黒記念/東京優駿</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/meditation/index.html">
+                <div class="board-name">meditation</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;靜坐板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Pilates/index.html">
+                <div class="board-name">Pilates</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;彼拉提斯運動討論板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Track_Field/index.html">
+                <div class="board-name">Track_Field</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;田徑板</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/yo-yo/index.html">
+                <div class="board-name">yo-yo</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;溜溜球</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/yoga/index.html">
+                <div class="board-name">yoga</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">運動</div>
+                <div class="board-title">&#9678;[瑜珈] 練習瑜伽就像過生活</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/CheerGirlsTW/index.html">
+                <div class="board-name">CheerGirlsTW</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">應援</div>
+                <div class="board-title">&#9678;[真香] 本質就是香！</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Cheerleader/index.html">
+                <div class="board-name">Cheerleader</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">應援</div>
+                <div class="board-title">&#9678;10/17 國家隊培訓隊選拔</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Drum_Corps/index.html">
+                <div class="board-name">Drum_Corps</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">應援</div>
+                <div class="board-title">&#9678;[行樂] 那些年,我們一起走的樂團</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/anti-hurt/index.html">
+                <div class="board-name">anti-hurt</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">體育</div>
+                <div class="board-title">&#9678;no pain  </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Question/index.html">
+                <div class="board-name">Question</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">體育</div>
+                <div class="board-title">&#9678;體育問題專區</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c6f69cda980dd',m:'0W.aQDrBvPBpXCkkuUNElRQQ23TmG1C3HkrbWzGG9OQ-1653462457-0-Af1zzalVuqHzUXKNizTIDoQyPsSOkPFjVOU5/HlRU/oRedcJNgdmyyDasuKqr1nTBHB1QJUoo1OOZ8onJDalWQebvWHLZwGoMA1GhWsDlPqQgThlKTxkedGnDoqnugwJbA==',s:[0x7be3477f45,0xe3dcb2c933],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

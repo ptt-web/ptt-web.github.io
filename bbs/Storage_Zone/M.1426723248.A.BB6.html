@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[情報] SSD 寫入壽命測試 - 看板 Storage_Zone - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="http://bit.ly/1H16zt3
+他對 SSD 持續寫入資料，測試寫入多久後 SSD 會掛點。
+下方圖表可以看到 reallocated sector 數據。
+不過有幾家在有大量 reallocated sector 前就掛了。
+結論:
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="[情報] SSD 寫入壽命測試">
+<meta property="og:description" content="http://bit.ly/1H16zt3
+他對 SSD 持續寫入資料，測試寫入多久後 SSD 會掛點。
+下方圖表可以看到 reallocated sector 數據。
+不過有幾家在有大量 reallocated sector 前就掛了。
+結論:
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/Storage_Zone/M.1426723248.A.BB6.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/Storage_Zone/index.html"><span class="board-label">看板 </span>Storage_Zone</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/Storage_Zone/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">ccpz (OoOoOo)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">Storage_Zone</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[情報] SSD 寫入壽命測試</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar 19 08:00:45 2015</span></div>
+<a href="https://bit.ly/1H16zt3" target="_blank" rel="noreferrer noopener nofollow">http://bit.ly/1H16zt3</a>
+
+他對 SSD 持續寫入資料，測試寫入多久後 SSD 會掛點。
+下方圖表可以看到 reallocated sector 數據。
+不過有幾家在有大量 reallocated sector 前就掛了。
+
+結論:
+1. 每一家都比廠商宣稱的壽命還要久
+2. 一般使用者一年頂多寫入幾 TB, 不太會用到他們測到的極限。
+
+* Samsung 840 (這幾款中唯一用 TLC)
+  在 100TB 後 reallocated sector 穩定上升, 300TB 遇到
+  uncorrectable errors 增加, 資料可能無法正確存取的問題,
+  最後在 900TB 死透。
+
+* Intel 335 700TB 之後進入唯讀模式，重開機後死了。
+
+* 因為 Kingston HyperX 3K 用 SandForce, 他有不可壓縮的資料測試
+  600TB 之前都沒事，728TB 後也進入唯讀模式。
+  重開機後因為預備空間沒了，設計上SSD不會啟動。
+
+  若改用一般資料,可以寫到 2.1PB 才掛掉。
+
+* Corsair&#39;s Neutron GTX 到 1.1PB 都沒事，
+  但是之後錯誤暴增，到 1.2PB 後重開機也死了。
+
+* Samsung 840 Pro 一直到 2.4PB 後系統才出狀況
+  OS 無回應, 硬碟離線。
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 140.113.243.129
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/Storage_Zone/M.1426723248.A.BB6.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/Storage_Zone/M.1426723248.A.BB6.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ruo01332000 </span><span class="f3 push-content">: 不會覺得測試結果不合理嗎?</span><span class="push-ipdatetime"> 03/19 08:49
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ruo01332000 </span><span class="f3 push-content">: Samsung840明明是TLC 卻寫入2.4PB</span><span class="push-ipdatetime"> 03/19 08:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ruo01332000 </span><span class="f3 push-content">: P/E換算=快一萬?</span><span class="push-ipdatetime"> 03/19 08:50
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ruo01332000 </span><span class="f3 push-content">: 看來還是EZLINK比較神 128GB就寫入2PB</span><span class="push-ipdatetime"> 03/19 08:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">: 寫入 2.4PB 的是 840 pro, MLC</span><span class="push-ipdatetime"> 03/19 09:03
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">charmingone </span><span class="f3 push-content">: 其實電源供應器才是電腦最重要的部分</span><span class="push-ipdatetime"> 03/19 09:08
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ruo01332000 </span><span class="f3 push-content">: 喔...原來Samsung不是全部玩TLC喔0.0</span><span class="push-ipdatetime"> 03/19 09:16
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Luos        </span><span class="f3 push-content">: 說起來iPhone 6 好像也是TLC呢～</span><span class="push-ipdatetime"> 03/19 09:41
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ultratimes  </span><span class="f3 push-content">: 寫入太多導致SSD故障，原廠是不保的</span><span class="push-ipdatetime"> 03/19 10:06
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrDisgrace  </span><span class="f3 push-content">: uncorrectable errors出現這載體就不能信任了吧？</span><span class="push-ipdatetime"> 03/19 10:35
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrDisgrace  </span><span class="f3 push-content">: 死透前應該就算不能用了</span><span class="push-ipdatetime"> 03/19 10:36
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">: 原文是有提到樓上這點</span><span class="push-ipdatetime"> 03/19 10:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">: &#34;we recommend taking drives out of service</span><span class="push-ipdatetime"> 03/19 10:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">:  the moment they appear.&#34; 不過他是想測極限狀況</span><span class="push-ipdatetime"> 03/19 10:39
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">: 才繼續測下去吧</span><span class="push-ipdatetime"> 03/19 10:40
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">delaluna    </span><span class="f3 push-content">: 我很好奇一版消費者除了自己寫入的檔案外 OS在背景</span><span class="push-ipdatetime"> 03/19 12:32
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">delaluna    </span><span class="f3 push-content">: 存取的寫入量有多少?</span><span class="push-ipdatetime"> 03/19 12:33
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Litfal      </span><span class="f3 push-content">: 這根據作業系統版本和一些軟體不同，會有頗大差異</span><span class="push-ipdatetime"> 03/19 13:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Litfal      </span><span class="f3 push-content">: 例如Win8之前某版本配SoftPerfect的RAMDisk時，睡眠</span><span class="push-ipdatetime"> 03/19 13:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Litfal      </span><span class="f3 push-content">: 會把RAMDISK的資料全部寫回硬碟。</span><span class="push-ipdatetime"> 03/19 13:22
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">Litfal      </span><span class="f3 push-content">: 但既使如此，我的M4 256G平均寫入次數也才100次而已</span><span class="push-ipdatetime"> 03/19 13:24
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">HiJimmy     </span><span class="f3 push-content">: 所以 128GB(120GB) 理論上減半 480GB(512GB) 雙倍?</span><span class="push-ipdatetime"> 03/19 18:17
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">pooznn      </span><span class="f3 push-content">: 有誰一年下載超過50TB的?</span><span class="push-ipdatetime"> 03/19 19:32
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">twoseven    </span><span class="f3 push-content">: <a href="https://i.imgur.com/V0XdQqZ.png" target="_blank" rel="noreferrer noopener nofollow">http://i.imgur.com/V0XdQqZ.png</a> 一般使用真的不要</span><span class="push-ipdatetime"> 03/20 13:58
+</span></div><div class="richcontent"><img src="https://cache.ptt.cc/c/https/i.imgur.com/V0XdQqZl.png?e=1653629782&amp;s=BW0ahZBTNHlbx6xiK28iVg" alt="" loading="lazy" /></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">twoseven    </span><span class="f3 push-content">: 想太多, 根本不用去在意到底用掉多少</span><span class="push-ipdatetime"> 03/20 14:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">madeinheaven</span><span class="f3 push-content">: 三星840 PRO就這麼強了 850 PRO還得了</span><span class="push-ipdatetime"> 03/21 03:47
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">madeinheaven</span><span class="f3 push-content">: TLC的840壽命也屌打MLC的Intel 335</span><span class="push-ipdatetime"> 03/21 03:49
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">shin9770    </span><span class="f3 push-content">: 所以拒買tlc的根本喝喝?</span><span class="push-ipdatetime"> 03/23 10:25
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">MrDisgrace  </span><span class="f3 push-content">: 不會啊～TLC 300TB就不可靠了～其他至少到600TB?</span><span class="push-ipdatetime"> 03/23 11:13
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">ccpz        </span><span class="f3 push-content">: 我補一下 840 的問題好了</span><span class="push-ipdatetime"> 03/23 11:55
+</span></div><span class="f2">※ 編輯: ccpz (140.113.243.129), 03/23/2015 11:56:24
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">MrDisgrace  </span><span class="f3 push-content">: 用心～推一個</span><span class="push-ipdatetime"> 03/23 12:37
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">antonyno1   </span><span class="f3 push-content">: 想知道美光的測試如何</span><span class="push-ipdatetime"> 03/23 14:19
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/Storage_Zone/M.1426723248.A.BB6.html?cacheKey=2149-545506231&amp;offset=4396&amp;offset-sig=7e790c0c40f6d4b172a8840f93cedc517ff817ba" data-longpollurl="/v1/longpoll?id=50815522b6a6bac0d93fa1abeb8fc231a46fe573" data-offset="4396"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c81f01880b003',m:'H0JSQAdw8tCAn3kjSh2r.vwGF8V.KO7ERcKirEc_fT8-1653463216-0-ARqyRIbETNfTwBkyjVRcIthK3nLbpOCI82iqGsYmcOthumbWIu1kHUFdWkrmpVDeBw9SpFt6QoTtwpFC9bfhU6srYGGZZQlw1IAOxcA2iFN92W4uAbl0iK3Y1K/tFb5bR+bthATckpieW6nt4TW9ZlA8+YwTpVkQjHQkXfpCGqo8',s:[0xaf3461b513,0xd26e67579d],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

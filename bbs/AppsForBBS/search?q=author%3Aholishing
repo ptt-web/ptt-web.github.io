@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:holishing - AppsForBBS - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/AppsForBBS/index.html"><span class="board-label">看板 </span>AppsForBBS</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/AppsForBBS/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/AppsForBBS/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/AppsForBBS/search?page=2&amp;q=author%3Aholishing">最舊</a>
+				<a class="btn wide" href="/bbs/AppsForBBS/search?page=2&amp;q=author%3Aholishing">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/AppsForBBS/search?page=1&amp;q=author%3Aholishing">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:holishing" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1645776140.A.51C.html">Fw: [討論] PTT瀏覽APP比較</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E8%A8%8E%E8%AB%96%5D&#43;PTT%E7%80%8F%E8%A6%BDAPP%E6%AF%94%E8%BC%83">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/25</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1630852046.A.578.html">Fw: [情報] 34th 小天使招考（9/5～9/15） </a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;34th&#43;%E5%B0%8F%E5%A4%A9%E4%BD%BF%E6%8B%9B%E8%80%83%EF%BC%889%2F5%EF%BD%9E9%2F15%EF%BC%89&#43;">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/05</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1630077411.A.07A.html">Fw: [公告] 8/31 停機公告</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;8%2F31&#43;%E5%81%9C%E6%A9%9F%E5%85%AC%E5%91%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/27</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1625965080.A.068.html">Re: [問題] 電腦有任何BBS軟體能夠加黑名單嗎？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E9%9B%BB%E8%85%A6%E6%9C%89%E4%BB%BB%E4%BD%95BBS%E8%BB%9F%E9%AB%94%E8%83%BD%E5%A4%A0%E5%8A%A0%E9%BB%91%E5%90%8D%E5%96%AE%E5%97%8E%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 7/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1622539491.A.7F1.html">Fw: [公告] 批踢踢兔 (ptt2.cc) 測試新版 SSH</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%89%B9%E8%B8%A2%E8%B8%A2%E5%85%94&#43;%28ptt2.cc%29&#43;%E6%B8%AC%E8%A9%A6%E6%96%B0%E7%89%88&#43;SSH">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 6/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1621264362.A.112.html">Fw: [情報] 本站已暫停開放 ssh 連線</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E6%9C%AC%E7%AB%99%E5%B7%B2%E6%9A%AB%E5%81%9C%E9%96%8B%E6%94%BE&#43;ssh&#43;%E9%80%A3%E7%B7%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 5/17</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1617379191.A.B4D.html">Fw: [情報] 疫情後的兒童節…</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E7%96%AB%E6%83%85%E5%BE%8C%E7%9A%84%E5%85%92%E7%AB%A5%E7%AF%80%E2%80%A6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/02</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1614179774.A.6C7.html">Re: [心得] BBS Clients &amp; Apps 小介 | 恭喜開板!</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;BBS&#43;Clients&#43;%26&#43;Apps&#43;%E5%B0%8F%E4%BB%8B&#43;%7C&#43;%E6%81%AD%E5%96%9C%E9%96%8B%E6%9D%BF%21">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/24</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1611841564.A.19A.html">Fw: [問題] 忽然不能使用圖片</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E5%BF%BD%E7%84%B6%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E5%9C%96%E7%89%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1611834322.A.639.html">Fw: [問題] 更改板標失敗導致鎖噓文</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%9B%B4%E6%94%B9%E6%9D%BF%E6%A8%99%E5%A4%B1%E6%95%97%E5%B0%8E%E8%87%B4%E9%8E%96%E5%99%93%E6%96%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/28</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1607873530.A.5B4.html">Fw: [問題] 我的最愛忽然爆炸多</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%88%91%E7%9A%84%E6%9C%80%E6%84%9B%E5%BF%BD%E7%84%B6%E7%88%86%E7%82%B8%E5%A4%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/13</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1586110005.A.315.html">Fw: [轉錄] How to Report Bugs Effeciently</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3AHow&#43;to&#43;Report&#43;Bugs&#43;Effeciently">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/06</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1578149698.A.B65.html">Fw: [公告] 板主標記「待證實文章」規範</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%9D%BF%E4%B8%BB%E6%A8%99%E8%A8%98%E3%80%8C%E5%BE%85%E8%AD%89%E5%AF%A6%E6%96%87%E7%AB%A0%E3%80%8D%E8%A6%8F%E7%AF%84">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1551618584.A.D9B.html">Fw: pitt手機版，取消 最新消息 某些看板</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3Apitt%E6%89%8B%E6%A9%9F%E7%89%88%EF%BC%8C%E5%8F%96%E6%B6%88&#43;%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF&#43;%E6%9F%90%E4%BA%9B%E7%9C%8B%E6%9D%BF">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1537294734.A.8F5.html">Fw: [問卦] 其實現在自己架bbs站不困難吧?</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E5%8D%A6%5D&#43;%E5%85%B6%E5%AF%A6%E7%8F%BE%E5%9C%A8%E8%87%AA%E5%B7%B1%E6%9E%B6bbs%E7%AB%99%E4%B8%8D%E5%9B%B0%E9%9B%A3%E5%90%A7%3F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/19</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1534458114.A.718.html">[閒聊] Docker Image For BBS</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E9%96%92%E8%81%8A%5D&#43;Docker&#43;Image&#43;For&#43;BBS">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 8/17</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1524596905.A.185.html">Re: [問題]手機 ptt 個人信箱打不開</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D%E6%89%8B%E6%A9%9F&#43;ptt&#43;%E5%80%8B%E4%BA%BA%E4%BF%A1%E7%AE%B1%E6%89%93%E4%B8%8D%E9%96%8B">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1520214391.A.F93.html">Fw: [情報] 27th 小天使招考（2/26～3/11）</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;27th&#43;%E5%B0%8F%E5%A4%A9%E4%BD%BF%E6%8B%9B%E8%80%83%EF%BC%882%2F26%EF%BD%9E3%2F11%EF%BC%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 3/05</div>
+				<div class="mark">S</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">1</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1516437623.A.B66.html">Re: [情報] 現在起註冊前需要先輸入驗證碼。</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E7%8F%BE%E5%9C%A8%E8%B5%B7%E8%A8%BB%E5%86%8A%E5%89%8D%E9%9C%80%E8%A6%81%E5%85%88%E8%BC%B8%E5%85%A5%E9%A9%97%E8%AD%89%E7%A2%BC%E3%80%82">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/20</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">2</span></div>
+			<div class="title">
+			
+				<a href="/bbs/AppsForBBS/M.1515230521.A.104.html">[分享] 目前各版本 BBS server 安裝資訊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=thread%3A%5B%E5%88%86%E4%BA%AB%5D&#43;%E7%9B%AE%E5%89%8D%E5%90%84%E7%89%88%E6%9C%AC&#43;BBS&#43;server&#43;%E5%AE%89%E8%A3%9D%E8%B3%87%E8%A8%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/AppsForBBS/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/06</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c857b78aeafa9',m:'ks_kveHvIt1.Oq3YL3qi2EZSLD_qSWeVV0UZBB5z_8E-1653463361-0-ATl6qDvhc9vgppJeyZuTYq8rsZo4s9pkNI7d5qFsuAhvn3YGxt7OtlFmOgnZYcnZvCS/aNs/ki0Qq5e6G4ddbYY4Pl4i7+uMPfs5FmSB2HeegaSoj68lgZ43jhVjLqdU1CNu8ZrzGASK5kUPsDJQeLjMMyCS/A9OI7BBmyDEl/RE',s:[0x68b9bfa3a6,0x8687b52acf],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

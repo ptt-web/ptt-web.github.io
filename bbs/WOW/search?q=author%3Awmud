@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>author:wmud - WOW - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/WOW/index.html"><span class="board-label">看板 </span>WOW</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/WOW/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/WOW/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/WOW/search?page=13&amp;q=author%3Awmud">最舊</a>
+				<a class="btn wide" href="/bbs/WOW/search?page=2&amp;q=author%3Awmud">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/WOW/search?page=1&amp;q=author%3Awmud">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="author:wmud" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">44</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1649741570.A.BA6.html">[情報] wowhead數據統計保底格子套裝機率</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;wowhead%E6%95%B8%E6%93%9A%E7%B5%B1%E8%A8%88%E4%BF%9D%E5%BA%95%E6%A0%BC%E5%AD%90%E5%A5%97%E8%A3%9D%E6%A9%9F%E7%8E%87">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 4/12</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">22</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1645754391.A.B31.html">[情報] 保底熱修</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E4%BF%9D%E5%BA%95%E7%86%B1%E4%BF%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/25</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1644215800.A.323.html">[情報] 9.2骨匠新增物品</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E9%AA%A8%E5%8C%A0%E6%96%B0%E5%A2%9E%E7%89%A9%E5%93%81">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">5</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1644213680.A.FC1.html">Re: [情報] 9.2套裝系統細節-2</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E5%A5%97%E8%A3%9D%E7%B3%BB%E7%B5%B1%E7%B4%B0%E7%AF%80-2">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 2/07</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1643431839.A.DB7.html">[情報] 9.2套裝系統細節</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E5%A5%97%E8%A3%9D%E7%B3%BB%E7%B5%B1%E7%B4%B0%E7%AF%80">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/29</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">11</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1643162548.A.8C0.html">[情報] 9.2套裝in保底擴充</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E5%A5%97%E8%A3%9Din%E4%BF%9D%E5%BA%95%E6%93%B4%E5%85%85">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/26</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1642817720.A.F8D.html">[情報] 9.2雙橘時程變更</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E9%9B%99%E6%A9%98%E6%99%82%E7%A8%8B%E8%AE%8A%E6%9B%B4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/22</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">26</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1642130204.A.D75.html">[情報] 9.2PTR-套裝掉落機制</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2PTR-%E5%A5%97%E8%A3%9D%E6%8E%89%E8%90%BD%E6%A9%9F%E5%88%B6">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1639634711.A.7EB.html">[情報] 法塔最強項鍊來囉</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E6%B3%95%E5%A1%94%E6%9C%80%E5%BC%B7%E9%A0%85%E9%8D%8A%E4%BE%86%E5%9B%89">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">4</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1639143664.A.2FE.html">[心得] 盜賊三系法塔</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E5%BF%83%E5%BE%97%5D&#43;%E7%9B%9C%E8%B3%8A%E4%B8%89%E7%B3%BB%E6%B3%95%E5%A1%94">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/10</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1638678515.A.AC9.html">Re: [問題] MDI玩具疑問及參加後心得</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;MDI%E7%8E%A9%E5%85%B7%E7%96%91%E5%95%8F%E5%8F%8A%E5%8F%83%E5%8A%A0%E5%BE%8C%E5%BF%83%E5%BE%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/05</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">9</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1638511570.A.61F.html">[情報] 9.2套裝初測-盜賊</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.2%E5%A5%97%E8%A3%9D%E5%88%9D%E6%B8%AC-%E7%9B%9C%E8%B3%8A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/03</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">38</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1638409776.A.61A.html">Re: [問題] 找不到攻略或心得</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%89%BE%E4%B8%8D%E5%88%B0%E6%94%BB%E7%95%A5%E6%88%96%E5%BF%83%E5%BE%97">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">12/02</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">49</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1634789657.A.2E2.html">[情報] 時光漫遊法塔禁用機制和即將上線的9.1.5</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E6%99%82%E5%85%89%E6%BC%AB%E9%81%8A%E6%B3%95%E5%A1%94%E7%A6%81%E7%94%A8%E6%A9%9F%E5%88%B6%E5%92%8C%E5%8D%B3%E5%B0%87%E4%B8%8A%E7%B7%9A%E7%9A%849.1.5">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/21</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f2">7</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1634688029.A.C4C.html">[情報] PTR時光法塔開放，開發中的批量轉服</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;PTR%E6%99%82%E5%85%89%E6%B3%95%E5%A1%94%E9%96%8B%E6%94%BE%EF%BC%8C%E9%96%8B%E7%99%BC%E4%B8%AD%E7%9A%84%E6%89%B9%E9%87%8F%E8%BD%89%E6%9C%8D">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/20</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">38</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1634184758.A.7B4.html">[情報] 9.1.5PTR-大秘0.1%稱號上線</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;9.1.5PTR-%E5%A4%A7%E7%A7%980.1%25%E7%A8%B1%E8%99%9F%E4%B8%8A%E7%B7%9A">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/14</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">20</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1633321625.A.42A.html">Re: [問題] 是什麼原因導致現在的地圖不霸氣？</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E5%95%8F%E9%A1%8C%5D&#43;%E6%98%AF%E4%BB%80%E9%BA%BC%E5%8E%9F%E5%9B%A0%E5%B0%8E%E8%87%B4%E7%8F%BE%E5%9C%A8%E7%9A%84%E5%9C%B0%E5%9C%96%E4%B8%8D%E9%9C%B8%E6%B0%A3%EF%BC%9F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">10/04</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">12</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1632362570.A.875.html">[情報] PTR中關於7版M團本的修改</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;PTR%E4%B8%AD%E9%97%9C%E6%96%BC7%E7%89%88M%E5%9C%98%E6%9C%AC%E7%9A%84%E4%BF%AE%E6%94%B9">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/23</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">29</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1631754576.A.4B1.html">[情報] 本週PTR新增項目</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E6%9C%AC%E9%80%B1PTR%E6%96%B0%E5%A2%9E%E9%A0%85%E7%9B%AE">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/16</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"><span class="hl f3">21</span></div>
+			<div class="title">
+			
+				<a href="/bbs/WOW/M.1631317499.A.B17.html">Re: [情報] 本週9.1.5PTR新增改動-燼火數量</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">wmud</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/WOW/search?q=thread%3A%5B%E6%83%85%E5%A0%B1%5D&#43;%E6%9C%AC%E9%80%B19.1.5PTR%E6%96%B0%E5%A2%9E%E6%94%B9%E5%8B%95-%E7%87%BC%E7%81%AB%E6%95%B8%E9%87%8F">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/WOW/search?q=author%3Awmud">搜尋看板內 wmud 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 9/11</div>
+				<div class="mark"></div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c83aafc4f352f',m:'qL8cH8pF7ProFEF8a41VuEVVLLatCFXB4_JkyAzMN3w-1653463287-0-AWxOJdeldvYvTQPJbHD3xmb91Qz5F3Y5evyIWsB3SVJb6B8kBpGu5AOD5251P/LFJN/FNQslihBstD0gh0hNj7ivm3E0/cV7L3vMhaa6o+gFGQmVkCfANIBTIhu9NdYSO+8b8u6BJ1xnqbPdgXxVfE8=',s:[0xc72b16d089,0x99a16f5cab],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [其他] mod可以接在HUB上嗎 - 看板 MOD - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="借用此標題  請教一個相關問題
+家裡是用光世代10M+MOD
+我的接法是
+    電話線 ┌───┐        ┌───┐
+   ════╡光世代│Port2   │Switch│      ╭──╮
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [其他] mod可以接在HUB上嗎">
+<meta property="og:description" content="借用此標題  請教一個相關問題
+家裡是用光世代10M+MOD
+我的接法是
+    電話線 ┌───┐        ┌───┐
+   ════╡光世代│Port2   │Switch│      ╭──╮
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/MOD/M.1268283855.A.B87.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/MOD/index.html"><span class="board-label">看板 </span>MOD</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/MOD/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">azurinecloud (Just Be Happy !)</span></div><div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">MOD</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [其他] mod可以接在HUB上嗎</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Mar 11 13:04:13 2010</span></div>
+
+借用此標題  請教一個相關問題
+
+家裡是用光世代10M+MOD
+
+我的接法是
+
+
+    電話線 ┌───┐        ┌───┐
+   ════╡光世代│Port2   │Switch│      ╭──╮
+           │數據機├────┤ Hub  ├───┤MOD │
+           └─┬─┘        └─┬─┘      ╰──╯
+               │Port1           │
+               │                │
+           ╭─┴─╮        ╭─┴─╮  光世代數據機型號：VDSL2 P-870HA
+           │  PC  │        │ HTPC │  Switch Hub  廠牌：D-Link
+           ╰───╯        ╰───╯
+
+想請問 MOD 透過 Switch Hub 後是否會影響到收視品質 ??
+( 數據機 -&gt; Switch Hub -&gt; MOD 網路線的長度約為 8公尺)
+
+這幾天 ELTA HD 三台都沒辦法看  其他頻道都沒問題
+一切到 ELTA HD 頻道 畫面就停住不動 聲音一直跳針跳很嚴重
+此時遙控器還是可操作 我再切到其他非 HD 的頻道後
+畫面是全黑的  也沒聲音 大約等個 5分鐘後畫面聲音才會出來
+
+想請問版上是不是也有用戶遇過一樣的問題呢 ?? 最後是如何解決的呢 ??
+
+HD如果不能看  我真不知道我裝這MOD還有什麼用
+
+============================================================================
+《自問自答》
+剛剛實驗了一下
+發現是 Switch Hub 的關係
+如果是直接從 數據機連接到 MOD 就沒問題 HD 可順順看
+但如果是從 數據機 -&gt; Switch Hub -&gt; MOD 則有以下兩種情況
+1.當Switch Hub 只有接一條線到 MOD 這樣的情況下，HD可順順看沒問題
+2.當Switch Hub 除了有一條接到MOD外，還另外有一條接到 HTPC 的話
+  則會出現我上面所述的問題 (就算HTPC 沒開機也是一樣)
+
+結論：
+Switch Hub 似乎有把頻寬平均分給兩個Port的功能，導致都看大流量的HD會有問題
+我得去翻一下Switch Hub的說明書看看有沒有改善的辦法了
+
+--
+翻完了  無解‧‧‧
+--
+最後我決定了把 Switch Hub 拿掉 直接從數據機個別拉到 MOD 及 HTPC
+
+    電話線 ┌───┐Port4     ╭──╮
+   ════╡光世代├─────┤MOD │
+           │數據機├───┐  ╰──╯
+           └─┬─┘Port2 │
+          Port1│          │
+               │          │
+           ╭─┴─╮  ╭─┴─╮
+           │  PC  │  │ HTPC │
+           ╰───╯  ╰───╯
+
+這樣接什麼問題就都沒啦 !!
+
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc)
+</span>◆ From: 125.224.213.161
+<span class="f2">※ 編輯: azurinecloud    來自: 125.224.213.161      (03/11 13:43)
+</span><span class="f2">※ 編輯: azurinecloud    來自: 125.224.213.161      (03/11 13:44)
+</span><span class="f2">※ 編輯: azurinecloud    來自: 125.224.213.161      (03/11 13:44)
+</span><span class="f2">※ 編輯: azurinecloud    來自: 125.224.213.161      (03/11 14:02)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">f1207bill</span><span class="f3 push-content">:HUB不夠力？</span><span class="push-ipdatetime"> 03/11 14:29
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gaudiron</span><span class="f3 push-content">:這週末才要接,不過我準備的是有QoS port的交換器</span><span class="push-ipdatetime"> 03/11 21:59
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">gaudiron</span><span class="f3 push-content">:交換器是1000M的,線用CAT6,我再試試看會不會也這樣</span><span class="push-ipdatetime"> 03/11 22:00
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gaudiron</span><span class="f3 push-content">:QoS埠會有比其它埠高16倍的封包傳輸優先權,不會平均分配</span><span class="push-ipdatetime"> 03/11 22:06
+</span></div><span class="f2">※ 編輯: azurinecloud    來自: 125.224.213.124      (03/12 12:55)
+</span><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">richjf</span><span class="f3 push-content">:不會是10m級的hub吧？ 現在跑hd...還是衝1G的設備吧.</span><span class="push-ipdatetime"> 03/13 04:19
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">richjf</span><span class="f3 push-content">:之前用cat5.e直接連兩台g網卡，可以跑到3Xmb/s。</span><span class="push-ipdatetime"> 03/13 04:21
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">gaudiron</span><span class="f3 push-content">:我昨天測試都很ok耶!! ^^</span><span class="push-ipdatetime"> 03/16 14:08
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/MOD/M.1268283855.A.B87.html?cacheKey=2148-470413391&amp;offset=3153&amp;offset-sig=44f36d9b4953df601e5f3c0eedcb35f2e63f6692" data-longpollurl="/v1/longpoll?id=89d3bdf6cfc04260fbf25a073840ea20fa5661f4" data-offset="3153"></div>
+    
+
+    
+<div class="bbs-screen bbs-footer-message">本網站已依台灣網站內容分級規定處理。此區域為限制級，未滿十八歲者不得瀏覽。</div>
+
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c7b935d6980f3',m:'xlvyIQw5JyUwK0T1rKodvCLT.IHbbnZzZKfhaWOqqPg-1653462956-0-ARLtKUqqsDpMto898htLQhpIJzhioNwrx9EhbwpB9b96S8AwXjybND9RtXKYKUwd3uCCu8YA53Ek1DfDT+qW8sYA2e7zgnMIP2uK4gariKVCaI9Av3ltzX/KuLw6GSb5Y7ptWjRnxYALeLLL1Gpzr5xve67/Ek0rTALPhVVf3keD',s:[0x3c6b5749f7,0x4e224ab341],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>分類看板 - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653462000'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-cls">
+				<a class="btn" href="/bbs/hotboards.html">熱門看板</a>
+                <a class="btn selected" href="/cls/1">分類看板</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-list-container action-bar-margin bbs-screen">
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/b-baseball/index.html">
+                <div class="board-name">b-baseball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;盲人棒球討論版</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/BaseballNEWS/index.html">
+                <div class="board-name">BaseballNEWS</div>
+                <div class="board-nuser">2</div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;棒球新聞版</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/BaseballSYS/index.html">
+                <div class="board-name">BaseballSYS</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;職棒制度討論</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/G-baseball/index.html">
+                <div class="board-name">G-baseball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;台灣女子棒球</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/PlayBaseball/index.html">
+                <div class="board-name">PlayBaseball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;[玩棒球] </div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/Sabermetrics/index.html">
+                <div class="board-name">Sabermetrics</div>
+                <div class="board-nuser">1</div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;棒球統計數據分析</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/sandlot_ball/index.html">
+                <div class="board-name">sandlot_ball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;～業餘棒球板～</div>
+            </a>
+        </div>
+        
+        <div class="b-ent">
+            <a class="board" href="/bbs/wikibaseball/index.html">
+                <div class="board-name">wikibaseball</div>
+                <div class="board-nuser"></div>
+                <div class="board-class">棒球</div>
+                <div class="board-title">&#9678;[WIKI] 台灣棒球維基館</div>
+            </a>
+        </div>
+        
+	</div>
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710c6f93887880dd',m:'9tLSvg_k8Lng9wILJ9GAww4F.t4Ge.depBlrYUvNb6E-1653462464-0-AarAbgPw7b6hSTewbMtrQcwtWz2dVC9zN8DJkhH24NkW+0AHaRB46vbFtqBDqvmlZDt0X8wkDdnMp1xJZss2HoNjOvnWvmr6zm/LlTLn9Nwhu154siltSSq7ZXQYKNNAqg==',s:[0xb05892f242,0x05a71128ee],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
