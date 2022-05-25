@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Re: [請問] ptt文章網址的格式 - 看板 ask - 批踢踢實業坊</title>
+<meta name="robots" content="all">
+<meta name="keywords" content="Ptt BBS 批踢踢">
+<meta name="description" content="先整理前面推文的結論： M.1544074333.A.DF1 是存 BBS 文章的檔名格式
+M.1544074333.A 這部分
+是 MapleBBS (2.x之前) 家族 (印象中甚至更早改版的 EagleBBS ...) 就有的檔名格式
+M 開頭是指文章發在看板或精華區，G 開頭則是代表發在文摘 (按Tab進去)
+1544074333 代表 Unix 時間，你可以從中知道文章發表時間是
+">
+<meta property="og:site_name" content="Ptt 批踢踢實業坊">
+<meta property="og:title" content="Re: [請問] ptt文章網址的格式">
+<meta property="og:description" content="先整理前面推文的結論： M.1544074333.A.DF1 是存 BBS 文章的檔名格式
+M.1544074333.A 這部分
+是 MapleBBS (2.x之前) 家族 (印象中甚至更早改版的 EagleBBS ...) 就有的檔名格式
+M 開頭是指文章發在看板或精華區，G 開頭則是代表發在文摘 (按Tab進去)
+1544074333 代表 Unix 時間，你可以從中知道文章發表時間是
+">
+<link rel="canonical" href="https://www.ptt.cc/bbs/ask/M.1544107968.A.4C8.html">
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653454800'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/ask/index.html"><span class="board-label">看板 </span>ask</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+<div id="navigation-container">
+	<div id="navigation" class="bbs-content">
+		<a class="board" href="/bbs/ask/index.html">返回看板</a>
+		<div class="bar"></div>
+	</div>
+</div>
+<div id="main-container">
+    <div id="main-content" class="bbs-screen bbs-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">holishing ( )</span></div><div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">Re: [請問] ptt文章網址的格式</span></div><div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Thu Dec  6 22:52:42 2018</span></div>
+先整理前面推文的結論： M.1544074333.A.DF1 是存 BBS 文章的<span class="hl">檔名格式</span>
+
+<span class="f3 hl">M</span>.<span class="f5 hl">1544074333</span>.A 這部分
+
+是 MapleBBS (2.x之前) 家族 (印象中甚至更早改版的 EagleBBS ...) 就有的檔名格式
+
+<span class="f3 hl">M</span> 開頭是指文章發在<span class="f3 hl">看板或精華區</span>，G 開頭則是代表發在文摘 (按Tab進去)
+
+<span class="f5 hl">1544074333</span> 代表 Unix 時間，你可以從中知道文章<span class="f5 hl">發表時間</span>是
+<span class="f5">2018 年 12 月 06 日 13 時 32 分 13 秒 ( GMT +8 )</span>
+
+A 的話就是固定的檔名結尾字樣(至少改版前是這樣)
+
+.<span class="f6 hl">DF1</span> 這部分是 PttBBS 這十幾年以來大改版才出現的部分
+
+它本身就是<span class="f6 hl">隨機產生</span>的<span class="f6 hl">十六進位</span>數值
+
+可以想到的「可能」的好處是，對於大型 BBS 而言
+
+同一看板在同一秒鐘發表多篇文章，檔案命名較不會因此發生不可預期的問題
+
+<span class="f0 hl">(以舊檔名格式而言是如果同看板同一秒有複數文章被發表，發表次序比較後面的文章</span>
+<span class="f0 hl"> 會將 Unix 時間那部分秒數+1來做區別)</span>
+
+
+相關的程式碼，維護 PttBBS 原始碼的人已經把整理在共用函式庫中
+
+因此想要瞭解更精準的細節的話可以參考：
+<a href="https://github.com/ptt/pttbbs/blob/5809b04/common/bbs/fhdr_stamp.c" target="_blank" rel="noreferrer noopener nofollow">https://github.com/ptt/pttbbs/blob/5809b04/common/bbs/fhdr_stamp.c</a>
+
+
+以上資訊，希望會有幫助:)
+
+--
+<span class="f4 b7"> 作者 </span><span class="b4"> PingNote (PN Wu (小平))                                   </span><span class="f4 b7"> 看板 </span><span class="b4"> Linux </span>
+<span class="f4 b7"> 標題 </span><span class="b4"> [分享] Arch Linux Taiwan @ COSCUP 2018 CfP                             </span>
+<span class="f4 b7"> 時間 </span><span class="b4"> Thu Apr 26 21:17:07 2018                                               </span>
+<div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Archlinux</span><span class="f3 push-content">: 幫推</span><span class="push-ipdatetime">04/26 23:36
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Debian</span><span class="f3 push-content">: 推薦文章與活動。</span><span class="push-ipdatetime">04/27 00:39
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">ChakraLinux</span><span class="f3 push-content">: 兄弟推</span><span class="push-ipdatetime">04/27 00:48
+</span></div>
+--
+<span class="f2">※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 140.116.112.110
+</span><span class="f2">※ 文章網址: <a href="https://www.ptt.cc/bbs/ask/M.1544107968.A.4C8.html" target="_blank" rel="noreferrer noopener nofollow">https://www.ptt.cc/bbs/ask/M.1544107968.A.4C8.html</a>
+</span><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: PttBBS 的舊檔名格式可以參考十幾年前的 OpenPtt 專案</span><span class="push-ipdatetime"> 12/06 22:55
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: <a href="https://github.com/clamtestbbs/openptt" target="_blank" rel="noreferrer noopener nofollow">https://github.com/clamtestbbs/openptt</a> 之前測試的</span><span class="push-ipdatetime"> 12/06 22:56
+</span></div><div class="push"><span class="f1 hl push-tag">→ </span><span class="f3 hl push-userid">holishing</span><span class="f3 push-content">: 有微修改細節讓它可以動的古老 PttBBS 開源分支</span><span class="push-ipdatetime"> 12/06 22:57
+</span></div><div class="push"><span class="hl push-tag">推 </span><span class="f3 hl push-userid">Schottky</span><span class="f3 push-content">: 內行</span><span class="push-ipdatetime"> 12/07 15:05
+</span></div></div>
+    
+    <div id="article-polling" data-pollurl="/poll/ask/M.1544107968.A.4C8.html?cacheKey=2148-1016417384&amp;offset=2277&amp;offset-sig=90719688d2e71fa220c90261867abc924f257ee3" data-longpollurl="/v1/longpoll?id=104dccb54863d2830bb6a37da9ac09d3e015bfe1" data-offset="2277"></div>
+    
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710be6e7fdf12047',m:'V0ifVXwx7Oy9h.B5GEcPnxmNovFTvRfYVcAyjKXH8ik-1653456866-0-AeyZQFpUK/a4naWljW1/pbiQL48bEd4PXv3iyeCsYakzK7+2sT06XdIKXgp+WUaBqNneCzAMD2gmHq0ufoyA35rjMMwv+IhI/4BOToZ4mxzE7xQpg6CM6ZuFS89jiYkbvsX1WYMwJqYgk+tAL+MqiIrF6PBzzrPC0u0Vlz1f/OaD',s:[0x3cccf58fec,0x3d5ca43951],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>

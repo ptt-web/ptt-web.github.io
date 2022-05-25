@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>thread:[公告] 正式支援Websocket連線/telnet連接埠調整 - ask - 批踢踢實業坊</title>
+
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-custom.css">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/pushstream.css" media="screen">
+<link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-print.css" media="print">
+
+
+
+
+	<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1653454800'></script></head>
+    <body>
+		
+<div id="topbar-container">
+	<div id="topbar" class="bbs-content">
+		<a id="logo" href="/bbs/">批踢踢實業坊</a>
+		<span>&rsaquo;</span>
+		<a class="board" href="/bbs/ask/index.html"><span class="board-label">看板 </span>ask</a>
+		<a class="right small" href="/about.html">關於我們</a>
+		<a class="right small" href="/contact.html">聯絡資訊</a>
+	</div>
+</div>
+
+<div id="main-container">
+	<div id="action-bar-container">
+		<div class="action-bar">
+			<div class="btn-group btn-group-dir">
+				<a class="btn" href="/bbs/ask/index.html">&lsaquo; 看板</a>
+				<a class="btn" href="/man/ask/index.html">精華區</a>
+			</div>
+			<div class="btn-group btn-group-paging">
+				<a class="btn wide" href="/bbs/ask/search?page=1&amp;q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%AD%A3%E5%BC%8F%E6%94%AF%E6%8F%B4Websocket%E9%80%A3%E7%B7%9A%2Ftelnet%E9%80%A3%E6%8E%A5%E5%9F%A0%E8%AA%BF%E6%95%B4">最舊</a>
+				<a class="btn wide disabled">&lsaquo; 上頁</a>
+				<a class="btn wide disabled">下頁 &rsaquo;</a>
+				<a class="btn wide" href="/bbs/ask/search?page=1&amp;q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%AD%A3%E5%BC%8F%E6%94%AF%E6%8F%B4Websocket%E9%80%A3%E7%B7%9A%2Ftelnet%E9%80%A3%E6%8E%A5%E5%9F%A0%E8%AA%BF%E6%95%B4">最新</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-list-container action-bar-margin bbs-screen">
+		<div class="search-bar">
+			<form type="get" action="search" id="search-bar">
+				<input class="query" type="text" name="q" value="thread:[公告] 正式支援Websocket連線/telnet連接埠調整" placeholder="搜尋文章&#x22ef;">
+			</form>
+		</div>
+
+		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/ask/M.1577852532.A.765.html">Fw: [公告] 正式支援Websocket連線/telnet連接埠調整</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">holishing</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/ask/search?q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%AD%A3%E5%BC%8F%E6%94%AF%E6%8F%B4Websocket%E9%80%A3%E7%B7%9A%2Ftelnet%E9%80%A3%E6%8E%A5%E5%9F%A0%E8%AA%BF%E6%95%B4">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/ask/search?q=author%3Aholishing">搜尋看板內 holishing 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date"> 1/01</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
+		
+        
+	</div>
+
+    
+</div>
+
+		
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32365737-1', {
+    cookieDomain: 'ptt.cc',
+    legacyCookieDomain: 'ptt.cc'
+  });
+  ga('send', 'pageview');
+</script>
+
+
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
+
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710be6e60a6aaf6d',m:'6bx.w54g6KEOaIeNFKZgj8KPpJvcpcborG0W3A7HajQ-1653456866-0-ATuA+/zqetVANtzTQ48l6AZ/BooJEAGPgHnoSsA8ZMNPafVqSkV/9bt6/lxJeIKGK4w0Tgy6481DHLujdTSXzfyeJkAGYdaSUto1fzGLtirVNfwinpduqgu0ZgvLeG6AvTyQV6IRff5yILn1aUsT/MRlD08H52iuXhrMo+pkYiYUb5RR2WGY4Ss9V6ppLG6A6lCq+tNUwhYcm1oe/5UzGjwouFaJoVVn3YpCK0DMiUUlCNLpBV5YI8x72c5n3J3t+n+s1rXkr/ubGIsEPLo/mIXM25j/XFmjviz8Umh09aTJGs6l4a72kH67/Fs5YaZPA9bBhGwzuUYShpDSDr4Mq7BT3hcEyJ6Ra9FLiFEQIvWL',s:[0xfee3cd0dfd,0x541e077807],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
