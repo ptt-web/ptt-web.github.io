@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>thread:[公告] 戲說台灣板　板規（2009.10.02修改） - DramaTalk - 批踢踢實業坊</title>
+<title>author:dichia - DramaTalk - 批踢踢實業坊</title>
 
 <link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-common.css">
 <link rel="stylesheet" type="text/css" href="//images.ptt.cc/bbs/v2.27/bbs-base.css" media="screen">
@@ -38,10 +38,10 @@
 				<a class="btn" href="/man/DramaTalk/index.html">精華區</a>
 			</div>
 			<div class="btn-group btn-group-paging">
-				<a class="btn wide" href="/bbs/DramaTalk/search?page=1&amp;q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%88%B2%E8%AA%AA%E5%8F%B0%E7%81%A3%E6%9D%BF%E3%80%80%E6%9D%BF%E8%A6%8F%EF%BC%882009.10.02%E4%BF%AE%E6%94%B9%EF%BC%89">最舊</a>
+				<a class="btn wide" href="/bbs/DramaTalk/search?page=1&amp;q=author%3Adichia">最舊</a>
 				<a class="btn wide disabled">&lsaquo; 上頁</a>
 				<a class="btn wide disabled">下頁 &rsaquo;</a>
-				<a class="btn wide" href="/bbs/DramaTalk/search?page=1&amp;q=thread%3A%5B%E5%85%AC%E5%91%8A%5D&#43;%E6%88%B2%E8%AA%AA%E5%8F%B0%E7%81%A3%E6%9D%BF%E3%80%80%E6%9D%BF%E8%A6%8F%EF%BC%882009.10.02%E4%BF%AE%E6%94%B9%EF%BC%89">最新</a>
+				<a class="btn wide" href="/bbs/DramaTalk/search?page=1&amp;q=author%3Adichia">最新</a>
 			</div>
 		</div>
 	</div>
@@ -49,11 +49,40 @@
 	<div class="r-list-container action-bar-margin bbs-screen">
 		<div class="search-bar">
 			<form type="get" action="search" id="search-bar">
-				<input class="query" type="text" name="q" value="thread:[公告] 戲說台灣板　板規（2009.10.02修改）" placeholder="搜尋文章&#x22ef;">
+				<input class="query" type="text" name="q" value="author:dichia" placeholder="搜尋文章&#x22ef;">
 			</form>
 		</div>
 
 		
+		
+            
+        
+        
+		<div class="r-ent">
+			<div class="nrec"></div>
+			<div class="title">
+			
+				<a href="/bbs/DramaTalk/M.1225899118.A.737.html">恭喜開版</a>
+			
+			</div>
+			<div class="meta">
+				<div class="author">dichia</div>
+				<div class="article-menu">
+					
+					<div class="trigger">&#x22ef;</div>
+					<div class="dropdown">
+						<div class="item"><a href="/bbs/DramaTalk/search?q=thread%3A%E6%81%AD%E5%96%9C%E9%96%8B%E7%89%88">搜尋同標題文章</a></div>
+						
+						<div class="item"><a href="/bbs/DramaTalk/search?q=author%3Adichia">搜尋看板內 dichia 的文章</a></div>
+						
+					</div>
+					
+				</div>
+				<div class="date">11/05</div>
+				<div class="mark">M</div>
+			</div>
+		</div>
+
 		
         
 	</div>
@@ -81,5 +110,5 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//images.ptt.cc/bbs/v2.27/bbs.js"></script>
 
-    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710e72f67b7d3405',m:'7iPdaM6INuUGQq_EotYFgZU4axWg2nRw9IdvsV8HIws-1653483574-0-AfppRoWZmPhhjkhozFwLlQ7abMiyX4PngYEdszUlRve3LQq5bhGybcwzkOOfxocrKwoNi4VD//gvl5zgm8qGDfFvQL1V0mfv9ePlkuCb++kpFUWeNRZ1oFaX7CR6vmWfr0Dpz9tRBDMhCjccJyZKeHneo3+DfUuHbcrcPxMcZJEEuQvqKiljj4GscuPz6wSQbq5TsdYRK9iV7aOyeoAsz476MF48WYaBJklSZ8Viot9y4TUaznlvU8UepSAxowWUY2EV5/aX6p86Uk8/MhFYvQAlzoC8q5gq2GdO72ybnvbhn44ZDmA2UnoAMpguOsa/gQnSmrSUgx4cX/xk11myGWgmGau3jv5Pk164R9p23iyI',s:[0x77a0503081,0x89912fbabe],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'710e7308ec013405',m:'59OPVlMS.tFDWKnOqE31cOAzOkVVoX2B2v3A8UxSUdY-1653483577-0-Ab+sla9RusrOYLcTC4EiCo9eQOhZjeN80pTtiT+dHMJ3zPXB19RjMbRHjoouTqhMKHO0TJMMe168P7b914QhBbQaURi0cDvubx5d9jV1Dv5s4OJE9q/iaIoA0xyy3c5I5syh/2jQ7TDUPf8My4BpR7l/plezs5oPwAdMCHh56q9N',s:[0xe5132da733,0x003745c66e],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
 </html>
